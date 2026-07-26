@@ -138,4 +138,88 @@ The subtlety, stated precisely so it is implemented rather than approximated:
  
 7. Every rollout `.pt` contains `hidden`, `frames_agentview`, `obs`, `actions` with matching T and `capture_schema_version: 2` in its manifest.
 8. One stored frame decoded and visually inspected — real scene content, not black (the EGL failure mode produces well-formed all-black JPEGs that pass every structural check).
- 
+
+---
+
+## STATUS — end of session 2026-07-26
+
+**Done: Steps 0-3. Remaining: Steps 4-5 (scripts written and validated, not yet run).**
+
+### Where the data is
+
+- **Corpus: `/data/corpus` — 50/50 rollouts, 19,289 timesteps, 40 GB.** On `/dev/vdb`, a
+  *different physical volume* from `/ephemeral` (`/dev/vda1`). The previous wipes hit
+  `/ephemeral`; `/data` survived them. The `.pt` files are far too large for git and are
+  **not** backed up anywhere else — treat them as reproducible-but-expensive (~1.4 h to
+  regenerate via `python gen_rollouts.py`), not as safe.
+- **Manifests: `manifests/` in this repo (236 KB, 51 files)** — the 50 per-rollout
+  manifests plus `session_summary.json`. These are committed, so the corpus's provenance
+  (seeds, success flags, parity stats, per-rollout timings) survives even if `/data` is lost.
+- Model checkpoint cached at `/data/hf-cache` (15 GB), venv at `/ephemeral/code/venv`.
+
+### Sanity gate: PASSED
+
+**30/50 = 60.0% success**, against 52.8% previously measured and 53.7% published. Inside
+the 25-80% gate. Per-task successes (t0..t9): `2 3 5 2 2 5 3 2 3 3` — the wide spread the
+doc predicts, and the task-identity confound to report per Step 4.
+
+### Environment: six corrections to Step 0
+
+The Step 0 "verified facts" were wrong in six places; all are fixed and encoded in
+`setup_env.sh`, which rebuilds the environment unattended. Do not re-derive these:
+
+1. `python3 -m venv` fails — `ensurepip` missing; needs `apt install python3.10-venv`.
+2. LIBERO's top-level `libero/` has no `__init__.py`, so PEP 660 editable installs map
+   nothing; install with `--config-settings editable_mode=compat`.
+3. LIBERO prompts interactively on first import; pre-seed `~/.libero/config.yaml`.
+4. **robosuite 1.4.0 needs the mujoco 2.3.x C API** — pip resolves 3.x, whose `mj_fullM`
+   signature differs, failing at env construction. Pin `mujoco==2.3.2`.
+5. `opencv-python 5.x` requires numpy>=2, conflicting with torch 2.2 / TF 2.15. Pin
+   `opencv-python==4.10.0.84`.
+6. `tensorflow-metadata 1.21` needs protobuf>=5.27, which TF 2.15 forbids. Pin
+   `tensorflow-metadata==1.14.0`, which forces protobuf 3.20.3, which in turn requires
+   `wandb==0.16.6` to keep `pip check` clean.
+
+`pip check` is clean and all required pins are intact (`transformers 4.40.1`,
+`timm 0.9.10`, `tokenizers 0.19.1`, `numpy 1.26.4`, `flash-attn 2.5.8`).
+Measured throughput: **3.94 policy steps/s** including the capture re-forward;
+**~2.2 MB/timestep** on disk.
+
+### Parity gate — amended, with the measurement behind it
+
+Addendum A2.5's bit-exact argmax gate **cannot pass in bf16**, and the reason is
+structural, not a bug. `generate()` decodes through flash-attn's cached-decode kernel
+while the re-forward uses the prefill kernel; over 32 bf16 layers the final logits
+diverge by mean 0.75 / max 1.375. Because OpenVLA maps adjacent action bins to adjacent
+vocabulary ids, that noise flips the argmax wherever the top-2 logits are nearly tied.
+
+Measured over a full 520-step rollout (3,640 positions): **96.6% agreement; all 122
+mismatches had a top-2 gap <= 0.875**, versus a **median gap of 8.5** where the passes
+agreed. A wiring bug looks nothing like this (~0% agreement, large margins).
+
+Per A2.4's "up to floating-point nondeterminism", the gate in `capture.py` now requires
+rollout-level agreement >= 95% **and** every mismatch inside a 2.0 tie band, so real bugs
+still hard-fail. Every rollout manifest records its own agreement rate and mismatch
+margins, so the threshold stays inspectable. **The stored hidden states are unaffected:**
+the re-forward is fed the tokens that were actually generated and executed, so the tie
+affects only the verification logit, never the representation.
+
+### Pick up here
+
+```bash
+cd /ephemeral/code/thesis-introspection && source env.sh
+python probe_layer.py                            # ~1 min; -> results/probe_pilot/
+python project_hidden_states.py --layers 15      # then remaining layers in tmux
+```
+
+Both scripts are written and validated end-to-end against a synthetic 12-rollout corpus
+(probe recovered an injected signal at AUROC 1.0 with an uninflated shuffle control;
+both projection methods emitted all 3 colourings and persisted embeddings) and their
+feature extraction is confirmed against the real corpus (1.5 s / 3 rollouts, so ~25 s
+for all 50 — well inside the <10 min target). Neither has been run on the real corpus,
+so **no AUROC number exists yet.**
+
+On reading the result, follow the interpretation guardrails above: check the
+shuffle-control AUROC lands in [0.40, 0.60] *before* reading anything into the primary
+number, and report the per-task split composition, since per-task success ranges 40-100%
+here and the probe can partially exploit task identity.
