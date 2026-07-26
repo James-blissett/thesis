@@ -103,3 +103,39 @@ Recreates a script lost in the wipe. Prior known-good behaviour on the full 98.5
 - With 50 rollouts, the probe result is a pipeline-validation and directional signal, not the thesis result. AUROC meaningfully above 0.5 at layer 15: consistent with linearly decodable failure-relevant signal mid-network; motivates the full corpus + heatmap. Do not claim more.
 - AUROC near 0.5 is not a null result: the broadcast-label scheme is noisy by design and n is small. Note and stop.
 - A known confound at this scale: per-task success rates vary widely (12-84% in the prior run), so the probe can partially exploit task identity. Report per-task composition of train/test splits so this is inspectable; do not attempt to correct for it today.
+
+---
+ 
+## Addendum A — Capture amendments (supersedes parts of Step 2; apply BEFORE corpus generation)
+ 
+**Rationale**: later thesis phases derive per-timestep failure labels post-hoc from consistency constraints — programmatic checks on robot/object state and a VLM observer reading camera frames. That labeling is only post-hoc if the things constraints evaluate are stored. Hidden states alone support exactly one labeling scheme (rollout-outcome broadcast) forever. Stored observations are a capture-time commitment of the same kind as token position: irreversible.
+ 
+### A1 — Extended per-timestep record
+ 
+Add to each per-rollout `.pt`, all arrays sharing the same length T as the hidden-state tensor:
+ 
+- **`frames_agentview`**: the raw env-rendered agentview RGB per timestep, JPEG-encoded bytes (quality ~90). Store the raw render, not the policy-resized version — the policy input can always be recomputed from it; the reverse is lossy. Add the wrist/eye-in-hand camera under `frames_wrist` if the env provides one.
+- **`obs`**: dict of float32 arrays from the LIBERO observation — end-effector position and orientation, gripper joint state, and object states as the env exposes them. This is privileged sim state; that is acceptable because it shares the VLM's training-time-only status.
+- **`actions`**: the executed un-normalized 7-DoF action, float32 [T, 7].
+- Manifest gains a `capture_schema_version` field; set it to 2.
+Size delta ~0.05 MB/timestep against 2.1 MB of hidden states — negligible; storage estimates in Step 3 are unchanged.
+ 
+### A2 — Last-action-token mechanics (exact spec for the teacher-forced re-forward)
+ 
+The subtlety, stated precisely so it is implemented rather than approximated:
+ 
+1. **Why `generate()` cannot provide it**: a transformer emits the hidden state at position i only when the token at position i is an *input*. The state at position i is what predicts token i+1 (the off-by-one). The 7th action token is produced as output on the final decode step and never fed back in, so its hidden state is never computed during generation.
+2. **The re-forward**: after generation, concatenate prompt (length P) + all 7 generated action tokens into one sequence and run a single forward with `use_cache=False`, `output_hidden_states=True`. `hidden_states` is a tuple of (n_layers + 1) tensors, each [1, P+7, 4096]; index 0 is the embedding layer.
+3. **Slice positions [P-1, P, P+1, ..., P+6]** — eight positions. P-1 is the last prompt token; P+6 is the 7th action token as input, the state that motivates this entire mechanism.
+4. **This is exact, not approximate**: causal attention means the state at position i depends only on tokens ≤ i, so positions P-1 through P+5 reproduce the generation pass's states (up to floating-point nondeterminism), and P+6 is computed under identical conditions.
+5. **Parity check, operationalized**: argmax of the re-forward logits at position i must equal the generated token at position i+1, for i in [P-1, P+5]. The logits at P+6 predict a token that was never sampled — there is nothing to check there; do not flag it as a mismatch.
+6. **Precision**: states compute in bf16; cast to fp16 on save and `assert torch.isfinite(...).all()` after the cast — bf16's range exceeds fp16's, and an overflow becomes a silent `inf` in the corpus.
+### A3 — Mid-flight application rule
+ 
+- If `capture.py` exists but corpus generation has not launched: patch, re-pass parity, [PUSH], then launch.
+- If generation is already running: stop it, patch, restart from rollout 0. A mixed-schema corpus is worth less than the partial hours it cost at this scale.
+### A4 — Acceptance criteria (append)
+ 
+7. Every rollout `.pt` contains `hidden`, `frames_agentview`, `obs`, `actions` with matching T and `capture_schema_version: 2` in its manifest.
+8. One stored frame decoded and visually inspected — real scene content, not black (the EGL failure mode produces well-formed all-black JPEGs that pass every structural check).
+ 
