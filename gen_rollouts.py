@@ -149,20 +149,23 @@ def run_episode(vla, processor, env, initial_state, task_description, capture):
             continue
 
         img = get_libero_image(obs, RESIZE_SIZE)
-        frame_means.append(float(np.mean(img)))
+        # Track the raw agentview render: EGL failure produces well-formed all-black
+        # frames that pass every structural check (Addendum A4.8).
+        frame_means.append(float(np.mean(obs["agentview_image"])))
 
         action, hidden, parity = predict_and_capture(vla, processor, img, task_description)
 
         if first_parity is None:
             first_parity = parity
 
-        capture.add(hidden)
-        n_policy_steps += 1
-
         # Gripper: [0,1] -> [-1,+1], binarized, then sign-flipped for OpenVLA because the
         # RLDS dataloader aligns gripper actions as 0=close/1=open.
         action = normalize_gripper_action(action, binarize=True)
         action = invert_gripper_action(action)
+
+        # Record the observation the policy acted on alongside the action it executed.
+        capture.add(hidden, obs, action, parity)
+        n_policy_steps += 1
 
         obs, reward, done, info = env.step(action.tolist())
         if done:
@@ -221,14 +224,25 @@ def main():
 
             # Parity is checked on the first rollout of every session; a mismatch means
             # the re-forward does not correspond to the rollout -> captures are garbage.
+            # The gate distinguishes wiring bugs (near-0% agreement, large margins) from
+            # the fp nondeterminism Addendum A2.4 anticipates (>=95%, tie-sized margins).
+            parity_stats = capture.parity_summary()
             if not parity_verified:
-                print(f"[*] parity: {parity}", flush=True)
-                if not parity["passed"]:
+                print(f"[*] parity (first timestep): {parity}", flush=True)
+                print(f"[*] parity (rollout): {parity_stats}", flush=True)
+                if not (parity_stats["rate_ok"] and parity_stats["mismatches_within_tie_band"]):
                     raise RuntimeError(
                         f"PARITY CHECK FAILED on {rollout_id}: teacher-forced pass did not "
-                        f"reproduce generated action tokens: {parity}"
+                        f"reproduce generated action tokens beyond fp tolerance. "
+                        f"first_timestep={parity} rollout={parity_stats}"
                     )
-                print("[*] parity check PASSED", flush=True)
+                print(
+                    f"[*] parity check PASSED "
+                    f"({100*parity_stats['agreement_rate']:.2f}% argmax agreement over "
+                    f"{parity_stats['positions_checked']} positions; "
+                    f"max mismatch gap {parity_stats['max_mismatch_top2_gap']})",
+                    flush=True,
+                )
                 parity_verified = True
 
             paths = capture.flush(
@@ -257,6 +271,7 @@ def main():
                 "wall_seconds": round(wall, 1),
                 "steps_per_sec": round(n_steps / wall, 3) if wall > 0 else None,
                 "frame_stats": frame_stats,
+                "parity": parity_stats,
             }
             results.append(rec)
             n_done = len(results)

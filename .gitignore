@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+
+# Corpus data lives on /data (too large to commit); manifests only.
+*.pt
+*.npz.tmp
