@@ -1,0 +1,69 @@
+{
+  "rollout_id": "task09_ep02",
+  "task_id": 9,
+  "task_name": "KITCHEN_SCENE6_put_the_yellow_and_white_mug_in_the_microwave_and_close_it",
+  "task_description": "put the yellow and white mug in the microwave and close it",
+  "episode_idx": 2,
+  "seed": 1047,
+  "success": false,
+  "checkpoint": "openvla/openvla-7b-finetuned-libero-10",
+  "unnorm_key": "libero_10",
+  "task_suite": "libero_10",
+  "timestamp": "2026-07-26T08:26:04.839726+00:00",
+  "capture_schema_version": 2,
+  "n_timesteps": 520,
+  "tensor_shape": [
+    520,
+    33,
+    8,
+    4096
+  ],
+  "obs_keys": [
+    "object-state",
+    "porcelain_mug_1_pos",
+    "porcelain_mug_1_quat",
+    "porcelain_mug_1_to_robot0_eef_pos",
+    "porcelain_mug_1_to_robot0_eef_quat",
+    "robot0_eef_pos",
+    "robot0_eef_quat",
+    "robot0_gripper_qpos",
+    "robot0_gripper_qvel",
+    "robot0_joint_pos",
+    "robot0_joint_pos_cos",
+    "robot0_joint_pos_sin",
+    "robot0_joint_vel",
+    "robot0_proprio-state",
+    "white_yellow_mug_1_pos",
+    "white_yellow_mug_1_quat",
+    "white_yellow_mug_1_to_robot0_eef_pos",
+    "white_yellow_mug_1_to_robot0_eef_quat"
+  ],
+  "has_wrist_frames": true,
+  "actions_shape": [
+    520,
+    7
+  ],
+  "capture_config": {
+    "schema_version": 2,
+    "n_action_tokens": 7,
+    "n_positions": 8,
+    "position_scheme": "positions [P-1 .. P+6]: last prompt token + 7 action-token positions",
+    "dtype": "float16",
+    "layers": "all hidden_states including embedding layer (index 0)",
+    "n_layers": 33,
+    "jpeg_quality": 90,
+    "parity_min_agreement": 0.95,
+    "parity_tie_gap": 2.0
+  },
+  "parity_summary": {
+    "positions_checked": 3640,
+    "positions_agreed": 3532,
+    "agreement_rate": 0.97033,
+    "n_mismatches": 108,
+    "max_mismatch_top2_gap": 0.875,
+    "mismatches_within_tie_band": true,
+    "rate_ok": true
+  },
+  "pt_file": "task09_ep02.pt",
+  "size_bytes": 1142225008
+}

@@ -1,0 +1,69 @@
+{
+  "rollout_id": "task08_ep03",
+  "task_id": 8,
+  "task_name": "KITCHEN_SCENE8_put_both_moka_pots_on_the_stove",
+  "task_description": "put both moka pots on the stove",
+  "episode_idx": 3,
+  "seed": 1043,
+  "success": true,
+  "checkpoint": "openvla/openvla-7b-finetuned-libero-10",
+  "unnorm_key": "libero_10",
+  "task_suite": "libero_10",
+  "timestamp": "2026-07-26T08:17:47.691252+00:00",
+  "capture_schema_version": 2,
+  "n_timesteps": 398,
+  "tensor_shape": [
+    398,
+    33,
+    8,
+    4096
+  ],
+  "obs_keys": [
+    "moka_pot_1_pos",
+    "moka_pot_1_quat",
+    "moka_pot_1_to_robot0_eef_pos",
+    "moka_pot_1_to_robot0_eef_quat",
+    "moka_pot_2_pos",
+    "moka_pot_2_quat",
+    "moka_pot_2_to_robot0_eef_pos",
+    "moka_pot_2_to_robot0_eef_quat",
+    "object-state",
+    "robot0_eef_pos",
+    "robot0_eef_quat",
+    "robot0_gripper_qpos",
+    "robot0_gripper_qvel",
+    "robot0_joint_pos",
+    "robot0_joint_pos_cos",
+    "robot0_joint_pos_sin",
+    "robot0_joint_vel",
+    "robot0_proprio-state"
+  ],
+  "has_wrist_frames": true,
+  "actions_shape": [
+    398,
+    7
+  ],
+  "capture_config": {
+    "schema_version": 2,
+    "n_action_tokens": 7,
+    "n_positions": 8,
+    "position_scheme": "positions [P-1 .. P+6]: last prompt token + 7 action-token positions",
+    "dtype": "float16",
+    "layers": "all hidden_states including embedding layer (index 0)",
+    "n_layers": 33,
+    "jpeg_quality": 90,
+    "parity_min_agreement": 0.95,
+    "parity_tie_gap": 2.0
+  },
+  "parity_summary": {
+    "positions_checked": 2786,
+    "positions_agreed": 2724,
+    "agreement_rate": 0.977746,
+    "n_mismatches": 62,
+    "max_mismatch_top2_gap": 1.125,
+    "mismatches_within_tie_band": true,
+    "rate_ok": true
+  },
+  "pt_file": "task08_ep03.pt",
+  "size_bytes": 875461808
+}

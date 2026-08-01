@@ -1,0 +1,69 @@
+{
+  "rollout_id": "task05_ep01",
+  "task_id": 5,
+  "task_name": "STUDY_SCENE1_pick_up_the_book_and_place_it_in_the_back_compartment_of_the_caddy",
+  "task_description": "pick up the book and place it in the back compartment of the caddy",
+  "episode_idx": 1,
+  "seed": 1026,
+  "success": true,
+  "checkpoint": "openvla/openvla-7b-finetuned-libero-10",
+  "unnorm_key": "libero_10",
+  "task_suite": "libero_10",
+  "timestamp": "2026-07-26T07:50:07.324337+00:00",
+  "capture_schema_version": 2,
+  "n_timesteps": 143,
+  "tensor_shape": [
+    143,
+    33,
+    8,
+    4096
+  ],
+  "obs_keys": [
+    "black_book_1_pos",
+    "black_book_1_quat",
+    "black_book_1_to_robot0_eef_pos",
+    "black_book_1_to_robot0_eef_quat",
+    "object-state",
+    "robot0_eef_pos",
+    "robot0_eef_quat",
+    "robot0_gripper_qpos",
+    "robot0_gripper_qvel",
+    "robot0_joint_pos",
+    "robot0_joint_pos_cos",
+    "robot0_joint_pos_sin",
+    "robot0_joint_vel",
+    "robot0_proprio-state",
+    "white_yellow_mug_1_pos",
+    "white_yellow_mug_1_quat",
+    "white_yellow_mug_1_to_robot0_eef_pos",
+    "white_yellow_mug_1_to_robot0_eef_quat"
+  ],
+  "has_wrist_frames": true,
+  "actions_shape": [
+    143,
+    7
+  ],
+  "capture_config": {
+    "schema_version": 2,
+    "n_action_tokens": 7,
+    "n_positions": 8,
+    "position_scheme": "positions [P-1 .. P+6]: last prompt token + 7 action-token positions",
+    "dtype": "float16",
+    "layers": "all hidden_states including embedding layer (index 0)",
+    "n_layers": 33,
+    "jpeg_quality": 90,
+    "parity_min_agreement": 0.95,
+    "parity_tie_gap": 2.0
+  },
+  "parity_summary": {
+    "positions_checked": 1001,
+    "positions_agreed": 972,
+    "agreement_rate": 0.971029,
+    "n_mismatches": 29,
+    "max_mismatch_top2_gap": 1.0,
+    "mismatches_within_tie_band": true,
+    "rate_ok": true
+  },
+  "pt_file": "task05_ep01.pt",
+  "size_bytes": 314224368
+}

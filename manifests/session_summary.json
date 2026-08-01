@@ -1,0 +1,1215 @@
+{
+  "session_start": "2026-07-26T07:06:35.658535+00:00",
+  "checkpoint": "openvla/openvla-7b-finetuned-libero-10",
+  "task_suite": "libero_10",
+  "unnorm_key": "libero_10",
+  "seed_base": 1000,
+  "max_steps": 520,
+  "num_steps_wait": 10,
+  "n_rollouts": 50,
+  "n_success": 30,
+  "success_rate": 0.6,
+  "total_timesteps": 19289,
+  "rollouts": [
+    {
+      "rollout_id": "task00_ep00",
+      "task_id": 0,
+      "episode_idx": 0,
+      "seed": 1000,
+      "success": false,
+      "n_timesteps": 520,
+      "wall_seconds": 131.9,
+      "steps_per_sec": 3.942,
+      "frame_stats": {
+        "mean_pixel": 71.95656499618138,
+        "min_frame_mean": 67.29652913411458,
+        "max_frame_mean": 74.27873229980469
+      },
+      "parity": {
+        "positions_checked": 3640,
+        "positions_agreed": 3518,
+        "agreement_rate": 0.966484,
+        "n_mismatches": 122,
+        "max_mismatch_top2_gap": 0.875,
+        "mismatches_within_tie_band": true,
+        "rate_ok": true
+      }
+    },
+    {
+      "rollout_id": "task00_ep01",
+      "task_id": 0,
+      "episode_idx": 1,
+      "seed": 1001,
+      "success": true,
+      "n_timesteps": 332,
+      "wall_seconds": 84.0,
+      "steps_per_sec": 3.951,
+      "frame_stats": {
+        "mean_pixel": 70.75939127910569,
+        "min_frame_mean": 66.34609476725261,
+        "max_frame_mean": 75.67190551757812
+      },
+      "parity": {
+        "positions_checked": 2324,
+        "positions_agreed": 2257,
+        "agreement_rate": 0.97117,
+        "n_mismatches": 67,
+        "max_mismatch_top2_gap": 1.0,
+        "mismatches_within_tie_band": true,
+        "rate_ok": true
+      }
+    },
+    {
+      "rollout_id": "task00_ep02",
+      "task_id": 0,
+      "episode_idx": 2,
+      "seed": 1002,
+      "success": false,
+      "n_timesteps": 520,
+      "wall_seconds": 131.7,
+      "steps_per_sec": 3.947,
+      "frame_stats": {
+        "mean_pixel": 70.88852998782428,
+        "min_frame_mean": 67.10951741536458,
+        "max_frame_mean": 76.2517801920573
+      },
+      "parity": {
+        "positions_checked": 3640,
+        "positions_agreed": 3589,
+        "agreement_rate": 0.985989,
+        "n_mismatches": 51,
+        "max_mismatch_top2_gap": 1.0,
+        "mismatches_within_tie_band": true,
+        "rate_ok": true
+      }
+    },
+    {
+      "rollout_id": "task00_ep03",
+      "task_id": 0,
+      "episode_idx": 3,
+      "seed": 1003,
+      "success": true,
+      "n_timesteps": 289,
+      "wall_seconds": 73.6,
+      "steps_per_sec": 3.929,
+      "frame_stats": {
+        "mean_pixel": 70.88208732912972,
+        "min_frame_mean": 65.75486755371094,
+        "max_frame_mean": 75.03127034505208
+      },
+      "parity": {
+        "positions_checked": 2023,
+        "positions_agreed": 1982,
+        "agreement_rate": 0.979733,
+        "n_mismatches": 41,
+        "max_mismatch_top2_gap": 1.25,
+        "mismatches_within_tie_band": true,
+        "rate_ok": true
+      }
+    },
+    {
+      "rollout_id": "task00_ep04",
+      "task_id": 0,
+      "episode_idx": 4,
+      "seed": 1004,
+      "success": false,
+      "n_timesteps": 520,
+      "wall_seconds": 131.4,
+      "steps_per_sec": 3.957,
+      "frame_stats": {
+        "mean_pixel": 70.50865112695938,
+        "min_frame_mean": 67.76217651367188,
+        "max_frame_mean": 72.38949076334636
+      },
+      "parity": {
+        "positions_checked": 3640,
+        "positions_agreed": 3557,
+        "agreement_rate": 0.977198,
+        "n_mismatches": 83,
+        "max_mismatch_top2_gap": 1.0,
+        "mismatches_within_tie_band": true,
+        "rate_ok": true
+      }
+    },
+    {
+      "rollout_id": "task01_ep00",
+      "task_id": 1,
+      "episode_idx": 0,
+      "seed": 1005,
+      "success": false,
+      "n_timesteps": 520,
+      "wall_seconds": 131.4,
+      "steps_per_sec": 3.956,
+      "frame_stats": {
+        "mean_pixel": 72.55256114861903,
+        "min_frame_mean": 68.19178263346355,
+        "max_frame_mean": 78.749755859375
+      },
+      "parity": {
+        "positions_checked": 3640,
+        "positions_agreed": 3554,
+        "agreement_rate": 0.976374,
+        "n_mismatches": 86,
+        "max_mismatch_top2_gap": 0.875,
+        "mismatches_within_tie_band": true,
+        "rate_ok": true
+      }
+    },
+    {
+      "rollout_id": "task01_ep01",
+      "task_id": 1,
+      "episode_idx": 1,
+      "seed": 1006,
+      "success": false,
+      "n_timesteps": 520,
+      "wall_seconds": 131.7,
+      "steps_per_sec": 3.948,
+      "frame_stats": {
+        "mean_pixel": 76.81100830665001,
+        "min_frame_mean": 68.69675699869792,
+        "max_frame_mean": 79.47639465332031
+      },
+      "parity": {
+        "positions_checked": 3640,
+        "positions_agreed": 3525,
+        "agreement_rate": 0.968407,
+        "n_mismatches": 115,
+        "max_mismatch_top2_gap": 1.0,
+        "mismatches_within_tie_band": true,
+        "rate_ok": true
+      }
+    },
+    {
+      "rollout_id": "task01_ep02",
+      "task_id": 1,
+      "episode_idx": 2,
+      "seed": 1007,
+      "success": true,
+      "n_timesteps": 222,
+      "wall_seconds": 56.1,
+      "steps_per_sec": 3.958,
+      "frame_stats": {
+        "mean_pixel": 75.2133319155948,
+        "min_frame_mean": 68.96986389160156,
+        "max_frame_mean": 79.98930358886719
+      },
+      "parity": {
+        "positions_checked": 1554,
+        "positions_agreed": 1505,
+        "agreement_rate": 0.968468,
+        "n_mismatches": 49,
+        "max_mismatch_top2_gap": 0.75,
+        "mismatches_within_tie_band": true,
+        "rate_ok": true
+      }
+    },
+    {
+      "rollout_id": "task01_ep03",
+      "task_id": 1,
+      "episode_idx": 3,
+      "seed": 1008,
+      "success": true,
+      "n_timesteps": 264,
+      "wall_seconds": 66.7,
+      "steps_per_sec": 3.959,
+      "frame_stats": {
+        "mean_pixel": 73.78830177615389,
+        "min_frame_mean": 68.86669921875,
+        "max_frame_mean": 79.02356465657552
+      },
+      "parity": {
+        "positions_checked": 1848,
+        "positions_agreed": 1793,
+        "agreement_rate": 0.970238,
+        "n_mismatches": 55,
+        "max_mismatch_top2_gap": 0.75,
+        "mismatches_within_tie_band": true,
+        "rate_ok": true
+      }
+    },
+    {
+      "rollout_id": "task01_ep04",
+      "task_id": 1,
+      "episode_idx": 4,
+      "seed": 1009,
+      "success": true,
+      "n_timesteps": 276,
+      "wall_seconds": 69.7,
+      "steps_per_sec": 3.959,
+      "frame_stats": {
+        "mean_pixel": 73.27115631103516,
+        "min_frame_mean": 68.04415893554688,
+        "max_frame_mean": 78.53670247395833
+      },
+      "parity": {
+        "positions_checked": 1932,
+        "positions_agreed": 1877,
+        "agreement_rate": 0.971532,
+        "n_mismatches": 55,
+        "max_mismatch_top2_gap": 0.75,
+        "mismatches_within_tie_band": true,
+        "rate_ok": true
+      }
+    },
+    {
+      "rollout_id": "task02_ep00",
+      "task_id": 2,
+      "episode_idx": 0,
+      "seed": 1010,
+      "success": true,
+      "n_timesteps": 272,
+      "wall_seconds": 68.0,
+      "steps_per_sec": 3.997,
+      "frame_stats": {
+        "mean_pixel": 128.84536670236025,
+        "min_frame_mean": 125.83423868815105,
+        "max_frame_mean": 133.7879180908203
+      },
+      "parity": {
+        "positions_checked": 1904,
+        "positions_agreed": 1870,
+        "agreement_rate": 0.982143,
+        "n_mismatches": 34,
+        "max_mismatch_top2_gap": 1.0,
+        "mismatches_within_tie_band": true,
+        "rate_ok": true
+      }
+    },
+    {
+      "rollout_id": "task02_ep01",
+      "task_id": 2,
+      "episode_idx": 1,
+      "seed": 1011,
+      "success": true,
+      "n_timesteps": 418,
+      "wall_seconds": 104.6,
+      "steps_per_sec": 3.997,
+      "frame_stats": {
+        "mean_pixel": 127.4647869980126,
+        "min_frame_mean": 124.88831075032552,
+        "max_frame_mean": 130.75960795084634
+      },
+      "parity": {
+        "positions_checked": 2926,
+        "positions_agreed": 2870,
+        "agreement_rate": 0.980861,
+        "n_mismatches": 56,
+        "max_mismatch_top2_gap": 0.75,
+        "mismatches_within_tie_band": true,
+        "rate_ok": true
+      }
+    },
+    {
+      "rollout_id": "task02_ep02",
+      "task_id": 2,
+      "episode_idx": 2,
+      "seed": 1012,
+      "success": true,
+      "n_timesteps": 308,
+      "wall_seconds": 77.0,
+      "steps_per_sec": 3.999,
+      "frame_stats": {
+        "mean_pixel": 127.89296088280616,
+        "min_frame_mean": 125.29574584960938,
+        "max_frame_mean": 131.5832061767578
+      },
+      "parity": {
+        "positions_checked": 2156,
+        "positions_agreed": 2106,
+        "agreement_rate": 0.976809,
+        "n_mismatches": 50,
+        "max_mismatch_top2_gap": 1.125,
+        "mismatches_within_tie_band": true,
+        "rate_ok": true
+      }
+    },
+    {
+      "rollout_id": "task02_ep03",
+      "task_id": 2,
+      "episode_idx": 3,
+      "seed": 1013,
+      "success": true,
+      "n_timesteps": 294,
+      "wall_seconds": 73.5,
+      "steps_per_sec": 4.0,
+      "frame_stats": {
+        "mean_pixel": 128.2395492000104,
+        "min_frame_mean": 125.3270975748698,
+        "max_frame_mean": 133.78704833984375
+      },
+      "parity": {
+        "positions_checked": 2058,
+        "positions_agreed": 2017,
+        "agreement_rate": 0.980078,
+        "n_mismatches": 41,
+        "max_mismatch_top2_gap": 1.125,
+        "mismatches_within_tie_band": true,
+        "rate_ok": true
+      }
+    },
+    {
+      "rollout_id": "task02_ep04",
+      "task_id": 2,
+      "episode_idx": 4,
+      "seed": 1014,
+      "success": true,
+      "n_timesteps": 215,
+      "wall_seconds": 53.8,
+      "steps_per_sec": 4.0,
+      "frame_stats": {
+        "mean_pixel": 127.56715527911518,
+        "min_frame_mean": 125.4434305826823,
+        "max_frame_mean": 130.29043579101562
+      },
+      "parity": {
+        "positions_checked": 1505,
+        "positions_agreed": 1475,
+        "agreement_rate": 0.980066,
+        "n_mismatches": 30,
+        "max_mismatch_top2_gap": 0.625,
+        "mismatches_within_tie_band": true,
+        "rate_ok": true
+      }
+    },
+    {
+      "rollout_id": "task03_ep00",
+      "task_id": 3,
+      "episode_idx": 0,
+      "seed": 1015,
+      "success": true,
+      "n_timesteps": 265,
+      "wall_seconds": 67.3,
+      "steps_per_sec": 3.94,
+      "frame_stats": {
+        "mean_pixel": 129.60129557675538,
+        "min_frame_mean": 127.56986490885417,
+        "max_frame_mean": 132.85986836751303
+      },
+      "parity": {
+        "positions_checked": 1855,
+        "positions_agreed": 1795,
+        "agreement_rate": 0.967655,
+        "n_mismatches": 60,
+        "max_mismatch_top2_gap": 1.0,
+        "mismatches_within_tie_band": true,
+        "rate_ok": true
+      }
+    },
+    {
+      "rollout_id": "task03_ep01",
+      "task_id": 3,
+      "episode_idx": 1,
+      "seed": 1016,
+      "success": false,
+      "n_timesteps": 520,
+      "wall_seconds": 131.6,
+      "steps_per_sec": 3.953,
+      "frame_stats": {
+        "mean_pixel": 131.4522416237073,
+        "min_frame_mean": 128.0998331705729,
+        "max_frame_mean": 133.6968994140625
+      },
+      "parity": {
+        "positions_checked": 3640,
+        "positions_agreed": 3556,
+        "agreement_rate": 0.976923,
+        "n_mismatches": 84,
+        "max_mismatch_top2_gap": 0.75,
+        "mismatches_within_tie_band": true,
+        "rate_ok": true
+      }
+    },
+    {
+      "rollout_id": "task03_ep02",
+      "task_id": 3,
+      "episode_idx": 2,
+      "seed": 1017,
+      "success": true,
+      "n_timesteps": 309,
+      "wall_seconds": 78.4,
+      "steps_per_sec": 3.94,
+      "frame_stats": {
+        "mean_pixel": 129.8108584703365,
+        "min_frame_mean": 127.90990702311198,
+        "max_frame_mean": 133.3650105794271
+      },
+      "parity": {
+        "positions_checked": 2163,
+        "positions_agreed": 2116,
+        "agreement_rate": 0.978271,
+        "n_mismatches": 47,
+        "max_mismatch_top2_gap": 0.75,
+        "mismatches_within_tie_band": true,
+        "rate_ok": true
+      }
+    },
+    {
+      "rollout_id": "task03_ep03",
+      "task_id": 3,
+      "episode_idx": 3,
+      "seed": 1018,
+      "success": false,
+      "n_timesteps": 520,
+      "wall_seconds": 132.5,
+      "steps_per_sec": 3.924,
+      "frame_stats": {
+        "mean_pixel": 129.17357348906688,
+        "min_frame_mean": 127.76949564615886,
+        "max_frame_mean": 131.7385457356771
+      },
+      "parity": {
+        "positions_checked": 3640,
+        "positions_agreed": 3596,
+        "agreement_rate": 0.987912,
+        "n_mismatches": 44,
+        "max_mismatch_top2_gap": 0.75,
+        "mismatches_within_tie_band": true,
+        "rate_ok": true
+      }
+    },
+    {
+      "rollout_id": "task03_ep04",
+      "task_id": 3,
+      "episode_idx": 4,
+      "seed": 1019,
+      "success": false,
+      "n_timesteps": 520,
+      "wall_seconds": 131.9,
+      "steps_per_sec": 3.942,
+      "frame_stats": {
+        "mean_pixel": 129.5848618727464,
+        "min_frame_mean": 127.72381591796875,
+        "max_frame_mean": 132.94217427571616
+      },
+      "parity": {
+        "positions_checked": 3640,
+        "positions_agreed": 3592,
+        "agreement_rate": 0.986813,
+        "n_mismatches": 48,
+        "max_mismatch_top2_gap": 1.0,
+        "mismatches_within_tie_band": true,
+        "rate_ok": true
+      }
+    },
+    {
+      "rollout_id": "task04_ep00",
+      "task_id": 4,
+      "episode_idx": 0,
+      "seed": 1020,
+      "success": true,
+      "n_timesteps": 249,
+      "wall_seconds": 63.2,
+      "steps_per_sec": 3.941,
+      "frame_stats": {
+        "mean_pixel": 69.79988222747762,
+        "min_frame_mean": 63.94560241699219,
+        "max_frame_mean": 76.4757792154948
+      },
+      "parity": {
+        "positions_checked": 1743,
+        "positions_agreed": 1721,
+        "agreement_rate": 0.987378,
+        "n_mismatches": 22,
+        "max_mismatch_top2_gap": 0.5,
+        "mismatches_within_tie_band": true,
+        "rate_ok": true
+      }
+    },
+    {
+      "rollout_id": "task04_ep01",
+      "task_id": 4,
+      "episode_idx": 1,
+      "seed": 1021,
+      "success": false,
+      "n_timesteps": 520,
+      "wall_seconds": 131.5,
+      "steps_per_sec": 3.955,
+      "frame_stats": {
+        "mean_pixel": 70.84766042660443,
+        "min_frame_mean": 67.42805989583333,
+        "max_frame_mean": 80.7595723470052
+      },
+      "parity": {
+        "positions_checked": 3640,
+        "positions_agreed": 3553,
+        "agreement_rate": 0.976099,
+        "n_mismatches": 87,
+        "max_mismatch_top2_gap": 0.875,
+        "mismatches_within_tie_band": true,
+        "rate_ok": true
+      }
+    },
+    {
+      "rollout_id": "task04_ep02",
+      "task_id": 4,
+      "episode_idx": 2,
+      "seed": 1022,
+      "success": true,
+      "n_timesteps": 239,
+      "wall_seconds": 60.6,
+      "steps_per_sec": 3.941,
+      "frame_stats": {
+        "mean_pixel": 69.59279595325849,
+        "min_frame_mean": 66.10301208496094,
+        "max_frame_mean": 74.44647725423177
+      },
+      "parity": {
+        "positions_checked": 1673,
+        "positions_agreed": 1645,
+        "agreement_rate": 0.983264,
+        "n_mismatches": 28,
+        "max_mismatch_top2_gap": 0.625,
+        "mismatches_within_tie_band": true,
+        "rate_ok": true
+      }
+    },
+    {
+      "rollout_id": "task04_ep03",
+      "task_id": 4,
+      "episode_idx": 3,
+      "seed": 1023,
+      "success": false,
+      "n_timesteps": 520,
+      "wall_seconds": 131.6,
+      "steps_per_sec": 3.952,
+      "frame_stats": {
+        "mean_pixel": 66.85381990090394,
+        "min_frame_mean": 63.5121103922526,
+        "max_frame_mean": 75.73089599609375
+      },
+      "parity": {
+        "positions_checked": 3640,
+        "positions_agreed": 3572,
+        "agreement_rate": 0.981319,
+        "n_mismatches": 68,
+        "max_mismatch_top2_gap": 1.0,
+        "mismatches_within_tie_band": true,
+        "rate_ok": true
+      }
+    },
+    {
+      "rollout_id": "task04_ep04",
+      "task_id": 4,
+      "episode_idx": 4,
+      "seed": 1024,
+      "success": false,
+      "n_timesteps": 520,
+      "wall_seconds": 131.6,
+      "steps_per_sec": 3.95,
+      "frame_stats": {
+        "mean_pixel": 65.73792037963867,
+        "min_frame_mean": 63.19740295410156,
+        "max_frame_mean": 74.94938151041667
+      },
+      "parity": {
+        "positions_checked": 3640,
+        "positions_agreed": 3596,
+        "agreement_rate": 0.987912,
+        "n_mismatches": 44,
+        "max_mismatch_top2_gap": 1.0,
+        "mismatches_within_tie_band": true,
+        "rate_ok": true
+      }
+    },
+    {
+      "rollout_id": "task05_ep00",
+      "task_id": 5,
+      "episode_idx": 0,
+      "seed": 1025,
+      "success": true,
+      "n_timesteps": 198,
+      "wall_seconds": 49.4,
+      "steps_per_sec": 4.007,
+      "frame_stats": {
+        "mean_pixel": 75.0166735922046,
+        "min_frame_mean": 72.38137308756511,
+        "max_frame_mean": 77.2991943359375
+      },
+      "parity": {
+        "positions_checked": 1386,
+        "positions_agreed": 1346,
+        "agreement_rate": 0.97114,
+        "n_mismatches": 40,
+        "max_mismatch_top2_gap": 1.125,
+        "mismatches_within_tie_band": true,
+        "rate_ok": true
+      }
+    },
+    {
+      "rollout_id": "task05_ep01",
+      "task_id": 5,
+      "episode_idx": 1,
+      "seed": 1026,
+      "success": true,
+      "n_timesteps": 143,
+      "wall_seconds": 35.6,
+      "steps_per_sec": 4.013,
+      "frame_stats": {
+        "mean_pixel": 75.82992856041257,
+        "min_frame_mean": 74.22157287597656,
+        "max_frame_mean": 77.51863098144531
+      },
+      "parity": {
+        "positions_checked": 1001,
+        "positions_agreed": 972,
+        "agreement_rate": 0.971029,
+        "n_mismatches": 29,
+        "max_mismatch_top2_gap": 1.0,
+        "mismatches_within_tie_band": true,
+        "rate_ok": true
+      }
+    },
+    {
+      "rollout_id": "task05_ep02",
+      "task_id": 5,
+      "episode_idx": 2,
+      "seed": 1027,
+      "success": true,
+      "n_timesteps": 170,
+      "wall_seconds": 42.4,
+      "steps_per_sec": 4.006,
+      "frame_stats": {
+        "mean_pixel": 75.60539371266084,
+        "min_frame_mean": 73.78079223632812,
+        "max_frame_mean": 77.23267110188802
+      },
+      "parity": {
+        "positions_checked": 1190,
+        "positions_agreed": 1163,
+        "agreement_rate": 0.977311,
+        "n_mismatches": 27,
+        "max_mismatch_top2_gap": 0.75,
+        "mismatches_within_tie_band": true,
+        "rate_ok": true
+      }
+    },
+    {
+      "rollout_id": "task05_ep03",
+      "task_id": 5,
+      "episode_idx": 3,
+      "seed": 1028,
+      "success": true,
+      "n_timesteps": 228,
+      "wall_seconds": 57.0,
+      "steps_per_sec": 3.998,
+      "frame_stats": {
+        "mean_pixel": 75.3071450573659,
+        "min_frame_mean": 73.52963765462239,
+        "max_frame_mean": 77.61082458496094
+      },
+      "parity": {
+        "positions_checked": 1596,
+        "positions_agreed": 1556,
+        "agreement_rate": 0.974937,
+        "n_mismatches": 40,
+        "max_mismatch_top2_gap": 0.75,
+        "mismatches_within_tie_band": true,
+        "rate_ok": true
+      }
+    },
+    {
+      "rollout_id": "task05_ep04",
+      "task_id": 5,
+      "episode_idx": 4,
+      "seed": 1029,
+      "success": true,
+      "n_timesteps": 212,
+      "wall_seconds": 52.9,
+      "steps_per_sec": 4.009,
+      "frame_stats": {
+        "mean_pixel": 75.38037522034075,
+        "min_frame_mean": 72.82442728678386,
+        "max_frame_mean": 77.25944519042969
+      },
+      "parity": {
+        "positions_checked": 1484,
+        "positions_agreed": 1453,
+        "agreement_rate": 0.979111,
+        "n_mismatches": 31,
+        "max_mismatch_top2_gap": 0.875,
+        "mismatches_within_tie_band": true,
+        "rate_ok": true
+      }
+    },
+    {
+      "rollout_id": "task06_ep00",
+      "task_id": 6,
+      "episode_idx": 0,
+      "seed": 1030,
+      "success": true,
+      "n_timesteps": 334,
+      "wall_seconds": 84.1,
+      "steps_per_sec": 3.974,
+      "frame_stats": {
+        "mean_pixel": 72.81038833283141,
+        "min_frame_mean": 66.81011962890625,
+        "max_frame_mean": 78.7726542154948
+      },
+      "parity": {
+        "positions_checked": 2338,
+        "positions_agreed": 2310,
+        "agreement_rate": 0.988024,
+        "n_mismatches": 28,
+        "max_mismatch_top2_gap": 0.75,
+        "mismatches_within_tie_band": true,
+        "rate_ok": true
+      }
+    },
+    {
+      "rollout_id": "task06_ep01",
+      "task_id": 6,
+      "episode_idx": 1,
+      "seed": 1031,
+      "success": false,
+      "n_timesteps": 520,
+      "wall_seconds": 131.0,
+      "steps_per_sec": 3.969,
+      "frame_stats": {
+        "mean_pixel": 75.65061770708134,
+        "min_frame_mean": 67.3113505045573,
+        "max_frame_mean": 83.56979370117188
+      },
+      "parity": {
+        "positions_checked": 3640,
+        "positions_agreed": 3523,
+        "agreement_rate": 0.967857,
+        "n_mismatches": 117,
+        "max_mismatch_top2_gap": 1.0,
+        "mismatches_within_tie_band": true,
+        "rate_ok": true
+      }
+    },
+    {
+      "rollout_id": "task06_ep02",
+      "task_id": 6,
+      "episode_idx": 2,
+      "seed": 1032,
+      "success": true,
+      "n_timesteps": 230,
+      "wall_seconds": 57.7,
+      "steps_per_sec": 3.985,
+      "frame_stats": {
+        "mean_pixel": 73.20921294723733,
+        "min_frame_mean": 67.26786804199219,
+        "max_frame_mean": 81.72039794921875
+      },
+      "parity": {
+        "positions_checked": 1610,
+        "positions_agreed": 1579,
+        "agreement_rate": 0.980745,
+        "n_mismatches": 31,
+        "max_mismatch_top2_gap": 0.75,
+        "mismatches_within_tie_band": true,
+        "rate_ok": true
+      }
+    },
+    {
+      "rollout_id": "task06_ep03",
+      "task_id": 6,
+      "episode_idx": 3,
+      "seed": 1033,
+      "success": true,
+      "n_timesteps": 239,
+      "wall_seconds": 60.1,
+      "steps_per_sec": 3.975,
+      "frame_stats": {
+        "mean_pixel": 72.90520003782989,
+        "min_frame_mean": 66.98944091796875,
+        "max_frame_mean": 80.24010721842448
+      },
+      "parity": {
+        "positions_checked": 1673,
+        "positions_agreed": 1639,
+        "agreement_rate": 0.979677,
+        "n_mismatches": 34,
+        "max_mismatch_top2_gap": 1.25,
+        "mismatches_within_tie_band": true,
+        "rate_ok": true
+      }
+    },
+    {
+      "rollout_id": "task06_ep04",
+      "task_id": 6,
+      "episode_idx": 4,
+      "seed": 1034,
+      "success": false,
+      "n_timesteps": 520,
+      "wall_seconds": 130.9,
+      "steps_per_sec": 3.974,
+      "frame_stats": {
+        "mean_pixel": 74.1226038517096,
+        "min_frame_mean": 66.3133544921875,
+        "max_frame_mean": 77.77456665039062
+      },
+      "parity": {
+        "positions_checked": 3640,
+        "positions_agreed": 3575,
+        "agreement_rate": 0.982143,
+        "n_mismatches": 65,
+        "max_mismatch_top2_gap": 0.875,
+        "mismatches_within_tie_band": true,
+        "rate_ok": true
+      }
+    },
+    {
+      "rollout_id": "task07_ep00",
+      "task_id": 7,
+      "episode_idx": 0,
+      "seed": 1035,
+      "success": true,
+      "n_timesteps": 228,
+      "wall_seconds": 57.3,
+      "steps_per_sec": 3.982,
+      "frame_stats": {
+        "mean_pixel": 71.38378266005489,
+        "min_frame_mean": 68.55374654134114,
+        "max_frame_mean": 77.08709716796875
+      },
+      "parity": {
+        "positions_checked": 1596,
+        "positions_agreed": 1555,
+        "agreement_rate": 0.974311,
+        "n_mismatches": 41,
+        "max_mismatch_top2_gap": 1.0,
+        "mismatches_within_tie_band": true,
+        "rate_ok": true
+      }
+    },
+    {
+      "rollout_id": "task07_ep01",
+      "task_id": 7,
+      "episode_idx": 1,
+      "seed": 1036,
+      "success": false,
+      "n_timesteps": 520,
+      "wall_seconds": 130.6,
+      "steps_per_sec": 3.98,
+      "frame_stats": {
+        "mean_pixel": 73.13359226324619,
+        "min_frame_mean": 68.72488911946614,
+        "max_frame_mean": 73.94081115722656
+      },
+      "parity": {
+        "positions_checked": 3640,
+        "positions_agreed": 3577,
+        "agreement_rate": 0.982692,
+        "n_mismatches": 63,
+        "max_mismatch_top2_gap": 0.75,
+        "mismatches_within_tie_band": true,
+        "rate_ok": true
+      }
+    },
+    {
+      "rollout_id": "task07_ep02",
+      "task_id": 7,
+      "episode_idx": 2,
+      "seed": 1037,
+      "success": true,
+      "n_timesteps": 364,
+      "wall_seconds": 91.4,
+      "steps_per_sec": 3.982,
+      "frame_stats": {
+        "mean_pixel": 70.86702078515357,
+        "min_frame_mean": 67.6908671061198,
+        "max_frame_mean": 76.37766520182292
+      },
+      "parity": {
+        "positions_checked": 2548,
+        "positions_agreed": 2496,
+        "agreement_rate": 0.979592,
+        "n_mismatches": 52,
+        "max_mismatch_top2_gap": 0.75,
+        "mismatches_within_tie_band": true,
+        "rate_ok": true
+      }
+    },
+    {
+      "rollout_id": "task07_ep03",
+      "task_id": 7,
+      "episode_idx": 3,
+      "seed": 1038,
+      "success": false,
+      "n_timesteps": 520,
+      "wall_seconds": 130.2,
+      "steps_per_sec": 3.994,
+      "frame_stats": {
+        "mean_pixel": 70.85153358655099,
+        "min_frame_mean": 65.43346659342448,
+        "max_frame_mean": 74.59406026204427
+      },
+      "parity": {
+        "positions_checked": 3640,
+        "positions_agreed": 3515,
+        "agreement_rate": 0.965659,
+        "n_mismatches": 125,
+        "max_mismatch_top2_gap": 0.75,
+        "mismatches_within_tie_band": true,
+        "rate_ok": true
+      }
+    },
+    {
+      "rollout_id": "task07_ep04",
+      "task_id": 7,
+      "episode_idx": 4,
+      "seed": 1039,
+      "success": false,
+      "n_timesteps": 520,
+      "wall_seconds": 130.0,
+      "steps_per_sec": 4.0,
+      "frame_stats": {
+        "mean_pixel": 69.0399060958471,
+        "min_frame_mean": 68.98877461751302,
+        "max_frame_mean": 69.22856140136719
+      },
+      "parity": {
+        "positions_checked": 3640,
+        "positions_agreed": 3631,
+        "agreement_rate": 0.997527,
+        "n_mismatches": 9,
+        "max_mismatch_top2_gap": 1.0,
+        "mismatches_within_tie_band": true,
+        "rate_ok": true
+      }
+    },
+    {
+      "rollout_id": "task08_ep00",
+      "task_id": 8,
+      "episode_idx": 0,
+      "seed": 1040,
+      "success": true,
+      "n_timesteps": 456,
+      "wall_seconds": 113.8,
+      "steps_per_sec": 4.006,
+      "frame_stats": {
+        "mean_pixel": 134.1413230895996,
+        "min_frame_mean": 128.92112731933594,
+        "max_frame_mean": 140.37940979003906
+      },
+      "parity": {
+        "positions_checked": 3192,
+        "positions_agreed": 3135,
+        "agreement_rate": 0.982143,
+        "n_mismatches": 57,
+        "max_mismatch_top2_gap": 0.75,
+        "mismatches_within_tie_band": true,
+        "rate_ok": true
+      }
+    },
+    {
+      "rollout_id": "task08_ep01",
+      "task_id": 8,
+      "episode_idx": 1,
+      "seed": 1041,
+      "success": false,
+      "n_timesteps": 520,
+      "wall_seconds": 130.1,
+      "steps_per_sec": 3.998,
+      "frame_stats": {
+        "mean_pixel": 135.13092320760092,
+        "min_frame_mean": 129.10975138346353,
+        "max_frame_mean": 141.22040812174478
+      },
+      "parity": {
+        "positions_checked": 3640,
+        "positions_agreed": 3608,
+        "agreement_rate": 0.991209,
+        "n_mismatches": 32,
+        "max_mismatch_top2_gap": 0.75,
+        "mismatches_within_tie_band": true,
+        "rate_ok": true
+      }
+    },
+    {
+      "rollout_id": "task08_ep02",
+      "task_id": 8,
+      "episode_idx": 2,
+      "seed": 1042,
+      "success": true,
+      "n_timesteps": 460,
+      "wall_seconds": 115.0,
+      "steps_per_sec": 3.999,
+      "frame_stats": {
+        "mean_pixel": 134.53906817228898,
+        "min_frame_mean": 129.67833964029947,
+        "max_frame_mean": 141.81703186035156
+      },
+      "parity": {
+        "positions_checked": 3220,
+        "positions_agreed": 3169,
+        "agreement_rate": 0.984161,
+        "n_mismatches": 51,
+        "max_mismatch_top2_gap": 1.125,
+        "mismatches_within_tie_band": true,
+        "rate_ok": true
+      }
+    },
+    {
+      "rollout_id": "task08_ep03",
+      "task_id": 8,
+      "episode_idx": 3,
+      "seed": 1043,
+      "success": true,
+      "n_timesteps": 398,
+      "wall_seconds": 99.3,
+      "steps_per_sec": 4.007,
+      "frame_stats": {
+        "mean_pixel": 134.45678126911824,
+        "min_frame_mean": 129.13113403320312,
+        "max_frame_mean": 141.02660624186197
+      },
+      "parity": {
+        "positions_checked": 2786,
+        "positions_agreed": 2724,
+        "agreement_rate": 0.977746,
+        "n_mismatches": 62,
+        "max_mismatch_top2_gap": 1.125,
+        "mismatches_within_tie_band": true,
+        "rate_ok": true
+      }
+    },
+    {
+      "rollout_id": "task08_ep04",
+      "task_id": 8,
+      "episode_idx": 4,
+      "seed": 1044,
+      "success": false,
+      "n_timesteps": 520,
+      "wall_seconds": 130.1,
+      "steps_per_sec": 3.998,
+      "frame_stats": {
+        "mean_pixel": 134.43015017387194,
+        "min_frame_mean": 128.9752655029297,
+        "max_frame_mean": 138.15525817871094
+      },
+      "parity": {
+        "positions_checked": 3640,
+        "positions_agreed": 3560,
+        "agreement_rate": 0.978022,
+        "n_mismatches": 80,
+        "max_mismatch_top2_gap": 0.875,
+        "mismatches_within_tie_band": true,
+        "rate_ok": true
+      }
+    },
+    {
+      "rollout_id": "task09_ep00",
+      "task_id": 9,
+      "episode_idx": 0,
+      "seed": 1045,
+      "success": true,
+      "n_timesteps": 435,
+      "wall_seconds": 108.6,
+      "steps_per_sec": 4.007,
+      "frame_stats": {
+        "mean_pixel": 121.43677351794481,
+        "min_frame_mean": 115.52574666341145,
+        "max_frame_mean": 125.63579813639323
+      },
+      "parity": {
+        "positions_checked": 3045,
+        "positions_agreed": 2957,
+        "agreement_rate": 0.9711,
+        "n_mismatches": 88,
+        "max_mismatch_top2_gap": 1.0,
+        "mismatches_within_tie_band": true,
+        "rate_ok": true
+      }
+    },
+    {
+      "rollout_id": "task09_ep01",
+      "task_id": 9,
+      "episode_idx": 1,
+      "seed": 1046,
+      "success": true,
+      "n_timesteps": 471,
+      "wall_seconds": 117.4,
+      "steps_per_sec": 4.011,
+      "frame_stats": {
+        "mean_pixel": 120.21795019323912,
+        "min_frame_mean": 116.11911010742188,
+        "max_frame_mean": 126.4296875
+      },
+      "parity": {
+        "positions_checked": 3297,
+        "positions_agreed": 3229,
+        "agreement_rate": 0.979375,
+        "n_mismatches": 68,
+        "max_mismatch_top2_gap": 1.0,
+        "mismatches_within_tie_band": true,
+        "rate_ok": true
+      }
+    },
+    {
+      "rollout_id": "task09_ep02",
+      "task_id": 9,
+      "episode_idx": 2,
+      "seed": 1047,
+      "success": false,
+      "n_timesteps": 520,
+      "wall_seconds": 130.0,
+      "steps_per_sec": 4.001,
+      "frame_stats": {
+        "mean_pixel": 124.31118825276693,
+        "min_frame_mean": 115.60235595703125,
+        "max_frame_mean": 129.96651713053384
+      },
+      "parity": {
+        "positions_checked": 3640,
+        "positions_agreed": 3532,
+        "agreement_rate": 0.97033,
+        "n_mismatches": 108,
+        "max_mismatch_top2_gap": 0.875,
+        "mismatches_within_tie_band": true,
+        "rate_ok": true
+      }
+    },
+    {
+      "rollout_id": "task09_ep03",
+      "task_id": 9,
+      "episode_idx": 3,
+      "seed": 1048,
+      "success": true,
+      "n_timesteps": 371,
+      "wall_seconds": 92.6,
+      "steps_per_sec": 4.005,
+      "frame_stats": {
+        "mean_pixel": 120.31591566553655,
+        "min_frame_mean": 115.41915384928386,
+        "max_frame_mean": 124.56887817382812
+      },
+      "parity": {
+        "positions_checked": 2597,
+        "positions_agreed": 2519,
+        "agreement_rate": 0.969965,
+        "n_mismatches": 78,
+        "max_mismatch_top2_gap": 1.25,
+        "mismatches_within_tie_band": true,
+        "rate_ok": true
+      }
+    },
+    {
+      "rollout_id": "task09_ep04",
+      "task_id": 9,
+      "episode_idx": 4,
+      "seed": 1049,
+      "success": false,
+      "n_timesteps": 520,
+      "wall_seconds": 129.7,
+      "steps_per_sec": 4.009,
+      "frame_stats": {
+        "mean_pixel": 123.80571307646923,
+        "min_frame_mean": 117.39972432454427,
+        "max_frame_mean": 125.47459411621094
+      },
+      "parity": {
+        "positions_checked": 3640,
+        "positions_agreed": 3520,
+        "agreement_rate": 0.967033,
+        "n_mismatches": 120,
+        "max_mismatch_top2_gap": 1.5,
+        "mismatches_within_tie_band": true,
+        "rate_ok": true
+      }
+    }
+  ]
+}
