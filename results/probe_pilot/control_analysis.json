@@ -1,0 +1,35 @@
+{
+  "single_split_result": {
+    "timestep_auroc": 0.6699309387673692,
+    "permutation_p": 0.1658291457286432,
+    "n_permutations": 199,
+    "verdict": "not significant"
+  },
+  "aggregate_result": {
+    "true_label_split_mean": 0.6458761697362669,
+    "true_label_split_std": 0.14327334163837874,
+    "n_splits": 20,
+    "n_above_chance": 16,
+    "matched_null_mean": 0.4911151007923504,
+    "matched_null_std": 0.1596101799207615,
+    "null_mean_of_k_std": 0.033726465607854875,
+    "sd_above_null": 4.592307422908866,
+    "p_bootstrap_of_means": 0.0,
+    "p_bootstrap_reportable": "< 0.0050",
+    "p_ranksum": 5.189450204238775e-05
+  },
+  "gate_calibration": {
+    "mandated_range": [
+      0.4,
+      0.6
+    ],
+    "empirical_null_mean": 0.5024746948487568,
+    "empirical_null_std": 0.17510061924619552,
+    "fraction_of_clean_runs_inside_mandated_range": 0.3768844221105528,
+    "two_sd_range": [
+      0.1522734563563658,
+      0.8526759333411479
+    ]
+  },
+  "uncontrolled_confound": "Both nulls permute rollout->label globally, destroying the task->outcome correlation. Per-task success is 40-100% in this corpus, so task decoding alone would beat these nulls. Significance here does NOT establish failure-relevant signal specifically."
+}
