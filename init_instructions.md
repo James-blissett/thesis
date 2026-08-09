@@ -223,3 +223,119 @@ On reading the result, follow the interpretation guardrails above: check the
 shuffle-control AUROC lands in [0.40, 0.60] *before* reading anything into the primary
 number, and report the per-task split composition, since per-task success ranges 40-100%
 here and the probe can partially exploit task identity.
+
+---
+
+## STATUS — end of session 2026-08-01
+
+**Done: Step 4 (probe run + control diagnostics). Remaining: Step 5 projections, one
+follow-up diagnostic, and a spec amendment. Nothing is running; nothing is committed.**
+
+### Headline
+
+The probe works and there is a real effect, but **the single locked number does not
+demonstrate it** — only the aggregate over many splits does. Both facts matter and the
+second is easy to lose.
+
+| result | value | verdict |
+|---|---|---|
+| locked split (seed 42) timestep AUROC | **0.670** | permutation p = **0.17**, not significant |
+| mean over 20 GroupShuffleSplit seeds | **0.646** (sd 0.143, 16/20 above 0.5) | **4.6 SD above matched null**, p < 0.005 |
+| matched null (split resampled + labels permuted, n=199) | 0.491 (sd 0.160) | centred on chance |
+| rollout AUROC, locked split | mean 0.625 / max 0.375 | uninformative: 2x8 test pairs |
+
+The per-split error bar (+-0.14) is wider than the effect (0.15 above chance), so any one
+split is underpowered at 50 rollouts. **That tension is the pilot's real finding, and it
+is a sharper argument for the full corpus than the headline AUROC was.**
+
+### The shuffle-control gate in Step 4 is miscalibrated — do not trust it as written
+
+The first run's control landed at 0.3955, marginally outside the mandated [0.40, 0.60],
+which looks like a failure and is not one. 200 permutations on the locked split give an
+empirical null of **0.503 +- 0.175**, in which 0.3955 sits at the **32nd percentile** — an
+ordinary draw. **The mandated band admits only 38% of clean runs**; it would fail a
+correct pipeline roughly two times in three at this corpus size.
+
+Amend Step 4's control criterion. Preferred: report the permutation p-value instead of a
+fixed band, since a p-value does not need recalibrating when n changes. If a band is
+wanted anyway, +-2 SD is [0.15, 0.85] here. **This is an edit to a locked spec and is
+deliberately left for the user to make.**
+
+### The confound that limits every number above
+
+**Neither null separates failure signal from task identity.** Both permute the
+rollout->label mapping *globally*, which destroys the task->outcome correlation along
+with the failure signal. Per-task success runs 40-100% in this corpus, so a probe that
+decoded only *which task this is* would beat these nulls comfortably. The 4.6 SD result
+is consistent with genuine failure-relevant signal at layer 15 **and equally consistent
+with task decoding.**
+
+The unrun fix: **a within-task permutation** — shuffle labels only among rollouts sharing
+a task, holding task identity fixed. That isolates the failure component. ~5 min with the
+feature cache warm. Until it is run, the pilot's claim must stay at "directional,
+pipeline-validated"; the global permutation test makes the confound look resolved when it
+is not. This is the same confound flagged at line 105, but the significance testing added
+today makes it much easier to over-read.
+
+### Files written this session (all UNCOMMITTED — nothing pushed)
+
+- `control_diagnostic.py` — produces the distributions (A: permutations on the locked
+  split; B: split sensitivity with true labels; C: matched null). Imports probe_layer's
+  feature extraction, split and model unchanged, so the diagnostic cannot drift from the
+  probe. **Not a redesign of the locked probe.**
+- `analyse_control.py` — the valid significance tests over those distributions.
+  Separate because the tests are cheap and the distributions are expensive.
+- `results/probe_pilot/` — `metrics.json`, `scores_test.npz`, `rollout_score_hist.png`
+  (from probe_layer.py), plus `control_diagnostic.json` and `control_analysis.json`. 80 KB
+  total, not covered by .gitignore.
+- Feature cache at `/data/tmp/probe_feats_layer15.npz` (316 MB, on the big volume).
+  Makes any rerun start in seconds instead of re-reading 40 GB. Regenerable; not precious.
+
+**A trap worth knowing about:** `control_diagnostic.json` carries a field named
+`p_null_ge_true_split_mean_INVALID`. It compares individual null draws (sd ~0.16) against
+the *mean* of the true-label splits (SE ~0.03) — a draw against an average — so it reads
+small whether or not an effect exists. It printed 0.156 and it means nothing. The valid
+numbers are in `control_analysis.json`. The field is kept only because it appears in the
+run logs and would otherwise be quoted by someone reading them.
+
+### Also fixed this session
+
+`manifests/` was **untracked** despite the 2026-07-26 STATUS claiming it was committed —
+the commit named "rollout manifests" contained only `init_instructions.md` and
+`watch_corpus.sh`. The 40 GB corpus's only provenance record was one wipe from gone. Now
+pushed (`98ee775`, 51 files verified in `origin/main`).
+
+### Pick up here
+
+```bash
+cd /ephemeral/code/thesis-introspection && source env.sh
+
+# 1. PUSH FIRST — everything below is uncommitted. Suggested message:
+#    "probe pilot: layer 15 AUROC 0.670; effect significant only in aggregate"
+git status --short          # expect: control_diagnostic.py, analyse_control.py, results/
+
+# 2. The within-task permutation (not yet implemented; ~5 min once written)
+#    Extend control_diagnostic.py with a null that permutes labels WITHIN each task_id,
+#    then rerun analyse_control.py against it. This is the gate on claiming anything
+#    about failure signal specifically.
+
+# 3. Step 5 — the only untouched step
+python project_hidden_states.py --layers 15      # then remaining layers in tmux
+
+# Reruns are cheap now; the feature cache skips the 40 GB read:
+python control_diagnostic.py --n-perm 200 --n-splits 20 --n-matched 200
+python analyse_control.py
+```
+
+### Acceptance criteria status
+
+- (1) environment, (2) corpus + sanity gate: **met** in the previous session.
+- (3) `probe_layer.py` pushed and `metrics.json` written: **script pushed, results not**.
+  The criterion's "shuffle-control AUROC in [0.40, 0.60]" is **not met at 0.3955 and
+  should not be** — see the miscalibration section; the criterion itself is what needs
+  amending, not the result.
+- (4) projections: **not started**.
+- (5) push checkpoints: manifests verified in `origin/main`; **this session's outputs are
+  not yet pushed**.
+- (6) no pins or model touched: **met** — nothing in this session went near the
+  environment or the model.
