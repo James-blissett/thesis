@@ -351,3 +351,111 @@ python analyse_control.py
   session's scripts and results at `b58e5db` / `718a1b2`, `git diff origin/main` empty.
 - (6) no pins or model touched: **met** — nothing in this session went near the
   environment or the model.
+
+---
+
+## STATUS — end of session 2026-08-10
+
+**Done: Task B (label scheme B, late-window timesteps), scripts for both tasks pushed
+(`7d6b64a`). Remaining: Task A has NOT been run. Nothing is running.**
+
+### TODO NEXT — run Task A (~70 min, cache warm, no corpus read)
+
+The within-task permutation null for the **all-timestep** scheme. Scripts are written,
+smoke-tested and pushed; only the runs are outstanding. Started at 2026-08-10 13:40 and
+cancelled a few minutes in, before any output was written — `results/probe_pilot/` is
+still the 2026-08-01 files, so there is nothing to clean up or distrust.
+
+```bash
+cd /ephemeral/code/thesis-introspection && source env.sh
+
+# primary: degenerate tasks (2, 5) excluded -> control_diagnostic_nondegenerate.json
+python control_diagnostic.py --n-perm 200 --n-splits 20 --n-matched 200 \
+    --n-perm-wt 200 --n-matched-wt 200 --exclude-degenerate-tasks
+python analyse_control.py --in control_diagnostic_nondegenerate.json
+
+# secondary, for continuity with the 2026-08-01 numbers -> control_diagnostic.json
+python control_diagnostic.py --n-perm 200 --n-splits 20 --n-matched 200 \
+    --n-perm-wt 200 --n-matched-wt 200
+python analyse_control.py
+```
+
+The secondary run **overwrites** `results/probe_pilot/control_diagnostic.json`. Its A/B/C
+distributions use unchanged seeds and should reproduce the 2026-08-01 values exactly;
+`locked_result.reproduces_published_full_corpus` in the new file is the assertion of that,
+and it is worth checking rather than assuming. If it comes out false, the refactor drifted
+and the Task B numbers below need re-examining too.
+
+Until this runs, the all-timestep scheme's 4.6 SD result is still **rung 2** of the claim
+ladder — signal exists vs. the global null, failure specificity untested. Scheme B carries
+its own within-task control and does not depend on this.
+
+### Task B result: late window t/T >= 0.8
+
+Window behaved as designed: 3844 of 19289 timesteps kept, per-rollout kept fraction
+0.196-0.200, normalised-time span [0.800, 0.998] — uniform across rollouts regardless of
+length. Selection is by normalised time only; absolute-index selection appears nowhere.
+
+Primary subset (tasks 2 and 5 dropped as degenerate; 40 rollouts, 20F/20S, 3357 timesteps
+— counts derived from the manifests at runtime, **not** the "13 failures" the handoff
+amendment predicted):
+
+| statistic | scheme B | scheme A (2026-08-01) |
+|---|---|---|
+| locked split (seed 42) | 0.896 | 0.670 |
+| 20-seed mean | **0.872** (sd 0.096) | 0.646 (sd 0.143) |
+| vs within-task null | null 0.408, p < 0.0051, ranksum 2e-12 | not yet run |
+| vs global null | null 0.495, p < 0.0050 | p < 0.005 |
+| locked split vs within-task null | p = 0.000 (0/200) | — |
+
+**Rung 4 reached for scheme B**: signal strengthens under late-window labels and survives
+the within-task null on the non-degenerate subset. Pilot-scale and directional.
+
+The split spread fell 0.143 -> 0.096 rather than holding, against the guardrail's
+expectation. Still ~8 test rollouts per fold, so this is not evidence the spread problem
+is solved.
+
+### Two things not to over-read in the Task B numbers
+
+**The within-task null centres at 0.408, not 0.5** (both the locked-split and resampled
+variants; the global nulls sit at ~0.50 as expected). This is arithmetic, not a finding:
+permuting a fixed multiset of 5 labels within a task induces an expected correlation of
+-1/(n-1) = -0.25 between permuted and true labels, so the null probe is systematically
+anti-correlated with truth and lands below chance. Consequences: the permutation
+p-values stay valid — the permuted distribution is the correct reference for the
+permutation scheme — but the **SD figures are inflated**. "10.4 SD above the within-task
+null" is arithmetically true and misleading; the gap against chance is 0.87 vs 0.5, not
+0.87 vs 0.41. Quote the AUROC and the p-value, never the SD count. The same bias is why
+the within-task p (0/200) comes out *smaller* than the global p (10/199) on the locked
+split, which otherwise looks backwards for a stricter null.
+
+**Elapsed time is not controlled.** The subset late window is 2080F/1277S despite 20/20
+rollouts, because failures run to the ~520 cap so their final 20% is a bigger slice, and
+their window sits at absolute steps ~416-520 where successes' sits at ~230-290. The window
+rule stops the *selection* from manufacturing this; it cannot remove the corpus's own. The
+within-task null does not separate it either — within a task, failures are still the long
+rollouts. **Scheme B licenses "failure-specific signal", not "a representation of failure
+as such."** A duration-matched or elapsed-time-regressed control is the fix and belongs in
+the full-corpus run. Recorded in `metrics.json` under `window.residual_confound`.
+
+### Files this session
+
+- `control_diagnostic.py` — adds A-wt / C-wt (within-task permutation, locked split and
+  resampled split), `--exclude-degenerate-tasks`, `--out-name`. Degenerate tasks are
+  detected from the manifests at runtime, never hardcoded. Existing A/B/C seeds and logic
+  are untouched, so the old distributions reproduce. Pushed at `7d6b64a`.
+- `analyse_control.py` — same valid tests (bootstrap-of-means, rank-sum) now run against
+  both nulls, with an explicit `claim_reached` verdict sentence. Pushed at `7d6b64a`.
+- `probe_late_window.py` — scheme B. Pushed at `7d6b64a`.
+- `results/probe_late_window/` — `metrics.json`, `scores_test.npz`. **UNCOMMITTED.**
+
+### Acceptance criteria status (handoff amendment of 2026-08-10)
+
+- (1) A-wt / C-wt produced, p-values reported, counts runtime-derived: **code met, not
+  yet run** — see TODO NEXT.
+- (2) primary comparison with explicit verdict: **not met**, blocked on the same run.
+- (3) normalised-time selection only: **met**.
+- (4) scheme B reported with its own within-task control: **met**.
+- (5) push checkpoints: scripts pushed at `7d6b64a`; **the Task B results push is still
+  open.**
+- (6) no edits to locked constants, pins or capture code: **met**.
