@@ -72,6 +72,13 @@ Write this while the corpus generates; run it when generation completes.
   - Timestep-level test AUROC (primary metric).
   - Rollout-level AUROC via per-rollout mean and max of timestep probabilities (report, but note: only ~10 test rollouts, so treat as descriptive, not conclusive).
   - **Mandatory control**: refit with the rollout-to-label mapping permuted (then broadcast), same split. Expect AUROC ~ 0.5; if > 0.55 (tolerance widened for small n: [0.40, 0.60] acceptable at ~10k timesteps), flag loudly — indicates leakage.
+    > **[0.40, 0.60] IS MISCALIBRATED — measured 2026-08-01.** The empirical null at this
+    > corpus size is 0.503 +- 0.175, so this band admits only **38%** of clean runs and
+    > fails a correct pipeline roughly two times in three. A single control draw also
+    > cannot distinguish 0.395 from 0.50 when the test fold holds ~10 rollouts. Use the
+    > permutation p-value from `analyse_control.py` instead of a fixed band (it needs no
+    > recalibration as n changes); +-2 SD here would be [0.15, 0.85]. Band left unedited
+    > pending the user's call — see STATUS 2026-08-01.
 - **Outputs** to `results/probe_pilot/`: `metrics.json` (all AUROCs, split sizes, class counts, layer, position scheme, seed, corpus manifest hash, timestamp) and `scores_test.npz` (per-timestep probabilities, rollout IDs, labels). Optional single PNG: histogram of per-rollout mean scores by class.
 - Single self-contained script, config constants at top (`LAYER = 15`), modularise later. Runtime target < 10 min at this corpus size.
 - [PUSH] Commit script before running; commit results after.
@@ -93,7 +100,7 @@ Recreates a script lost in the wipe. Prior known-good behaviour on the full 98.5
 
 1. Environment rebuilt; `pip check` clean; pins intact; parity check passing.
 2. 50-rollout corpus on disk with manifests; overall success rate reported and within the sanity gate.
-3. `probe_layer.py` pushed; `metrics.json` with timestep AUROC, both rollout AUROCs, shuffle-control AUROC in [0.40, 0.60].
+3. `probe_layer.py` pushed; `metrics.json` with timestep AUROC, both rollout AUROCs, shuffle-control AUROC in [0.40, 0.60] — **but see the miscalibration note on that band in Step 4; the measured control of 0.3955 fails this criterion and should not.**
 4. `project_hidden_states.py` pushed; embeddings + PNGs for at least layer 15 (both methods, all three colourings); remaining layers may finish in tmux post-session.
 5. Every [PUSH] checkpoint was surfaced to the user with a proposed commit message, and the user's pushes are verified read-only at the end (`git fetch && git log origin/main` — all expected files present in remote history).
 6. No modifications to environment pins or the model.
@@ -153,8 +160,14 @@ The subtlety, stated precisely so it is implemented rather than approximated:
   **not** backed up anywhere else — treat them as reproducible-but-expensive (~1.4 h to
   regenerate via `python gen_rollouts.py`), not as safe.
 - **Manifests: `manifests/` in this repo (236 KB, 51 files)** — the 50 per-rollout
-  manifests plus `session_summary.json`. These are committed, so the corpus's provenance
-  (seeds, success flags, parity stats, per-rollout timings) survives even if `/data` is lost.
+  manifests plus `session_summary.json`, carrying the corpus's provenance (seeds, success
+  flags, parity stats, per-rollout timings) so it survives even if `/data` is lost.
+  **CORRECTION (2026-08-01): this section originally claimed these were committed. They
+  were not** — the commit named "rollout manifests" (`0c36e61`) contained only
+  `init_instructions.md` and `watch_corpus.sh`, and `manifests/` sat untracked for a week
+  while it was the sole provenance record for a 40 GB corpus that exists in one place.
+  Actually committed at `98ee775`. Verify claims like this with `git ls-tree`, not with
+  the commit subject line.
 - Model checkpoint cached at `/data/hf-cache` (15 GB), venv at `/ephemeral/code/venv`.
 
 ### Sanity gate: PASSED
@@ -228,8 +241,8 @@ here and the probe can partially exploit task identity.
 
 ## STATUS — end of session 2026-08-01
 
-**Done: Step 4 (probe run + control diagnostics). Remaining: Step 5 projections, one
-follow-up diagnostic, and a spec amendment. Nothing is running; nothing is committed.**
+**Done: Step 4 (probe run + control diagnostics), pushed. Remaining: Step 5 projections,
+one follow-up diagnostic, and a spec amendment. Nothing is running.**
 
 ### Headline
 
@@ -277,7 +290,7 @@ pipeline-validated"; the global permutation test makes the confound look resolve
 is not. This is the same confound flagged at line 105, but the significance testing added
 today makes it much easier to over-read.
 
-### Files written this session (all UNCOMMITTED — nothing pushed)
+### Files written this session — all pushed (`b58e5db`, `718a1b2`), tree clean
 
 - `control_diagnostic.py` — produces the distributions (A: permutations on the locked
   split; B: split sensitivity with true labels; C: matched null). Imports probe_layer's
@@ -310,9 +323,8 @@ pushed (`98ee775`, 51 files verified in `origin/main`).
 ```bash
 cd /ephemeral/code/thesis-introspection && source env.sh
 
-# 1. PUSH FIRST — everything below is uncommitted. Suggested message:
-#    "probe pilot: layer 15 AUROC 0.670; effect significant only in aggregate"
-git status --short          # expect: control_diagnostic.py, analyse_control.py, results/
+# 1. Session 2026-08-01 outputs are pushed and verified in origin/main; tree is clean.
+#    Nothing to recover before starting.
 
 # 2. The within-task permutation (not yet implemented; ~5 min once written)
 #    Extend control_diagnostic.py with a null that permutes labels WITHIN each task_id,
@@ -330,12 +342,12 @@ python analyse_control.py
 ### Acceptance criteria status
 
 - (1) environment, (2) corpus + sanity gate: **met** in the previous session.
-- (3) `probe_layer.py` pushed and `metrics.json` written: **script pushed, results not**.
-  The criterion's "shuffle-control AUROC in [0.40, 0.60]" is **not met at 0.3955 and
-  should not be** — see the miscalibration section; the criterion itself is what needs
-  amending, not the result.
+- (3) `probe_layer.py` pushed and `metrics.json` written: **met**. The criterion's
+  "shuffle-control AUROC in [0.40, 0.60]" is **not met at 0.3955 and should not be** —
+  see the miscalibration section; the criterion itself is what needs amending, not the
+  result.
 - (4) projections: **not started**.
-- (5) push checkpoints: manifests verified in `origin/main`; **this session's outputs are
-  not yet pushed**.
+- (5) push checkpoints: all met and verified read-only — manifests at `98ee775`, this
+  session's scripts and results at `b58e5db` / `718a1b2`, `git diff origin/main` empty.
 - (6) no pins or model touched: **met** — nothing in this session went near the
   environment or the model.
