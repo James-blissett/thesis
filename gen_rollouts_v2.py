@@ -102,6 +102,16 @@ MIN_FREE_GB = 200          # refuse to start a 16-hour run into a disk that cann
 EXPECTED_SUCCESS_RATE = 0.53
 SUCCESS_RATE_TOLERANCE = 0.15
 
+# Rollout-level gate on logit/token alignment. Zero mismatches is the expectation and the
+# smoke test met it (0 of 3640, twice). But this run is unattended, and a token whose
+# global argmax falls outside the 256-bin action window is a rare, self-recording anomaly
+# -- `predict_action` clips it, the manifest logs it, and it is diagnosable afterwards.
+# Killing a nine-hour run for one such position would be the wrong trade. A genuine wiring
+# bug (wrong slice, wrong flip, off-by-one in the generate-step alignment) mismatches
+# essentially every position and so still dies on the first rollout. Same reasoning as v1's
+# parity gate: the failure modes differ by three orders of magnitude, not by a hair.
+LOGIT_MISMATCH_MAX_RATE = 0.001   # 3640 positions/rollout -> aborts at >3 bad positions
+
 
 def git_commit() -> str:
     try:
@@ -206,8 +216,18 @@ class AlignmentAccumulator:
             self.first_failure = {"t_env": t_env, **rep}
 
     @property
+    def mismatch_rate(self) -> float:
+        return self.n_mismatch / max(self.n_positions, 1)
+
+    @property
     def ok(self) -> bool:
+        """Clean. Anything else is worth printing even when the run continues."""
         return self.n_mismatch == 0
+
+    @property
+    def fatal(self) -> bool:
+        """Bad enough that the logits field is not what it claims to be."""
+        return self.mismatch_rate > LOGIT_MISMATCH_MAX_RATE
 
     def summary(self) -> dict:
         n = max(self.n_positions, 1)
@@ -294,6 +314,7 @@ def run_episode(vla, processor, env, init_state, task_description, writer, n_pos
         "success_ever": bool(success_latched),
         "logit_alignment": align.summary(),
         "logit_alignment_ok": align.ok,
+        "logit_alignment_fatal": align.fatal,
         "logit_alignment_first_failure": align.first_failure,
         "verification": verification,
         "termination_reason": "step_budget_exhausted",
@@ -461,6 +482,21 @@ def main():
                     raise
 
                 if not outcome["logit_alignment_ok"]:
+                    fail = outcome["logit_alignment_first_failure"]
+                    la = outcome["logit_alignment"]
+                    verdict = "STOPPING" if outcome["logit_alignment_fatal"] else "continuing"
+                    print(
+                        f"!!! {rollout_id}: {la['n_real_mismatch']}/{la['positions_checked']} "
+                        f"positions failed logit/token alignment "
+                        f"(rate {la['n_real_mismatch']/la['positions_checked']:.2e}, "
+                        f"threshold {LOGIT_MISMATCH_MAX_RATE:.0e}) -- {verdict}. "
+                        f"first at t_env={fail['t_env']}, "
+                        f"n_outside_window={fail['n_outside_window']}, "
+                        f"shortfalls={fail['shortfalls']}. Recorded in the manifest.",
+                        flush=True,
+                    )
+
+                if outcome["logit_alignment_fatal"]:
                     fail = outcome["logit_alignment_first_failure"]
                     shutil.rmtree(writer.dir, ignore_errors=True)
                     raise RuntimeError(

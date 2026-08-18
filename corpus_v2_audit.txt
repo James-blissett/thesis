@@ -1,0 +1,74 @@
+progress.jsonl rows: 300  unique: 300
+rollout dirs: 300
+complete manifests: 300   corrupt/incomplete: 0 
+
+=== per-task success (success_ever / 30) ===
+task   succ  fail   flag                              name
+0        11    19                                     LIVING_ROOM_SCENE2_put_both_the_alphabet_sou
+1        24     6                                     LIVING_ROOM_SCENE2_put_both_the_cream_cheese
+2        16    14                                     KITCHEN_SCENE3_turn_on_the_stove_and_put_the
+3         5    25                                     KITCHEN_SCENE4_put_the_black_bowl_in_the_bot
+4         8    22                                     LIVING_ROOM_SCENE5_put_the_white_mug_on_the_
+5        22     8                                     STUDY_SCENE1_pick_up_the_book_and_place_it_i
+6        13    17                                     LIVING_ROOM_SCENE6_put_the_white_mug_on_the_
+7        15    15                                     LIVING_ROOM_SCENE1_put_both_the_alphabet_sou
+8        10    20                                     KITCHEN_SCENE8_put_both_moka_pots_on_the_sto
+9        13    17                                     KITCHEN_SCENE6_put_the_yellow_and_white_mug_
+ALL     137   163   overall 45.7%
+
+=== size / timesteps ===
+corpus bytes (manifest sum): 147.2 GB
+policy timesteps: 156,000   env steps: 159,000
+T_total all == 520: True
+T_env_total all == 530: True
+P=7 rollouts: 30   P=3: 270
+layers_stored all 33: True
+
+=== logit alignment across corpus ===
+positions 1,092,000  ok 1,092,000 (100.000000%)  real mismatches 0  outside window 0  ties 15256 (1.40%)
+
+=== init-state accounting ===
+init_state_index matches assignment for all 300: True  []
+no duplicate init states within any task: True
+
+=== success dynamics (Change 1) ===
+success_ever 137   success_final 109   latched then LOST by step 520: 28 (20.4% of successes)
+t_success: min 158 median 267 max 512
+successes that fire after v1's 520-step cap would have been irrelevant: n/a (no early term)
+
+=== anomalies ===
+MUJOCO_LOG.TXT recorded one sim instability during collection:
+  "Nan, Inf or huge value in QACC at DOF 9 ... Time = 0.5480"  (2026-08-17 18:57:58 UTC)
+Traced to task05_trial27. MuJoCo recovered; the rollout is structurally intact
+(all obs finite, |joint_vel| max 7.06, hidden states finite) but contains one
+physically implausible single-step end-effector displacement of 0.5975 m against
+a corpus median of 0.0106 m and a next-highest value of 0.0685 m -- a 56x
+singleton outlier.
+
+NOT excluded. Documented exclusion rule if wanted:
+  drop rollouts whose max single-step ||delta eef|| exceeds 0.3 m
+  -> excludes exactly task05_trial27 (task 5 would go 30 -> 29, 22 successes).
+
+Corpus-wide sanity: 0 rollouts with non-finite observations, 0 with |joint_vel| > 50.
+
+=== reproducibility note ===
+v1 and v2 rollouts on the SAME init state are not identical. Checked directly:
+v1 task04_ep00 and v2 task04_trial00 (both init state 0) emit bit-identical
+executed actions for 66 policy steps, then diverge; v1 succeeded at step 249,
+v2 never succeeds. Divergence coincides with an x-dimension top-2 logit gap of
+1.0, inside the fp-nondeterminism band v1 itself measured between its own two
+forward passes (mean 0.75, max 1.375). 66 identical steps rules out any
+systematic wiring difference. Greedy decoding is deterministic given identical
+logits, but the logits are not bitwise reproducible across execution contexts,
+and one flipped argmax at a near-tie compounds through the physics.
+
+Consequences:
+  * "Re-running a consumed init-state index produces a byte-identical rollout"
+    is false. It produces a shared-prefix rollout that then diverges. Init-state
+    indices are still not independent samples, so the unconsumed-index rule for
+    extension batches stands.
+  * "The v2 corpus is a strict superset of v1" is false. Truncating v2 at
+    t_success does not reproduce v1 trajectories. v2 supersedes v1; the two
+    corpora must not be pooled or compared rollout-by-rollout.
+  * Internal validity of v2 is unaffected: 300 distinct init states, all
+    captured in one execution context.
