@@ -53,15 +53,15 @@ them by analyse_control.py -- see the warning on `p_null_ge_true_split_mean_INVA
 
 Usage:
     source env.sh
-    python control_diagnostic.py                 # 20 permutations, 20 splits
+    python analysis/control_diagnostic.py                 # 20 permutations, 20 splits
 
     # primary analysis (degenerate tasks excluded) and its secondary counterpart:
-    python control_diagnostic.py --n-perm 200 --n-splits 20 --n-matched 200 \
+    python analysis/control_diagnostic.py --n-perm 200 --n-splits 20 --n-matched 200 \
         --n-perm-wt 200 --n-matched-wt 200 --exclude-degenerate-tasks
-    python control_diagnostic.py --n-perm 200 --n-splits 20 --n-matched 200 \
+    python analysis/control_diagnostic.py --n-perm 200 --n-splits 20 --n-matched 200 \
         --n-perm-wt 200 --n-matched-wt 200
 
-    python analyse_control.py                    # valid tests over the above
+    python analysis/analyse_control.py                    # valid tests over the above
 """
 
 from __future__ import annotations

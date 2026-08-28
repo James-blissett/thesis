@@ -18,7 +18,7 @@ Design is locked (Step 4 of init_instructions.md):
 
 Usage:
     source env.sh
-    python probe_layer.py
+    python analysis/probe_layer.py
 """
 
 from __future__ import annotations

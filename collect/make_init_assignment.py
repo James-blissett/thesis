@@ -18,8 +18,8 @@ colliding with this one.
 
 Usage:
     source env.sh
-    python make_init_assignment.py                       # writes ./init_state_assignment.json
-    python make_init_assignment.py --dry-run             # print, write nothing
+    python collect/make_init_assignment.py                       # writes ./init_state_assignment.json
+    python collect/make_init_assignment.py --dry-run             # print, write nothing
 """
 
 from __future__ import annotations

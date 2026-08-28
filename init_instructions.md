@@ -158,7 +158,7 @@ The subtlety, stated precisely so it is implemented rather than approximated:
   *different physical volume* from `/ephemeral` (`/dev/vda1`). The previous wipes hit
   `/ephemeral`; `/data` survived them. The `.pt` files are far too large for git and are
   **not** backed up anywhere else — treat them as reproducible-but-expensive (~1.4 h to
-  regenerate via `python gen_rollouts.py`), not as safe.
+  regenerate via `python collect/gen_rollouts.py`), not as safe.
 - **Manifests: `manifests/` in this repo (236 KB, 51 files)** — the 50 per-rollout
   manifests plus `session_summary.json`, carrying the corpus's provenance (seeds, success
   flags, parity stats, per-rollout timings) so it survives even if `/data` is lost.
@@ -221,8 +221,8 @@ affects only the verification logit, never the representation.
 
 ```bash
 cd /ephemeral/code/thesis-introspection && source env.sh
-python probe_layer.py                            # ~1 min; -> results/probe_pilot/
-python project_hidden_states.py --layers 15      # then remaining layers in tmux
+python analysis/probe_layer.py                            # ~1 min; -> results/probe_pilot/
+python analysis/project_hidden_states.py --layers 15      # then remaining layers in tmux
 ```
 
 Both scripts are written and validated end-to-end against a synthetic 12-rollout corpus
@@ -332,11 +332,11 @@ cd /ephemeral/code/thesis-introspection && source env.sh
 #    about failure signal specifically.
 
 # 3. Step 5 — the only untouched step
-python project_hidden_states.py --layers 15      # then remaining layers in tmux
+python analysis/project_hidden_states.py --layers 15      # then remaining layers in tmux
 
 # Reruns are cheap now; the feature cache skips the 40 GB read:
-python control_diagnostic.py --n-perm 200 --n-splits 20 --n-matched 200
-python analyse_control.py
+python analysis/control_diagnostic.py --n-perm 200 --n-splits 20 --n-matched 200
+python analysis/analyse_control.py
 ```
 
 ### Acceptance criteria status
@@ -370,14 +370,14 @@ still the 2026-08-01 files, so there is nothing to clean up or distrust.
 cd /ephemeral/code/thesis-introspection && source env.sh
 
 # primary: degenerate tasks (2, 5) excluded -> control_diagnostic_nondegenerate.json
-python control_diagnostic.py --n-perm 200 --n-splits 20 --n-matched 200 \
+python analysis/control_diagnostic.py --n-perm 200 --n-splits 20 --n-matched 200 \
     --n-perm-wt 200 --n-matched-wt 200 --exclude-degenerate-tasks
-python analyse_control.py --in control_diagnostic_nondegenerate.json
+python analysis/analyse_control.py --in control_diagnostic_nondegenerate.json
 
 # secondary, for continuity with the 2026-08-01 numbers -> control_diagnostic.json
-python control_diagnostic.py --n-perm 200 --n-splits 20 --n-matched 200 \
+python analysis/control_diagnostic.py --n-perm 200 --n-splits 20 --n-matched 200 \
     --n-perm-wt 200 --n-matched-wt 200
-python analyse_control.py
+python analysis/analyse_control.py
 ```
 
 The secondary run **overwrites** `results/probe_pilot/control_diagnostic.json`. Its A/B/C

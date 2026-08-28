@@ -28,8 +28,8 @@ of failure as such".
 
 Usage:
     source env.sh
-    python plot_auroc_by_layer.py
-    python plot_auroc_by_layer.py --results-root results/probe_all_layers --dark
+    python analysis/plot_auroc_by_layer.py
+    python analysis/plot_auroc_by_layer.py --results-root results/probe_all_layers --dark
 """
 
 from __future__ import annotations

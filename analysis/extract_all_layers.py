@@ -26,9 +26,9 @@ records its sha256 as provenance.
 
 Usage:
     source env.sh
-    python extract_all_layers.py                 # all stored layers, skip existing
-    python extract_all_layers.py --layers 0-32
-    python extract_all_layers.py --overwrite     # includes the layer-15 reference
+    python analysis/extract_all_layers.py                 # all stored layers, skip existing
+    python analysis/extract_all_layers.py --layers 0-32
+    python analysis/extract_all_layers.py --overwrite     # includes the layer-15 reference
 """
 
 from __future__ import annotations

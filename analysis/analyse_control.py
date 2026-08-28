@@ -36,10 +36,10 @@ within task, so they contribute identical rows to both sides and only dilute the
 
 Usage:
     source env.sh
-    python analyse_control.py                                  # full-corpus run
-    python analyse_control.py --in control_diagnostic_nondegenerate.json \
+    python analysis/analyse_control.py                                  # full-corpus run
+    python analysis/analyse_control.py --in control_diagnostic_nondegenerate.json \
                               --out control_analysis_nondegenerate.json
-    python analyse_control.py --n-boot 20000
+    python analysis/analyse_control.py --n-boot 20000
 """
 
 from __future__ import annotations

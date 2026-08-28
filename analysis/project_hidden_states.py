@@ -18,9 +18,9 @@ Design is locked (Step 5 of init_instructions.md):
 
 Usage:
     source env.sh
-    python project_hidden_states.py                    # all layers, both methods
-    python project_hidden_states.py --layers 15        # just layer 15
-    python project_hidden_states.py --replot-only      # redraw PNGs from saved .npz
+    python analysis/project_hidden_states.py                    # all layers, both methods
+    python analysis/project_hidden_states.py --layers 15        # just layer 15
+    python analysis/project_hidden_states.py --replot-only      # redraw PNGs from saved .npz
 """
 
 from __future__ import annotations

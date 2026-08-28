@@ -16,8 +16,8 @@ W&B is deliberately not used here.
 
 Usage:
     source env.sh
-    python gen_rollouts.py --smoke                 # one seeded rollout on task 0
-    python gen_rollouts.py                         # full 10 tasks x 5 rollouts
+    python collect/gen_rollouts.py --smoke                 # one seeded rollout on task 0
+    python collect/gen_rollouts.py                         # full 10 tasks x 5 rollouts
 """
 
 from __future__ import annotations

@@ -42,8 +42,8 @@ the manifests at runtime.
 
 Usage:
     source env.sh
-    python probe_late_window.py
-    python probe_late_window.py --n-perm-wt 200 --n-matched-wt 200 --n-splits 20
+    python analysis/probe_late_window.py
+    python analysis/probe_late_window.py --n-perm-wt 200 --n-matched-wt 200 --n-splits 20
 """
 
 from __future__ import annotations

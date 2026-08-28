@@ -107,4 +107,4 @@ print("libero_10 tasks:", benchmark.get_benchmark_dict()["libero_10"]().n_tasks,
 PY
 
 echo
-echo "=== setup complete. next: source env.sh && python gen_rollouts.py --smoke ==="
+echo "=== setup complete. next: source env.sh && python collect/gen_rollouts.py --smoke ==="

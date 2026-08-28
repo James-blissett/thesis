@@ -27,10 +27,10 @@ specified, running -10..519. Flagged for sign-off before the full run.
 
 Usage:
     source env.sh
-    python make_init_assignment.py
-    python gen_rollouts_v2.py --smoke          # task 0, one P=7 trial and one P=3 trial
-    python gen_rollouts_v2.py                  # all 10 tasks x 30 trials
-    python gen_rollouts_v2.py --task-start 0 --task-end 4
+    python collect/make_init_assignment.py
+    python collect/gen_rollouts_v2.py --smoke          # task 0, one P=7 trial and one P=3 trial
+    python collect/gen_rollouts_v2.py                  # all 10 tasks x 30 trials
+    python collect/gen_rollouts_v2.py --task-start 0 --task-end 4
 """
 
 from __future__ import annotations
@@ -363,7 +363,7 @@ def build_verification(vla, gen_out, decision, logits, token_ids, action_raw, bi
 def load_assignment(path: Path) -> dict:
     if not path.exists():
         raise SystemExit(
-            f"{path} not found. Run `python make_init_assignment.py` first and commit it: "
+            f"{path} not found. Run `python collect/make_init_assignment.py` first and commit it: "
             "the corpus cannot be reproduced or extended without it."
         )
     with open(path) as f:

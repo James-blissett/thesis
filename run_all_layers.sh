@@ -36,7 +36,7 @@ for L in $(seq "$FIRST" "$LAST"); do
 done
 if (( ${#missing[@]} )); then
     echo "!! no feature cache for layers: ${missing[*]}" >&2
-    echo "!! run 'python extract_all_layers.py' first, or these workers will each" >&2
+    echo "!! run 'python analysis/extract_all_layers.py' first, or these workers will each" >&2
     echo "!! re-read the full corpus concurrently." >&2
     exit 1
 fi
@@ -51,7 +51,7 @@ seq "$FIRST" "$LAST" | xargs -P "$JOBS" -I{} bash -c '
     L={}
     D=$(printf "%s/layer%02d" "'"$OUT_ROOT"'" "$L")
     LOG=$(printf "%s/layer%02d.log" "'"$LOG_DIR"'" "$L")
-    if python probe_late_window.py --layer "$L" --results-dir "$D" > "$LOG" 2>&1; then
+    if python analysis/probe_late_window.py --layer "$L" --results-dir "$D" > "$LOG" 2>&1; then
         printf "    layer %2d done: %s\n" "$L" "$(grep -m1 "^subset" "$LOG" || echo ok)"
     else
         printf "!!  layer %2d FAILED -- see %s\n" "$L" "$LOG"
@@ -59,4 +59,4 @@ seq "$FIRST" "$LAST" | xargs -P "$JOBS" -I{} bash -c '
 '
 
 echo "[*] sweep finished in $(( ($(date +%s) - START) / 60 )) min"
-echo "[*] next: python plot_auroc_by_layer.py"
+echo "[*] next: python analysis/plot_auroc_by_layer.py"
