@@ -4,8 +4,7 @@ Pure post-hoc analysis on the stored corpus. No model loading, no forward passes
 no git commands. Surface launch commands as copyable blocks; do not run long jobs.
 
 ## 0. Inspect and verify hidden-state consistency
-Read `probe_handoff.md` and `collection_handoff.md`. Confirm the on-disk layout:
-per-rollout hidden states `[T, 33, 4096]` fp16, per-rollout actions `[T, 7]`
+Confirm the on-disk layout: per-rollout hidden states `[T, 33, 4096]` fp16, per-rollout actions `[T, 7]`
 (de-tokenised continuous: xyz, rotation, gripper), task_id, outcome.
 Print shapes for one rollout before writing anything.
 
@@ -50,11 +49,9 @@ Save all series to `constraints/<rollout_id>.npz` plus a long-form parquet
 [rollout_id, task_id, outcome, t, T, t_norm, constraint_name, value].
 
 ## 2. AUROC each constraint independently
-Use the existing evaluation utilities where they exist. For every constraint
-series, report on the matched 40-rollout non-degenerate corpus (tasks 2 and 5
-dropped), and also on the full 300:
+Use the existing evaluation utilities where they exist. For every constraint series, report on the full 300 rollout corpus:
    - Scheme A: all timesteps, broadcast outcome label
-   - Scheme B: t/T >= 0.8 only
+   - Scheme B: t/T >= 0.7 only
    - Rollout-level: aggregate each series to one scalar per rollout by
      {max, mean} over the Scheme-B window, AUROC against outcome.
 Convention: report `max(auc, 1-auc)` and the sign (+ if higher value ⇒ failure,
