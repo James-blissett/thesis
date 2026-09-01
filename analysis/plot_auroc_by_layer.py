@@ -56,6 +56,8 @@ LIGHT = {
     "grid": "#dcdbd6",
     "series1": "#2a78d6",   # subset (primary)
     "series2": "#eb6834",   # all tasks (continuity)
+    "series3": "#1baf7a",
+    "series4": "#eda100",
     "null": "#8a8880",
 }
 DARK = {
@@ -65,8 +67,33 @@ DARK = {
     "grid": "#3a3a38",
     "series1": "#3987e5",
     "series2": "#d95926",
+    "series3": "#199e70",
+    "series4": "#c98500",
     "null": "#8a8880",
 }
+
+
+def palette(dark: bool) -> dict:
+    """The single place the light/dark surface choice is made."""
+    return DARK if dark else LIGHT
+
+
+def style_axes(ax, c: dict) -> None:
+    """The recessive frame shared by every figure in this project.
+
+    Solid hairline horizontal grid only, two spines, muted ticks with no tick marks.
+    Gridlines stay SOLID on purpose: dashing a grid reads as "threshold" or
+    "projection" when it is merely a grid. Dashes are reserved here for genuine
+    reference lines (chance, the locked layer).
+    """
+    ax.set_facecolor(c["surface"])
+    ax.grid(axis="y", color=c["grid"], linewidth=0.8, alpha=0.9)
+    ax.set_axisbelow(True)
+    for side in ("top", "right"):
+        ax.spines[side].set_visible(False)
+    for side in ("left", "bottom"):
+        ax.spines[side].set_color(c["grid"])
+    ax.tick_params(colors=c["muted"], labelsize=9, length=0)
 
 
 def collect(results_root: Path) -> list[dict]:
@@ -101,7 +128,7 @@ def collect(results_root: Path) -> list[dict]:
 
 
 def draw(rows: list[dict], out_png: Path, dark: bool) -> None:
-    c = DARK if dark else LIGHT
+    c = palette(dark)
     L = np.array([r["layer"] for r in rows])
     sub = np.array([r["subset_sweep_mean"] for r in rows], dtype=float)
     sub_sd = np.array([r["subset_sweep_std"] or 0.0 for r in rows], dtype=float)
@@ -113,15 +140,7 @@ def draw(rows: list[dict], out_png: Path, dark: bool) -> None:
 
     fig, ax = plt.subplots(figsize=(8.0, 4.6))
     fig.patch.set_facecolor(c["surface"])
-    ax.set_facecolor(c["surface"])
-
-    # Recessive frame: horizontal grid only, two spines.
-    ax.grid(axis="y", color=c["grid"], linewidth=0.8, alpha=0.9)
-    ax.set_axisbelow(True)
-    for side in ("top", "right"):
-        ax.spines[side].set_visible(False)
-    for side in ("left", "bottom"):
-        ax.spines[side].set_color(c["grid"])
+    style_axes(ax, c)
 
     # Chance, and the null that actually matters.
     ax.axhline(0.5, color=c["muted"], linewidth=1.0, linestyle=(0, (4, 3)), alpha=0.55)
@@ -178,7 +197,6 @@ def draw(rows: list[dict], out_png: Path, dark: bool) -> None:
     ax.set_xlim(L.min() - 0.5, L.max() + 1.5)
     lo = float(np.nanmin([np.nanmin(nul - nul_sd), np.nanmin(sub - sub_sd), 0.45]))
     ax.set_ylim(max(0.0, lo - 0.05), 1.02)
-    ax.tick_params(colors=c["muted"], labelsize=9, length=0)
     ax.set_xticks(np.arange(L.min(), L.max() + 1, 2))
 
     # Legend below the axes: with an unknown curve shape, no in-axes corner is
