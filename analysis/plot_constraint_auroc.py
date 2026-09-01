@@ -89,7 +89,8 @@ LAYERED = [
     ("xl_final_hN", "series4", (0, (6, 2, 1.5, 2))),
 ]
 
-SCALAR = ["act_mag", "act_dir", "grip_flip", "xl_spread"]
+# act_rep is derived in step 2 (1[act_mag <= 1e-6]); it has no layer axis.
+SCALAR = ["act_mag", "act_dir", "act_rep", "grip_flip", "xl_spread"]
 BASELINES = ["t", "t_norm"]
 
 CAPTION = (

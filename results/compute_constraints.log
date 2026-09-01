@@ -1,0 +1,18 @@
+[*] g = language_model.model.norm.weight: mean 1.8547 sd 0.1178 min -5.34e-05 max 2.9062
+[*] 300 rollouts -> constraints   (1 = failure (i.e. NOT success), matching probe_layer.py)
+[*] RMSNorm check on task00_trial00: ||h_32/g|| mean 63.9989 sd 0.01996 (expect 64.0000)
+[ 25/300] elapsed   1.0 min  2.50 s/rollout  eta  11.5 min
+[ 50/300] elapsed   2.1 min  2.51 s/rollout  eta  10.5 min
+[ 75/300] elapsed   3.2 min  2.53 s/rollout  eta   9.5 min
+[100/300] elapsed   4.2 min  2.52 s/rollout  eta   8.4 min
+[125/300] elapsed   5.2 min  2.52 s/rollout  eta   7.3 min
+[150/300] elapsed   6.2 min  2.47 s/rollout  eta   6.2 min
+[175/300] elapsed   7.2 min  2.47 s/rollout  eta   5.2 min
+[200/300] elapsed   8.3 min  2.48 s/rollout  eta   4.1 min
+[225/300] elapsed   9.3 min  2.48 s/rollout  eta   3.1 min
+[250/300] elapsed  10.4 min  2.48 s/rollout  eta   2.1 min
+[275/300] elapsed  11.4 min  2.48 s/rollout  eta   1.0 min
+[300/300] elapsed  12.3 min  2.46 s/rollout  eta   0.0 min
+
+[*] act_mag corpus median 0.1291; 8 rollouts flagged at >3x: ['task01_trial04', 'task01_trial07', 'task03_trial03', 'task03_trial23', 'task05_trial09', 'task07_trial03', 'task07_trial27', 'task09_trial21']
+[*] done in 12.3 min -> constraints

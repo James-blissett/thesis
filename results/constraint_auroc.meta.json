@@ -1,0 +1,11 @@
+{
+ "n_rows": 1596,
+ "n_series": 133,
+ "grid": 1596,
+ "dropped_cells": [],
+ "t_lo": 364,
+ "n_perm": 1000,
+ "seed": 0,
+ "min_defined": 20,
+ "polarity": "label 1 = failure = NOT success under the active corpus"
+}
