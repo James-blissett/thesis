@@ -1,0 +1,181 @@
+{
+ "corpus_ok": true,
+ "corpus": {
+  "n_dirs": 300,
+  "n_indexed": 300,
+  "unindexed_dirs": [],
+  "positions": {
+   "3": 270,
+   "7": 30
+  },
+  "problems": []
+ },
+ "shapes": {
+  "task00_trial03": {
+   "hidden.pt": [
+    [
+     520,
+     33,
+     3,
+     4096
+    ],
+    "torch.float16"
+   ],
+   "logits.pt": [
+    [
+     520,
+     7,
+     256
+    ],
+    "torch.float16"
+   ],
+   "actions.npz:executed": [
+    [
+     530,
+     7
+    ],
+    "float32"
+   ],
+   "actions.npz:action_raw": [
+    [
+     530,
+     7
+    ],
+    "float32"
+   ],
+   "actions.npz:action_token_ids": [
+    [
+     520,
+     7
+    ],
+    "int32"
+   ],
+   "actions.npz:policy_step_env_t": [
+    [
+     520
+    ],
+    "int32"
+   ],
+   "actions.npz:success_now": [
+    [
+     530
+    ],
+    "bool"
+   ],
+   "actions.npz:success_latched": [
+    [
+     530
+    ],
+    "bool"
+   ],
+   "actions.npz:env_done": [
+    [
+     530
+    ],
+    "bool"
+   ],
+   "actions.npz:is_wait_step": [
+    [
+     530
+    ],
+    "bool"
+   ],
+   "actions.npz:t_effective": [
+    [
+     530
+    ],
+    "int32"
+   ]
+  },
+  "task00_trial00": {
+   "hidden.pt": [
+    [
+     520,
+     33,
+     7,
+     4096
+    ],
+    "torch.float16"
+   ],
+   "logits.pt": [
+    [
+     520,
+     7,
+     256
+    ],
+    "torch.float16"
+   ],
+   "actions.npz:executed": [
+    [
+     530,
+     7
+    ],
+    "float32"
+   ],
+   "actions.npz:action_raw": [
+    [
+     530,
+     7
+    ],
+    "float32"
+   ],
+   "actions.npz:action_token_ids": [
+    [
+     520,
+     7
+    ],
+    "int32"
+   ],
+   "actions.npz:policy_step_env_t": [
+    [
+     520
+    ],
+    "int32"
+   ],
+   "actions.npz:success_now": [
+    [
+     530
+    ],
+    "bool"
+   ],
+   "actions.npz:success_latched": [
+    [
+     530
+    ],
+    "bool"
+   ],
+   "actions.npz:env_done": [
+    [
+     530
+    ],
+    "bool"
+   ],
+   "actions.npz:is_wait_step": [
+    [
+     530
+    ],
+    "bool"
+   ],
+   "actions.npz:t_effective": [
+    [
+     530
+    ],
+    "int32"
+   ]
+  }
+ },
+ "kept": {
+  "n_success": 137,
+  "n_failure": 163,
+  "success_rows_incl_t0": 38755,
+  "failure_rows_incl_t0": 84760,
+  "success_rows": 38618,
+  "failure_rows": 84597
+ },
+ "git_status": "## main...origin/main\n?? Label_alignment_and_probe_protocol.md\n?? abc_implementation_handoff.md\n?? analysis/abc/",
+ "conformal": {
+  "fork": "/ephemeral/code/openvla",
+  "fork_head": "300dce2 add safe changes",
+  "files_matching_conformal": []
+ }
+}

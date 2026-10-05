@@ -1,0 +1,98 @@
+
+=== training cut and row weights (outcome-trained models) ===
+   seed 0 before, >= 1 success: t <= 499, rows 52071 (succ 16143, fail 35928); max/mean 52.2, top 1% share 0.126, ESS 13689 (0.26 of rows)
+   seed 0 after,  >= 5 successes: t <= 435, rows 47347 (succ 16027, fail 31320); max/mean 10.9, top 1% share 0.079, ESS 26600 (0.56 of rows)
+   seed 1 before, >= 1 success: t <= 499, rows 48781 (succ 18841, fail 29940); max/mean 48.9, top 1% share 0.123, ESS 11533 (0.24 of rows)
+   seed 1 after,  >= 5 successes: t <= 416, rows 43643 (succ 18683, fail 24960); max/mean 10.5, top 1% share 0.058, ESS 31029 (0.71 of rows)
+   seed 2 before, >= 1 success: t <= 511, rows 52448 (succ 14123, fail 38325); max/mean 51.3, top 1% share 0.163, ESS 9258 (0.18 of rows)
+   seed 2 after,  >= 5 successes: t <= 392, rows 43311 (succ 13911, fail 29400); max/mean 11.0, top 1% share 0.073, ESS 26080 (0.60 of rows)
+
+[floor] running sum of a constant: pooled seen 0.610, unseen 0.547; per-task 0.500 | 0.500 (equals the timestep floor, as it must)
+
+=== beta per family (best series' eval_seen M1-per-task in Stage 2) ===
+   action       beta none  best act_dir        per-task 0.525 (pooled 0.531)  family median per-task 0.500  unstable 0/4
+   action       beta 0.83  best act_rep        per-task 0.615 (pooled 0.666)  family median per-task 0.591  unstable 1/4
+   action       beta 0.91  best act_rep        per-task 0.620 (pooled 0.671)  family median per-task 0.572  unstable 1/4
+   action       beta 0.96  best act_rep        per-task 0.623 (pooled 0.672)  family median per-task 0.559  unstable 0/4   <- chosen
+   emb_temp     beta none  best emb_temp[26]   per-task 0.757 (pooled 0.751)  family median per-task 0.730  unstable 2/32   <- chosen
+   emb_temp     beta 0.83  best emb_temp[16]   per-task 0.719 (pooled 0.740)  family median per-task 0.704  unstable 0/32
+   emb_temp     beta 0.91  best emb_temp[27]   per-task 0.705 (pooled 0.732)  family median per-task 0.684  unstable 4/32
+   emb_temp     beta 0.96  best emb_temp[31]   per-task 0.677 (pooled 0.708)  family median per-task 0.618  unstable 3/32
+   cross_layer  beta none  best xl_adj[3]      per-task 0.597 (pooled 0.571)  family median per-task 0.446  unstable 3/63
+   cross_layer  beta 0.83  best xl_final[13]   per-task 0.667 (pooled 0.539)  family median per-task 0.476  unstable 9/63
+   cross_layer  beta 0.91  best xl_final[12]   per-task 0.703 (pooled 0.630)  family median per-task 0.488  unstable 12/63   <- chosen
+   cross_layer  beta 0.96  best xl_final[12]   per-task 0.695 (pooled 0.632)  family median per-task 0.513  unstable 14/63
+
+[*] features ready (3 s); fitting 12 (seed, c) jobs
+[*] fits done (23 s)
+
+=== c grid (eval_seen M1-per-task, mean over seeds) ===
+   c        probes (mean of 33)   final:full
+   1        0.678  <-              0.765  <-
+   0.1      0.678                  0.759
+   0.01     0.678                  0.763
+   0.001    0.678                  0.754
+   full grid, every model and both sets: results/abc/c_grid.csv
+
+=== C probes at c = 1, running-sum score (eval_seen | unseen; floor pooled 0.610 | 0.547, per-task 0.5; tasks 7 | 3) ===
+   layer00  pooled 0.696±0.027 | 0.642±0.083   per-task 0.753±0.031 | 0.684±0.046
+   layer01  pooled 0.713±0.006 | 0.691±0.049   per-task 0.692±0.025 | 0.656±0.047  UNSTABLE: emb_temp[1]
+   layer02  pooled 0.725±0.005 | 0.677±0.088   per-task 0.710±0.054 | 0.641±0.064
+   layer03  pooled 0.730±0.013 | 0.651±0.133   per-task 0.723±0.038 | 0.660±0.066
+   layer04  pooled 0.721±0.005 | 0.697±0.078   per-task 0.693±0.048 | 0.679±0.029
+   layer05  pooled 0.712±0.007 | 0.667±0.080   per-task 0.700±0.048 | 0.647±0.033
+   layer06  pooled 0.707±0.016 | 0.670±0.110   per-task 0.698±0.004 | 0.691±0.051  UNSTABLE: xl_adj[6]
+   layer07  pooled 0.725±0.021 | 0.743±0.041   per-task 0.686±0.049 | 0.709±0.038
+   layer08  pooled 0.717±0.034 | 0.729±0.064   per-task 0.722±0.030 | 0.715±0.048
+   layer09  pooled 0.707±0.025 | 0.697±0.060   per-task 0.650±0.049 | 0.636±0.076
+   layer10  pooled 0.709±0.023 | 0.714±0.046   per-task 0.677±0.027 | 0.681±0.041  UNSTABLE: xl_adj[10]
+   layer11  pooled 0.707±0.045 | 0.700±0.078   per-task 0.716±0.021 | 0.677±0.047  UNSTABLE: xl_adj[11]
+   layer12  pooled 0.706±0.042 | 0.664±0.065   per-task 0.758±0.007 | 0.698±0.085  UNSTABLE: xl_adj[12]
+   layer13  pooled 0.691±0.060 | 0.674±0.025   per-task 0.706±0.025 | 0.650±0.049
+   layer14  pooled 0.662±0.034 | 0.595±0.083   per-task 0.681±0.035 | 0.618±0.083  UNSTABLE: xl_adj[14]
+   layer15  pooled 0.671±0.034 | 0.628±0.059   per-task 0.690±0.049 | 0.613±0.044  UNSTABLE: emb_temp[15] xl_adj[15]
+   layer16  pooled 0.678±0.019 | 0.612±0.069   per-task 0.653±0.049 | 0.590±0.109
+   layer17  pooled 0.655±0.034 | 0.592±0.069   per-task 0.665±0.036 | 0.606±0.075  UNSTABLE: xl_adj[17] xl_final[17]
+   layer18  pooled 0.667±0.020 | 0.585±0.041   per-task 0.638±0.028 | 0.560±0.114  UNSTABLE: xl_final[18]
+   layer19  pooled 0.659±0.014 | 0.586±0.087   per-task 0.663±0.094 | 0.600±0.085
+   layer20  pooled 0.653±0.026 | 0.603±0.090   per-task 0.629±0.005 | 0.610±0.063
+   layer21  pooled 0.667±0.029 | 0.601±0.091   per-task 0.671±0.060 | 0.602±0.080  UNSTABLE: xl_adj[21]
+   layer22  pooled 0.664±0.033 | 0.594±0.083   per-task 0.641±0.047 | 0.598±0.072  UNSTABLE: xl_adj[22]
+   layer23  pooled 0.674±0.006 | 0.627±0.100   per-task 0.606±0.020 | 0.616±0.024
+   layer24  pooled 0.671±0.011 | 0.632±0.083   per-task 0.586±0.021 | 0.603±0.027  UNSTABLE: xl_adj[24]
+   layer25  pooled 0.680±0.005 | 0.650±0.074   per-task 0.621±0.047 | 0.613±0.012
+   layer26  pooled 0.712±0.013 | 0.685±0.035   per-task 0.642±0.049 | 0.633±0.013
+   layer27  pooled 0.698±0.011 | 0.697±0.049   per-task 0.643±0.010 | 0.659±0.036
+   layer28  pooled 0.705±0.014 | 0.673±0.070   per-task 0.648±0.035 | 0.642±0.039
+   layer29  pooled 0.705±0.007 | 0.684±0.048   per-task 0.674±0.022 | 0.641±0.040
+   layer30  pooled 0.702±0.022 | 0.649±0.094   per-task 0.689±0.014 | 0.652±0.062
+   layer31  pooled 0.703±0.028 | 0.662±0.078   per-task 0.688±0.039 | 0.651±0.066
+   action   pooled 0.734±0.020 | 0.678±0.067   per-task 0.760±0.024 | 0.707±0.035
+
+=== C final detector and leave-one-family-out at c = 1 ===
+   full            (132 in, 16 unstable) pooled 0.792±0.008 | 0.773±0.031   per-task 0.765±0.048 | 0.744±0.038
+   no_action       (127 in, 16 unstable) pooled 0.790±0.013 | 0.768±0.021   per-task 0.761±0.052 | 0.736±0.036
+   no_emb_temp     ( 68 in, 12 unstable) pooled 0.786±0.008 | 0.765±0.034   per-task 0.747±0.044 | 0.730±0.050
+   no_cross_layer  ( 69 in,  4 unstable) pooled 0.785±0.009 | 0.743±0.050   per-task 0.814±0.052 | 0.750±0.046
+
+=== final detector weights at c = 1: sign consistent across seeds in 63/132 inputs ===
+   action       consistent 1/5, sum |mean coef| 0.871
+   emb_temp     consistent 38/64, sum |mean coef| 36.563
+   cross_layer  consistent 24/63, sum |mean coef| 35.170
+   xl_final[7]      +4.804±2.226  orient ---  consistent
+   xl_final[8]      -3.261±2.948  orient ---  SIGN VARIES
+   emb_temp[30]     +3.119±1.024  orient ---  consistent
+   xl_final[2]      +2.843±0.203  orient ---  consistent
+   xl_final[4]      -2.722±2.478  orient ---  consistent
+   emb_temp[25]     -2.569±0.879  orient ---  consistent
+   xl_final[3]      -2.539±1.457  orient ---  consistent
+   xl_final[6]      -1.947±2.851  orient ---  SIGN VARIES
+   emb_temp[7]      +1.896±0.184  orient ---  consistent
+   emb_temp[22]     -1.869±0.302  orient ---  consistent
+
+=== emb_temp[28] alone ===
+   raw z-score, maximum (Stage 2, no training): pooled 0.754 | 0.719   per-task 0.742 | 0.725
+   1-input probe, maximum of p    c = 1: pooled 0.754±0.050 | 0.719±0.036   per-task 0.742±0.083 | 0.725±0.055
+   1-input probe, running sum of p c = 1: pooled 0.694±0.017 | 0.657±0.062   per-task 0.707±0.062 | 0.650±0.070
+
+[*] done (25 s)
