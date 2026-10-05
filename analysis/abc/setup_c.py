@@ -1,7 +1,7 @@
 """
 setup_c.py
 
-Stage 3: setup C, constraints -> episode outcome (handoff v7, sections 2 and 4).
+Stage 3: setup C, constraints -> episode outcome (handoff v9, sections 2 and 4).
 
   * beta: one per family (action; emb_temp; cross-layer), each the beta whose best
     series in that family has the highest eval_seen M1-per-task in Stage 2's table
@@ -14,9 +14,9 @@ Stage 3: setup C, constraints -> episode outcome (handoff v7, sections 2 and 4).
     132 inputs. Ablations: the same minus one family at a time.
   * every model: StandardScaler -> LogisticRegression(C=c, max_iter=2000), trained on
     outcome with data.train_rows_and_weights (>= 5-successes cut, 1/n_class(t) weights
-    rescaled to mean 1). c is gridded over C_GRID: one c for all 33 probes (best mean
-    eval_seen M1-per-task over probes and seeds), one for the final detector (its own
-    eval_seen M1-per-task, mean over seeds); the ablations use the final detector's c.
+    rescaled to mean 1). c is gridded over C_GRID and chosen by the best mean eval_seen
+    M1-per-task over seeds (plain grid search, as SAFE). One c for all 33 probes (scored
+    by the mean over probes), one for the final detector; the ablations use the final's c.
   * score over time: the running sum of predicted failure probabilities over kept rows,
     s_t = sum_{tau <= t} p_tau, so M1's maximum is the value at the cut.
   * floor: M1 of a running sum of a constant (recomputed; it orders rollouts like the
@@ -75,7 +75,7 @@ FAMILIES = {"action": ["act_mag", "act_dir", "grip_flip", "act_rep"],
             "emb_temp": ["emb_temp"],
             "cross_layer": ["xl_adj", "xl_final", "xl_spread"]}
 ABS_INPUTS = ("emb_temp", "act_mag")
-C_GRID = (1.0, 0.1, 0.01, 0.001)
+C_GRID = (1.0, 1e-2, 1e-3, 1e-4, 1e-5, 1e-6)
 COMPARE = "emb_temp[28]"
 N_RAW = 32
 SETS = (("seen", "eval_seen"), ("unseen", "unseen"))
@@ -229,7 +229,8 @@ def write_csv(path: Path, rows: list[dict]) -> None:
         w = csv.DictWriter(f, fieldnames=list(rows[0]))
         w.writeheader()
         for r in rows:
-            w.writerow({k: (f"{v:.4f}" if isinstance(v, float) else v) for k, v in r.items()})
+            w.writerow({k: (f"{v:g}" if k == "c" else f"{v:.4f}" if isinstance(v, float) else v)
+                        for k, v in r.items()})
 
 
 def fmt(r: dict) -> str:
@@ -332,13 +333,28 @@ def main() -> None:
             grid_rows.append(summary_row({"model": name, "c": c}, per_seed(name, c)))
     write_csv(RESULTS_DIR / "c_grid.csv", grid_rows)
 
-    def seen_task(name, c):
-        return float(np.mean([m["seen"]["per_task"] for m in per_seed(name, c)]))
+    def seen_task_by_seed(names, c):
+        """(3,) eval_seen M1-per-task per seed, averaged over `names`."""
+        return np.array([np.mean([res[(s, c)]["metrics"][n]["seen"]["per_task"] for n in names])
+                         for s in SEEDS])
 
-    probe_score = {c: float(np.mean([seen_task(p, c) for p in probes])) for c in C_GRID}
-    final_score = {c: seen_task("final:full", c) for c in C_GRID}
-    c_probe = max(C_GRID, key=probe_score.get)
-    c_final = max(C_GRID, key=final_score.get)
+    def best_c(names):
+        """{c: (mean, std)} and the c with the best mean."""
+        sc = {c: (float(v.mean()), float(v.std(ddof=1)))
+              for c, v in ((c, seen_task_by_seed(names, c)) for c in C_GRID)}
+        return sc, max(C_GRID, key=lambda c: sc[c][0])
+
+    probe_score, c_probe = best_c(list(probes))
+    final_score, c_final = best_c(["final:full"])
+    n_consistent = {}
+    for c in C_GRID:
+        cs = np.array([[res[(s, c)]["coef"][n] for s in SEEDS] for n in all_inputs])
+        n_consistent[c] = int(np.sum(np.all(cs > 0, 1) | np.all(cs < 0, 1)))
+    write_csv(RESULTS_DIR / "c_grid_choice.csv", [
+        {"c": c, "probes_seen_task_mean": probe_score[c][0], "probes_seen_task_std": probe_score[c][1],
+         "final_seen_task_mean": final_score[c][0], "final_seen_task_std": final_score[c][1],
+         "final_weights_sign_consistent": n_consistent[c], "final_n_weights": len(all_inputs),
+         "chosen_probes": c == c_probe, "chosen_final": c == c_final} for c in C_GRID])
 
     # --- Tables at the chosen c ------------------------------------------------------
     probe_rows = []
@@ -389,11 +405,16 @@ def main() -> None:
                             probes=np.array(list(probes)), rollout_ids=idx.rids)
 
     # --- Report ----------------------------------------------------------------------
-    print("\n=== c grid (eval_seen M1-per-task, mean over seeds) ===")
-    print("   c        probes (mean of 33)   final:full")
+    print("\n=== c grid (eval_seen M1-per-task, mean ± std over seeds; best mean chosen) ===")
+    print("   c        probes (mean of 33)      final:full            final weights sign-consistent")
     for c in C_GRID:
-        print(f"   {c:<8g} {probe_score[c]:.3f}{'  <-' if c == c_probe else '    '}"
-              f"              {final_score[c]:.3f}{'  <-' if c == c_final else ''}")
+        tag_p = "chosen" if c == c_probe else ""
+        tag_f = "chosen" if c == c_final else ""
+        print(f"   {c:<8g} {probe_score[c][0]:.3f}±{probe_score[c][1]:.3f} {tag_p:7s}  "
+              f"{final_score[c][0]:.3f}±{final_score[c][1]:.3f} {tag_f:7s}  "
+              f"{n_consistent[c]}/{len(all_inputs)}")
+    print(f"   probes: c = {c_probe:g} ({probe_score[c_probe][0]:.4f});  final: c = {c_final:g} "
+          f"({final_score[c_final][0]:.4f})")
     print("   full grid, every model and both sets: results/abc/c_grid.csv")
 
     print(f"\n=== C probes at c = {c_probe:g}, running-sum score (eval_seen | unseen; floor "

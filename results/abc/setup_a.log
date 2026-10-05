@@ -1,0 +1,98 @@
+[ 1/34] layer00 (7 s)
+[ 2/34] layer01 (28 s)
+[ 3/34] layer02 (44 s)
+[ 4/34] layer03 (59 s)
+[ 5/34] layer04 (73 s)
+[ 6/34] layer05 (87 s)
+[ 7/34] layer06 (100 s)
+[ 8/34] layer07 (114 s)
+[ 9/34] layer08 (128 s)
+[10/34] layer09 (142 s)
+[11/34] layer10 (155 s)
+[12/34] layer11 (168 s)
+[13/34] layer12 (181 s)
+[14/34] layer13 (194 s)
+[15/34] layer14 (206 s)
+[16/34] layer15 (218 s)
+[17/34] layer16 (226 s)
+[18/34] layer17 (238 s)
+[19/34] layer18 (249 s)
+[20/34] layer19 (260 s)
+[21/34] layer20 (270 s)
+[22/34] layer21 (280 s)
+[23/34] layer22 (290 s)
+[24/34] layer23 (300 s)
+[25/34] layer24 (309 s)
+[26/34] layer25 (318 s)
+[27/34] layer26 (327 s)
+[28/34] layer27 (336 s)
+[29/34] layer28 (345 s)
+[30/34] layer29 (353 s)
+[31/34] layer30 (361 s)
+[32/34] layer31 (369 s)
+[33/34] layer32 (377 s)
+[34/34] action_tokens (378 s)
+
+=== c grid (eval_seen M1-per-task, mean of 34 probes, mean ± std over seeds) ===
+   1        0.707±0.006
+   0.01     0.721±0.007
+   0.001    0.748±0.002
+   0.0001   0.786±0.020
+   1e-05    0.812±0.020  <- chosen
+   1e-06    0.811±0.015
+
+=== A probes at c = 1e-05, running-sum score (eval_seen | unseen; floor pooled 0.610 | 0.547, per-task 0.5; tasks 7 | 3) ===
+   layer00       pooled 0.740±0.006 | 0.704±0.089   per-task 0.829±0.014 | 0.774±0.056
+   layer01       pooled 0.800±0.034 | 0.738±0.036   per-task 0.844±0.022 | 0.756±0.024
+   layer02       pooled 0.803±0.022 | 0.742±0.026   per-task 0.826±0.004 | 0.745±0.034
+   layer03       pooled 0.804±0.027 | 0.734±0.030   per-task 0.825±0.010 | 0.745±0.024
+   layer04       pooled 0.799±0.027 | 0.717±0.048   per-task 0.817±0.012 | 0.746±0.025
+   layer05       pooled 0.802±0.020 | 0.726±0.027   per-task 0.823±0.026 | 0.743±0.028
+   layer06       pooled 0.807±0.021 | 0.710±0.031   per-task 0.805±0.029 | 0.693±0.010
+   layer07       pooled 0.806±0.024 | 0.726±0.016   per-task 0.785±0.013 | 0.693±0.013
+   layer08       pooled 0.809±0.020 | 0.726±0.018   per-task 0.793±0.008 | 0.685±0.017
+   layer09       pooled 0.806±0.025 | 0.734±0.019   per-task 0.811±0.029 | 0.689±0.022
+   layer10       pooled 0.807±0.019 | 0.728±0.013   per-task 0.817±0.041 | 0.707±0.019
+   layer11       pooled 0.803±0.022 | 0.702±0.025   per-task 0.794±0.035 | 0.658±0.008
+   layer12       pooled 0.807±0.018 | 0.699±0.046   per-task 0.801±0.036 | 0.667±0.027
+   layer13       pooled 0.810±0.023 | 0.718±0.025   per-task 0.805±0.021 | 0.703±0.019
+   layer14       pooled 0.812±0.020 | 0.716±0.033   per-task 0.807±0.044 | 0.697±0.037
+   layer15       pooled 0.815±0.021 | 0.737±0.020   per-task 0.806±0.049 | 0.722±0.025
+   layer16       pooled 0.816±0.020 | 0.750±0.018   per-task 0.810±0.035 | 0.752±0.029
+   layer17       pooled 0.816±0.021 | 0.742±0.018   per-task 0.810±0.038 | 0.740±0.025
+   layer18       pooled 0.816±0.022 | 0.746±0.022   per-task 0.806±0.029 | 0.754±0.013
+   layer19       pooled 0.814±0.026 | 0.745±0.022   per-task 0.809±0.024 | 0.748±0.006
+   layer20       pooled 0.813±0.024 | 0.734±0.029   per-task 0.813±0.021 | 0.732±0.003
+   layer21       pooled 0.811±0.025 | 0.728±0.033   per-task 0.808±0.023 | 0.729±0.009
+   layer22       pooled 0.809±0.024 | 0.728±0.028   per-task 0.815±0.027 | 0.731±0.015
+   layer23       pooled 0.808±0.024 | 0.729±0.032   per-task 0.814±0.018 | 0.742±0.005
+   layer24       pooled 0.809±0.024 | 0.733±0.029   per-task 0.823±0.022 | 0.745±0.006
+   layer25       pooled 0.808±0.024 | 0.735±0.029   per-task 0.822±0.031 | 0.735±0.011
+   layer26       pooled 0.805±0.026 | 0.732±0.030   per-task 0.832±0.024 | 0.732±0.015
+   layer27       pooled 0.807±0.026 | 0.732±0.034   per-task 0.830±0.017 | 0.748±0.025
+   layer28       pooled 0.804±0.025 | 0.733±0.034   per-task 0.822±0.020 | 0.755±0.035
+   layer29       pooled 0.802±0.024 | 0.733±0.044   per-task 0.828±0.024 | 0.762±0.040
+   layer30       pooled 0.802±0.030 | 0.742±0.044   per-task 0.836±0.027 | 0.773±0.046
+   layer31       pooled 0.802±0.033 | 0.743±0.045   per-task 0.838±0.025 | 0.767±0.024
+   layer32       pooled 0.807±0.035 | 0.744±0.052   per-task 0.844±0.022 | 0.778±0.023  (post-norm)
+   action_tokens pooled 0.633±0.040 | 0.572±0.064   per-task 0.647±0.061 | 0.567±0.111
+
+=== final detector: best eval_seen M1-per-task probe per seed ===
+   seed 0: layer01       seen per-task 0.868  unseen per-task 0.752, pooled 0.712
+   seed 1: layer10       seen per-task 0.865  unseen per-task 0.690, pooled 0.740
+   seed 2: layer02       seen per-task 0.831  unseen per-task 0.707, pooled 0.729
+   unseen per-task 0.716±0.032, pooled 0.727±0.014
+
+=== shuffled-label control (5 permutations per seed, chosen probe) ===
+   seed 0 layer01       seen   per-task real 0.868, shuffled 0.456 (range 0.267-0.566), real - shuffled +0.412; pooled shuffled 0.445
+   seed 0 layer01       unseen per-task real 0.752, shuffled 0.472 (range 0.390-0.629), real - shuffled +0.280; pooled shuffled 0.619
+   seed 1 layer10       seen   per-task real 0.865, shuffled 0.501 (range 0.346-0.613), real - shuffled +0.364; pooled shuffled 0.567
+   seed 1 layer10       unseen per-task real 0.690, shuffled 0.454 (range 0.370-0.512), real - shuffled +0.236; pooled shuffled 0.536
+   seed 2 layer02       seen   per-task real 0.831, shuffled 0.531 (range 0.351-0.712), real - shuffled +0.300; pooled shuffled 0.635
+   seed 2 layer02       unseen per-task real 0.707, shuffled 0.504 (range 0.456-0.551), real - shuffled +0.202; pooled shuffled 0.567
+   all shuffled M1 within 0.40-0.60: False (range 0.267-0.712)
+
+=== layer 0 vs best ===
+   layer00 per-task seen 0.829, unseen 0.774; best on seen: layer32 seen 0.844, unseen 0.778; layer 0 below best on seen: True, on unseen: True
+
+[*] done (383 s)

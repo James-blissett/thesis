@@ -23,15 +23,18 @@
    cross_layer  beta 0.91  best xl_final[12]   per-task 0.703 (pooled 0.630)  family median per-task 0.488  unstable 12/63   <- chosen
    cross_layer  beta 0.96  best xl_final[12]   per-task 0.695 (pooled 0.632)  family median per-task 0.513  unstable 14/63
 
-[*] features ready (3 s); fitting 12 (seed, c) jobs
-[*] fits done (23 s)
+[*] features ready (3 s); fitting 18 (seed, c) jobs
+[*] fits done (22 s)
 
-=== c grid (eval_seen M1-per-task, mean over seeds) ===
-   c        probes (mean of 33)   final:full
-   1        0.678  <-              0.765  <-
-   0.1      0.678                  0.759
-   0.01     0.678                  0.763
-   0.001    0.678                  0.754
+=== c grid (eval_seen M1-per-task, mean ± std over seeds; best mean chosen) ===
+   c        probes (mean of 33)      final:full            final weights sign-consistent
+   1        0.678±0.003 chosen   0.765±0.048          63/132
+   0.01     0.678±0.003          0.763±0.035          65/132
+   0.001    0.678±0.004          0.754±0.057          69/132
+   0.0001   0.674±0.001          0.767±0.046          80/132
+   1e-05    0.667±0.004          0.788±0.022 chosen   100/132
+   1e-06    0.666±0.004          0.766±0.013          105/132
+   probes: c = 1 (0.6779);  final: c = 1e-05 (0.7878)
    full grid, every model and both sets: results/abc/c_grid.csv
 
 === C probes at c = 1, running-sum score (eval_seen | unseen; floor pooled 0.610 | 0.547, per-task 0.5; tasks 7 | 3) ===
@@ -69,30 +72,30 @@
    layer31  pooled 0.703±0.028 | 0.662±0.078   per-task 0.688±0.039 | 0.651±0.066
    action   pooled 0.734±0.020 | 0.678±0.067   per-task 0.760±0.024 | 0.707±0.035
 
-=== C final detector and leave-one-family-out at c = 1 ===
-   full            (132 in, 16 unstable) pooled 0.792±0.008 | 0.773±0.031   per-task 0.765±0.048 | 0.744±0.038
-   no_action       (127 in, 16 unstable) pooled 0.790±0.013 | 0.768±0.021   per-task 0.761±0.052 | 0.736±0.036
-   no_emb_temp     ( 68 in, 12 unstable) pooled 0.786±0.008 | 0.765±0.034   per-task 0.747±0.044 | 0.730±0.050
-   no_cross_layer  ( 69 in,  4 unstable) pooled 0.785±0.009 | 0.743±0.050   per-task 0.814±0.052 | 0.750±0.046
+=== C final detector and leave-one-family-out at c = 1e-05 ===
+   full            (132 in, 16 unstable) pooled 0.742±0.013 | 0.704±0.070   per-task 0.788±0.022 | 0.717±0.049
+   no_action       (127 in, 16 unstable) pooled 0.733±0.015 | 0.698±0.069   per-task 0.767±0.011 | 0.711±0.049
+   no_emb_temp     ( 68 in, 12 unstable) pooled 0.718±0.017 | 0.677±0.081   per-task 0.720±0.069 | 0.688±0.047
+   no_cross_layer  ( 69 in,  4 unstable) pooled 0.696±0.020 | 0.637±0.104   per-task 0.794±0.053 | 0.723±0.052
 
-=== final detector weights at c = 1: sign consistent across seeds in 63/132 inputs ===
-   action       consistent 1/5, sum |mean coef| 0.871
-   emb_temp     consistent 38/64, sum |mean coef| 36.563
-   cross_layer  consistent 24/63, sum |mean coef| 35.170
-   xl_final[7]      +4.804±2.226  orient ---  consistent
-   xl_final[8]      -3.261±2.948  orient ---  SIGN VARIES
-   emb_temp[30]     +3.119±1.024  orient ---  consistent
-   xl_final[2]      +2.843±0.203  orient ---  consistent
-   xl_final[4]      -2.722±2.478  orient ---  consistent
-   emb_temp[25]     -2.569±0.879  orient ---  consistent
-   xl_final[3]      -2.539±1.457  orient ---  consistent
-   xl_final[6]      -1.947±2.851  orient ---  SIGN VARIES
-   emb_temp[7]      +1.896±0.184  orient ---  consistent
-   emb_temp[22]     -1.869±0.302  orient ---  consistent
+=== final detector weights at c = 1e-05: sign consistent across seeds in 100/132 inputs ===
+   action       consistent 5/5, sum |mean coef| 0.099
+   emb_temp     consistent 59/64, sum |mean coef| 0.415
+   cross_layer  consistent 36/63, sum |mean coef| 0.561
+   act_rep          +0.031±0.004  orient +++  consistent
+   xl_adj[1]        +0.026±0.001  orient ---  consistent
+   xl_adj[2]        +0.026±0.004  orient ---  consistent
+   act_dir          +0.023±0.012  orient +++  consistent
+   xl_adj[3]        +0.023±0.003  orient ---  consistent
+   xl_final[0]      +0.023±0.007  orient ---  consistent
+   xl_adj[16]       -0.022±0.011  orient ---  consistent
+   xl_adj[7]        +0.022±0.010  orient ---  consistent
+   xl_adj[26]       +0.022±0.004  orient ---  consistent
+   |act_mag|        +0.020±0.002  orient ---  consistent
 
 === emb_temp[28] alone ===
    raw z-score, maximum (Stage 2, no training): pooled 0.754 | 0.719   per-task 0.742 | 0.725
    1-input probe, maximum of p    c = 1: pooled 0.754±0.050 | 0.719±0.036   per-task 0.742±0.083 | 0.725±0.055
    1-input probe, running sum of p c = 1: pooled 0.694±0.017 | 0.657±0.062   per-task 0.707±0.062 | 0.650±0.070
 
-[*] done (25 s)
+[*] done (24 s)

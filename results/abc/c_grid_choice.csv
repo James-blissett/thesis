@@ -1,0 +1,7 @@
+c,probes_seen_task_mean,probes_seen_task_std,final_seen_task_mean,final_seen_task_std,final_weights_sign_consistent,final_n_weights,chosen_probes,chosen_final
+1,0.6779,0.0031,0.7646,0.0483,63,132,True,False
+0.01,0.6776,0.0032,0.7631,0.0347,65,132,False,False
+0.001,0.6779,0.0044,0.7538,0.0565,69,132,False,False
+0.0001,0.6740,0.0013,0.7675,0.0458,80,132,False,False
+1e-05,0.6667,0.0036,0.7878,0.0216,100,132,False,True
+1e-06,0.6659,0.0037,0.7662,0.0128,105,132,False,False

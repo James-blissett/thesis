@@ -1,9 +1,9 @@
 # A / B / C implementation handoff
 
-**Handoff version 7 — 5 Oct 2026, 17:40 AEDT.** If the copy in the repo doesn't say version 7 on this line, it's stale: replace it.
+**Handoff version 9 — 5 Oct 2026, 22:00 AEDT.** If the copy in the repo doesn't say version 9 on this line, it's stale: replace it.
 
 *For Claude Code, working in the `thesis-introspection` repo on the Brev box.*
-*Method and reasoning: `label-alignment-and-probe-protocol.md` (spec v2.5). This document says how to build it. Where the two disagree, this one wins, because it was written against the repo (commit `3c66a27`, 5 Oct 2026).*
+*Method and reasoning: `label-alignment-and-probe-protocol.md` (spec v2.6). This document says how to build it. Where the two disagree, this one wins, because it was written against the repo (commit `3c66a27`, 5 Oct 2026).*
 
 ---
 
@@ -86,7 +86,7 @@
 
 **Use the primary (with-sink) series by default.** Report the `_nosink` variants as a side table in Stage 2 only.
 
-**The probe.** `StandardScaler` → `LogisticRegression(C=c, max_iter=2000)`, as in `probe_layer.py`, with `c` chosen from {1, 0.1, 0.01, 0.001} on eval-seen M1-per-task (SAFE App. B.2 picks its L2 strength by grid search the same way). One `c` per setup for the probes and one for the final detector, not one per probe. Report the full grid. For B's grid, use a GPU implementation instead (§4, Stage 5).
+**The probe.** `StandardScaler` → `LogisticRegression(C=c, max_iter=2000)`, as in `probe_layer.py`, with `c` chosen from {1, 1e-2, 1e-3, 1e-4, 1e-5, 1e-6} on eval-seen M1-per-task (SAFE App. B.2 picks its L2 strength by grid search the same way). The range goes that low because the row weights sum to about 45,000, so anything above 1e-3 barely regularises (Stage 3). Pick the `c` with the **best mean eval-seen M1-per-task**, plain grid search as SAFE does. (Version 8 used a one-standard-error tie-break; it was dropped because it picked 1e-6 on a 0.0001 tie, where the probabilities are nearly constant and the running sum mostly counts elapsed steps.) One `c` per setup for the probes and one for the final detector, not one per probe. Report the full grid. For B's grid, use a GPU implementation instead (§4, Stage 5).
 
 **Row weights for anything trained on outcome** (A's probes, C's probes, all final detectors): weight each row by `1 / n_class(t)`, where `n_class(t)` is the number of train rollouts of that row's class still kept at step `t`. Only train on timesteps where **at least 5 train successes are still kept**; drop later rows. Rescale the weights to average 1 over the remaining train rows, so `C = 1.0` means what it does in `probe_layer.py`. Print per seed: the cut-off `t`, max weight ÷ mean weight, the share of total weight in the top 1% of rows, and the effective sample size (Σw)² ÷ Σw².
 

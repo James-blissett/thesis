@@ -1,0 +1,4 @@
+seed,probe,c,pooled_seen,per_task_seen,pooled_unseen,per_task_unseen,floor_seen,floor_unseen
+0,layer01,1e-05,0.8391,0.8681,0.7123,0.7520,0.5490,0.6339
+1,layer10,1e-05,0.8060,0.8649,0.7396,0.6901,0.6429,0.5518
+2,layer02,1e-05,0.7891,0.8306,0.7292,0.7068,0.6390,0.4541

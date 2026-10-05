@@ -1,7 +1,7 @@
 # Label alignment and probe protocol — spec v2
 
 *Thesis: How To Know Your Robot · OpenVLA (greedy) on LIBERO-PRO / LIBERO-10 · 300-rollout corpus `[T=520, 33, 4096]`*
-*Status: locked 4 Oct 2026 (v2.4). Replaces v1. Ideas considered and dropped are in Appendix A.*
+*Status: locked 5 Oct 2026 (v2.6). Replaces v1. Ideas considered and dropped are in Appendix A.*
 
 ---
 
@@ -63,7 +63,7 @@ Which constraints carry the signal is a result to be measured, not an assumption
 **Preparing them (used by both B and C):**
 1. **Smooth.** Apply a causal exponential moving average, so one odd timestep doesn't count but a sustained run does. The smoothing factor β sets how far back it remembers (roughly 1/(1−β) steps). FailureSpot uses β = 0.8, about 5 steps, which is probably too short here: the constraint analysis used windows of 11, 21 and 51 steps. Try the matching values, β ≈ 0.83, 0.91 and 0.96, plus no smoothing at all, and pick one per constraint family on eval-seen. (First results: `emb_temp` is best unsmoothed; the action and cross-layer constraints need smoothing.)
 2. **Scale.** Z-score each smoothed constraint against the successful rows of the training split, so every score reads as "how many standard deviations from a normal successful rollout?" Smoothing comes first because it shrinks a signal's spread; scaling by the raw spread would leave the smoothed values on an odd scale.
-3. **Orient.** Flip signs so higher means more failure-like, using the training split: flip a constraint if its train-split M1 is below 0.5. This uses the episode outcome (one bit per constraint), so B's probes aren't entirely free of outcome information; state that when describing B.
+3. **Orient.** Flip signs so higher means more failure-like, using the training split: flip a constraint if its train-split M1-per-task (§5) is below 0.5. A constraint whose direction differs between seeds is reported as unstable and isn't used as a target in B. This uses the episode outcome (one bit per constraint), so B's probes aren't entirely free of outcome information; state that when describing B.
 
 All three steps are fitted on the training split only and then applied unchanged to every other row.
 
@@ -172,9 +172,11 @@ Every detector is scored on the same held-out rollouts.
 
 **M1 — trajectory ROC-AUC.** Per task, cut every test rollout at the length of that task's shortest rollout. Score each rollout once, by its highest score up to that cut. ROC-AUC over rollouts. (SAFE §5.4 and App. B.)
 
+**How a trained model's score runs over time.** Each trained model gives a failure probability per timestep. Its score at step t is the running sum of those probabilities, as in SAFE-MLP. Models are fitted on single timesteps, and a running sum rewards what the fit rewards; taking the single highest timestep didn't (Stage 3: a C probe scored worse than one of its own inputs). The training-free single constraints are still scored by their highest value. L2 strength is chosen by grid search on eval-seen, as SAFE does, and every choice made on eval-seen uses M1-per-task.
+
 **M1's limit, and the two guards.** Within a task every rollout is cut at the same length. But there's one ROC-AUC across all tasks, and tasks differ in both cut length and failure rate, so a score that only tracks time still picks up which tasks fail more. Measured on this corpus, a timestep-only score gets 0.61 on eval-seen and 0.55 on unseen. SAFE's numbers carry the same effect. So:
 - **The timestep-only M1 is reported as a floor** next to every M1.
-- **M1-per-task** is reported alongside: the same computation within each task, averaged over tasks. A timestep-only score gets exactly 0.5 on it.
+- **M1-per-task** is reported alongside, and is the number claims rest on: the same computation within each task, averaged over tasks. A timestep-only score gets exactly 0.5 on it.
 
 **M4 — accuracy vs detection time, with conformal prediction (CP).**
 - **Threshold:** SAFE's one-sided functional CP band, a threshold that varies over the rollout. It's calibrated on the successful rollouts in eval-seen, so that a new success stays under it at every timestep with probability 1 − α. SAFE follows Xu et al. (FAIL-Detect, App. B, "adaptive modulation"). CP works on any score, so it applies to the final detectors of A, B and C alike.
