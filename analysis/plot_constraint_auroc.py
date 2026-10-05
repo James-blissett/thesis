@@ -54,6 +54,7 @@ from __future__ import annotations
 import argparse
 import csv
 from collections import defaultdict
+from math import ceil
 from pathlib import Path
 
 import matplotlib
@@ -69,7 +70,7 @@ RESULTS_CSV = Path("results/constraint_auroc.csv")
 OUT_DIR = Path("results")
 
 # Facet order and display names. Step 2 must emit exactly these `scheme` values.
-SCHEMES = [
+ALL_SCHEMES = [
     # (value emitted by step 2, title for the wide facet, title for the narrow facet)
     ("A", "Scheme A — all timesteps", "Scheme A — all t"),
     ("B", "Scheme B — t/T ≥ 0.7", "Scheme B — t/T ≥ 0.7"),
@@ -77,17 +78,35 @@ SCHEMES = [
     ("rollout_mean", "Rollout level — mean over the B window", "Rollout — mean"),
 ]
 
+# All four schemes are drawn by default. The two per-timestep panels (A, B) answer the
+# runtime question -- classify a single instant, which is what a monitor actually sees --
+# while the rollout-level pair answers the offline one. They are not redundant with each
+# other: max and mean disagree about which is stronger in 41 of 133 series, because
+# AUROC is rank-based and a larger aggregate is not a more separable one.
+# Narrow the figure with e.g. `--schemes rollout_max,rollout_mean`.
+DEFAULT_SCHEMES = "all"
+
 # Categorical slots 1-4 of the validated order, assigned to entities in fixed order and
 # never cycled. Four overlaid lines sit on the *adjacent* pairlist (lines), which this
 # order passes in both modes; identity is additionally carried by line style and a
 # direct end-label, so it is never colour-alone. Slots 3 and 4 fall below 3:1 contrast
 # on the light surface, which is what obliges those direct labels and the CSV table.
-LAYERED = [
+ALL_LAYERED = [
     ("emb_temp", "series1", "-"),
     ("xl_adj", "series2", (0, (5, 2))),
     ("xl_final", "series3", (0, (1.5, 1.5))),
     ("xl_final_hN", "series4", (0, (6, 2, 1.5, 2))),
 ]
+
+# xl_final_hN is computed and kept in constraint_auroc.csv, but is not drawn: it sits at
+# or below the within-task null in every scheme, and its one unique cell -- l=31, the
+# recovered raw block-32 anchor -- scores 0.5373 against a null p95 of 0.5559, so it does
+# not clear. That is a real negative result and stays in the CSV for the writeup; it just
+# adds a fourth line to the figure that carries no signal. Empty this set to draw it.
+HIDDEN_FAMILIES = {"xl_final_hN"}
+
+# Colour follows the entity, not its rank: the survivors keep slots 1-3 unchanged.
+LAYERED = [t for t in ALL_LAYERED if t[0] not in HIDDEN_FAMILIES]
 
 # act_rep is derived in step 2 (1[act_mag <= 1e-6]); it has no layer axis.
 SCALAR = ["act_mag", "act_dir", "act_rep", "grip_flip", "xl_spread"]
@@ -189,16 +208,43 @@ def draw_null(ax, c: dict, L, task_mean, task_p95, glob_p95, label: bool) -> Non
             linestyle=(0, (1, 2)), label="global null p95" if label else None)
 
 
-def draw_by_layer(idx: dict, corpus: str, n_roll: int, out_png: Path, dark: bool) -> None:
-    c = palette(dark)
-    fig, axes = plt.subplots(2, 2, figsize=(11.0, 7.4), sharex=True, sharey=True)
-    fig.patch.set_facecolor(c["surface"])
+def axis_max(rows: list[dict], override: float | None) -> float:
+    """Top of the AUROC axis: the data's own ceiling, rounded up, never clipping.
 
-    for ax, (scheme, title, _short) in zip(axes.ravel(), SCHEMES):
+    Truncating a line chart's value axis is legitimate (unlike truncating a bar
+    baseline) and here it is necessary: every series lives between 0.5 and ~0.73, so a
+    full 0.5-1.0 axis compresses the whole result into the bottom third. The 0.5 floor
+    -- the only meaningful reference on this scale -- is always kept.
+    """
+    if override is not None:
+        return override
+    hi = max(max(r["auroc"], r["null_task_p95"], r["null_global_p95"])
+             for r in rows if np.isfinite(r["auroc"]))
+    return min(1.02, ceil((hi + 0.03) / 0.05) * 0.05)
+
+
+def draw_by_layer(idx: dict, corpus: str, n_roll: int, out_png: Path, dark: bool,
+                  ymax: float, schemes: list) -> None:
+    c = palette(dark)
+    n = len(schemes)
+    ncols = 2 if n > 1 else 1
+    nrows = ceil(n / ncols)
+    # Legend + caption need a fixed strip, but a single-row figure needs proportionally
+    # more of it than a two-row one, or the gap above the legend yawns open.
+    panel_h = 3.9
+    chrome_h = 2.0 if nrows == 1 else 1.55
+    fig, axes = plt.subplots(nrows, ncols, sharex=True, sharey=True, squeeze=False,
+                             figsize=(11.0, panel_h * nrows + chrome_h))
+    fig.patch.set_facecolor(c["surface"])
+    flat = axes.ravel()
+    for ax in flat[n:]:
+        ax.set_visible(False)
+
+    for i, (ax, (scheme, title, _short)) in enumerate(zip(flat, schemes)):
         style_axes(ax, c)
         ax.set_title(title, color=c["text"], fontsize=10, loc="left", pad=8)
         # Set before any label placement: de-collision needs the final y range.
-        ax.set_ylim(0.44, 1.02)
+        ax.set_ylim(0.44, ymax)
         ax.set_xlim(-1.0, 36.5)
 
         # Chance, and then the null that actually matters.
@@ -250,31 +296,34 @@ def draw_by_layer(idx: dict, corpus: str, n_roll: int, out_png: Path, dark: bool
 
         place_end_labels(ax, end_labels, c, x_col=32.8)
 
-    for ax in axes[-1]:
-        ax.set_xlabel("layer (0 = embeddings)", color=c["muted"], fontsize=10)
-    for ax in axes[:, 0]:
-        ax.set_ylabel("AUROC, max(auc, 1-auc)", color=c["muted"], fontsize=10)
-    axes[0, 0].set_xticks(np.arange(0, 33, 4))
+    for i, ax in enumerate(flat[:n]):
+        if i >= n - ncols:                      # bottom-most visible row
+            ax.set_xlabel("layer (0 = embeddings)", color=c["muted"], fontsize=10)
+        if i % ncols == 0:
+            ax.set_ylabel("AUROC, max(auc, 1-auc)", color=c["muted"], fontsize=10)
+    flat[0].set_xticks(np.arange(0, 33, 4))
 
     fig.suptitle(f"Consistency constraints, AUROC by layer  ·  corpus "
                  f"{corpus}, n = {n_roll} rollouts",
                  color=c["text"], fontsize=12.5, x=0.012, ha="left", y=0.985)
 
-    handles, labels = axes.ravel()[0].get_legend_handles_labels()
-    leg = fig.legend(handles, labels, loc="lower center", bbox_to_anchor=(0.5, 0.088),
+    bot = chrome_h / (panel_h * nrows + chrome_h)
+    handles, labels = flat[0].get_legend_handles_labels()
+    leg = fig.legend(handles, labels, loc="lower center", bbox_to_anchor=(0.5, bot * 0.56),
                      frameon=False, fontsize=8.5, ncol=4, columnspacing=1.6,
                      handlelength=2.2)
     for t in leg.get_texts():
         t.set_color(c["muted"])
 
-    fig.text(0.5, 0.012, CAPTION, color=c["muted"], fontsize=7, va="bottom",
+    fig.text(0.5, bot * 0.07, CAPTION, color=c["muted"], fontsize=7, va="bottom",
              ha="center", linespacing=1.5)
-    fig.tight_layout(rect=(0, 0.155, 1, 0.965))
+    fig.tight_layout(rect=(0, bot * 0.98, 1, 1 - 0.035 / nrows))
     fig.savefig(out_png, dpi=200, facecolor=c["surface"])
     plt.close(fig)
 
 
-def draw_scalar(idx: dict, corpus: str, n_roll: int, out_png: Path, dark: bool) -> None:
+def draw_scalar(idx: dict, corpus: str, n_roll: int, out_png: Path, dark: bool,
+                ymax: float, schemes: list) -> None:
     """The series with no layer axis, plus the two clock baselines.
 
     Faceted by scheme like the layer figure, one series per panel -- so no legend box
@@ -284,10 +333,12 @@ def draw_scalar(idx: dict, corpus: str, n_roll: int, out_png: Path, dark: bool) 
     names = SCALAR + BASELINES
     y = np.arange(len(names))[::-1]
 
-    fig, axes = plt.subplots(1, 4, figsize=(12.0, 3.5), sharey=True, sharex=True)
+    fig, axes = plt.subplots(1, len(schemes), figsize=(3.0 * len(schemes) + 1.2, 3.5),
+                             sharey=True, sharex=True, squeeze=False)
+    axes = axes[0]
     fig.patch.set_facecolor(c["surface"])
 
-    for ax, (scheme, _title, short) in zip(axes, SCHEMES):
+    for ax, (scheme, _title, short) in zip(axes, schemes):
         style_axes(ax, c)
         ax.set_title(short, color=c["text"], fontsize=9.5, loc="left", pad=8)
         ax.grid(axis="y", visible=False)
@@ -315,7 +366,7 @@ def draw_scalar(idx: dict, corpus: str, n_roll: int, out_png: Path, dark: bool) 
     axes[0].set_yticks(y)
     axes[0].set_yticklabels(
         [n + ("  (baseline)" if n in BASELINES else "") for n in names])
-    axes[0].set_xlim(0.44, 1.02)
+    axes[0].set_xlim(0.44, ymax)
     for ax in axes:
         ax.set_xlabel("AUROC", color=c["muted"], fontsize=9.5)
 
@@ -369,10 +420,23 @@ def main() -> None:
     ap.add_argument("--corpus", type=str, default="success_ever",
                     help="success_ever (primary) or success_final")
     ap.add_argument("--dark", action="store_true", help="dark-surface version")
+    ap.add_argument("--ymax", type=float, default=None,
+                    help="top of the AUROC axis; default fits the data without clipping")
+    ap.add_argument("--schemes", type=str, default=DEFAULT_SCHEMES,
+                    help="comma-separated scheme values to draw, or 'all'. "
+                         f"default {DEFAULT_SCHEMES}")
     args = ap.parse_args()
 
     out_dir = Path(args.out_dir)
     out_dir.mkdir(parents=True, exist_ok=True)
+
+    want = ([k for k, _, _ in ALL_SCHEMES] if args.schemes.strip() == "all"
+            else [x.strip() for x in args.schemes.split(",") if x.strip()])
+    known = {k for k, _, _ in ALL_SCHEMES}
+    bad = [x for x in want if x not in known]
+    if bad:
+        raise SystemExit(f"unknown scheme(s) {bad}; choose from {sorted(known)} or 'all'")
+    schemes = [t for t in ALL_SCHEMES if t[0] in want]
 
     rows = load(Path(args.results_csv), args.corpus)
     idx = index(rows)
@@ -381,9 +445,15 @@ def main() -> None:
 
     f1 = out_dir / f"constraint_auroc_by_layer{suffix}.png"
     f2 = out_dir / f"constraint_auroc_scalar{suffix}.png"
-    draw_by_layer(idx, args.corpus, n_roll, f1, args.dark)
-    draw_scalar(idx, args.corpus, n_roll, f2, args.dark)
-    summary = write_summary(rows, out_dir / f"constraint_auroc_summary{suffix}.csv")
+    ymax = axis_max(rows, args.ymax)
+    draw_by_layer(idx, args.corpus, n_roll, f1, args.dark, ymax, schemes)
+    draw_scalar(idx, args.corpus, n_roll, f2, args.dark, ymax, schemes)
+    print(f"schemes drawn: {', '.join(want)}")
+    print(f"AUROC axis 0.44 -> {ymax:.2f}"
+          f"{' (--ymax)' if args.ymax else ' (auto-fit, clips nothing)'}")
+    summary = write_summary([r for r in rows if r["scheme"] in want
+                             and r["constraint"] not in HIDDEN_FAMILIES],
+                            out_dir / f"constraint_auroc_summary{suffix}.csv")
 
     print(f"corpus {args.corpus}, n = {n_roll}, {len(rows)} rows\n")
     print(f"{'scheme':<14}{'constraint':<16}{'layer':>6}{'auroc':>8}{'sign':>6}"

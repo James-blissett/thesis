@@ -1,7 +1,7 @@
 {
- "n_rows": 1596,
- "n_series": 133,
- "grid": 1596,
+ "n_rows": 1740,
+ "n_series": 145,
+ "grid": 1740,
  "dropped_cells": [],
  "t_lo": 364,
  "n_perm": 1000,

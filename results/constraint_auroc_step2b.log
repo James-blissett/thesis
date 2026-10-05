@@ -1,0 +1,8 @@
+[*] 145 series x 300 rollouts x 520 timesteps  (B window t >= 364, 156 timesteps)  loaded in 7.1s
+[*] success_ever: 580 rows cumulative  (14.7s)
+[*] success_final: 1160 rows cumulative  (22.0s)
+[*] success_ever_strict: 1740 rows cumulative  (28.4s)
+[ok] Scheme-A baseline t == 0.5 to 1e-9 in all 3 corpora
+[ok] task03_trial28: whole-rollout act_rep 0.9576 ranks 1 of 300; B-window 0.9872 (>= 0.95), with 30 rollouts at or above it
+[ok] rows 1740 + dropped 0 == grid 1740 (27 flagged degenerate)
+[*] wrote results/constraint_auroc.csv in 28.4s
