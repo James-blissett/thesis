@@ -1,6 +1,6 @@
 # A / B / C implementation handoff
 
-**Handoff version 9 — 5 Oct 2026, 22:00 AEDT.** If the copy in the repo doesn't say version 9 on this line, it's stale: replace it.
+**Handoff version 10 — 5 Oct 2026, 22:30 AEDT.** If the copy in the repo doesn't say version 10 on this line, it's stale: replace it.
 
 *For Claude Code, working in the `thesis-introspection` repo on the Brev box.*
 *Method and reasoning: `label-alignment-and-probe-protocol.md` (spec v2.6). This document says how to build it. Where the two disagree, this one wins, because it was written against the repo (commit `3c66a27`, 5 Oct 2026).*
@@ -106,6 +106,8 @@
 
 **Selecting anything on eval-seen** (β, `c`, A's best probe) now uses **M1-per-task**, not pooled M1. A running sum grows with rollout length, so pooled M1 picks up more of the cross-task effect; still report it, with the floor recomputed for a running sum of a constant.
 
+**B's `c` (version 10).** The grid probes never see outcome labels, so their `c` can't be chosen on M1. Choose one `c` for the whole grid, from the same six values, by the probes' mean AUROC at predicting **their own targets** on eval-seen rows. The final detector's `c` is chosen on eval-seen M1-per-task, like A and C. (This replaces the fixed `C = 1.0` in §3.)
+
 **B's final detector.** Inputs are the grid's predicted probabilities at one H (128 numbers per row). It must be trained on **out-of-fold** probe outputs: within train, 5-fold by rollout (`GroupKFold`), each fold's probes predicting the held-out fold. Then refit the probes on all of train to produce outputs for eval-seen and unseen.
 
 **M1 (trajectory ROC-AUC, SAFE's protocol).** For an evaluation set: for each task, `T_task` = the shortest kept length among that set's rollouts in that task (520 if it has no successes). Score each rollout by its maximum score over kept rows with `t < T_task`. One ROC-AUC over all rollouts in the set. Report for eval-seen and unseen separately.
@@ -209,3 +211,23 @@ Unseen tasks, mean over 3 seeds. β and layer chosen on eval-seen pooled M1. Ori
 - β per family going into Stage 3: `emb_temp` none; action constraints and cross-layer chosen on eval-seen as usual (expect 0.83–0.96).
 - Unstable (sign differs between seeds): `emb_temp` layers 1 and 15 unsmoothed (layers 11–15 when smoothed); 10 of 31 `xl_adj` layers; 3 of 31 `xl_final`; 5 of 32 `xl_final_hN`; `grip_flip` at β 0.83 and 0.91. Read the flags from `results/abc/constraint_m1.csv`, don't hard-code them.
 - No-sink variants are no better; leave them out of Stages 3–6.
+
+---
+
+## 7. Stage 3 and 4 findings (closed)
+
+Unseen tasks, M1-per-task, mean ± std over 3 seeds, running-sum scoring.
+
+| Detector | Unseen per-task |
+|---|---|
+| `emb_temp[28]` alone, no training (maximum) | 0.725 ± 0.055 |
+| C final detector (132 constraint inputs, c = 1e-5) | 0.717 ± 0.049 |
+| A final detector (best single hidden-state probe per seed, c = 1e-5) | 0.716 ± 0.032 |
+| A, layer 0 probe | 0.774 ± 0.056 |
+| A, best layer on eval-seen mean (layer 32) | 0.778 ± 0.023 |
+| A, action-token probe | 0.567 ± 0.111 |
+| C, action-constraint probe (c = 1) | 0.707 ± 0.035 |
+
+- A, C and the single best constraint are level at about 0.72.
+- A's layer curve is flat (0.66–0.78) and layer 0 is as good as any layer, so A does not show that depth adds anything.
+- A needs strong regularisation (eval-seen 0.707 at c = 1, 0.812 at c = 1e-5).

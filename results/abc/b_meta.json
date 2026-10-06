@@ -1,0 +1,15 @@
+{
+ "beta": {
+  "action": "0.96",
+  "emb_temp": "none",
+  "cross_layer": "0.91"
+ },
+ "skipped_unstable_targets": [
+  "emb_temp[15]",
+  "emb_temp[1]",
+  "xl_final[17]",
+  "xl_final[18]"
+ ],
+ "grid_c": 0.0001,
+ "n_probes_per_H": 124
+}
