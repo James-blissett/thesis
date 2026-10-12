@@ -1,0 +1,122 @@
+{
+ "test_set": "T0",
+ "passed": true,
+ "tolerance": 1e-06,
+ "rng_seed": 20261011,
+ "n_boot": 1000,
+ "check_table": "results/abc2/mlp_final_table.csv",
+ "max_abs_diff": 4.706688254696445e-07,
+ "sides": [
+  {
+   "cond": "D0",
+   "detector": "C-MLP",
+   "test_set": "T0",
+   "comparisons": [
+    {
+     "what": "mean m1_per_task",
+     "got": 0.7174925666200176,
+     "ref": 0.717493,
+     "abs_diff": 4.333799824562945e-07
+    },
+    {
+     "what": "mean bal_acc",
+     "got": 0.5908060074029339,
+     "ref": 0.590806,
+     "abs_diff": 7.402933821509805e-09
+    },
+    {
+     "what": "mean tpr",
+     "got": 0.20675052933117452,
+     "ref": 0.206751,
+     "abs_diff": 4.706688254696445e-07
+    }
+   ],
+   "n_compared": 3,
+   "max_abs_diff": 4.706688254696445e-07,
+   "passed": true
+  },
+  {
+   "cond": "D0",
+   "detector": "C",
+   "test_set": "T0",
+   "comparisons": [
+    {
+     "what": "seed 0 m1_per_task",
+     "got": 0.6901052378993556,
+     "ref": 0.690105,
+     "abs_diff": 2.3789935565954323e-07
+    },
+    {
+     "what": "seed 0 n_cells",
+     "got": 3.0,
+     "ref": 3.0,
+     "abs_diff": 0.0
+    },
+    {
+     "what": "seed 0 bal_acc",
+     "got": 0.5,
+     "ref": 0.5,
+     "abs_diff": 0.0
+    },
+    {
+     "what": "seed 0 tpr",
+     "got": 0.0,
+     "ref": 0.0,
+     "abs_diff": 0.0
+    },
+    {
+     "what": "seed 1 m1_per_task",
+     "got": 0.7733114478114479,
+     "ref": 0.773311,
+     "abs_diff": 4.4781144792338523e-07
+    },
+    {
+     "what": "seed 1 n_cells",
+     "got": 3.0,
+     "ref": 3.0,
+     "abs_diff": 0.0
+    },
+    {
+     "what": "seed 1 bal_acc",
+     "got": 0.5,
+     "ref": 0.5,
+     "abs_diff": 0.0
+    },
+    {
+     "what": "seed 1 tpr",
+     "got": 0.0,
+     "ref": 0.0,
+     "abs_diff": 0.0
+    },
+    {
+     "what": "seed 2 m1_per_task",
+     "got": 0.6873556046350164,
+     "ref": 0.687356,
+     "abs_diff": 3.953649835297668e-07
+    },
+    {
+     "what": "seed 2 n_cells",
+     "got": 3.0,
+     "ref": 3.0,
+     "abs_diff": 0.0
+    },
+    {
+     "what": "seed 2 bal_acc",
+     "got": 0.5028046914839368,
+     "ref": 0.502805,
+     "abs_diff": 3.0851606314108437e-07
+    },
+    {
+     "what": "seed 2 tpr",
+     "got": 0.08108108108108109,
+     "ref": 0.0810811,
+     "abs_diff": 1.8918918917587568e-08
+    }
+   ],
+   "n_compared": 12,
+   "max_abs_diff": 4.4781144792338523e-07,
+   "passed": true,
+   "note": "no row for (D0, C, T0) in results/abc2/mlp_final_table.csv"
+  }
+ ]
+}

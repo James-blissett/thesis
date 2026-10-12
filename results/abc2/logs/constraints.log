@@ -1,0 +1,32 @@
+[*] 700 v3 rollouts; 6 already done; 694 to compute -> constraints_v3
+[   1/694]   0.0 min  1.30 s/rollout  eta  15.0 min
+[   2/694]   0.0 min  1.30 s/rollout  eta  14.9 min
+[  25/694]   0.5 min  1.27 s/rollout  eta  14.2 min
+[  50/694]   1.0 min  1.21 s/rollout  eta  13.0 min
+[  75/694]   1.5 min  1.18 s/rollout  eta  12.2 min
+[ 100/694]   2.0 min  1.20 s/rollout  eta  11.9 min
+[ 125/694]   2.5 min  1.22 s/rollout  eta  11.5 min
+[ 150/694]   3.1 min  1.23 s/rollout  eta  11.1 min
+[ 175/694]   3.6 min  1.23 s/rollout  eta  10.7 min
+[ 200/694]   4.1 min  1.24 s/rollout  eta  10.2 min
+[ 225/694]   4.7 min  1.24 s/rollout  eta   9.7 min
+[ 250/694]   5.2 min  1.25 s/rollout  eta   9.2 min
+[ 275/694]   5.7 min  1.25 s/rollout  eta   8.7 min
+[ 300/694]   6.3 min  1.25 s/rollout  eta   8.2 min
+[ 325/694]   6.8 min  1.26 s/rollout  eta   7.7 min
+[ 350/694]   7.3 min  1.26 s/rollout  eta   7.2 min
+[ 375/694]   7.9 min  1.26 s/rollout  eta   6.7 min
+[ 400/694]   8.4 min  1.26 s/rollout  eta   6.2 min
+[ 425/694]   9.0 min  1.27 s/rollout  eta   5.7 min
+[ 450/694]   9.5 min  1.27 s/rollout  eta   5.2 min
+[ 475/694]  10.1 min  1.27 s/rollout  eta   4.6 min
+[ 500/694]  10.6 min  1.27 s/rollout  eta   4.1 min
+[ 525/694]  11.1 min  1.27 s/rollout  eta   3.6 min
+[ 550/694]  11.7 min  1.27 s/rollout  eta   3.1 min
+[ 575/694]  12.2 min  1.28 s/rollout  eta   2.5 min
+[ 600/694]  12.8 min  1.28 s/rollout  eta   2.0 min
+[ 625/694]  13.3 min  1.28 s/rollout  eta   1.5 min
+[ 650/694]  13.8 min  1.28 s/rollout  eta   0.9 min
+[ 675/694]  14.4 min  1.28 s/rollout  eta   0.4 min
+[ 694/694]  14.8 min  1.28 s/rollout  eta   0.0 min
+[*] 700/700 constraint files present and well-formed

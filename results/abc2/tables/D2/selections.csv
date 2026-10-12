@@ -1,0 +1,25 @@
+cond,seed,selection,value,criterion,score_eval_seen
+D2,0,beta_action,0.83,"best series' eval_seen M1-per-task, mean over seeds (4 d.p.)",0.6675
+D2,0,beta_emb_temp,none,"best series' eval_seen M1-per-task, mean over seeds (4 d.p.)",0.7691
+D2,0,beta_cross_layer,0.96,"best series' eval_seen M1-per-task, mean over seeds (4 d.p.)",0.6299
+D2,0,emb_layer,emb_temp[29],"best eval_seen pooled M1, mean over seeds, at the chosen emb_temp beta",0.788845
+D2,0,c_C_probes,0.001,mean over seeds of 33-probe mean eval_seen M1-per-task,0.722776
+D2,0,c_C_final,0.0001,mean over seeds of eval_seen M1-per-task,0.81961
+D2,0,c_A,1e-06,mean over seeds of 34-probe mean eval_seen M1-per-task,0.807378
+D2,0,A_probe,layer10,best eval_seen M1-per-task at c_A (this seed),0.84827
+D2,1,beta_action,0.83,"best series' eval_seen M1-per-task, mean over seeds (4 d.p.)",0.6675
+D2,1,beta_emb_temp,none,"best series' eval_seen M1-per-task, mean over seeds (4 d.p.)",0.7691
+D2,1,beta_cross_layer,0.96,"best series' eval_seen M1-per-task, mean over seeds (4 d.p.)",0.6299
+D2,1,emb_layer,emb_temp[29],"best eval_seen pooled M1, mean over seeds, at the chosen emb_temp beta",0.788845
+D2,1,c_C_probes,0.001,mean over seeds of 33-probe mean eval_seen M1-per-task,0.722776
+D2,1,c_C_final,0.0001,mean over seeds of eval_seen M1-per-task,0.81961
+D2,1,c_A,1e-06,mean over seeds of 34-probe mean eval_seen M1-per-task,0.807378
+D2,1,A_probe,layer31,best eval_seen M1-per-task at c_A (this seed),0.839295
+D2,2,beta_action,0.83,"best series' eval_seen M1-per-task, mean over seeds (4 d.p.)",0.6675
+D2,2,beta_emb_temp,none,"best series' eval_seen M1-per-task, mean over seeds (4 d.p.)",0.7691
+D2,2,beta_cross_layer,0.96,"best series' eval_seen M1-per-task, mean over seeds (4 d.p.)",0.6299
+D2,2,emb_layer,emb_temp[29],"best eval_seen pooled M1, mean over seeds, at the chosen emb_temp beta",0.788845
+D2,2,c_C_probes,0.001,mean over seeds of 33-probe mean eval_seen M1-per-task,0.722776
+D2,2,c_C_final,0.0001,mean over seeds of eval_seen M1-per-task,0.81961
+D2,2,c_A,1e-06,mean over seeds of 34-probe mean eval_seen M1-per-task,0.807378
+D2,2,A_probe,layer11,best eval_seen M1-per-task at c_A (this seed),0.856808

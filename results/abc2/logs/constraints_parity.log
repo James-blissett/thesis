@@ -1,0 +1,6 @@
+[parity] task00_trial00 (P=7) PASS  worst max|diff| 0.00e+00 (act_mag); NaN mismatches 0  [5.4 s]
+[parity] task01_trial02 (P=7) PASS  worst max|diff| 0.00e+00 (act_mag); NaN mismatches 0  [9.0 s]
+[parity] task03_trial05 (P=3) PASS  worst max|diff| 0.00e+00 (act_mag); NaN mismatches 0  [2.5 s]
+[parity] task05_trial27 (P=3) PASS  worst max|diff| 0.00e+00 (act_mag); NaN mismatches 0  [2.5 s]
+[parity] task09_trial29 (P=3) PASS  worst max|diff| 0.00e+00 (act_mag); NaN mismatches 0  [4.1 s]
+[parity] PASSED -> results/abc2/constraints_parity.json

@@ -1,0 +1,45 @@
+[*] free on /data/tmp: 179.3 GB; to write 1000 rollouts x 0.141 GB = 140.6 GB + headroom 30 GB = 170.6 GB
+[*] 0/1000 already cached; 1000 to do -> /data/tmp/abc2_features
+[   1/1000]   0.0 min  1.98 s/rollout  eta  32.9 min
+[   2/1000]   0.1 min  3.64 s/rollout  eta  60.6 min
+[  25/1000]   1.1 min  2.57 s/rollout  eta  41.7 min
+[  50/1000]   2.1 min  2.55 s/rollout  eta  40.4 min
+[  75/1000]   3.3 min  2.61 s/rollout  eta  40.2 min
+[ 100/1000]   4.4 min  2.67 s/rollout  eta  40.0 min
+[ 125/1000]   5.6 min  2.69 s/rollout  eta  39.2 min
+[ 150/1000]   6.6 min  2.65 s/rollout  eta  37.5 min
+[ 175/1000]   7.8 min  2.67 s/rollout  eta  36.7 min
+[ 200/1000]   8.9 min  2.68 s/rollout  eta  35.8 min
+[ 225/1000]  10.1 min  2.69 s/rollout  eta  34.8 min
+[ 250/1000]  11.3 min  2.70 s/rollout  eta  33.8 min
+[ 275/1000]  12.4 min  2.71 s/rollout  eta  32.7 min
+[ 300/1000]  13.4 min  2.68 s/rollout  eta  31.3 min
+[ 325/1000]  13.8 min  2.55 s/rollout  eta  28.7 min
+[ 350/1000]  14.2 min  2.44 s/rollout  eta  26.4 min
+[ 375/1000]  14.6 min  2.34 s/rollout  eta  24.4 min
+[ 400/1000]  15.0 min  2.26 s/rollout  eta  22.6 min
+[ 425/1000]  15.4 min  2.18 s/rollout  eta  20.9 min
+[ 450/1000]  15.9 min  2.11 s/rollout  eta  19.4 min
+[ 475/1000]  16.3 min  2.05 s/rollout  eta  18.0 min
+[ 500/1000]  16.7 min  2.00 s/rollout  eta  16.7 min
+[ 525/1000]  17.1 min  1.95 s/rollout  eta  15.5 min
+[ 550/1000]  17.5 min  1.91 s/rollout  eta  14.3 min
+[ 575/1000]  17.9 min  1.87 s/rollout  eta  13.2 min
+[ 600/1000]  18.3 min  1.83 s/rollout  eta  12.2 min
+[ 625/1000]  18.7 min  1.80 s/rollout  eta  11.2 min
+[ 650/1000]  19.1 min  1.77 s/rollout  eta  10.3 min
+[ 675/1000]  19.5 min  1.74 s/rollout  eta   9.4 min
+[ 700/1000]  20.0 min  1.71 s/rollout  eta   8.6 min
+[ 725/1000]  20.4 min  1.69 s/rollout  eta   7.8 min
+[ 750/1000]  20.9 min  1.67 s/rollout  eta   7.0 min
+[ 775/1000]  21.3 min  1.65 s/rollout  eta   6.2 min
+[ 800/1000]  21.7 min  1.63 s/rollout  eta   5.4 min
+[ 825/1000]  22.1 min  1.61 s/rollout  eta   4.7 min
+[ 850/1000]  22.6 min  1.59 s/rollout  eta   4.0 min
+[ 875/1000]  23.0 min  1.57 s/rollout  eta   3.3 min
+[ 900/1000]  23.4 min  1.56 s/rollout  eta   2.6 min
+[ 925/1000]  23.8 min  1.54 s/rollout  eta   1.9 min
+[ 950/1000]  24.2 min  1.53 s/rollout  eta   1.3 min
+[ 975/1000]  24.5 min  1.51 s/rollout  eta   0.6 min
+[1000/1000]  24.7 min  1.48 s/rollout  eta   0.0 min
+[*] 1000/1000 cached

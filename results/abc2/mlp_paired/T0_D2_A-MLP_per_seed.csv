@@ -1,0 +1,10 @@
+test_set,comparison,cond_x,cond_y,detector,detector_x,detector_y,seed,metric,n_test,n_cells_x,n_cells_y,x_point,y_point,diff_point,diff_mean,diff_ci_lo,diff_ci_hi,n_valid,verdict
+T0,D2:A-MLP - D2:A,D2,D2,A-MLP vs A,A-MLP,A,0,m1_per_task,90,3,3,0.577137,0.744335,-0.167198,-0.173337,-0.269669,-0.079608,1000,significant worsening
+T0,D2:A-MLP - D2:A,D2,D2,A-MLP vs A,A-MLP,A,1,m1_per_task,90,3,3,0.744623,0.7897,-0.0450774,-0.0474027,-0.162562,0.0630185,1000,no significant change
+T0,D2:A-MLP - D2:A,D2,D2,A-MLP vs A,A-MLP,A,2,m1_per_task,90,3,3,0.60311,0.675293,-0.0721835,-0.0665558,-0.201286,0.069619,1000,no significant change
+T0,D2:A-MLP - D2:A,D2,D2,A-MLP vs A,A-MLP,A,0,bal_acc,90,3,3,0.572917,0.511905,0.0610119,0.060406,0.00398208,0.118402,1000,improvement
+T0,D2:A-MLP - D2:A,D2,D2,A-MLP vs A,A-MLP,A,1,bal_acc,90,3,3,0.557604,0.5,0.0576037,0.0589742,-0.0278045,0.136392,1000,no significant change
+T0,D2:A-MLP - D2:A,D2,D2,A-MLP vs A,A-MLP,A,2,bal_acc,90,3,3,0.508159,0.508159,0,-0.000151638,-0.0677882,0.0629984,1000,no significant change
+T0,D2:A-MLP - D2:A,D2,D2,A-MLP vs A,A-MLP,A,0,tpr,90,3,3,0.166667,0.0238095,0.142857,0.142677,0.0294118,0.25,1000,improvement
+T0,D2:A-MLP - D2:A,D2,D2,A-MLP vs A,A-MLP,A,1,tpr,90,3,3,0.258065,0,0.258065,0.258668,0.134303,0.369231,1000,improvement
+T0,D2:A-MLP - D2:A,D2,D2,A-MLP vs A,A-MLP,A,2,tpr,90,3,3,0.0540541,0.0540541,0,0.000770454,-0.107167,0.103466,1000,no significant change

@@ -1,0 +1,394 @@
+{
+ "gate": [
+  {
+   "quantity": "emb_temp[28] alone, M1-per-task",
+   "reference": 0.725,
+   "got": 0.7250453333333334,
+   "per_seed": [
+    0.662467,
+    0.765584,
+    0.747085
+   ],
+   "diff": 4.5333333333452686e-05,
+   "tolerance": 0.005,
+   "pass": true,
+   "source": "results/abc/final_table.csv m1_per_task_unseen_mean"
+  },
+  {
+   "quantity": "C final, M1-per-task",
+   "reference": 0.7169,
+   "got": 0.716924,
+   "per_seed": [
+    0.690105,
+    0.773311,
+    0.687356
+   ],
+   "diff": 2.4000000000024002e-05,
+   "tolerance": 0.005,
+   "pass": true,
+   "source": "results/abc/final_table.csv m1_per_task_unseen_mean"
+  },
+  {
+   "quantity": "A final, M1-per-task",
+   "reference": 0.7163,
+   "got": 0.7163069999999999,
+   "per_seed": [
+    0.752014,
+    0.690116,
+    0.706791
+   ],
+   "diff": 6.999999999868223e-06,
+   "tolerance": 0.005,
+   "pass": true,
+   "source": "results/abc/final_table.csv m1_per_task_unseen_mean"
+  },
+  {
+   "quantity": "emb_temp[28], balanced accuracy, alpha 0.1, cut",
+   "reference": 0.5558666666666666,
+   "reference_final_table": 0.5559,
+   "got": 0.5558593333333334,
+   "per_seed": [
+    0.489583,
+    0.677995,
+    0.5
+   ],
+   "reference_per_seed": [
+    0.4896,
+    0.678,
+    0.5
+   ],
+   "diff": -7.333333333248149e-06,
+   "tolerance": 0.01,
+   "pass": true,
+   "source": "results/abc/cp_curves.csv (variant cut, alpha 0.1), mean over seeds"
+  },
+  {
+   "quantity": "A, balanced accuracy, alpha 0.1, cut",
+   "reference": 0.5367999999999999,
+   "reference_final_table": 0.5368,
+   "got": 0.5368023333333333,
+   "per_seed": [
+    0.547619,
+    0.562788,
+    0.5
+   ],
+   "reference_per_seed": [
+    0.5476,
+    0.5628,
+    0.5
+   ],
+   "diff": 2.333333333326415e-06,
+   "tolerance": 0.01,
+   "pass": true,
+   "source": "results/abc/cp_curves.csv (variant cut, alpha 0.1), mean over seeds"
+  },
+  {
+   "quantity": "C, balanced accuracy, alpha 0.1, cut",
+   "reference": 0.5009333333333333,
+   "reference_final_table": 0.5009,
+   "got": 0.500935,
+   "per_seed": [
+    0.5,
+    0.5,
+    0.502805
+   ],
+   "reference_per_seed": [
+    0.5,
+    0.5,
+    0.5028
+   ],
+   "diff": 1.6666666666775853e-06,
+   "tolerance": 0.01,
+   "pass": true,
+   "source": "results/abc/cp_curves.csv (variant cut, alpha 0.1), mean over seeds"
+  }
+ ],
+ "passed": true,
+ "parity": {
+  "selections": {
+   "beta_action": {
+    "abc": "0.96",
+    "port": "0.96",
+    "same": true
+   },
+   "beta_emb_temp": {
+    "abc": "none",
+    "port": "none",
+    "same": true
+   },
+   "beta_cross_layer": {
+    "abc": "0.91",
+    "port": "0.91",
+    "same": true
+   },
+   "emb_layer": {
+    "abc": "emb_temp[28]",
+    "port": "emb_temp[28]",
+    "same": true
+   },
+   "c_C_probes": {
+    "abc": "1",
+    "port": "1",
+    "same": true
+   },
+   "c_C_final": {
+    "abc": "1e-05",
+    "port": "1e-05",
+    "same": true
+   },
+   "c_A": {
+    "abc": "1e-05",
+    "port": "1e-05",
+    "same": true
+   },
+   "A_probe_seed0": {
+    "abc": "layer01",
+    "port": "layer01",
+    "same": true
+   },
+   "A_probe_seed1": {
+    "abc": "layer10",
+    "port": "layer10",
+    "same": true
+   },
+   "A_probe_seed2": {
+    "abc": "layer02",
+    "port": "layer02",
+    "same": true
+   }
+  },
+  "constraint_m1": {
+   "rows_compared": 2508,
+   "max_abs_diff_per_seed": 5.0000000000050004e-05,
+   "note": "abc's CSV is rounded to 4 d.p.",
+   "n_sign_strings_differing": 0
+  },
+  "c_probes_max_abs_diff_unseen_per_task": 4.999999999999449e-05,
+  "a_probes_max_abs_diff_unseen_per_task": 4.999999999999449e-05,
+  "a_probes_mean_abs_diff_unseen_per_task": 2.376470588235222e-05,
+  "cp_curves": {
+   "A": {
+    "max_abs_diff_bal_acc_all_alpha_seed": 4.8000000000048004e-05,
+    "n": 48
+   },
+   "C": {
+    "max_abs_diff_bal_acc_all_alpha_seed": 4.8000000000048004e-05,
+    "n": 48
+   },
+   "emb": {
+    "max_abs_diff_bal_acc_all_alpha_seed": 4.999999999999449e-05,
+    "n": 48
+   }
+  }
+ },
+ "utc": "2026-10-11T13:28:48Z",
+ "prep": {
+  "index": "/data/tmp/abc2_dev/pipeline/idx_v2.json",
+  "splits_dir": "/data/tmp/abc2_dev/pipeline/splits",
+  "split_checks": {
+   "seed0": {
+    "train": true,
+    "eval_seen": true,
+    "unseen": true,
+    "unseen_tasks": true,
+    "stress_empty": true
+   },
+   "seed1": {
+    "train": true,
+    "eval_seen": true,
+    "unseen": true,
+    "unseen_tasks": true,
+    "stress_empty": true
+   },
+   "seed2": {
+    "train": true,
+    "eval_seen": true,
+    "unseen": true,
+    "unseen_tasks": true,
+    "stress_empty": true
+   }
+  }
+ },
+ "out_dir": "/data/tmp/abc2_dev/pipeline/out",
+ "timings": [
+  {
+   "utc": "2026-10-11T12:19:01Z",
+   "stage": "stage2_seeds",
+   "cond": "D0",
+   "seeds": "0 1 2",
+   "n_rollouts": "300",
+   "seconds": "30.0",
+   "note": "seeds [0",
+   "null": [
+    " 1",
+    " 2]"
+   ]
+  },
+  {
+   "utc": "2026-10-11T12:19:01Z",
+   "stage": "stage2_total",
+   "cond": "D0",
+   "seeds": "0 1 2",
+   "n_rollouts": "300",
+   "seconds": "30.1",
+   "note": ""
+  },
+  {
+   "utc": "2026-10-11T12:20:13Z",
+   "stage": "stage3_grid",
+   "cond": "D0",
+   "seeds": "0 1 2",
+   "n_rollouts": "300",
+   "seconds": "72.4",
+   "note": "seeds [0",
+   "null": [
+    " 1",
+    " 2]"
+   ]
+  },
+  {
+   "utc": "2026-10-11T12:20:13Z",
+   "stage": "stage3_total",
+   "cond": "D0",
+   "seeds": "0 1 2",
+   "n_rollouts": "300",
+   "seconds": "72.4",
+   "note": ""
+  },
+  {
+   "utc": "2026-10-11T12:20:13Z",
+   "stage": "all",
+   "cond": "D0",
+   "seeds": "0 1 2",
+   "n_rollouts": "300",
+   "seconds": "102.7",
+   "note": ""
+  },
+  {
+   "utc": "2026-10-11T12:20:25Z",
+   "stage": "stage2_total",
+   "cond": "D0",
+   "seeds": "0 1 2",
+   "n_rollouts": "300",
+   "seconds": "0.1",
+   "note": ""
+  },
+  {
+   "utc": "2026-10-11T12:20:25Z",
+   "stage": "stage3_total",
+   "cond": "D0",
+   "seeds": "0 1 2",
+   "n_rollouts": "300",
+   "seconds": "0.0",
+   "note": ""
+  },
+  {
+   "utc": "2026-10-11T13:23:42Z",
+   "stage": "stage4_grid",
+   "cond": "D0",
+   "seeds": "0 1 2",
+   "n_rollouts": "300",
+   "seconds": "3796.9",
+   "note": "loading 171 s"
+  },
+  {
+   "utc": "2026-10-11T13:25:40Z",
+   "stage": "stage4_final",
+   "cond": "D0",
+   "seeds": "0 1 2",
+   "n_rollouts": "300",
+   "seconds": "118.0",
+   "note": "seed 0 layer01"
+  },
+  {
+   "utc": "2026-10-11T13:26:37Z",
+   "stage": "stage4_final",
+   "cond": "D0",
+   "seeds": "0 1 2",
+   "n_rollouts": "300",
+   "seconds": "56.5",
+   "note": "seed 1 layer10"
+  },
+  {
+   "utc": "2026-10-11T13:28:03Z",
+   "stage": "stage4_final",
+   "cond": "D0",
+   "seeds": "0 1 2",
+   "n_rollouts": "300",
+   "seconds": "85.9",
+   "note": "seed 2 layer02"
+  },
+  {
+   "utc": "2026-10-11T13:28:03Z",
+   "stage": "stage4_total",
+   "cond": "D0",
+   "seeds": "0 1 2",
+   "n_rollouts": "300",
+   "seconds": "4057.7",
+   "note": ""
+  },
+  {
+   "utc": "2026-10-11T13:28:04Z",
+   "stage": "stage6",
+   "cond": "D0",
+   "seeds": "0 1 2",
+   "n_rollouts": "300",
+   "seconds": "1.4",
+   "note": ""
+  },
+  {
+   "utc": "2026-10-11T13:28:04Z",
+   "stage": "all",
+   "cond": "D0",
+   "seeds": "0 1 2",
+   "n_rollouts": "300",
+   "seconds": "4059.4",
+   "note": ""
+  },
+  {
+   "utc": "2026-10-11T13:28:38Z",
+   "stage": "stage2_total",
+   "cond": "D0",
+   "seeds": "0 1 2",
+   "n_rollouts": "300",
+   "seconds": "0.1",
+   "note": ""
+  },
+  {
+   "utc": "2026-10-11T13:28:38Z",
+   "stage": "stage3_total",
+   "cond": "D0",
+   "seeds": "0 1 2",
+   "n_rollouts": "300",
+   "seconds": "0.0",
+   "note": ""
+  },
+  {
+   "utc": "2026-10-11T13:28:38Z",
+   "stage": "stage4_total",
+   "cond": "D0",
+   "seeds": "0 1 2",
+   "n_rollouts": "300",
+   "seconds": "0.0",
+   "note": ""
+  },
+  {
+   "utc": "2026-10-11T13:28:40Z",
+   "stage": "stage6",
+   "cond": "D0",
+   "seeds": "0 1 2",
+   "n_rollouts": "300",
+   "seconds": "1.5",
+   "note": ""
+  },
+  {
+   "utc": "2026-10-11T13:28:40Z",
+   "stage": "all",
+   "cond": "D0",
+   "seeds": "0 1 2",
+   "n_rollouts": "300",
+   "seconds": "1.8",
+   "note": ""
+  }
+ ]
+}

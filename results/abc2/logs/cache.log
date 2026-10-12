@@ -1,0 +1,12 @@
+[verify] rollout_ids.json equals corpus_v3_index.json order: True
+[verify] 1000/1000 rollouts cached
+[verify] task00_trial00 (P=7): layer 15 equals pooled_and_hN: True
+[verify] task00_trial03 (P=3): layer 15 equals pooled_and_hN: True
+[verify] task00_trial04 (P=3): layer 15 equals pooled_and_hN: True
+[verify] task00_trial05 (P=3): layer 15 equals pooled_and_hN: True
+[verify] task00_trial06 (P=3): layer 15 equals pooled_and_hN: True
+[verify] ori2_task00_trial00 (v3): all 33 layers equal hidden.pt: True
+[verify] obj_task00_trial08 (v3): all 33 layers equal hidden.pt: True
+[verify] lan_task09_trial19 (v3): all 33 layers equal hidden.pt: True
+[verify] action tokens equal actions.npz: 1000/1000
+[verify] PASSED

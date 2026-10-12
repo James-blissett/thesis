@@ -1,0 +1,10 @@
+cond,seed,beta_action,beta_emb_temp,beta_cross_layer,emb_layer,c_C_probes,c_C_final,c_A,A_probe
+D0,0,0.96,none,0.91,emb_temp[28],1,1e-05,1e-05,layer01
+D0,1,0.96,none,0.91,emb_temp[28],1,1e-05,1e-05,layer10
+D0,2,0.96,none,0.91,emb_temp[28],1,1e-05,1e-05,layer02
+D1,0,0.83,none,0.96,emb_temp[28],0.001,1e-05,1e-06,layer06
+D1,1,0.83,none,0.96,emb_temp[28],0.001,1e-05,1e-06,layer03
+D1,2,0.83,none,0.96,emb_temp[28],0.001,1e-05,1e-06,layer04
+D2,0,0.83,none,0.96,emb_temp[29],0.001,0.0001,1e-06,layer10
+D2,1,0.83,none,0.96,emb_temp[29],0.001,0.0001,1e-06,layer31
+D2,2,0.83,none,0.96,emb_temp[29],0.001,0.0001,1e-06,layer11

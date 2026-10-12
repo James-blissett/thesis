@@ -1,0 +1,13 @@
+cond,family,beta,best_series,best_per_task_seen,best_pooled_seen,median_per_task_seen,n_unstable,n_series,chosen
+D1,action,none,act_dir,0.5219,0.529006,0.5,0,4,False
+D1,action,0.83,act_dir,0.6526,0.674545,0.58885,2,4,True
+D1,action,0.91,act_dir,0.6308,0.655795,0.5818,2,4,False
+D1,action,0.96,act_rep,0.6234,0.655042,0.5664,1,4,False
+D1,emb_temp,none,emb_temp[16],0.7782,0.758748,0.7663,4,32,True
+D1,emb_temp,0.83,emb_temp[30],0.7283,0.74736,0.66825,12,32,False
+D1,emb_temp,0.91,emb_temp[28],0.695,0.729142,0.6385,11,32,False
+D1,emb_temp,0.96,emb_temp[29],0.6628,0.701193,0.6068,13,32,False
+D1,cross_layer,none,xl_adj[3],0.5414,0.521168,0.4289,3,63,False
+D1,cross_layer,0.83,xl_adj[3],0.6426,0.618279,0.4791,6,63,False
+D1,cross_layer,0.91,xl_final[13],0.6256,0.518593,0.5049,12,63,False
+D1,cross_layer,0.96,xl_final[12],0.6516,0.612217,0.5241,14,63,True

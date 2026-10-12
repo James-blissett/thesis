@@ -1,0 +1,29 @@
+# More-data run (more_data_collection.md, handoff v1). Knobs first; see section 2.
+PER_TASK_ORI2: 20
+PER_TASK_OBJ: 20
+PER_TASK_LAN: 20
+PER_TASK_SWAP: 5
+PER_TASK_TASK: 5
+N_WORKERS: 2
+COLLECT_HOURS_MAX: 36
+SEEDS: [0, 1, 2]
+HEADROOM_GB: 30
+
+# --- fixed settings (not knobs) ---------------------------------------------------
+blocks: [ori2, obj, lan, swap, task]          # job order; block_number = position here
+suites: {ori2: libero_10, obj: libero_10_object, lan: libero_10_lan,
+         swap: libero_10_swap, task: libero_10_task}
+training_role_blocks: [ori, ori2, obj, lan]
+stress_blocks: [swap, task]
+checkpoint: openvla/openvla-7b-finetuned-libero-10
+unnorm_key: libero_10                          # from the v2 capture config, every suite
+max_policy_steps: 520
+num_steps_wait: 10
+out_dir: /data/rollouts_v3
+assignment_v3: collect_pro/init_state_assignment_v3.json
+assignment_v2: collect/init_state_assignment.json
+libero_pro_root: /ephemeral/code/LIBERO-PRO
+libero_config_path: /data/tmp/libero_pro_config
+init_rng: "np.random.default_rng(1000 + block_number).choice(n_states, k, replace=False)"
+seed_formula: "set_seed_everywhere(10000 * (block_number + 1) + 100 * task + trial)"
+disk_gb_per_rollout: 0.29                      # refined after the smoke test (Step 3.6)

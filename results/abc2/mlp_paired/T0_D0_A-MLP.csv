@@ -1,0 +1,4 @@
+test_set,comparison,cond_x,cond_y,detector,detector_x,detector_y,metric,n_seeds,n_boot,n_valid,rng_seed,x_point,y_point,diff_point,diff_mean,diff_ci_lo,diff_ci_hi,x_boot_mean,y_boot_mean,improvement,significant_worsening,verdict,x_point_per_seed,y_point_per_seed
+T0,D0:A-MLP - D0:A,D0,D0,A-MLP vs A,A-MLP,A,m1_per_task,3,1000,1000,20261011,0.685535,0.716307,-0.0307721,-0.0281305,-0.0955943,0.0355486,0.688813,0.716944,False,False,no significant change,0.648121 0.691325 0.717158,0.752014 0.690116 0.706791
+T0,D0:A-MLP - D0:A,D0,D0,A-MLP vs A,A-MLP,A,bal_acc,3,1000,1000,20261011,0.516409,0.536802,-0.0203931,-0.0203939,-0.0478144,0.00828408,0.523461,0.543854,False,False,no significant change,0.535714 0.5 0.513514,0.547619 0.562788 0.5
+T0,D0:A-MLP - D0:A,D0,D0,A-MLP vs A,A-MLP,A,tpr,3,1000,1000,20261011,0.0328185,0.0855095,-0.0526909,-0.0526625,-0.111386,0.0026957,0.0469211,0.0995836,False,False,no significant change,0.0714286 0 0.027027,0.0952381 0.16129 0

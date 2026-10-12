@@ -1,0 +1,59 @@
+{
+ "status": "done",
+ "reason": "",
+ "updated_utc": "2026-10-12T09:41:07Z",
+ "conds_done": [
+  "D0",
+  "D2"
+ ],
+ "conds_skipped": {},
+ "seeds": [
+  0,
+  1,
+  2
+ ],
+ "detectors": [
+  "A-MLP",
+  "C-MLP"
+ ],
+ "seconds": 42,
+ "safe_code_found": false,
+ "hyperparameters": {
+  "hidden": [
+   256,
+   256
+  ],
+  "lr": 0.001,
+  "batch": 4096,
+  "max_epochs": 50,
+  "patience": 5,
+  "optimizer": "AdamW",
+  "loss": "row-weighted BCE (batch mean)",
+  "wd_grid": [
+   0.0001,
+   0.01,
+   0.1,
+   1.0
+  ]
+ },
+ "wd": {
+  "D0": {
+   "A-MLP": 1.0,
+   "C-MLP": 0.0001
+  },
+  "D2": {
+   "A-MLP": 0.01,
+   "C-MLP": 1.0
+  }
+ },
+ "paired_T0": {
+  "passed": true,
+  "max_abs_diff": 5.147328878685187e-07,
+  "pairs": [
+   "D0 A-MLP",
+   "D0 C-MLP",
+   "D2 A-MLP",
+   "D2 C-MLP"
+  ]
+ }
+}

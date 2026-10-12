@@ -1,0 +1,49 @@
+cond,seed,selection,value,criterion,score_eval_seen
+D0,0,A-MLP_input,layer01 (pooled hidden state),A_probe of this seed (pipeline),
+D0,0,wd_A-MLP,1,mean over seeds of best-epoch eval_seen M1-per-task,0.819844
+D0,0,A-MLP_best_epoch,2,best eval_seen M1-per-task (this seed),0.866204
+D0,0,A-MLP_epochs_run,7,"early stopping, patience 5, max 50",
+D0,0,C-MLP_input,C final inputs (132 prepared series) betas action=0.96 emb_temp=none cross_layer=0.91,betas of this condition (pipeline),
+D0,0,wd_C-MLP,0.0001,mean over seeds of best-epoch eval_seen M1-per-task,0.792204
+D0,0,C-MLP_best_epoch,5,best eval_seen M1-per-task (this seed),0.789021
+D0,0,C-MLP_epochs_run,10,"early stopping, patience 5, max 50",
+D0,1,A-MLP_input,layer10 (pooled hidden state),A_probe of this seed (pipeline),
+D0,1,wd_A-MLP,1,mean over seeds of best-epoch eval_seen M1-per-task,0.819844
+D0,1,A-MLP_best_epoch,1,best eval_seen M1-per-task (this seed),0.797397
+D0,1,A-MLP_epochs_run,6,"early stopping, patience 5, max 50",
+D0,1,C-MLP_input,C final inputs (132 prepared series) betas action=0.96 emb_temp=none cross_layer=0.91,betas of this condition (pipeline),
+D0,1,wd_C-MLP,0.0001,mean over seeds of best-epoch eval_seen M1-per-task,0.792204
+D0,1,C-MLP_best_epoch,1,best eval_seen M1-per-task (this seed),0.791095
+D0,1,C-MLP_epochs_run,6,"early stopping, patience 5, max 50",
+D0,2,A-MLP_input,layer02 (pooled hidden state),A_probe of this seed (pipeline),
+D0,2,wd_A-MLP,1,mean over seeds of best-epoch eval_seen M1-per-task,0.819844
+D0,2,A-MLP_best_epoch,8,best eval_seen M1-per-task (this seed),0.795933
+D0,2,A-MLP_epochs_run,13,"early stopping, patience 5, max 50",
+D0,2,C-MLP_input,C final inputs (132 prepared series) betas action=0.96 emb_temp=none cross_layer=0.91,betas of this condition (pipeline),
+D0,2,wd_C-MLP,0.0001,mean over seeds of best-epoch eval_seen M1-per-task,0.792204
+D0,2,C-MLP_best_epoch,1,best eval_seen M1-per-task (this seed),0.796495
+D0,2,C-MLP_epochs_run,6,"early stopping, patience 5, max 50",
+D2,0,A-MLP_input,layer10 (pooled hidden state),A_probe of this seed (pipeline),
+D2,0,wd_A-MLP,0.01,mean over seeds of best-epoch eval_seen M1-per-task,0.742014
+D2,0,A-MLP_best_epoch,1,best eval_seen M1-per-task (this seed),0.656399
+D2,0,A-MLP_epochs_run,6,"early stopping, patience 5, max 50",
+D2,0,C-MLP_input,C final inputs (132 prepared series) betas action=0.83 emb_temp=none cross_layer=0.96,betas of this condition (pipeline),
+D2,0,wd_C-MLP,1,mean over seeds of best-epoch eval_seen M1-per-task,0.825017
+D2,0,C-MLP_best_epoch,1,best eval_seen M1-per-task (this seed),0.800408
+D2,0,C-MLP_epochs_run,6,"early stopping, patience 5, max 50",
+D2,1,A-MLP_input,layer31 (pooled hidden state),A_probe of this seed (pipeline),
+D2,1,wd_A-MLP,0.01,mean over seeds of best-epoch eval_seen M1-per-task,0.742014
+D2,1,A-MLP_best_epoch,1,best eval_seen M1-per-task (this seed),0.789728
+D2,1,A-MLP_epochs_run,6,"early stopping, patience 5, max 50",
+D2,1,C-MLP_input,C final inputs (132 prepared series) betas action=0.83 emb_temp=none cross_layer=0.96,betas of this condition (pipeline),
+D2,1,wd_C-MLP,1,mean over seeds of best-epoch eval_seen M1-per-task,0.825017
+D2,1,C-MLP_best_epoch,2,best eval_seen M1-per-task (this seed),0.850064
+D2,1,C-MLP_epochs_run,7,"early stopping, patience 5, max 50",
+D2,2,A-MLP_input,layer11 (pooled hidden state),A_probe of this seed (pipeline),
+D2,2,wd_A-MLP,0.01,mean over seeds of best-epoch eval_seen M1-per-task,0.742014
+D2,2,A-MLP_best_epoch,1,best eval_seen M1-per-task (this seed),0.779915
+D2,2,A-MLP_epochs_run,6,"early stopping, patience 5, max 50",
+D2,2,C-MLP_input,C final inputs (132 prepared series) betas action=0.83 emb_temp=none cross_layer=0.96,betas of this condition (pipeline),
+D2,2,wd_C-MLP,1,mean over seeds of best-epoch eval_seen M1-per-task,0.825017
+D2,2,C-MLP_best_epoch,3,best eval_seen M1-per-task (this seed),0.82458
+D2,2,C-MLP_epochs_run,8,"early stopping, patience 5, max 50",

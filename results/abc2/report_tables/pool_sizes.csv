@@ -1,0 +1,4 @@
+cond,pool,train_mean,blocks
+D0,300,126.0,ori
+D1,500,210.0,ori ori2
+D2,900,379.0,ori ori2 obj lan

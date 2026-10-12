@@ -1,0 +1,7 @@
+cond,c,probes_seen_task_mean,probes_seen_task_std,chosen
+D0,1,0.707101,0.00628672,False
+D0,0.01,0.721475,0.00742677,False
+D0,0.001,0.747786,0.00155103,False
+D0,0.0001,0.785816,0.0202258,False
+D0,1e-05,0.811612,0.0201336,True
+D0,1e-06,0.810884,0.0151755,False

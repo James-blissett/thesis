@@ -1,0 +1,43 @@
+cond,seed,selection,value,criterion,score_eval_seen
+D0,0,B_beta_action,0.96,pipeline selections.csv (this condition),
+D0,0,B_beta_emb_temp,none,pipeline selections.csv (this condition),
+D0,0,B_beta_cross_layer,0.91,pipeline selections.csv (this condition),
+D0,0,B_skipped_unstable_targets,emb_temp[15] emb_temp[1] xl_final[17] xl_final[18],unstable at the chosen beta in the pipeline's constraint_m1_summary.csv,
+D0,0,c_B_grid,0.0001,mean over seeds of the probe-mean eval_seen own-target AUROC,0.863155
+D0,0,c_B_final,0.001,mean over seeds of eval_seen M1-per-task,0.781645
+D0,0,B_n_probes,124,"H=10, layers 0-31 (32)",
+D0,1,B_beta_action,0.96,pipeline selections.csv (this condition),
+D0,1,B_beta_emb_temp,none,pipeline selections.csv (this condition),
+D0,1,B_beta_cross_layer,0.91,pipeline selections.csv (this condition),
+D0,1,B_skipped_unstable_targets,emb_temp[15] emb_temp[1] xl_final[17] xl_final[18],unstable at the chosen beta in the pipeline's constraint_m1_summary.csv,
+D0,1,c_B_grid,0.0001,mean over seeds of the probe-mean eval_seen own-target AUROC,0.863155
+D0,1,c_B_final,0.001,mean over seeds of eval_seen M1-per-task,0.781645
+D0,1,B_n_probes,124,"H=10, layers 0-31 (32)",
+D0,2,B_beta_action,0.96,pipeline selections.csv (this condition),
+D0,2,B_beta_emb_temp,none,pipeline selections.csv (this condition),
+D0,2,B_beta_cross_layer,0.91,pipeline selections.csv (this condition),
+D0,2,B_skipped_unstable_targets,emb_temp[15] emb_temp[1] xl_final[17] xl_final[18],unstable at the chosen beta in the pipeline's constraint_m1_summary.csv,
+D0,2,c_B_grid,0.0001,mean over seeds of the probe-mean eval_seen own-target AUROC,0.863155
+D0,2,c_B_final,0.001,mean over seeds of eval_seen M1-per-task,0.781645
+D0,2,B_n_probes,124,"H=10, layers 0-31 (32)",
+D2,0,B_beta_action,0.83,pipeline selections.csv (this condition),
+D2,0,B_beta_emb_temp,none,pipeline selections.csv (this condition),
+D2,0,B_beta_cross_layer,0.96,pipeline selections.csv (this condition),
+D2,0,B_skipped_unstable_targets,emb_temp[11] emb_temp[12] emb_temp[13] xl_final[18] xl_final[19] xl_final[20] xl_final[24] xl_final[26] xl_final[28] xl_final[29] xl_final[30],unstable at the chosen beta in the pipeline's constraint_m1_summary.csv,
+D2,0,c_B_grid,0.0001,mean over seeds of the probe-mean eval_seen own-target AUROC,0.881672
+D2,0,c_B_final,0.01,mean over seeds of eval_seen M1-per-task,0.841403
+D2,0,B_n_probes,116,"H=10, layers 0-31 (32)",
+D2,1,B_beta_action,0.83,pipeline selections.csv (this condition),
+D2,1,B_beta_emb_temp,none,pipeline selections.csv (this condition),
+D2,1,B_beta_cross_layer,0.96,pipeline selections.csv (this condition),
+D2,1,B_skipped_unstable_targets,emb_temp[11] emb_temp[12] emb_temp[13] xl_final[18] xl_final[19] xl_final[20] xl_final[24] xl_final[26] xl_final[28] xl_final[29] xl_final[30],unstable at the chosen beta in the pipeline's constraint_m1_summary.csv,
+D2,1,c_B_grid,0.0001,mean over seeds of the probe-mean eval_seen own-target AUROC,0.881672
+D2,1,c_B_final,0.01,mean over seeds of eval_seen M1-per-task,0.841403
+D2,1,B_n_probes,116,"H=10, layers 0-31 (32)",
+D2,2,B_beta_action,0.83,pipeline selections.csv (this condition),
+D2,2,B_beta_emb_temp,none,pipeline selections.csv (this condition),
+D2,2,B_beta_cross_layer,0.96,pipeline selections.csv (this condition),
+D2,2,B_skipped_unstable_targets,emb_temp[11] emb_temp[12] emb_temp[13] xl_final[18] xl_final[19] xl_final[20] xl_final[24] xl_final[26] xl_final[28] xl_final[29] xl_final[30],unstable at the chosen beta in the pipeline's constraint_m1_summary.csv,
+D2,2,c_B_grid,0.0001,mean over seeds of the probe-mean eval_seen own-target AUROC,0.881672
+D2,2,c_B_final,0.01,mean over seeds of eval_seen M1-per-task,0.841403
+D2,2,B_n_probes,116,"H=10, layers 0-31 (32)",

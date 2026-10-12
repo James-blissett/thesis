@@ -1,0 +1,12 @@
+{
+ "cond": "['D0', 'D1', 'D2']",
+ "seeds": "[0, 1, 2]",
+ "index": "corpus_v3_index.json",
+ "cache_dir": "/data/tmp/abc2_features",
+ "splits_dir": "results/abc2/splits",
+ "out_dir": "results/abc2",
+ "work_dir": "/data/tmp/abc2_scores/work",
+ "demotions": "results/abc2/demotions.json",
+ "until": "6",
+ "n_jobs": "4"
+}

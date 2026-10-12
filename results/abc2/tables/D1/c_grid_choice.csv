@@ -1,0 +1,7 @@
+cond,c,probes_seen_task_mean,probes_seen_task_std,final_seen_task_mean,final_seen_task_std,final_weights_sign_consistent,final_n_weights,chosen_probes,chosen_final
+D1,1,0.717326,0.0217162,0.785253,0.00553167,67,132,False,False
+D1,0.01,0.71746,0.0217701,0.779547,0.0201002,78,132,False,False
+D1,0.001,0.717677,0.0214737,0.777492,0.0224575,80,132,True,False
+D1,0.0001,0.717015,0.0194031,0.785312,0.0188351,73,132,False,False
+D1,1e-05,0.710374,0.0174123,0.796708,0.00779401,94,132,False,True
+D1,1e-06,0.707677,0.01702,0.793306,0.0127775,99,132,False,False

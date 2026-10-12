@@ -1,0 +1,148 @@
+[09:40:25] [mlp D0] betas {'action': '0.96', 'emb_temp': 'none', 'cross_layer': '0.91'}; A probes {0: 'layer01', 1: 'layer10', 2: 'layer02'}
+[09:40:25] [mlp D2] betas {'action': '0.83', 'emb_temp': 'none', 'cross_layer': '0.96'}; A probes {0: 'layer10', 1: 'layer31', 2: 'layer11'}
+[09:40:25] index corpus_v3_index.json: 1000 rollouts; conds ['D0', 'D2']; seeds [0, 1, 2]; device cuda; out results/abc2; work /data/tmp/abc2_scores/mlp
+[09:40:25] [s4] GPU memory fraction 0.950
+[09:40:26] [mlp A] layer01 loaded (1 s) for [('D0', 0)]
+[09:40:28] [mlp D0 seed 0 A-MLP] wd 0.0001: best epoch 2/7, eval_seen M1-per-task 0.8662, loss 0.5708 -> 0.4451 (1 s, 47347 rows, d=4096)
+[09:40:28] [mlp D0 seed 0 A-MLP] wd 0.01: best epoch 2/7, eval_seen M1-per-task 0.8662, loss 0.5708 -> 0.4450 (0 s, 47347 rows, d=4096)
+[09:40:28] [mlp D0 seed 0 A-MLP] wd 0.1: best epoch 2/7, eval_seen M1-per-task 0.8662, loss 0.5708 -> 0.4451 (0 s, 47347 rows, d=4096)
+[09:40:29] [mlp D0 seed 0 A-MLP] wd 1: best epoch 2/7, eval_seen M1-per-task 0.8662, loss 0.5709 -> 0.4457 (0 s, 47347 rows, d=4096)
+[09:40:30] [mlp A] layer10 loaded (1 s) for [('D0', 1), ('D2', 0)]
+[09:40:30] [mlp D0 seed 1 A-MLP] wd 0.0001: best epoch 1/6, eval_seen M1-per-task 0.7974, loss 0.4759 -> 0.4759 (0 s, 43643 rows, d=4096)
+[09:40:30] [mlp D0 seed 1 A-MLP] wd 0.01: best epoch 1/6, eval_seen M1-per-task 0.7974, loss 0.4759 -> 0.4759 (0 s, 43643 rows, d=4096)
+[09:40:31] [mlp D0 seed 1 A-MLP] wd 0.1: best epoch 1/6, eval_seen M1-per-task 0.7974, loss 0.4759 -> 0.4759 (0 s, 43643 rows, d=4096)
+[09:40:31] [mlp D0 seed 1 A-MLP] wd 1: best epoch 1/6, eval_seen M1-per-task 0.7974, loss 0.4761 -> 0.4761 (0 s, 43643 rows, d=4096)
+[09:40:32] [mlp D2 seed 0 A-MLP] wd 0.0001: best epoch 1/6, eval_seen M1-per-task 0.6495, loss 0.3713 -> 0.3713 (1 s, 148819 rows, d=4096)
+[09:40:33] [mlp D2 seed 0 A-MLP] wd 0.01: best epoch 1/6, eval_seen M1-per-task 0.6564, loss 0.3714 -> 0.3714 (1 s, 148819 rows, d=4096)
+[09:40:33] [mlp D2 seed 0 A-MLP] wd 0.1: best epoch 1/6, eval_seen M1-per-task 0.6496, loss 0.3714 -> 0.3714 (1 s, 148819 rows, d=4096)
+[09:40:34] [mlp D2 seed 0 A-MLP] wd 1: best epoch 1/6, eval_seen M1-per-task 0.6509, loss 0.3718 -> 0.3718 (1 s, 148819 rows, d=4096)
+[09:40:35] [mlp A] layer02 loaded (1 s) for [('D0', 2)]
+[09:40:36] [mlp D0 seed 2 A-MLP] wd 0.0001: best epoch 1/6, eval_seen M1-per-task 0.7845, loss 0.5537 -> 0.5537 (0 s, 43311 rows, d=4096)
+[09:40:36] [mlp D0 seed 2 A-MLP] wd 0.01: best epoch 1/6, eval_seen M1-per-task 0.7836, loss 0.5537 -> 0.5537 (0 s, 43311 rows, d=4096)
+[09:40:36] [mlp D0 seed 2 A-MLP] wd 0.1: best epoch 1/6, eval_seen M1-per-task 0.7845, loss 0.5537 -> 0.5537 (0 s, 43311 rows, d=4096)
+[09:40:37] [mlp D0 seed 2 A-MLP] wd 1: best epoch 8/13, eval_seen M1-per-task 0.7959, loss 0.5539 -> 0.1394 (1 s, 43311 rows, d=4096)
+[09:40:38] [mlp A] layer31 loaded (1 s) for [('D2', 1)]
+[09:40:39] [mlp D2 seed 1 A-MLP] wd 0.0001: best epoch 1/6, eval_seen M1-per-task 0.7905, loss 0.3402 -> 0.3402 (1 s, 150864 rows, d=4096)
+[09:40:39] [mlp D2 seed 1 A-MLP] wd 0.01: best epoch 1/6, eval_seen M1-per-task 0.7897, loss 0.3402 -> 0.3402 (1 s, 150864 rows, d=4096)
+[09:40:40] [mlp D2 seed 1 A-MLP] wd 0.1: best epoch 1/6, eval_seen M1-per-task 0.7759, loss 0.3402 -> 0.3402 (1 s, 150864 rows, d=4096)
+[09:40:41] [mlp D2 seed 1 A-MLP] wd 1: best epoch 1/6, eval_seen M1-per-task 0.7897, loss 0.3405 -> 0.3405 (1 s, 150864 rows, d=4096)
+[09:40:42] [mlp A] layer11 loaded (1 s) for [('D2', 2)]
+[09:40:43] [mlp D2 seed 2 A-MLP] wd 0.0001: best epoch 1/6, eval_seen M1-per-task 0.7781, loss 0.3580 -> 0.3580 (1 s, 146283 rows, d=4096)
+[09:40:43] [mlp D2 seed 2 A-MLP] wd 0.01: best epoch 1/6, eval_seen M1-per-task 0.7799, loss 0.3580 -> 0.3580 (1 s, 146283 rows, d=4096)
+[09:40:44] [mlp D2 seed 2 A-MLP] wd 0.1: best epoch 1/6, eval_seen M1-per-task 0.7753, loss 0.3580 -> 0.3580 (1 s, 146283 rows, d=4096)
+[09:40:45] [mlp D2 seed 2 A-MLP] wd 1: best epoch 1/6, eval_seen M1-per-task 0.7771, loss 0.3584 -> 0.3584 (1 s, 146283 rows, d=4096)
+[09:40:47] loaded primary series for 1000 rollouts (2 s)
+[09:40:49] [mlp D0 seed 0 C-MLP] wd 0.0001: best epoch 5/10, eval_seen M1-per-task 0.7890, loss 0.6141 -> 0.3835 (0 s, 47347 rows, d=132)
+[09:40:49] [mlp D0 seed 0 C-MLP] wd 0.01: best epoch 5/10, eval_seen M1-per-task 0.7890, loss 0.6141 -> 0.3835 (0 s, 47347 rows, d=132)
+[09:40:50] [mlp D0 seed 0 C-MLP] wd 0.1: best epoch 5/10, eval_seen M1-per-task 0.7890, loss 0.6141 -> 0.3837 (0 s, 47347 rows, d=132)
+[09:40:50] [mlp D0 seed 0 C-MLP] wd 1: best epoch 5/10, eval_seen M1-per-task 0.7890, loss 0.6144 -> 0.3855 (0 s, 47347 rows, d=132)
+[09:40:51] [mlp D0 seed 1 C-MLP] wd 0.0001: best epoch 1/6, eval_seen M1-per-task 0.7911, loss 0.6249 -> 0.6249 (0 s, 43643 rows, d=132)
+[09:40:51] [mlp D0 seed 1 C-MLP] wd 0.01: best epoch 1/6, eval_seen M1-per-task 0.7911, loss 0.6249 -> 0.6249 (0 s, 43643 rows, d=132)
+[09:40:51] [mlp D0 seed 1 C-MLP] wd 0.1: best epoch 1/6, eval_seen M1-per-task 0.7911, loss 0.6250 -> 0.6250 (0 s, 43643 rows, d=132)
+[09:40:52] [mlp D0 seed 1 C-MLP] wd 1: best epoch 1/6, eval_seen M1-per-task 0.7911, loss 0.6252 -> 0.6252 (0 s, 43643 rows, d=132)
+[09:40:53] [mlp D0 seed 2 C-MLP] wd 0.0001: best epoch 1/6, eval_seen M1-per-task 0.7965, loss 0.6226 -> 0.6226 (0 s, 43311 rows, d=132)
+[09:40:53] [mlp D0 seed 2 C-MLP] wd 0.01: best epoch 1/6, eval_seen M1-per-task 0.7965, loss 0.6226 -> 0.6226 (0 s, 43311 rows, d=132)
+[09:40:53] [mlp D0 seed 2 C-MLP] wd 0.1: best epoch 1/6, eval_seen M1-per-task 0.7965, loss 0.6227 -> 0.6227 (0 s, 43311 rows, d=132)
+[09:40:53] [mlp D0 seed 2 C-MLP] wd 1: best epoch 1/6, eval_seen M1-per-task 0.7965, loss 0.6229 -> 0.6229 (0 s, 43311 rows, d=132)
+[09:40:56] [mlp D2 seed 0 C-MLP] wd 0.0001: best epoch 1/6, eval_seen M1-per-task 0.8014, loss 0.5313 -> 0.5313 (0 s, 148819 rows, d=132)
+[09:40:56] [mlp D2 seed 0 C-MLP] wd 0.01: best epoch 1/6, eval_seen M1-per-task 0.8014, loss 0.5313 -> 0.5313 (0 s, 148819 rows, d=132)
+[09:40:57] [mlp D2 seed 0 C-MLP] wd 0.1: best epoch 1/6, eval_seen M1-per-task 0.8021, loss 0.5314 -> 0.5314 (0 s, 148819 rows, d=132)
+[09:40:57] [mlp D2 seed 0 C-MLP] wd 1: best epoch 1/6, eval_seen M1-per-task 0.8004, loss 0.5320 -> 0.5320 (0 s, 148819 rows, d=132)
+[09:40:59] [mlp D2 seed 1 C-MLP] wd 0.0001: best epoch 2/7, eval_seen M1-per-task 0.8477, loss 0.5440 -> 0.4420 (0 s, 150864 rows, d=132)
+[09:41:00] [mlp D2 seed 1 C-MLP] wd 0.01: best epoch 2/7, eval_seen M1-per-task 0.8485, loss 0.5440 -> 0.4420 (0 s, 150864 rows, d=132)
+[09:41:00] [mlp D2 seed 1 C-MLP] wd 0.1: best epoch 2/7, eval_seen M1-per-task 0.8470, loss 0.5440 -> 0.4421 (0 s, 150864 rows, d=132)
+[09:41:00] [mlp D2 seed 1 C-MLP] wd 1: best epoch 2/7, eval_seen M1-per-task 0.8501, loss 0.5446 -> 0.4436 (0 s, 150864 rows, d=132)
+[09:41:03] [mlp D2 seed 2 C-MLP] wd 0.0001: best epoch 5/10, eval_seen M1-per-task 0.8212, loss 0.5312 -> 0.2716 (0 s, 146283 rows, d=132)
+[09:41:03] [mlp D2 seed 2 C-MLP] wd 0.01: best epoch 5/10, eval_seen M1-per-task 0.8205, loss 0.5313 -> 0.2715 (0 s, 146283 rows, d=132)
+[09:41:03] [mlp D2 seed 2 C-MLP] wd 0.1: best epoch 5/10, eval_seen M1-per-task 0.8229, loss 0.5313 -> 0.2718 (0 s, 146283 rows, d=132)
+[09:41:04] [mlp D2 seed 2 C-MLP] wd 1: best epoch 3/8, eval_seen M1-per-task 0.8246, loss 0.5319 -> 0.3497 (0 s, 146283 rows, d=132)
+[09:41:04] [mlp D0] A-MLP: wd 1 (eval_seen M1-per-task 0.8198; grid 0.0001: 0.8160, 0.01: 0.8157, 0.1: 0.8160, 1: 0.8198)
+[09:41:04] [mlp D0] C-MLP: wd 0.0001 (eval_seen M1-per-task 0.7922; grid 0.0001: 0.7922, 0.01: 0.7922, 0.1: 0.7922, 1: 0.7922)
+/ephemeral/code/thesis-introspection/analysis/abc/cp_eval.py:101: RuntimeWarning: Mean of empty slice
+  mu = np.nanmean(v[:, : t_end + 1], 0)
+/ephemeral/code/venv/lib/python3.10/site-packages/numpy/lib/nanfunctions.py:1879: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/ephemeral/code/thesis-introspection/analysis/abc/cp_eval.py:101: RuntimeWarning: Mean of empty slice
+  mu = np.nanmean(v[:, : t_end + 1], 0)
+/ephemeral/code/venv/lib/python3.10/site-packages/numpy/lib/nanfunctions.py:1879: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/ephemeral/code/thesis-introspection/analysis/abc/cp_eval.py:101: RuntimeWarning: Mean of empty slice
+  mu = np.nanmean(v[:, : t_end + 1], 0)
+/ephemeral/code/venv/lib/python3.10/site-packages/numpy/lib/nanfunctions.py:1879: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/ephemeral/code/thesis-introspection/analysis/abc/cp_eval.py:101: RuntimeWarning: Mean of empty slice
+  mu = np.nanmean(v[:, : t_end + 1], 0)
+/ephemeral/code/venv/lib/python3.10/site-packages/numpy/lib/nanfunctions.py:1879: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/ephemeral/code/thesis-introspection/analysis/abc/cp_eval.py:101: RuntimeWarning: Mean of empty slice
+  mu = np.nanmean(v[:, : t_end + 1], 0)
+/ephemeral/code/venv/lib/python3.10/site-packages/numpy/lib/nanfunctions.py:1879: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/ephemeral/code/thesis-introspection/analysis/abc/cp_eval.py:101: RuntimeWarning: Mean of empty slice
+  mu = np.nanmean(v[:, : t_end + 1], 0)
+/ephemeral/code/venv/lib/python3.10/site-packages/numpy/lib/nanfunctions.py:1879: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+[09:41:05] [mlp D2] A-MLP: wd 0.01 (eval_seen M1-per-task 0.7420; grid 0.0001: 0.7393, 0.01: 0.7420, 0.1: 0.7336, 1: 0.7393)
+[09:41:05] [mlp D2] C-MLP: wd 1 (eval_seen M1-per-task 0.8250; grid 0.0001: 0.8235, 0.01: 0.8235, 0.1: 0.8240, 1: 0.8250)
+/ephemeral/code/thesis-introspection/analysis/abc/cp_eval.py:101: RuntimeWarning: Mean of empty slice
+  mu = np.nanmean(v[:, : t_end + 1], 0)
+/ephemeral/code/venv/lib/python3.10/site-packages/numpy/lib/nanfunctions.py:1879: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/ephemeral/code/thesis-introspection/analysis/abc/cp_eval.py:101: RuntimeWarning: Mean of empty slice
+  mu = np.nanmean(v[:, : t_end + 1], 0)
+/ephemeral/code/venv/lib/python3.10/site-packages/numpy/lib/nanfunctions.py:1879: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/ephemeral/code/thesis-introspection/analysis/abc/cp_eval.py:101: RuntimeWarning: Mean of empty slice
+  mu = np.nanmean(v[:, : t_end + 1], 0)
+/ephemeral/code/venv/lib/python3.10/site-packages/numpy/lib/nanfunctions.py:1879: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/ephemeral/code/thesis-introspection/analysis/abc/cp_eval.py:101: RuntimeWarning: Mean of empty slice
+  mu = np.nanmean(v[:, : t_end + 1], 0)
+/ephemeral/code/venv/lib/python3.10/site-packages/numpy/lib/nanfunctions.py:1879: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/ephemeral/code/thesis-introspection/analysis/abc/cp_eval.py:101: RuntimeWarning: Mean of empty slice
+  mu = np.nanmean(v[:, : t_end + 1], 0)
+/ephemeral/code/venv/lib/python3.10/site-packages/numpy/lib/nanfunctions.py:1879: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/ephemeral/code/thesis-introspection/analysis/abc/cp_eval.py:101: RuntimeWarning: Mean of empty slice
+  mu = np.nanmean(v[:, : t_end + 1], 0)
+/ephemeral/code/venv/lib/python3.10/site-packages/numpy/lib/nanfunctions.py:1879: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+[09:41:07]    D0 A-MLP eval_seen M1-per-task 0.8198±0.0402  pooled 0.8194  BA@0.1 0.5992  TPR 0.206  FAR 0.008  cells 7 7 7
+[09:41:07]    D0 A-MLP T0        M1-per-task 0.6855±0.0349  pooled 0.7152  BA@0.1 0.5164  TPR 0.033  FAR 0.000  cells 3 3 3
+[09:41:07]    D0 A-MLP T1        M1-per-task 0.6648±0.0073  pooled 0.7042  BA@0.1 0.5147  TPR 0.029  FAR 0.000  cells 3 3 3
+[09:41:07]    D0 A-MLP T2        M1-per-task 0.6686±0.0558  pooled 0.7243  BA@0.1 0.5473  TPR 0.095  FAR 0.000  cells 8 7 9
+[09:41:07]    D0 C-MLP eval_seen M1-per-task 0.7922±0.0039  pooled 0.7878  BA@0.1 0.6724  TPR 0.345  FAR 0.000  cells 7 7 7
+[09:41:07]    D0 C-MLP T0        M1-per-task 0.7175±0.0346  pooled 0.7476  BA@0.1 0.5908  TPR 0.207  FAR 0.025  cells 3 3 3
+[09:41:07]    D0 C-MLP T1        M1-per-task 0.7347±0.0192  pooled 0.7495  BA@0.1 0.5954  TPR 0.217  FAR 0.026  cells 3 3 3
+[09:41:07]    D0 C-MLP T2        M1-per-task 0.7609±0.0076  pooled 0.7888  BA@0.1 0.6239  TPR 0.312  FAR 0.064  cells 8 7 9
+[09:41:07]    D2 A-MLP eval_seen M1-per-task 0.7420±0.0743  pooled 0.8252  BA@0.1 0.6625  TPR 0.381  FAR 0.056  cells 15 13 15
+[09:41:07]    D2 A-MLP T0        M1-per-task 0.6416±0.0901  pooled 0.7210  BA@0.1 0.5462  TPR 0.160  FAR 0.067  cells 3 3 3
+[09:41:07]    D2 A-MLP T1        M1-per-task 0.6743±0.0657  pooled 0.7272  BA@0.1 0.5495  TPR 0.166  FAR 0.067  cells 3 3 3
+[09:41:07]    D2 A-MLP T2        M1-per-task 0.7091±0.0340  pooled 0.7823  BA@0.1 0.5840  TPR 0.243  FAR 0.075  cells 8 7 9
+[09:41:07]    D2 C-MLP eval_seen M1-per-task 0.8250±0.0248  pooled 0.8546  BA@0.1 0.6907  TPR 0.428  FAR 0.046  cells 15 13 15
+[09:41:07]    D2 C-MLP T0        M1-per-task 0.7319±0.0453  pooled 0.7793  BA@0.1 0.5751  TPR 0.220  FAR 0.070  cells 3 3 3
+[09:41:07]    D2 C-MLP T1        M1-per-task 0.7425±0.0174  pooled 0.7581  BA@0.1 0.5639  TPR 0.215  FAR 0.087  cells 3 3 3
+[09:41:07]    D2 C-MLP T2        M1-per-task 0.7841±0.0360  pooled 0.7996  BA@0.1 0.6238  TPR 0.353  FAR 0.106  cells 8 7 9
+[09:41:07] [mlp] trained and scored (42 s; peak GPU memory 4.70 GB)
+[T0] 1 comparisons x 3 metrics, 1000 reps, 2 sides: 0.1 s (loading 0.1 s) -> results/abc2/mlp_paired/T0_D0_A-MLP.csv
+[T0] identity check PASSED: D0/A-MLP n=3 max|d|=2.664092664250717e-07; D0/A n=12 max|d|=3.7776820127621846e-07
+    D0:A-MLP - D0:A A-MLP vs A m1_per_task  point -0.031  mean -0.028 [-0.096, +0.036]  no significant change
+    D0:A-MLP - D0:A A-MLP vs A bal_acc      point -0.020  mean -0.020 [-0.048, +0.008]  no significant change
+    D0:A-MLP - D0:A A-MLP vs A tpr          point -0.053  mean -0.053 [-0.111, +0.003]  no significant change
+[T0] 1 comparisons x 3 metrics, 1000 reps, 2 sides: 0.1 s (loading 0.1 s) -> results/abc2/mlp_paired/T0_D0_C-MLP.csv
+[T0] identity check PASSED: D0/C-MLP n=3 max|d|=4.706688254696445e-07; D0/C n=12 max|d|=4.4781144792338523e-07
+    D0:C-MLP - D0:C C-MLP vs C m1_per_task  point +0.001  mean +0.001 [-0.043, +0.039]  no significant change
+    D0:C-MLP - D0:C C-MLP vs C bal_acc      point +0.090  mean +0.085 [+0.048, +0.117]  improvement
+    D0:C-MLP - D0:C C-MLP vs C tpr          point +0.180  mean +0.174 [+0.115, +0.227]  improvement
+[T0] 1 comparisons x 3 metrics, 1000 reps, 2 sides: 0.1 s (loading 0.1 s) -> results/abc2/mlp_paired/T0_D2_A-MLP.csv
+[T0] identity check PASSED: D2/A-MLP n=3 max|d|=5.147328878685187e-07; D2/A n=12 max|d|=3.3670033672272837e-07
+    D2:A-MLP - D2:A A-MLP vs A m1_per_task  point -0.095  mean -0.096 [-0.164, -0.030]  significant worsening
+    D2:A-MLP - D2:A A-MLP vs A bal_acc      point +0.040  mean +0.040 [-0.002, +0.078]  no significant change
+    D2:A-MLP - D2:A A-MLP vs A tpr          point +0.134  mean +0.134 [+0.074, +0.195]  improvement
+[T0] 1 comparisons x 3 metrics, 1000 reps, 2 sides: 0.2 s (loading 0.2 s) -> results/abc2/mlp_paired/T0_D2_C-MLP.csv
+[T0] identity check PASSED: D2/C-MLP n=3 max|d|=3.2843442523966537e-07; D2/C n=12 max|d|=4.7619047616187515e-07
+    D2:C-MLP - D2:C C-MLP vs C m1_per_task  point +0.032  mean +0.029 [-0.016, +0.076]  no significant change
+    D2:C-MLP - D2:C C-MLP vs C bal_acc      point +0.025  mean +0.025 [-0.016, +0.061]  no significant change
+    D2:C-MLP - D2:C C-MLP vs C tpr          point +0.039  mean +0.038 [-0.023, +0.097]  no significant change
+[09:41:07] [mlp paired] 4 pairs -> results/abc2/mlp_paired_T0.csv; identity check PASSED (max |diff| 5.1e-07)

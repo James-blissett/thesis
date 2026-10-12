@@ -1,0 +1,282 @@
+{
+ "tolerance": 0.0001,
+ "reference": "constraints",
+ "rollouts": {
+  "task00_trial00": {
+   "n_positions": 7,
+   "pass": true,
+   "keys": {
+    "act_mag": {
+     "max_abs_diff": 0.0,
+     "nan_mismatch": 0,
+     "n_nan": 1,
+     "dtype_match": true,
+     "pass": true
+    },
+    "act_dir": {
+     "max_abs_diff": 0.0,
+     "nan_mismatch": 0,
+     "n_nan": 234,
+     "dtype_match": true,
+     "pass": true
+    },
+    "grip_flip": {
+     "max_abs_diff": 0.0,
+     "nan_mismatch": 0,
+     "n_nan": 1,
+     "dtype_match": true,
+     "pass": true
+    },
+    "emb_temp": {
+     "max_abs_diff": 0.0,
+     "nan_mismatch": 0,
+     "n_nan": 32,
+     "dtype_match": true,
+     "pass": true
+    },
+    "xl_adj": {
+     "max_abs_diff": 0.0,
+     "nan_mismatch": 0,
+     "n_nan": 0,
+     "dtype_match": true,
+     "pass": true
+    },
+    "xl_final": {
+     "max_abs_diff": 0.0,
+     "nan_mismatch": 0,
+     "n_nan": 0,
+     "dtype_match": true,
+     "pass": true
+    },
+    "xl_spread": {
+     "max_abs_diff": 0.0,
+     "nan_mismatch": 0,
+     "n_nan": 0,
+     "dtype_match": true,
+     "pass": true
+    }
+   }
+  },
+  "task01_trial02": {
+   "n_positions": 7,
+   "pass": true,
+   "keys": {
+    "act_mag": {
+     "max_abs_diff": 0.0,
+     "nan_mismatch": 0,
+     "n_nan": 1,
+     "dtype_match": true,
+     "pass": true
+    },
+    "act_dir": {
+     "max_abs_diff": 0.0,
+     "nan_mismatch": 0,
+     "n_nan": 219,
+     "dtype_match": true,
+     "pass": true
+    },
+    "grip_flip": {
+     "max_abs_diff": 0.0,
+     "nan_mismatch": 0,
+     "n_nan": 1,
+     "dtype_match": true,
+     "pass": true
+    },
+    "emb_temp": {
+     "max_abs_diff": 0.0,
+     "nan_mismatch": 0,
+     "n_nan": 32,
+     "dtype_match": true,
+     "pass": true
+    },
+    "xl_adj": {
+     "max_abs_diff": 0.0,
+     "nan_mismatch": 0,
+     "n_nan": 0,
+     "dtype_match": true,
+     "pass": true
+    },
+    "xl_final": {
+     "max_abs_diff": 0.0,
+     "nan_mismatch": 0,
+     "n_nan": 0,
+     "dtype_match": true,
+     "pass": true
+    },
+    "xl_spread": {
+     "max_abs_diff": 0.0,
+     "nan_mismatch": 0,
+     "n_nan": 0,
+     "dtype_match": true,
+     "pass": true
+    }
+   }
+  },
+  "task03_trial05": {
+   "n_positions": 3,
+   "pass": true,
+   "keys": {
+    "act_mag": {
+     "max_abs_diff": 0.0,
+     "nan_mismatch": 0,
+     "n_nan": 1,
+     "dtype_match": true,
+     "pass": true
+    },
+    "act_dir": {
+     "max_abs_diff": 0.0,
+     "nan_mismatch": 0,
+     "n_nan": 227,
+     "dtype_match": true,
+     "pass": true
+    },
+    "grip_flip": {
+     "max_abs_diff": 0.0,
+     "nan_mismatch": 0,
+     "n_nan": 1,
+     "dtype_match": true,
+     "pass": true
+    },
+    "emb_temp": {
+     "max_abs_diff": 0.0,
+     "nan_mismatch": 0,
+     "n_nan": 32,
+     "dtype_match": true,
+     "pass": true
+    },
+    "xl_adj": {
+     "max_abs_diff": 0.0,
+     "nan_mismatch": 0,
+     "n_nan": 0,
+     "dtype_match": true,
+     "pass": true
+    },
+    "xl_final": {
+     "max_abs_diff": 0.0,
+     "nan_mismatch": 0,
+     "n_nan": 0,
+     "dtype_match": true,
+     "pass": true
+    },
+    "xl_spread": {
+     "max_abs_diff": 0.0,
+     "nan_mismatch": 0,
+     "n_nan": 0,
+     "dtype_match": true,
+     "pass": true
+    }
+   }
+  },
+  "task05_trial27": {
+   "n_positions": 3,
+   "pass": true,
+   "keys": {
+    "act_mag": {
+     "max_abs_diff": 0.0,
+     "nan_mismatch": 0,
+     "n_nan": 1,
+     "dtype_match": true,
+     "pass": true
+    },
+    "act_dir": {
+     "max_abs_diff": 0.0,
+     "nan_mismatch": 0,
+     "n_nan": 301,
+     "dtype_match": true,
+     "pass": true
+    },
+    "grip_flip": {
+     "max_abs_diff": 0.0,
+     "nan_mismatch": 0,
+     "n_nan": 1,
+     "dtype_match": true,
+     "pass": true
+    },
+    "emb_temp": {
+     "max_abs_diff": 0.0,
+     "nan_mismatch": 0,
+     "n_nan": 32,
+     "dtype_match": true,
+     "pass": true
+    },
+    "xl_adj": {
+     "max_abs_diff": 0.0,
+     "nan_mismatch": 0,
+     "n_nan": 0,
+     "dtype_match": true,
+     "pass": true
+    },
+    "xl_final": {
+     "max_abs_diff": 0.0,
+     "nan_mismatch": 0,
+     "n_nan": 0,
+     "dtype_match": true,
+     "pass": true
+    },
+    "xl_spread": {
+     "max_abs_diff": 0.0,
+     "nan_mismatch": 0,
+     "n_nan": 0,
+     "dtype_match": true,
+     "pass": true
+    }
+   }
+  },
+  "task09_trial29": {
+   "n_positions": 3,
+   "pass": true,
+   "keys": {
+    "act_mag": {
+     "max_abs_diff": 0.0,
+     "nan_mismatch": 0,
+     "n_nan": 1,
+     "dtype_match": true,
+     "pass": true
+    },
+    "act_dir": {
+     "max_abs_diff": 0.0,
+     "nan_mismatch": 0,
+     "n_nan": 155,
+     "dtype_match": true,
+     "pass": true
+    },
+    "grip_flip": {
+     "max_abs_diff": 0.0,
+     "nan_mismatch": 0,
+     "n_nan": 1,
+     "dtype_match": true,
+     "pass": true
+    },
+    "emb_temp": {
+     "max_abs_diff": 0.0,
+     "nan_mismatch": 0,
+     "n_nan": 32,
+     "dtype_match": true,
+     "pass": true
+    },
+    "xl_adj": {
+     "max_abs_diff": 0.0,
+     "nan_mismatch": 0,
+     "n_nan": 0,
+     "dtype_match": true,
+     "pass": true
+    },
+    "xl_final": {
+     "max_abs_diff": 0.0,
+     "nan_mismatch": 0,
+     "n_nan": 0,
+     "dtype_match": true,
+     "pass": true
+    },
+    "xl_spread": {
+     "max_abs_diff": 0.0,
+     "nan_mismatch": 0,
+     "n_nan": 0,
+     "dtype_match": true,
+     "pass": true
+    }
+   }
+  }
+ },
+ "pass": true
+}

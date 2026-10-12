@@ -1,0 +1,40 @@
+[T1] 6 comparisons x 3 metrics, 1000 reps, 9 sides: 0.7 s (loading 0.5 s) -> results/abc2/paired_T1.csv
+[T1] identity check PASSED: D1/A n=15 max|d|=4.191440017009551e-07; D0/A n=15 max|d|=4.4444444446956055e-07; D1/C n=15 max|d|=4.841790703924431e-07; D0/C n=15 max|d|=5.104939336808556e-07; D1/emb n=15 max|d|=4.780058651121522e-07; D0/emb n=15 max|d|=3.0364449310482655e-07; D2/A n=15 max|d|=4.1092241087614667e-07; D2/C n=15 max|d|=4.51612903212828e-07; D2/emb n=15 max|d|=4.750733136882346e-07
+    D1 - D0   A     m1_per_task  point +0.049  mean +0.050 [+0.005, +0.098]  improvement
+    D1 - D0   A     bal_acc      point +0.007  mean +0.003 [-0.025, +0.028]  no significant change
+    D1 - D0   A     tpr          point +0.044  mean +0.038 [-0.006, +0.078]  no significant change
+    D1 - D0   C     m1_per_task  point -0.007  mean -0.008 [-0.025, +0.010]  no significant change
+    D1 - D0   C     bal_acc      point +0.026  mean +0.024 [+0.001, +0.047]  improvement
+    D1 - D0   C     tpr          point +0.087  mean +0.082 [+0.042, +0.123]  improvement
+    D1 - D0   emb   m1_per_task  point +0.000  mean +0.000 [+0.000, +0.000]  no significant change
+    D1 - D0   emb   bal_acc      point -0.031  mean -0.028 [-0.062, +0.010]  no significant change
+    D1 - D0   emb   tpr          point -0.165  mean -0.159 [-0.208, -0.093]  significant worsening
+    D2 - D0   A     m1_per_task  point +0.039  mean +0.040 [-0.008, +0.091]  no significant change
+    D2 - D0   A     bal_acc      point -0.019  mean -0.023 [-0.049, +0.003]  no significant change
+    D2 - D0   A     tpr          point -0.046  mean -0.052 [-0.099, -0.007]  significant worsening
+    D2 - D0   C     m1_per_task  point -0.011  mean -0.011 [-0.042, +0.019]  no significant change
+    D2 - D0   C     bal_acc      point +0.030  mean +0.033 [-0.001, +0.062]  no significant change
+    D2 - D0   C     tpr          point +0.128  mean +0.132 [+0.080, +0.182]  improvement
+    D2 - D0   emb   m1_per_task  point +0.001  mean +0.000 [-0.007, +0.007]  no significant change
+    D2 - D0   emb   bal_acc      point -0.056  mean -0.057 [-0.089, -0.020]  significant worsening
+    D2 - D0   emb   tpr          point -0.178  mean -0.179 [-0.218, -0.132]  significant worsening
+[T2] 6 comparisons x 3 metrics, 1000 reps, 9 sides: 0.9 s (loading 0.5 s) -> results/abc2/paired_T2.csv
+[T2] identity check PASSED: D1/A n=15 max|d|=5.124485601415429e-07; D0/A n=15 max|d|=3.795728080735472e-07; D1/C n=15 max|d|=4.893617021606289e-07; D0/C n=15 max|d|=4.7619047616187515e-07; D1/emb n=15 max|d|=4.893617021606289e-07; D0/emb n=15 max|d|=4.1953284812823455e-07; D2/A n=15 max|d|=4.996611664420669e-07; D2/C n=15 max|d|=4.270887390411815e-07; D2/emb n=15 max|d|=5.06643715980637e-07
+    D1 - D0   A     m1_per_task  point +0.033  mean +0.037 [+0.004, +0.073]  improvement
+    D1 - D0   A     bal_acc      point +0.014  mean +0.014 [-0.008, +0.042]  no significant change
+    D1 - D0   A     tpr          point +0.062  mean +0.062 [+0.026, +0.120]  improvement
+    D1 - D0   C     m1_per_task  point -0.013  mean -0.014 [-0.031, +0.002]  no significant change
+    D1 - D0   C     bal_acc      point +0.043  mean +0.039 [+0.019, +0.059]  improvement
+    D1 - D0   C     tpr          point +0.125  mean +0.117 [+0.078, +0.154]  improvement
+    D1 - D0   emb   m1_per_task  point +0.000  mean +0.000 [+0.000, +0.000]  no significant change
+    D1 - D0   emb   bal_acc      point -0.005  mean +0.004 [-0.026, +0.034]  no significant change
+    D1 - D0   emb   tpr          point -0.121  mean -0.103 [-0.147, -0.056]  significant worsening
+    D2 - D0   A     m1_per_task  point +0.027  mean +0.032 [-0.011, +0.080]  no significant change
+    D2 - D0   A     bal_acc      point -0.002  mean +0.002 [-0.020, +0.028]  no significant change
+    D2 - D0   A     tpr          point -0.011  mean -0.002 [-0.045, +0.054]  no significant change
+    D2 - D0   C     m1_per_task  point -0.024  mean -0.024 [-0.051, +0.003]  no significant change
+    D2 - D0   C     bal_acc      point +0.051  mean +0.048 [+0.024, +0.073]  improvement
+    D2 - D0   C     tpr          point +0.175  mean +0.168 [+0.126, +0.208]  improvement
+    D2 - D0   emb   m1_per_task  point -0.003  mean -0.003 [-0.011, +0.003]  no significant change
+    D2 - D0   emb   bal_acc      point -0.019  mean -0.017 [-0.046, +0.012]  no significant change
+    D2 - D0   emb   tpr          point -0.128  mean -0.124 [-0.160, -0.087]  significant worsening

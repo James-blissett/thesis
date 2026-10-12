@@ -1,0 +1,32 @@
+{
+ "statistic": "share of the 520 policy steps whose 7 action_token_ids are all identical (step t vs step t)",
+ "n_lan": 200,
+ "n_with_partner": 200,
+ "n_with_multiple_partners": 0,
+ "lan_vs_partner": {
+  "n": 200,
+  "mean": 0.0219,
+  "median": 0.0,
+  "p10": 0.0,
+  "p90": 0.0392
+ },
+ "lan_vs_nonpartner": {
+  "n": 200,
+  "mean": 0.0216,
+  "median": 0.0059,
+  "p10": 0.0002,
+  "p90": 0.061,
+  "what": "per lan rollout, the mean share against every unperturbed rollout of the same base task at a different init state"
+ },
+ "reference": {
+  "n": 12250,
+  "mean": 0.021,
+  "median": 0.0,
+  "p10": 0.0,
+  "p90": 0.0385,
+  "what": "all pairs of unperturbed (ori + ori2) rollouts of the same base task at different init states"
+ },
+ "caveat": "LIBERO-PRO's libero_10_lan init states are fresh draws, not the libero_10 states (RUNLOG Step 1.4: no row of any perturbed suite's init file matches a libero_10 state). A lan rollout and its 'partner' (same base task, same init_state_index) therefore do NOT share a scene; the handoff's near-duplicate premise does not hold. Read the pair figure against `reference` (unperturbed pairs of one task at different init states) and `lan_vs_nonpartner`: if they are about equal, the lan block is not a near-duplicate of the unperturbed rollouts.",
+ "mean_share": 0.0219,
+ "median_share": 0.0
+}

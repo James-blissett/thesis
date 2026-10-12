@@ -1,0 +1,41 @@
+block,task,init_state_index,d_pert,d_base,ratio,instruction_original,instruction_block,instruction_differs,pass
+obj,0,36,11.729,9.8,1.2,put both the alphabet soup and the tomato sauce in the basket,put both the alphabet soup and the tomato sauce in the basket,False,False
+lan,0,25,9.598,9.8,0.98,put both the alphabet soup and the tomato sauce in the basket,place alphabet soup and tomato sauce into basket,True,True
+swap,0,13,9.509,9.8,0.97,put both the alphabet soup and the tomato sauce in the basket,put both the alphabet soup and the tomato sauce in the basket,False,False
+task,0,5,9.09,9.8,0.93,put both the alphabet soup and the tomato sauce in the basket,put both the cream cheese and the tomato sauce in the basket,True,True
+obj,1,26,11.283,8.622,1.31,put both the cream cheese box and the butter in the basket,put both the cream cheese box and the butter in the basket,False,False
+lan,1,6,9.123,8.622,1.06,put both the cream cheese box and the butter in the basket,place cream cheese box and butter into basket,True,True
+swap,1,34,9.219,8.622,1.07,put both the cream cheese box and the butter in the basket,put both the cream cheese box and the butter in the basket,False,False
+task,1,43,8.89,8.622,1.03,put both the cream cheese box and the butter in the basket,put both the alphabet soup and the butter in the basket,True,True
+obj,2,24,10.998,8.253,1.33,turn on the stove and put the moka pot on it,turn on the stove and put the moka pot on it,False,False
+lan,2,18,6.642,8.253,0.8,turn on the stove and put the moka pot on it,switch stove on and put moka pot on it,True,True
+swap,2,33,13.935,8.253,1.69,turn on the stove and put the moka pot on it,turn on the stove and put the moka pot on it,False,True
+task,2,31,5.951,8.253,0.72,turn on the stove and put the moka pot on it,turn on the stove and put the pan on it,True,True
+obj,3,27,23.624,12.638,1.87,put the black bowl in the bottom drawer of the cabinet and close it,put the black bowl in the bottom drawer of the cabinet and close it,False,True
+lan,3,44,7.65,12.638,0.61,put the black bowl in the bottom drawer of the cabinet and close it,put black bowl inside bottom drawer and close it,True,True
+swap,3,39,28.049,12.638,2.22,put the black bowl in the bottom drawer of the cabinet and close it,put the black bowl in the bottom drawer of the cabinet and close it,False,True
+task,3,22,8.555,12.638,0.68,put the black bowl in the bottom drawer of the cabinet and close it,put the bottle in the bottom drawer of the cabinet and close it,True,True
+obj,4,24,7.363,8.253,0.89,put the white mug on the left plate and put the yellow and white mug on the right plate,put the white mug on the left plate and put the yellow and white mug on the right plate,False,False
+lan,4,45,6.646,8.253,0.81,put the white mug on the left plate and put the yellow and white mug on the right plate,place white mug on left plate and yellow-white mug on right plate,True,True
+swap,4,39,8.363,8.253,1.01,put the white mug on the left plate and put the yellow and white mug on the right plate,put the white mug on the left plate and put the yellow and white mug on the right plate,False,False
+task,4,2,7.166,8.253,0.87,put the white mug on the left plate and put the yellow and white mug on the right plate,put the yellow and white mug on the left plate and put the white mug on the right plate,True,True
+obj,5,16,4.054,4.858,0.83,pick up the book and place it in the back compartment of the caddy,pick up the book and place it in the back compartment of the caddy,False,False
+lan,5,35,4.195,4.858,0.86,pick up the book and place it in the back compartment of the caddy,pick up the book and place in back compartment,True,True
+swap,5,13,5.542,4.858,1.14,pick up the book and place it in the back compartment of the caddy,pick up the book and place it in the back compartment of the caddy,False,False
+task,5,17,4.137,4.858,0.85,pick up the book and place it in the back compartment of the caddy,pick up the cup and place it in the back compartment of the caddy,True,True
+obj,6,10,8.431,7.661,1.1,put the white mug on the plate and put the chocolate pudding to the right of the plate,put the white mug on the plate and put the chocolate pudding to the right of the plate,False,False
+lan,6,15,6.077,7.661,0.79,put the white mug on the plate and put the chocolate pudding to the right of the plate,place white mug on plate and chocolate pudding to right,True,True
+swap,6,8,8.755,7.661,1.14,put the white mug on the plate and put the chocolate pudding to the right of the plate,put the white mug on the plate and put the chocolate pudding to the right of the plate,False,False
+task,6,15,9.69,7.661,1.26,put the white mug on the plate and put the chocolate pudding to the right of the plate,put the red mug on the plate and put the chocolate pudding to the right of the plate,True,True
+obj,7,48,10.102,9.249,1.09,put both the alphabet soup and the cream cheese box in the basket,put both the alphabet soup and the cream cheese box in the basket,False,False
+lan,7,10,7.764,9.249,0.84,put both the alphabet soup and the cream cheese box in the basket,put alphabet soup and cream cheese box in basket,True,True
+swap,7,17,7.905,9.249,0.85,put both the alphabet soup and the cream cheese box in the basket,put both the alphabet soup and the cream cheese box in the basket,False,False
+task,7,30,8.52,9.249,0.92,put both the alphabet soup and the cream cheese box in the basket,put both the ketchup and the cream cheese box in the basket,True,True
+obj,8,27,8.45,7.819,1.08,put both moka pots on the stove,put both moka pots on the stove,False,False
+lan,8,18,6.165,7.819,0.79,put both moka pots on the stove,place both moka pots on stove,True,True
+swap,8,0,16.021,7.819,2.05,put both moka pots on the stove,put both moka pots on the stove,False,True
+task,8,27,7.237,7.819,0.93,put both moka pots on the stove,put the left moka pot on the stove,True,True
+obj,9,22,7.474,8.669,0.86,put the yellow and white mug in the microwave and close it,put the yellow and white mug in the microwave and close it,False,False
+lan,9,14,7.128,8.669,0.82,put the yellow and white mug in the microwave and close it,place yellow and white mug in microwave and close door,True,True
+swap,9,21,33.614,8.669,3.88,put the yellow and white mug in the microwave and close it,put the yellow and white mug in the microwave and close it,False,True
+task,9,0,5.996,8.669,0.69,put the yellow and white mug in the microwave and close it,put the white mug in the microwave and close it,True,True

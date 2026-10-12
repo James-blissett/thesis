@@ -1,0 +1,7 @@
+quantity,reference,got,diff,tolerance,pass,source,reference_final_table
+"emb_temp[28] alone, M1-per-task",0.725,0.7250453333333334,4.5333333333452686e-05,0.005,True,results/abc/final_table.csv m1_per_task_unseen_mean,
+"C final, M1-per-task",0.7169,0.716924,2.4000000000024002e-05,0.005,True,results/abc/final_table.csv m1_per_task_unseen_mean,
+"A final, M1-per-task",0.7163,0.7163069999999999,6.999999999868223e-06,0.005,True,results/abc/final_table.csv m1_per_task_unseen_mean,
+"emb_temp[28], balanced accuracy, alpha 0.1, cut",0.5558666666666666,0.5558593333333334,-7.333333333248149e-06,0.01,True,"results/abc/cp_curves.csv (variant cut, alpha 0.1), mean over seeds",0.5559
+"A, balanced accuracy, alpha 0.1, cut",0.5367999999999999,0.5368023333333333,2.333333333326415e-06,0.01,True,"results/abc/cp_curves.csv (variant cut, alpha 0.1), mean over seeds",0.5368
+"C, balanced accuracy, alpha 0.1, cut",0.5009333333333333,0.500935,1.6666666666775853e-06,0.01,True,"results/abc/cp_curves.csv (variant cut, alpha 0.1), mean over seeds",0.5009

@@ -1,0 +1,96 @@
+[gate] v2-only index 300 rollouts; splits equal old splits: True {'seed0': {'train': True, 'eval_seen': True, 'unseen': True, 'unseen_tasks': True, 'stress_empty': True}, 'seed1': {'train': True, 'eval_seen': True, 'unseen': True, 'unseen_tasks': True, 'stress_empty': True}, 'seed2': {'train': True, 'eval_seen': True, 'unseen': True, 'unseen_tasks': True, 'stress_empty': True}}
+[08:20:30] index /data/tmp/abc2_dev/gate_rerun/idx_v2.json: 300 rollouts; conds ['D0']; seeds (0, 1, 2); demoted none; out /data/tmp/abc2_dev/gate_rerun/out; work /data/tmp/abc2_dev/gate_rerun/work
+[08:20:30] loaded primary series for 300 rollouts (1 s)
+[08:20:55] loaded baseline series for 300 rollouts (2 s)
+[08:20:57] loaded failurespot series for 300 rollouts (1 s)
+[08:20:57] [s2 D0] seeds [0, 1, 2] scored (27 s)
+[08:20:57] [s2 D0] betas {'action': '0.96', 'emb_temp': 'none', 'cross_layer': '0.91'}; emb layer emb_temp[28] (eval_seen pooled 0.7544); 14 unstable C series
+[08:20:59] [s3 D0] features ready (2 s); fitting 18 (seed, c) jobs, n_jobs=4
+[08:21:57] [s3 D0] grid done for seeds [0, 1, 2] (60 s)
+[08:21:57] [s3 D0] c probes 1 (0.6779), c final 1e-05 (0.7878)
+[08:21:57] [s4] GPU memory fraction 0.900
+[08:21:59] [s4 grid  1/34] layer00: 3 (cond, seed) (3 s, of which loading 0 s)
+[08:22:15] [s4 grid  2/34] layer01: 3 (cond, seed) (19 s, of which loading 1 s)
+[08:22:28] [s4 grid  3/34] layer02: 3 (cond, seed) (31 s, of which loading 1 s)
+[08:22:42] [s4 grid  4/34] layer03: 3 (cond, seed) (45 s, of which loading 6 s)
+[08:22:56] [s4 grid  5/34] layer04: 3 (cond, seed) (59 s, of which loading 10 s)
+[08:23:10] [s4 grid  6/34] layer05: 3 (cond, seed) (73 s, of which loading 15 s)
+[08:23:23] [s4 grid  7/34] layer06: 3 (cond, seed) (87 s, of which loading 20 s)
+[08:23:37] [s4 grid  8/34] layer07: 3 (cond, seed) (100 s, of which loading 25 s)
+[08:23:51] [s4 grid  9/34] layer08: 3 (cond, seed) (114 s, of which loading 30 s)
+[08:24:04] [s4 grid 10/34] layer09: 3 (cond, seed) (128 s, of which loading 34 s)
+[08:24:13] [s4 grid 11/34] layer10: 3 (cond, seed) (136 s, of which loading 35 s)
+[08:24:27] [s4 grid 12/34] layer11: 3 (cond, seed) (150 s, of which loading 40 s)
+[08:24:40] [s4 grid 13/34] layer12: 3 (cond, seed) (163 s, of which loading 44 s)
+[08:24:53] [s4 grid 14/34] layer13: 3 (cond, seed) (176 s, of which loading 49 s)
+[08:25:06] [s4 grid 15/34] layer14: 3 (cond, seed) (189 s, of which loading 54 s)
+[08:25:18] [s4 grid 16/34] layer15: 3 (cond, seed) (201 s, of which loading 59 s)
+[08:25:26] [s4 grid 17/34] layer16: 3 (cond, seed) (209 s, of which loading 59 s)
+[08:25:38] [s4 grid 18/34] layer17: 3 (cond, seed) (221 s, of which loading 64 s)
+[08:25:50] [s4 grid 19/34] layer18: 3 (cond, seed) (233 s, of which loading 69 s)
+[08:26:01] [s4 grid 20/34] layer19: 3 (cond, seed) (244 s, of which loading 74 s)
+[08:26:11] [s4 grid 21/34] layer20: 3 (cond, seed) (255 s, of which loading 79 s)
+[08:26:22] [s4 grid 22/34] layer21: 3 (cond, seed) (265 s, of which loading 85 s)
+[08:26:32] [s4 grid 23/34] layer22: 3 (cond, seed) (276 s, of which loading 90 s)
+[08:26:42] [s4 grid 24/34] layer23: 3 (cond, seed) (285 s, of which loading 95 s)
+[08:26:52] [s4 grid 25/34] layer24: 3 (cond, seed) (295 s, of which loading 100 s)
+[08:27:01] [s4 grid 26/34] layer25: 3 (cond, seed) (305 s, of which loading 105 s)
+[08:27:10] [s4 grid 27/34] layer26: 3 (cond, seed) (314 s, of which loading 109 s)
+[08:27:19] [s4 grid 28/34] layer27: 3 (cond, seed) (323 s, of which loading 114 s)
+[08:27:24] [s4 grid 29/34] layer28: 3 (cond, seed) (327 s, of which loading 115 s)
+[08:27:33] [s4 grid 30/34] layer29: 3 (cond, seed) (336 s, of which loading 120 s)
+[08:27:40] [s4 grid 31/34] layer30: 3 (cond, seed) (343 s, of which loading 123 s)
+[08:27:43] [s4 grid 32/34] layer31: 3 (cond, seed) (347 s, of which loading 123 s)
+[08:27:52] [s4 grid 33/34] layer32: 3 (cond, seed) (355 s, of which loading 128 s)
+[08:27:53] [s4 grid 34/34] action_tokens: 3 (cond, seed) (356 s, of which loading 128 s)
+[08:27:53] [s4 D0] c_A 1e-05 (0.8116); probes {0: 'layer01', 1: 'layer10', 2: 'layer02'}
+[08:27:59] [s4 D0 seed 0] final layer01 refitted (eval_seen drift vs grid 0.00e+00); shuffled control done (6 s)
+[08:28:03] [s4 D0 seed 1] final layer10 refitted (eval_seen drift vs grid 0.00e+00); shuffled control done (4 s)
+[08:28:08] [s4 D0 seed 2] final layer02 refitted (eval_seen drift vs grid 0.00e+00); shuffled control done (5 s)
+/ephemeral/code/thesis-introspection/analysis/abc/cp_eval.py:101: RuntimeWarning: Mean of empty slice
+  mu = np.nanmean(v[:, : t_end + 1], 0)
+/ephemeral/code/venv/lib/python3.10/site-packages/numpy/lib/nanfunctions.py:1879: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/ephemeral/code/thesis-introspection/analysis/abc/cp_eval.py:101: RuntimeWarning: Mean of empty slice
+  mu = np.nanmean(v[:, : t_end + 1], 0)
+/ephemeral/code/venv/lib/python3.10/site-packages/numpy/lib/nanfunctions.py:1879: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/ephemeral/code/thesis-introspection/analysis/abc/cp_eval.py:101: RuntimeWarning: Mean of empty slice
+  mu = np.nanmean(v[:, : t_end + 1], 0)
+/ephemeral/code/venv/lib/python3.10/site-packages/numpy/lib/nanfunctions.py:1879: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+[08:28:08] [s6 D0 seed 0] CP done -> /data/tmp/abc2_dev/gate_rerun/out/scores/D0_seed0.npz (0 s)
+/ephemeral/code/thesis-introspection/analysis/abc/cp_eval.py:101: RuntimeWarning: Mean of empty slice
+  mu = np.nanmean(v[:, : t_end + 1], 0)
+/ephemeral/code/venv/lib/python3.10/site-packages/numpy/lib/nanfunctions.py:1879: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/ephemeral/code/thesis-introspection/analysis/abc/cp_eval.py:101: RuntimeWarning: Mean of empty slice
+  mu = np.nanmean(v[:, : t_end + 1], 0)
+/ephemeral/code/venv/lib/python3.10/site-packages/numpy/lib/nanfunctions.py:1879: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/ephemeral/code/thesis-introspection/analysis/abc/cp_eval.py:101: RuntimeWarning: Mean of empty slice
+  mu = np.nanmean(v[:, : t_end + 1], 0)
+/ephemeral/code/venv/lib/python3.10/site-packages/numpy/lib/nanfunctions.py:1879: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+[08:28:08] [s6 D0 seed 1] CP done -> /data/tmp/abc2_dev/gate_rerun/out/scores/D0_seed1.npz (0 s)
+/ephemeral/code/thesis-introspection/analysis/abc/cp_eval.py:101: RuntimeWarning: Mean of empty slice
+  mu = np.nanmean(v[:, : t_end + 1], 0)
+/ephemeral/code/venv/lib/python3.10/site-packages/numpy/lib/nanfunctions.py:1879: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/ephemeral/code/thesis-introspection/analysis/abc/cp_eval.py:101: RuntimeWarning: Mean of empty slice
+  mu = np.nanmean(v[:, : t_end + 1], 0)
+/ephemeral/code/venv/lib/python3.10/site-packages/numpy/lib/nanfunctions.py:1879: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/ephemeral/code/thesis-introspection/analysis/abc/cp_eval.py:101: RuntimeWarning: Mean of empty slice
+  mu = np.nanmean(v[:, : t_end + 1], 0)
+/ephemeral/code/venv/lib/python3.10/site-packages/numpy/lib/nanfunctions.py:1879: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+[08:28:08] [s6 D0 seed 2] CP done -> /data/tmp/abc2_dev/gate_rerun/out/scores/D0_seed2.npz (0 s)
+[08:28:09] done (459 s); tables in /data/tmp/abc2_dev/gate_rerun/out
+   emb_temp[28] alone, M1-per-task                      ref 0.7250 got 0.7250 diff +0.0000 PASS
+   C final, M1-per-task                                 ref 0.7169 got 0.7169 diff +0.0000 PASS
+   A final, M1-per-task                                 ref 0.7163 got 0.7163 diff +0.0000 PASS
+   emb_temp[28], balanced accuracy, alpha 0.1, cut      ref 0.5559 got 0.5559 diff -0.0000 PASS
+   A, balanced accuracy, alpha 0.1, cut                 ref 0.5368 got 0.5368 diff +0.0000 PASS
+   C, balanced accuracy, alpha 0.1, cut                 ref 0.5009 got 0.5009 diff +0.0000 PASS
+[gate] PASSED -> results/abc2/regression_gate.json, results/abc2/regression_gate.md

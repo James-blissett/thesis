@@ -1,0 +1,184 @@
+[09:08:29] index corpus_v3_index.json: 1000 rollouts; conds ['D0', 'D1', 'D2']; seeds (0, 1, 2); demoted none; out results/abc2; work /data/tmp/abc2_scores/work
+[09:08:31] loaded primary series for 1000 rollouts (2 s)
+[09:09:12] loaded baseline series for 1000 rollouts (11 s)
+[09:09:17] loaded failurespot series for 1000 rollouts (3 s)
+[09:09:17] [s2 D0] seeds [0, 1, 2] scored (48 s)
+[09:09:17] [s2 D0] betas {'action': '0.96', 'emb_temp': 'none', 'cross_layer': '0.91'}; emb layer emb_temp[28] (eval_seen pooled 0.7544); 14 unstable C series
+[09:09:22] [s3 D0] features ready (5 s); fitting 18 (seed, c) jobs, n_jobs=4
+[09:10:27] [s3 D0] grid done for seeds [0, 1, 2] (69 s)
+[09:10:27] [s3 D0] c probes 1 (0.6779), c final 1e-05 (0.7878)
+[09:10:59] [s2 D1] seeds [0, 1, 2] scored (32 s)
+[09:10:59] [s2 D1] betas {'action': '0.83', 'emb_temp': 'none', 'cross_layer': '0.96'}; emb layer emb_temp[28] (eval_seen pooled 0.7705); 20 unstable C series
+[09:11:02] [s3 D1] features ready (4 s); fitting 18 (seed, c) jobs, n_jobs=4
+[09:12:19] [s3 D1] grid done for seeds [0, 1, 2] (80 s)
+[09:12:19] [s3 D1] c probes 0.001 (0.7177), c final 1e-05 (0.7967)
+[09:13:05] [s2 D2] seeds [0, 1, 2] scored (45 s)
+[09:13:05] [s2 D2] betas {'action': '0.83', 'emb_temp': 'none', 'cross_layer': '0.96'}; emb layer emb_temp[29] (eval_seen pooled 0.7888); 20 unstable C series
+[09:13:10] [s3 D2] features ready (5 s); fitting 18 (seed, c) jobs, n_jobs=4
+[09:14:53] [s3 D2] grid done for seeds [0, 1, 2] (109 s)
+[09:14:54] [s3 D2] c probes 0.001 (0.7228), c final 0.0001 (0.8196)
+[09:14:54] [s4] GPU memory fraction 0.950
+[09:15:11] [s4 grid  1/34] layer00: 9 (cond, seed) (17 s, of which loading 7 s)
+[09:16:43] [s4 grid  2/34] layer01: 9 (cond, seed) (109 s, of which loading 15 s)
+[09:17:49] [s4 grid  3/34] layer02: 9 (cond, seed) (176 s, of which loading 22 s)
+[09:18:45] [s4 grid  4/34] layer03: 9 (cond, seed) (231 s, of which loading 30 s)
+[09:19:37] [s4 grid  5/34] layer04: 9 (cond, seed) (284 s, of which loading 38 s)
+[09:20:29] [s4 grid  6/34] layer05: 9 (cond, seed) (336 s, of which loading 46 s)
+[09:21:19] [s4 grid  7/34] layer06: 9 (cond, seed) (386 s, of which loading 54 s)
+[09:22:09] [s4 grid  8/34] layer07: 9 (cond, seed) (435 s, of which loading 62 s)
+[09:22:58] [s4 grid  9/34] layer08: 9 (cond, seed) (485 s, of which loading 70 s)
+[09:23:49] [s4 grid 10/34] layer09: 9 (cond, seed) (535 s, of which loading 80 s)
+[09:24:35] [s4 grid 11/34] layer10: 9 (cond, seed) (581 s, of which loading 88 s)
+[09:25:23] [s4 grid 12/34] layer11: 9 (cond, seed) (629 s, of which loading 98 s)
+[09:26:09] [s4 grid 13/34] layer12: 9 (cond, seed) (675 s, of which loading 107 s)
+[09:26:53] [s4 grid 14/34] layer13: 9 (cond, seed) (719 s, of which loading 117 s)
+[09:27:35] [s4 grid 15/34] layer14: 9 (cond, seed) (762 s, of which loading 127 s)
+[09:28:17] [s4 grid 16/34] layer15: 9 (cond, seed) (804 s, of which loading 138 s)
+[09:28:57] [s4 grid 17/34] layer16: 9 (cond, seed) (844 s, of which loading 149 s)
+[09:29:36] [s4 grid 18/34] layer17: 9 (cond, seed) (883 s, of which loading 160 s)
+[09:30:14] [s4 grid 19/34] layer18: 9 (cond, seed) (920 s, of which loading 172 s)
+[09:30:52] [s4 grid 20/34] layer19: 9 (cond, seed) (958 s, of which loading 184 s)
+[09:31:27] [s4 grid 21/34] layer20: 9 (cond, seed) (993 s, of which loading 197 s)
+[09:32:03] [s4 grid 22/34] layer21: 9 (cond, seed) (1029 s, of which loading 210 s)
+[09:32:38] [s4 grid 23/34] layer22: 9 (cond, seed) (1064 s, of which loading 224 s)
+[09:33:13] [s4 grid 24/34] layer23: 9 (cond, seed) (1099 s, of which loading 238 s)
+[09:33:48] [s4 grid 25/34] layer24: 9 (cond, seed) (1135 s, of which loading 253 s)
+[09:34:25] [s4 grid 26/34] layer25: 9 (cond, seed) (1171 s, of which loading 269 s)
+[09:35:01] [s4 grid 27/34] layer26: 9 (cond, seed) (1207 s, of which loading 286 s)
+[09:35:37] [s4 grid 28/34] layer27: 9 (cond, seed) (1243 s, of which loading 303 s)
+[09:36:12] [s4 grid 29/34] layer28: 9 (cond, seed) (1279 s, of which loading 321 s)
+[09:36:46] [s4 grid 30/34] layer29: 9 (cond, seed) (1312 s, of which loading 339 s)
+[09:37:19] [s4 grid 31/34] layer30: 9 (cond, seed) (1345 s, of which loading 356 s)
+[09:37:52] [s4 grid 32/34] layer31: 9 (cond, seed) (1378 s, of which loading 374 s)
+[09:38:26] [s4 grid 33/34] layer32: 9 (cond, seed) (1412 s, of which loading 391 s)
+[09:38:28] [s4 grid 34/34] action_tokens: 9 (cond, seed) (1414 s, of which loading 391 s)
+[09:38:28] [s4 D0] c_A 1e-05 (0.8116); probes {0: 'layer01', 1: 'layer10', 2: 'layer02'}
+[09:38:41] [s4 D0 seed 0] final layer01 refitted (eval_seen drift vs grid 0.00e+00); shuffled control done (14 s)
+[09:38:52] [s4 D0 seed 1] final layer10 refitted (eval_seen drift vs grid 0.00e+00); shuffled control done (10 s)
+[09:39:03] [s4 D0 seed 2] final layer02 refitted (eval_seen drift vs grid 0.00e+00); shuffled control done (11 s)
+[09:39:03] [s4 D1] c_A 1e-06 (0.8139); probes {0: 'layer06', 1: 'layer03', 2: 'layer04'}
+[09:39:16] [s4 D1 seed 0] final layer06 refitted (eval_seen drift vs grid 0.00e+00); shuffled control done (13 s)
+[09:39:28] [s4 D1 seed 1] final layer03 refitted (eval_seen drift vs grid 0.00e+00); shuffled control done (12 s)
+[09:39:40] [s4 D1 seed 2] final layer04 refitted (eval_seen drift vs grid 0.00e+00); shuffled control done (12 s)
+[09:39:40] [s4 D2] c_A 1e-06 (0.8074); probes {0: 'layer10', 1: 'layer31', 2: 'layer11'}
+[09:39:49] [s4 D2 seed 0] final layer10 refitted (eval_seen drift vs grid 0.00e+00); shuffled control done (9 s)
+[09:39:54] [s4 D2 seed 1] final layer31 refitted (eval_seen drift vs grid 0.00e+00); shuffled control done (4 s)
+[09:40:09] [s4 D2 seed 2] final layer11 refitted (eval_seen drift vs grid 0.00e+00); shuffled control done (15 s)
+/ephemeral/code/thesis-introspection/analysis/abc/cp_eval.py:101: RuntimeWarning: Mean of empty slice
+  mu = np.nanmean(v[:, : t_end + 1], 0)
+/ephemeral/code/venv/lib/python3.10/site-packages/numpy/lib/nanfunctions.py:1879: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/ephemeral/code/thesis-introspection/analysis/abc/cp_eval.py:101: RuntimeWarning: Mean of empty slice
+  mu = np.nanmean(v[:, : t_end + 1], 0)
+/ephemeral/code/venv/lib/python3.10/site-packages/numpy/lib/nanfunctions.py:1879: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/ephemeral/code/thesis-introspection/analysis/abc/cp_eval.py:101: RuntimeWarning: Mean of empty slice
+  mu = np.nanmean(v[:, : t_end + 1], 0)
+/ephemeral/code/venv/lib/python3.10/site-packages/numpy/lib/nanfunctions.py:1879: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+[09:40:10] [s6 D0 seed 0] CP done -> results/abc2/scores/D0_seed0.npz (1 s)
+/ephemeral/code/thesis-introspection/analysis/abc/cp_eval.py:101: RuntimeWarning: Mean of empty slice
+  mu = np.nanmean(v[:, : t_end + 1], 0)
+/ephemeral/code/venv/lib/python3.10/site-packages/numpy/lib/nanfunctions.py:1879: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/ephemeral/code/thesis-introspection/analysis/abc/cp_eval.py:101: RuntimeWarning: Mean of empty slice
+  mu = np.nanmean(v[:, : t_end + 1], 0)
+/ephemeral/code/venv/lib/python3.10/site-packages/numpy/lib/nanfunctions.py:1879: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/ephemeral/code/thesis-introspection/analysis/abc/cp_eval.py:101: RuntimeWarning: Mean of empty slice
+  mu = np.nanmean(v[:, : t_end + 1], 0)
+/ephemeral/code/venv/lib/python3.10/site-packages/numpy/lib/nanfunctions.py:1879: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+[09:40:11] [s6 D0 seed 1] CP done -> results/abc2/scores/D0_seed1.npz (1 s)
+/ephemeral/code/thesis-introspection/analysis/abc/cp_eval.py:101: RuntimeWarning: Mean of empty slice
+  mu = np.nanmean(v[:, : t_end + 1], 0)
+/ephemeral/code/venv/lib/python3.10/site-packages/numpy/lib/nanfunctions.py:1879: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/ephemeral/code/thesis-introspection/analysis/abc/cp_eval.py:101: RuntimeWarning: Mean of empty slice
+  mu = np.nanmean(v[:, : t_end + 1], 0)
+/ephemeral/code/venv/lib/python3.10/site-packages/numpy/lib/nanfunctions.py:1879: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/ephemeral/code/thesis-introspection/analysis/abc/cp_eval.py:101: RuntimeWarning: Mean of empty slice
+  mu = np.nanmean(v[:, : t_end + 1], 0)
+/ephemeral/code/venv/lib/python3.10/site-packages/numpy/lib/nanfunctions.py:1879: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+[09:40:12] [s6 D0 seed 2] CP done -> results/abc2/scores/D0_seed2.npz (1 s)
+/ephemeral/code/thesis-introspection/analysis/abc/cp_eval.py:101: RuntimeWarning: Mean of empty slice
+  mu = np.nanmean(v[:, : t_end + 1], 0)
+/ephemeral/code/venv/lib/python3.10/site-packages/numpy/lib/nanfunctions.py:1879: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/ephemeral/code/thesis-introspection/analysis/abc/cp_eval.py:101: RuntimeWarning: Mean of empty slice
+  mu = np.nanmean(v[:, : t_end + 1], 0)
+/ephemeral/code/venv/lib/python3.10/site-packages/numpy/lib/nanfunctions.py:1879: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/ephemeral/code/thesis-introspection/analysis/abc/cp_eval.py:101: RuntimeWarning: Mean of empty slice
+  mu = np.nanmean(v[:, : t_end + 1], 0)
+/ephemeral/code/venv/lib/python3.10/site-packages/numpy/lib/nanfunctions.py:1879: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+[09:40:13] [s6 D1 seed 0] CP done -> results/abc2/scores/D1_seed0.npz (1 s)
+/ephemeral/code/thesis-introspection/analysis/abc/cp_eval.py:101: RuntimeWarning: Mean of empty slice
+  mu = np.nanmean(v[:, : t_end + 1], 0)
+/ephemeral/code/venv/lib/python3.10/site-packages/numpy/lib/nanfunctions.py:1879: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/ephemeral/code/thesis-introspection/analysis/abc/cp_eval.py:101: RuntimeWarning: Mean of empty slice
+  mu = np.nanmean(v[:, : t_end + 1], 0)
+/ephemeral/code/venv/lib/python3.10/site-packages/numpy/lib/nanfunctions.py:1879: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/ephemeral/code/thesis-introspection/analysis/abc/cp_eval.py:101: RuntimeWarning: Mean of empty slice
+  mu = np.nanmean(v[:, : t_end + 1], 0)
+/ephemeral/code/venv/lib/python3.10/site-packages/numpy/lib/nanfunctions.py:1879: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+[09:40:13] [s6 D1 seed 1] CP done -> results/abc2/scores/D1_seed1.npz (1 s)
+/ephemeral/code/thesis-introspection/analysis/abc/cp_eval.py:101: RuntimeWarning: Mean of empty slice
+  mu = np.nanmean(v[:, : t_end + 1], 0)
+/ephemeral/code/venv/lib/python3.10/site-packages/numpy/lib/nanfunctions.py:1879: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/ephemeral/code/thesis-introspection/analysis/abc/cp_eval.py:101: RuntimeWarning: Mean of empty slice
+  mu = np.nanmean(v[:, : t_end + 1], 0)
+/ephemeral/code/venv/lib/python3.10/site-packages/numpy/lib/nanfunctions.py:1879: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/ephemeral/code/thesis-introspection/analysis/abc/cp_eval.py:101: RuntimeWarning: Mean of empty slice
+  mu = np.nanmean(v[:, : t_end + 1], 0)
+/ephemeral/code/venv/lib/python3.10/site-packages/numpy/lib/nanfunctions.py:1879: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+[09:40:14] [s6 D1 seed 2] CP done -> results/abc2/scores/D1_seed2.npz (1 s)
+/ephemeral/code/thesis-introspection/analysis/abc/cp_eval.py:101: RuntimeWarning: Mean of empty slice
+  mu = np.nanmean(v[:, : t_end + 1], 0)
+/ephemeral/code/venv/lib/python3.10/site-packages/numpy/lib/nanfunctions.py:1879: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/ephemeral/code/thesis-introspection/analysis/abc/cp_eval.py:101: RuntimeWarning: Mean of empty slice
+  mu = np.nanmean(v[:, : t_end + 1], 0)
+/ephemeral/code/venv/lib/python3.10/site-packages/numpy/lib/nanfunctions.py:1879: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/ephemeral/code/thesis-introspection/analysis/abc/cp_eval.py:101: RuntimeWarning: Mean of empty slice
+  mu = np.nanmean(v[:, : t_end + 1], 0)
+/ephemeral/code/venv/lib/python3.10/site-packages/numpy/lib/nanfunctions.py:1879: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+[09:40:15] [s6 D2 seed 0] CP done -> results/abc2/scores/D2_seed0.npz (1 s)
+/ephemeral/code/thesis-introspection/analysis/abc/cp_eval.py:101: RuntimeWarning: Mean of empty slice
+  mu = np.nanmean(v[:, : t_end + 1], 0)
+/ephemeral/code/venv/lib/python3.10/site-packages/numpy/lib/nanfunctions.py:1879: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/ephemeral/code/thesis-introspection/analysis/abc/cp_eval.py:101: RuntimeWarning: Mean of empty slice
+  mu = np.nanmean(v[:, : t_end + 1], 0)
+/ephemeral/code/venv/lib/python3.10/site-packages/numpy/lib/nanfunctions.py:1879: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/ephemeral/code/thesis-introspection/analysis/abc/cp_eval.py:101: RuntimeWarning: Mean of empty slice
+  mu = np.nanmean(v[:, : t_end + 1], 0)
+/ephemeral/code/venv/lib/python3.10/site-packages/numpy/lib/nanfunctions.py:1879: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+[09:40:16] [s6 D2 seed 1] CP done -> results/abc2/scores/D2_seed1.npz (1 s)
+/ephemeral/code/thesis-introspection/analysis/abc/cp_eval.py:101: RuntimeWarning: Mean of empty slice
+  mu = np.nanmean(v[:, : t_end + 1], 0)
+/ephemeral/code/venv/lib/python3.10/site-packages/numpy/lib/nanfunctions.py:1879: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/ephemeral/code/thesis-introspection/analysis/abc/cp_eval.py:101: RuntimeWarning: Mean of empty slice
+  mu = np.nanmean(v[:, : t_end + 1], 0)
+/ephemeral/code/venv/lib/python3.10/site-packages/numpy/lib/nanfunctions.py:1879: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+/ephemeral/code/thesis-introspection/analysis/abc/cp_eval.py:101: RuntimeWarning: Mean of empty slice
+  mu = np.nanmean(v[:, : t_end + 1], 0)
+/ephemeral/code/venv/lib/python3.10/site-packages/numpy/lib/nanfunctions.py:1879: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+[09:40:17] [s6 D2 seed 2] CP done -> results/abc2/scores/D2_seed2.npz (1 s)
+[09:40:17] done (1908 s); tables in results/abc2

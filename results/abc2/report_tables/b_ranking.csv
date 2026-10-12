@@ -1,0 +1,3 @@
+detector,cond,T0_m1_per_task_mean,T0_m1_per_task_std,T0_m1_pooled_mean,T0_m1_pooled_std,T0_floor_mean,T0_n_cells,T0_n_mean,T1_m1_per_task_mean,T1_m1_per_task_std,T1_m1_pooled_mean,T1_m1_pooled_std,T1_floor_mean,T1_n_cells,T1_n_mean,T2_m1_per_task_mean,T2_m1_per_task_std,T2_m1_pooled_mean,T2_m1_pooled_std,T2_floor_mean,T2_n_cells,T2_n_mean
+B H=10,D0,0.708642,0.0467399,0.727849,0.0454795,0.546626,3 3 3,90,0.710905,0.0206755,0.729213,0.0373406,0.537154,3 3 3,150,0.7506,0.0182305,0.767961,0.0378975,0.616875,8 7 9,270
+B H=10,D2,0.705547,0.0175238,0.728891,0.0403507,0.546626,3 3 3,90,0.709437,0.0210367,0.722141,0.0358807,0.537154,3 3 3,150,0.72794,0.0243478,0.763301,0.0383254,0.616875,8 7 9,270

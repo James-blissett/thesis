@@ -1,0 +1,461 @@
+{
+ "test_set": "T0",
+ "passed": true,
+ "tolerance": 1e-06,
+ "rng_seed": 20261011,
+ "n_boot": 1000,
+ "check_table": "results/abc2/mlp_final_table.csv",
+ "max_abs_diff": 5.147328878685187e-07,
+ "pairs": [
+  "D0 A-MLP vs A",
+  "D0 C-MLP vs C",
+  "D2 A-MLP vs A",
+  "D2 C-MLP vs C"
+ ],
+ "sides": [
+  {
+   "cond": "D0",
+   "detector": "A-MLP",
+   "test_set": "T0",
+   "comparisons": [
+    {
+     "what": "mean m1_per_task",
+     "got": 0.6855347707847708,
+     "ref": 0.685535,
+     "abs_diff": 2.29215229241575e-07
+    },
+    {
+     "what": "mean bal_acc",
+     "got": 0.5164092664092664,
+     "ref": 0.516409,
+     "abs_diff": 2.664092664250717e-07
+    },
+    {
+     "what": "mean tpr",
+     "got": 0.032818532818532815,
+     "ref": 0.0328185,
+     "abs_diff": 3.281853281494884e-08
+    }
+   ],
+   "n_compared": 3,
+   "max_abs_diff": 2.664092664250717e-07,
+   "passed": true
+  },
+  {
+   "cond": "D0",
+   "detector": "A",
+   "test_set": "T0",
+   "comparisons": [
+    {
+     "what": "seed 0 m1_per_task",
+     "got": 0.7520139174550939,
+     "ref": 0.752014,
+     "abs_diff": 8.254490602155329e-08
+    },
+    {
+     "what": "seed 0 n_cells",
+     "got": 3.0,
+     "ref": 3.0,
+     "abs_diff": 0.0
+    },
+    {
+     "what": "seed 0 bal_acc",
+     "got": 0.5476190476190477,
+     "ref": 0.547619,
+     "abs_diff": 4.761904770500536e-08
+    },
+    {
+     "what": "seed 0 tpr",
+     "got": 0.09523809523809523,
+     "ref": 0.0952381,
+     "abs_diff": 4.761904773276093e-09
+    },
+    {
+     "what": "seed 1 m1_per_task",
+     "got": 0.6901161616161616,
+     "ref": 0.690116,
+     "abs_diff": 1.6161616167575943e-07
+    },
+    {
+     "what": "seed 1 n_cells",
+     "got": 3.0,
+     "ref": 3.0,
+     "abs_diff": 0.0
+    },
+    {
+     "what": "seed 1 bal_acc",
+     "got": 0.5627880184331797,
+     "ref": 0.562788,
+     "abs_diff": 1.8433179760357632e-08
+    },
+    {
+     "what": "seed 1 tpr",
+     "got": 0.16129032258064516,
+     "ref": 0.16129,
+     "abs_diff": 3.225806451678803e-07
+    },
+    {
+     "what": "seed 2 m1_per_task",
+     "got": 0.7067906222317987,
+     "ref": 0.706791,
+     "abs_diff": 3.7776820127621846e-07
+    },
+    {
+     "what": "seed 2 n_cells",
+     "got": 3.0,
+     "ref": 3.0,
+     "abs_diff": 0.0
+    },
+    {
+     "what": "seed 2 bal_acc",
+     "got": 0.5,
+     "ref": 0.5,
+     "abs_diff": 0.0
+    },
+    {
+     "what": "seed 2 tpr",
+     "got": 0.0,
+     "ref": 0.0,
+     "abs_diff": 0.0
+    }
+   ],
+   "n_compared": 12,
+   "max_abs_diff": 3.7776820127621846e-07,
+   "passed": true,
+   "note": "no row for (D0, A, T0) in results/abc2/mlp_final_table.csv"
+  },
+  {
+   "cond": "D0",
+   "detector": "C-MLP",
+   "test_set": "T0",
+   "comparisons": [
+    {
+     "what": "mean m1_per_task",
+     "got": 0.7174925666200176,
+     "ref": 0.717493,
+     "abs_diff": 4.333799824562945e-07
+    },
+    {
+     "what": "mean bal_acc",
+     "got": 0.5908060074029339,
+     "ref": 0.590806,
+     "abs_diff": 7.402933821509805e-09
+    },
+    {
+     "what": "mean tpr",
+     "got": 0.20675052933117452,
+     "ref": 0.206751,
+     "abs_diff": 4.706688254696445e-07
+    }
+   ],
+   "n_compared": 3,
+   "max_abs_diff": 4.706688254696445e-07,
+   "passed": true
+  },
+  {
+   "cond": "D0",
+   "detector": "C",
+   "test_set": "T0",
+   "comparisons": [
+    {
+     "what": "seed 0 m1_per_task",
+     "got": 0.6901052378993556,
+     "ref": 0.690105,
+     "abs_diff": 2.3789935565954323e-07
+    },
+    {
+     "what": "seed 0 n_cells",
+     "got": 3.0,
+     "ref": 3.0,
+     "abs_diff": 0.0
+    },
+    {
+     "what": "seed 0 bal_acc",
+     "got": 0.5,
+     "ref": 0.5,
+     "abs_diff": 0.0
+    },
+    {
+     "what": "seed 0 tpr",
+     "got": 0.0,
+     "ref": 0.0,
+     "abs_diff": 0.0
+    },
+    {
+     "what": "seed 1 m1_per_task",
+     "got": 0.7733114478114479,
+     "ref": 0.773311,
+     "abs_diff": 4.4781144792338523e-07
+    },
+    {
+     "what": "seed 1 n_cells",
+     "got": 3.0,
+     "ref": 3.0,
+     "abs_diff": 0.0
+    },
+    {
+     "what": "seed 1 bal_acc",
+     "got": 0.5,
+     "ref": 0.5,
+     "abs_diff": 0.0
+    },
+    {
+     "what": "seed 1 tpr",
+     "got": 0.0,
+     "ref": 0.0,
+     "abs_diff": 0.0
+    },
+    {
+     "what": "seed 2 m1_per_task",
+     "got": 0.6873556046350164,
+     "ref": 0.687356,
+     "abs_diff": 3.953649835297668e-07
+    },
+    {
+     "what": "seed 2 n_cells",
+     "got": 3.0,
+     "ref": 3.0,
+     "abs_diff": 0.0
+    },
+    {
+     "what": "seed 2 bal_acc",
+     "got": 0.5028046914839368,
+     "ref": 0.502805,
+     "abs_diff": 3.0851606314108437e-07
+    },
+    {
+     "what": "seed 2 tpr",
+     "got": 0.08108108108108109,
+     "ref": 0.0810811,
+     "abs_diff": 1.8918918917587568e-08
+    }
+   ],
+   "n_compared": 12,
+   "max_abs_diff": 4.4781144792338523e-07,
+   "passed": true,
+   "note": "no row for (D0, C, T0) in results/abc2/mlp_final_table.csv"
+  },
+  {
+   "cond": "D2",
+   "detector": "A-MLP",
+   "test_set": "T0",
+   "comparisons": [
+    {
+     "what": "mean m1_per_task",
+     "got": 0.6416232440399107,
+     "ref": 0.641623,
+     "abs_diff": 2.440399106129476e-07
+    },
+    {
+     "what": "mean bal_acc",
+     "got": 0.5462264852671121,
+     "ref": 0.546227,
+     "abs_diff": 5.147328878685187e-07
+    },
+    {
+     "what": "mean tpr",
+     "got": 0.15959507894991765,
+     "ref": 0.159595,
+     "abs_diff": 7.894991765899917e-08
+    }
+   ],
+   "n_compared": 3,
+   "max_abs_diff": 5.147328878685187e-07,
+   "passed": true
+  },
+  {
+   "cond": "D2",
+   "detector": "A",
+   "test_set": "T0",
+   "comparisons": [
+    {
+     "what": "seed 0 m1_per_task",
+     "got": 0.7443353215412039,
+     "ref": 0.744335,
+     "abs_diff": 3.215412038848342e-07
+    },
+    {
+     "what": "seed 0 n_cells",
+     "got": 3.0,
+     "ref": 3.0,
+     "abs_diff": 0.0
+    },
+    {
+     "what": "seed 0 bal_acc",
+     "got": 0.5119047619047619,
+     "ref": 0.511905,
+     "abs_diff": 2.3809523819195988e-07
+    },
+    {
+     "what": "seed 0 tpr",
+     "got": 0.023809523809523808,
+     "ref": 0.0238095,
+     "abs_diff": 2.3809523807399868e-08
+    },
+    {
+     "what": "seed 1 m1_per_task",
+     "got": 0.7897003367003367,
+     "ref": 0.7897,
+     "abs_diff": 3.3670033672272837e-07
+    },
+    {
+     "what": "seed 1 n_cells",
+     "got": 3.0,
+     "ref": 3.0,
+     "abs_diff": 0.0
+    },
+    {
+     "what": "seed 1 bal_acc",
+     "got": 0.5,
+     "ref": 0.5,
+     "abs_diff": 0.0
+    },
+    {
+     "what": "seed 1 tpr",
+     "got": 0.0,
+     "ref": 0.0,
+     "abs_diff": 0.0
+    },
+    {
+     "what": "seed 2 m1_per_task",
+     "got": 0.6752929804400393,
+     "ref": 0.675293,
+     "abs_diff": 1.955996076219435e-08
+    },
+    {
+     "what": "seed 2 n_cells",
+     "got": 3.0,
+     "ref": 3.0,
+     "abs_diff": 0.0
+    },
+    {
+     "what": "seed 2 bal_acc",
+     "got": 0.5081591024987251,
+     "ref": 0.508159,
+     "abs_diff": 1.0249872506307156e-07
+    },
+    {
+     "what": "seed 2 tpr",
+     "got": 0.05405405405405406,
+     "ref": 0.0540541,
+     "abs_diff": 4.5945945943703936e-08
+    }
+   ],
+   "n_compared": 12,
+   "max_abs_diff": 3.3670033672272837e-07,
+   "passed": true,
+   "note": "no row for (D2, A, T0) in results/abc2/mlp_final_table.csv"
+  },
+  {
+   "cond": "D2",
+   "detector": "C-MLP",
+   "test_set": "T0",
+   "comparisons": [
+    {
+     "what": "mean m1_per_task",
+     "got": 0.731855819561702,
+     "ref": 0.731856,
+     "abs_diff": 1.8043829796976496e-07
+    },
+    {
+     "what": "mean bal_acc",
+     "got": 0.5750762908591576,
+     "ref": 0.575076,
+     "abs_diff": 2.908591575367936e-07
+    },
+    {
+     "what": "mean tpr",
+     "got": 0.21995267156557477,
+     "ref": 0.219953,
+     "abs_diff": 3.2843442523966537e-07
+    }
+   ],
+   "n_compared": 3,
+   "max_abs_diff": 3.2843442523966537e-07,
+   "passed": true
+  },
+  {
+   "cond": "D2",
+   "detector": "C",
+   "test_set": "T0",
+   "comparisons": [
+    {
+     "what": "seed 0 m1_per_task",
+     "got": 0.6787416015357192,
+     "ref": 0.678742,
+     "abs_diff": 3.9846428079304275e-07
+    },
+    {
+     "what": "seed 0 n_cells",
+     "got": 3.0,
+     "ref": 3.0,
+     "abs_diff": 0.0
+    },
+    {
+     "what": "seed 0 bal_acc",
+     "got": 0.5238095238095238,
+     "ref": 0.52381,
+     "abs_diff": 4.7619047616187515e-07
+    },
+    {
+     "what": "seed 0 tpr",
+     "got": 0.047619047619047616,
+     "ref": 0.047619,
+     "abs_diff": 4.7619047614799737e-08
+    },
+    {
+     "what": "seed 1 m1_per_task",
+     "got": 0.7532794612794613,
+     "ref": 0.753279,
+     "abs_diff": 4.6127946129459474e-07
+    },
+    {
+     "what": "seed 1 n_cells",
+     "got": 3.0,
+     "ref": 3.0,
+     "abs_diff": 0.0
+    },
+    {
+     "what": "seed 1 bal_acc",
+     "got": 0.6353686635944701,
+     "ref": 0.635369,
+     "abs_diff": 3.3640552987712624e-07
+    },
+    {
+     "what": "seed 1 tpr",
+     "got": 0.3064516129032258,
+     "ref": 0.306452,
+     "abs_diff": 3.8709677419035415e-07
+    },
+    {
+     "what": "seed 2 m1_per_task",
+     "got": 0.6670220438602792,
+     "ref": 0.667022,
+     "abs_diff": 4.3860279186347384e-08
+    },
+    {
+     "what": "seed 2 n_cells",
+     "got": 3.0,
+     "ref": 3.0,
+     "abs_diff": 0.0
+    },
+    {
+     "what": "seed 2 bal_acc",
+     "got": 0.4908210096889343,
+     "ref": 0.490821,
+     "abs_diff": 9.688934266005589e-09
+    },
+    {
+     "what": "seed 2 tpr",
+     "got": 0.1891891891891892,
+     "ref": 0.189189,
+     "abs_diff": 1.8918918920363126e-07
+    }
+   ],
+   "n_compared": 12,
+   "max_abs_diff": 4.7619047616187515e-07,
+   "passed": true,
+   "note": "no row for (D2, C, T0) in results/abc2/mlp_final_table.csv"
+  }
+ ]
+}

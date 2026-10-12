@@ -1,0 +1,122 @@
+{
+ "test_set": "T0",
+ "passed": true,
+ "tolerance": 1e-06,
+ "rng_seed": 20261011,
+ "n_boot": 1000,
+ "check_table": "results/abc2/mlp_final_table.csv",
+ "max_abs_diff": 4.7619047616187515e-07,
+ "sides": [
+  {
+   "cond": "D2",
+   "detector": "C-MLP",
+   "test_set": "T0",
+   "comparisons": [
+    {
+     "what": "mean m1_per_task",
+     "got": 0.731855819561702,
+     "ref": 0.731856,
+     "abs_diff": 1.8043829796976496e-07
+    },
+    {
+     "what": "mean bal_acc",
+     "got": 0.5750762908591576,
+     "ref": 0.575076,
+     "abs_diff": 2.908591575367936e-07
+    },
+    {
+     "what": "mean tpr",
+     "got": 0.21995267156557477,
+     "ref": 0.219953,
+     "abs_diff": 3.2843442523966537e-07
+    }
+   ],
+   "n_compared": 3,
+   "max_abs_diff": 3.2843442523966537e-07,
+   "passed": true
+  },
+  {
+   "cond": "D2",
+   "detector": "C",
+   "test_set": "T0",
+   "comparisons": [
+    {
+     "what": "seed 0 m1_per_task",
+     "got": 0.6787416015357192,
+     "ref": 0.678742,
+     "abs_diff": 3.9846428079304275e-07
+    },
+    {
+     "what": "seed 0 n_cells",
+     "got": 3.0,
+     "ref": 3.0,
+     "abs_diff": 0.0
+    },
+    {
+     "what": "seed 0 bal_acc",
+     "got": 0.5238095238095238,
+     "ref": 0.52381,
+     "abs_diff": 4.7619047616187515e-07
+    },
+    {
+     "what": "seed 0 tpr",
+     "got": 0.047619047619047616,
+     "ref": 0.047619,
+     "abs_diff": 4.7619047614799737e-08
+    },
+    {
+     "what": "seed 1 m1_per_task",
+     "got": 0.7532794612794613,
+     "ref": 0.753279,
+     "abs_diff": 4.6127946129459474e-07
+    },
+    {
+     "what": "seed 1 n_cells",
+     "got": 3.0,
+     "ref": 3.0,
+     "abs_diff": 0.0
+    },
+    {
+     "what": "seed 1 bal_acc",
+     "got": 0.6353686635944701,
+     "ref": 0.635369,
+     "abs_diff": 3.3640552987712624e-07
+    },
+    {
+     "what": "seed 1 tpr",
+     "got": 0.3064516129032258,
+     "ref": 0.306452,
+     "abs_diff": 3.8709677419035415e-07
+    },
+    {
+     "what": "seed 2 m1_per_task",
+     "got": 0.6670220438602792,
+     "ref": 0.667022,
+     "abs_diff": 4.3860279186347384e-08
+    },
+    {
+     "what": "seed 2 n_cells",
+     "got": 3.0,
+     "ref": 3.0,
+     "abs_diff": 0.0
+    },
+    {
+     "what": "seed 2 bal_acc",
+     "got": 0.4908210096889343,
+     "ref": 0.490821,
+     "abs_diff": 9.688934266005589e-09
+    },
+    {
+     "what": "seed 2 tpr",
+     "got": 0.1891891891891892,
+     "ref": 0.189189,
+     "abs_diff": 1.8918918920363126e-07
+    }
+   ],
+   "n_compared": 12,
+   "max_abs_diff": 4.7619047616187515e-07,
+   "passed": true,
+   "note": "no row for (D2, C, T0) in results/abc2/mlp_final_table.csv"
+  }
+ ]
+}

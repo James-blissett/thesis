@@ -1,0 +1,4 @@
+what,n,mean,median,p10,p90
+lan_vs_partner,200,0.0219,0.0,0.0,0.0392
+lan_vs_nonpartner,200,0.0216,0.0059,0.0002,0.061
+reference,12250,0.021,0.0,0.0,0.0385

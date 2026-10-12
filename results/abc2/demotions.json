@@ -1,0 +1,38 @@
+{
+ "demoted": [],
+ "rates": {
+  "ori": 0.4567,
+  "ori2": 0.455,
+  "obj": 0.235,
+  "lan": 0.425,
+  "swap": 0.0,
+  "task": 0.08
+ },
+ "counts": {
+  "ori": {
+   "successes": 137,
+   "n": 300
+  },
+  "ori2": {
+   "successes": 91,
+   "n": 200
+  },
+  "obj": {
+   "successes": 47,
+   "n": 200
+  },
+  "lan": {
+   "successes": 85,
+   "n": 200
+  },
+  "swap": {
+   "successes": 0,
+   "n": 50
+  },
+  "task": {
+   "successes": 4,
+   "n": 50
+  }
+ },
+ "rule": "obj or lan with overall success rate (success_ever) < 10% or > 90% becomes stress-test only (handoff v1 Step 5); a block with no rollouts is not evaluated"
+}

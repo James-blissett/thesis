@@ -1,0 +1,12 @@
+[index] corpus_v3_index.json: 1000 rollouts (300 v2, 700 v3)
+  ori      300/ 300 collected, success 137/300 (0.4567), failed 0, not run 0, cells skipped 0
+  ori2     200/ 200 collected, success 91/200 (0.455), failed 0, not run 0, cells skipped 0
+  obj      200/ 200 collected, success 47/200 (0.235), failed 0, not run 0, cells skipped 0
+  lan      200/ 200 collected, success 85/200 (0.425), failed 0, not run 0, cells skipped 0
+  swap      50/  50 collected, success 0/50 (0.0), failed 0, not run 0, cells skipped 0
+  task      50/  50 collected, success 4/50 (0.08), failed 0, not run 0, cells skipped 0
+  all_new  700/ 700 collected, success 227/700 (0.3243), failed 0, not run 0, cells skipped 0
+[collect] 20.236 h, 696 rollouts in window, 34.39/h; failures.jsonl 0 entries; skipped cells none
+[demotion] demoted none (obj 0.235, lan 0.425)
+[lan near-dup] 200/200 lan rollouts with a partner: identical-step share mean 0.0219 median 0.0; vs other init states 0.0216; reference (unperturbed, different init states, 12250 pairs) mean 0.021 median 0.0
+[*] outputs in results/abc2

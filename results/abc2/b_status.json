@@ -1,0 +1,184 @@
+{
+ "status": "done",
+ "reason": "",
+ "updated_utc": "2026-10-12T11:22:36Z",
+ "conds_done": [
+  "D0",
+  "D2"
+ ],
+ "conds_skipped": {},
+ "full_run": true,
+ "seconds": 2965,
+ "selections": {
+  "D0": {
+   "H": 10,
+   "betas": {
+    "action": "0.96",
+    "emb_temp": "none",
+    "cross_layer": "0.91"
+   },
+   "skipped_unstable_targets": [
+    "emb_temp[15]",
+    "emb_temp[1]",
+    "xl_final[17]",
+    "xl_final[18]"
+   ],
+   "c_grid": 0.0001,
+   "c_grid_score": 0.863154692085674,
+   "c_final": 0.001,
+   "c_final_score": 0.7816452506928698,
+   "n_probes": 124,
+   "layers": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+   ],
+   "seeds": [
+    0,
+    1,
+    2
+   ],
+   "pipe_seeds": [
+    0,
+    1,
+    2
+   ]
+  },
+  "D2": {
+   "H": 10,
+   "betas": {
+    "action": "0.83",
+    "emb_temp": "none",
+    "cross_layer": "0.96"
+   },
+   "skipped_unstable_targets": [
+    "emb_temp[11]",
+    "emb_temp[12]",
+    "emb_temp[13]",
+    "xl_final[18]",
+    "xl_final[19]",
+    "xl_final[20]",
+    "xl_final[24]",
+    "xl_final[26]",
+    "xl_final[28]",
+    "xl_final[29]",
+    "xl_final[30]"
+   ],
+   "c_grid": 0.0001,
+   "c_grid_score": 0.8816715524850679,
+   "c_final": 0.01,
+   "c_final_score": 0.8414025438069556,
+   "n_probes": 116,
+   "layers": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31
+   ],
+   "seeds": [
+    0,
+    1,
+    2
+   ],
+   "pipe_seeds": [
+    0,
+    1,
+    2
+   ]
+  }
+ },
+ "d0_check": {
+  "quantity": "B H=10 final detector, unseen (T0) M1-per-task, mean over seeds",
+  "reference": 0.7086,
+  "reference_std": 0.0467,
+  "reproduced": 0.708642,
+  "reproduced_std": 0.0467399,
+  "diff": 4.199999999998649e-05,
+  "tolerance": 0.005,
+  "passed": true,
+  "n_seeds": 3,
+  "reference_pooled": 0.7278,
+  "reproduced_pooled": 0.727849,
+  "reference_c_final": 0.001,
+  "c_final": "0.001",
+  "reference_c_grid": 0.0001,
+  "c_grid": "0.0001",
+  "fit": {
+   "joint_h": true,
+   "fit_block_H": [
+    0,
+    10,
+    25
+   ],
+   "kept_H": 10,
+   "note": "each layer's probes fitted jointly with the H=0 and H=25 targets (12 outputs, setup_b's layout, warm start, max_iter and objective), only the H=10 outputs kept; the H=10-only fit (4 outputs) stops LBFGS at a different point (per-row p up to ~0.004 apart), which flipped the final c on D0 and failed the Step 11 D0 check"
+  }
+ },
+ "fit": {
+  "joint_h": true,
+  "fit_block_H": [
+   0,
+   10,
+   25
+  ],
+  "kept_H": 10,
+  "note": "each layer's probes fitted jointly with the H=0 and H=25 targets (12 outputs, setup_b's layout, warm start, max_iter and objective), only the H=10 outputs kept; the H=10-only fit (4 outputs) stops LBFGS at a different point (per-row p up to ~0.004 apart), which flipped the final c on D0 and failed the Step 11 D0 check"
+ }
+}

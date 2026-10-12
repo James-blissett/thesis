@@ -1,0 +1,1436 @@
+2026-10-11 12:04:27.177685: I tensorflow/core/util/port.cc:113] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2026-10-11 12:04:27.209059: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:9261] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2026-10-11 12:04:27.209117: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:607] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2026-10-11 12:04:27.210099: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1515] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2026-10-11 12:04:27.214657: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI AVX512_BF16 FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2026-10-11 12:04:27.692289: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+[robosuite WARNING] No private macro file found! (__init__.py:7)
+[robosuite WARNING] It is recommended to use a private macro file (__init__.py:8)
+[robosuite WARNING] To setup, run: python /ephemeral/code/venv/lib/python3.10/site-packages/robosuite/scripts/setup_macros.py (__init__.py:9)
+Gym has been unmaintained since 2022 and does not support NumPy 2.0 amongst other critical functionality.
+Please upgrade to Gymnasium, the maintained drop-in replacement of Gym, or contact the authors of your software and request that they upgrade.
+Users of this version of Gym should be able to simply replace 'import gym' with 'import gymnasium as gym' in the vast majority of cases.
+See the migration guide at https://gymnasium.farama.org/introduction/migration_guide/ for additional information.
+/ephemeral/code/venv/lib/python3.10/site-packages/wandb/analytics/sentry.py:90: SentryHubDeprecationWarning: `sentry_sdk.Hub` is deprecated and will be removed in a future major release. Please consult our 1.x to 2.x migration guide for details on how to migrate `Hub` usage to the new API: https://docs.sentry.io/platforms/python/migration/1.x-to-2.x
+  self.hub = sentry_sdk.Hub(client)
+[*] 2026-10-11T12:04:37.318458+00:00 worker 1/2 out=/data/rollouts_v3 free=237 GB
+Loading checkpoint shards:   0%|          | 0/4 [00:00<?, ?it/s]Loading checkpoint shards:  25%|██▌       | 1/4 [00:00<00:00,  4.29it/s]Loading checkpoint shards:  50%|█████     | 2/4 [00:00<00:00,  4.57it/s]Loading checkpoint shards:  75%|███████▌  | 3/4 [00:00<00:00,  4.66it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.75it/s]Loading checkpoint shards: 100%|██████████| 4/4 [00:00<00:00,  4.67it/s]
+<frozen importlib._bootstrap>:283: DeprecationWarning: the load_module() method is deprecated and slated for removal in Python 3.12; use exec_module() instead
+[*] 350 jobs for this worker: 0 already complete (skipped), 350 pending; other workers' tmp dirs: ['.tmp_ori2_task00_trial00_w0']
+[info] Applying task order index 0 (permutation: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]) for benchmark 'libero_10' (10 tasks).
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T12:08:09] ori2_task01_trial00 init=1 success=False t_success=None 202s 153MB free=237GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T12:11:33] ori2_task03_trial00 init=0 success=False t_success=None 201s 154MB free=236GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T12:14:57] ori2_task05_trial00 init=1 success=True t_success=169 200s 152MB free=236GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T12:18:27] ori2_task07_trial00 init=0 success=False t_success=None 207s 154MB free=236GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T12:22:49] ori2_task09_trial00 init=2 success=True t_success=314 259s 152MB free=235GB
+[info] Using default task order for benchmark 'libero_10_object' (10 tasks).
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T12:26:24] obj_task01_trial00 init=26 success=True t_success=274 211s 154MB free=235GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T12:30:00] obj_task03_trial00 init=27 success=True t_success=268 214s 153MB free=235GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T12:34:20] obj_task05_trial00 init=16 success=False t_success=None 256s 151MB free=235GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T12:38:44] obj_task07_trial00 init=48 success=False t_success=None 255s 153MB free=234GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T12:42:15] obj_task09_trial00 init=22 success=False t_success=None 209s 153MB free=234GB
+[info] Using default task order for benchmark 'libero_10_lan' (10 tasks).
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T12:45:52] lan_task01_trial00 init=6 success=True t_success=253 213s 154MB free=234GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T12:49:29] lan_task03_trial00 init=44 success=False t_success=None 213s 154MB free=233GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T12:53:06] lan_task05_trial00 init=35 success=True t_success=177 214s 152MB free=233GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T12:56:39] lan_task07_trial00 init=10 success=False t_success=None 210s 154MB free=233GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T13:00:11] lan_task09_trial00 init=14 success=True t_success=323 208s 152MB free=232GB
+[info] Using default task order for benchmark 'libero_10_swap' (10 tasks).
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T13:03:46] swap_task01_trial00 init=34 success=False t_success=None 211s 152MB free=232GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T13:07:22] swap_task03_trial00 init=39 success=False t_success=None 213s 153MB free=232GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T13:10:54] swap_task05_trial00 init=13 success=False t_success=None 209s 152MB free=231GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T13:14:29] swap_task07_trial00 init=17 success=False t_success=None 211s 153MB free=231GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T13:18:05] swap_task09_trial00 init=21 success=False t_success=None 212s 151MB free=231GB
+[info] Using default task order for benchmark 'libero_10_task' (10 tasks).
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T13:21:42] task_task01_trial00 init=43 success=False t_success=None 213s 154MB free=230GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T13:25:19] task_task03_trial00 init=22 success=False t_success=None 214s 154MB free=230GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T13:28:51] task_task05_trial00 init=17 success=False t_success=None 209s 152MB free=230GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T13:32:25] task_task07_trial00 init=30 success=False t_success=None 210s 154MB free=230GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T13:36:00] task_task09_trial00 init=0 success=False t_success=None 212s 152MB free=229GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T13:39:29] ori2_task01_trial01 init=4 success=True t_success=258 204s 143MB free=229GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T13:44:38] ori2_task03_trial01 init=5 success=False t_success=None 306s 143MB free=229GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T13:48:47] ori2_task05_trial01 init=3 success=True t_success=181 245s 143MB free=228GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T13:52:28] ori2_task07_trial01 init=1 success=False t_success=None 217s 143MB free=228GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T13:56:13] ori2_task09_trial01 init=4 success=False t_success=None 222s 143MB free=228GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T13:59:57] obj_task01_trial01 init=36 success=True t_success=284 220s 143MB free=228GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T14:03:41] obj_task03_trial01 init=21 success=False t_success=None 222s 143MB free=227GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T14:07:34] obj_task05_trial01 init=48 success=False t_success=None 230s 143MB free=227GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T14:11:13] obj_task07_trial01 init=44 success=False t_success=None 216s 143MB free=227GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T14:14:52] obj_task09_trial01 init=20 success=False t_success=None 216s 143MB free=226GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T14:18:23] lan_task01_trial01 init=4 success=False t_success=None 207s 143MB free=226GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T14:21:57] lan_task03_trial01 init=1 success=False t_success=None 211s 143MB free=226GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T14:25:29] lan_task05_trial01 init=31 success=True t_success=220 208s 143MB free=226GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T14:28:53] lan_task07_trial01 init=36 success=False t_success=None 201s 143MB free=225GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T14:33:15] lan_task09_trial01 init=1 success=False t_success=None 259s 143MB free=225GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T14:37:24] swap_task01_trial01 init=17 success=False t_success=None 244s 143MB free=225GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T14:40:59] swap_task03_trial01 init=44 success=False t_success=None 212s 143MB free=224GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T14:44:37] swap_task05_trial01 init=23 success=False t_success=None 216s 143MB free=224GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T14:48:12] swap_task07_trial01 init=28 success=False t_success=None 211s 143MB free=224GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T14:51:48] swap_task09_trial01 init=14 success=False t_success=None 213s 143MB free=224GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T14:55:19] task_task01_trial01 init=22 success=False t_success=None 207s 143MB free=223GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T14:58:46] task_task03_trial01 init=3 success=False t_success=None 204s 143MB free=223GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T15:02:15] task_task05_trial01 init=4 success=False t_success=None 205s 143MB free=223GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T15:05:39] task_task07_trial01 init=43 success=False t_success=None 201s 143MB free=222GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T15:09:07] task_task09_trial01 init=26 success=False t_success=None 205s 143MB free=222GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T15:12:34] ori2_task01_trial02 init=5 success=True t_success=303 202s 143MB free=222GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T15:16:02] ori2_task03_trial02 init=6 success=False t_success=None 205s 143MB free=222GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T15:19:30] ori2_task05_trial02 init=7 success=True t_success=281 205s 143MB free=221GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T15:22:55] ori2_task07_trial02 init=4 success=False t_success=None 201s 143MB free=221GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T15:26:25] ori2_task09_trial02 init=5 success=True t_success=296 207s 143MB free=221GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T15:29:47] obj_task01_trial02 init=18 success=True t_success=357 199s 143MB free=220GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T15:33:15] obj_task03_trial02 init=13 success=False t_success=None 206s 143MB free=220GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T15:36:44] obj_task05_trial02 init=39 success=False t_success=None 205s 143MB free=220GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T15:40:11] obj_task07_trial02 init=29 success=False t_success=None 205s 143MB free=220GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T15:43:42] obj_task09_trial02 init=48 success=False t_success=None 208s 143MB free=219GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T15:47:11] lan_task01_trial02 init=14 success=True t_success=282 204s 143MB free=219GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T15:50:37] lan_task03_trial02 init=42 success=False t_success=None 204s 143MB free=219GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T15:54:03] lan_task05_trial02 init=24 success=False t_success=None 202s 143MB free=218GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T15:57:27] lan_task07_trial02 init=35 success=True t_success=237 201s 143MB free=218GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T16:00:57] lan_task09_trial02 init=34 success=False t_success=None 207s 143MB free=218GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T16:04:24] swap_task01_trial02 init=21 success=False t_success=None 202s 143MB free=218GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T16:07:51] swap_task03_trial02 init=0 success=False t_success=None 204s 143MB free=217GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T16:11:16] swap_task05_trial02 init=3 success=False t_success=None 202s 143MB free=217GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T16:14:45] swap_task07_trial02 init=16 success=False t_success=None 205s 143MB free=217GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T16:18:16] swap_task09_trial02 init=16 success=False t_success=None 207s 143MB free=216GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T16:21:45] task_task01_trial02 init=28 success=False t_success=None 204s 143MB free=216GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T16:25:10] task_task03_trial02 init=15 success=False t_success=None 203s 143MB free=216GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T16:28:36] task_task05_trial02 init=27 success=False t_success=None 202s 143MB free=216GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T16:31:59] task_task07_trial02 init=40 success=False t_success=None 199s 143MB free=215GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T16:35:28] task_task09_trial02 init=24 success=False t_success=None 206s 143MB free=215GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T16:38:53] ori2_task01_trial03 init=6 success=True t_success=268 201s 143MB free=215GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T16:42:21] ori2_task03_trial03 init=9 success=False t_success=None 205s 143MB free=214GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T16:45:50] ori2_task05_trial03 init=10 success=True t_success=226 206s 143MB free=214GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T16:49:17] ori2_task07_trial03 init=8 success=False t_success=None 203s 143MB free=214GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T16:52:43] ori2_task09_trial03 init=7 success=False t_success=None 203s 143MB free=214GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T16:56:11] obj_task01_trial03 init=42 success=False t_success=None 204s 143MB free=213GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T16:59:38] obj_task03_trial03 init=30 success=False t_success=None 204s 143MB free=213GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T17:03:07] obj_task05_trial03 init=21 success=False t_success=None 206s 143MB free=213GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T17:06:34] obj_task07_trial03 init=8 success=False t_success=None 204s 143MB free=212GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T17:10:04] obj_task09_trial03 init=4 success=False t_success=None 207s 143MB free=212GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T17:13:29] lan_task01_trial03 init=38 success=True t_success=261 202s 143MB free=212GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T17:16:55] lan_task03_trial03 init=36 success=True t_success=258 203s 143MB free=212GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T17:20:22] lan_task05_trial03 init=36 success=True t_success=184 204s 143MB free=211GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T17:23:47] lan_task07_trial03 init=17 success=True t_success=245 201s 143MB free=211GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T17:27:18] lan_task09_trial03 init=13 success=True t_success=347 208s 143MB free=211GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T17:30:43] swap_task01_trial03 init=47 success=False t_success=None 202s 143MB free=210GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T17:34:14] swap_task03_trial03 init=5 success=False t_success=None 208s 143MB free=210GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T17:37:40] swap_task05_trial03 init=40 success=False t_success=None 202s 143MB free=210GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T17:41:00] swap_task07_trial03 init=15 success=False t_success=None 197s 143MB free=210GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T17:44:27] swap_task09_trial03 init=47 success=False t_success=None 203s 143MB free=209GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T17:47:54] task_task01_trial03 init=40 success=False t_success=None 203s 143MB free=209GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T17:51:22] task_task03_trial03 init=49 success=False t_success=None 205s 143MB free=209GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T17:54:50] task_task05_trial03 init=48 success=False t_success=None 204s 143MB free=208GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T17:58:16] task_task07_trial03 init=0 success=False t_success=None 203s 143MB free=208GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T18:01:46] task_task09_trial03 init=15 success=False t_success=None 207s 143MB free=208GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T18:05:14] ori2_task01_trial04 init=9 success=True t_success=232 203s 143MB free=208GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T18:08:40] ori2_task03_trial04 init=12 success=False t_success=None 204s 143MB free=207GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T18:12:06] ori2_task05_trial04 init=13 success=False t_success=None 202s 143MB free=207GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T18:15:32] ori2_task07_trial04 init=11 success=True t_success=413 202s 143MB free=207GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T18:19:01] ori2_task09_trial04 init=9 success=True t_success=256 206s 143MB free=206GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T18:22:27] obj_task01_trial04 init=43 success=True t_success=230 204s 143MB free=206GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T18:25:52] obj_task03_trial04 init=46 success=True t_success=361 203s 143MB free=206GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T18:29:18] obj_task05_trial04 init=44 success=False t_success=None 202s 143MB free=206GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T18:32:44] obj_task07_trial04 init=15 success=False t_success=None 203s 143MB free=205GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T18:36:12] obj_task09_trial04 init=42 success=False t_success=None 205s 143MB free=205GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T18:39:38] lan_task01_trial04 init=41 success=True t_success=313 201s 143MB free=205GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T18:43:04] lan_task03_trial04 init=10 success=False t_success=None 203s 143MB free=204GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T18:46:30] lan_task05_trial04 init=20 success=True t_success=246 203s 143MB free=204GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T18:49:58] lan_task07_trial04 init=0 success=True t_success=278 204s 143MB free=204GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T18:53:23] lan_task09_trial04 init=32 success=False t_success=None 202s 143MB free=204GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T18:56:48] swap_task01_trial04 init=10 success=False t_success=None 201s 143MB free=203GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T19:00:13] swap_task03_trial04 init=18 success=False t_success=None 202s 143MB free=203GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T19:03:40] swap_task05_trial04 init=28 success=False t_success=None 204s 143MB free=203GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T19:07:04] swap_task07_trial04 init=23 success=False t_success=None 200s 143MB free=202GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T19:10:34] swap_task09_trial04 init=8 success=False t_success=None 207s 143MB free=202GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T19:14:02] task_task01_trial04 init=6 success=False t_success=None 203s 143MB free=202GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T19:17:30] task_task03_trial04 init=48 success=False t_success=None 206s 143MB free=202GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T19:20:57] task_task05_trial04 init=1 success=False t_success=None 203s 143MB free=201GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T19:24:23] task_task07_trial04 init=38 success=False t_success=None 203s 143MB free=201GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T19:27:53] task_task09_trial04 init=30 success=False t_success=None 207s 143MB free=201GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T19:31:22] ori2_task01_trial05 init=10 success=False t_success=None 204s 143MB free=200GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T19:34:51] ori2_task03_trial05 init=15 success=False t_success=None 206s 143MB free=200GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T19:38:18] ori2_task05_trial05 init=15 success=True t_success=171 204s 143MB free=200GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T19:41:43] ori2_task07_trial05 init=14 success=False t_success=None 200s 143MB free=200GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T19:45:13] ori2_task09_trial05 init=11 success=True t_success=281 207s 143MB free=199GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T19:48:40] obj_task01_trial05 init=5 success=True t_success=417 203s 143MB free=199GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T19:52:08] obj_task03_trial05 init=32 success=False t_success=None 205s 143MB free=199GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T19:55:35] obj_task05_trial05 init=15 success=False t_success=None 204s 143MB free=198GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T19:58:57] obj_task07_trial05 init=25 success=False t_success=None 199s 143MB free=198GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T20:02:27] obj_task09_trial05 init=5 success=False t_success=None 206s 143MB free=198GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T20:05:54] lan_task01_trial05 init=32 success=True t_success=469 203s 143MB free=198GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T20:09:22] lan_task03_trial05 init=48 success=False t_success=None 204s 143MB free=197GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T20:12:46] lan_task05_trial05 init=33 success=False t_success=None 201s 143MB free=197GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T20:16:12] lan_task07_trial05 init=11 success=True t_success=256 202s 143MB free=197GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T20:19:43] lan_task09_trial05 init=20 success=True t_success=365 208s 143MB free=196GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T20:23:12] ori2_task01_trial06 init=12 success=False t_success=None 204s 143MB free=196GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T20:26:39] ori2_task03_trial06 init=16 success=False t_success=None 205s 143MB free=196GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T20:30:07] ori2_task05_trial06 init=16 success=False t_success=None 204s 143MB free=196GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T20:33:33] ori2_task07_trial06 init=23 success=True t_success=294 202s 143MB free=195GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T20:37:03] ori2_task09_trial06 init=12 success=False t_success=None 208s 143MB free=195GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T20:40:30] obj_task01_trial06 init=33 success=False t_success=None 204s 143MB free=195GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T20:43:59] obj_task03_trial06 init=4 success=False t_success=None 206s 143MB free=194GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T20:47:24] obj_task05_trial06 init=32 success=False t_success=None 202s 143MB free=194GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T20:50:49] obj_task07_trial06 init=27 success=False t_success=None 203s 143MB free=194GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T20:54:17] obj_task09_trial06 init=44 success=False t_success=None 205s 143MB free=194GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T20:57:43] lan_task01_trial06 init=0 success=False t_success=None 202s 143MB free=193GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T21:01:07] lan_task03_trial06 init=49 success=True t_success=395 201s 143MB free=193GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T21:04:34] lan_task05_trial06 init=49 success=True t_success=204 204s 143MB free=193GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T21:08:01] lan_task07_trial06 init=16 success=True t_success=314 204s 143MB free=192GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T21:11:31] lan_task09_trial06 init=12 success=False t_success=None 206s 143MB free=192GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T21:15:00] ori2_task01_trial07 init=18 success=True t_success=232 205s 143MB free=192GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T21:18:27] ori2_task03_trial07 init=20 success=False t_success=None 204s 143MB free=192GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T21:21:53] ori2_task05_trial07 init=20 success=False t_success=None 204s 143MB free=191GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T21:25:20] ori2_task07_trial07 init=24 success=True t_success=321 203s 143MB free=191GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T21:28:51] ori2_task09_trial07 init=13 success=False t_success=None 208s 143MB free=191GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T21:32:16] obj_task01_trial07 init=3 success=True t_success=282 201s 143MB free=190GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T21:35:46] obj_task03_trial07 init=19 success=False t_success=None 208s 143MB free=190GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T21:39:12] obj_task05_trial07 init=41 success=False t_success=None 203s 143MB free=190GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T21:42:38] obj_task07_trial07 init=0 success=False t_success=None 203s 143MB free=190GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T21:46:05] obj_task09_trial07 init=26 success=False t_success=None 204s 143MB free=189GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T21:49:30] lan_task01_trial07 init=11 success=True t_success=267 200s 143MB free=189GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T21:52:56] lan_task03_trial07 init=31 success=False t_success=None 203s 143MB free=189GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T21:56:24] lan_task05_trial07 init=43 success=True t_success=175 205s 143MB free=189GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T21:59:49] lan_task07_trial07 init=7 success=True t_success=268 201s 143MB free=188GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T22:03:18] lan_task09_trial07 init=37 success=False t_success=None 206s 143MB free=188GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T22:06:46] ori2_task01_trial08 init=20 success=True t_success=257 204s 143MB free=188GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T22:10:15] ori2_task03_trial08 init=21 success=False t_success=None 206s 143MB free=187GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T22:13:40] ori2_task05_trial08 init=23 success=True t_success=184 201s 143MB free=187GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T22:17:05] ori2_task07_trial08 init=25 success=True t_success=294 202s 143MB free=187GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T22:20:37] ori2_task09_trial08 init=14 success=False t_success=None 208s 143MB free=187GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T22:24:03] obj_task01_trial08 init=8 success=False t_success=None 203s 143MB free=186GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T22:27:32] obj_task03_trial08 init=40 success=False t_success=None 207s 143MB free=186GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T22:30:56] obj_task05_trial08 init=18 success=False t_success=None 201s 143MB free=186GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T22:34:25] obj_task07_trial08 init=16 success=False t_success=None 205s 143MB free=185GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T22:37:56] obj_task09_trial08 init=41 success=True t_success=326 208s 143MB free=185GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T22:41:25] lan_task01_trial08 init=3 success=True t_success=261 205s 143MB free=185GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T22:44:50] lan_task03_trial08 init=24 success=True t_success=270 202s 143MB free=185GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T22:48:18] lan_task05_trial08 init=40 success=True t_success=203 205s 143MB free=184GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T22:51:41] lan_task07_trial08 init=45 success=True t_success=285 199s 143MB free=184GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T22:55:11] lan_task09_trial08 init=29 success=False t_success=None 207s 143MB free=184GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T22:58:37] ori2_task01_trial09 init=26 success=True t_success=236 202s 143MB free=183GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T23:02:05] ori2_task03_trial09 init=23 success=False t_success=None 206s 143MB free=183GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T23:05:33] ori2_task05_trial09 init=24 success=True t_success=166 204s 143MB free=183GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T23:09:00] ori2_task07_trial09 init=27 success=True t_success=392 203s 143MB free=183GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T23:12:27] ori2_task09_trial09 init=15 success=False t_success=None 204s 143MB free=182GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T23:15:53] obj_task01_trial09 init=24 success=False t_success=None 202s 143MB free=182GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T23:19:17] obj_task03_trial09 init=43 success=True t_success=273 201s 143MB free=182GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T23:22:42] obj_task05_trial09 init=9 success=False t_success=None 202s 143MB free=181GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T23:26:09] obj_task07_trial09 init=33 success=False t_success=None 204s 143MB free=181GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T23:29:40] obj_task09_trial09 init=0 success=True t_success=373 208s 143MB free=181GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T23:33:07] lan_task01_trial09 init=39 success=True t_success=220 202s 143MB free=181GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T23:36:36] lan_task03_trial09 init=23 success=False t_success=None 207s 143MB free=180GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T23:40:04] lan_task05_trial09 init=38 success=True t_success=277 204s 143MB free=180GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T23:43:29] lan_task07_trial09 init=4 success=True t_success=245 201s 143MB free=180GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T23:46:57] lan_task09_trial09 init=30 success=False t_success=None 205s 143MB free=179GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T23:50:27] ori2_task01_trial10 init=27 success=True t_success=300 206s 143MB free=179GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T23:53:55] ori2_task03_trial10 init=25 success=True t_success=460 205s 143MB free=179GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-11T23:57:22] ori2_task05_trial10 init=25 success=True t_success=179 203s 143MB free=179GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T00:00:48] ori2_task07_trial10 init=29 success=False t_success=None 203s 143MB free=178GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T00:04:13] ori2_task09_trial10 init=22 success=False t_success=None 201s 143MB free=178GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T00:07:41] obj_task01_trial10 init=25 success=True t_success=288 204s 143MB free=178GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T00:11:05] obj_task03_trial10 init=24 success=True t_success=317 202s 143MB free=177GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T00:14:32] obj_task05_trial10 init=27 success=False t_success=None 203s 143MB free=177GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T00:18:01] obj_task07_trial10 init=34 success=False t_success=None 206s 143MB free=177GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T00:21:32] obj_task09_trial10 init=17 success=False t_success=None 208s 143MB free=177GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T00:25:00] lan_task01_trial10 init=21 success=True t_success=250 204s 143MB free=176GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T00:28:30] lan_task03_trial10 init=9 success=True t_success=446 207s 143MB free=176GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T00:32:00] lan_task05_trial10 init=30 success=True t_success=238 206s 143MB free=176GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T00:35:25] lan_task07_trial10 init=12 success=False t_success=None 202s 143MB free=175GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T00:38:55] lan_task09_trial10 init=49 success=True t_success=321 207s 143MB free=175GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T00:42:22] ori2_task01_trial11 init=28 success=False t_success=None 202s 143MB free=175GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T00:45:52] ori2_task03_trial11 init=28 success=False t_success=None 208s 143MB free=175GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T00:49:16] ori2_task05_trial11 init=26 success=False t_success=None 201s 143MB free=174GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T00:52:45] ori2_task07_trial11 init=30 success=True t_success=246 205s 143MB free=174GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T00:56:11] ori2_task09_trial11 init=24 success=False t_success=None 203s 143MB free=174GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T00:59:40] obj_task01_trial11 init=6 success=True t_success=229 205s 143MB free=173GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T01:03:06] obj_task03_trial11 init=15 success=True t_success=254 204s 143MB free=173GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T01:06:37] obj_task05_trial11 init=8 success=False t_success=None 207s 143MB free=173GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T01:10:07] obj_task07_trial11 init=12 success=False t_success=None 207s 143MB free=173GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T01:13:38] obj_task09_trial11 init=49 success=False t_success=None 208s 143MB free=172GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T01:17:09] lan_task01_trial11 init=23 success=False t_success=None 207s 143MB free=172GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T01:20:37] lan_task03_trial11 init=35 success=False t_success=None 205s 143MB free=172GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T01:24:08] lan_task05_trial11 init=11 success=False t_success=None 208s 143MB free=171GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T01:27:34] lan_task07_trial11 init=38 success=True t_success=309 203s 143MB free=171GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T01:31:04] lan_task09_trial11 init=7 success=True t_success=290 206s 143MB free=171GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T01:34:36] ori2_task01_trial12 init=32 success=False t_success=None 208s 143MB free=171GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T01:38:03] ori2_task03_trial12 init=31 success=True t_success=225 204s 143MB free=170GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T01:41:33] ori2_task05_trial12 init=27 success=True t_success=281 206s 143MB free=170GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T01:44:59] ori2_task07_trial12 init=34 success=False t_success=None 203s 143MB free=170GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T01:48:29] ori2_task09_trial12 init=26 success=False t_success=None 206s 143MB free=170GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T01:51:55] obj_task01_trial12 init=21 success=False t_success=None 203s 143MB free=169GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T01:55:25] obj_task03_trial12 init=5 success=False t_success=None 208s 143MB free=169GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T01:58:55] obj_task05_trial12 init=2 success=False t_success=None 207s 143MB free=169GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T02:02:23] obj_task07_trial12 init=26 success=False t_success=None 206s 143MB free=168GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T02:05:52] obj_task09_trial12 init=43 success=False t_success=None 206s 143MB free=168GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T02:09:21] lan_task01_trial12 init=8 success=True t_success=264 204s 143MB free=168GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T02:12:43] lan_task03_trial12 init=38 success=True t_success=317 200s 143MB free=168GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T02:16:14] lan_task05_trial12 init=46 success=False t_success=None 207s 143MB free=167GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T02:19:35] lan_task07_trial12 init=15 success=False t_success=None 198s 143MB free=167GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T02:23:01] lan_task09_trial12 init=26 success=True t_success=392 202s 143MB free=167GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T02:26:31] ori2_task01_trial13 init=34 success=False t_success=None 206s 143MB free=166GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T02:29:57] ori2_task03_trial13 init=32 success=False t_success=None 203s 143MB free=166GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T02:33:27] ori2_task05_trial13 init=28 success=False t_success=None 206s 143MB free=166GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T02:36:54] ori2_task07_trial13 init=35 success=True t_success=324 204s 143MB free=166GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T02:40:21] ori2_task09_trial13 init=28 success=False t_success=None 204s 143MB free=165GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T02:43:49] obj_task01_trial13 init=14 success=True t_success=271 205s 143MB free=165GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T02:47:16] obj_task03_trial13 init=45 success=True t_success=282 204s 143MB free=165GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T02:50:44] obj_task05_trial13 init=19 success=False t_success=None 206s 143MB free=164GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T02:54:07] obj_task07_trial13 init=11 success=False t_success=None 200s 143MB free=164GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T02:57:33] obj_task09_trial13 init=8 success=False t_success=None 203s 143MB free=164GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T03:01:03] lan_task01_trial13 init=33 success=True t_success=240 206s 143MB free=164GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T03:04:27] lan_task03_trial13 init=45 success=False t_success=None 202s 143MB free=163GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T03:07:56] lan_task05_trial13 init=28 success=False t_success=None 205s 143MB free=163GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T03:11:19] lan_task07_trial13 init=32 success=True t_success=249 199s 143MB free=163GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T03:14:46] lan_task09_trial13 init=41 success=True t_success=262 204s 143MB free=162GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T03:18:17] ori2_task01_trial14 init=35 success=True t_success=256 206s 143MB free=162GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T03:21:40] ori2_task03_trial14 init=35 success=True t_success=241 200s 143MB free=162GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T03:25:08] ori2_task05_trial14 init=29 success=True t_success=161 204s 143MB free=162GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T03:28:34] ori2_task07_trial14 init=36 success=True t_success=363 203s 143MB free=161GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T03:32:03] ori2_task09_trial14 init=31 success=True t_success=342 205s 143MB free=161GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T03:35:29] obj_task01_trial14 init=35 success=False t_success=None 203s 143MB free=161GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T03:38:56] obj_task03_trial14 init=10 success=False t_success=None 205s 143MB free=160GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T03:42:23] obj_task05_trial14 init=7 success=False t_success=None 203s 143MB free=160GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T03:45:49] obj_task07_trial14 init=21 success=False t_success=None 203s 143MB free=160GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T03:49:18] obj_task09_trial14 init=31 success=False t_success=None 206s 143MB free=160GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T03:52:45] lan_task01_trial14 init=36 success=False t_success=None 203s 143MB free=159GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T03:56:11] lan_task03_trial14 init=8 success=True t_success=341 202s 143MB free=159GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T03:59:42] lan_task05_trial14 init=5 success=True t_success=217 208s 143MB free=159GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T04:03:06] lan_task07_trial14 init=13 success=True t_success=289 201s 143MB free=158GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T04:06:34] lan_task09_trial14 init=45 success=True t_success=242 204s 143MB free=158GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T04:10:03] ori2_task01_trial15 init=39 success=True t_success=440 205s 143MB free=158GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T04:13:28] ori2_task03_trial15 init=41 success=False t_success=None 202s 143MB free=158GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T04:16:57] ori2_task05_trial15 init=30 success=True t_success=189 206s 143MB free=157GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T04:20:23] ori2_task07_trial15 init=37 success=True t_success=233 202s 143MB free=157GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T04:23:49] ori2_task09_trial15 init=32 success=True t_success=267 202s 143MB free=157GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T04:27:16] obj_task01_trial15 init=46 success=True t_success=380 204s 143MB free=156GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T04:30:38] obj_task03_trial15 init=0 success=True t_success=338 200s 143MB free=156GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T04:34:07] obj_task05_trial15 init=13 success=False t_success=None 206s 143MB free=156GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T04:37:28] obj_task07_trial15 init=32 success=False t_success=None 198s 143MB free=156GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T04:40:57] obj_task09_trial15 init=34 success=False t_success=None 205s 143MB free=155GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T04:44:23] lan_task01_trial15 init=46 success=False t_success=None 202s 143MB free=155GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T04:47:48] lan_task03_trial15 init=15 success=False t_success=None 202s 143MB free=155GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T04:51:18] lan_task05_trial15 init=2 success=False t_success=None 206s 143MB free=154GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T04:54:41] lan_task07_trial15 init=42 success=True t_success=273 200s 143MB free=154GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T04:58:06] lan_task09_trial15 init=44 success=False t_success=None 202s 143MB free=154GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T05:01:36] ori2_task01_trial16 init=40 success=False t_success=None 206s 143MB free=154GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T05:05:06] ori2_task03_trial16 init=42 success=False t_success=None 207s 143MB free=153GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T05:08:35] ori2_task05_trial16 init=33 success=True t_success=235 206s 143MB free=153GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T05:11:59] ori2_task07_trial16 init=42 success=True t_success=234 200s 143MB free=153GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T05:15:27] ori2_task09_trial16 init=40 success=True t_success=264 204s 143MB free=152GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T05:18:56] obj_task01_trial16 init=29 success=True t_success=327 206s 143MB free=152GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T05:22:18] obj_task03_trial16 init=18 success=False t_success=None 200s 143MB free=152GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T05:25:46] obj_task05_trial16 init=11 success=False t_success=None 204s 143MB free=152GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T05:29:11] obj_task07_trial16 init=41 success=False t_success=None 202s 143MB free=151GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T05:32:36] obj_task09_trial16 init=29 success=False t_success=None 202s 143MB free=151GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T05:36:04] lan_task01_trial16 init=1 success=False t_success=None 205s 143MB free=151GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T05:39:32] lan_task03_trial16 init=6 success=False t_success=None 205s 143MB free=150GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T05:43:01] lan_task05_trial16 init=19 success=True t_success=300 206s 143MB free=150GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T05:46:23] lan_task07_trial16 init=28 success=True t_success=417 199s 143MB free=150GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T05:49:47] lan_task09_trial16 init=25 success=False t_success=None 201s 143MB free=150GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T05:53:13] ori2_task01_trial17 init=43 success=True t_success=325 202s 143MB free=149GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T05:56:36] ori2_task03_trial17 init=45 success=False t_success=None 200s 143MB free=149GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T06:00:07] ori2_task05_trial17 init=45 success=False t_success=None 208s 143MB free=149GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T06:03:28] ori2_task07_trial17 init=43 success=False t_success=None 198s 143MB free=148GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T06:06:54] ori2_task09_trial17 init=43 success=False t_success=None 203s 143MB free=148GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T06:10:22] obj_task01_trial17 init=16 success=True t_success=281 204s 143MB free=148GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T06:13:48] obj_task03_trial17 init=44 success=True t_success=363 203s 143MB free=148GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T06:17:12] obj_task05_trial17 init=0 success=False t_success=None 201s 143MB free=147GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T06:20:35] obj_task07_trial17 init=23 success=False t_success=None 200s 143MB free=147GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T06:23:59] obj_task09_trial17 init=36 success=False t_success=None 201s 143MB free=147GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T06:27:27] lan_task01_trial17 init=25 success=True t_success=246 204s 143MB free=146GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T06:30:54] lan_task03_trial17 init=22 success=False t_success=None 204s 143MB free=146GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T06:34:24] lan_task05_trial17 init=14 success=True t_success=157 207s 143MB free=146GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T06:37:44] lan_task07_trial17 init=39 success=True t_success=272 196s 143MB free=146GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T06:41:06] lan_task09_trial17 init=4 success=True t_success=276 199s 143MB free=145GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T06:44:35] ori2_task01_trial18 init=47 success=True t_success=250 205s 143MB free=145GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T06:48:02] ori2_task03_trial18 init=48 success=False t_success=None 204s 143MB free=145GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T06:51:32] ori2_task05_trial18 init=46 success=False t_success=None 207s 143MB free=144GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T06:54:59] ori2_task07_trial18 init=47 success=False t_success=None 204s 143MB free=144GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T06:58:26] ori2_task09_trial18 init=46 success=True t_success=288 204s 143MB free=144GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T07:01:55] obj_task01_trial18 init=4 success=True t_success=316 205s 143MB free=144GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T07:05:17] obj_task03_trial18 init=2 success=False t_success=None 200s 143MB free=143GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T07:08:45] obj_task05_trial18 init=5 success=False t_success=None 205s 143MB free=143GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T07:12:10] obj_task07_trial18 init=45 success=False t_success=None 202s 143MB free=143GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T07:15:33] obj_task09_trial18 init=46 success=False t_success=None 200s 143MB free=142GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T07:19:04] lan_task01_trial18 init=12 success=False t_success=None 207s 143MB free=142GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T07:22:30] lan_task03_trial18 init=7 success=True t_success=410 202s 143MB free=142GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T07:25:58] lan_task05_trial18 init=34 success=False t_success=None 206s 143MB free=142GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T07:29:21] lan_task07_trial18 init=22 success=True t_success=240 199s 143MB free=141GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T07:32:46] lan_task09_trial18 init=17 success=False t_success=None 201s 143MB free=141GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T07:36:15] ori2_task01_trial19 init=48 success=True t_success=338 205s 143MB free=141GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T07:39:42] ori2_task03_trial19 init=49 success=False t_success=None 204s 143MB free=140GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T07:43:13] ori2_task05_trial19 init=48 success=True t_success=204 207s 143MB free=140GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T07:46:39] ori2_task07_trial19 init=48 success=True t_success=315 202s 143MB free=140GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T07:50:05] ori2_task09_trial19 init=49 success=False t_success=None 203s 143MB free=140GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T07:53:36] obj_task01_trial19 init=38 success=True t_success=276 208s 143MB free=139GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T07:57:00] obj_task03_trial19 init=37 success=False t_success=None 202s 143MB free=139GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T08:00:28] obj_task05_trial19 init=4 success=False t_success=None 204s 143MB free=139GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T08:03:49] obj_task07_trial19 init=38 success=False t_success=None 198s 143MB free=138GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T08:07:14] obj_task09_trial19 init=27 success=False t_success=None 202s 143MB free=138GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T08:10:40] lan_task01_trial19 init=26 success=True t_success=229 202s 143MB free=138GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T08:12:47] lan_task03_trial19 init=0 success=False t_success=None 124s 143MB free=138GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T08:14:36] lan_task05_trial19 init=6 success=True t_success=155 106s 143MB free=137GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T08:16:26] lan_task07_trial19 init=9 success=False t_success=None 106s 143MB free=137GB
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[Warning]: datasets path /ephemeral/code/LIBERO-PRO/libero/libero/../datasets does not exist!
+[2026-10-12T08:18:15] lan_task09_trial19 init=43 success=False t_success=None 106s 143MB free=137GB
+[*] 2026-10-12T08:18:15.564131+00:00 worker 1 finished: 350 rollouts this session
+WARNING: Nan, Inf or huge value in QACC at DOF 13. The simulation is unstable. Time = 0.5280.
+
+WARNING: Nan, Inf or huge value in QACC at DOF 9. The simulation is unstable. Time = 0.5280.
+
+WARNING: Nan, Inf or huge value in QACC at DOF 9. The simulation is unstable. Time = 0.5320.
+
+WARNING: Nan, Inf or huge value in QACC at DOF 9. The simulation is unstable. Time = 0.5340.
+
+WARNING: Nan, Inf or huge value in QACC at DOF 10. The simulation is unstable. Time = 20.3800.
+
