@@ -1,0 +1,161 @@
+{
+ "passed": true,
+ "rows": [
+  {
+   "row": "C_best",
+   "current setting (this check), mean": 0.7665299874141058,
+   "headline row, mean": 0.76653,
+   "difference of means": -1.258589421571088e-08,
+   "largest per-seed difference": 3.765758050944257e-07,
+   "choice per seed (this check)": [
+    "action c=0.001",
+    "action c=0.001",
+    "layer05 c=0.001"
+   ],
+   "passed (|difference of means| <= 0.005)": 1.0
+  },
+  {
+   "row": "C_mean",
+   "current setting (this check), mean": 0.7487965614053976,
+   "headline row, mean": 0.7487966666666667,
+   "difference of means": -1.05261269034429e-07,
+   "largest per-seed difference": 4.2124542132260245e-07,
+   "choice per seed (this check)": [
+    "33 probes",
+    "33 probes",
+    "33 probes"
+   ],
+   "passed (|difference of means| <= 0.005)": 1.0
+  },
+  {
+   "row": "B_best_h0",
+   "current setting (this check), mean": 0.7397161340071797,
+   "headline row, mean": 0.739716,
+   "difference of means": 1.3400717968625742e-07,
+   "largest per-seed difference": 2.0759520746871374e-07,
+   "choice per seed (this check)": [
+    "L29:emb_temp:H0",
+    "L00:emb_temp:H0",
+    "L00:act_rep:H0"
+   ],
+   "passed (|difference of means| <= 0.005)": 1.0
+  },
+  {
+   "row": "B_mean_h0",
+   "current setting (this check), mean": 0.7335623661631256,
+   "headline row, mean": 0.7335623333333333,
+   "difference of means": 3.2829792329103213e-08,
+   "largest per-seed difference": 4.10874839484876e-07,
+   "choice per seed (this check)": [
+    "116 probes",
+    "116 probes",
+    "116 probes"
+   ],
+   "passed (|difference of means| <= 0.005)": 1.0
+  },
+  {
+   "row": "B_meanemb_h0",
+   "current setting (this check), mean": 0.7558462069774006,
+   "headline row, mean": 0.7558463333333334,
+   "difference of means": -1.2635593282794844e-07,
+   "largest per-seed difference": 4.3941772509548116e-07,
+   "choice per seed (this check)": [
+    "29 embedding-temporal probes",
+    "29 embedding-temporal probes",
+    "29 embedding-temporal probes"
+   ],
+   "passed (|difference of means| <= 0.005)": 1.0
+  },
+  {
+   "row": "B_best_h10",
+   "current setting (this check), mean": 0.7496506086099579,
+   "headline row, mean": 0.7496506666666667,
+   "difference of means": -5.805670877379043e-08,
+   "largest per-seed difference": 2.6198035685265353e-07,
+   "choice per seed (this check)": [
+    "L30:emb_temp:H10",
+    "L15:emb_temp:H10",
+    "L00:emb_temp:H10"
+   ],
+   "passed (|difference of means| <= 0.005)": 1.0
+  },
+  {
+   "row": "B_mean_h10",
+   "current setting (this check), mean": 0.7480662872931739,
+   "headline row, mean": 0.748066,
+   "difference of means": 2.8729317391729126e-07,
+   "largest per-seed difference": 3.942248228971934e-07,
+   "choice per seed (this check)": [
+    "116 probes",
+    "116 probes",
+    "116 probes"
+   ],
+   "passed (|difference of means| <= 0.005)": 1.0
+  },
+  {
+   "row": "B_meanemb_h10",
+   "current setting (this check), mean": 0.7534208790584338,
+   "headline row, mean": 0.7534206666666666,
+   "difference of means": 2.123917671736919e-07,
+   "largest per-seed difference": 3.2790389681292e-07,
+   "choice per seed (this check)": [
+    "29 embedding-temporal probes",
+    "29 embedding-temporal probes",
+    "29 embedding-temporal probes"
+   ],
+   "passed (|difference of means| <= 0.005)": 1.0
+  },
+  {
+   "row": "B_best_h25",
+   "current setting (this check), mean": 0.7638685826984473,
+   "headline row, mean": 0.7638686666666668,
+   "difference of means": -8.39682194886393e-08,
+   "largest per-seed difference": 1.6238416233882447e-07,
+   "choice per seed (this check)": [
+    "L00:emb_temp:H25",
+    "L17:emb_temp:H25",
+    "L18:emb_temp:H25"
+   ],
+   "passed (|difference of means| <= 0.005)": 1.0
+  },
+  {
+   "row": "B_mean_h25",
+   "current setting (this check), mean": 0.742124753800219,
+   "headline row, mean": 0.7421246666666667,
+   "difference of means": 8.713355237333076e-08,
+   "largest per-seed difference": 3.560460226648132e-07,
+   "choice per seed (this check)": [
+    "116 probes",
+    "116 probes",
+    "116 probes"
+   ],
+   "passed (|difference of means| <= 0.005)": 1.0
+  },
+  {
+   "row": "B_meanemb_h25",
+   "current setting (this check), mean": 0.7525420206035799,
+   "headline row, mean": 0.752542,
+   "difference of means": 2.0603579842237707e-08,
+   "largest per-seed difference": 2.5309269269246926e-07,
+   "choice per seed (this check)": [
+    "29 embedding-temporal probes",
+    "29 embedding-temporal probes",
+    "29 embedding-temporal probes"
+   ],
+   "passed (|difference of means| <= 0.005)": 1.0
+  },
+  {
+   "row": "emb_best",
+   "current setting (this check), mean": 0.7399734829079092,
+   "headline row, mean": 0.7399733333333334,
+   "difference of means": 1.495745758361977e-07,
+   "largest per-seed difference": 3.2300888774816627e-07,
+   "choice per seed (this check)": [
+    "emb_temp[26] beta=none sign=-",
+    "emb_temp[26] beta=none sign=-",
+    "emb_temp[26] beta=none sign=-"
+   ],
+   "passed (|difference of means| <= 0.005)": 1.0
+  }
+ ]
+}

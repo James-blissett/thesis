@@ -1,0 +1,397 @@
+setting,constraint,family,smoothing beta,sign per seed (+: higher means failure),sign-unstable,used as a B target,Stage 2 table sign per seed,Stage 2 table sign-unstable,agrees with the Stage 2 table,setting key
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",act_mag,action,0.83,---,False,True,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",act_dir,action,0.83,+++,False,False,+++,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",grip_flip,action,0.83,+++,False,False,+++,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",act_rep,action,0.83,+++,False,True,+++,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",emb_temp[0],emb-temp,none,---,False,True,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",emb_temp[1],emb-temp,none,---,False,True,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",emb_temp[2],emb-temp,none,---,False,True,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",emb_temp[3],emb-temp,none,---,False,True,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",emb_temp[4],emb-temp,none,---,False,True,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",emb_temp[5],emb-temp,none,---,False,True,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",emb_temp[6],emb-temp,none,---,False,True,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",emb_temp[7],emb-temp,none,---,False,True,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",emb_temp[8],emb-temp,none,---,False,True,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",emb_temp[9],emb-temp,none,---,False,True,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",emb_temp[10],emb-temp,none,---,False,True,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",emb_temp[11],emb-temp,none,+--,True,True,+--,True,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",emb_temp[12],emb-temp,none,+--,True,True,+--,True,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",emb_temp[13],emb-temp,none,+--,True,True,+--,True,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",emb_temp[14],emb-temp,none,---,False,True,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",emb_temp[15],emb-temp,none,---,False,True,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",emb_temp[16],emb-temp,none,---,False,True,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",emb_temp[17],emb-temp,none,---,False,True,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",emb_temp[18],emb-temp,none,---,False,True,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",emb_temp[19],emb-temp,none,---,False,True,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",emb_temp[20],emb-temp,none,---,False,True,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",emb_temp[21],emb-temp,none,---,False,True,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",emb_temp[22],emb-temp,none,---,False,True,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",emb_temp[23],emb-temp,none,---,False,True,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",emb_temp[24],emb-temp,none,---,False,True,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",emb_temp[25],emb-temp,none,---,False,True,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",emb_temp[26],emb-temp,none,---,False,True,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",emb_temp[27],emb-temp,none,---,False,True,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",emb_temp[28],emb-temp,none,---,False,True,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",emb_temp[29],emb-temp,none,---,False,True,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",emb_temp[30],emb-temp,none,---,False,True,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",emb_temp[31],emb-temp,none,---,False,True,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",xl_adj[0],cross-layer,0.96,---,False,False,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",xl_adj[1],cross-layer,0.96,---,False,False,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",xl_adj[2],cross-layer,0.96,---,False,False,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",xl_adj[3],cross-layer,0.96,---,False,False,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",xl_adj[4],cross-layer,0.96,---,False,False,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",xl_adj[5],cross-layer,0.96,---,False,False,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",xl_adj[6],cross-layer,0.96,-++,True,False,-++,True,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",xl_adj[7],cross-layer,0.96,---,False,False,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",xl_adj[8],cross-layer,0.96,---,False,False,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",xl_adj[9],cross-layer,0.96,---,False,False,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",xl_adj[10],cross-layer,0.96,+--,True,False,+--,True,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",xl_adj[11],cross-layer,0.96,---,False,False,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",xl_adj[12],cross-layer,0.96,+++,False,False,+++,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",xl_adj[13],cross-layer,0.96,---,False,False,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",xl_adj[14],cross-layer,0.96,--+,True,False,--+,True,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",xl_adj[15],cross-layer,0.96,-+-,True,False,-+-,True,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",xl_adj[16],cross-layer,0.96,--+,True,False,--+,True,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",xl_adj[17],cross-layer,0.96,-++,True,False,-++,True,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",xl_adj[18],cross-layer,0.96,---,False,False,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",xl_adj[19],cross-layer,0.96,+--,True,False,+--,True,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",xl_adj[20],cross-layer,0.96,---,False,False,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",xl_adj[21],cross-layer,0.96,---,False,False,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",xl_adj[22],cross-layer,0.96,---,False,False,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",xl_adj[23],cross-layer,0.96,---,False,False,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",xl_adj[24],cross-layer,0.96,---,False,False,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",xl_adj[25],cross-layer,0.96,---,False,False,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",xl_adj[26],cross-layer,0.96,---,False,False,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",xl_adj[27],cross-layer,0.96,---,False,False,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",xl_adj[28],cross-layer,0.96,---,False,False,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",xl_adj[29],cross-layer,0.96,--+,True,False,--+,True,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",xl_adj[30],cross-layer,0.96,--+,True,False,--+,True,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",xl_final[0],cross-layer,0.96,---,False,True,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",xl_final[1],cross-layer,0.96,---,False,True,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",xl_final[2],cross-layer,0.96,---,False,True,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",xl_final[3],cross-layer,0.96,---,False,True,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",xl_final[4],cross-layer,0.96,---,False,True,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",xl_final[5],cross-layer,0.96,---,False,True,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",xl_final[6],cross-layer,0.96,---,False,True,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",xl_final[7],cross-layer,0.96,---,False,True,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",xl_final[8],cross-layer,0.96,---,False,True,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",xl_final[9],cross-layer,0.96,---,False,True,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",xl_final[10],cross-layer,0.96,---,False,True,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",xl_final[11],cross-layer,0.96,---,False,True,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",xl_final[12],cross-layer,0.96,---,False,True,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",xl_final[13],cross-layer,0.96,---,False,True,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",xl_final[14],cross-layer,0.96,---,False,True,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",xl_final[15],cross-layer,0.96,---,False,True,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",xl_final[16],cross-layer,0.96,---,False,True,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",xl_final[17],cross-layer,0.96,---,False,True,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",xl_final[18],cross-layer,0.96,--+,True,True,--+,True,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",xl_final[19],cross-layer,0.96,--+,True,True,--+,True,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",xl_final[20],cross-layer,0.96,--+,True,True,--+,True,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",xl_final[21],cross-layer,0.96,---,False,True,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",xl_final[22],cross-layer,0.96,---,False,True,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",xl_final[23],cross-layer,0.96,---,False,True,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",xl_final[24],cross-layer,0.96,+--,True,True,+--,True,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",xl_final[25],cross-layer,0.96,---,False,True,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",xl_final[26],cross-layer,0.96,--+,True,True,--+,True,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",xl_final[27],cross-layer,0.96,---,False,True,---,False,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",xl_final[28],cross-layer,0.96,--+,True,True,--+,True,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",xl_final[29],cross-layer,0.96,--+,True,True,--+,True,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",xl_final[30],cross-layer,0.96,--+,True,True,--+,True,True,current
+"current (selected): emb_temp none, action family 0.83, cross-layer family 0.96",xl_spread,cross-layer,0.96,---,False,False,---,False,True,current
+no smoothing,act_mag,action,none,+--,True,True,+--,True,True,none
+no smoothing,act_dir,action,none,+++,False,False,+++,False,True,none
+no smoothing,grip_flip,action,none,---,False,False,---,False,True,none
+no smoothing,act_rep,action,none,+++,False,True,+++,False,True,none
+no smoothing,emb_temp[0],emb-temp,none,---,False,True,---,False,True,none
+no smoothing,emb_temp[1],emb-temp,none,---,False,True,---,False,True,none
+no smoothing,emb_temp[2],emb-temp,none,---,False,True,---,False,True,none
+no smoothing,emb_temp[3],emb-temp,none,---,False,True,---,False,True,none
+no smoothing,emb_temp[4],emb-temp,none,---,False,True,---,False,True,none
+no smoothing,emb_temp[5],emb-temp,none,---,False,True,---,False,True,none
+no smoothing,emb_temp[6],emb-temp,none,---,False,True,---,False,True,none
+no smoothing,emb_temp[7],emb-temp,none,---,False,True,---,False,True,none
+no smoothing,emb_temp[8],emb-temp,none,---,False,True,---,False,True,none
+no smoothing,emb_temp[9],emb-temp,none,---,False,True,---,False,True,none
+no smoothing,emb_temp[10],emb-temp,none,---,False,True,---,False,True,none
+no smoothing,emb_temp[11],emb-temp,none,+--,True,True,+--,True,True,none
+no smoothing,emb_temp[12],emb-temp,none,+--,True,True,+--,True,True,none
+no smoothing,emb_temp[13],emb-temp,none,+--,True,True,+--,True,True,none
+no smoothing,emb_temp[14],emb-temp,none,---,False,True,---,False,True,none
+no smoothing,emb_temp[15],emb-temp,none,---,False,True,---,False,True,none
+no smoothing,emb_temp[16],emb-temp,none,---,False,True,---,False,True,none
+no smoothing,emb_temp[17],emb-temp,none,---,False,True,---,False,True,none
+no smoothing,emb_temp[18],emb-temp,none,---,False,True,---,False,True,none
+no smoothing,emb_temp[19],emb-temp,none,---,False,True,---,False,True,none
+no smoothing,emb_temp[20],emb-temp,none,---,False,True,---,False,True,none
+no smoothing,emb_temp[21],emb-temp,none,---,False,True,---,False,True,none
+no smoothing,emb_temp[22],emb-temp,none,---,False,True,---,False,True,none
+no smoothing,emb_temp[23],emb-temp,none,---,False,True,---,False,True,none
+no smoothing,emb_temp[24],emb-temp,none,---,False,True,---,False,True,none
+no smoothing,emb_temp[25],emb-temp,none,---,False,True,---,False,True,none
+no smoothing,emb_temp[26],emb-temp,none,---,False,True,---,False,True,none
+no smoothing,emb_temp[27],emb-temp,none,---,False,True,---,False,True,none
+no smoothing,emb_temp[28],emb-temp,none,---,False,True,---,False,True,none
+no smoothing,emb_temp[29],emb-temp,none,---,False,True,---,False,True,none
+no smoothing,emb_temp[30],emb-temp,none,---,False,True,---,False,True,none
+no smoothing,emb_temp[31],emb-temp,none,---,False,True,---,False,True,none
+no smoothing,xl_adj[0],cross-layer,none,---,False,False,---,False,True,none
+no smoothing,xl_adj[1],cross-layer,none,---,False,False,---,False,True,none
+no smoothing,xl_adj[2],cross-layer,none,---,False,False,---,False,True,none
+no smoothing,xl_adj[3],cross-layer,none,---,False,False,---,False,True,none
+no smoothing,xl_adj[4],cross-layer,none,---,False,False,---,False,True,none
+no smoothing,xl_adj[5],cross-layer,none,---,False,False,---,False,True,none
+no smoothing,xl_adj[6],cross-layer,none,---,False,False,---,False,True,none
+no smoothing,xl_adj[7],cross-layer,none,---,False,False,---,False,True,none
+no smoothing,xl_adj[8],cross-layer,none,---,False,False,---,False,True,none
+no smoothing,xl_adj[9],cross-layer,none,---,False,False,---,False,True,none
+no smoothing,xl_adj[10],cross-layer,none,---,False,False,---,False,True,none
+no smoothing,xl_adj[11],cross-layer,none,---,False,False,---,False,True,none
+no smoothing,xl_adj[12],cross-layer,none,---,False,False,---,False,True,none
+no smoothing,xl_adj[13],cross-layer,none,---,False,False,---,False,True,none
+no smoothing,xl_adj[14],cross-layer,none,---,False,False,---,False,True,none
+no smoothing,xl_adj[15],cross-layer,none,---,False,False,---,False,True,none
+no smoothing,xl_adj[16],cross-layer,none,---,False,False,---,False,True,none
+no smoothing,xl_adj[17],cross-layer,none,---,False,False,---,False,True,none
+no smoothing,xl_adj[18],cross-layer,none,---,False,False,---,False,True,none
+no smoothing,xl_adj[19],cross-layer,none,---,False,False,---,False,True,none
+no smoothing,xl_adj[20],cross-layer,none,---,False,False,---,False,True,none
+no smoothing,xl_adj[21],cross-layer,none,---,False,False,---,False,True,none
+no smoothing,xl_adj[22],cross-layer,none,---,False,False,---,False,True,none
+no smoothing,xl_adj[23],cross-layer,none,---,False,False,---,False,True,none
+no smoothing,xl_adj[24],cross-layer,none,+--,True,False,+--,True,True,none
+no smoothing,xl_adj[25],cross-layer,none,---,False,False,---,False,True,none
+no smoothing,xl_adj[26],cross-layer,none,---,False,False,---,False,True,none
+no smoothing,xl_adj[27],cross-layer,none,---,False,False,---,False,True,none
+no smoothing,xl_adj[28],cross-layer,none,---,False,False,---,False,True,none
+no smoothing,xl_adj[29],cross-layer,none,---,False,False,---,False,True,none
+no smoothing,xl_adj[30],cross-layer,none,---,False,False,---,False,True,none
+no smoothing,xl_final[0],cross-layer,none,---,False,True,---,False,True,none
+no smoothing,xl_final[1],cross-layer,none,---,False,True,---,False,True,none
+no smoothing,xl_final[2],cross-layer,none,---,False,True,---,False,True,none
+no smoothing,xl_final[3],cross-layer,none,---,False,True,---,False,True,none
+no smoothing,xl_final[4],cross-layer,none,---,False,True,---,False,True,none
+no smoothing,xl_final[5],cross-layer,none,---,False,True,---,False,True,none
+no smoothing,xl_final[6],cross-layer,none,---,False,True,---,False,True,none
+no smoothing,xl_final[7],cross-layer,none,---,False,True,---,False,True,none
+no smoothing,xl_final[8],cross-layer,none,---,False,True,---,False,True,none
+no smoothing,xl_final[9],cross-layer,none,---,False,True,---,False,True,none
+no smoothing,xl_final[10],cross-layer,none,---,False,True,---,False,True,none
+no smoothing,xl_final[11],cross-layer,none,---,False,True,---,False,True,none
+no smoothing,xl_final[12],cross-layer,none,---,False,True,---,False,True,none
+no smoothing,xl_final[13],cross-layer,none,---,False,True,---,False,True,none
+no smoothing,xl_final[14],cross-layer,none,---,False,True,---,False,True,none
+no smoothing,xl_final[15],cross-layer,none,---,False,True,---,False,True,none
+no smoothing,xl_final[16],cross-layer,none,---,False,True,---,False,True,none
+no smoothing,xl_final[17],cross-layer,none,---,False,True,---,False,True,none
+no smoothing,xl_final[18],cross-layer,none,---,False,True,---,False,True,none
+no smoothing,xl_final[19],cross-layer,none,---,False,True,---,False,True,none
+no smoothing,xl_final[20],cross-layer,none,---,False,True,---,False,True,none
+no smoothing,xl_final[21],cross-layer,none,---,False,True,---,False,True,none
+no smoothing,xl_final[22],cross-layer,none,---,False,True,---,False,True,none
+no smoothing,xl_final[23],cross-layer,none,---,False,True,---,False,True,none
+no smoothing,xl_final[24],cross-layer,none,---,False,True,---,False,True,none
+no smoothing,xl_final[25],cross-layer,none,---,False,True,---,False,True,none
+no smoothing,xl_final[26],cross-layer,none,---,False,True,---,False,True,none
+no smoothing,xl_final[27],cross-layer,none,---,False,True,---,False,True,none
+no smoothing,xl_final[28],cross-layer,none,---,False,True,---,False,True,none
+no smoothing,xl_final[29],cross-layer,none,---,False,True,---,False,True,none
+no smoothing,xl_final[30],cross-layer,none,---,False,True,---,False,True,none
+no smoothing,xl_spread,cross-layer,none,---,False,False,---,False,True,none
+beta = 0.83 everywhere,act_mag,action,0.83,---,False,True,---,False,True,b083
+beta = 0.83 everywhere,act_dir,action,0.83,+++,False,False,+++,False,True,b083
+beta = 0.83 everywhere,grip_flip,action,0.83,+++,False,False,+++,False,True,b083
+beta = 0.83 everywhere,act_rep,action,0.83,+++,False,True,+++,False,True,b083
+beta = 0.83 everywhere,emb_temp[0],emb-temp,0.83,---,False,True,---,False,True,b083
+beta = 0.83 everywhere,emb_temp[1],emb-temp,0.83,---,False,True,---,False,True,b083
+beta = 0.83 everywhere,emb_temp[2],emb-temp,0.83,---,False,True,---,False,True,b083
+beta = 0.83 everywhere,emb_temp[3],emb-temp,0.83,---,False,True,---,False,True,b083
+beta = 0.83 everywhere,emb_temp[4],emb-temp,0.83,---,False,True,---,False,True,b083
+beta = 0.83 everywhere,emb_temp[5],emb-temp,0.83,---,False,True,---,False,True,b083
+beta = 0.83 everywhere,emb_temp[6],emb-temp,0.83,---,False,True,---,False,True,b083
+beta = 0.83 everywhere,emb_temp[7],emb-temp,0.83,---,False,True,---,False,True,b083
+beta = 0.83 everywhere,emb_temp[8],emb-temp,0.83,---,False,True,---,False,True,b083
+beta = 0.83 everywhere,emb_temp[9],emb-temp,0.83,---,False,True,---,False,True,b083
+beta = 0.83 everywhere,emb_temp[10],emb-temp,0.83,--+,True,True,--+,True,True,b083
+beta = 0.83 everywhere,emb_temp[11],emb-temp,0.83,--+,True,True,--+,True,True,b083
+beta = 0.83 everywhere,emb_temp[12],emb-temp,0.83,--+,True,True,--+,True,True,b083
+beta = 0.83 everywhere,emb_temp[13],emb-temp,0.83,--+,True,True,--+,True,True,b083
+beta = 0.83 everywhere,emb_temp[14],emb-temp,0.83,--+,True,True,--+,True,True,b083
+beta = 0.83 everywhere,emb_temp[15],emb-temp,0.83,--+,True,True,--+,True,True,b083
+beta = 0.83 everywhere,emb_temp[16],emb-temp,0.83,--+,True,True,--+,True,True,b083
+beta = 0.83 everywhere,emb_temp[17],emb-temp,0.83,--+,True,True,--+,True,True,b083
+beta = 0.83 everywhere,emb_temp[18],emb-temp,0.83,--+,True,True,--+,True,True,b083
+beta = 0.83 everywhere,emb_temp[19],emb-temp,0.83,--+,True,True,--+,True,True,b083
+beta = 0.83 everywhere,emb_temp[20],emb-temp,0.83,--+,True,True,--+,True,True,b083
+beta = 0.83 everywhere,emb_temp[21],emb-temp,0.83,--+,True,True,--+,True,True,b083
+beta = 0.83 everywhere,emb_temp[22],emb-temp,0.83,--+,True,True,--+,True,True,b083
+beta = 0.83 everywhere,emb_temp[23],emb-temp,0.83,--+,True,True,--+,True,True,b083
+beta = 0.83 everywhere,emb_temp[24],emb-temp,0.83,--+,True,True,--+,True,True,b083
+beta = 0.83 everywhere,emb_temp[25],emb-temp,0.83,--+,True,True,--+,True,True,b083
+beta = 0.83 everywhere,emb_temp[26],emb-temp,0.83,--+,True,True,--+,True,True,b083
+beta = 0.83 everywhere,emb_temp[27],emb-temp,0.83,--+,True,True,--+,True,True,b083
+beta = 0.83 everywhere,emb_temp[28],emb-temp,0.83,---,False,True,---,False,True,b083
+beta = 0.83 everywhere,emb_temp[29],emb-temp,0.83,---,False,True,---,False,True,b083
+beta = 0.83 everywhere,emb_temp[30],emb-temp,0.83,---,False,True,---,False,True,b083
+beta = 0.83 everywhere,emb_temp[31],emb-temp,0.83,---,False,True,---,False,True,b083
+beta = 0.83 everywhere,xl_adj[0],cross-layer,0.83,---,False,False,---,False,True,b083
+beta = 0.83 everywhere,xl_adj[1],cross-layer,0.83,---,False,False,---,False,True,b083
+beta = 0.83 everywhere,xl_adj[2],cross-layer,0.83,---,False,False,---,False,True,b083
+beta = 0.83 everywhere,xl_adj[3],cross-layer,0.83,---,False,False,---,False,True,b083
+beta = 0.83 everywhere,xl_adj[4],cross-layer,0.83,---,False,False,---,False,True,b083
+beta = 0.83 everywhere,xl_adj[5],cross-layer,0.83,---,False,False,---,False,True,b083
+beta = 0.83 everywhere,xl_adj[6],cross-layer,0.83,---,False,False,---,False,True,b083
+beta = 0.83 everywhere,xl_adj[7],cross-layer,0.83,---,False,False,---,False,True,b083
+beta = 0.83 everywhere,xl_adj[8],cross-layer,0.83,---,False,False,---,False,True,b083
+beta = 0.83 everywhere,xl_adj[9],cross-layer,0.83,---,False,False,---,False,True,b083
+beta = 0.83 everywhere,xl_adj[10],cross-layer,0.83,+--,True,False,+--,True,True,b083
+beta = 0.83 everywhere,xl_adj[11],cross-layer,0.83,---,False,False,---,False,True,b083
+beta = 0.83 everywhere,xl_adj[12],cross-layer,0.83,---,False,False,---,False,True,b083
+beta = 0.83 everywhere,xl_adj[13],cross-layer,0.83,---,False,False,---,False,True,b083
+beta = 0.83 everywhere,xl_adj[14],cross-layer,0.83,---,False,False,---,False,True,b083
+beta = 0.83 everywhere,xl_adj[15],cross-layer,0.83,---,False,False,---,False,True,b083
+beta = 0.83 everywhere,xl_adj[16],cross-layer,0.83,---,False,False,---,False,True,b083
+beta = 0.83 everywhere,xl_adj[17],cross-layer,0.83,-+-,True,False,-+-,True,True,b083
+beta = 0.83 everywhere,xl_adj[18],cross-layer,0.83,---,False,False,---,False,True,b083
+beta = 0.83 everywhere,xl_adj[19],cross-layer,0.83,---,False,False,---,False,True,b083
+beta = 0.83 everywhere,xl_adj[20],cross-layer,0.83,---,False,False,---,False,True,b083
+beta = 0.83 everywhere,xl_adj[21],cross-layer,0.83,---,False,False,---,False,True,b083
+beta = 0.83 everywhere,xl_adj[22],cross-layer,0.83,---,False,False,---,False,True,b083
+beta = 0.83 everywhere,xl_adj[23],cross-layer,0.83,---,False,False,---,False,True,b083
+beta = 0.83 everywhere,xl_adj[24],cross-layer,0.83,---,False,False,---,False,True,b083
+beta = 0.83 everywhere,xl_adj[25],cross-layer,0.83,---,False,False,---,False,True,b083
+beta = 0.83 everywhere,xl_adj[26],cross-layer,0.83,---,False,False,---,False,True,b083
+beta = 0.83 everywhere,xl_adj[27],cross-layer,0.83,---,False,False,---,False,True,b083
+beta = 0.83 everywhere,xl_adj[28],cross-layer,0.83,---,False,False,---,False,True,b083
+beta = 0.83 everywhere,xl_adj[29],cross-layer,0.83,---,False,False,---,False,True,b083
+beta = 0.83 everywhere,xl_adj[30],cross-layer,0.83,---,False,False,---,False,True,b083
+beta = 0.83 everywhere,xl_final[0],cross-layer,0.83,---,False,True,---,False,True,b083
+beta = 0.83 everywhere,xl_final[1],cross-layer,0.83,---,False,True,---,False,True,b083
+beta = 0.83 everywhere,xl_final[2],cross-layer,0.83,---,False,True,---,False,True,b083
+beta = 0.83 everywhere,xl_final[3],cross-layer,0.83,---,False,True,---,False,True,b083
+beta = 0.83 everywhere,xl_final[4],cross-layer,0.83,---,False,True,---,False,True,b083
+beta = 0.83 everywhere,xl_final[5],cross-layer,0.83,---,False,True,---,False,True,b083
+beta = 0.83 everywhere,xl_final[6],cross-layer,0.83,---,False,True,---,False,True,b083
+beta = 0.83 everywhere,xl_final[7],cross-layer,0.83,---,False,True,---,False,True,b083
+beta = 0.83 everywhere,xl_final[8],cross-layer,0.83,---,False,True,---,False,True,b083
+beta = 0.83 everywhere,xl_final[9],cross-layer,0.83,---,False,True,---,False,True,b083
+beta = 0.83 everywhere,xl_final[10],cross-layer,0.83,---,False,True,---,False,True,b083
+beta = 0.83 everywhere,xl_final[11],cross-layer,0.83,---,False,True,---,False,True,b083
+beta = 0.83 everywhere,xl_final[12],cross-layer,0.83,---,False,True,---,False,True,b083
+beta = 0.83 everywhere,xl_final[13],cross-layer,0.83,---,False,True,---,False,True,b083
+beta = 0.83 everywhere,xl_final[14],cross-layer,0.83,---,False,True,---,False,True,b083
+beta = 0.83 everywhere,xl_final[15],cross-layer,0.83,---,False,True,---,False,True,b083
+beta = 0.83 everywhere,xl_final[16],cross-layer,0.83,---,False,True,---,False,True,b083
+beta = 0.83 everywhere,xl_final[17],cross-layer,0.83,---,False,True,---,False,True,b083
+beta = 0.83 everywhere,xl_final[18],cross-layer,0.83,---,False,True,---,False,True,b083
+beta = 0.83 everywhere,xl_final[19],cross-layer,0.83,---,False,True,---,False,True,b083
+beta = 0.83 everywhere,xl_final[20],cross-layer,0.83,---,False,True,---,False,True,b083
+beta = 0.83 everywhere,xl_final[21],cross-layer,0.83,---,False,True,---,False,True,b083
+beta = 0.83 everywhere,xl_final[22],cross-layer,0.83,---,False,True,---,False,True,b083
+beta = 0.83 everywhere,xl_final[23],cross-layer,0.83,---,False,True,---,False,True,b083
+beta = 0.83 everywhere,xl_final[24],cross-layer,0.83,---,False,True,---,False,True,b083
+beta = 0.83 everywhere,xl_final[25],cross-layer,0.83,---,False,True,---,False,True,b083
+beta = 0.83 everywhere,xl_final[26],cross-layer,0.83,---,False,True,---,False,True,b083
+beta = 0.83 everywhere,xl_final[27],cross-layer,0.83,---,False,True,---,False,True,b083
+beta = 0.83 everywhere,xl_final[28],cross-layer,0.83,---,False,True,---,False,True,b083
+beta = 0.83 everywhere,xl_final[29],cross-layer,0.83,---,False,True,---,False,True,b083
+beta = 0.83 everywhere,xl_final[30],cross-layer,0.83,---,False,True,---,False,True,b083
+beta = 0.83 everywhere,xl_spread,cross-layer,0.83,---,False,False,---,False,True,b083
+beta = 0.96 everywhere,act_mag,action,0.96,+--,True,True,+--,True,True,b096
+beta = 0.96 everywhere,act_dir,action,0.96,+++,False,False,+++,False,True,b096
+beta = 0.96 everywhere,grip_flip,action,0.96,+++,False,False,+++,False,True,b096
+beta = 0.96 everywhere,act_rep,action,0.96,+++,False,True,+++,False,True,b096
+beta = 0.96 everywhere,emb_temp[0],emb-temp,0.96,---,False,True,---,False,True,b096
+beta = 0.96 everywhere,emb_temp[1],emb-temp,0.96,---,False,True,---,False,True,b096
+beta = 0.96 everywhere,emb_temp[2],emb-temp,0.96,---,False,True,---,False,True,b096
+beta = 0.96 everywhere,emb_temp[3],emb-temp,0.96,---,False,True,---,False,True,b096
+beta = 0.96 everywhere,emb_temp[4],emb-temp,0.96,---,False,True,---,False,True,b096
+beta = 0.96 everywhere,emb_temp[5],emb-temp,0.96,---,False,True,---,False,True,b096
+beta = 0.96 everywhere,emb_temp[6],emb-temp,0.96,---,False,True,---,False,True,b096
+beta = 0.96 everywhere,emb_temp[7],emb-temp,0.96,---,False,True,---,False,True,b096
+beta = 0.96 everywhere,emb_temp[8],emb-temp,0.96,---,False,True,---,False,True,b096
+beta = 0.96 everywhere,emb_temp[9],emb-temp,0.96,---,False,True,---,False,True,b096
+beta = 0.96 everywhere,emb_temp[10],emb-temp,0.96,---,False,True,---,False,True,b096
+beta = 0.96 everywhere,emb_temp[11],emb-temp,0.96,--+,True,True,--+,True,True,b096
+beta = 0.96 everywhere,emb_temp[12],emb-temp,0.96,--+,True,True,--+,True,True,b096
+beta = 0.96 everywhere,emb_temp[13],emb-temp,0.96,-++,True,True,-++,True,True,b096
+beta = 0.96 everywhere,emb_temp[14],emb-temp,0.96,-++,True,True,-++,True,True,b096
+beta = 0.96 everywhere,emb_temp[15],emb-temp,0.96,+++,False,True,+++,False,True,b096
+beta = 0.96 everywhere,emb_temp[16],emb-temp,0.96,+-+,True,True,+-+,True,True,b096
+beta = 0.96 everywhere,emb_temp[17],emb-temp,0.96,--+,True,True,--+,True,True,b096
+beta = 0.96 everywhere,emb_temp[18],emb-temp,0.96,-++,True,True,-++,True,True,b096
+beta = 0.96 everywhere,emb_temp[19],emb-temp,0.96,--+,True,True,--+,True,True,b096
+beta = 0.96 everywhere,emb_temp[20],emb-temp,0.96,+++,False,True,+++,False,True,b096
+beta = 0.96 everywhere,emb_temp[21],emb-temp,0.96,+++,False,True,+++,False,True,b096
+beta = 0.96 everywhere,emb_temp[22],emb-temp,0.96,-++,True,True,-++,True,True,b096
+beta = 0.96 everywhere,emb_temp[23],emb-temp,0.96,-++,True,True,-++,True,True,b096
+beta = 0.96 everywhere,emb_temp[24],emb-temp,0.96,-++,True,True,-++,True,True,b096
+beta = 0.96 everywhere,emb_temp[25],emb-temp,0.96,--+,True,True,--+,True,True,b096
+beta = 0.96 everywhere,emb_temp[26],emb-temp,0.96,--+,True,True,--+,True,True,b096
+beta = 0.96 everywhere,emb_temp[27],emb-temp,0.96,---,False,True,---,False,True,b096
+beta = 0.96 everywhere,emb_temp[28],emb-temp,0.96,---,False,True,---,False,True,b096
+beta = 0.96 everywhere,emb_temp[29],emb-temp,0.96,---,False,True,---,False,True,b096
+beta = 0.96 everywhere,emb_temp[30],emb-temp,0.96,---,False,True,---,False,True,b096
+beta = 0.96 everywhere,emb_temp[31],emb-temp,0.96,---,False,True,---,False,True,b096
+beta = 0.96 everywhere,xl_adj[0],cross-layer,0.96,---,False,False,---,False,True,b096
+beta = 0.96 everywhere,xl_adj[1],cross-layer,0.96,---,False,False,---,False,True,b096
+beta = 0.96 everywhere,xl_adj[2],cross-layer,0.96,---,False,False,---,False,True,b096
+beta = 0.96 everywhere,xl_adj[3],cross-layer,0.96,---,False,False,---,False,True,b096
+beta = 0.96 everywhere,xl_adj[4],cross-layer,0.96,---,False,False,---,False,True,b096
+beta = 0.96 everywhere,xl_adj[5],cross-layer,0.96,---,False,False,---,False,True,b096
+beta = 0.96 everywhere,xl_adj[6],cross-layer,0.96,-++,True,False,-++,True,True,b096
+beta = 0.96 everywhere,xl_adj[7],cross-layer,0.96,---,False,False,---,False,True,b096
+beta = 0.96 everywhere,xl_adj[8],cross-layer,0.96,---,False,False,---,False,True,b096
+beta = 0.96 everywhere,xl_adj[9],cross-layer,0.96,---,False,False,---,False,True,b096
+beta = 0.96 everywhere,xl_adj[10],cross-layer,0.96,+--,True,False,+--,True,True,b096
+beta = 0.96 everywhere,xl_adj[11],cross-layer,0.96,---,False,False,---,False,True,b096
+beta = 0.96 everywhere,xl_adj[12],cross-layer,0.96,+++,False,False,+++,False,True,b096
+beta = 0.96 everywhere,xl_adj[13],cross-layer,0.96,---,False,False,---,False,True,b096
+beta = 0.96 everywhere,xl_adj[14],cross-layer,0.96,--+,True,False,--+,True,True,b096
+beta = 0.96 everywhere,xl_adj[15],cross-layer,0.96,-+-,True,False,-+-,True,True,b096
+beta = 0.96 everywhere,xl_adj[16],cross-layer,0.96,--+,True,False,--+,True,True,b096
+beta = 0.96 everywhere,xl_adj[17],cross-layer,0.96,-++,True,False,-++,True,True,b096
+beta = 0.96 everywhere,xl_adj[18],cross-layer,0.96,---,False,False,---,False,True,b096
+beta = 0.96 everywhere,xl_adj[19],cross-layer,0.96,+--,True,False,+--,True,True,b096
+beta = 0.96 everywhere,xl_adj[20],cross-layer,0.96,---,False,False,---,False,True,b096
+beta = 0.96 everywhere,xl_adj[21],cross-layer,0.96,---,False,False,---,False,True,b096
+beta = 0.96 everywhere,xl_adj[22],cross-layer,0.96,---,False,False,---,False,True,b096
+beta = 0.96 everywhere,xl_adj[23],cross-layer,0.96,---,False,False,---,False,True,b096
+beta = 0.96 everywhere,xl_adj[24],cross-layer,0.96,---,False,False,---,False,True,b096
+beta = 0.96 everywhere,xl_adj[25],cross-layer,0.96,---,False,False,---,False,True,b096
+beta = 0.96 everywhere,xl_adj[26],cross-layer,0.96,---,False,False,---,False,True,b096
+beta = 0.96 everywhere,xl_adj[27],cross-layer,0.96,---,False,False,---,False,True,b096
+beta = 0.96 everywhere,xl_adj[28],cross-layer,0.96,---,False,False,---,False,True,b096
+beta = 0.96 everywhere,xl_adj[29],cross-layer,0.96,--+,True,False,--+,True,True,b096
+beta = 0.96 everywhere,xl_adj[30],cross-layer,0.96,--+,True,False,--+,True,True,b096
+beta = 0.96 everywhere,xl_final[0],cross-layer,0.96,---,False,True,---,False,True,b096
+beta = 0.96 everywhere,xl_final[1],cross-layer,0.96,---,False,True,---,False,True,b096
+beta = 0.96 everywhere,xl_final[2],cross-layer,0.96,---,False,True,---,False,True,b096
+beta = 0.96 everywhere,xl_final[3],cross-layer,0.96,---,False,True,---,False,True,b096
+beta = 0.96 everywhere,xl_final[4],cross-layer,0.96,---,False,True,---,False,True,b096
+beta = 0.96 everywhere,xl_final[5],cross-layer,0.96,---,False,True,---,False,True,b096
+beta = 0.96 everywhere,xl_final[6],cross-layer,0.96,---,False,True,---,False,True,b096
+beta = 0.96 everywhere,xl_final[7],cross-layer,0.96,---,False,True,---,False,True,b096
+beta = 0.96 everywhere,xl_final[8],cross-layer,0.96,---,False,True,---,False,True,b096
+beta = 0.96 everywhere,xl_final[9],cross-layer,0.96,---,False,True,---,False,True,b096
+beta = 0.96 everywhere,xl_final[10],cross-layer,0.96,---,False,True,---,False,True,b096
+beta = 0.96 everywhere,xl_final[11],cross-layer,0.96,---,False,True,---,False,True,b096
+beta = 0.96 everywhere,xl_final[12],cross-layer,0.96,---,False,True,---,False,True,b096
+beta = 0.96 everywhere,xl_final[13],cross-layer,0.96,---,False,True,---,False,True,b096
+beta = 0.96 everywhere,xl_final[14],cross-layer,0.96,---,False,True,---,False,True,b096
+beta = 0.96 everywhere,xl_final[15],cross-layer,0.96,---,False,True,---,False,True,b096
+beta = 0.96 everywhere,xl_final[16],cross-layer,0.96,---,False,True,---,False,True,b096
+beta = 0.96 everywhere,xl_final[17],cross-layer,0.96,---,False,True,---,False,True,b096
+beta = 0.96 everywhere,xl_final[18],cross-layer,0.96,--+,True,True,--+,True,True,b096
+beta = 0.96 everywhere,xl_final[19],cross-layer,0.96,--+,True,True,--+,True,True,b096
+beta = 0.96 everywhere,xl_final[20],cross-layer,0.96,--+,True,True,--+,True,True,b096
+beta = 0.96 everywhere,xl_final[21],cross-layer,0.96,---,False,True,---,False,True,b096
+beta = 0.96 everywhere,xl_final[22],cross-layer,0.96,---,False,True,---,False,True,b096
+beta = 0.96 everywhere,xl_final[23],cross-layer,0.96,---,False,True,---,False,True,b096
+beta = 0.96 everywhere,xl_final[24],cross-layer,0.96,+--,True,True,+--,True,True,b096
+beta = 0.96 everywhere,xl_final[25],cross-layer,0.96,---,False,True,---,False,True,b096
+beta = 0.96 everywhere,xl_final[26],cross-layer,0.96,--+,True,True,--+,True,True,b096
+beta = 0.96 everywhere,xl_final[27],cross-layer,0.96,---,False,True,---,False,True,b096
+beta = 0.96 everywhere,xl_final[28],cross-layer,0.96,--+,True,True,--+,True,True,b096
+beta = 0.96 everywhere,xl_final[29],cross-layer,0.96,--+,True,True,--+,True,True,b096
+beta = 0.96 everywhere,xl_final[30],cross-layer,0.96,--+,True,True,--+,True,True,b096
+beta = 0.96 everywhere,xl_spread,cross-layer,0.96,---,False,False,---,False,True,b096

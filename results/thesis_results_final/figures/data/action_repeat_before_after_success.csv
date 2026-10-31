@@ -1,0 +1,7 @@
+successful rollouts,rollouts,steps before first success,action-repeat rate before first success,steps from first success on,action-repeat rate from first success on
+"LIBERO-10, original",137,38618,0.1677,32485,0.4762
+"LIBERO-10, new unperturbed",91,25450,0.1673,21779,0.512
+LIBERO-PRO object perturbation,47,14562,0.1376,9831,0.5428
+LIBERO-PRO instruction perturbation,85,24383,0.1321,19732,0.4549
+LIBERO-PRO task perturbation,4,1550,0.0806,526,0.3137
+all sources,364,104563,0.1538,84353,0.4872

@@ -1,0 +1,79 @@
+{
+ "seed": 0,
+ "seed note": "seed 0",
+ "test set": "unseen tasks incl. LIBERO-PRO",
+ "training set": "full training set",
+ "cell": "task9/unperturbed",
+ "rule": "example.py's rule on the headline test set: candidates are failures that B's unweighted mean (H = 10) alarms on before the cut at alpha 0.1 and successes of the same task-and-perturbation cell (same cut) that it does not alarm on; among cells with both, the one whose alarmed failure has the longest run of repeated actions before the alarm (the clearest stall), with that cell's unalarmed success of the longest kept length. Seed 0 first, then 1, 2. Only rollouts with saved frames are candidates: the new rollouts (new unperturbed and LIBERO-PRO) saved only their first frame, so the pair comes from the original LIBERO-10 rollouts of the headline test set; cuts and alarms are still those of the full headline test set (the cut is the cell's).",
+ "candidates (longest repeat run before alarm, cell, failure, success)": [
+  [
+   9,
+   "task9/unperturbed",
+   "task09_trial18",
+   "task09_trial26"
+  ]
+ ],
+ "rollouts": {
+  "failure": {
+   "rollout": "task09_trial18",
+   "task": "9, original",
+   "perturbation type": "original",
+   "outcome": "failure",
+   "kept length": 520,
+   "cut": 244,
+   "B mean alarm step": 38,
+   "A mean alarm step": 52,
+   "C mean alarm step": 5,
+   "longest action-repeat run before the alarm": 9,
+   "frames": {
+    "start": {
+     "t": 1,
+     "file": "figures/example_frames/failure_task09_trial18_start_t001.jpg"
+    },
+    "alarm": {
+     "t": 38,
+     "file": "figures/example_frames/failure_task09_trial18_alarm_t038.jpg"
+    },
+    "mid": {
+     "t": 122,
+     "file": "figures/example_frames/failure_task09_trial18_mid_t122.jpg"
+    },
+    "cut": {
+     "t": 243,
+     "file": "figures/example_frames/failure_task09_trial18_cut_t243.jpg"
+    }
+   }
+  },
+  "success": {
+   "rollout": "task09_trial26",
+   "task": "9, original",
+   "perturbation type": "original",
+   "outcome": "success",
+   "kept length": 417,
+   "cut": 244,
+   "B mean alarm step": null,
+   "A mean alarm step": null,
+   "C mean alarm step": null,
+   "longest action-repeat run before the alarm": null,
+   "frames": {
+    "start": {
+     "t": 1,
+     "file": "figures/example_frames/success_task09_trial26_start_t001.jpg"
+    },
+    "mid": {
+     "t": 122,
+     "file": "figures/example_frames/success_task09_trial26_mid_t122.jpg"
+    },
+    "mid-way to cut": {
+     "t": 183,
+     "file": "figures/example_frames/success_task09_trial26_mid-way_to_cut_t183.jpg"
+    },
+    "cut": {
+     "t": 243,
+     "file": "figures/example_frames/success_task09_trial26_cut_t243.jpg"
+    }
+   }
+  }
+ },
+ "why": "cell task9/unperturbed: the alarmed failure with the longest run of repeated actions before B's alarm (9 steps), i.e. the clearest stall; the success of the same cell (same cut) with the longest kept length that B does not alarm on"
+}

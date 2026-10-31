@@ -1,0 +1,35 @@
+value,full training set (headline),original training set,same,source
+"smoothing beta, action family",0.83,0.96,False,results/thesis_results_full/tables/selections_comparison.csv
+"smoothing beta, emb_temp family",none,none,True,results/thesis_results_full/tables/selections_comparison.csv
+"smoothing beta, cross-layer family",0.96,0.91,False,results/thesis_results_full/tables/selections_comparison.csv
+"untrained constraint layer, pooled rule (earlier)",emb_temp[29],emb_temp[28],False,results/thesis_results_full/tables/selections_comparison.csv
+"c, C's probes",0.001,1,False,results/thesis_results_full/tables/selections_comparison.csv
+"c, C's 132-input logistic regression",0.0001,1e-05,False,results/thesis_results_full/tables/selections_comparison.csv
+"c, A's probes",1e-06,1e-05,False,results/thesis_results_full/tables/selections_comparison.csv
+A's single best probe per seed,layer10 / layer31 / layer11,layer01 / layer10 / layer02,False,results/thesis_results_full/tables/selections_comparison.csv
+sign-unstable constraints at the chosen beta,20: emb_temp[11] emb_temp[12] emb_temp[13] xl_adj[10] xl_adj[14] xl_adj[15] xl_adj[16] xl_adj[17] xl_adj[19] xl_adj[29] xl_adj[30] xl_adj[6] xl_final[18] xl_final[19] xl_final[20] xl_final[24] xl_final[26] xl_final[28] xl_final[29] xl_final[30],14: emb_temp[15] emb_temp[1] xl_adj[10] xl_adj[11] xl_adj[12] xl_adj[14] xl_adj[15] xl_adj[17] xl_adj[21] xl_adj[22] xl_adj[24] xl_adj[6] xl_final[17] xl_final[18],False,results/thesis_results_full/tables/selections_comparison.csv
+"c, A's trained combiner",1e-05,0.001,False,results/thesis_results_full/tables/selections_comparison.csv
+"c, C's trained combiner",0.001,0.0001,False,results/thesis_results_full/tables/selections_comparison.csv
+"c, B's trained combiner, H = 0",1,0.01,False,results/thesis_results_full/tables/selections_comparison.csv
+"c, B's trained combiner, H = 25",0.0001,1e-05,False,results/thesis_results_full/tables/selections_comparison.csv
+"c, B's trained combiner, H = 10 (refit)",0.01,0.001,False,results/thesis_results_full/tables/selections_comparison.csv
+C's single best probe per seed,action / action / layer05,layer00 / action / layer03,False,results/thesis_results_full/tables/selections_comparison.csv
+"B's single best probe per seed, H = 10",L30:emb_temp:H10 / L15:emb_temp:H10 / L00:emb_temp:H10,L20:emb_temp:H10 / L12:xl_final:H10 / L00:emb_temp:H10,False,results/thesis_results_full/tables/selections_comparison.csv
+"B's single best probe per seed, H = 0",L29:emb_temp:H0 / L00:emb_temp:H0 / L00:act_rep:H0,L20:emb_temp:H0 / L12:xl_final:H0 / L00:emb_temp:H0,False,results/thesis_results_full/tables/selections_comparison.csv
+"B's single best probe per seed, H = 25",L00:emb_temp:H25 / L17:emb_temp:H25 / L18:emb_temp:H25,L07:emb_temp:H25 / L09:emb_temp:H25 / L27:emb_temp:H25,False,results/thesis_results_full/tables/selections_comparison.csv
+"best untrained constraint, per-task rule",emb_temp[26],emb_temp[26],True,results/thesis_results_full/tables/selections_comparison.csv
+"smoothing beta, token mean entropy",0.83,0.96,False,results/thesis_results_full/tables/selections_comparison.csv
+"smoothing beta, token max-probability",0.83,0.83,True,results/thesis_results_full/tables/selections_comparison.csv
+B's grid c,0.0001,0.0001,True,results/thesis_results_full/tables/selections_comparison.csv
+B's probe count per H,116,124,False,results/thesis_results_full/tables/selections_comparison.csv
+B's skipped (sign-unstable) targets,emb_temp[11] emb_temp[12] emb_temp[13] xl_final[18] xl_final[19] xl_final[20] xl_final[24] xl_final[26] xl_final[28] xl_final[29] xl_final[30],emb_temp[15] emb_temp[1] xl_final[17] xl_final[18],False,results/thesis_results_full/tables/selections_comparison.csv
+"weight decay, C's 2-layer MLP",0.0001,0.01,False,results/thesis_results_full/tables/selections_comparison.csv
+"weight decay, B's 2-layer MLP",1,1,True,results/thesis_results_full/tables/selections_comparison.csv
+"weight decay, A's 2-layer MLP",0.01,1,False,detector_auroc_per_seed.csv (detail of A's 2-layer MLP)
+"weight decay, C's 2-layer MLP on all 132 constraints (exploratory)",1,0.0001,False,detector_auroc_per_seed.csv (detail)
+B's embedding-temporal probes per H,29,30,False,b_probes/meta.json of each run
+calibration rollouts per seed (successful eval-seen rollouts),91 / 101 / 84,35 / 43 / 33,False,detector_alarm_per_seed.csv (n_cal)
+"rollouts per seed, training split",378 / 390 / 369,126 / 126 / 126,False,results/abc2/splits
+"rollouts per seed, eval-seen",252 / 240 / 261,84 / 84 / 84,False,results/abc2/splits
+"rollouts per seed, unseen tasks incl. LIBERO-PRO",270 / 270 / 270,270 / 270 / 270,True,results/abc2/splits
+"rollouts per seed, unseen tasks, original rollouts",90 / 90 / 90,90 / 90 / 90,True,results/abc2/splits
