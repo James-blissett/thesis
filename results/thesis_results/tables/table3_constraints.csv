@@ -1,0 +1,14 @@
+kind,signal,smoothing beta,sign per seed (+: higher means failure),sign-unstable,"per-task AUROC, eval-seen, mean","per-task AUROC, eval-seen, std","per-task AUROC, unseen tasks, original rollouts, mean","per-task AUROC, unseen tasks, original rollouts, std","per-task-and-perturbation AUROC, unseen tasks incl. LIBERO-PRO, mean","per-task-and-perturbation AUROC, unseen tasks incl. LIBERO-PRO, std","pooled AUROC, unseen tasks, original rollouts, mean","timestep-only floor, unseen tasks, original rollouts",note,source
+untrained constraint,emb_temp[26],none,---,False,0.7567,0.0758,0.725,0.0606,0.74,0.0188,0.7146,0.5466,layer chosen on eval-seen per-task AUROC,results/abc2/constraint_m1_summary.csv
+untrained constraint,xl_adj[2],0.91,---,False,0.6114,0.057,0.5497,0.0677,0.5757,0.022,0.5932,0.5466,layer chosen on eval-seen per-task AUROC,results/abc2/constraint_m1_summary.csv
+untrained constraint,xl_final[12],0.91,---,False,0.7032,0.0113,0.6707,0.0131,0.6175,0.0435,0.6145,0.5466,layer chosen on eval-seen per-task AUROC,results/abc2/constraint_m1_summary.csv
+untrained constraint,act_rep,0.96,+++,False,0.623,0.0458,0.6135,0.0115,0.6312,0.0364,0.6294,0.5466,,results/abc2/constraint_m1_summary.csv
+untrained constraint,act_dir,0.96,+++,False,0.5594,0.0527,0.5603,0.0491,0.5951,0.0452,0.5651,0.5466,,results/abc2/constraint_m1_summary.csv
+untrained constraint,act_mag,0.96,---,False,0.5586,0.0391,0.5654,0.0474,0.5573,0.0397,0.5912,0.5466,,results/abc2/constraint_m1_summary.csv
+untrained constraint,grip_flip,0.96,+++,False,0.4841,0.0898,0.5765,0.0597,0.5639,0.0561,0.5831,0.5466,,results/abc2/constraint_m1_summary.csv
+untrained constraint,xl_spread,0.91,---,False,0.5516,0.0814,0.5327,0.0596,0.4917,0.0858,0.5069,0.5466,,results/abc2/constraint_m1_summary.csv
+baseline,token mean entropy,0.96,++-,True,0.5505,0.0884,0.539,0.0521,0.4945,0.058,0.5766,0.5466,beta chosen on eval-seen per-task AUROC,results/abc2/constraint_m1_summary.csv
+baseline,token max-probability,0.83,+-+,True,0.5388,0.0268,0.4755,0.0535,0.5567,0.0874,0.5108,0.5466,beta chosen on eval-seen per-task AUROC,results/abc2/constraint_m1_summary.csv
+baseline,FailureSpot signal s,0.8,+++,False,0.4924,0.0366,0.4766,0.061,0.4372,0.0321,0.4915,0.5466,fixed orientation,results/abc2/constraint_m1_summary.csv
+baseline,FailureSpot signal -s,0.8,---,False,0.5681,0.0542,0.5416,0.0518,0.5359,0.014,0.574,0.5466,fixed orientation,results/abc2/constraint_m1_summary.csv
+baseline,timestep only,none,+++,False,0.5,0,0.5,0,0.5,0,0.5466,0.5466,0.5 per task by construction,results/abc2/constraint_m1_summary.csv

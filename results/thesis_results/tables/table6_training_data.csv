@@ -1,0 +1,52 @@
+detector,training set,test set,per-task AUROC mean,per-task AUROC std,balanced accuracy at alpha 0.1 mean,balanced accuracy at alpha 0.1 std,source
+"best untrained constraint (emb_temp, pooled layer choice)",original training set,"unseen tasks, original rollouts",0.725,0.055,0.5559,0.1059,"results/abc2/report_tables/ranking.csv, alarm.csv"
+"best untrained constraint (emb_temp, pooled layer choice)",original training set,"unseen tasks, original + new unperturbed rollouts",0.7186,0.01,0.555,0.0995,"results/abc2/report_tables/ranking.csv, alarm.csv"
+"best untrained constraint (emb_temp, pooled layer choice)",original training set,unseen tasks incl. LIBERO-PRO,0.7388,0.026,0.5479,0.0814,"results/abc2/report_tables/ranking.csv, alarm.csv"
+"best untrained constraint (emb_temp, pooled layer choice)",500-rollout training set,"unseen tasks, original rollouts",0.725,0.055,0.534,0.0332,"results/abc2/report_tables/ranking.csv, alarm.csv"
+"best untrained constraint (emb_temp, pooled layer choice)",500-rollout training set,"unseen tasks, original + new unperturbed rollouts",0.7186,0.01,0.5245,0.0229,"results/abc2/report_tables/ranking.csv, alarm.csv"
+"best untrained constraint (emb_temp, pooled layer choice)",500-rollout training set,unseen tasks incl. LIBERO-PRO,0.7388,0.026,0.543,0.0127,"results/abc2/report_tables/ranking.csv, alarm.csv"
+"best untrained constraint (emb_temp, pooled layer choice)",full training set,"unseen tasks, original rollouts",0.7308,0.0501,0.4814,0.0176,"results/abc2/report_tables/ranking.csv, alarm.csv"
+"best untrained constraint (emb_temp, pooled layer choice)",full training set,"unseen tasks, original + new unperturbed rollouts",0.72,0.0074,0.4986,0.0089,"results/abc2/report_tables/ranking.csv, alarm.csv"
+"best untrained constraint (emb_temp, pooled layer choice)",full training set,unseen tasks incl. LIBERO-PRO,0.7358,0.0282,0.5288,0.0217,"results/abc2/report_tables/ranking.csv, alarm.csv"
+"A, single best probe",original training set,"unseen tasks, original rollouts",0.7163,0.032,0.5368,0.0328,"results/abc2/report_tables/ranking.csv, alarm.csv"
+"A, single best probe",original training set,"unseen tasks, original + new unperturbed rollouts",0.7011,0.0248,0.5397,0.0376,"results/abc2/report_tables/ranking.csv, alarm.csv"
+"A, single best probe",original training set,unseen tasks incl. LIBERO-PRO,0.7424,0.0361,0.5727,0.0817,"results/abc2/report_tables/ranking.csv, alarm.csv"
+"A, single best probe",500-rollout training set,"unseen tasks, original rollouts",0.7571,0.0459,0.5391,0.0442,"results/abc2/report_tables/ranking.csv, alarm.csv"
+"A, single best probe",500-rollout training set,"unseen tasks, original + new unperturbed rollouts",0.7498,0.0199,0.5464,0.0535,"results/abc2/report_tables/ranking.csv, alarm.csv"
+"A, single best probe",500-rollout training set,unseen tasks incl. LIBERO-PRO,0.7752,0.0133,0.5866,0.0751,"results/abc2/report_tables/ranking.csv, alarm.csv"
+"A, single best probe",full training set,"unseen tasks, original rollouts",0.7364,0.0576,0.5067,0.0061,"results/abc2/report_tables/ranking.csv, alarm.csv"
+"A, single best probe",full training set,"unseen tasks, original + new unperturbed rollouts",0.7398,0.0395,0.5205,0.0197,"results/abc2/report_tables/ranking.csv, alarm.csv"
+"A, single best probe",full training set,unseen tasks incl. LIBERO-PRO,0.7689,0.0179,0.5709,0.0485,"results/abc2/report_tables/ranking.csv, alarm.csv"
+"C (exploratory), logistic regression on all 132 constraints",original training set,"unseen tasks, original rollouts",0.7169,0.0489,0.5009,0.0016,"results/abc2/report_tables/ranking.csv, alarm.csv"
+"C (exploratory), logistic regression on all 132 constraints",original training set,"unseen tasks, original + new unperturbed rollouts",0.7405,0.0114,0.5173,0.0154,"results/abc2/report_tables/ranking.csv, alarm.csv"
+"C (exploratory), logistic regression on all 132 constraints",original training set,unseen tasks incl. LIBERO-PRO,0.7907,0.0304,0.5636,0.0426,"results/abc2/report_tables/ranking.csv, alarm.csv"
+"C (exploratory), logistic regression on all 132 constraints",500-rollout training set,"unseen tasks, original rollouts",0.704,0.0413,0.5293,0.0385,"results/abc2/report_tables/ranking.csv, alarm.csv"
+"C (exploratory), logistic regression on all 132 constraints",500-rollout training set,"unseen tasks, original + new unperturbed rollouts",0.7335,0.0215,0.5433,0.0455,"results/abc2/report_tables/ranking.csv, alarm.csv"
+"C (exploratory), logistic regression on all 132 constraints",500-rollout training set,unseen tasks incl. LIBERO-PRO,0.7776,0.0346,0.6068,0.0714,"results/abc2/report_tables/ranking.csv, alarm.csv"
+"C (exploratory), logistic regression on all 132 constraints",full training set,"unseen tasks, original rollouts",0.6997,0.0468,0.55,0.0757,"results/abc2/report_tables/ranking.csv, alarm.csv"
+"C (exploratory), logistic regression on all 132 constraints",full training set,"unseen tasks, original + new unperturbed rollouts",0.7292,0.0262,0.5476,0.0325,"results/abc2/report_tables/ranking.csv, alarm.csv"
+"C (exploratory), logistic regression on all 132 constraints",full training set,unseen tasks incl. LIBERO-PRO,0.767,0.0427,0.6147,0.0316,"results/abc2/report_tables/ranking.csv, alarm.csv"
+"A, unweighted mean of 34 probe outputs (primary)",original training set,"unseen tasks, original rollouts",0.7453,0.0371,0.5358,0.0429,results/thesis_results/tables/table1_core_detectors_all_test_sets.csv
+"C, unweighted mean of 33 probe outputs (primary)",original training set,"unseen tasks, original rollouts",0.6843,0.0659,0.5019,0.0032,results/thesis_results/tables/table1_core_detectors_all_test_sets.csv
+"B, unweighted mean of 124 probe outputs (primary), H = 0",original training set,"unseen tasks, original rollouts",0.662,0.0531,0.5096,0.0166,results/thesis_results/tables/table1_core_detectors_all_test_sets.csv
+"B, unweighted mean of 124 probe outputs (primary), H = 10",original training set,"unseen tasks, original rollouts",0.6776,0.0576,0.5099,0.0453,results/thesis_results/tables/table1_core_detectors_all_test_sets.csv
+"B, unweighted mean of 124 probe outputs (primary), H = 25",original training set,"unseen tasks, original rollouts",0.6979,0.0556,0.5097,0.0301,results/thesis_results/tables/table1_core_detectors_all_test_sets.csv
+"Baseline, best single untrained constraint (layer chosen on eval-seen per-task AUROC), running maximum",original training set,"unseen tasks, original rollouts",0.725,0.0606,0.5532,0.1013,results/thesis_results/tables/table1_core_detectors_all_test_sets.csv
+"A, unweighted mean of 34 probe outputs (primary)",original training set,unseen tasks incl. LIBERO-PRO,,,0.5672,0.0861,results/thesis_results/tables/table1_core_detectors_all_test_sets.csv
+"C, unweighted mean of 33 probe outputs (primary)",original training set,unseen tasks incl. LIBERO-PRO,,,0.5713,0.0268,results/thesis_results/tables/table1_core_detectors_all_test_sets.csv
+"B, unweighted mean of 124 probe outputs (primary), H = 0",original training set,unseen tasks incl. LIBERO-PRO,,,0.5541,0.0566,results/thesis_results/tables/table1_core_detectors_all_test_sets.csv
+"B, unweighted mean of 124 probe outputs (primary), H = 10",original training set,unseen tasks incl. LIBERO-PRO,,,0.5758,0.0511,results/thesis_results/tables/table1_core_detectors_all_test_sets.csv
+"B, unweighted mean of 124 probe outputs (primary), H = 25",original training set,unseen tasks incl. LIBERO-PRO,,,0.5665,0.0465,results/thesis_results/tables/table1_core_detectors_all_test_sets.csv
+"Baseline, best single untrained constraint (layer chosen on eval-seen per-task AUROC), running maximum",original training set,unseen tasks incl. LIBERO-PRO,,,0.5475,0.0779,results/thesis_results/tables/table1_core_detectors_all_test_sets.csv
+"A, unweighted mean of 34 probe outputs (primary)",full training set,"unseen tasks, original rollouts",0.7542,0.0406,0.5004,0.0113,results/thesis_results_full/tables/table1_core_detectors_all_test_sets.csv
+"C, unweighted mean of 33 probe outputs (primary)",full training set,"unseen tasks, original rollouts",0.6671,0.0577,0.551,0.0235,results/thesis_results_full/tables/table1_core_detectors_all_test_sets.csv
+"B, unweighted mean of 116 probe outputs (primary), H = 0",full training set,"unseen tasks, original rollouts",0.6996,0.0112,0.5111,0.0038,results/thesis_results_full/tables/table1_core_detectors_all_test_sets.csv
+"B, unweighted mean of 116 probe outputs (primary), H = 10",full training set,"unseen tasks, original rollouts",0.719,0.0265,0.517,0.0134,results/thesis_results_full/tables/table1_core_detectors_all_test_sets.csv
+"B, unweighted mean of 116 probe outputs (primary), H = 25",full training set,"unseen tasks, original rollouts",0.7088,0.0129,0.5149,0.0158,results/thesis_results_full/tables/table1_core_detectors_all_test_sets.csv
+"Baseline, best single untrained constraint (layer chosen on eval-seen per-task AUROC), running maximum",full training set,"unseen tasks, original rollouts",0.725,0.0606,0.4814,0.0176,results/thesis_results_full/tables/table1_core_detectors_all_test_sets.csv
+"A, unweighted mean of 34 probe outputs (primary)",full training set,unseen tasks incl. LIBERO-PRO,,,0.5725,0.0517,results/thesis_results_full/tables/table1_core_detectors_all_test_sets.csv
+"C, unweighted mean of 33 probe outputs (primary)",full training set,unseen tasks incl. LIBERO-PRO,,,0.6074,0.0454,results/thesis_results_full/tables/table1_core_detectors_all_test_sets.csv
+"B, unweighted mean of 116 probe outputs (primary), H = 0",full training set,unseen tasks incl. LIBERO-PRO,,,0.5466,0.0279,results/thesis_results_full/tables/table1_core_detectors_all_test_sets.csv
+"B, unweighted mean of 116 probe outputs (primary), H = 10",full training set,unseen tasks incl. LIBERO-PRO,,,0.5547,0.0247,results/thesis_results_full/tables/table1_core_detectors_all_test_sets.csv
+"B, unweighted mean of 116 probe outputs (primary), H = 25",full training set,unseen tasks incl. LIBERO-PRO,,,0.5672,0.0279,results/thesis_results_full/tables/table1_core_detectors_all_test_sets.csv
+"Baseline, best single untrained constraint (layer chosen on eval-seen per-task AUROC), running maximum",full training set,unseen tasks incl. LIBERO-PRO,,,0.5297,0.023,results/thesis_results_full/tables/table1_core_detectors_all_test_sets.csv

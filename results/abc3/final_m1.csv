@@ -1,0 +1,301 @@
+cond,seed,detector,detail,test_set,m1_pooled,m1_per_task,floor,n_cells,n,n_fail,input,depth,model
+D0,0,A-linear,layer01 c=1e-05,train,0.804527,0.852371,0.523148,7,126,72,A,0,linear
+D0,0,A-linear,layer01 c=1e-05,eval_seen,0.839067,0.868089,0.54898,7,84,49,A,0,linear
+D0,0,A-linear,layer01 c=1e-05,T0,0.712302,0.752014,0.633929,3,90,42,A,0,linear
+D0,0,A-linear,layer01 c=1e-05,T1,0.697453,0.725373,0.625538,3,150,68,A,0,linear
+D0,0,A-linear,layer01 c=1e-05,T2,0.791136,0.783061,0.730295,8,270,155,A,0,linear
+D0,0,A-mlp-abc2,layer01 wd=1 epoch=2,train,0.903035,0.973697,0.523148,7,126,72,A,2,plain-mlp-abc2
+D0,0,A-mlp-abc2,layer01 wd=1 epoch=2,eval_seen,0.86414,0.866204,0.54898,7,84,49,A,2,plain-mlp-abc2
+D0,0,A-mlp-abc2,layer01 wd=1 epoch=2,T0,0.678075,0.648121,0.633929,3,90,42,A,2,plain-mlp-abc2
+D0,0,A-mlp-abc2,layer01 wd=1 epoch=2,T1,0.677188,0.656974,0.625538,3,150,68,A,2,plain-mlp-abc2
+D0,0,A-mlp-abc2,layer01 wd=1 epoch=2,T2,0.759215,0.716462,0.730295,8,270,155,A,2,plain-mlp-abc2
+D0,0,A-d2,layer01 p=0 wd=0.01 epoch=1,train,0.874743,0.941807,0.523148,7,126,72,A,2,resmlp
+D0,0,A-d2,layer01 p=0 wd=0.01 epoch=1,eval_seen,0.849563,0.857771,0.54898,7,84,49,A,2,resmlp
+D0,0,A-d2,layer01 p=0 wd=0.01 epoch=1,T0,0.706349,0.705154,0.633929,3,90,42,A,2,resmlp
+D0,0,A-d2,layer01 p=0 wd=0.01 epoch=1,T1,0.701578,0.712526,0.625538,3,150,68,A,2,resmlp
+D0,0,A-d2,layer01 p=0 wd=0.01 epoch=1,T2,0.785077,0.765542,0.730295,8,270,155,A,2,resmlp
+D0,0,A-d6,layer01 p=0.3 wd=0.01 epoch=1,train,0.86857,0.933771,0.523148,7,126,72,A,6,resmlp
+D0,0,A-d6,layer01 p=0.3 wd=0.01 epoch=1,eval_seen,0.833819,0.864649,0.54898,7,84,49,A,6,resmlp
+D0,0,A-d6,layer01 p=0.3 wd=0.01 epoch=1,T0,0.69494,0.677619,0.633929,3,90,42,A,6,resmlp
+D0,0,A-d6,layer01 p=0.3 wd=0.01 epoch=1,T1,0.684541,0.671205,0.625538,3,150,68,A,6,resmlp
+D0,0,A-d6,layer01 p=0.3 wd=0.01 epoch=1,T2,0.770771,0.706088,0.730295,8,270,155,A,6,resmlp
+D0,0,A-d12,layer01 p=0.3 wd=0.01 epoch=1,train,0.868827,0.946029,0.523148,7,126,72,A,12,resmlp
+D0,0,A-d12,layer01 p=0.3 wd=0.01 epoch=1,eval_seen,0.826822,0.852216,0.54898,7,84,49,A,12,resmlp
+D0,0,A-d12,layer01 p=0.3 wd=0.01 epoch=1,T0,0.691964,0.658225,0.633929,3,90,42,A,12,resmlp
+D0,0,A-d12,layer01 p=0.3 wd=0.01 epoch=1,T1,0.677905,0.653068,0.625538,3,150,68,A,12,resmlp
+D0,0,A-d12,layer01 p=0.3 wd=0.01 epoch=1,T2,0.772511,0.67849,0.730295,8,270,155,A,12,resmlp
+D0,0,C-linear,final c=1e-05,train,0.733282,0.833246,0.523148,7,126,72,C,0,linear
+D0,0,C-linear,final c=1e-05,eval_seen,0.741691,0.766071,0.54898,7,84,49,C,0,linear
+D0,0,C-linear,final c=1e-05,T0,0.700397,0.690105,0.633929,3,90,42,C,0,linear
+D0,0,C-linear,final c=1e-05,T1,0.712339,0.743176,0.625538,3,150,68,C,0,linear
+D0,0,C-linear,final c=1e-05,T2,0.812286,0.825062,0.730295,8,270,155,C,0,linear
+D0,0,C-mlp-abc2,C final inputs wd=0.0001 epoch=5,train,0.908179,0.969586,0.523148,7,126,72,C,2,plain-mlp-abc2
+D0,0,C-mlp-abc2,C final inputs wd=0.0001 epoch=5,eval_seen,0.81691,0.789021,0.54898,7,84,49,C,2,plain-mlp-abc2
+D0,0,C-mlp-abc2,C final inputs wd=0.0001 epoch=5,T0,0.756944,0.701615,0.633929,3,90,42,C,2,plain-mlp-abc2
+D0,0,C-mlp-abc2,C final inputs wd=0.0001 epoch=5,T1,0.732963,0.728647,0.625538,3,150,68,C,2,plain-mlp-abc2
+D0,0,C-mlp-abc2,C final inputs wd=0.0001 epoch=5,T2,0.821823,0.752418,0.730295,8,270,155,C,2,plain-mlp-abc2
+D0,0,C-d2,C final inputs p=0 wd=0.1 epoch=16,train,1,1,0.523148,7,126,72,C,2,resmlp
+D0,0,C-d2,C final inputs p=0 wd=0.1 epoch=16,eval_seen,0.855394,0.86703,0.54898,7,84,49,C,2,resmlp
+D0,0,C-d2,C final inputs p=0 wd=0.1 epoch=16,T0,0.710813,0.596917,0.633929,3,90,42,C,2,resmlp
+D0,0,C-d2,C final inputs p=0 wd=0.1 epoch=16,T1,0.680416,0.611096,0.625538,3,150,68,C,2,resmlp
+D0,0,C-d2,C final inputs p=0 wd=0.1 epoch=16,T2,0.800112,0.720044,0.730295,8,270,155,C,2,resmlp
+D0,0,C-d6,C final inputs p=0.3 wd=0.01 epoch=10,train,1,1,0.523148,7,126,72,C,6,resmlp
+D0,0,C-d6,C final inputs p=0.3 wd=0.01 epoch=10,eval_seen,0.826239,0.831118,0.54898,7,84,49,C,6,resmlp
+D0,0,C-d6,C final inputs p=0.3 wd=0.01 epoch=10,T0,0.688988,0.568507,0.633929,3,90,42,C,6,resmlp
+D0,0,C-d6,C final inputs p=0.3 wd=0.01 epoch=10,T1,0.646521,0.578693,0.625538,3,150,68,C,6,resmlp
+D0,0,C-d6,C final inputs p=0.3 wd=0.01 epoch=10,T2,0.779916,0.689166,0.730295,8,270,155,C,6,resmlp
+D0,0,C-d12,C final inputs p=0 wd=0.1 epoch=4,train,1,1,0.523148,7,126,72,C,12,resmlp
+D0,0,C-d12,C final inputs p=0 wd=0.1 epoch=4,eval_seen,0.851895,0.849967,0.54898,7,84,49,C,12,resmlp
+D0,0,C-d12,C final inputs p=0 wd=0.1 epoch=4,T0,0.741071,0.668081,0.633929,3,90,42,C,12,resmlp
+D0,0,C-d12,C final inputs p=0 wd=0.1 epoch=4,T1,0.696198,0.668774,0.625538,3,150,68,C,12,resmlp
+D0,0,C-d12,C final inputs p=0 wd=0.1 epoch=4,T2,0.811445,0.756408,0.730295,8,270,155,C,12,resmlp
+D0,1,A-linear,layer10 c=1e-05,train,0.823232,0.918385,0.622727,7,126,60,A,0,linear
+D0,1,A-linear,layer10 c=1e-05,eval_seen,0.806012,0.864867,0.642938,7,84,41,A,0,linear
+D0,1,A-linear,layer10 c=1e-05,T0,0.739631,0.690116,0.551843,3,90,62,A,0,linear
+D0,1,A-linear,layer10 c=1e-05,T1,0.760212,0.675887,0.531746,3,150,105,A,0,linear
+D0,1,A-linear,layer10 c=1e-05,T2,0.773806,0.729751,0.547029,7,270,188,A,0,linear
+D0,1,A-mlp-abc2,layer10 wd=1 epoch=1,train,0.910101,0.97548,0.622727,7,126,60,A,2,plain-mlp-abc2
+D0,1,A-mlp-abc2,layer10 wd=1 epoch=1,eval_seen,0.805445,0.797397,0.642938,7,84,41,A,2,plain-mlp-abc2
+D0,1,A-mlp-abc2,layer10 wd=1 epoch=1,T0,0.736175,0.691325,0.551843,3,90,62,A,2,plain-mlp-abc2
+D0,1,A-mlp-abc2,layer10 wd=1 epoch=1,T1,0.755556,0.66591,0.531746,3,150,105,A,2,plain-mlp-abc2
+D0,1,A-mlp-abc2,layer10 wd=1 epoch=1,T2,0.733394,0.682052,0.547029,7,270,188,A,2,plain-mlp-abc2
+D0,1,A-d2,layer10 p=0.3 wd=0.01 epoch=1,train,0.905051,0.977196,0.622727,7,126,60,A,2,resmlp
+D0,1,A-d2,layer10 p=0.3 wd=0.01 epoch=1,eval_seen,0.804878,0.824802,0.642938,7,84,41,A,2,resmlp
+D0,1,A-d2,layer10 p=0.3 wd=0.01 epoch=1,T0,0.735599,0.675301,0.551843,3,90,62,A,2,resmlp
+D0,1,A-d2,layer10 p=0.3 wd=0.01 epoch=1,T1,0.756825,0.668526,0.531746,3,150,105,A,2,resmlp
+D0,1,A-d2,layer10 p=0.3 wd=0.01 epoch=1,T2,0.738389,0.671635,0.547029,7,270,188,A,2,resmlp
+D0,1,A-d6,layer10 p=0.3 wd=0.01 epoch=1,train,0.87904,0.973764,0.622727,7,126,60,A,6,resmlp
+D0,1,A-d6,layer10 p=0.3 wd=0.01 epoch=1,eval_seen,0.790698,0.824688,0.642938,7,84,41,A,6,resmlp
+D0,1,A-d6,layer10 p=0.3 wd=0.01 epoch=1,T0,0.728687,0.667377,0.551843,3,90,62,A,6,resmlp
+D0,1,A-d6,layer10 p=0.3 wd=0.01 epoch=1,T1,0.749418,0.653562,0.531746,3,150,105,A,6,resmlp
+D0,1,A-d6,layer10 p=0.3 wd=0.01 epoch=1,T2,0.734821,0.675378,0.547029,7,270,188,A,6,resmlp
+D0,1,A-d12,layer10 p=0.3 wd=0.1 epoch=1,train,0.893434,0.974998,0.622727,7,126,60,A,12,resmlp
+D0,1,A-d12,layer10 p=0.3 wd=0.1 epoch=1,eval_seen,0.795803,0.820989,0.642938,7,84,41,A,12,resmlp
+D0,1,A-d12,layer10 p=0.3 wd=0.1 epoch=1,T0,0.740207,0.708771,0.551843,3,90,62,A,12,resmlp
+D0,1,A-d12,layer10 p=0.3 wd=0.1 epoch=1,T1,0.754286,0.675554,0.531746,3,150,105,A,12,resmlp
+D0,1,A-d12,layer10 p=0.3 wd=0.1 epoch=1,T2,0.719577,0.675735,0.547029,7,270,188,A,12,resmlp
+D0,1,C-linear,final c=1e-05,train,0.711364,0.734195,0.622727,7,126,60,C,0,linear
+D0,1,C-linear,final c=1e-05,eval_seen,0.75553,0.787954,0.642938,7,84,41,C,0,linear
+D0,1,C-linear,final c=1e-05,T0,0.775346,0.773311,0.551843,3,90,62,C,0,linear
+D0,1,C-linear,final c=1e-05,T1,0.768466,0.750409,0.531746,3,150,105,C,0,linear
+D0,1,C-linear,final c=1e-05,T2,0.736313,0.767452,0.547029,7,270,188,C,0,linear
+D0,1,C-mlp-abc2,C final inputs wd=0.0001 epoch=1,train,0.756566,0.781236,0.622727,7,126,60,C,2,plain-mlp-abc2
+D0,1,C-mlp-abc2,C final inputs wd=0.0001 epoch=1,eval_seen,0.775383,0.791095,0.642938,7,84,41,C,2,plain-mlp-abc2
+D0,1,C-mlp-abc2,C final inputs wd=0.0001 epoch=1,T0,0.785714,0.757195,0.551843,3,90,62,C,2,plain-mlp-abc2
+D0,1,C-mlp-abc2,C final inputs wd=0.0001 epoch=1,T1,0.799577,0.756265,0.531746,3,150,105,C,2,plain-mlp-abc2
+D0,1,C-mlp-abc2,C final inputs wd=0.0001 epoch=1,T2,0.776271,0.766977,0.547029,7,270,188,C,2,plain-mlp-abc2
+D0,1,C-d2,C final inputs p=0.3 wd=0.01 epoch=1,train,0.756818,0.773831,0.622727,7,126,60,C,2,resmlp
+D0,1,C-d2,C final inputs p=0.3 wd=0.01 epoch=1,eval_seen,0.782757,0.7988,0.642938,7,84,41,C,2,resmlp
+D0,1,C-d2,C final inputs p=0.3 wd=0.01 epoch=1,T0,0.762673,0.719421,0.551843,3,90,62,C,2,resmlp
+D0,1,C-d2,C final inputs p=0.3 wd=0.01 epoch=1,T1,0.786455,0.726586,0.531746,3,150,105,C,2,resmlp
+D0,1,C-d2,C final inputs p=0.3 wd=0.01 epoch=1,T2,0.76706,0.735943,0.547029,7,270,188,C,2,resmlp
+D0,1,C-d6,C final inputs p=0.3 wd=0.01 epoch=2,train,0.821717,0.852513,0.622727,7,126,60,C,6,resmlp
+D0,1,C-d6,C final inputs p=0.3 wd=0.01 epoch=2,eval_seen,0.802042,0.800709,0.642938,7,84,41,C,6,resmlp
+D0,1,C-d6,C final inputs p=0.3 wd=0.01 epoch=2,T0,0.791475,0.763958,0.551843,3,90,62,C,6,resmlp
+D0,1,C-d6,C final inputs p=0.3 wd=0.01 epoch=2,T1,0.806349,0.748626,0.531746,3,150,105,C,6,resmlp
+D0,1,C-d6,C final inputs p=0.3 wd=0.01 epoch=2,T2,0.773547,0.782673,0.547029,7,270,188,C,6,resmlp
+D0,1,C-d12,C final inputs p=0.3 wd=0.01 epoch=2,train,0.836869,0.86887,0.622727,7,126,60,C,12,resmlp
+D0,1,C-d12,C final inputs p=0.3 wd=0.01 epoch=2,eval_seen,0.817357,0.809226,0.642938,7,84,41,C,12,resmlp
+D0,1,C-d12,C final inputs p=0.3 wd=0.01 epoch=2,T0,0.8197,0.825268,0.551843,3,90,62,C,12,resmlp
+D0,1,C-d12,C final inputs p=0.3 wd=0.01 epoch=2,T1,0.822857,0.786464,0.531746,3,150,105,C,12,resmlp
+D0,1,C-d12,C final inputs p=0.3 wd=0.01 epoch=2,T2,0.793396,0.783738,0.547029,7,270,188,C,12,resmlp
+D0,2,A-linear,layer02 c=1e-05,train,0.83634,0.893629,0.584706,7,126,75,A,0,linear
+D0,2,A-linear,layer02 c=1e-05,eval_seen,0.789067,0.830626,0.639037,7,84,51,A,0,linear
+D0,2,A-linear,layer02 c=1e-05,T0,0.72922,0.706791,0.454105,3,90,37,A,0,linear
+D0,2,A-linear,layer02 c=1e-05,T1,0.69868,0.701993,0.454179,3,150,62,A,0,linear
+D0,2,A-linear,layer02 c=1e-05,T2,0.741733,0.714271,0.573302,9,270,126,A,0,linear
+D0,2,A-mlp-abc2,layer02 wd=1 epoch=8,train,1,1,0.584706,7,126,75,A,2,plain-mlp-abc2
+D0,2,A-mlp-abc2,layer02 wd=1 epoch=8,eval_seen,0.788473,0.795933,0.639037,7,84,51,A,2,plain-mlp-abc2
+D0,2,A-mlp-abc2,layer02 wd=1 epoch=8,T0,0.73126,0.717158,0.454105,3,90,37,A,2,plain-mlp-abc2
+D0,2,A-mlp-abc2,layer02 wd=1 epoch=8,T1,0.679802,0.671485,0.454179,3,150,62,A,2,plain-mlp-abc2
+D0,2,A-mlp-abc2,layer02 wd=1 epoch=8,T2,0.68039,0.607384,0.573302,9,270,126,A,2,plain-mlp-abc2
+D0,2,A-d2,layer02 p=0 wd=0.01 epoch=6,train,1,1,0.584706,7,126,75,A,2,resmlp
+D0,2,A-d2,layer02 p=0 wd=0.01 epoch=6,eval_seen,0.790255,0.815278,0.639037,7,84,51,A,2,resmlp
+D0,2,A-d2,layer02 p=0 wd=0.01 epoch=6,T0,0.680775,0.689896,0.454105,3,90,37,A,2,resmlp
+D0,2,A-d2,layer02 p=0 wd=0.01 epoch=6,T1,0.682001,0.677634,0.454179,3,150,62,A,2,resmlp
+D0,2,A-d2,layer02 p=0 wd=0.01 epoch=6,T2,0.694775,0.622016,0.573302,9,270,126,A,2,resmlp
+D0,2,A-d6,layer02 p=0.3 wd=0.1 epoch=13,train,1,1,0.584706,7,126,75,A,6,resmlp
+D0,2,A-d6,layer02 p=0.3 wd=0.1 epoch=13,eval_seen,0.805704,0.828987,0.639037,7,84,51,A,6,resmlp
+D0,2,A-d6,layer02 p=0.3 wd=0.1 epoch=13,T0,0.677715,0.64191,0.454105,3,90,37,A,6,resmlp
+D0,2,A-d6,layer02 p=0.3 wd=0.1 epoch=13,T1,0.592192,0.603433,0.454179,3,150,62,A,6,resmlp
+D0,2,A-d6,layer02 p=0.3 wd=0.1 epoch=13,T2,0.631614,0.577373,0.573302,9,270,126,A,6,resmlp
+D0,2,A-d12,layer02 p=0 wd=0.01 epoch=5,train,1,1,0.584706,7,126,75,A,12,resmlp
+D0,2,A-d12,layer02 p=0 wd=0.01 epoch=5,eval_seen,0.798574,0.843056,0.639037,7,84,51,A,12,resmlp
+D0,2,A-d12,layer02 p=0 wd=0.01 epoch=5,T0,0.705762,0.687126,0.454105,3,90,37,A,12,resmlp
+D0,2,A-d12,layer02 p=0 wd=0.01 epoch=5,T1,0.640029,0.64346,0.454179,3,150,62,A,12,resmlp
+D0,2,A-d12,layer02 p=0 wd=0.01 epoch=5,T2,0.664187,0.609184,0.573302,9,270,126,A,12,resmlp
+D0,2,C-linear,final c=1e-05,train,0.716078,0.825166,0.584706,7,126,75,C,0,linear
+D0,2,C-linear,final c=1e-05,eval_seen,0.730244,0.809245,0.639037,7,84,51,C,0,linear
+D0,2,C-linear,final c=1e-05,T0,0.63641,0.687356,0.454105,3,90,37,C,0,linear
+D0,2,C-linear,final c=1e-05,T1,0.669905,0.727995,0.454179,3,150,62,C,0,linear
+D0,2,C-linear,final c=1e-05,T2,0.739804,0.779698,0.573302,9,270,126,C,0,linear
+D0,2,C-mlp-abc2,C final inputs wd=0.0001 epoch=1,train,0.782484,0.840381,0.584706,7,126,75,C,2,plain-mlp-abc2
+D0,2,C-mlp-abc2,C final inputs wd=0.0001 epoch=1,eval_seen,0.771242,0.796495,0.639037,7,84,51,C,2,plain-mlp-abc2
+D0,2,C-mlp-abc2,C final inputs wd=0.0001 epoch=1,T0,0.700153,0.693668,0.454105,3,90,37,C,2,plain-mlp-abc2
+D0,2,C-mlp-abc2,C final inputs wd=0.0001 epoch=1,T1,0.716092,0.719279,0.454179,3,150,62,C,2,plain-mlp-abc2
+D0,2,C-mlp-abc2,C final inputs wd=0.0001 epoch=1,T2,0.768298,0.763363,0.573302,9,270,126,C,2,plain-mlp-abc2
+D0,2,C-d2,C final inputs p=0 wd=0.01 epoch=4,train,0.920261,0.950846,0.584706,7,126,75,C,2,resmlp
+D0,2,C-d2,C final inputs p=0 wd=0.01 epoch=4,eval_seen,0.773619,0.795975,0.639037,7,84,51,C,2,resmlp
+D0,2,C-d2,C final inputs p=0 wd=0.01 epoch=4,T0,0.769505,0.739117,0.454105,3,90,37,C,2,resmlp
+D0,2,C-d2,C final inputs p=0 wd=0.01 epoch=4,T1,0.719575,0.720584,0.454179,3,150,62,C,2,resmlp
+D0,2,C-d2,C final inputs p=0 wd=0.01 epoch=4,T2,0.782959,0.759575,0.573302,9,270,126,C,2,resmlp
+D0,2,C-d6,C final inputs p=0 wd=0.01 epoch=2,train,0.912418,0.955242,0.584706,7,126,75,C,6,resmlp
+D0,2,C-d6,C final inputs p=0 wd=0.01 epoch=2,eval_seen,0.78669,0.816686,0.639037,7,84,51,C,6,resmlp
+D0,2,C-d6,C final inputs p=0 wd=0.01 epoch=2,T0,0.740948,0.712807,0.454105,3,90,37,C,6,resmlp
+D0,2,C-d6,C final inputs p=0 wd=0.01 epoch=2,T1,0.730022,0.727215,0.454179,3,150,62,C,6,resmlp
+D0,2,C-d6,C final inputs p=0 wd=0.01 epoch=2,T2,0.780919,0.761439,0.573302,9,270,126,C,6,resmlp
+D0,2,C-d12,C final inputs p=0 wd=0.01 epoch=1,train,0.863791,0.907541,0.584706,7,126,75,C,12,resmlp
+D0,2,C-d12,C final inputs p=0 wd=0.01 epoch=1,eval_seen,0.78372,0.803042,0.639037,7,84,51,C,12,resmlp
+D0,2,C-d12,C final inputs p=0 wd=0.01 epoch=1,T0,0.72463,0.662958,0.454105,3,90,37,C,12,resmlp
+D0,2,C-d12,C final inputs p=0 wd=0.01 epoch=1,T1,0.707478,0.70827,0.454179,3,150,62,C,12,resmlp
+D0,2,C-d12,C final inputs p=0 wd=0.01 epoch=1,T2,0.774306,0.768357,0.573302,9,270,126,C,12,resmlp
+D2,0,A-linear,layer10 c=1e-06,train,0.832792,0.873384,0.608404,17,378,224,A,0,linear
+D2,0,A-linear,layer10 c=1e-06,eval_seen,0.825404,0.84827,0.622108,15,252,161,A,0,linear
+D2,0,A-linear,layer10 c=1e-06,T0,0.733135,0.744335,0.633929,3,90,42,A,0,linear
+D2,0,A-linear,layer10 c=1e-06,T1,0.716284,0.744766,0.625538,3,150,68,A,0,linear
+D2,0,A-linear,layer10 c=1e-06,T2,0.811781,0.787713,0.730295,8,270,155,A,0,linear
+D2,0,A-mlp-abc2,layer10 wd=0.01 epoch=1,train,0.953473,0.985984,0.608404,17,378,224,A,2,plain-mlp-abc2
+D2,0,A-mlp-abc2,layer10 wd=0.01 epoch=1,eval_seen,0.780493,0.656399,0.622108,15,252,161,A,2,plain-mlp-abc2
+D2,0,A-mlp-abc2,layer10 wd=0.01 epoch=1,T0,0.690972,0.577137,0.633929,3,90,42,A,2,plain-mlp-abc2
+D2,0,A-mlp-abc2,layer10 wd=0.01 epoch=1,T1,0.675753,0.608583,0.625538,3,150,68,A,2,plain-mlp-abc2
+D2,0,A-mlp-abc2,layer10 wd=0.01 epoch=1,T2,0.780533,0.687892,0.730295,8,270,155,A,2,plain-mlp-abc2
+D2,0,A-d2,layer10 p=0.3 wd=0.01 epoch=1,train,0.925875,0.966223,0.608404,17,378,224,A,2,resmlp
+D2,0,A-d2,layer10 p=0.3 wd=0.01 epoch=1,eval_seen,0.801515,0.718269,0.622108,15,252,161,A,2,resmlp
+D2,0,A-d2,layer10 p=0.3 wd=0.01 epoch=1,T0,0.700397,0.622875,0.633929,3,90,42,A,2,resmlp
+D2,0,A-d2,layer10 p=0.3 wd=0.01 epoch=1,T1,0.689562,0.648513,0.625538,3,150,68,A,2,resmlp
+D2,0,A-d2,layer10 p=0.3 wd=0.01 epoch=1,T2,0.794278,0.703008,0.730295,8,270,155,A,2,resmlp
+D2,0,A-d6,layer10 p=0.3 wd=0.1 epoch=1,train,0.928513,0.964537,0.608404,17,378,224,A,6,resmlp
+D2,0,A-d6,layer10 p=0.3 wd=0.1 epoch=1,eval_seen,0.786977,0.686656,0.622108,15,252,161,A,6,resmlp
+D2,0,A-d6,layer10 p=0.3 wd=0.1 epoch=1,T0,0.683036,0.632344,0.633929,3,90,42,A,6,resmlp
+D2,0,A-d6,layer10 p=0.3 wd=0.1 epoch=1,T1,0.675215,0.638354,0.625538,3,150,68,A,6,resmlp
+D2,0,A-d6,layer10 p=0.3 wd=0.1 epoch=1,T2,0.784348,0.738342,0.730295,8,270,155,A,6,resmlp
+D2,0,A-d12,layer10 p=0.3 wd=0.01 epoch=1,train,0.930108,0.962178,0.608404,17,378,224,A,12,resmlp
+D2,0,A-d12,layer10 p=0.3 wd=0.01 epoch=1,eval_seen,0.788206,0.703155,0.622108,15,252,161,A,12,resmlp
+D2,0,A-d12,layer10 p=0.3 wd=0.01 epoch=1,T0,0.686508,0.620595,0.633929,3,90,42,A,12,resmlp
+D2,0,A-d12,layer10 p=0.3 wd=0.01 epoch=1,T1,0.680237,0.642225,0.625538,3,150,68,A,12,resmlp
+D2,0,A-d12,layer10 p=0.3 wd=0.01 epoch=1,T2,0.77655,0.700822,0.730295,8,270,155,A,12,resmlp
+D2,0,C-linear,final c=0.0001,train,0.827951,0.793801,0.608404,17,378,224,C,0,linear
+D2,0,C-linear,final c=0.0001,eval_seen,0.847519,0.799914,0.622108,15,252,161,C,0,linear
+D2,0,C-linear,final c=0.0001,T0,0.739583,0.678742,0.633929,3,90,42,C,0,linear
+D2,0,C-linear,final c=0.0001,T1,0.738164,0.730518,0.625538,3,150,68,C,0,linear
+D2,0,C-linear,final c=0.0001,T2,0.833268,0.814626,0.730295,8,270,155,C,0,linear
+D2,0,C-mlp-abc2,C final inputs wd=1 epoch=1,train,0.859433,0.800251,0.608404,17,378,224,C,2,plain-mlp-abc2
+D2,0,C-mlp-abc2,C final inputs wd=1 epoch=1,eval_seen,0.853594,0.800408,0.622108,15,252,161,C,2,plain-mlp-abc2
+D2,0,C-mlp-abc2,C final inputs wd=1 epoch=1,T0,0.75496,0.686249,0.633929,3,90,42,C,2,plain-mlp-abc2
+D2,0,C-mlp-abc2,C final inputs wd=1 epoch=1,T1,0.739419,0.725767,0.625538,3,150,68,C,2,plain-mlp-abc2
+D2,0,C-mlp-abc2,C final inputs wd=1 epoch=1,T2,0.837532,0.825585,0.730295,8,270,155,C,2,plain-mlp-abc2
+D2,0,C-d2,C final inputs p=0.3 wd=0.01 epoch=1,train,0.838967,0.773398,0.608404,17,378,224,C,2,resmlp
+D2,0,C-d2,C final inputs p=0.3 wd=0.01 epoch=1,eval_seen,0.85646,0.792169,0.622108,15,252,161,C,2,resmlp
+D2,0,C-d2,C final inputs p=0.3 wd=0.01 epoch=1,T0,0.764881,0.698315,0.633929,3,90,42,C,2,resmlp
+D2,0,C-d2,C final inputs p=0.3 wd=0.01 epoch=1,T1,0.752511,0.739753,0.625538,3,150,68,C,2,resmlp
+D2,0,C-d2,C final inputs p=0.3 wd=0.01 epoch=1,T2,0.846508,0.832527,0.730295,8,270,155,C,2,resmlp
+D2,0,C-d6,C final inputs p=0 wd=0.01 epoch=1,train,0.86555,0.84594,0.608404,17,378,224,C,6,resmlp
+D2,0,C-d6,C final inputs p=0 wd=0.01 epoch=1,eval_seen,0.846973,0.794168,0.622108,15,252,161,C,6,resmlp
+D2,0,C-d6,C final inputs p=0 wd=0.01 epoch=1,T0,0.742063,0.671937,0.633929,3,90,42,C,6,resmlp
+D2,0,C-d6,C final inputs p=0 wd=0.01 epoch=1,T1,0.738881,0.714181,0.625538,3,150,68,C,6,resmlp
+D2,0,C-d6,C final inputs p=0 wd=0.01 epoch=1,T2,0.839215,0.821923,0.730295,8,270,155,C,6,resmlp
+D2,0,C-d12,C final inputs p=0.3 wd=0.01 epoch=1,train,0.865782,0.79855,0.608404,17,378,224,C,12,resmlp
+D2,0,C-d12,C final inputs p=0.3 wd=0.01 epoch=1,eval_seen,0.863422,0.789836,0.622108,15,252,161,C,12,resmlp
+D2,0,C-d12,C final inputs p=0.3 wd=0.01 epoch=1,T0,0.771825,0.704383,0.633929,3,90,42,C,12,resmlp
+D2,0,C-d12,C final inputs p=0.3 wd=0.01 epoch=1,T1,0.748565,0.736189,0.625538,3,150,68,C,12,resmlp
+D2,0,C-d12,C final inputs p=0.3 wd=0.01 epoch=1,T2,0.841346,0.820847,0.730295,8,270,155,C,12,resmlp
+D2,1,A-linear,layer31 c=1e-06,train,0.803586,0.88097,0.673961,19,390,213,A,0,linear
+D2,1,A-linear,layer31 c=1e-06,eval_seen,0.851841,0.839295,0.745993,13,240,139,A,0,linear
+D2,1,A-linear,layer31 c=1e-06,T0,0.797811,0.7897,0.551843,3,90,62,A,0,linear
+D2,1,A-linear,layer31 c=1e-06,T1,0.789206,0.776578,0.531746,3,150,105,A,0,linear
+D2,1,A-linear,layer31 c=1e-06,T2,0.76706,0.766927,0.547029,7,270,188,A,0,linear
+D2,1,A-mlp-abc2,layer31 wd=0.01 epoch=1,train,0.973051,0.998947,0.673961,19,390,213,A,2,plain-mlp-abc2
+D2,1,A-mlp-abc2,layer31 wd=0.01 epoch=1,eval_seen,0.858893,0.789728,0.745993,13,240,139,A,2,plain-mlp-abc2
+D2,1,A-mlp-abc2,layer31 wd=0.01 epoch=1,T0,0.799539,0.744623,0.551843,3,90,62,A,2,plain-mlp-abc2
+D2,1,A-mlp-abc2,layer31 wd=0.01 epoch=1,T1,0.804021,0.740003,0.531746,3,150,105,A,2,plain-mlp-abc2
+D2,1,A-mlp-abc2,layer31 wd=0.01 epoch=1,T2,0.831279,0.748239,0.547029,7,270,188,A,2,plain-mlp-abc2
+D2,1,A-d2,layer31 p=0.3 wd=0.01 epoch=1,train,0.946447,0.994876,0.673961,19,390,213,A,2,resmlp
+D2,1,A-d2,layer31 p=0.3 wd=0.01 epoch=1,eval_seen,0.870789,0.834311,0.745993,13,240,139,A,2,resmlp
+D2,1,A-d2,layer31 p=0.3 wd=0.01 epoch=1,T0,0.807604,0.763882,0.551843,3,90,62,A,2,resmlp
+D2,1,A-d2,layer31 p=0.3 wd=0.01 epoch=1,T1,0.821799,0.748481,0.531746,3,150,105,A,2,resmlp
+D2,1,A-d2,layer31 p=0.3 wd=0.01 epoch=1,T2,0.827063,0.757326,0.547029,7,270,188,A,2,resmlp
+D2,1,A-d6,layer31 p=0.3 wd=0.01 epoch=1,train,0.951991,0.997246,0.673961,19,390,213,A,6,resmlp
+D2,1,A-d6,layer31 p=0.3 wd=0.01 epoch=1,eval_seen,0.872498,0.804263,0.745993,13,240,139,A,6,resmlp
+D2,1,A-d6,layer31 p=0.3 wd=0.01 epoch=1,T0,0.802419,0.742357,0.551843,3,90,62,A,6,resmlp
+D2,1,A-d6,layer31 p=0.3 wd=0.01 epoch=1,T1,0.814815,0.741064,0.531746,3,150,105,A,6,resmlp
+D2,1,A-d6,layer31 p=0.3 wd=0.01 epoch=1,T2,0.839712,0.738885,0.547029,7,270,188,A,6,resmlp
+D2,1,A-d12,layer31 p=0.3 wd=0.1 epoch=1,train,0.950081,0.995023,0.673961,19,390,213,A,12,resmlp
+D2,1,A-d12,layer31 p=0.3 wd=0.1 epoch=1,eval_seen,0.872997,0.813093,0.745993,13,240,139,A,12,resmlp
+D2,1,A-d12,layer31 p=0.3 wd=0.1 epoch=1,T0,0.796083,0.746941,0.551843,3,90,62,A,12,resmlp
+D2,1,A-d12,layer31 p=0.3 wd=0.1 epoch=1,T1,0.818201,0.742396,0.531746,3,150,105,A,12,resmlp
+D2,1,A-d12,layer31 p=0.3 wd=0.1 epoch=1,T2,0.830436,0.747475,0.547029,7,270,188,A,12,resmlp
+D2,1,C-linear,final c=0.0001,train,0.817856,0.829436,0.673961,19,390,213,C,0,linear
+D2,1,C-linear,final c=0.0001,eval_seen,0.870504,0.832837,0.745993,13,240,139,C,0,linear
+D2,1,C-linear,final c=0.0001,T0,0.767857,0.753279,0.551843,3,90,62,C,0,linear
+D2,1,C-linear,final c=0.0001,T1,0.768042,0.754683,0.531746,3,150,105,C,0,linear
+D2,1,C-linear,final c=0.0001,T2,0.751427,0.732343,0.547029,7,270,188,C,0,linear
+D2,1,C-mlp-abc2,C final inputs wd=1 epoch=2,train,0.873558,0.91616,0.673961,19,390,213,C,2,plain-mlp-abc2
+D2,1,C-mlp-abc2,C final inputs wd=1 epoch=2,eval_seen,0.869578,0.850064,0.745993,13,240,139,C,2,plain-mlp-abc2
+D2,1,C-mlp-abc2,C final inputs wd=1 epoch=2,T0,0.81394,0.776791,0.551843,3,90,62,C,2,plain-mlp-abc2
+D2,1,C-mlp-abc2,C final inputs wd=1 epoch=2,T1,0.809524,0.760427,0.531746,3,150,105,C,2,plain-mlp-abc2
+D2,1,C-mlp-abc2,C final inputs wd=1 epoch=2,T2,0.783342,0.761967,0.547029,7,270,188,C,2,plain-mlp-abc2
+D2,1,C-d2,C final inputs p=0 wd=0.01 epoch=2,train,0.878677,0.912363,0.673961,19,390,213,C,2,resmlp
+D2,1,C-d2,C final inputs p=0 wd=0.01 epoch=2,eval_seen,0.867298,0.828333,0.745993,13,240,139,C,2,resmlp
+D2,1,C-d2,C final inputs p=0 wd=0.01 epoch=2,T0,0.818548,0.791466,0.551843,3,90,62,C,2,resmlp
+D2,1,C-d2,C final inputs p=0 wd=0.01 epoch=2,T1,0.816931,0.775093,0.531746,3,150,105,C,2,resmlp
+D2,1,C-d2,C final inputs p=0 wd=0.01 epoch=2,T2,0.79398,0.760428,0.547029,7,270,188,C,2,resmlp
+D2,1,C-d6,C final inputs p=0.3 wd=0.01 epoch=1,train,0.852365,0.853289,0.673961,19,390,213,C,6,resmlp
+D2,1,C-d6,C final inputs p=0.3 wd=0.01 epoch=1,eval_seen,0.88012,0.829567,0.745993,13,240,139,C,6,resmlp
+D2,1,C-d6,C final inputs p=0.3 wd=0.01 epoch=1,T0,0.788018,0.768507,0.551843,3,90,62,C,6,resmlp
+D2,1,C-d6,C final inputs p=0.3 wd=0.01 epoch=1,T1,0.805079,0.770223,0.531746,3,150,105,C,6,resmlp
+D2,1,C-d6,C final inputs p=0.3 wd=0.01 epoch=1,T2,0.775104,0.754874,0.547029,7,270,188,C,6,resmlp
+D2,1,C-d12,C final inputs p=0.3 wd=0.1 epoch=3,train,0.931646,0.971329,0.673961,19,390,213,C,12,resmlp
+D2,1,C-d12,C final inputs p=0.3 wd=0.1 epoch=3,eval_seen,0.868865,0.814359,0.745993,13,240,139,C,12,resmlp
+D2,1,C-d12,C final inputs p=0.3 wd=0.1 epoch=3,T0,0.760369,0.704635,0.551843,3,90,62,C,12,resmlp
+D2,1,C-d12,C final inputs p=0.3 wd=0.1 epoch=3,T1,0.78836,0.7155,0.531746,3,150,105,C,12,resmlp
+D2,1,C-d12,C final inputs p=0.3 wd=0.1 epoch=3,T2,0.776207,0.727072,0.547029,7,270,188,C,12,resmlp
+D2,2,A-linear,layer11 c=1e-06,train,0.855805,0.851096,0.678734,15,369,237,A,0,linear
+D2,2,A-linear,layer11 c=1e-06,eval_seen,0.833535,0.856808,0.698009,15,261,177,A,0,linear
+D2,2,A-linear,layer11 c=1e-06,T0,0.715451,0.675293,0.454105,3,90,37,A,0,linear
+D2,2,A-linear,layer11 c=1e-06,T1,0.70143,0.697984,0.454179,3,150,62,A,0,linear
+D2,2,A-linear,layer11 c=1e-06,T2,0.759976,0.752069,0.573302,9,270,126,A,0,linear
+D2,2,A-mlp-abc2,layer11 wd=0.01 epoch=1,train,0.962377,0.979324,0.678734,15,369,237,A,2,plain-mlp-abc2
+D2,2,A-mlp-abc2,layer11 wd=0.01 epoch=1,eval_seen,0.836091,0.779915,0.698009,15,261,177,A,2,plain-mlp-abc2
+D2,2,A-mlp-abc2,layer11 wd=0.01 epoch=1,T0,0.672616,0.60311,0.454105,3,90,37,A,2,plain-mlp-abc2
+D2,2,A-mlp-abc2,layer11 wd=0.01 epoch=1,T1,0.701796,0.674281,0.454179,3,150,62,A,2,plain-mlp-abc2
+D2,2,A-mlp-abc2,layer11 wd=0.01 epoch=1,T2,0.735064,0.691096,0.573302,9,270,126,A,2,plain-mlp-abc2
+D2,2,A-d2,layer11 p=0 wd=0.01 epoch=1,train,0.958094,0.976424,0.678734,15,369,237,A,2,resmlp
+D2,2,A-d2,layer11 p=0 wd=0.01 epoch=1,eval_seen,0.839588,0.808055,0.698009,15,261,177,A,2,resmlp
+D2,2,A-d2,layer11 p=0 wd=0.01 epoch=1,T0,0.689444,0.599206,0.454105,3,90,37,A,2,resmlp
+D2,2,A-d2,layer11 p=0 wd=0.01 epoch=1,T1,0.657991,0.662717,0.454179,3,150,62,A,2,resmlp
+D2,2,A-d2,layer11 p=0 wd=0.01 epoch=1,T2,0.721396,0.697505,0.573302,9,270,126,A,2,resmlp
+D2,2,A-d6,layer11 p=0 wd=0.01 epoch=1,train,0.96519,0.982153,0.678734,15,369,237,A,6,resmlp
+D2,2,A-d6,layer11 p=0 wd=0.01 epoch=1,eval_seen,0.825733,0.783667,0.698009,15,261,177,A,6,resmlp
+D2,2,A-d6,layer11 p=0 wd=0.01 epoch=1,T0,0.641509,0.543714,0.454105,3,90,37,A,6,resmlp
+D2,2,A-d6,layer11 p=0 wd=0.01 epoch=1,T1,0.675587,0.645104,0.454179,3,150,62,A,6,resmlp
+D2,2,A-d6,layer11 p=0 wd=0.01 epoch=1,T2,0.714451,0.682356,0.573302,9,270,126,A,6,resmlp
+D2,2,A-d12,layer11 p=0.3 wd=0.1 epoch=1,train,0.956783,0.946037,0.678734,15,369,237,A,12,resmlp
+D2,2,A-d12,layer11 p=0.3 wd=0.1 epoch=1,eval_seen,0.840934,0.792116,0.698009,15,261,177,A,12,resmlp
+D2,2,A-d12,layer11 p=0.3 wd=0.1 epoch=1,T0,0.629781,0.559938,0.454105,3,90,37,A,12,resmlp
+D2,2,A-d12,layer11 p=0.3 wd=0.1 epoch=1,T1,0.654142,0.633378,0.454179,3,150,62,A,12,resmlp
+D2,2,A-d12,layer11 p=0.3 wd=0.1 epoch=1,T2,0.714231,0.674131,0.573302,9,270,126,A,12,resmlp
+D2,2,C-linear,final c=0.0001,train,0.857339,0.810011,0.678734,15,369,237,C,0,linear
+D2,2,C-linear,final c=0.0001,eval_seen,0.830778,0.826078,0.698009,15,261,177,C,0,linear
+D2,2,C-linear,final c=0.0001,T0,0.749618,0.667022,0.454105,3,90,37,C,0,linear
+D2,2,C-linear,final c=0.0001,T1,0.71151,0.702413,0.454179,3,150,62,C,0,linear
+D2,2,C-linear,final c=0.0001,T2,0.780754,0.753997,0.573302,9,270,126,C,0,linear
+D2,2,C-mlp-abc2,C final inputs wd=1 epoch=3,train,0.928302,0.904593,0.678734,15,369,237,C,2,plain-mlp-abc2
+D2,2,C-mlp-abc2,C final inputs wd=1 epoch=3,eval_seen,0.840732,0.82458,0.698009,15,261,177,C,2,plain-mlp-abc2
+D2,2,C-mlp-abc2,C final inputs wd=1 epoch=3,T0,0.768995,0.732527,0.454105,3,90,37,C,2,plain-mlp-abc2
+D2,2,C-mlp-abc2,C final inputs wd=1 epoch=3,T1,0.725257,0.741347,0.454179,3,150,62,C,2,plain-mlp-abc2
+D2,2,C-mlp-abc2,C final inputs wd=1 epoch=3,T2,0.778053,0.764756,0.573302,9,270,126,C,2,plain-mlp-abc2
+D2,2,C-d2,C final inputs p=0.3 wd=0.1 epoch=5,train,0.982963,0.991831,0.678734,15,369,237,C,2,resmlp
+D2,2,C-d2,C final inputs p=0.3 wd=0.1 epoch=5,eval_seen,0.846583,0.826771,0.698009,15,261,177,C,2,resmlp
+D2,2,C-d2,C final inputs p=0.3 wd=0.1 epoch=5,T0,0.742478,0.714512,0.454105,3,90,37,C,2,resmlp
+D2,2,C-d2,C final inputs p=0.3 wd=0.1 epoch=5,T1,0.697764,0.744732,0.454179,3,150,62,C,2,resmlp
+D2,2,C-d2,C final inputs p=0.3 wd=0.1 epoch=5,T2,0.755567,0.763517,0.573302,9,270,126,C,2,resmlp
+D2,2,C-d6,C final inputs p=0 wd=0.01 epoch=2,train,0.958285,0.971539,0.678734,15,369,237,C,6,resmlp
+D2,2,C-d6,C final inputs p=0 wd=0.01 epoch=2,eval_seen,0.83784,0.820322,0.698009,15,261,177,C,6,resmlp
+D2,2,C-d6,C final inputs p=0 wd=0.01 epoch=2,T0,0.752677,0.725151,0.454105,3,90,37,C,6,resmlp
+D2,2,C-d6,C final inputs p=0 wd=0.01 epoch=2,T1,0.716092,0.736682,0.454179,3,150,62,C,6,resmlp
+D2,2,C-d6,C final inputs p=0 wd=0.01 epoch=2,T2,0.77651,0.781993,0.573302,9,270,126,C,6,resmlp
+D2,2,C-d12,C final inputs p=0.3 wd=0.1 epoch=5,train,0.988429,0.99727,0.678734,15,369,237,C,12,resmlp
+D2,2,C-d12,C final inputs p=0.3 wd=0.1 epoch=5,eval_seen,0.845709,0.819514,0.698009,15,261,177,C,12,resmlp
+D2,2,C-d12,C final inputs p=0.3 wd=0.1 epoch=5,T0,0.751147,0.707959,0.454105,3,90,37,C,12,resmlp
+D2,2,C-d12,C final inputs p=0.3 wd=0.1 epoch=5,T1,0.702346,0.704999,0.454179,3,150,62,C,12,resmlp
+D2,2,C-d12,C final inputs p=0.3 wd=0.1 epoch=5,T2,0.769015,0.726306,0.573302,9,270,126,C,12,resmlp

@@ -1,0 +1,32 @@
+{
+ "probe": "layer16",
+ "seed": 0,
+ "c": 1e-05,
+ "sklearn_seconds": 3.5184781551361084,
+ "eval_seen": {
+  "row_auroc_gpu": 0.8034142218684508,
+  "row_auroc_sklearn": 0.8034215869521371,
+  "per_task_gpu": 0.7830687830687831,
+  "per_task_sklearn": 0.7830687830687831,
+  "pooled_gpu": 0.8349854227405248,
+  "pooled_sklearn": 0.8349854227405248
+ },
+ "T0": {
+  "row_auroc_gpu": 0.709724204313264,
+  "row_auroc_sklearn": 0.709753151931144,
+  "per_task_gpu": 0.784322295351707,
+  "per_task_sklearn": 0.784322295351707,
+  "pooled_gpu": 0.7465277777777778,
+  "pooled_sklearn": 0.7465277777777778
+ },
+ "T2": {
+  "row_auroc_gpu": 0.7188973181483397,
+  "row_auroc_sklearn": 0.718938559042551,
+  "per_task_gpu": 0.739174983601169,
+  "per_task_sklearn": 0.739174983601169,
+  "pooled_gpu": 0.8085273492286116,
+  "pooled_sklearn": 0.8084712482468444
+ },
+ "max_abs_diff": 5.610098176722644e-05,
+ "passed": true
+}

@@ -1,0 +1,10 @@
+seed,probe,target,H,test set,2-layer MLP,linear probe,persistence (current value),weight decay,best epoch,epochs run,train rows,train positive share
+0,L20:emb_temp:H10,emb_temp[20],10,eval-seen,0.8594,0.8579,0.7725,1,1,6,53511,0.8492
+0,L20:emb_temp:H10,emb_temp[20],10,"unseen tasks, original rollouts",0.7673,0.7366,0.7368,1,1,6,53511,0.8492
+0,L20:emb_temp:H10,emb_temp[20],10,unseen tasks incl. LIBERO-PRO,0.7998,0.772,0.7605,1,1,6,53511,0.8492
+1,L12:xl_final:H10,xl_final[12],10,eval-seen,0.9129,0.9053,0.981,1,2,7,49981,0.5067
+1,L12:xl_final:H10,xl_final[12],10,"unseen tasks, original rollouts",0.7783,0.7691,0.9846,1,2,7,49981,0.5067
+1,L12:xl_final:H10,xl_final[12],10,unseen tasks incl. LIBERO-PRO,0.759,0.7515,0.983,1,2,7,49981,0.5067
+2,L00:emb_temp:H10,emb_temp[0],10,eval-seen,0.7433,0.7386,0.7712,1,1,6,53048,0.868
+2,L00:emb_temp:H10,emb_temp[0],10,"unseen tasks, original rollouts",0.7615,0.7611,0.7877,1,1,6,53048,0.868
+2,L00:emb_temp:H10,emb_temp[0],10,unseen tasks incl. LIBERO-PRO,0.7736,0.772,0.7983,1,1,6,53048,0.868

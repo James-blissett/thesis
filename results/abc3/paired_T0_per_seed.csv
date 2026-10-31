@@ -1,0 +1,235 @@
+test_set,comparison,cond_x,cond_y,detector,detector_x,detector_y,seed,metric,n_test,n_cells_x,n_cells_y,x_point,y_point,diff_point,diff_mean,diff_ci_lo,diff_ci_hi,n_valid,verdict,family,input,depth,pool
+T0,D0:A-d2 - D0:A-linear,D0,D0,A-d2 vs A-linear,A-d2,A-linear,0,m1_per_task,90,3,3,0.705154,0.752014,-0.04686,-0.0458508,-0.120376,0.0242757,1000,no significant change,vs_linear,A,2,D0
+T0,D0:A-d2 - D0:A-linear,D0,D0,A-d2 vs A-linear,A-d2,A-linear,1,m1_per_task,90,3,3,0.675301,0.690116,-0.0148148,-0.0193141,-0.112409,0.0707868,1000,no significant change,vs_linear,A,2,D0
+T0,D0:A-d2 - D0:A-linear,D0,D0,A-d2 vs A-linear,A-d2,A-linear,2,m1_per_task,90,3,3,0.689896,0.706791,-0.0168943,-0.0127745,-0.157953,0.125341,1000,no significant change,vs_linear,A,2,D0
+T0,D0:A-d2 - D0:A-linear,D0,D0,A-d2 vs A-linear,A-d2,A-linear,0,bal_acc,90,3,3,0.547619,0.547619,0,0.00152423,0,0.0212766,1000,no significant change,vs_linear,A,2,D0
+T0,D0:A-d2 - D0:A-linear,D0,D0,A-d2 vs A-linear,A-d2,A-linear,1,bal_acc,90,3,3,0.5,0.562788,-0.062788,-0.0746819,-0.143433,-0.00285553,1000,significant worsening,vs_linear,A,2,D0
+T0,D0:A-d2 - D0:A-linear,D0,D0,A-d2 vs A-linear,A-d2,A-linear,2,bal_acc,90,3,3,0.513514,0.5,0.0135135,0.0134672,0,0.0416667,1000,no significant change,vs_linear,A,2,D0
+T0,D0:A-d2 - D0:A-linear,D0,D0,A-d2 vs A-linear,A-d2,A-linear,0,tpr,90,3,3,0.0952381,0.0952381,0,0.00304846,0,0.0425532,1000,no significant change,vs_linear,A,2,D0
+T0,D0:A-d2 - D0:A-linear,D0,D0,A-d2 vs A-linear,A-d2,A-linear,1,tpr,90,3,3,0,0.16129,-0.16129,-0.184405,-0.323088,-0.0625,1000,significant worsening,vs_linear,A,2,D0
+T0,D0:A-d2 - D0:A-linear,D0,D0,A-d2 vs A-linear,A-d2,A-linear,2,tpr,90,3,3,0.027027,0,0.027027,0.0269344,0,0.0833333,1000,no significant change,vs_linear,A,2,D0
+T0,D0:A-d6 - D0:A-linear,D0,D0,A-d6 vs A-linear,A-d6,A-linear,0,m1_per_task,90,3,3,0.677619,0.752014,-0.074395,-0.0691301,-0.138863,-0.00600228,1000,significant worsening,vs_linear,A,6,D0
+T0,D0:A-d6 - D0:A-linear,D0,D0,A-d6 vs A-linear,A-d6,A-linear,1,m1_per_task,90,3,3,0.667377,0.690116,-0.0227391,-0.029692,-0.125621,0.0617355,1000,no significant change,vs_linear,A,6,D0
+T0,D0:A-d6 - D0:A-linear,D0,D0,A-d6 vs A-linear,A-d6,A-linear,2,m1_per_task,90,3,3,0.64191,0.706791,-0.0648807,-0.0590963,-0.250369,0.111197,1000,no significant change,vs_linear,A,6,D0
+T0,D0:A-d6 - D0:A-linear,D0,D0,A-d6 vs A-linear,A-d6,A-linear,0,bal_acc,90,3,3,0.559524,0.547619,0.0119048,0.011303,0,0.0384615,1000,no significant change,vs_linear,A,6,D0
+T0,D0:A-d6 - D0:A-linear,D0,D0,A-d6 vs A-linear,A-d6,A-linear,1,bal_acc,90,3,3,0.5,0.562788,-0.062788,-0.0749276,-0.143433,-0.00724379,1000,significant worsening,vs_linear,A,6,D0
+T0,D0:A-d6 - D0:A-linear,D0,D0,A-d6 vs A-linear,A-d6,A-linear,2,bal_acc,90,3,3,0.5,0.5,0,0,0,0,1000,no significant change,vs_linear,A,6,D0
+T0,D0:A-d6 - D0:A-linear,D0,D0,A-d6 vs A-linear,A-d6,A-linear,0,tpr,90,3,3,0.119048,0.0952381,0.0238095,0.022606,0,0.0769231,1000,no significant change,vs_linear,A,6,D0
+T0,D0:A-d6 - D0:A-linear,D0,D0,A-d6 vs A-linear,A-d6,A-linear,1,tpr,90,3,3,0,0.16129,-0.16129,-0.18548,-0.323088,-0.0677966,1000,significant worsening,vs_linear,A,6,D0
+T0,D0:A-d6 - D0:A-linear,D0,D0,A-d6 vs A-linear,A-d6,A-linear,2,tpr,90,3,3,0,0,0,0,0,0,1000,no significant change,vs_linear,A,6,D0
+T0,D0:A-d12 - D0:A-linear,D0,D0,A-d12 vs A-linear,A-d12,A-linear,0,m1_per_task,90,3,3,0.658225,0.752014,-0.0937886,-0.0891322,-0.196694,0.00170779,1000,no significant change,vs_linear,A,12,D0
+T0,D0:A-d12 - D0:A-linear,D0,D0,A-d12 vs A-linear,A-d12,A-linear,1,m1_per_task,90,3,3,0.708771,0.690116,0.0186549,0.0122851,-0.0807525,0.104864,1000,no significant change,vs_linear,A,12,D0
+T0,D0:A-d12 - D0:A-linear,D0,D0,A-d12 vs A-linear,A-d12,A-linear,2,m1_per_task,90,3,3,0.687126,0.706791,-0.0196647,-0.013512,-0.166281,0.130442,1000,no significant change,vs_linear,A,12,D0
+T0,D0:A-d12 - D0:A-linear,D0,D0,A-d12 vs A-linear,A-d12,A-linear,0,bal_acc,90,3,3,0.595238,0.547619,0.047619,0.0454952,0,0.0952381,1000,no significant change,vs_linear,A,12,D0
+T0,D0:A-d12 - D0:A-linear,D0,D0,A-d12 vs A-linear,A-d12,A-linear,1,bal_acc,90,3,3,0.5,0.562788,-0.062788,-0.0745412,-0.143433,0.00171961,1000,no significant change,vs_linear,A,12,D0
+T0,D0:A-d12 - D0:A-linear,D0,D0,A-d12 vs A-linear,A-d12,A-linear,2,bal_acc,90,3,3,0.5,0.5,0,0.00540568,0,0.0375,1000,no significant change,vs_linear,A,12,D0
+T0,D0:A-d12 - D0:A-linear,D0,D0,A-d12 vs A-linear,A-d12,A-linear,0,tpr,90,3,3,0.190476,0.0952381,0.0952381,0.0909903,0,0.190476,1000,no significant change,vs_linear,A,12,D0
+T0,D0:A-d12 - D0:A-linear,D0,D0,A-d12 vs A-linear,A-d12,A-linear,1,tpr,90,3,3,0,0.16129,-0.16129,-0.184707,-0.323088,-0.0625,1000,significant worsening,vs_linear,A,12,D0
+T0,D0:A-d12 - D0:A-linear,D0,D0,A-d12 vs A-linear,A-d12,A-linear,2,tpr,90,3,3,0,0,0,0.0108114,0,0.075,1000,no significant change,vs_linear,A,12,D0
+T0,D0:C-d2 - D0:C-linear,D0,D0,C-d2 vs C-linear,C-d2,C-linear,0,m1_per_task,90,3,3,0.596917,0.690105,-0.0931887,-0.0973365,-0.218236,0.00723787,1000,no significant change,vs_linear,C,2,D0
+T0,D0:C-d2 - D0:C-linear,D0,D0,C-d2 vs C-linear,C-d2,C-linear,1,m1_per_task,90,3,3,0.719421,0.773311,-0.0538906,-0.0532091,-0.128251,0.0283507,1000,no significant change,vs_linear,C,2,D0
+T0,D0:C-d2 - D0:C-linear,D0,D0,C-d2 vs C-linear,C-d2,C-linear,2,m1_per_task,90,3,3,0.739117,0.687356,0.0517616,0.0495982,-0.0493253,0.149575,1000,no significant change,vs_linear,C,2,D0
+T0,D0:C-d2 - D0:C-linear,D0,D0,C-d2 vs C-linear,C-d2,C-linear,0,bal_acc,90,3,3,0.700893,0.5,0.200893,0.191376,0.0848303,0.288943,1000,improvement,vs_linear,C,2,D0
+T0,D0:C-d2 - D0:C-linear,D0,D0,C-d2 vs C-linear,C-d2,C-linear,1,bal_acc,90,3,3,0.5,0.5,0,-0.00218349,-0.0294227,0,1000,no significant change,vs_linear,C,2,D0
+T0,D0:C-d2 - D0:C-linear,D0,D0,C-d2 vs C-linear,C-d2,C-linear,2,bal_acc,90,3,3,0.5,0.502805,-0.00280469,-0.00795422,-0.0668021,0.0525006,1000,no significant change,vs_linear,C,2,D0
+T0,D0:C-d2 - D0:C-linear,D0,D0,C-d2 vs C-linear,C-d2,C-linear,0,tpr,90,3,3,0.547619,0,0.547619,0.530233,0.351318,0.694508,1000,improvement,vs_linear,C,2,D0
+T0,D0:C-d2 - D0:C-linear,D0,D0,C-d2 vs C-linear,C-d2,C-linear,1,tpr,90,3,3,0,0,0,-0.00436698,-0.0588455,0,1000,no significant change,vs_linear,C,2,D0
+T0,D0:C-d2 - D0:C-linear,D0,D0,C-d2 vs C-linear,C-d2,C-linear,2,tpr,90,3,3,0,0.0810811,-0.0810811,-0.0902974,-0.189189,0,1000,no significant change,vs_linear,C,2,D0
+T0,D0:C-d6 - D0:C-linear,D0,D0,C-d6 vs C-linear,C-d6,C-linear,0,m1_per_task,90,3,3,0.568507,0.690105,-0.121598,-0.12489,-0.241084,-0.0117197,1000,significant worsening,vs_linear,C,6,D0
+T0,D0:C-d6 - D0:C-linear,D0,D0,C-d6 vs C-linear,C-d6,C-linear,1,m1_per_task,90,3,3,0.763958,0.773311,-0.00935354,-0.00286391,-0.10574,0.101083,1000,no significant change,vs_linear,C,6,D0
+T0,D0:C-d6 - D0:C-linear,D0,D0,C-d6 vs C-linear,C-d6,C-linear,2,m1_per_task,90,3,3,0.712807,0.687356,0.0254517,0.027691,-0.0891109,0.143529,1000,no significant change,vs_linear,C,6,D0
+T0,D0:C-d6 - D0:C-linear,D0,D0,C-d6 vs C-linear,C-d6,C-linear,0,bal_acc,90,3,3,0.630952,0.5,0.130952,0.125398,0.0291305,0.224812,1000,improvement,vs_linear,C,6,D0
+T0,D0:C-d6 - D0:C-linear,D0,D0,C-d6 vs C-linear,C-d6,C-linear,1,bal_acc,90,3,3,0.662442,0.5,0.162442,0.163492,0.0604003,0.253248,1000,improvement,vs_linear,C,6,D0
+T0,D0:C-d6 - D0:C-linear,D0,D0,C-d6 vs C-linear,C-d6,C-linear,2,bal_acc,90,3,3,0.5,0.502805,-0.00280469,-0.00795422,-0.0668021,0.0525006,1000,no significant change,vs_linear,C,6,D0
+T0,D0:C-d6 - D0:C-linear,D0,D0,C-d6 vs C-linear,C-d6,C-linear,0,tpr,90,3,3,0.428571,0,0.428571,0.420405,0.272666,0.574481,1000,improvement,vs_linear,C,6,D0
+T0,D0:C-d6 - D0:C-linear,D0,D0,C-d6 vs C-linear,C-d6,C-linear,1,tpr,90,3,3,0.467742,0,0.467742,0.466206,0.322487,0.589308,1000,improvement,vs_linear,C,6,D0
+T0,D0:C-d6 - D0:C-linear,D0,D0,C-d6 vs C-linear,C-d6,C-linear,2,tpr,90,3,3,0,0.0810811,-0.0810811,-0.0902974,-0.189189,0,1000,no significant change,vs_linear,C,6,D0
+T0,D0:C-d12 - D0:C-linear,D0,D0,C-d12 vs C-linear,C-d12,C-linear,0,m1_per_task,90,3,3,0.668081,0.690105,-0.0220245,-0.0230991,-0.116877,0.0704765,1000,no significant change,vs_linear,C,12,D0
+T0,D0:C-d12 - D0:C-linear,D0,D0,C-d12 vs C-linear,C-d12,C-linear,1,m1_per_task,90,3,3,0.825268,0.773311,0.0519562,0.0543856,-0.0306908,0.143673,1000,no significant change,vs_linear,C,12,D0
+T0,D0:C-d12 - D0:C-linear,D0,D0,C-d12 vs C-linear,C-d12,C-linear,2,m1_per_task,90,3,3,0.662958,0.687356,-0.0243976,-0.0230065,-0.112685,0.0660079,1000,no significant change,vs_linear,C,12,D0
+T0,D0:C-d12 - D0:C-linear,D0,D0,C-d12 vs C-linear,C-d12,C-linear,0,bal_acc,90,3,3,0.561012,0.5,0.0610119,0.0627644,0.0110833,0.125012,1000,improvement,vs_linear,C,12,D0
+T0,D0:C-d12 - D0:C-linear,D0,D0,C-d12 vs C-linear,C-d12,C-linear,1,bal_acc,90,3,3,0.690092,0.5,0.190092,0.186574,0.0889888,0.261212,1000,improvement,vs_linear,C,12,D0
+T0,D0:C-d12 - D0:C-linear,D0,D0,C-d12 vs C-linear,C-d12,C-linear,2,bal_acc,90,3,3,0.513514,0.502805,0.0107088,0.0104531,-0.0369457,0.0636364,1000,no significant change,vs_linear,C,12,D0
+T0,D0:C-d12 - D0:C-linear,D0,D0,C-d12 vs C-linear,C-d12,C-linear,0,tpr,90,3,3,0.142857,0,0.142857,0.152879,0.0526316,0.272854,1000,improvement,vs_linear,C,12,D0
+T0,D0:C-d12 - D0:C-linear,D0,D0,C-d12 vs C-linear,C-d12,C-linear,1,tpr,90,3,3,0.451613,0,0.451613,0.442076,0.302994,0.557426,1000,improvement,vs_linear,C,12,D0
+T0,D0:C-d12 - D0:C-linear,D0,D0,C-d12 vs C-linear,C-d12,C-linear,2,tpr,90,3,3,0.027027,0.0810811,-0.0540541,-0.0534827,-0.128226,0,1000,no significant change,vs_linear,C,12,D0
+T0,D2:A-d2 - D2:A-linear,D2,D2,A-d2 vs A-linear,A-d2,A-linear,0,m1_per_task,90,3,3,0.622875,0.744335,-0.121461,-0.128692,-0.229489,-0.036773,1000,significant worsening,vs_linear,A,2,D2
+T0,D2:A-d2 - D2:A-linear,D2,D2,A-d2 vs A-linear,A-d2,A-linear,1,m1_per_task,90,3,3,0.763882,0.7897,-0.0258182,-0.0284454,-0.125621,0.0694083,1000,no significant change,vs_linear,A,2,D2
+T0,D2:A-d2 - D2:A-linear,D2,D2,A-d2 vs A-linear,A-d2,A-linear,2,m1_per_task,90,3,3,0.599206,0.675293,-0.0760874,-0.0724488,-0.183152,0.0570993,1000,no significant change,vs_linear,A,2,D2
+T0,D2:A-d2 - D2:A-linear,D2,D2,A-d2 vs A-linear,A-d2,A-linear,0,bal_acc,90,3,3,0.630952,0.511905,0.119048,0.117793,0.0595063,0.173926,1000,improvement,vs_linear,A,2,D2
+T0,D2:A-d2 - D2:A-linear,D2,D2,A-d2 vs A-linear,A-d2,A-linear,1,bal_acc,90,3,3,0.604839,0.5,0.104839,0.106312,0.0545211,0.161595,1000,improvement,vs_linear,A,2,D2
+T0,D2:A-d2 - D2:A-linear,D2,D2,A-d2 vs A-linear,A-d2,A-linear,2,bal_acc,90,3,3,0.516318,0.508159,0.0081591,0.00793708,-0.0678922,0.0845453,1000,no significant change,vs_linear,A,2,D2
+T0,D2:A-d2 - D2:A-linear,D2,D2,A-d2 vs A-linear,A-d2,A-linear,0,tpr,90,3,3,0.261905,0.0238095,0.238095,0.236703,0.119013,0.347851,1000,improvement,vs_linear,A,2,D2
+T0,D2:A-d2 - D2:A-linear,D2,D2,A-d2 vs A-linear,A-d2,A-linear,1,tpr,90,3,3,0.209677,0,0.209677,0.212625,0.109042,0.32319,1000,improvement,vs_linear,A,2,D2
+T0,D2:A-d2 - D2:A-linear,D2,D2,A-d2 vs A-linear,A-d2,A-linear,2,tpr,90,3,3,0.108108,0.0540541,0.0540541,0.0553195,-0.0698983,0.189189,1000,no significant change,vs_linear,A,2,D2
+T0,D2:A-d6 - D2:A-linear,D2,D2,A-d6 vs A-linear,A-d6,A-linear,0,m1_per_task,90,3,3,0.632344,0.744335,-0.111991,-0.118845,-0.222098,-0.0273847,1000,significant worsening,vs_linear,A,6,D2
+T0,D2:A-d6 - D2:A-linear,D2,D2,A-d6 vs A-linear,A-d6,A-linear,1,m1_per_task,90,3,3,0.742357,0.7897,-0.0473434,-0.0502735,-0.154378,0.0497744,1000,no significant change,vs_linear,A,6,D2
+T0,D2:A-d6 - D2:A-linear,D2,D2,A-d6 vs A-linear,A-d6,A-linear,2,m1_per_task,90,3,3,0.543714,0.675293,-0.131579,-0.127741,-0.265701,0.0120144,1000,no significant change,vs_linear,A,6,D2
+T0,D2:A-d6 - D2:A-linear,D2,D2,A-d6 vs A-linear,A-d6,A-linear,0,bal_acc,90,3,3,0.625,0.511905,0.113095,0.113305,0.034386,0.186912,1000,improvement,vs_linear,A,6,D2
+T0,D2:A-d6 - D2:A-linear,D2,D2,A-d6 vs A-linear,A-d6,A-linear,1,bal_acc,90,3,3,0.586982,0.5,0.0869816,0.0886559,0.0166406,0.15002,1000,improvement,vs_linear,A,6,D2
+T0,D2:A-d6 - D2:A-linear,D2,D2,A-d6 vs A-linear,A-d6,A-linear,2,bal_acc,90,3,3,0.498725,0.508159,-0.00943396,-0.00984087,-0.0777941,0.05583,1000,no significant change,vs_linear,A,6,D2
+T0,D2:A-d6 - D2:A-linear,D2,D2,A-d6 vs A-linear,A-d6,A-linear,0,tpr,90,3,3,0.333333,0.0238095,0.309524,0.308728,0.18405,0.421053,1000,improvement,vs_linear,A,6,D2
+T0,D2:A-d6 - D2:A-linear,D2,D2,A-d6 vs A-linear,A-d6,A-linear,1,tpr,90,3,3,0.209677,0,0.209677,0.213056,0.0937211,0.323077,1000,improvement,vs_linear,A,6,D2
+T0,D2:A-d6 - D2:A-linear,D2,D2,A-d6 vs A-linear,A-d6,A-linear,2,tpr,90,3,3,0.0540541,0.0540541,0,0.000437265,-0.105263,0.11119,1000,no significant change,vs_linear,A,6,D2
+T0,D2:A-d12 - D2:A-linear,D2,D2,A-d12 vs A-linear,A-d12,A-linear,0,m1_per_task,90,3,3,0.620595,0.744335,-0.12374,-0.127217,-0.224495,-0.0364827,1000,significant worsening,vs_linear,A,12,D2
+T0,D2:A-d12 - D2:A-linear,D2,D2,A-d12 vs A-linear,A-d12,A-linear,1,m1_per_task,90,3,3,0.746941,0.7897,-0.0427593,-0.0454118,-0.147845,0.0500599,1000,no significant change,vs_linear,A,12,D2
+T0,D2:A-d12 - D2:A-linear,D2,D2,A-d12 vs A-linear,A-d12,A-linear,2,m1_per_task,90,3,3,0.559938,0.675293,-0.115355,-0.110799,-0.232066,0.0207201,1000,no significant change,vs_linear,A,12,D2
+T0,D2:A-d12 - D2:A-linear,D2,D2,A-d12 vs A-linear,A-d12,A-linear,0,bal_acc,90,3,3,0.65625,0.511905,0.144345,0.144055,0.0760763,0.205517,1000,improvement,vs_linear,A,12,D2
+T0,D2:A-d12 - D2:A-linear,D2,D2,A-d12 vs A-linear,A-d12,A-linear,1,bal_acc,90,3,3,0.593318,0.5,0.093318,0.100044,0.0299977,0.166245,1000,improvement,vs_linear,A,12,D2
+T0,D2:A-d12 - D2:A-linear,D2,D2,A-d12 vs A-linear,A-d12,A-linear,2,bal_acc,90,3,3,0.50153,0.508159,-0.00662927,-0.00660764,-0.0634957,0.0555622,1000,no significant change,vs_linear,A,12,D2
+T0,D2:A-d12 - D2:A-linear,D2,D2,A-d12 vs A-linear,A-d12,A-linear,0,tpr,90,3,3,0.333333,0.0238095,0.309524,0.308728,0.18405,0.421053,1000,improvement,vs_linear,A,12,D2
+T0,D2:A-d12 - D2:A-linear,D2,D2,A-d12 vs A-linear,A-d12,A-linear,1,tpr,90,3,3,0.258065,0,0.258065,0.271021,0.161276,0.379351,1000,improvement,vs_linear,A,12,D2
+T0,D2:A-d12 - D2:A-linear,D2,D2,A-d12 vs A-linear,A-d12,A-linear,2,tpr,90,3,3,0.135135,0.0540541,0.0810811,0.0815213,0,0.178594,1000,no significant change,vs_linear,A,12,D2
+T0,D2:C-d2 - D2:C-linear,D2,D2,C-d2 vs C-linear,C-d2,C-linear,0,m1_per_task,90,3,3,0.698315,0.678742,0.0195736,0.0180549,-0.0408019,0.0848867,1000,no significant change,vs_linear,C,2,D2
+T0,D2:C-d2 - D2:C-linear,D2,D2,C-d2 vs C-linear,C-d2,C-linear,1,m1_per_task,90,3,3,0.791466,0.753279,0.0381869,0.0304901,-0.0525408,0.111605,1000,no significant change,vs_linear,C,2,D2
+T0,D2:C-d2 - D2:C-linear,D2,D2,C-d2 vs C-linear,C-d2,C-linear,2,m1_per_task,90,3,3,0.714512,0.667022,0.0474904,0.0451,-0.0709262,0.170915,1000,no significant change,vs_linear,C,2,D2
+T0,D2:C-d2 - D2:C-linear,D2,D2,C-d2 vs C-linear,C-d2,C-linear,0,bal_acc,90,3,3,0.574405,0.52381,0.0505952,0.0507472,-0.00500886,0.108698,1000,no significant change,vs_linear,C,2,D2
+T0,D2:C-d2 - D2:C-linear,D2,D2,C-d2 vs C-linear,C-d2,C-linear,1,bal_acc,90,3,3,0.651498,0.635369,0.016129,0.016479,-0.0268514,0.0686359,1000,no significant change,vs_linear,C,2,D2
+T0,D2:C-d2 - D2:C-linear,D2,D2,C-d2 vs C-linear,C-d2,C-linear,2,bal_acc,90,3,3,0.565018,0.490821,0.0741968,0.0768178,-0.0175147,0.171192,1000,no significant change,vs_linear,C,2,D2
+T0,D2:C-d2 - D2:C-linear,D2,D2,C-d2 vs C-linear,C-d2,C-linear,0,tpr,90,3,3,0.190476,0.047619,0.142857,0.142278,0.0499695,0.250133,1000,improvement,vs_linear,C,2,D2
+T0,D2:C-d2 - D2:C-linear,D2,D2,C-d2 vs C-linear,C-d2,C-linear,1,tpr,90,3,3,0.33871,0.306452,0.0322581,0.0329581,-0.0537027,0.137272,1000,no significant change,vs_linear,C,2,D2
+T0,D2:C-d2 - D2:C-linear,D2,D2,C-d2 vs C-linear,C-d2,C-linear,2,tpr,90,3,3,0.243243,0.189189,0.0540541,0.0591971,-0.0909091,0.205882,1000,no significant change,vs_linear,C,2,D2
+T0,D2:C-d6 - D2:C-linear,D2,D2,C-d6 vs C-linear,C-d6,C-linear,0,m1_per_task,90,3,3,0.671937,0.678742,-0.00680447,-0.00848138,-0.059229,0.0456543,1000,no significant change,vs_linear,C,6,D2
+T0,D2:C-d6 - D2:C-linear,D2,D2,C-d6 vs C-linear,C-d6,C-linear,1,m1_per_task,90,3,3,0.768507,0.753279,0.0152273,0.0196806,-0.0471166,0.085517,1000,no significant change,vs_linear,C,6,D2
+T0,D2:C-d6 - D2:C-linear,D2,D2,C-d6 vs C-linear,C-d6,C-linear,2,m1_per_task,90,3,3,0.725151,0.667022,0.0581292,0.0529002,-0.0486173,0.160543,1000,no significant change,vs_linear,C,6,D2
+T0,D2:C-d6 - D2:C-linear,D2,D2,C-d6 vs C-linear,C-d6,C-linear,0,bal_acc,90,3,3,0.550595,0.52381,0.0267857,0.02802,-0.0207878,0.0833333,1000,no significant change,vs_linear,C,6,D2
+T0,D2:C-d6 - D2:C-linear,D2,D2,C-d6 vs C-linear,C-d6,C-linear,1,bal_acc,90,3,3,0.532258,0.635369,-0.103111,-0.0828693,-0.152548,0.00300481,1000,no significant change,vs_linear,C,6,D2
+T0,D2:C-d6 - D2:C-linear,D2,D2,C-d6 vs C-linear,C-d6,C-linear,2,bal_acc,90,3,3,0.554309,0.490821,0.063488,0.065431,-0.0487887,0.178379,1000,no significant change,vs_linear,C,6,D2
+T0,D2:C-d6 - D2:C-linear,D2,D2,C-d6 vs C-linear,C-d6,C-linear,0,tpr,90,3,3,0.142857,0.047619,0.0952381,0.0977496,0.0232426,0.195135,1000,improvement,vs_linear,C,6,D2
+T0,D2:C-d6 - D2:C-linear,D2,D2,C-d6 vs C-linear,C-d6,C-linear,1,tpr,90,3,3,0.0645161,0.306452,-0.241935,-0.201482,-0.31746,-0.0483871,1000,significant worsening,vs_linear,C,6,D2
+T0,D2:C-d6 - D2:C-linear,D2,D2,C-d6 vs C-linear,C-d6,C-linear,2,tpr,90,3,3,0.297297,0.189189,0.108108,0.112188,-0.0667857,0.297365,1000,no significant change,vs_linear,C,6,D2
+T0,D2:C-d12 - D2:C-linear,D2,D2,C-d12 vs C-linear,C-d12,C-linear,0,m1_per_task,90,3,3,0.704383,0.678742,0.025641,0.0250654,-0.0324246,0.085531,1000,no significant change,vs_linear,C,12,D2
+T0,D2:C-d12 - D2:C-linear,D2,D2,C-d12 vs C-linear,C-d12,C-linear,1,m1_per_task,90,3,3,0.704635,0.753279,-0.0486448,-0.0468209,-0.182431,0.0855687,1000,no significant change,vs_linear,C,12,D2
+T0,D2:C-d12 - D2:C-linear,D2,D2,C-d12 vs C-linear,C-d12,C-linear,2,m1_per_task,90,3,3,0.707959,0.667022,0.0409372,0.0348682,-0.0912598,0.161501,1000,no significant change,vs_linear,C,12,D2
+T0,D2:C-d12 - D2:C-linear,D2,D2,C-d12 vs C-linear,C-d12,C-linear,0,bal_acc,90,3,3,0.52381,0.52381,0,0.000317022,-0.0349045,0.0348837,1000,no significant change,vs_linear,C,12,D2
+T0,D2:C-d12 - D2:C-linear,D2,D2,C-d12 vs C-linear,C-d12,C-linear,1,bal_acc,90,3,3,0.623848,0.635369,-0.0115207,-0.00474577,-0.0771745,0.0637979,1000,no significant change,vs_linear,C,12,D2
+T0,D2:C-d12 - D2:C-linear,D2,D2,C-d12 vs C-linear,C-d12,C-linear,2,bal_acc,90,3,3,0.582611,0.490821,0.0917899,0.0914291,-0.00818661,0.185941,1000,no significant change,vs_linear,C,12,D2
+T0,D2:C-d12 - D2:C-linear,D2,D2,C-d12 vs C-linear,C-d12,C-linear,0,tpr,90,3,3,0.047619,0.047619,0,0.000313326,-0.069809,0.0697674,1000,no significant change,vs_linear,C,12,D2
+T0,D2:C-d12 - D2:C-linear,D2,D2,C-d12 vs C-linear,C-d12,C-linear,1,tpr,90,3,3,0.354839,0.306452,0.0483871,0.0617486,-0.0500431,0.185217,1000,no significant change,vs_linear,C,12,D2
+T0,D2:C-d12 - D2:C-linear,D2,D2,C-d12 vs C-linear,C-d12,C-linear,2,tpr,90,3,3,0.297297,0.189189,0.108108,0.108657,-0.0540541,0.276625,1000,no significant change,vs_linear,C,12,D2
+T0,D0:A-d6 - D0:A-d2,D0,D0,A-d6 vs A-d2,A-d6,A-d2,0,m1_per_task,90,3,3,0.677619,0.705154,-0.027535,-0.0232793,-0.0752863,0.0300056,1000,no significant change,vs_depth2,A,6,D0
+T0,D0:A-d6 - D0:A-d2,D0,D0,A-d6 vs A-d2,A-d6,A-d2,1,m1_per_task,90,3,3,0.667377,0.675301,-0.00792424,-0.0103779,-0.0778333,0.0563346,1000,no significant change,vs_depth2,A,6,D0
+T0,D0:A-d6 - D0:A-d2,D0,D0,A-d6 vs A-d2,A-d6,A-d2,2,m1_per_task,90,3,3,0.64191,0.689896,-0.0479864,-0.0463219,-0.145439,0.0342153,1000,no significant change,vs_depth2,A,6,D0
+T0,D0:A-d6 - D0:A-d2,D0,D0,A-d6 vs A-d2,A-d6,A-d2,0,bal_acc,90,3,3,0.559524,0.547619,0.0119048,0.00977877,0,0.0375,1000,no significant change,vs_depth2,A,6,D0
+T0,D0:A-d6 - D0:A-d2,D0,D0,A-d6 vs A-d2,A-d6,A-d2,1,bal_acc,90,3,3,0.5,0.5,0,-0.000245706,0,0,1000,no significant change,vs_depth2,A,6,D0
+T0,D0:A-d6 - D0:A-d2,D0,D0,A-d6 vs A-d2,A-d6,A-d2,2,bal_acc,90,3,3,0.5,0.513514,-0.0135135,-0.0134672,-0.0416667,0,1000,no significant change,vs_depth2,A,6,D0
+T0,D0:A-d6 - D0:A-d2,D0,D0,A-d6 vs A-d2,A-d6,A-d2,0,tpr,90,3,3,0.119048,0.0952381,0.0238095,0.0195575,0,0.075,1000,no significant change,vs_depth2,A,6,D0
+T0,D0:A-d6 - D0:A-d2,D0,D0,A-d6 vs A-d2,A-d6,A-d2,1,tpr,90,3,3,0,0,0,-0.00107455,0,0,1000,no significant change,vs_depth2,A,6,D0
+T0,D0:A-d6 - D0:A-d2,D0,D0,A-d6 vs A-d2,A-d6,A-d2,2,tpr,90,3,3,0,0.027027,-0.027027,-0.0269344,-0.0833333,0,1000,no significant change,vs_depth2,A,6,D0
+T0,D0:A-d12 - D0:A-d2,D0,D0,A-d12 vs A-d2,A-d12,A-d2,0,m1_per_task,90,3,3,0.658225,0.705154,-0.0469286,-0.0432814,-0.158616,0.0444429,1000,no significant change,vs_depth2,A,12,D0
+T0,D0:A-d12 - D0:A-d2,D0,D0,A-d12 vs A-d2,A-d12,A-d2,1,m1_per_task,90,3,3,0.708771,0.675301,0.0334697,0.0315992,-0.021213,0.0952069,1000,no significant change,vs_depth2,A,12,D0
+T0,D0:A-d12 - D0:A-d2,D0,D0,A-d12 vs A-d2,A-d12,A-d2,2,m1_per_task,90,3,3,0.687126,0.689896,-0.00277045,-0.000737469,-0.0718635,0.0778588,1000,no significant change,vs_depth2,A,12,D0
+T0,D0:A-d12 - D0:A-d2,D0,D0,A-d12 vs A-d2,A-d12,A-d2,0,bal_acc,90,3,3,0.595238,0.547619,0.047619,0.0439709,0,0.0952381,1000,no significant change,vs_depth2,A,12,D0
+T0,D0:A-d12 - D0:A-d2,D0,D0,A-d12 vs A-d2,A-d12,A-d2,1,bal_acc,90,3,3,0.5,0.5,0,0.000140719,0,0,1000,no significant change,vs_depth2,A,12,D0
+T0,D0:A-d12 - D0:A-d2,D0,D0,A-d12 vs A-d2,A-d12,A-d2,2,bal_acc,90,3,3,0.5,0.513514,-0.0135135,-0.00806149,-0.0357361,0,1000,no significant change,vs_depth2,A,12,D0
+T0,D0:A-d12 - D0:A-d2,D0,D0,A-d12 vs A-d2,A-d12,A-d2,0,tpr,90,3,3,0.190476,0.0952381,0.0952381,0.0879419,0,0.190476,1000,no significant change,vs_depth2,A,12,D0
+T0,D0:A-d12 - D0:A-d2,D0,D0,A-d12 vs A-d2,A-d12,A-d2,1,tpr,90,3,3,0,0,0,-0.000301698,0,0,1000,no significant change,vs_depth2,A,12,D0
+T0,D0:A-d12 - D0:A-d2,D0,D0,A-d12 vs A-d2,A-d12,A-d2,2,tpr,90,3,3,0,0.027027,-0.027027,-0.016123,-0.0714721,0,1000,no significant change,vs_depth2,A,12,D0
+T0,D0:C-d6 - D0:C-d2,D0,D0,C-d6 vs C-d2,C-d6,C-d2,0,m1_per_task,90,3,3,0.568507,0.596917,-0.0284091,-0.0275534,-0.0916593,0.0316456,1000,no significant change,vs_depth2,C,6,D0
+T0,D0:C-d6 - D0:C-d2,D0,D0,C-d6 vs C-d2,C-d6,C-d2,1,m1_per_task,90,3,3,0.763958,0.719421,0.044537,0.0503452,-0.0393389,0.145006,1000,no significant change,vs_depth2,C,6,D0
+T0,D0:C-d6 - D0:C-d2,D0,D0,C-d6 vs C-d2,C-d6,C-d2,2,m1_per_task,90,3,3,0.712807,0.739117,-0.0263099,-0.0219072,-0.08404,0.039087,1000,no significant change,vs_depth2,C,6,D0
+T0,D0:C-d6 - D0:C-d2,D0,D0,C-d6 vs C-d2,C-d6,C-d2,0,bal_acc,90,3,3,0.630952,0.700893,-0.0699405,-0.0659776,-0.129749,-0.00352936,1000,significant worsening,vs_depth2,C,6,D0
+T0,D0:C-d6 - D0:C-d2,D0,D0,C-d6 vs C-d2,C-d6,C-d2,1,bal_acc,90,3,3,0.662442,0.5,0.162442,0.165675,0.0604003,0.25844,1000,improvement,vs_depth2,C,6,D0
+T0,D0:C-d6 - D0:C-d2,D0,D0,C-d6 vs C-d2,C-d6,C-d2,2,bal_acc,90,3,3,0.5,0.5,0,0,0,0,1000,no significant change,vs_depth2,C,6,D0
+T0,D0:C-d6 - D0:C-d2,D0,D0,C-d6 vs C-d2,C-d6,C-d2,0,tpr,90,3,3,0.428571,0.547619,-0.119048,-0.109828,-0.217391,0,1000,no significant change,vs_depth2,C,6,D0
+T0,D0:C-d6 - D0:C-d2,D0,D0,C-d6 vs C-d2,C-d6,C-d2,1,tpr,90,3,3,0.467742,0,0.467742,0.470573,0.327771,0.59322,1000,improvement,vs_depth2,C,6,D0
+T0,D0:C-d6 - D0:C-d2,D0,D0,C-d6 vs C-d2,C-d6,C-d2,2,tpr,90,3,3,0,0,0,0,0,0,1000,no significant change,vs_depth2,C,6,D0
+T0,D0:C-d12 - D0:C-d2,D0,D0,C-d12 vs C-d2,C-d12,C-d2,0,m1_per_task,90,3,3,0.668081,0.596917,0.0711641,0.0742374,-0.00978303,0.165862,1000,no significant change,vs_depth2,C,12,D0
+T0,D0:C-d12 - D0:C-d2,D0,D0,C-d12 vs C-d2,C-d12,C-d2,1,m1_per_task,90,3,3,0.825268,0.719421,0.105847,0.107595,0.0113441,0.214973,1000,improvement,vs_depth2,C,12,D0
+T0,D0:C-d12 - D0:C-d2,D0,D0,C-d12 vs C-d2,C-d12,C-d2,2,m1_per_task,90,3,3,0.662958,0.739117,-0.0761592,-0.0726048,-0.172675,0.0162435,1000,no significant change,vs_depth2,C,12,D0
+T0,D0:C-d12 - D0:C-d2,D0,D0,C-d12 vs C-d2,C-d12,C-d2,0,bal_acc,90,3,3,0.561012,0.700893,-0.139881,-0.128611,-0.223919,-0.0299798,1000,significant worsening,vs_depth2,C,12,D0
+T0,D0:C-d12 - D0:C-d2,D0,D0,C-d12 vs C-d2,C-d12,C-d2,1,bal_acc,90,3,3,0.690092,0.5,0.190092,0.188758,0.090885,0.26392,1000,improvement,vs_depth2,C,12,D0
+T0,D0:C-d12 - D0:C-d2,D0,D0,C-d12 vs C-d2,C-d12,C-d2,2,bal_acc,90,3,3,0.513514,0.5,0.0135135,0.0184073,0,0.0555556,1000,no significant change,vs_depth2,C,12,D0
+T0,D0:C-d12 - D0:C-d2,D0,D0,C-d12 vs C-d2,C-d12,C-d2,0,tpr,90,3,3,0.142857,0.547619,-0.404762,-0.377354,-0.555691,-0.186001,1000,significant worsening,vs_depth2,C,12,D0
+T0,D0:C-d12 - D0:C-d2,D0,D0,C-d12 vs C-d2,C-d12,C-d2,1,tpr,90,3,3,0.451613,0,0.451613,0.446443,0.327627,0.564554,1000,improvement,vs_depth2,C,12,D0
+T0,D0:C-d12 - D0:C-d2,D0,D0,C-d12 vs C-d2,C-d12,C-d2,2,tpr,90,3,3,0.027027,0,0.027027,0.0368146,0,0.111111,1000,no significant change,vs_depth2,C,12,D0
+T0,D2:A-d6 - D2:A-d2,D2,D2,A-d6 vs A-d2,A-d6,A-d2,0,m1_per_task,90,3,3,0.632344,0.622875,0.0094697,0.00984749,-0.0413041,0.0602013,1000,no significant change,vs_depth2,A,6,D2
+T0,D2:A-d6 - D2:A-d2,D2,D2,A-d6 vs A-d2,A-d6,A-d2,1,m1_per_task,90,3,3,0.742357,0.763882,-0.0215253,-0.021828,-0.0668898,0.0180362,1000,no significant change,vs_depth2,A,6,D2
+T0,D2:A-d6 - D2:A-d2,D2,D2,A-d6 vs A-d2,A-d6,A-d2,2,m1_per_task,90,3,3,0.543714,0.599206,-0.0554912,-0.0552918,-0.142474,0.0251742,1000,no significant change,vs_depth2,A,6,D2
+T0,D2:A-d6 - D2:A-d2,D2,D2,A-d6 vs A-d2,A-d6,A-d2,0,bal_acc,90,3,3,0.625,0.630952,-0.00595238,-0.00448719,-0.0592526,0.0533832,1000,no significant change,vs_depth2,A,6,D2
+T0,D2:A-d6 - D2:A-d2,D2,D2,A-d6 vs A-d2,A-d6,A-d2,1,bal_acc,90,3,3,0.586982,0.604839,-0.0178571,-0.0176565,-0.0833525,0.0415593,1000,no significant change,vs_depth2,A,6,D2
+T0,D2:A-d6 - D2:A-d2,D2,D2,A-d6 vs A-d2,A-d6,A-d2,2,bal_acc,90,3,3,0.498725,0.516318,-0.0175931,-0.0177779,-0.0625,0.0181877,1000,no significant change,vs_depth2,A,6,D2
+T0,D2:A-d6 - D2:A-d2,D2,D2,A-d6 vs A-d2,A-d6,A-d2,0,tpr,90,3,3,0.333333,0.261905,0.0714286,0.0720252,0,0.155573,1000,no significant change,vs_depth2,A,6,D2
+T0,D2:A-d6 - D2:A-d2,D2,D2,A-d6 vs A-d2,A-d6,A-d2,1,tpr,90,3,3,0.209677,0.209677,0,0.000430551,-0.112949,0.105324,1000,no significant change,vs_depth2,A,6,D2
+T0,D2:A-d6 - D2:A-d2,D2,D2,A-d6 vs A-d2,A-d6,A-d2,2,tpr,90,3,3,0.0540541,0.108108,-0.0540541,-0.0548822,-0.133378,0,1000,no significant change,vs_depth2,A,6,D2
+T0,D2:A-d12 - D2:A-d2,D2,D2,A-d12 vs A-d2,A-d12,A-d2,0,m1_per_task,90,3,3,0.620595,0.622875,-0.00227958,0.00147484,-0.0563263,0.0683489,1000,no significant change,vs_depth2,A,12,D2
+T0,D2:A-d12 - D2:A-d2,D2,D2,A-d12 vs A-d2,A-d12,A-d2,1,m1_per_task,90,3,3,0.746941,0.763882,-0.0169411,-0.0169664,-0.0600929,0.0238473,1000,no significant change,vs_depth2,A,12,D2
+T0,D2:A-d12 - D2:A-d2,D2,D2,A-d12 vs A-d2,A-d12,A-d2,2,m1_per_task,90,3,3,0.559938,0.599206,-0.0392673,-0.0383498,-0.125358,0.0356151,1000,no significant change,vs_depth2,A,12,D2
+T0,D2:A-d12 - D2:A-d2,D2,D2,A-d12 vs A-d2,A-d12,A-d2,0,bal_acc,90,3,3,0.65625,0.630952,0.0252976,0.0262628,-0.0136142,0.0700537,1000,no significant change,vs_depth2,A,12,D2
+T0,D2:A-d12 - D2:A-d2,D2,D2,A-d12 vs A-d2,A-d12,A-d2,1,bal_acc,90,3,3,0.593318,0.604839,-0.0115207,-0.00626879,-0.0757715,0.0588616,1000,no significant change,vs_depth2,A,12,D2
+T0,D2:A-d12 - D2:A-d2,D2,D2,A-d12 vs A-d2,A-d12,A-d2,2,bal_acc,90,3,3,0.50153,0.516318,-0.0147884,-0.0145447,-0.0825109,0.0522694,1000,no significant change,vs_depth2,A,12,D2
+T0,D2:A-d12 - D2:A-d2,D2,D2,A-d12 vs A-d2,A-d12,A-d2,0,tpr,90,3,3,0.333333,0.261905,0.0714286,0.0720252,0,0.155573,1000,no significant change,vs_depth2,A,12,D2
+T0,D2:A-d12 - D2:A-d2,D2,D2,A-d12 vs A-d2,A-d12,A-d2,1,tpr,90,3,3,0.258065,0.209677,0.0483871,0.0583957,-0.0333475,0.161356,1000,no significant change,vs_depth2,A,12,D2
+T0,D2:A-d12 - D2:A-d2,D2,D2,A-d12 vs A-d2,A-d12,A-d2,2,tpr,90,3,3,0.135135,0.108108,0.027027,0.0262019,-0.0909091,0.153906,1000,no significant change,vs_depth2,A,12,D2
+T0,D2:C-d6 - D2:C-d2,D2,D2,C-d6 vs C-d2,C-d6,C-d2,0,m1_per_task,90,3,3,0.671937,0.698315,-0.026378,-0.0265363,-0.0821243,0.0265702,1000,no significant change,vs_depth2,C,6,D2
+T0,D2:C-d6 - D2:C-d2,D2,D2,C-d6 vs C-d2,C-d6,C-d2,1,m1_per_task,90,3,3,0.768507,0.791466,-0.0229596,-0.0108095,-0.0682317,0.0463393,1000,no significant change,vs_depth2,C,6,D2
+T0,D2:C-d6 - D2:C-d2,D2,D2,C-d6 vs C-d2,C-d6,C-d2,2,m1_per_task,90,3,3,0.725151,0.714512,0.0106389,0.00780018,-0.0531764,0.0686182,1000,no significant change,vs_depth2,C,6,D2
+T0,D2:C-d6 - D2:C-d2,D2,D2,C-d6 vs C-d2,C-d6,C-d2,0,bal_acc,90,3,3,0.550595,0.574405,-0.0238095,-0.0227273,-0.0688511,0.0217391,1000,no significant change,vs_depth2,C,6,D2
+T0,D2:C-d6 - D2:C-d2,D2,D2,C-d6 vs C-d2,C-d6,C-d2,1,bal_acc,90,3,3,0.532258,0.651498,-0.11924,-0.0993483,-0.175,-0.0154958,1000,significant worsening,vs_depth2,C,6,D2
+T0,D2:C-d6 - D2:C-d2,D2,D2,C-d6 vs C-d2,C-d6,C-d2,2,bal_acc,90,3,3,0.554309,0.565018,-0.0107088,-0.0113868,-0.0879717,0.0614684,1000,no significant change,vs_depth2,C,6,D2
+T0,D2:C-d6 - D2:C-d2,D2,D2,C-d6 vs C-d2,C-d6,C-d2,0,tpr,90,3,3,0.142857,0.190476,-0.047619,-0.0445284,-0.121951,0,1000,no significant change,vs_depth2,C,6,D2
+T0,D2:C-d6 - D2:C-d2,D2,D2,C-d6 vs C-d2,C-d6,C-d2,1,tpr,90,3,3,0.0645161,0.33871,-0.274194,-0.23444,-0.363636,-0.0819342,1000,significant worsening,vs_depth2,C,6,D2
+T0,D2:C-d6 - D2:C-d2,D2,D2,C-d6 vs C-d2,C-d6,C-d2,2,tpr,90,3,3,0.297297,0.243243,0.0540541,0.0529914,-0.0625504,0.181818,1000,no significant change,vs_depth2,C,6,D2
+T0,D2:C-d12 - D2:C-d2,D2,D2,C-d12 vs C-d2,C-d12,C-d2,0,m1_per_task,90,3,3,0.704383,0.698315,0.00606746,0.00701045,-0.0520955,0.0606436,1000,no significant change,vs_depth2,C,12,D2
+T0,D2:C-d12 - D2:C-d2,D2,D2,C-d12 vs C-d2,C-d12,C-d2,1,m1_per_task,90,3,3,0.704635,0.791466,-0.0868316,-0.077311,-0.164061,0.000435798,1000,no significant change,vs_depth2,C,12,D2
+T0,D2:C-d12 - D2:C-d2,D2,D2,C-d12 vs C-d2,C-d12,C-d2,2,m1_per_task,90,3,3,0.707959,0.714512,-0.00655316,-0.0102318,-0.0828587,0.0658674,1000,no significant change,vs_depth2,C,12,D2
+T0,D2:C-d12 - D2:C-d2,D2,D2,C-d12 vs C-d2,C-d12,C-d2,0,bal_acc,90,3,3,0.52381,0.574405,-0.0505952,-0.0504302,-0.117056,0.00625395,1000,no significant change,vs_depth2,C,12,D2
+T0,D2:C-d12 - D2:C-d2,D2,D2,C-d12 vs C-d2,C-d12,C-d2,1,bal_acc,90,3,3,0.623848,0.651498,-0.0276498,-0.0212248,-0.0916898,0.0401403,1000,no significant change,vs_depth2,C,12,D2
+T0,D2:C-d12 - D2:C-d2,D2,D2,C-d12 vs C-d2,C-d12,C-d2,2,bal_acc,90,3,3,0.582611,0.565018,0.0175931,0.0146113,-0.0730042,0.102412,1000,no significant change,vs_depth2,C,12,D2
+T0,D2:C-d12 - D2:C-d2,D2,D2,C-d12 vs C-d2,C-d12,C-d2,0,tpr,90,3,3,0.047619,0.190476,-0.142857,-0.141965,-0.258113,-0.0392157,1000,significant worsening,vs_depth2,C,12,D2
+T0,D2:C-d12 - D2:C-d2,D2,D2,C-d12 vs C-d2,C-d12,C-d2,1,tpr,90,3,3,0.354839,0.33871,0.016129,0.0287905,-0.0616129,0.125044,1000,no significant change,vs_depth2,C,12,D2
+T0,D2:C-d12 - D2:C-d2,D2,D2,C-d12 vs C-d2,C-d12,C-d2,2,tpr,90,3,3,0.297297,0.243243,0.0540541,0.0494603,-0.114286,0.210526,1000,no significant change,vs_depth2,C,12,D2
+T0,D2 - D0,D2,D0,A-d2,A-d2,A-d2,0,m1_per_task,90,3,3,0.622875,0.705154,-0.0822792,-0.0854963,-0.23569,0.0628174,1000,no significant change,D2_vs_D0,A,2,
+T0,D2 - D0,D2,D0,A-d2,A-d2,A-d2,1,m1_per_task,90,3,3,0.763882,0.675301,0.0885808,0.0898571,-0.0243006,0.203589,1000,no significant change,D2_vs_D0,A,2,
+T0,D2 - D0,D2,D0,A-d2,A-d2,A-d2,2,m1_per_task,90,3,3,0.599206,0.689896,-0.0906908,-0.0922179,-0.241433,0.054692,1000,no significant change,D2_vs_D0,A,2,
+T0,D2 - D0,D2,D0,A-d2,A-d2,A-d2,0,bal_acc,90,3,3,0.630952,0.547619,0.0833333,0.0760219,0.0118912,0.134171,1000,improvement,D2_vs_D0,A,2,
+T0,D2 - D0,D2,D0,A-d2,A-d2,A-d2,1,bal_acc,90,3,3,0.604839,0.5,0.104839,0.106199,0.0529976,0.161595,1000,improvement,D2_vs_D0,A,2,
+T0,D2 - D0,D2,D0,A-d2,A-d2,A-d2,2,bal_acc,90,3,3,0.516318,0.513514,0.00280469,0.00324981,-0.0656011,0.0766366,1000,no significant change,D2_vs_D0,A,2,
+T0,D2 - D0,D2,D0,A-d2,A-d2,A-d2,0,tpr,90,3,3,0.261905,0.0952381,0.166667,0.153161,0.0238095,0.268342,1000,improvement,D2_vs_D0,A,2,
+T0,D2 - D0,D2,D0,A-d2,A-d2,A-d2,1,tpr,90,3,3,0.209677,0,0.209677,0.211814,0.098321,0.32319,1000,improvement,D2_vs_D0,A,2,
+T0,D2 - D0,D2,D0,A-d2,A-d2,A-d2,2,tpr,90,3,3,0.108108,0.027027,0.0810811,0.0830428,-0.0285714,0.205128,1000,no significant change,D2_vs_D0,A,2,
+T0,D2 - D0,D2,D0,A-d6,A-d6,A-d6,0,m1_per_task,90,3,3,0.632344,0.677619,-0.0452746,-0.0523695,-0.198814,0.0972286,1000,no significant change,D2_vs_D0,A,6,
+T0,D2 - D0,D2,D0,A-d6,A-d6,A-d6,1,m1_per_task,90,3,3,0.742357,0.667377,0.0749798,0.078407,-0.0436559,0.203641,1000,no significant change,D2_vs_D0,A,6,
+T0,D2 - D0,D2,D0,A-d6,A-d6,A-d6,2,m1_per_task,90,3,3,0.543714,0.64191,-0.0981956,-0.101188,-0.271431,0.0635819,1000,no significant change,D2_vs_D0,A,6,
+T0,D2 - D0,D2,D0,A-d6,A-d6,A-d6,0,bal_acc,90,3,3,0.625,0.559524,0.0654762,0.0617559,-0.0134301,0.13632,1000,no significant change,D2_vs_D0,A,6,
+T0,D2 - D0,D2,D0,A-d6,A-d6,A-d6,1,bal_acc,90,3,3,0.586982,0.5,0.0869816,0.088788,0.0198112,0.15002,1000,improvement,D2_vs_D0,A,6,
+T0,D2 - D0,D2,D0,A-d6,A-d6,A-d6,2,bal_acc,90,3,3,0.498725,0.5,-0.00127486,-0.00106096,-0.0471698,0.05,1000,no significant change,D2_vs_D0,A,6,
+T0,D2 - D0,D2,D0,A-d6,A-d6,A-d6,0,tpr,90,3,3,0.333333,0.119048,0.214286,0.205629,0.0888406,0.325015,1000,improvement,D2_vs_D0,A,6,
+T0,D2 - D0,D2,D0,A-d6,A-d6,A-d6,1,tpr,90,3,3,0.209677,0,0.209677,0.21332,0.0952009,0.323077,1000,improvement,D2_vs_D0,A,6,
+T0,D2 - D0,D2,D0,A-d6,A-d6,A-d6,2,tpr,90,3,3,0.0540541,0,0.0540541,0.055095,0,0.142857,1000,no significant change,D2_vs_D0,A,6,
+T0,D2 - D0,D2,D0,A-d12,A-d12,A-d12,0,m1_per_task,90,3,3,0.620595,0.658225,-0.0376303,-0.0407401,-0.221401,0.151022,1000,no significant change,D2_vs_D0,A,12,
+T0,D2 - D0,D2,D0,A-d12,A-d12,A-d12,1,m1_per_task,90,3,3,0.746941,0.708771,0.03817,0.0412914,-0.0830778,0.159227,1000,no significant change,D2_vs_D0,A,12,
+T0,D2 - D0,D2,D0,A-d12,A-d12,A-d12,2,m1_per_task,90,3,3,0.559938,0.687126,-0.127188,-0.12983,-0.295006,0.0352953,1000,no significant change,D2_vs_D0,A,12,
+T0,D2 - D0,D2,D0,A-d12,A-d12,A-d12,0,bal_acc,90,3,3,0.65625,0.595238,0.0610119,0.0583137,0.00422474,0.115051,1000,improvement,D2_vs_D0,A,12,
+T0,D2 - D0,D2,D0,A-d12,A-d12,A-d12,1,bal_acc,90,3,3,0.593318,0.5,0.093318,0.0997893,0.0276778,0.166245,1000,improvement,D2_vs_D0,A,12,
+T0,D2 - D0,D2,D0,A-d12,A-d12,A-d12,2,bal_acc,90,3,3,0.50153,0.5,0.00152983,-0.00323342,-0.077137,0.0731742,1000,no significant change,D2_vs_D0,A,12,
+T0,D2 - D0,D2,D0,A-d12,A-d12,A-d12,0,tpr,90,3,3,0.333333,0.190476,0.142857,0.137245,0.0464852,0.243902,1000,improvement,D2_vs_D0,A,12,
+T0,D2 - D0,D2,D0,A-d12,A-d12,A-d12,1,tpr,90,3,3,0.258065,0,0.258065,0.270512,0.149939,0.379351,1000,improvement,D2_vs_D0,A,12,
+T0,D2 - D0,D2,D0,A-d12,A-d12,A-d12,2,tpr,90,3,3,0.135135,0,0.135135,0.125368,0.025641,0.25,1000,improvement,D2_vs_D0,A,12,
+T0,D2 - D0,D2,D0,C-d2,C-d2,C-d2,0,m1_per_task,90,3,3,0.698315,0.596917,0.101399,0.106163,0.00402903,0.213985,1000,improvement,D2_vs_D0,C,2,
+T0,D2 - D0,D2,D0,C-d2,C-d2,C-d2,1,m1_per_task,90,3,3,0.791466,0.719421,0.0720455,0.0625027,-0.0384999,0.170066,1000,no significant change,D2_vs_D0,C,2,
+T0,D2 - D0,D2,D0,C-d2,C-d2,C-d2,2,m1_per_task,90,3,3,0.714512,0.739117,-0.0246048,-0.0231249,-0.119601,0.0796169,1000,no significant change,D2_vs_D0,C,2,
+T0,D2 - D0,D2,D0,C-d2,C-d2,C-d2,0,bal_acc,90,3,3,0.574405,0.700893,-0.126488,-0.125187,-0.216446,-0.0331689,1000,significant worsening,D2_vs_D0,C,2,
+T0,D2 - D0,D2,D0,C-d2,C-d2,C-d2,1,bal_acc,90,3,3,0.651498,0.5,0.151498,0.152728,0.0639292,0.220339,1000,improvement,D2_vs_D0,C,2,
+T0,D2 - D0,D2,D0,C-d2,C-d2,C-d2,2,bal_acc,90,3,3,0.565018,0.5,0.0650178,0.0683781,-0.0153699,0.150091,1000,no significant change,D2_vs_D0,C,2,
+T0,D2 - D0,D2,D0,C-d2,C-d2,C-d2,0,tpr,90,3,3,0.190476,0.547619,-0.357143,-0.35675,-0.511124,-0.222222,1000,significant worsening,D2_vs_D0,C,2,
+T0,D2 - D0,D2,D0,C-d2,C-d2,C-d2,1,tpr,90,3,3,0.33871,0,0.33871,0.341199,0.214087,0.454585,1000,improvement,D2_vs_D0,C,2,
+T0,D2 - D0,D2,D0,C-d2,C-d2,C-d2,2,tpr,90,3,3,0.243243,0,0.243243,0.247401,0.111036,0.393959,1000,improvement,D2_vs_D0,C,2,
+T0,D2 - D0,D2,D0,C-d6,C-d6,C-d6,0,m1_per_task,90,3,3,0.671937,0.568507,0.10343,0.10718,-0.00747468,0.220879,1000,no significant change,D2_vs_D0,C,6,
+T0,D2 - D0,D2,D0,C-d6,C-d6,C-d6,1,m1_per_task,90,3,3,0.768507,0.763958,0.00454882,0.00134807,-0.0921322,0.0895046,1000,no significant change,D2_vs_D0,C,6,
+T0,D2 - D0,D2,D0,C-d6,C-d6,C-d6,2,m1_per_task,90,3,3,0.725151,0.712807,0.0123439,0.00658254,-0.0761651,0.0902323,1000,no significant change,D2_vs_D0,C,6,
+T0,D2 - D0,D2,D0,C-d6,C-d6,C-d6,0,bal_acc,90,3,3,0.550595,0.630952,-0.0803571,-0.0819363,-0.171326,0.0104694,1000,no significant change,D2_vs_D0,C,6,
+T0,D2 - D0,D2,D0,C-d6,C-d6,C-d6,1,bal_acc,90,3,3,0.532258,0.662442,-0.130184,-0.112296,-0.210913,-0.0168229,1000,significant worsening,D2_vs_D0,C,6,
+T0,D2 - D0,D2,D0,C-d6,C-d6,C-d6,2,bal_acc,90,3,3,0.554309,0.5,0.054309,0.0569913,-0.0324074,0.145083,1000,no significant change,D2_vs_D0,C,6,
+T0,D2 - D0,D2,D0,C-d6,C-d6,C-d6,0,tpr,90,3,3,0.142857,0.428571,-0.285714,-0.291451,-0.439078,-0.142857,1000,significant worsening,D2_vs_D0,C,6,
+T0,D2 - D0,D2,D0,C-d6,C-d6,C-d6,1,tpr,90,3,3,0.0645161,0.467742,-0.403226,-0.363814,-0.517241,-0.171429,1000,significant worsening,D2_vs_D0,C,6,
+T0,D2 - D0,D2,D0,C-d6,C-d6,C-d6,2,tpr,90,3,3,0.297297,0,0.297297,0.300392,0.15625,0.45006,1000,improvement,D2_vs_D0,C,6,
+T0,D2 - D0,D2,D0,C-d12,C-d12,C-d12,0,m1_per_task,90,3,3,0.704383,0.668081,0.0363019,0.0389357,-0.0810734,0.156005,1000,no significant change,D2_vs_D0,C,12,
+T0,D2 - D0,D2,D0,C-d12,C-d12,C-d12,1,m1_per_task,90,3,3,0.704635,0.825268,-0.120633,-0.122403,-0.243759,0.00155202,1000,no significant change,D2_vs_D0,C,12,
+T0,D2 - D0,D2,D0,C-d12,C-d12,C-d12,2,m1_per_task,90,3,3,0.707959,0.662958,0.0450012,0.0392481,-0.08384,0.176123,1000,no significant change,D2_vs_D0,C,12,
+T0,D2 - D0,D2,D0,C-d12,C-d12,C-d12,0,bal_acc,90,3,3,0.52381,0.561012,-0.0372024,-0.0470056,-0.13377,0.0200102,1000,no significant change,D2_vs_D0,C,12,
+T0,D2 - D0,D2,D0,C-d12,C-d12,C-d12,1,bal_acc,90,3,3,0.623848,0.690092,-0.0662442,-0.0572549,-0.134797,0.0228443,1000,no significant change,D2_vs_D0,C,12,
+T0,D2 - D0,D2,D0,C-d12,C-d12,C-d12,2,bal_acc,90,3,3,0.582611,0.513514,0.0690974,0.064582,-0.0240141,0.157407,1000,no significant change,D2_vs_D0,C,12,
+T0,D2 - D0,D2,D0,C-d12,C-d12,C-d12,0,tpr,90,3,3,0.047619,0.142857,-0.0952381,-0.121361,-0.309524,0,1000,no significant change,D2_vs_D0,C,12,
+T0,D2 - D0,D2,D0,C-d12,C-d12,C-d12,1,tpr,90,3,3,0.354839,0.451613,-0.0967742,-0.0764532,-0.184661,0.0317588,1000,no significant change,D2_vs_D0,C,12,
+T0,D2 - D0,D2,D0,C-d12,C-d12,C-d12,2,tpr,90,3,3,0.297297,0.027027,0.27027,0.260046,0.121158,0.40912,1000,improvement,D2_vs_D0,C,12,

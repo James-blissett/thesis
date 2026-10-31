@@ -1,0 +1,23 @@
+{
+ "check": "A input (layer10), depth 12, D2, seed 0, p 0.0, wd 0.01",
+ "fp32": {
+  "best_score": 0.6625824115971175,
+  "best_epoch": 1,
+  "epochs_run": 6,
+  "seconds": 2.3054566383361816,
+  "diverged": false,
+  "T0_m1_per_task": 0.6296105854929385
+ },
+ "bf16": {
+  "best_score": 0.6921265262515262,
+  "best_epoch": 2,
+  "epochs_run": 7,
+  "seconds": 2.0020740032196045,
+  "diverged": false,
+  "T0_m1_per_task": 0.56654497463321
+ },
+ "diff_eval_seen": 0.02954411465440865,
+ "tolerance": 0.005,
+ "passed": false,
+ "precision": "fp32"
+}

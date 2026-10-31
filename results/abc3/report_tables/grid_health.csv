@@ -1,0 +1,8 @@
+input,depth,fits,ok,failed,diverged,retried_lr3e-4,retried_ok,stopped_early_share,best_epoch_median,best_epoch_min,best_epoch_max,chosen_best_epoch_median,chosen_best_epoch_min,chosen_best_epoch_max,epochs_run_median,hit_epoch_cap,seconds_mean
+A,2,24,24,0,0,0,0,1.0,1.0,1,8,1.0,1,6,6.0,0,1.1025546666666666
+A,6,24,24,0,0,0,0,1.0,1.0,1,13,1.0,1,13,6.0,0,1.2432062083333333
+A,12,24,24,0,0,0,0,1.0,1.0,1,11,1.0,1,5,6.0,0,1.5003099583333335
+C,2,24,24,0,0,0,0,1.0,2.0,1,17,3.0,1,16,7.0,0,0.7845412083333333
+C,6,24,24,0,0,0,0,1.0,2.0,1,11,2.0,1,10,7.0,0,0.9010452083333335
+C,12,24,24,0,0,0,0,1.0,2.0,1,8,2.5,1,5,7.0,0,1.20147825
+all,all,144,144,0,0,0,0,1.0,1.0,1,17,1.0,1,16,6.0,0,1.12218925

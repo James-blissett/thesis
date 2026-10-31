@@ -1,0 +1,61 @@
+source,task,rollouts,successes,failures
+"LIBERO-10, original",0,30,11,19
+"LIBERO-10, original",1,30,24,6
+"LIBERO-10, original",2,30,16,14
+"LIBERO-10, original",3,30,5,25
+"LIBERO-10, original",4,30,8,22
+"LIBERO-10, original",5,30,22,8
+"LIBERO-10, original",6,30,13,17
+"LIBERO-10, original",7,30,15,15
+"LIBERO-10, original",8,30,10,20
+"LIBERO-10, original",9,30,13,17
+"LIBERO-10, new unperturbed",0,20,13,7
+"LIBERO-10, new unperturbed",1,20,13,7
+"LIBERO-10, new unperturbed",2,20,9,11
+"LIBERO-10, new unperturbed",3,20,3,17
+"LIBERO-10, new unperturbed",4,20,3,17
+"LIBERO-10, new unperturbed",5,20,13,7
+"LIBERO-10, new unperturbed",6,20,13,7
+"LIBERO-10, new unperturbed",7,20,11,9
+"LIBERO-10, new unperturbed",8,20,5,15
+"LIBERO-10, new unperturbed",9,20,8,12
+LIBERO-PRO object perturbation,0,20,0,20
+LIBERO-PRO object perturbation,1,20,14,6
+LIBERO-PRO object perturbation,2,20,9,11
+LIBERO-PRO object perturbation,3,20,8,12
+LIBERO-PRO object perturbation,4,20,6,14
+LIBERO-PRO object perturbation,5,20,0,20
+LIBERO-PRO object perturbation,6,20,4,16
+LIBERO-PRO object perturbation,7,20,0,20
+LIBERO-PRO object perturbation,8,20,4,16
+LIBERO-PRO object perturbation,9,20,2,18
+LIBERO-PRO instruction perturbation,0,20,7,13
+LIBERO-PRO instruction perturbation,1,20,13,7
+LIBERO-PRO instruction perturbation,2,20,11,9
+LIBERO-PRO instruction perturbation,3,20,7,13
+LIBERO-PRO instruction perturbation,4,20,1,19
+LIBERO-PRO instruction perturbation,5,20,13,7
+LIBERO-PRO instruction perturbation,6,20,5,15
+LIBERO-PRO instruction perturbation,7,20,15,5
+LIBERO-PRO instruction perturbation,8,20,4,16
+LIBERO-PRO instruction perturbation,9,20,9,11
+LIBERO-PRO position swap,0,5,0,5
+LIBERO-PRO position swap,1,5,0,5
+LIBERO-PRO position swap,2,5,0,5
+LIBERO-PRO position swap,3,5,0,5
+LIBERO-PRO position swap,4,5,0,5
+LIBERO-PRO position swap,5,5,0,5
+LIBERO-PRO position swap,6,5,0,5
+LIBERO-PRO position swap,7,5,0,5
+LIBERO-PRO position swap,8,5,0,5
+LIBERO-PRO position swap,9,5,0,5
+LIBERO-PRO task perturbation,0,5,3,2
+LIBERO-PRO task perturbation,1,5,0,5
+LIBERO-PRO task perturbation,2,5,0,5
+LIBERO-PRO task perturbation,3,5,0,5
+LIBERO-PRO task perturbation,4,5,0,5
+LIBERO-PRO task perturbation,5,5,0,5
+LIBERO-PRO task perturbation,6,5,0,5
+LIBERO-PRO task perturbation,7,5,0,5
+LIBERO-PRO task perturbation,8,5,1,4
+LIBERO-PRO task perturbation,9,5,0,5

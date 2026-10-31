@@ -1,0 +1,97 @@
+[T0] 26 comparisons x 3 metrics, 1000 reps, 16 sides, one set of draws (n_test per seed [90, 90, 90]): 1.3 s (loading 0.8 s) -> /ephemeral/code/thesis-introspection/results/abc3/paired_T0.csv
+  identity D0/A-d2: n=15 max|d|=4.864864865394836e-07 ok
+  identity D0/A-d6: n=15 max|d|=3.8095238096003126e-07 ok
+  identity D0/A-d12: n=15 max|d|=4.3853096798329716e-07 ok
+  identity D0/C-d2: n=15 max|d|=4.442209932120633e-07 ok
+  identity D0/C-d6: n=15 max|d|=5.768458122279441e-07 ok
+  identity D0/C-d12: n=15 max|d|=4.864864865394836e-07 ok
+  identity D2/A-d2: n=15 max|d|=5.232429153290141e-07 ok
+  identity D2/A-d6: n=15 max|d|=6.022474086930796e-07 ok
+  identity D2/A-d12: n=15 max|d|=4.867267808794651e-07 ok
+  identity D2/C-d2: n=15 max|d|=6.342401245307272e-07 ok
+  identity D2/C-d6: n=15 max|d|=5.230622327212497e-07 ok
+  identity D2/C-d12: n=15 max|d|=4.7619047616187515e-07 ok
+  identity D0/A-linear: n=15 max|d|=3.7776820127621846e-07 ok
+  identity D0/C-linear: n=15 max|d|=4.4781144792338523e-07 ok
+  identity D2/A-linear: n=15 max|d|=3.3670033672272837e-07 ok
+  identity D2/C-linear: n=15 max|d|=4.7619047616187515e-07 ok
+  family     comparison                 metric         point    mean  95% CI             verdict
+  vs_linear  D0:A-d2 - D0:A-linear      m1_per_task  -0.026 -0.026  [-0.089, +0.033]  no significant change
+  vs_linear  D0:A-d2 - D0:A-linear      bal_acc      -0.016 -0.020  [-0.043, +0.007]  no significant change
+  vs_linear  D0:A-d2 - D0:A-linear      tpr          -0.045 -0.051  [-0.101, -0.003]  significant worsening
+  vs_linear  D0:A-d6 - D0:A-linear      m1_per_task  -0.054 -0.053  [-0.122, +0.014]  no significant change
+  vs_linear  D0:A-d6 - D0:A-linear      bal_acc      -0.017 -0.021  [-0.045, +0.002]  no significant change
+  vs_linear  D0:A-d6 - D0:A-linear      tpr          -0.046 -0.054  [-0.103, -0.013]  significant worsening
+  vs_linear  D0:A-d12 - D0:A-linear     m1_per_task  -0.032 -0.030  [-0.096, +0.032]  no significant change
+  vs_linear  D0:A-d12 - D0:A-linear     bal_acc      -0.005 -0.008  [-0.035, +0.020]  no significant change
+  vs_linear  D0:A-d12 - D0:A-linear     tpr          -0.022 -0.028  [-0.082, +0.029]  no significant change
+  vs_linear  D0:C-d2 - D0:C-linear      m1_per_task  -0.032 -0.034  [-0.091, +0.024]  no significant change
+  vs_linear  D0:C-d2 - D0:C-linear      bal_acc      +0.066 +0.060  [+0.017, +0.101]  improvement
+  vs_linear  D0:C-d2 - D0:C-linear      tpr          +0.156 +0.145  [+0.073, +0.211]  improvement
+  vs_linear  D0:C-d6 - D0:C-linear      m1_per_task  -0.035 -0.033  [-0.099, +0.031]  no significant change
+  vs_linear  D0:C-d6 - D0:C-linear      bal_acc      +0.097 +0.094  [+0.045, +0.143]  improvement
+  vs_linear  D0:C-d6 - D0:C-linear      tpr          +0.272 +0.265  [+0.188, +0.342]  improvement
+  vs_linear  D0:C-d12 - D0:C-linear     m1_per_task  +0.002 +0.003  [-0.053, +0.056]  no significant change
+  vs_linear  D0:C-d12 - D0:C-linear     bal_acc      +0.087 +0.087  [+0.045, +0.123]  improvement
+  vs_linear  D0:C-d12 - D0:C-linear     tpr          +0.180 +0.180  [+0.110, +0.245]  improvement
+  vs_linear  D2:A-d2 - D2:A-linear      m1_per_task  -0.074 -0.077  [-0.140, -0.017]  significant worsening
+  vs_linear  D2:A-d2 - D2:A-linear      bal_acc      +0.077 +0.077  [+0.040, +0.114]  improvement
+  vs_linear  D2:A-d2 - D2:A-linear      tpr          +0.167 +0.168  [+0.097, +0.234]  improvement
+  vs_linear  D2:A-d6 - D2:A-linear      m1_per_task  -0.097 -0.099  [-0.167, -0.033]  significant worsening
+  vs_linear  D2:A-d6 - D2:A-linear      bal_acc      +0.064 +0.064  [+0.025, +0.105]  improvement
+  vs_linear  D2:A-d6 - D2:A-linear      tpr          +0.173 +0.174  [+0.111, +0.242]  improvement
+  vs_linear  D2:A-d12 - D2:A-linear     m1_per_task  -0.094 -0.094  [-0.158, -0.035]  significant worsening
+  vs_linear  D2:A-d12 - D2:A-linear     bal_acc      +0.077 +0.079  [+0.040, +0.117]  improvement
+  vs_linear  D2:A-d12 - D2:A-linear     tpr          +0.216 +0.220  [+0.161, +0.283]  improvement
+  vs_linear  D2:C-d2 - D2:C-linear      m1_per_task  +0.035 +0.031  [-0.019, +0.087]  no significant change
+  vs_linear  D2:C-d2 - D2:C-linear      bal_acc      +0.047 +0.048  [+0.008, +0.086]  improvement
+  vs_linear  D2:C-d2 - D2:C-linear      tpr          +0.076 +0.078  [+0.009, +0.146]  improvement
+  vs_linear  D2:C-d6 - D2:C-linear      m1_per_task  +0.022 +0.021  [-0.023, +0.068]  no significant change
+  vs_linear  D2:C-d6 - D2:C-linear      bal_acc      -0.004 +0.004  [-0.046, +0.053]  no significant change
+  vs_linear  D2:C-d6 - D2:C-linear      tpr          -0.013 +0.003  [-0.085, +0.087]  no significant change
+  vs_linear  D2:C-d12 - D2:C-linear     m1_per_task  +0.006 +0.004  [-0.058, +0.068]  no significant change
+  vs_linear  D2:C-d12 - D2:C-linear     bal_acc      +0.027 +0.029  [-0.015, +0.074]  no significant change
+  vs_linear  D2:C-d12 - D2:C-linear     tpr          +0.052 +0.057  [-0.016, +0.129]  no significant change
+  vs_depth2  D0:A-d6 - D0:A-d2          m1_per_task  -0.028 -0.027  [-0.072, +0.013]  no significant change
+  vs_depth2  D0:A-d6 - D0:A-d2          bal_acc      -0.001 -0.001  [-0.012, +0.010]  no significant change
+  vs_depth2  D0:A-d6 - D0:A-d2          tpr          -0.001 -0.003  [-0.026, +0.020]  no significant change
+  vs_depth2  D0:A-d12 - D0:A-d2         m1_per_task  -0.005 -0.004  [-0.051, +0.041]  no significant change
+  vs_depth2  D0:A-d12 - D0:A-d2         bal_acc      +0.011 +0.012  [-0.007, +0.030]  no significant change
+  vs_depth2  D0:A-d12 - D0:A-d2         tpr          +0.023 +0.024  [-0.013, +0.061]  no significant change
+  vs_depth2  D0:C-d6 - D0:C-d2          m1_per_task  -0.003 +0.000  [-0.042, +0.043]  no significant change
+  vs_depth2  D0:C-d6 - D0:C-d2          bal_acc      +0.031 +0.033  [-0.006, +0.068]  no significant change
+  vs_depth2  D0:C-d6 - D0:C-d2          tpr          +0.116 +0.120  [+0.057, +0.172]  improvement
+  vs_depth2  D0:C-d12 - D0:C-d2         m1_per_task  +0.034 +0.036  [-0.020, +0.091]  no significant change
+  vs_depth2  D0:C-d12 - D0:C-d2         bal_acc      +0.021 +0.026  [-0.019, +0.070]  no significant change
+  vs_depth2  D0:C-d12 - D0:C-d2         tpr          +0.025 +0.035  [-0.055, +0.115]  no significant change
+  vs_depth2  D2:A-d6 - D2:A-d2          m1_per_task  -0.023 -0.022  [-0.060, +0.011]  no significant change
+  vs_depth2  D2:A-d6 - D2:A-d2          bal_acc      -0.014 -0.013  [-0.045, +0.016]  no significant change
+  vs_depth2  D2:A-d6 - D2:A-d2          tpr          +0.006 +0.006  [-0.042, +0.051]  no significant change
+  vs_depth2  D2:A-d12 - D2:A-d2         m1_per_task  -0.019 -0.018  [-0.054, +0.015]  no significant change
+  vs_depth2  D2:A-d12 - D2:A-d2         bal_acc      -0.000 +0.002  [-0.032, +0.036]  no significant change
+  vs_depth2  D2:A-d12 - D2:A-d2         tpr          +0.049 +0.052  [-0.003, +0.111]  no significant change
+  vs_depth2  D2:C-d6 - D2:C-d2          m1_per_task  -0.013 -0.010  [-0.042, +0.024]  no significant change
+  vs_depth2  D2:C-d6 - D2:C-d2          bal_acc      -0.051 -0.044  [-0.082, -0.003]  significant worsening
+  vs_depth2  D2:C-d6 - D2:C-d2          tpr          -0.089 -0.075  [-0.144, -0.003]  significant worsening
+  vs_depth2  D2:C-d12 - D2:C-d2         m1_per_task  -0.029 -0.027  [-0.066, +0.013]  no significant change
+  vs_depth2  D2:C-d12 - D2:C-d2         bal_acc      -0.020 -0.019  [-0.062, +0.022]  no significant change
+  vs_depth2  D2:C-d12 - D2:C-d2         tpr          -0.024 -0.021  [-0.095, +0.051]  no significant change
+  D2_vs_D0   D2:A-d2 - D0:A-d2          m1_per_task  -0.028 -0.029  [-0.114, +0.049]  no significant change
+  D2_vs_D0   D2:A-d2 - D0:A-d2          bal_acc      +0.064 +0.062  [+0.026, +0.095]  improvement
+  D2_vs_D0   D2:A-d2 - D0:A-d2          tpr          +0.152 +0.149  [+0.081, +0.214]  improvement
+  D2_vs_D0   D2:A-d6 - D0:A-d6          m1_per_task  -0.023 -0.025  [-0.115, +0.056]  no significant change
+  D2_vs_D0   D2:A-d6 - D0:A-d6          bal_acc      +0.050 +0.050  [+0.012, +0.086]  improvement
+  D2_vs_D0   D2:A-d6 - D0:A-d6          tpr          +0.159 +0.158  [+0.098, +0.219]  improvement
+  D2_vs_D0   D2:A-d12 - D0:A-d12        m1_per_task  -0.042 -0.043  [-0.134, +0.044]  no significant change
+  D2_vs_D0   D2:A-d12 - D0:A-d12        bal_acc      +0.052 +0.052  [+0.012, +0.092]  improvement
+  D2_vs_D0   D2:A-d12 - D0:A-d12        tpr          +0.179 +0.178  [+0.117, +0.238]  improvement
+  D2_vs_D0   D2:C-d2 - D0:C-d2          m1_per_task  +0.050 +0.049  [-0.009, +0.107]  no significant change
+  D2_vs_D0   D2:C-d2 - D0:C-d2          bal_acc      +0.030 +0.032  [-0.016, +0.082]  no significant change
+  D2_vs_D0   D2:C-d2 - D0:C-d2          tpr          +0.075 +0.077  [+0.002, +0.157]  improvement
+  D2_vs_D0   D2:C-d6 - D0:C-d6          m1_per_task  +0.040 +0.038  [-0.016, +0.090]  no significant change
+  D2_vs_D0   D2:C-d6 - D0:C-d6          bal_acc      -0.052 -0.046  [-0.097, +0.008]  no significant change
+  D2_vs_D0   D2:C-d6 - D0:C-d6          tpr          -0.131 -0.118  [-0.209, -0.026]  significant worsening
+  D2_vs_D0   D2:C-d12 - D0:C-d12        m1_per_task  -0.013 -0.015  [-0.083, +0.054]  no significant change
+  D2_vs_D0   D2:C-d12 - D0:C-d12        bal_acc      -0.011 -0.013  [-0.061, +0.034]  no significant change
+  D2_vs_D0   D2:C-d12 - D0:C-d12        tpr          +0.026 +0.021  [-0.061, +0.090]  no significant change
+[T0] identity check PASSED (16 sides, max |diff| 6.3e-07, tolerance 1e-06)

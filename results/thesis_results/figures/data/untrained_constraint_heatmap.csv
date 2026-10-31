@@ -1,0 +1,295 @@
+constraint,layer,smoothing beta,test set,per-task AUROC mean,per-task AUROC std,sign per seed,sign-unstable,source
+emb_temp,0,none,eval-seen,0.4881,0.0119,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,0,none,"unseen tasks, original rollouts",0.4917,0.0141,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,0,none,unseen tasks incl. LIBERO-PRO,0.4976,0.0062,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,1,none,eval-seen,0.5737,0.1921,-+-,True,results/abc2/constraint_m1_summary.csv
+emb_temp,1,none,"unseen tasks, original rollouts",0.659,0.116,-+-,True,results/abc2/constraint_m1_summary.csv
+emb_temp,1,none,unseen tasks incl. LIBERO-PRO,0.6777,0.1619,-+-,True,results/abc2/constraint_m1_summary.csv
+emb_temp,2,none,eval-seen,0.7217,0.0767,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,2,none,"unseen tasks, original rollouts",0.6881,0.0439,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,2,none,unseen tasks incl. LIBERO-PRO,0.7205,0.0574,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,3,none,eval-seen,0.7277,0.0498,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,3,none,"unseen tasks, original rollouts",0.6969,0.0683,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,3,none,unseen tasks incl. LIBERO-PRO,0.7154,0.0368,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,4,none,eval-seen,0.733,0.052,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,4,none,"unseen tasks, original rollouts",0.7092,0.0568,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,4,none,unseen tasks incl. LIBERO-PRO,0.7079,0.038,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,5,none,eval-seen,0.7215,0.0709,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,5,none,"unseen tasks, original rollouts",0.7029,0.0648,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,5,none,unseen tasks incl. LIBERO-PRO,0.7074,0.0156,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,6,none,eval-seen,0.7012,0.055,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,6,none,"unseen tasks, original rollouts",0.6839,0.0551,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,6,none,unseen tasks incl. LIBERO-PRO,0.7014,0.013,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,7,none,eval-seen,0.7152,0.0443,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,7,none,"unseen tasks, original rollouts",0.6843,0.0461,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,7,none,unseen tasks incl. LIBERO-PRO,0.7017,0.0245,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,8,none,eval-seen,0.7145,0.04,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,8,none,"unseen tasks, original rollouts",0.6984,0.0512,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,8,none,unseen tasks incl. LIBERO-PRO,0.7133,0.0354,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,9,none,eval-seen,0.727,0.0503,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,9,none,"unseen tasks, original rollouts",0.7074,0.047,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,9,none,unseen tasks incl. LIBERO-PRO,0.7172,0.0311,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,10,none,eval-seen,0.713,0.0613,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,10,none,"unseen tasks, original rollouts",0.7087,0.0454,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,10,none,unseen tasks incl. LIBERO-PRO,0.7169,0.0362,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,11,none,eval-seen,0.7166,0.068,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,11,none,"unseen tasks, original rollouts",0.7083,0.0446,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,11,none,unseen tasks incl. LIBERO-PRO,0.712,0.0392,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,12,none,eval-seen,0.7202,0.0988,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,12,none,"unseen tasks, original rollouts",0.7013,0.0511,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,12,none,unseen tasks incl. LIBERO-PRO,0.7159,0.0343,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,13,none,eval-seen,0.7347,0.0891,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,13,none,"unseen tasks, original rollouts",0.6997,0.0528,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,13,none,unseen tasks incl. LIBERO-PRO,0.7205,0.0257,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,14,none,eval-seen,0.7312,0.0904,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,14,none,"unseen tasks, original rollouts",0.7059,0.0529,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,14,none,unseen tasks incl. LIBERO-PRO,0.7235,0.0292,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,15,none,eval-seen,0.5903,0.1819,-+-,True,results/abc2/constraint_m1_summary.csv
+emb_temp,15,none,"unseen tasks, original rollouts",0.5883,0.1742,-+-,True,results/abc2/constraint_m1_summary.csv
+emb_temp,15,none,unseen tasks incl. LIBERO-PRO,0.6584,0.1434,-+-,True,results/abc2/constraint_m1_summary.csv
+emb_temp,16,none,eval-seen,0.7384,0.0936,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,16,none,"unseen tasks, original rollouts",0.714,0.0502,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,16,none,unseen tasks incl. LIBERO-PRO,0.728,0.0319,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,17,none,eval-seen,0.7395,0.089,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,17,none,"unseen tasks, original rollouts",0.7143,0.0497,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,17,none,unseen tasks incl. LIBERO-PRO,0.7279,0.0321,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,18,none,eval-seen,0.7417,0.0947,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,18,none,"unseen tasks, original rollouts",0.7119,0.0479,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,18,none,unseen tasks incl. LIBERO-PRO,0.7301,0.0311,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,19,none,eval-seen,0.7414,0.0989,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,19,none,"unseen tasks, original rollouts",0.7125,0.0486,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,19,none,unseen tasks incl. LIBERO-PRO,0.728,0.0318,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,20,none,eval-seen,0.7434,0.0983,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,20,none,"unseen tasks, original rollouts",0.715,0.0498,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,20,none,unseen tasks incl. LIBERO-PRO,0.7277,0.0309,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,21,none,eval-seen,0.7382,0.0948,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,21,none,"unseen tasks, original rollouts",0.7177,0.0479,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,21,none,unseen tasks incl. LIBERO-PRO,0.7378,0.03,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,22,none,eval-seen,0.7415,0.0838,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,22,none,"unseen tasks, original rollouts",0.7168,0.047,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,22,none,unseen tasks incl. LIBERO-PRO,0.7366,0.0286,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,23,none,eval-seen,0.7366,0.0798,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,23,none,"unseen tasks, original rollouts",0.7173,0.0506,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,23,none,unseen tasks incl. LIBERO-PRO,0.7332,0.0253,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,24,none,eval-seen,0.7368,0.0801,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,24,none,"unseen tasks, original rollouts",0.7138,0.0514,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,24,none,unseen tasks incl. LIBERO-PRO,0.7343,0.0267,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,25,none,eval-seen,0.7452,0.0847,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,25,none,"unseen tasks, original rollouts",0.7229,0.0557,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,25,none,unseen tasks incl. LIBERO-PRO,0.7365,0.0224,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,26,none,eval-seen,0.7567,0.0758,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,26,none,"unseen tasks, original rollouts",0.725,0.0606,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,26,none,unseen tasks incl. LIBERO-PRO,0.74,0.0188,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,27,none,eval-seen,0.7474,0.089,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,27,none,"unseen tasks, original rollouts",0.724,0.0563,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,27,none,unseen tasks incl. LIBERO-PRO,0.7398,0.0261,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,28,none,eval-seen,0.7416,0.0826,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,28,none,"unseen tasks, original rollouts",0.725,0.055,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,28,none,unseen tasks incl. LIBERO-PRO,0.7388,0.026,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,29,none,eval-seen,0.723,0.0858,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,29,none,"unseen tasks, original rollouts",0.7308,0.0501,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,29,none,unseen tasks incl. LIBERO-PRO,0.7358,0.0282,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,30,none,eval-seen,0.7279,0.0893,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,30,none,"unseen tasks, original rollouts",0.733,0.0416,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,30,none,unseen tasks incl. LIBERO-PRO,0.732,0.0266,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,31,none,eval-seen,0.7259,0.0768,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,31,none,"unseen tasks, original rollouts",0.7265,0.0463,---,False,results/abc2/constraint_m1_summary.csv
+emb_temp,31,none,unseen tasks incl. LIBERO-PRO,0.7279,0.0273,---,False,results/abc2/constraint_m1_summary.csv
+xl_adj,0,0.91,eval-seen,0.4728,0.018,---,False,results/abc2/constraint_m1_summary.csv
+xl_adj,0,0.91,"unseen tasks, original rollouts",0.4884,0.0842,---,False,results/abc2/constraint_m1_summary.csv
+xl_adj,0,0.91,unseen tasks incl. LIBERO-PRO,0.4411,0.0673,---,False,results/abc2/constraint_m1_summary.csv
+xl_adj,1,0.91,eval-seen,0.5493,0.1086,---,False,results/abc2/constraint_m1_summary.csv
+xl_adj,1,0.91,"unseen tasks, original rollouts",0.4953,0.056,---,False,results/abc2/constraint_m1_summary.csv
+xl_adj,1,0.91,unseen tasks incl. LIBERO-PRO,0.5601,0.0441,---,False,results/abc2/constraint_m1_summary.csv
+xl_adj,2,0.91,eval-seen,0.6114,0.057,---,False,results/abc2/constraint_m1_summary.csv
+xl_adj,2,0.91,"unseen tasks, original rollouts",0.5497,0.0677,---,False,results/abc2/constraint_m1_summary.csv
+xl_adj,2,0.91,unseen tasks incl. LIBERO-PRO,0.5757,0.022,---,False,results/abc2/constraint_m1_summary.csv
+xl_adj,3,0.91,eval-seen,0.5802,0.0632,---,False,results/abc2/constraint_m1_summary.csv
+xl_adj,3,0.91,"unseen tasks, original rollouts",0.5415,0.0208,---,False,results/abc2/constraint_m1_summary.csv
+xl_adj,3,0.91,unseen tasks incl. LIBERO-PRO,0.5689,0.0306,---,False,results/abc2/constraint_m1_summary.csv
+xl_adj,4,0.91,eval-seen,0.5224,0.0364,---,False,results/abc2/constraint_m1_summary.csv
+xl_adj,4,0.91,"unseen tasks, original rollouts",0.5141,0.0257,---,False,results/abc2/constraint_m1_summary.csv
+xl_adj,4,0.91,unseen tasks incl. LIBERO-PRO,0.4708,0.0436,---,False,results/abc2/constraint_m1_summary.csv
+xl_adj,5,0.91,eval-seen,0.5633,0.0074,---,False,results/abc2/constraint_m1_summary.csv
+xl_adj,5,0.91,"unseen tasks, original rollouts",0.5584,0.0271,---,False,results/abc2/constraint_m1_summary.csv
+xl_adj,5,0.91,unseen tasks incl. LIBERO-PRO,0.4774,0.058,---,False,results/abc2/constraint_m1_summary.csv
+xl_adj,6,0.91,eval-seen,0.4823,0.058,++-,True,results/abc2/constraint_m1_summary.csv
+xl_adj,6,0.91,"unseen tasks, original rollouts",0.5149,0.035,++-,True,results/abc2/constraint_m1_summary.csv
+xl_adj,6,0.91,unseen tasks incl. LIBERO-PRO,0.4716,0.0584,++-,True,results/abc2/constraint_m1_summary.csv
+xl_adj,7,0.91,eval-seen,0.4745,0.0328,---,False,results/abc2/constraint_m1_summary.csv
+xl_adj,7,0.91,"unseen tasks, original rollouts",0.5137,0.0644,---,False,results/abc2/constraint_m1_summary.csv
+xl_adj,7,0.91,unseen tasks incl. LIBERO-PRO,0.5537,0.0487,---,False,results/abc2/constraint_m1_summary.csv
+xl_adj,8,0.91,eval-seen,0.524,0.0851,---,False,results/abc2/constraint_m1_summary.csv
+xl_adj,8,0.91,"unseen tasks, original rollouts",0.522,0.0783,---,False,results/abc2/constraint_m1_summary.csv
+xl_adj,8,0.91,unseen tasks incl. LIBERO-PRO,0.5324,0.0398,---,False,results/abc2/constraint_m1_summary.csv
+xl_adj,9,0.91,eval-seen,0.5786,0.0608,---,False,results/abc2/constraint_m1_summary.csv
+xl_adj,9,0.91,"unseen tasks, original rollouts",0.6009,0.0878,---,False,results/abc2/constraint_m1_summary.csv
+xl_adj,9,0.91,unseen tasks incl. LIBERO-PRO,0.4834,0.049,---,False,results/abc2/constraint_m1_summary.csv
+xl_adj,10,0.91,eval-seen,0.5134,0.0459,+--,True,results/abc2/constraint_m1_summary.csv
+xl_adj,10,0.91,"unseen tasks, original rollouts",0.4347,0.0783,+--,True,results/abc2/constraint_m1_summary.csv
+xl_adj,10,0.91,unseen tasks incl. LIBERO-PRO,0.4388,0.1195,+--,True,results/abc2/constraint_m1_summary.csv
+xl_adj,11,0.91,eval-seen,0.4818,0.0573,-+-,True,results/abc2/constraint_m1_summary.csv
+xl_adj,11,0.91,"unseen tasks, original rollouts",0.4503,0.073,-+-,True,results/abc2/constraint_m1_summary.csv
+xl_adj,11,0.91,unseen tasks incl. LIBERO-PRO,0.4055,0.0878,-+-,True,results/abc2/constraint_m1_summary.csv
+xl_adj,12,0.91,eval-seen,0.6047,0.0321,+-+,True,results/abc2/constraint_m1_summary.csv
+xl_adj,12,0.91,"unseen tasks, original rollouts",0.5002,0.0542,+-+,True,results/abc2/constraint_m1_summary.csv
+xl_adj,12,0.91,unseen tasks incl. LIBERO-PRO,0.4676,0.0751,+-+,True,results/abc2/constraint_m1_summary.csv
+xl_adj,13,0.91,eval-seen,0.3855,0.0747,---,False,results/abc2/constraint_m1_summary.csv
+xl_adj,13,0.91,"unseen tasks, original rollouts",0.4082,0.0487,---,False,results/abc2/constraint_m1_summary.csv
+xl_adj,13,0.91,unseen tasks incl. LIBERO-PRO,0.3921,0.0588,---,False,results/abc2/constraint_m1_summary.csv
+xl_adj,14,0.91,eval-seen,0.4475,0.0337,-+-,True,results/abc2/constraint_m1_summary.csv
+xl_adj,14,0.91,"unseen tasks, original rollouts",0.3798,0.0563,-+-,True,results/abc2/constraint_m1_summary.csv
+xl_adj,14,0.91,unseen tasks incl. LIBERO-PRO,0.4315,0.0888,-+-,True,results/abc2/constraint_m1_summary.csv
+xl_adj,15,0.91,eval-seen,0.4135,0.0558,-+-,True,results/abc2/constraint_m1_summary.csv
+xl_adj,15,0.91,"unseen tasks, original rollouts",0.3613,0.0831,-+-,True,results/abc2/constraint_m1_summary.csv
+xl_adj,15,0.91,unseen tasks incl. LIBERO-PRO,0.3678,0.0282,-+-,True,results/abc2/constraint_m1_summary.csv
+xl_adj,16,0.91,eval-seen,0.3319,0.0314,---,False,results/abc2/constraint_m1_summary.csv
+xl_adj,16,0.91,"unseen tasks, original rollouts",0.3466,0.0249,---,False,results/abc2/constraint_m1_summary.csv
+xl_adj,16,0.91,unseen tasks incl. LIBERO-PRO,0.3141,0.0431,---,False,results/abc2/constraint_m1_summary.csv
+xl_adj,17,0.91,eval-seen,0.4235,0.0627,+--,True,results/abc2/constraint_m1_summary.csv
+xl_adj,17,0.91,"unseen tasks, original rollouts",0.4747,0.0579,+--,True,results/abc2/constraint_m1_summary.csv
+xl_adj,17,0.91,unseen tasks incl. LIBERO-PRO,0.4691,0.0286,+--,True,results/abc2/constraint_m1_summary.csv
+xl_adj,18,0.91,eval-seen,0.4444,0.0687,---,False,results/abc2/constraint_m1_summary.csv
+xl_adj,18,0.91,"unseen tasks, original rollouts",0.4571,0.0336,---,False,results/abc2/constraint_m1_summary.csv
+xl_adj,18,0.91,unseen tasks incl. LIBERO-PRO,0.4559,0.0288,---,False,results/abc2/constraint_m1_summary.csv
+xl_adj,19,0.91,eval-seen,0.4386,0.0367,---,False,results/abc2/constraint_m1_summary.csv
+xl_adj,19,0.91,"unseen tasks, original rollouts",0.4436,0.0782,---,False,results/abc2/constraint_m1_summary.csv
+xl_adj,19,0.91,unseen tasks incl. LIBERO-PRO,0.4261,0.0424,---,False,results/abc2/constraint_m1_summary.csv
+xl_adj,20,0.91,eval-seen,0.4918,0.0628,---,False,results/abc2/constraint_m1_summary.csv
+xl_adj,20,0.91,"unseen tasks, original rollouts",0.4488,0.0807,---,False,results/abc2/constraint_m1_summary.csv
+xl_adj,20,0.91,unseen tasks incl. LIBERO-PRO,0.4483,0.0578,---,False,results/abc2/constraint_m1_summary.csv
+xl_adj,21,0.91,eval-seen,0.4191,0.0161,-++,True,results/abc2/constraint_m1_summary.csv
+xl_adj,21,0.91,"unseen tasks, original rollouts",0.4998,0.0477,-++,True,results/abc2/constraint_m1_summary.csv
+xl_adj,21,0.91,unseen tasks incl. LIBERO-PRO,0.4299,0.1263,-++,True,results/abc2/constraint_m1_summary.csv
+xl_adj,22,0.91,eval-seen,0.4682,0.116,++-,True,results/abc2/constraint_m1_summary.csv
+xl_adj,22,0.91,"unseen tasks, original rollouts",0.4537,0.0424,++-,True,results/abc2/constraint_m1_summary.csv
+xl_adj,22,0.91,unseen tasks incl. LIBERO-PRO,0.4188,0.0848,++-,True,results/abc2/constraint_m1_summary.csv
+xl_adj,23,0.91,eval-seen,0.3666,0.0381,---,False,results/abc2/constraint_m1_summary.csv
+xl_adj,23,0.91,"unseen tasks, original rollouts",0.3452,0.0389,---,False,results/abc2/constraint_m1_summary.csv
+xl_adj,23,0.91,unseen tasks incl. LIBERO-PRO,0.3412,0.0533,---,False,results/abc2/constraint_m1_summary.csv
+xl_adj,24,0.91,eval-seen,0.4763,0.0719,-+-,True,results/abc2/constraint_m1_summary.csv
+xl_adj,24,0.91,"unseen tasks, original rollouts",0.4051,0.0307,-+-,True,results/abc2/constraint_m1_summary.csv
+xl_adj,24,0.91,unseen tasks incl. LIBERO-PRO,0.4093,0.0527,-+-,True,results/abc2/constraint_m1_summary.csv
+xl_adj,25,0.91,eval-seen,0.4144,0.0291,---,False,results/abc2/constraint_m1_summary.csv
+xl_adj,25,0.91,"unseen tasks, original rollouts",0.4054,0.027,---,False,results/abc2/constraint_m1_summary.csv
+xl_adj,25,0.91,unseen tasks incl. LIBERO-PRO,0.4221,0.0203,---,False,results/abc2/constraint_m1_summary.csv
+xl_adj,26,0.91,eval-seen,0.5384,0.0302,---,False,results/abc2/constraint_m1_summary.csv
+xl_adj,26,0.91,"unseen tasks, original rollouts",0.5493,0.0861,---,False,results/abc2/constraint_m1_summary.csv
+xl_adj,26,0.91,unseen tasks incl. LIBERO-PRO,0.4801,0.0335,---,False,results/abc2/constraint_m1_summary.csv
+xl_adj,27,0.91,eval-seen,0.5322,0.0407,---,False,results/abc2/constraint_m1_summary.csv
+xl_adj,27,0.91,"unseen tasks, original rollouts",0.4989,0.119,---,False,results/abc2/constraint_m1_summary.csv
+xl_adj,27,0.91,unseen tasks incl. LIBERO-PRO,0.4828,0.0588,---,False,results/abc2/constraint_m1_summary.csv
+xl_adj,28,0.91,eval-seen,0.5245,0.0068,---,False,results/abc2/constraint_m1_summary.csv
+xl_adj,28,0.91,"unseen tasks, original rollouts",0.5028,0.0699,---,False,results/abc2/constraint_m1_summary.csv
+xl_adj,28,0.91,unseen tasks incl. LIBERO-PRO,0.4886,0.0569,---,False,results/abc2/constraint_m1_summary.csv
+xl_adj,29,0.91,eval-seen,0.4738,0.0847,---,False,results/abc2/constraint_m1_summary.csv
+xl_adj,29,0.91,"unseen tasks, original rollouts",0.5041,0.0767,---,False,results/abc2/constraint_m1_summary.csv
+xl_adj,29,0.91,unseen tasks incl. LIBERO-PRO,0.4863,0.0325,---,False,results/abc2/constraint_m1_summary.csv
+xl_adj,30,0.91,eval-seen,0.4824,0.024,---,False,results/abc2/constraint_m1_summary.csv
+xl_adj,30,0.91,"unseen tasks, original rollouts",0.5035,0.0078,---,False,results/abc2/constraint_m1_summary.csv
+xl_adj,30,0.91,unseen tasks incl. LIBERO-PRO,0.4685,0.049,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,0,0.91,eval-seen,0.5219,0.1239,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,0,0.91,"unseen tasks, original rollouts",0.4599,0.0511,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,0,0.91,unseen tasks incl. LIBERO-PRO,0.5177,0.0358,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,1,0.91,eval-seen,0.5083,0.0279,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,1,0.91,"unseen tasks, original rollouts",0.4361,0.0596,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,1,0.91,unseen tasks incl. LIBERO-PRO,0.469,0.0444,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,2,0.91,eval-seen,0.6056,0.0262,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,2,0.91,"unseen tasks, original rollouts",0.505,0.0374,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,2,0.91,unseen tasks incl. LIBERO-PRO,0.5095,0.0852,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,3,0.91,eval-seen,0.5559,0.0421,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,3,0.91,"unseen tasks, original rollouts",0.4847,0.0326,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,3,0.91,unseen tasks incl. LIBERO-PRO,0.4851,0.0737,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,4,0.91,eval-seen,0.5319,0.0651,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,4,0.91,"unseen tasks, original rollouts",0.4808,0.0168,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,4,0.91,unseen tasks incl. LIBERO-PRO,0.4699,0.0532,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,5,0.91,eval-seen,0.5539,0.046,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,5,0.91,"unseen tasks, original rollouts",0.4893,0.0232,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,5,0.91,unseen tasks incl. LIBERO-PRO,0.4751,0.0561,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,6,0.91,eval-seen,0.5371,0.0496,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,6,0.91,"unseen tasks, original rollouts",0.4752,0.0122,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,6,0.91,unseen tasks incl. LIBERO-PRO,0.4748,0.0467,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,7,0.91,eval-seen,0.5498,0.0473,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,7,0.91,"unseen tasks, original rollouts",0.4762,0.0032,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,7,0.91,unseen tasks incl. LIBERO-PRO,0.47,0.0355,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,8,0.91,eval-seen,0.5483,0.0383,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,8,0.91,"unseen tasks, original rollouts",0.4936,0.0087,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,8,0.91,unseen tasks incl. LIBERO-PRO,0.4876,0.042,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,9,0.91,eval-seen,0.5873,0.0354,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,9,0.91,"unseen tasks, original rollouts",0.5311,0.0326,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,9,0.91,unseen tasks incl. LIBERO-PRO,0.5331,0.0812,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,10,0.91,eval-seen,0.6054,0.0188,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,10,0.91,"unseen tasks, original rollouts",0.5664,0.0591,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,10,0.91,unseen tasks incl. LIBERO-PRO,0.5481,0.0627,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,11,0.91,eval-seen,0.6078,0.0477,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,11,0.91,"unseen tasks, original rollouts",0.5877,0.0693,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,11,0.91,unseen tasks incl. LIBERO-PRO,0.582,0.0434,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,12,0.91,eval-seen,0.7032,0.0113,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,12,0.91,"unseen tasks, original rollouts",0.6707,0.0131,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,12,0.91,unseen tasks incl. LIBERO-PRO,0.6175,0.0435,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,13,0.91,eval-seen,0.6798,0.0268,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,13,0.91,"unseen tasks, original rollouts",0.579,0.0662,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,13,0.91,unseen tasks incl. LIBERO-PRO,0.5273,0.0266,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,14,0.91,eval-seen,0.5947,0.021,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,14,0.91,"unseen tasks, original rollouts",0.5522,0.0675,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,14,0.91,unseen tasks incl. LIBERO-PRO,0.5027,0.0829,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,15,0.91,eval-seen,0.5933,0.0598,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,15,0.91,"unseen tasks, original rollouts",0.5077,0.0942,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,15,0.91,unseen tasks incl. LIBERO-PRO,0.4821,0.105,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,16,0.91,eval-seen,0.5161,0.0445,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,16,0.91,"unseen tasks, original rollouts",0.4584,0.0701,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,16,0.91,unseen tasks incl. LIBERO-PRO,0.452,0.1013,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,17,0.91,eval-seen,0.3848,0.0429,-+-,True,results/abc2/constraint_m1_summary.csv
+xl_final,17,0.91,"unseen tasks, original rollouts",0.4272,0.0481,-+-,True,results/abc2/constraint_m1_summary.csv
+xl_final,17,0.91,unseen tasks incl. LIBERO-PRO,0.4681,0.0561,-+-,True,results/abc2/constraint_m1_summary.csv
+xl_final,18,0.91,eval-seen,0.3699,0.0876,-+-,True,results/abc2/constraint_m1_summary.csv
+xl_final,18,0.91,"unseen tasks, original rollouts",0.4072,0.0727,-+-,True,results/abc2/constraint_m1_summary.csv
+xl_final,18,0.91,unseen tasks incl. LIBERO-PRO,0.4415,0.0527,-+-,True,results/abc2/constraint_m1_summary.csv
+xl_final,19,0.91,eval-seen,0.4167,0.1368,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,19,0.91,"unseen tasks, original rollouts",0.424,0.113,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,19,0.91,unseen tasks incl. LIBERO-PRO,0.3992,0.1276,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,20,0.91,eval-seen,0.3363,0.088,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,20,0.91,"unseen tasks, original rollouts",0.4178,0.1212,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,20,0.91,unseen tasks incl. LIBERO-PRO,0.3854,0.097,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,21,0.91,eval-seen,0.3048,0.0256,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,21,0.91,"unseen tasks, original rollouts",0.3929,0.077,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,21,0.91,unseen tasks incl. LIBERO-PRO,0.3449,0.0797,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,22,0.91,eval-seen,0.3467,0.0059,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,22,0.91,"unseen tasks, original rollouts",0.367,0.0448,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,22,0.91,unseen tasks incl. LIBERO-PRO,0.3534,0.057,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,23,0.91,eval-seen,0.4015,0.0136,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,23,0.91,"unseen tasks, original rollouts",0.3936,0.0212,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,23,0.91,unseen tasks incl. LIBERO-PRO,0.3901,0.0271,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,24,0.91,eval-seen,0.4442,0.0236,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,24,0.91,"unseen tasks, original rollouts",0.4513,0.0396,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,24,0.91,unseen tasks incl. LIBERO-PRO,0.4157,0.0206,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,25,0.91,eval-seen,0.4637,0.0244,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,25,0.91,"unseen tasks, original rollouts",0.4339,0.0166,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,25,0.91,unseen tasks incl. LIBERO-PRO,0.4363,0.0211,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,26,0.91,eval-seen,0.437,0.0537,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,26,0.91,"unseen tasks, original rollouts",0.452,0.0318,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,26,0.91,unseen tasks incl. LIBERO-PRO,0.4435,0.0244,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,27,0.91,eval-seen,0.4638,0.0651,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,27,0.91,"unseen tasks, original rollouts",0.4715,0.0728,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,27,0.91,unseen tasks incl. LIBERO-PRO,0.4537,0.0462,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,28,0.91,eval-seen,0.4877,0.0841,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,28,0.91,"unseen tasks, original rollouts",0.4816,0.059,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,28,0.91,unseen tasks incl. LIBERO-PRO,0.4539,0.0454,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,29,0.91,eval-seen,0.4682,0.0907,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,29,0.91,"unseen tasks, original rollouts",0.4809,0.025,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,29,0.91,unseen tasks incl. LIBERO-PRO,0.4787,0.0561,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,30,0.91,eval-seen,0.4824,0.024,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,30,0.91,"unseen tasks, original rollouts",0.5035,0.0078,---,False,results/abc2/constraint_m1_summary.csv
+xl_final,30,0.91,unseen tasks incl. LIBERO-PRO,0.4685,0.049,---,False,results/abc2/constraint_m1_summary.csv
+act_mag,,0.96,eval-seen,0.5586,0.0391,---,False,results/abc2/constraint_m1_summary.csv
+act_mag,,0.96,"unseen tasks, original rollouts",0.5654,0.0474,---,False,results/abc2/constraint_m1_summary.csv
+act_mag,,0.96,unseen tasks incl. LIBERO-PRO,0.5573,0.0397,---,False,results/abc2/constraint_m1_summary.csv
+act_dir,,0.96,eval-seen,0.5594,0.0527,+++,False,results/abc2/constraint_m1_summary.csv
+act_dir,,0.96,"unseen tasks, original rollouts",0.5603,0.0491,+++,False,results/abc2/constraint_m1_summary.csv
+act_dir,,0.96,unseen tasks incl. LIBERO-PRO,0.5951,0.0452,+++,False,results/abc2/constraint_m1_summary.csv
+grip_flip,,0.96,eval-seen,0.4841,0.0898,+++,False,results/abc2/constraint_m1_summary.csv
+grip_flip,,0.96,"unseen tasks, original rollouts",0.5765,0.0597,+++,False,results/abc2/constraint_m1_summary.csv
+grip_flip,,0.96,unseen tasks incl. LIBERO-PRO,0.5639,0.0561,+++,False,results/abc2/constraint_m1_summary.csv
+act_rep,,0.96,eval-seen,0.623,0.0458,+++,False,results/abc2/constraint_m1_summary.csv
+act_rep,,0.96,"unseen tasks, original rollouts",0.6135,0.0115,+++,False,results/abc2/constraint_m1_summary.csv
+act_rep,,0.96,unseen tasks incl. LIBERO-PRO,0.6312,0.0364,+++,False,results/abc2/constraint_m1_summary.csv

@@ -1,0 +1,296 @@
+== 14:19:00 python analysis/thesis_results/probes_a.py --check
+[14:19:02] pool D2 (full training set); c_A = 1e-06; path [1e-06]
+[14:19:26] [A check] max |GPU - sklearn| 0.0017 -> PASSED (sklearn 10 s)
+== 14:19:27 python analysis/thesis_results/probes_a.py
+[14:19:28] pool D2 (full training set); c_A = 1e-06; path [1e-06]
+[14:19:40] [A  1/34] layer00: done (12 s, load 3 s)
+[14:19:56] [A  2/34] layer01: done (16 s, load 7 s)
+[14:20:06] [A  3/34] layer02: done (10 s, load 1 s)
+[14:20:16] [A  4/34] layer03: done (10 s, load 1 s)
+[14:20:26] [A  5/34] layer04: done (10 s, load 1 s)
+[14:20:35] [A  6/34] layer05: done (10 s, load 1 s)
+[14:20:46] [A  7/34] layer06: done (10 s, load 1 s)
+[14:20:56] [A  8/34] layer07: done (10 s, load 1 s)
+[14:21:06] [A  9/34] layer08: done (10 s, load 1 s)
+[14:21:16] [A 10/34] layer09: done (10 s, load 1 s)
+[14:21:27] [A 11/34] layer10: done (10 s, load 1 s)
+[14:21:37] [A 12/34] layer11: done (10 s, load 1 s)
+[14:21:47] [A 13/34] layer12: done (10 s, load 1 s)
+[14:21:57] [A 14/34] layer13: done (10 s, load 1 s)
+[14:22:07] [A 15/34] layer14: done (10 s, load 1 s)
+[14:22:17] [A 16/34] layer15: done (10 s, load 1 s)
+[14:22:27] [A 17/34] layer16: done (10 s, load 1 s)
+[14:22:37] [A 18/34] layer17: done (10 s, load 1 s)
+[14:22:47] [A 19/34] layer18: done (10 s, load 1 s)
+[14:22:56] [A 20/34] layer19: done (10 s, load 1 s)
+[14:23:06] [A 21/34] layer20: done (10 s, load 1 s)
+[14:23:15] [A 22/34] layer21: done (9 s, load 1 s)
+[14:23:25] [A 23/34] layer22: done (9 s, load 1 s)
+[14:23:34] [A 24/34] layer23: done (9 s, load 1 s)
+[14:23:43] [A 25/34] layer24: done (9 s, load 1 s)
+[14:23:53] [A 26/34] layer25: done (9 s, load 1 s)
+[14:24:02] [A 27/34] layer26: done (9 s, load 1 s)
+[14:24:11] [A 28/34] layer27: done (9 s, load 1 s)
+[14:24:20] [A 29/34] layer28: done (9 s, load 1 s)
+[14:24:29] [A 30/34] layer29: done (9 s, load 1 s)
+[14:24:38] [A 31/34] layer30: done (9 s, load 1 s)
+[14:24:48] [A 32/34] layer31: done (9 s, load 1 s)
+[14:25:19] [A 33/34] layer32: done (31 s, load 23 s)
+[14:25:20] [A 34/34] action_tokens: done (1 s, load 0 s)
+[14:25:20] A probes done
+== 14:25:20 python analysis/thesis_results/probes_b.py
+[14:25:21] pool D2; betas {'action': '0.83', 'emb_temp': 'none', 'cross_layer': '0.96'}; skipped unstable ['emb_temp[11]', 'emb_temp[12]', 'emb_temp[13]', 'xl_final[18]', 'xl_final[19]', 'xl_final[20]', 'xl_final[24]', 'xl_final[26]', 'xl_final[28]', 'xl_final[29]', 'xl_final[30]']; 116 probes per H
+[14:25:23] loaded primary series for 1000 rollouts (2 s)
+[14:25:53] [B pass 1  1/32] layer 0 (27 s)
+[14:27:08] [B pass 1  2/32] layer 1 (102 s)
+[14:28:14] [B pass 1  3/32] layer 2 (168 s)
+[14:29:14] [B pass 1  4/32] layer 3 (228 s)
+[14:30:07] [B pass 1  5/32] layer 4 (280 s)
+[14:31:00] [B pass 1  6/32] layer 5 (334 s)
+[14:31:49] [B pass 1  7/32] layer 6 (383 s)
+[14:32:36] [B pass 1  8/32] layer 7 (430 s)
+[14:33:21] [B pass 1  9/32] layer 8 (475 s)
+[14:34:06] [B pass 1 10/32] layer 9 (520 s)
+[14:34:49] [B pass 1 11/32] layer 10 (562 s)
+[14:35:32] [B pass 1 12/32] layer 11 (605 s)
+[14:36:11] [B pass 1 13/32] layer 12 (645 s)
+[14:36:49] [B pass 1 14/32] layer 13 (682 s)
+[14:37:27] [B pass 1 15/32] layer 14 (721 s)
+[14:38:05] [B pass 1 16/32] layer 15 (758 s)
+[14:38:41] [B pass 1 17/32] layer 16 (794 s)
+[14:39:16] [B pass 1 18/32] layer 17 (829 s)
+[14:39:47] [B pass 1 19/32] layer 18 (860 s)
+[14:40:16] [B pass 1 20/32] layer 19 (890 s)
+[14:40:44] [B pass 1 21/32] layer 20 (918 s)
+[14:41:15] [B pass 1 22/32] layer 21 (949 s)
+[14:41:44] [B pass 1 23/32] layer 22 (978 s)
+[14:42:13] [B pass 1 24/32] layer 23 (1007 s)
+[14:42:38] [B pass 1 25/32] layer 24 (1032 s)
+[14:43:06] [B pass 1 26/32] layer 25 (1059 s)
+[14:43:30] [B pass 1 27/32] layer 26 (1084 s)
+[14:43:56] [B pass 1 28/32] layer 27 (1110 s)
+[14:44:19] [B pass 1 29/32] layer 28 (1133 s)
+[14:44:41] [B pass 1 30/32] layer 29 (1155 s)
+[14:45:03] [B pass 1 31/32] layer 30 (1176 s)
+[14:45:24] [B pass 1 32/32] layer 31 (1198 s)
+[14:45:25] grid c = 0.0001 ({'1.0': (0.8466258254825502, 0.008428002949251962), '0.01': (0.8515560021128215, 0.008240551165693418), '0.001': (0.8633626173389181, 0.0075780347193487845), '0.0001': (0.8753878884435627, 0.007024529429901337), '1e-05': (0.8724197174309974, 0.007475031264919275), '1e-06': (0.8529622061506356, 0.009092845477439599)})
+[14:45:50] [B  1/32] layer 0 done (1223 s)
+[14:46:17] [B  2/32] layer 1 done (1250 s)
+[14:46:42] [B  3/32] layer 2 done (1276 s)
+[14:47:08] [B  4/32] layer 3 done (1302 s)
+[14:47:35] [B  5/32] layer 4 done (1329 s)
+[14:48:02] [B  6/32] layer 5 done (1355 s)
+[14:48:28] [B  7/32] layer 6 done (1381 s)
+[14:48:52] [B  8/32] layer 7 done (1406 s)
+[14:49:17] [B  9/32] layer 8 done (1430 s)
+[14:49:41] [B 10/32] layer 9 done (1455 s)
+[14:50:06] [B 11/32] layer 10 done (1480 s)
+[14:50:29] [B 12/32] layer 11 done (1503 s)
+[14:50:51] [B 13/32] layer 12 done (1525 s)
+[14:51:13] [B 14/32] layer 13 done (1546 s)
+[14:51:35] [B 15/32] layer 14 done (1569 s)
+[14:51:58] [B 16/32] layer 15 done (1592 s)
+[14:52:21] [B 17/32] layer 16 done (1614 s)
+[14:52:43] [B 18/32] layer 17 done (1636 s)
+[14:53:03] [B 19/32] layer 18 done (1657 s)
+[14:53:23] [B 20/32] layer 19 done (1677 s)
+[14:53:43] [B 21/32] layer 20 done (1697 s)
+[14:54:04] [B 22/32] layer 21 done (1718 s)
+[14:54:25] [B 23/32] layer 22 done (1738 s)
+[14:54:45] [B 24/32] layer 23 done (1759 s)
+[14:55:04] [B 25/32] layer 24 done (1778 s)
+[14:55:24] [B 26/32] layer 25 done (1798 s)
+[14:55:43] [B 27/32] layer 26 done (1816 s)
+[14:56:03] [B 28/32] layer 27 done (1836 s)
+[14:56:21] [B 29/32] layer 28 done (1854 s)
+[14:56:38] [B 30/32] layer 29 done (1872 s)
+[14:56:55] [B 31/32] layer 30 done (1889 s)
+[14:57:13] [B 32/32] layer 31 done (1907 s)
+[14:57:13] B probes done
+== 14:57:14 python analysis/thesis_results/probes_c.py
+[14:57:17] loaded primary series for 1000 rollouts (2 s)
+[14:57:25] [C seed 0] 33 probes + 64 leave-one-family-out probes, c = 0.001; unconverged [] (10 s)
+[14:57:31] [C seed 1] 33 probes + 64 leave-one-family-out probes, c = 0.001; unconverged [] (7 s)
+[14:57:38] [C seed 2] 33 probes + 64 leave-one-family-out probes, c = 0.001; unconverged [] (6 s)
+[14:57:38] C probes done
+== 14:57:38 python analysis/thesis_results/detectors.py --only reused a c b b_targets baselines
+[14:57:40] [det] A_best: saved (results/abc2/scores/D2_seed<s>.npz key A)
+[14:57:40] [det] C_lr132: saved (results/abc2/scores/D2_seed<s>.npz key C)
+[14:57:40] [det] emb_pooled: saved (results/abc2/scores/D2_seed<s>.npz key emb)
+[14:57:40] [det] A_mlp: saved (results/abc2/scores/D2_seed<s>_mlp.npz key A-MLP)
+[14:57:40] [det] C_mlp132: saved (results/abc2/scores/D2_seed<s>_mlp.npz key C-MLP)
+[14:57:40] [det] B_combiner_h10: saved (results/abc2/scores/D2_seed<s>_b10.npz key B)
+[14:57:40] [det] step reused ok (1 s)
+[14:57:41] [det] A_mean: saved (new: mean of the 34 refitted probes (probes_a.py))
+[14:57:46] [det] A_combiner: saved (new: logistic regression over 34 out-of-fold probe outputs)
+[14:57:46] [det] step a ok (6 s)
+[14:57:48] [det] C_best: saved (new selection: best of C's 33 probes on eval-seen per-task AUROC (per seed))
+[14:57:48] [det] C_mean: saved (new: mean of the 33 refitted probes (probes_c.py))
+[14:57:48] [det] C_mean_lofo: saved (new: C's unweighted mean without one constraint family (probes_c.py))
+[14:57:51] [det] C_combiner: saved (new: logistic regression over 33 out-of-fold probe outputs)
+[14:57:51] [det] step c ok (11 s)
+[14:58:05] [det] B_best_h0: saved (new selection: best of B's probes on eval-seen per-task AUROC against outcome)
+[14:58:05] [det] B_mean_h0: saved (new: mean of the refitted grid probes (probes_b.py))
+[14:58:05] [det] B_meanemb_h0: saved (new: mean of the refitted embedding-temporal grid probes)
+[14:58:05] [det] B_bylayer_h0: saved (new: per-layer mean of B's probes (profiles only))
+[14:58:19] [det] B_combiner_h0: saved (new: B's trained combiner refitted on the refitted grid outputs)
+[14:58:35] [det] B_best_h10: saved (new selection: best of B's probes on eval-seen per-task AUROC against outcome)
+[14:58:35] [det] B_mean_h10: saved (new: mean of the refitted grid probes (probes_b.py))
+[14:58:35] [det] B_meanemb_h10: saved (new: mean of the refitted embedding-temporal grid probes)
+[14:58:35] [det] B_bylayer_h10: saved (new: per-layer mean of B's probes (profiles only))
+[14:58:47] [det] B_combiner_h10_refit: saved (new: B's trained combiner refitted on the refitted grid outputs)
+[14:59:02] [det] B_best_h25: saved (new selection: best of B's probes on eval-seen per-task AUROC against outcome)
+[14:59:02] [det] B_mean_h25: saved (new: mean of the refitted grid probes (probes_b.py))
+[14:59:02] [det] B_meanemb_h25: saved (new: mean of the refitted embedding-temporal grid probes)
+[14:59:02] [det] B_bylayer_h25: saved (new: per-layer mean of B's probes (profiles only))
+[14:59:15] [det] B_combiner_h25: saved (new: B's trained combiner refitted on the refitted grid outputs)
+[14:59:15] [det] step b ok (96 s)
+[14:59:32] [det] B_bytarget_h0: saved (new: B per target kind (unweighted mean; trained combiner at the full combiner's c))
+[14:59:47] [det] B_bytarget_h10: saved (new: B per target kind (unweighted mean; trained combiner at the full combiner's c))
+[15:00:00] [det] B_bytarget_h25: saved (new: B per target kind (unweighted mean; trained combiner at the full combiner's c))
+[15:00:00] [det] step b_targets ok (140 s)
+[15:00:00] [det] timestep: saved (new (alarm); the score is t itself)
+[15:00:02] loaded primary series for 1000 rollouts (2 s)
+[15:00:02] [det] emb_best: saved (new: emb_temp at the layer chosen on eval-seen per-task AUROC (results/abc2/constraint_m1_summary.csv), running maximum)
+[15:00:09] loaded baseline series for 1000 rollouts (7 s)
+[15:00:09] [det] token_entropy: saved (new (alarm): prepared as every constraint, running maximum)
+[15:00:09] [det] token_maxprob: saved (new (alarm): prepared as every constraint, running maximum)
+[15:00:13] loaded failurespot series for 1000 rollouts (4 s)
+[15:00:13] [det] failurespot: saved (new (alarm): FailureSpot's signal, fixed orientation, running maximum)
+[15:00:13] [det] failurespot_neg: saved (new (alarm): FailureSpot's signal, fixed orientation, running maximum)
+[15:00:13] [det] step baselines ok (153 s)
+== 15:00:14 python analysis/thesis_results/mlp_new.py c
+[15:00:17] loaded primary series for 1000 rollouts (2 s)
+[15:00:20] [C mlp seed 0] action (4 inputs) wd 0.0001: epoch 2/7, eval-seen per-task 0.8310
+[15:00:21] [C mlp seed 0] action (4 inputs) wd 0.01: epoch 2/7, eval-seen per-task 0.8310
+[15:00:21] [C mlp seed 0] action (4 inputs) wd 0.1: epoch 2/7, eval-seen per-task 0.8310
+[15:00:21] [C mlp seed 0] action (4 inputs) wd 1: epoch 2/7, eval-seen per-task 0.8319
+[15:00:24] [C mlp seed 1] action (4 inputs) wd 0.0001: epoch 5/10, eval-seen per-task 0.8037
+[15:00:24] [C mlp seed 1] action (4 inputs) wd 0.01: epoch 5/10, eval-seen per-task 0.8037
+[15:00:25] [C mlp seed 1] action (4 inputs) wd 0.1: epoch 5/10, eval-seen per-task 0.8029
+[15:00:25] [C mlp seed 1] action (4 inputs) wd 1: epoch 5/10, eval-seen per-task 0.8029
+[15:00:27] [C mlp seed 2] layer05 (3 inputs) wd 0.0001: epoch 3/8, eval-seen per-task 0.7494
+[15:00:27] [C mlp seed 2] layer05 (3 inputs) wd 0.01: epoch 3/8, eval-seen per-task 0.7494
+[15:00:28] [C mlp seed 2] layer05 (3 inputs) wd 0.1: epoch 3/8, eval-seen per-task 0.7494
+[15:00:28] [C mlp seed 2] layer05 (3 inputs) wd 1: epoch 1/6, eval-seen per-task 0.7450
+[15:00:28] [C mlp] wd 0.0001; saved /data/tmp/thesis_results_work/full/mlp/C_mlp.pkl
+== 15:00:29 python analysis/thesis_results/mlp_new.py b
+[15:00:32] loaded primary series for 1000 rollouts (2 s)
+[15:00:38] [B mlp seed 0] L30:emb_temp:H10 wd 0.0001: epoch 1/6, eval-seen target AUROC 0.8908 (linear 0.8837) (1 s)
+[15:00:39] [B mlp seed 0] L30:emb_temp:H10 wd 0.01: epoch 1/6, eval-seen target AUROC 0.8908 (linear 0.8837) (1 s)
+[15:00:40] [B mlp seed 0] L30:emb_temp:H10 wd 0.1: epoch 1/6, eval-seen target AUROC 0.8907 (linear 0.8837) (1 s)
+[15:00:41] [B mlp seed 0] L30:emb_temp:H10 wd 1: epoch 1/6, eval-seen target AUROC 0.8909 (linear 0.8837) (1 s)
+[15:01:07] [B mlp seed 1] L15:emb_temp:H10 wd 0.0001: epoch 1/6, eval-seen target AUROC 0.8474 (linear 0.8445) (1 s)
+[15:01:08] [B mlp seed 1] L15:emb_temp:H10 wd 0.01: epoch 1/6, eval-seen target AUROC 0.8480 (linear 0.8445) (1 s)
+[15:01:08] [B mlp seed 1] L15:emb_temp:H10 wd 0.1: epoch 1/6, eval-seen target AUROC 0.8478 (linear 0.8445) (1 s)
+[15:01:09] [B mlp seed 1] L15:emb_temp:H10 wd 1: epoch 1/6, eval-seen target AUROC 0.8480 (linear 0.8445) (1 s)
+[15:01:11] [B mlp seed 2] L00:emb_temp:H10 wd 0.0001: epoch 2/7, eval-seen target AUROC 0.7751 (linear 0.7708) (1 s)
+[15:01:12] [B mlp seed 2] L00:emb_temp:H10 wd 0.01: epoch 2/7, eval-seen target AUROC 0.7750 (linear 0.7708) (1 s)
+[15:01:13] [B mlp seed 2] L00:emb_temp:H10 wd 0.1: epoch 2/7, eval-seen target AUROC 0.7753 (linear 0.7708) (1 s)
+[15:01:14] [B mlp seed 2] L00:emb_temp:H10 wd 1: epoch 2/7, eval-seen target AUROC 0.7753 (linear 0.7708) (1 s)
+[15:01:14] [B mlp] wd 1; saved /data/tmp/thesis_results_work/full/mlp/B_mlp_h10.pkl
+== 15:01:14 python analysis/thesis_results/detectors.py --only mlps
+[15:01:15] [det] C_mlp: saved (new: 2-layer MLP (stage10_mlp recipe) on the best C probe's inputs)
+[15:01:15] [det] B_mlp_h10: saved (new: 2-layer MLP on the best B probe's layer, trained on its constraint target)
+[15:01:15] [det] step mlps ok (0 s)
+== 15:01:16 python analysis/thesis_results/evaluate.py
+[15:01:17] [eval] A_best (0 s)
+[15:01:17] [eval] A_mean (0 s)
+[15:01:17] [eval] A_combiner (0 s)
+[15:01:17] [eval] A_mlp (1 s)
+[15:01:17] [eval] C_best (1 s)
+[15:01:18] [eval] C_mean (1 s)
+[15:01:18] [eval] C_combiner (1 s)
+[15:01:18] [eval] C_mlp (1 s)
+[15:01:18] [eval] C_lr132 (1 s)
+[15:01:18] [eval] C_mlp132 (1 s)
+[15:01:18] [eval] B_best_h0 (2 s)
+[15:01:18] [eval] B_mean_h0 (2 s)
+[15:01:19] [eval] B_meanemb_h0 (2 s)
+[15:01:19] [eval] B_combiner_h0 (2 s)
+[15:01:19] [eval] B_best_h10 (2 s)
+[15:01:19] [eval] B_mean_h10 (2 s)
+[15:01:19] [eval] B_meanemb_h10 (2 s)
+[15:01:19] [eval] B_combiner_h10 (3 s)
+[15:01:19] [eval] B_best_h25 (3 s)
+[15:01:20] [eval] B_mean_h25 (3 s)
+[15:01:20] [eval] B_meanemb_h25 (3 s)
+[15:01:20] [eval] B_combiner_h25 (3 s)
+[15:01:20] [eval] B_mlp_h10 (3 s)
+[15:01:20] [eval] timestep (3 s)
+[15:01:20] [eval] emb_best (4 s)
+[15:01:20] [eval] emb_pooled (4 s)
+[15:01:21] [eval] token_entropy (4 s)
+[15:01:21] [eval] token_maxprob (4 s)
+[15:01:21] [eval] failurespot (4 s)
+[15:01:21] [eval] failurespot_neg (4 s)
+[15:01:21] [eval] B_combiner_h10_refit (5 s)
+[15:01:21] [eval] C_mean_lofo:no_action (5 s)
+[15:01:22] [eval] C_mean_lofo:no_emb_temp (5 s)
+[15:01:22] [eval] C_mean_lofo:no_cross_layer (5 s)
+[15:01:22] [eval] B_bytarget_h0:mean_act_rep (5 s)
+[15:01:22] [eval] B_bytarget_h0:mean_act_mag (5 s)
+[15:01:22] [eval] B_bytarget_h0:mean_emb_temp (6 s)
+[15:01:22] [eval] B_bytarget_h0:mean_xl_final (6 s)
+[15:01:23] [eval] B_bytarget_h0:combiner_act_rep (6 s)
+[15:01:23] [eval] B_bytarget_h0:combiner_act_mag (6 s)
+[15:01:23] [eval] B_bytarget_h0:combiner_emb_temp (6 s)
+[15:01:23] [eval] B_bytarget_h0:combiner_xl_final (6 s)
+[15:01:23] [eval] B_bytarget_h10:mean_act_rep (7 s)
+[15:01:24] [eval] B_bytarget_h10:mean_act_mag (7 s)
+[15:01:24] [eval] B_bytarget_h10:mean_emb_temp (7 s)
+[15:01:24] [eval] B_bytarget_h10:mean_xl_final (7 s)
+[15:01:24] [eval] B_bytarget_h10:combiner_act_rep (7 s)
+[15:01:24] [eval] B_bytarget_h10:combiner_act_mag (7 s)
+[15:01:24] [eval] B_bytarget_h10:combiner_emb_temp (8 s)
+[15:01:24] [eval] B_bytarget_h10:combiner_xl_final (8 s)
+[15:01:25] [eval] B_bytarget_h25:mean_act_rep (8 s)
+[15:01:25] [eval] B_bytarget_h25:mean_act_mag (8 s)
+[15:01:25] [eval] B_bytarget_h25:mean_emb_temp (8 s)
+[15:01:25] [eval] B_bytarget_h25:mean_xl_final (8 s)
+[15:01:25] [eval] B_bytarget_h25:combiner_act_rep (9 s)
+[15:01:26] [eval] B_bytarget_h25:combiner_act_mag (9 s)
+[15:01:26] [eval] B_bytarget_h25:combiner_emb_temp (9 s)
+[15:01:26] [eval] B_bytarget_h25:combiner_xl_final (9 s)
+[15:01:39] [eval] done: 58 detectors (22 s)
+== 15:01:39 python analysis/thesis_results/checks.py
+120 checks, 0 failed
+== 15:01:40 python analysis/thesis_results/profiles.py
+[15:01:45] [profiles] A: 612 rows (3 s)
+[15:01:49] [profiles] C: 909 rows (8 s)
+[15:02:48] [profiles] B: 4905 rows (67 s)
+[15:02:50] loaded primary series for 1000 rollouts (2 s)
+[15:03:03] [profiles] constraints: 7254 rows (82 s)
+[15:03:03] [profiles] means: 7299 rows (82 s)
+[15:03:03] [profiles] 7299 rows -> /ephemeral/code/thesis-introspection/results/thesis_results_full/figures/data/per_probe_outcome_auroc.csv; probe checks 603, failed 1; max diff 0.0118
+== 15:03:04 python analysis/thesis_results/b_constraint.py
+[15:03:07] loaded primary series for 1000 rollouts (2 s)
+[15:04:05] [b_constraint] grid rows 3132, baseline rows 2916; grid checks 0, failed 0, max diff 0
+== 15:04:05 python analysis/thesis_results/paired.py
+39 rows; identity check max |diff| 4.89e-07 (passed)
+== 15:04:07 python analysis/thesis_results/corpus.py
+/ephemeral/code/thesis-introspection/analysis/thesis_results/corpus.py:149: RuntimeWarning: Mean of empty slice
+  per.append(np.where(n >= 5, np.nanmean(x, 0), np.nan))
+[15:04:08] [corpus] done; checks 7/7 passed
+== 15:04:09 python analysis/thesis_results/tables.py
+T1: 30 rows on the headline test set
+t1 ok
+t3 ok
+t4 ok
+t5 ok
+t6 ok
+== 15:04:11 python analysis/thesis_results/figures.py
+/ephemeral/code/venv/lib/python3.10/site-packages/numpy/lib/nanfunctions.py:1879: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+F1 FAILED: FileNotFoundError: [Errno 2] No such file or directory: '/ephemeral/code/thesis-introspection/results/thesis_results_full/figures/data/example_rollouts.json'
+F2 ok
+F3 ok
+F4 ok
+F5 ok
+F6 ok
+F7 ok
+F8 ok
+F9 ok
+F10 ok
+F11 ok
+comparison rows 50, selections 26

@@ -1,0 +1,21 @@
+Thesis results, main run (original training set): tables, figures, report
+
+Collect the thesis Results chapter's numbers on the original training set:
+A, C and B as single best probe, unweighted mean of probe outputs (primary),
+trained combiner (out-of-fold) and 2-layer MLP, with baselines, per-task and
+pooled AUROC and conformal alarms on unseen tasks (original and incl.
+LIBERO-PRO) and the stress set; per-probe outcome profiles; B's constraint
+prediction vs persistence; paired bootstraps; ablations; corpus and confounds.
+Every existing row reproduces its source file (292 detector checks, max
+diff 0.0001).
+
+New:
+- analysis/thesis_results/: probe refits (A and B on GPU, C on CPU),
+  detectors, evaluation, checks, profiles, paired bootstrap, corpus,
+  example rollout, tables, figures, report; run_gpu_probes.sh,
+  run_main.sh, run_full.sh (background run), status.sh
+- results/thesis_results/: REPORT.md, CHECKPOINT_0_audit.md,
+  CHECKPOINT_1.md, CHECKPOINT_2.md, RUNLOG.md, STATE.md, tables/,
+  figures/ (PDF + PNG + data CSVs), scores/
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>

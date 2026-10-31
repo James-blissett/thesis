@@ -1,0 +1,18 @@
+{
+ "max_abs_diff": 4.915824916018607e-07,
+ "passed": true,
+ "keys": [
+  "A_best",
+  "A_combiner",
+  "A_mean",
+  "A_mlp",
+  "B_best_h10",
+  "B_combiner_h10",
+  "B_mean_h10",
+  "B_mlp_h10",
+  "C_best",
+  "C_combiner",
+  "C_mean",
+  "C_mlp"
+ ]
+}

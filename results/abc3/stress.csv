@@ -1,0 +1,361 @@
+cond,seed,detector,detail,stress_set,block,alpha,n,n_fail,share_alarm_before_cut,mean_cut,input,depth,model
+D0,0,A-linear,layer01 c=1e-05,stress_seen,all,0.1,70,66,0.357143,263.714,A,0,linear
+D0,0,A-linear,layer01 c=1e-05,stress_seen,swap,0.1,35,35,0.542857,263.714,A,0,linear
+D0,0,A-linear,layer01 c=1e-05,stress_seen,task,0.1,35,31,0.171429,263.714,A,0,linear
+D0,0,A-linear,layer01 c=1e-05,stress_unseen,all,0.1,30,30,0.3,199.667,A,0,linear
+D0,0,A-linear,layer01 c=1e-05,stress_unseen,swap,0.1,15,15,0.466667,199.667,A,0,linear
+D0,0,A-linear,layer01 c=1e-05,stress_unseen,task,0.1,15,15,0.133333,199.667,A,0,linear
+D0,0,A-mlp-abc2,layer01 wd=1 epoch=2,stress_seen,all,0.1,70,66,0.271429,263.714,A,2,plain-mlp-abc2
+D0,0,A-mlp-abc2,layer01 wd=1 epoch=2,stress_seen,swap,0.1,35,35,0.485714,263.714,A,2,plain-mlp-abc2
+D0,0,A-mlp-abc2,layer01 wd=1 epoch=2,stress_seen,task,0.1,35,31,0.0571429,263.714,A,2,plain-mlp-abc2
+D0,0,A-mlp-abc2,layer01 wd=1 epoch=2,stress_unseen,all,0.1,30,30,0.1,199.667,A,2,plain-mlp-abc2
+D0,0,A-mlp-abc2,layer01 wd=1 epoch=2,stress_unseen,swap,0.1,15,15,0.2,199.667,A,2,plain-mlp-abc2
+D0,0,A-mlp-abc2,layer01 wd=1 epoch=2,stress_unseen,task,0.1,15,15,0,199.667,A,2,plain-mlp-abc2
+D0,0,A-d2,layer01 p=0 wd=0.01 epoch=1,stress_seen,all,0.1,70,66,0.328571,263.714,A,2,resmlp
+D0,0,A-d2,layer01 p=0 wd=0.01 epoch=1,stress_seen,swap,0.1,35,35,0.485714,263.714,A,2,resmlp
+D0,0,A-d2,layer01 p=0 wd=0.01 epoch=1,stress_seen,task,0.1,35,31,0.171429,263.714,A,2,resmlp
+D0,0,A-d2,layer01 p=0 wd=0.01 epoch=1,stress_unseen,all,0.1,30,30,0.233333,199.667,A,2,resmlp
+D0,0,A-d2,layer01 p=0 wd=0.01 epoch=1,stress_unseen,swap,0.1,15,15,0.4,199.667,A,2,resmlp
+D0,0,A-d2,layer01 p=0 wd=0.01 epoch=1,stress_unseen,task,0.1,15,15,0.0666667,199.667,A,2,resmlp
+D0,0,A-d6,layer01 p=0.3 wd=0.01 epoch=1,stress_seen,all,0.1,70,66,0.314286,263.714,A,6,resmlp
+D0,0,A-d6,layer01 p=0.3 wd=0.01 epoch=1,stress_seen,swap,0.1,35,35,0.457143,263.714,A,6,resmlp
+D0,0,A-d6,layer01 p=0.3 wd=0.01 epoch=1,stress_seen,task,0.1,35,31,0.171429,263.714,A,6,resmlp
+D0,0,A-d6,layer01 p=0.3 wd=0.01 epoch=1,stress_unseen,all,0.1,30,30,0.266667,199.667,A,6,resmlp
+D0,0,A-d6,layer01 p=0.3 wd=0.01 epoch=1,stress_unseen,swap,0.1,15,15,0.4,199.667,A,6,resmlp
+D0,0,A-d6,layer01 p=0.3 wd=0.01 epoch=1,stress_unseen,task,0.1,15,15,0.133333,199.667,A,6,resmlp
+D0,0,A-d12,layer01 p=0.3 wd=0.01 epoch=1,stress_seen,all,0.1,70,66,0.357143,263.714,A,12,resmlp
+D0,0,A-d12,layer01 p=0.3 wd=0.01 epoch=1,stress_seen,swap,0.1,35,35,0.542857,263.714,A,12,resmlp
+D0,0,A-d12,layer01 p=0.3 wd=0.01 epoch=1,stress_seen,task,0.1,35,31,0.171429,263.714,A,12,resmlp
+D0,0,A-d12,layer01 p=0.3 wd=0.01 epoch=1,stress_unseen,all,0.1,30,30,0.333333,199.667,A,12,resmlp
+D0,0,A-d12,layer01 p=0.3 wd=0.01 epoch=1,stress_unseen,swap,0.1,15,15,0.533333,199.667,A,12,resmlp
+D0,0,A-d12,layer01 p=0.3 wd=0.01 epoch=1,stress_unseen,task,0.1,15,15,0.133333,199.667,A,12,resmlp
+D0,0,C-linear,final c=1e-05,stress_seen,all,0.1,70,66,0.3,263.714,C,0,linear
+D0,0,C-linear,final c=1e-05,stress_seen,swap,0.1,35,35,0.542857,263.714,C,0,linear
+D0,0,C-linear,final c=1e-05,stress_seen,task,0.1,35,31,0.0571429,263.714,C,0,linear
+D0,0,C-linear,final c=1e-05,stress_unseen,all,0.1,30,30,0.1,199.667,C,0,linear
+D0,0,C-linear,final c=1e-05,stress_unseen,swap,0.1,15,15,0.133333,199.667,C,0,linear
+D0,0,C-linear,final c=1e-05,stress_unseen,task,0.1,15,15,0.0666667,199.667,C,0,linear
+D0,0,C-mlp-abc2,C final inputs wd=0.0001 epoch=5,stress_seen,all,0.1,70,66,0.285714,263.714,C,2,plain-mlp-abc2
+D0,0,C-mlp-abc2,C final inputs wd=0.0001 epoch=5,stress_seen,swap,0.1,35,35,0.428571,263.714,C,2,plain-mlp-abc2
+D0,0,C-mlp-abc2,C final inputs wd=0.0001 epoch=5,stress_seen,task,0.1,35,31,0.142857,263.714,C,2,plain-mlp-abc2
+D0,0,C-mlp-abc2,C final inputs wd=0.0001 epoch=5,stress_unseen,all,0.1,30,30,0.133333,199.667,C,2,plain-mlp-abc2
+D0,0,C-mlp-abc2,C final inputs wd=0.0001 epoch=5,stress_unseen,swap,0.1,15,15,0.2,199.667,C,2,plain-mlp-abc2
+D0,0,C-mlp-abc2,C final inputs wd=0.0001 epoch=5,stress_unseen,task,0.1,15,15,0.0666667,199.667,C,2,plain-mlp-abc2
+D0,0,C-d2,C final inputs p=0 wd=0.1 epoch=16,stress_seen,all,0.1,70,66,0.457143,263.714,C,2,resmlp
+D0,0,C-d2,C final inputs p=0 wd=0.1 epoch=16,stress_seen,swap,0.1,35,35,0.657143,263.714,C,2,resmlp
+D0,0,C-d2,C final inputs p=0 wd=0.1 epoch=16,stress_seen,task,0.1,35,31,0.257143,263.714,C,2,resmlp
+D0,0,C-d2,C final inputs p=0 wd=0.1 epoch=16,stress_unseen,all,0.1,30,30,0.7,199.667,C,2,resmlp
+D0,0,C-d2,C final inputs p=0 wd=0.1 epoch=16,stress_unseen,swap,0.1,15,15,0.866667,199.667,C,2,resmlp
+D0,0,C-d2,C final inputs p=0 wd=0.1 epoch=16,stress_unseen,task,0.1,15,15,0.533333,199.667,C,2,resmlp
+D0,0,C-d6,C final inputs p=0.3 wd=0.01 epoch=10,stress_seen,all,0.1,70,66,0.442857,263.714,C,6,resmlp
+D0,0,C-d6,C final inputs p=0.3 wd=0.01 epoch=10,stress_seen,swap,0.1,35,35,0.6,263.714,C,6,resmlp
+D0,0,C-d6,C final inputs p=0.3 wd=0.01 epoch=10,stress_seen,task,0.1,35,31,0.285714,263.714,C,6,resmlp
+D0,0,C-d6,C final inputs p=0.3 wd=0.01 epoch=10,stress_unseen,all,0.1,30,30,0.5,199.667,C,6,resmlp
+D0,0,C-d6,C final inputs p=0.3 wd=0.01 epoch=10,stress_unseen,swap,0.1,15,15,0.6,199.667,C,6,resmlp
+D0,0,C-d6,C final inputs p=0.3 wd=0.01 epoch=10,stress_unseen,task,0.1,15,15,0.4,199.667,C,6,resmlp
+D0,0,C-d12,C final inputs p=0 wd=0.1 epoch=4,stress_seen,all,0.1,70,66,0.385714,263.714,C,12,resmlp
+D0,0,C-d12,C final inputs p=0 wd=0.1 epoch=4,stress_seen,swap,0.1,35,35,0.6,263.714,C,12,resmlp
+D0,0,C-d12,C final inputs p=0 wd=0.1 epoch=4,stress_seen,task,0.1,35,31,0.171429,263.714,C,12,resmlp
+D0,0,C-d12,C final inputs p=0 wd=0.1 epoch=4,stress_unseen,all,0.1,30,30,0.233333,199.667,C,12,resmlp
+D0,0,C-d12,C final inputs p=0 wd=0.1 epoch=4,stress_unseen,swap,0.1,15,15,0.266667,199.667,C,12,resmlp
+D0,0,C-d12,C final inputs p=0 wd=0.1 epoch=4,stress_unseen,task,0.1,15,15,0.2,199.667,C,12,resmlp
+D0,1,A-linear,layer10 c=1e-05,stress_seen,all,0.1,70,66,0.357143,255.714,A,0,linear
+D0,1,A-linear,layer10 c=1e-05,stress_seen,swap,0.1,35,35,0.514286,255.714,A,0,linear
+D0,1,A-linear,layer10 c=1e-05,stress_seen,task,0.1,35,31,0.2,255.714,A,0,linear
+D0,1,A-linear,layer10 c=1e-05,stress_unseen,all,0.1,30,30,0.1,214,A,0,linear
+D0,1,A-linear,layer10 c=1e-05,stress_unseen,swap,0.1,15,15,0.133333,214,A,0,linear
+D0,1,A-linear,layer10 c=1e-05,stress_unseen,task,0.1,15,15,0.0666667,214,A,0,linear
+D0,1,A-mlp-abc2,layer10 wd=1 epoch=1,stress_seen,all,0.1,70,66,0.128571,255.714,A,2,plain-mlp-abc2
+D0,1,A-mlp-abc2,layer10 wd=1 epoch=1,stress_seen,swap,0.1,35,35,0.142857,255.714,A,2,plain-mlp-abc2
+D0,1,A-mlp-abc2,layer10 wd=1 epoch=1,stress_seen,task,0.1,35,31,0.114286,255.714,A,2,plain-mlp-abc2
+D0,1,A-mlp-abc2,layer10 wd=1 epoch=1,stress_unseen,all,0.1,30,30,0,214,A,2,plain-mlp-abc2
+D0,1,A-mlp-abc2,layer10 wd=1 epoch=1,stress_unseen,swap,0.1,15,15,0,214,A,2,plain-mlp-abc2
+D0,1,A-mlp-abc2,layer10 wd=1 epoch=1,stress_unseen,task,0.1,15,15,0,214,A,2,plain-mlp-abc2
+D0,1,A-d2,layer10 p=0.3 wd=0.01 epoch=1,stress_seen,all,0.1,70,66,0.128571,255.714,A,2,resmlp
+D0,1,A-d2,layer10 p=0.3 wd=0.01 epoch=1,stress_seen,swap,0.1,35,35,0.142857,255.714,A,2,resmlp
+D0,1,A-d2,layer10 p=0.3 wd=0.01 epoch=1,stress_seen,task,0.1,35,31,0.114286,255.714,A,2,resmlp
+D0,1,A-d2,layer10 p=0.3 wd=0.01 epoch=1,stress_unseen,all,0.1,30,30,0,214,A,2,resmlp
+D0,1,A-d2,layer10 p=0.3 wd=0.01 epoch=1,stress_unseen,swap,0.1,15,15,0,214,A,2,resmlp
+D0,1,A-d2,layer10 p=0.3 wd=0.01 epoch=1,stress_unseen,task,0.1,15,15,0,214,A,2,resmlp
+D0,1,A-d6,layer10 p=0.3 wd=0.01 epoch=1,stress_seen,all,0.1,70,66,0.128571,255.714,A,6,resmlp
+D0,1,A-d6,layer10 p=0.3 wd=0.01 epoch=1,stress_seen,swap,0.1,35,35,0.142857,255.714,A,6,resmlp
+D0,1,A-d6,layer10 p=0.3 wd=0.01 epoch=1,stress_seen,task,0.1,35,31,0.114286,255.714,A,6,resmlp
+D0,1,A-d6,layer10 p=0.3 wd=0.01 epoch=1,stress_unseen,all,0.1,30,30,0,214,A,6,resmlp
+D0,1,A-d6,layer10 p=0.3 wd=0.01 epoch=1,stress_unseen,swap,0.1,15,15,0,214,A,6,resmlp
+D0,1,A-d6,layer10 p=0.3 wd=0.01 epoch=1,stress_unseen,task,0.1,15,15,0,214,A,6,resmlp
+D0,1,A-d12,layer10 p=0.3 wd=0.1 epoch=1,stress_seen,all,0.1,70,66,0.128571,255.714,A,12,resmlp
+D0,1,A-d12,layer10 p=0.3 wd=0.1 epoch=1,stress_seen,swap,0.1,35,35,0.142857,255.714,A,12,resmlp
+D0,1,A-d12,layer10 p=0.3 wd=0.1 epoch=1,stress_seen,task,0.1,35,31,0.114286,255.714,A,12,resmlp
+D0,1,A-d12,layer10 p=0.3 wd=0.1 epoch=1,stress_unseen,all,0.1,30,30,0,214,A,12,resmlp
+D0,1,A-d12,layer10 p=0.3 wd=0.1 epoch=1,stress_unseen,swap,0.1,15,15,0,214,A,12,resmlp
+D0,1,A-d12,layer10 p=0.3 wd=0.1 epoch=1,stress_unseen,task,0.1,15,15,0,214,A,12,resmlp
+D0,1,C-linear,final c=1e-05,stress_seen,all,0.1,70,66,0.0857143,255.714,C,0,linear
+D0,1,C-linear,final c=1e-05,stress_seen,swap,0.1,35,35,0.114286,255.714,C,0,linear
+D0,1,C-linear,final c=1e-05,stress_seen,task,0.1,35,31,0.0571429,255.714,C,0,linear
+D0,1,C-linear,final c=1e-05,stress_unseen,all,0.1,30,30,0,214,C,0,linear
+D0,1,C-linear,final c=1e-05,stress_unseen,swap,0.1,15,15,0,214,C,0,linear
+D0,1,C-linear,final c=1e-05,stress_unseen,task,0.1,15,15,0,214,C,0,linear
+D0,1,C-mlp-abc2,C final inputs wd=0.0001 epoch=1,stress_seen,all,0.1,70,66,0.514286,255.714,C,2,plain-mlp-abc2
+D0,1,C-mlp-abc2,C final inputs wd=0.0001 epoch=1,stress_seen,swap,0.1,35,35,0.657143,255.714,C,2,plain-mlp-abc2
+D0,1,C-mlp-abc2,C final inputs wd=0.0001 epoch=1,stress_seen,task,0.1,35,31,0.371429,255.714,C,2,plain-mlp-abc2
+D0,1,C-mlp-abc2,C final inputs wd=0.0001 epoch=1,stress_unseen,all,0.1,30,30,0.533333,214,C,2,plain-mlp-abc2
+D0,1,C-mlp-abc2,C final inputs wd=0.0001 epoch=1,stress_unseen,swap,0.1,15,15,0.666667,214,C,2,plain-mlp-abc2
+D0,1,C-mlp-abc2,C final inputs wd=0.0001 epoch=1,stress_unseen,task,0.1,15,15,0.4,214,C,2,plain-mlp-abc2
+D0,1,C-d2,C final inputs p=0.3 wd=0.01 epoch=1,stress_seen,all,0.1,70,66,0.1,255.714,C,2,resmlp
+D0,1,C-d2,C final inputs p=0.3 wd=0.01 epoch=1,stress_seen,swap,0.1,35,35,0.0857143,255.714,C,2,resmlp
+D0,1,C-d2,C final inputs p=0.3 wd=0.01 epoch=1,stress_seen,task,0.1,35,31,0.114286,255.714,C,2,resmlp
+D0,1,C-d2,C final inputs p=0.3 wd=0.01 epoch=1,stress_unseen,all,0.1,30,30,0,214,C,2,resmlp
+D0,1,C-d2,C final inputs p=0.3 wd=0.01 epoch=1,stress_unseen,swap,0.1,15,15,0,214,C,2,resmlp
+D0,1,C-d2,C final inputs p=0.3 wd=0.01 epoch=1,stress_unseen,task,0.1,15,15,0,214,C,2,resmlp
+D0,1,C-d6,C final inputs p=0.3 wd=0.01 epoch=2,stress_seen,all,0.1,70,66,0.528571,255.714,C,6,resmlp
+D0,1,C-d6,C final inputs p=0.3 wd=0.01 epoch=2,stress_seen,swap,0.1,35,35,0.571429,255.714,C,6,resmlp
+D0,1,C-d6,C final inputs p=0.3 wd=0.01 epoch=2,stress_seen,task,0.1,35,31,0.485714,255.714,C,6,resmlp
+D0,1,C-d6,C final inputs p=0.3 wd=0.01 epoch=2,stress_unseen,all,0.1,30,30,0.5,214,C,6,resmlp
+D0,1,C-d6,C final inputs p=0.3 wd=0.01 epoch=2,stress_unseen,swap,0.1,15,15,0.666667,214,C,6,resmlp
+D0,1,C-d6,C final inputs p=0.3 wd=0.01 epoch=2,stress_unseen,task,0.1,15,15,0.333333,214,C,6,resmlp
+D0,1,C-d12,C final inputs p=0.3 wd=0.01 epoch=2,stress_seen,all,0.1,70,66,0.457143,255.714,C,12,resmlp
+D0,1,C-d12,C final inputs p=0.3 wd=0.01 epoch=2,stress_seen,swap,0.1,35,35,0.628571,255.714,C,12,resmlp
+D0,1,C-d12,C final inputs p=0.3 wd=0.01 epoch=2,stress_seen,task,0.1,35,31,0.285714,255.714,C,12,resmlp
+D0,1,C-d12,C final inputs p=0.3 wd=0.01 epoch=2,stress_unseen,all,0.1,30,30,0.433333,214,C,12,resmlp
+D0,1,C-d12,C final inputs p=0.3 wd=0.01 epoch=2,stress_unseen,swap,0.1,15,15,0.666667,214,C,12,resmlp
+D0,1,C-d12,C final inputs p=0.3 wd=0.01 epoch=2,stress_unseen,task,0.1,15,15,0.2,214,C,12,resmlp
+D0,2,A-linear,layer02 c=1e-05,stress_seen,all,0.1,70,66,0,263.571,A,0,linear
+D0,2,A-linear,layer02 c=1e-05,stress_seen,swap,0.1,35,35,0,263.571,A,0,linear
+D0,2,A-linear,layer02 c=1e-05,stress_seen,task,0.1,35,31,0,263.571,A,0,linear
+D0,2,A-linear,layer02 c=1e-05,stress_unseen,all,0.1,30,30,0,217.667,A,0,linear
+D0,2,A-linear,layer02 c=1e-05,stress_unseen,swap,0.1,15,15,0,217.667,A,0,linear
+D0,2,A-linear,layer02 c=1e-05,stress_unseen,task,0.1,15,15,0,217.667,A,0,linear
+D0,2,A-mlp-abc2,layer02 wd=1 epoch=8,stress_seen,all,0.1,70,66,0.285714,263.571,A,2,plain-mlp-abc2
+D0,2,A-mlp-abc2,layer02 wd=1 epoch=8,stress_seen,swap,0.1,35,35,0.4,263.571,A,2,plain-mlp-abc2
+D0,2,A-mlp-abc2,layer02 wd=1 epoch=8,stress_seen,task,0.1,35,31,0.171429,263.571,A,2,plain-mlp-abc2
+D0,2,A-mlp-abc2,layer02 wd=1 epoch=8,stress_unseen,all,0.1,30,30,0,217.667,A,2,plain-mlp-abc2
+D0,2,A-mlp-abc2,layer02 wd=1 epoch=8,stress_unseen,swap,0.1,15,15,0,217.667,A,2,plain-mlp-abc2
+D0,2,A-mlp-abc2,layer02 wd=1 epoch=8,stress_unseen,task,0.1,15,15,0,217.667,A,2,plain-mlp-abc2
+D0,2,A-d2,layer02 p=0 wd=0.01 epoch=6,stress_seen,all,0.1,70,66,0.242857,263.571,A,2,resmlp
+D0,2,A-d2,layer02 p=0 wd=0.01 epoch=6,stress_seen,swap,0.1,35,35,0.314286,263.571,A,2,resmlp
+D0,2,A-d2,layer02 p=0 wd=0.01 epoch=6,stress_seen,task,0.1,35,31,0.171429,263.571,A,2,resmlp
+D0,2,A-d2,layer02 p=0 wd=0.01 epoch=6,stress_unseen,all,0.1,30,30,0,217.667,A,2,resmlp
+D0,2,A-d2,layer02 p=0 wd=0.01 epoch=6,stress_unseen,swap,0.1,15,15,0,217.667,A,2,resmlp
+D0,2,A-d2,layer02 p=0 wd=0.01 epoch=6,stress_unseen,task,0.1,15,15,0,217.667,A,2,resmlp
+D0,2,A-d6,layer02 p=0.3 wd=0.1 epoch=13,stress_seen,all,0.1,70,66,0.0428571,263.571,A,6,resmlp
+D0,2,A-d6,layer02 p=0.3 wd=0.1 epoch=13,stress_seen,swap,0.1,35,35,0.0571429,263.571,A,6,resmlp
+D0,2,A-d6,layer02 p=0.3 wd=0.1 epoch=13,stress_seen,task,0.1,35,31,0.0285714,263.571,A,6,resmlp
+D0,2,A-d6,layer02 p=0.3 wd=0.1 epoch=13,stress_unseen,all,0.1,30,30,0,217.667,A,6,resmlp
+D0,2,A-d6,layer02 p=0.3 wd=0.1 epoch=13,stress_unseen,swap,0.1,15,15,0,217.667,A,6,resmlp
+D0,2,A-d6,layer02 p=0.3 wd=0.1 epoch=13,stress_unseen,task,0.1,15,15,0,217.667,A,6,resmlp
+D0,2,A-d12,layer02 p=0 wd=0.01 epoch=5,stress_seen,all,0.1,70,66,0.128571,263.571,A,12,resmlp
+D0,2,A-d12,layer02 p=0 wd=0.01 epoch=5,stress_seen,swap,0.1,35,35,0.142857,263.571,A,12,resmlp
+D0,2,A-d12,layer02 p=0 wd=0.01 epoch=5,stress_seen,task,0.1,35,31,0.114286,263.571,A,12,resmlp
+D0,2,A-d12,layer02 p=0 wd=0.01 epoch=5,stress_unseen,all,0.1,30,30,0,217.667,A,12,resmlp
+D0,2,A-d12,layer02 p=0 wd=0.01 epoch=5,stress_unseen,swap,0.1,15,15,0,217.667,A,12,resmlp
+D0,2,A-d12,layer02 p=0 wd=0.01 epoch=5,stress_unseen,task,0.1,15,15,0,217.667,A,12,resmlp
+D0,2,C-linear,final c=1e-05,stress_seen,all,0.1,70,66,0.314286,263.571,C,0,linear
+D0,2,C-linear,final c=1e-05,stress_seen,swap,0.1,35,35,0.514286,263.571,C,0,linear
+D0,2,C-linear,final c=1e-05,stress_seen,task,0.1,35,31,0.114286,263.571,C,0,linear
+D0,2,C-linear,final c=1e-05,stress_unseen,all,0.1,30,30,0.266667,217.667,C,0,linear
+D0,2,C-linear,final c=1e-05,stress_unseen,swap,0.1,15,15,0.533333,217.667,C,0,linear
+D0,2,C-linear,final c=1e-05,stress_unseen,task,0.1,15,15,0,217.667,C,0,linear
+D0,2,C-mlp-abc2,C final inputs wd=0.0001 epoch=1,stress_seen,all,0.1,70,66,0.328571,263.571,C,2,plain-mlp-abc2
+D0,2,C-mlp-abc2,C final inputs wd=0.0001 epoch=1,stress_seen,swap,0.1,35,35,0.514286,263.571,C,2,plain-mlp-abc2
+D0,2,C-mlp-abc2,C final inputs wd=0.0001 epoch=1,stress_seen,task,0.1,35,31,0.142857,263.571,C,2,plain-mlp-abc2
+D0,2,C-mlp-abc2,C final inputs wd=0.0001 epoch=1,stress_unseen,all,0.1,30,30,0.3,217.667,C,2,plain-mlp-abc2
+D0,2,C-mlp-abc2,C final inputs wd=0.0001 epoch=1,stress_unseen,swap,0.1,15,15,0.533333,217.667,C,2,plain-mlp-abc2
+D0,2,C-mlp-abc2,C final inputs wd=0.0001 epoch=1,stress_unseen,task,0.1,15,15,0.0666667,217.667,C,2,plain-mlp-abc2
+D0,2,C-d2,C final inputs p=0 wd=0.01 epoch=4,stress_seen,all,0.1,70,66,0,263.571,C,2,resmlp
+D0,2,C-d2,C final inputs p=0 wd=0.01 epoch=4,stress_seen,swap,0.1,35,35,0,263.571,C,2,resmlp
+D0,2,C-d2,C final inputs p=0 wd=0.01 epoch=4,stress_seen,task,0.1,35,31,0,263.571,C,2,resmlp
+D0,2,C-d2,C final inputs p=0 wd=0.01 epoch=4,stress_unseen,all,0.1,30,30,0,217.667,C,2,resmlp
+D0,2,C-d2,C final inputs p=0 wd=0.01 epoch=4,stress_unseen,swap,0.1,15,15,0,217.667,C,2,resmlp
+D0,2,C-d2,C final inputs p=0 wd=0.01 epoch=4,stress_unseen,task,0.1,15,15,0,217.667,C,2,resmlp
+D0,2,C-d6,C final inputs p=0 wd=0.01 epoch=2,stress_seen,all,0.1,70,66,0,263.571,C,6,resmlp
+D0,2,C-d6,C final inputs p=0 wd=0.01 epoch=2,stress_seen,swap,0.1,35,35,0,263.571,C,6,resmlp
+D0,2,C-d6,C final inputs p=0 wd=0.01 epoch=2,stress_seen,task,0.1,35,31,0,263.571,C,6,resmlp
+D0,2,C-d6,C final inputs p=0 wd=0.01 epoch=2,stress_unseen,all,0.1,30,30,0,217.667,C,6,resmlp
+D0,2,C-d6,C final inputs p=0 wd=0.01 epoch=2,stress_unseen,swap,0.1,15,15,0,217.667,C,6,resmlp
+D0,2,C-d6,C final inputs p=0 wd=0.01 epoch=2,stress_unseen,task,0.1,15,15,0,217.667,C,6,resmlp
+D0,2,C-d12,C final inputs p=0 wd=0.01 epoch=1,stress_seen,all,0.1,70,66,0.3,263.571,C,12,resmlp
+D0,2,C-d12,C final inputs p=0 wd=0.01 epoch=1,stress_seen,swap,0.1,35,35,0.428571,263.571,C,12,resmlp
+D0,2,C-d12,C final inputs p=0 wd=0.01 epoch=1,stress_seen,task,0.1,35,31,0.171429,263.571,C,12,resmlp
+D0,2,C-d12,C final inputs p=0 wd=0.01 epoch=1,stress_unseen,all,0.1,30,30,0.1,217.667,C,12,resmlp
+D0,2,C-d12,C final inputs p=0 wd=0.01 epoch=1,stress_unseen,swap,0.1,15,15,0.2,217.667,C,12,resmlp
+D0,2,C-d12,C final inputs p=0 wd=0.01 epoch=1,stress_unseen,task,0.1,15,15,0,217.667,C,12,resmlp
+D2,0,A-linear,layer10 c=1e-06,stress_seen,all,0.1,70,66,0.128571,252.571,A,0,linear
+D2,0,A-linear,layer10 c=1e-06,stress_seen,swap,0.1,35,35,0.171429,252.571,A,0,linear
+D2,0,A-linear,layer10 c=1e-06,stress_seen,task,0.1,35,31,0.0857143,252.571,A,0,linear
+D2,0,A-linear,layer10 c=1e-06,stress_unseen,all,0.1,30,30,0.166667,199.667,A,0,linear
+D2,0,A-linear,layer10 c=1e-06,stress_unseen,swap,0.1,15,15,0.266667,199.667,A,0,linear
+D2,0,A-linear,layer10 c=1e-06,stress_unseen,task,0.1,15,15,0.0666667,199.667,A,0,linear
+D2,0,A-mlp-abc2,layer10 wd=0.01 epoch=1,stress_seen,all,0.1,70,66,0.142857,252.571,A,2,plain-mlp-abc2
+D2,0,A-mlp-abc2,layer10 wd=0.01 epoch=1,stress_seen,swap,0.1,35,35,0.228571,252.571,A,2,plain-mlp-abc2
+D2,0,A-mlp-abc2,layer10 wd=0.01 epoch=1,stress_seen,task,0.1,35,31,0.0571429,252.571,A,2,plain-mlp-abc2
+D2,0,A-mlp-abc2,layer10 wd=0.01 epoch=1,stress_unseen,all,0.1,30,30,0.0666667,199.667,A,2,plain-mlp-abc2
+D2,0,A-mlp-abc2,layer10 wd=0.01 epoch=1,stress_unseen,swap,0.1,15,15,0.0666667,199.667,A,2,plain-mlp-abc2
+D2,0,A-mlp-abc2,layer10 wd=0.01 epoch=1,stress_unseen,task,0.1,15,15,0.0666667,199.667,A,2,plain-mlp-abc2
+D2,0,A-d2,layer10 p=0.3 wd=0.01 epoch=1,stress_seen,all,0.1,70,66,0.185714,252.571,A,2,resmlp
+D2,0,A-d2,layer10 p=0.3 wd=0.01 epoch=1,stress_seen,swap,0.1,35,35,0.257143,252.571,A,2,resmlp
+D2,0,A-d2,layer10 p=0.3 wd=0.01 epoch=1,stress_seen,task,0.1,35,31,0.114286,252.571,A,2,resmlp
+D2,0,A-d2,layer10 p=0.3 wd=0.01 epoch=1,stress_unseen,all,0.1,30,30,0.133333,199.667,A,2,resmlp
+D2,0,A-d2,layer10 p=0.3 wd=0.01 epoch=1,stress_unseen,swap,0.1,15,15,0.0666667,199.667,A,2,resmlp
+D2,0,A-d2,layer10 p=0.3 wd=0.01 epoch=1,stress_unseen,task,0.1,15,15,0.2,199.667,A,2,resmlp
+D2,0,A-d6,layer10 p=0.3 wd=0.1 epoch=1,stress_seen,all,0.1,70,66,0.142857,252.571,A,6,resmlp
+D2,0,A-d6,layer10 p=0.3 wd=0.1 epoch=1,stress_seen,swap,0.1,35,35,0.2,252.571,A,6,resmlp
+D2,0,A-d6,layer10 p=0.3 wd=0.1 epoch=1,stress_seen,task,0.1,35,31,0.0857143,252.571,A,6,resmlp
+D2,0,A-d6,layer10 p=0.3 wd=0.1 epoch=1,stress_unseen,all,0.1,30,30,0.133333,199.667,A,6,resmlp
+D2,0,A-d6,layer10 p=0.3 wd=0.1 epoch=1,stress_unseen,swap,0.1,15,15,0.0666667,199.667,A,6,resmlp
+D2,0,A-d6,layer10 p=0.3 wd=0.1 epoch=1,stress_unseen,task,0.1,15,15,0.2,199.667,A,6,resmlp
+D2,0,A-d12,layer10 p=0.3 wd=0.01 epoch=1,stress_seen,all,0.1,70,66,0.114286,252.571,A,12,resmlp
+D2,0,A-d12,layer10 p=0.3 wd=0.01 epoch=1,stress_seen,swap,0.1,35,35,0.114286,252.571,A,12,resmlp
+D2,0,A-d12,layer10 p=0.3 wd=0.01 epoch=1,stress_seen,task,0.1,35,31,0.114286,252.571,A,12,resmlp
+D2,0,A-d12,layer10 p=0.3 wd=0.01 epoch=1,stress_unseen,all,0.1,30,30,0.1,199.667,A,12,resmlp
+D2,0,A-d12,layer10 p=0.3 wd=0.01 epoch=1,stress_unseen,swap,0.1,15,15,0.0666667,199.667,A,12,resmlp
+D2,0,A-d12,layer10 p=0.3 wd=0.01 epoch=1,stress_unseen,task,0.1,15,15,0.133333,199.667,A,12,resmlp
+D2,0,C-linear,final c=0.0001,stress_seen,all,0.1,70,66,0.185714,252.571,C,0,linear
+D2,0,C-linear,final c=0.0001,stress_seen,swap,0.1,35,35,0.371429,252.571,C,0,linear
+D2,0,C-linear,final c=0.0001,stress_seen,task,0.1,35,31,0,252.571,C,0,linear
+D2,0,C-linear,final c=0.0001,stress_unseen,all,0.1,30,30,0.1,199.667,C,0,linear
+D2,0,C-linear,final c=0.0001,stress_unseen,swap,0.1,15,15,0.133333,199.667,C,0,linear
+D2,0,C-linear,final c=0.0001,stress_unseen,task,0.1,15,15,0.0666667,199.667,C,0,linear
+D2,0,C-mlp-abc2,C final inputs wd=1 epoch=1,stress_seen,all,0.1,70,66,0.257143,252.571,C,2,plain-mlp-abc2
+D2,0,C-mlp-abc2,C final inputs wd=1 epoch=1,stress_seen,swap,0.1,35,35,0.4,252.571,C,2,plain-mlp-abc2
+D2,0,C-mlp-abc2,C final inputs wd=1 epoch=1,stress_seen,task,0.1,35,31,0.114286,252.571,C,2,plain-mlp-abc2
+D2,0,C-mlp-abc2,C final inputs wd=1 epoch=1,stress_unseen,all,0.1,30,30,0.366667,199.667,C,2,plain-mlp-abc2
+D2,0,C-mlp-abc2,C final inputs wd=1 epoch=1,stress_unseen,swap,0.1,15,15,0.533333,199.667,C,2,plain-mlp-abc2
+D2,0,C-mlp-abc2,C final inputs wd=1 epoch=1,stress_unseen,task,0.1,15,15,0.2,199.667,C,2,plain-mlp-abc2
+D2,0,C-d2,C final inputs p=0.3 wd=0.01 epoch=1,stress_seen,all,0.1,70,66,0.257143,252.571,C,2,resmlp
+D2,0,C-d2,C final inputs p=0.3 wd=0.01 epoch=1,stress_seen,swap,0.1,35,35,0.428571,252.571,C,2,resmlp
+D2,0,C-d2,C final inputs p=0.3 wd=0.01 epoch=1,stress_seen,task,0.1,35,31,0.0857143,252.571,C,2,resmlp
+D2,0,C-d2,C final inputs p=0.3 wd=0.01 epoch=1,stress_unseen,all,0.1,30,30,0.4,199.667,C,2,resmlp
+D2,0,C-d2,C final inputs p=0.3 wd=0.01 epoch=1,stress_unseen,swap,0.1,15,15,0.533333,199.667,C,2,resmlp
+D2,0,C-d2,C final inputs p=0.3 wd=0.01 epoch=1,stress_unseen,task,0.1,15,15,0.266667,199.667,C,2,resmlp
+D2,0,C-d6,C final inputs p=0 wd=0.01 epoch=1,stress_seen,all,0.1,70,66,0.328571,252.571,C,6,resmlp
+D2,0,C-d6,C final inputs p=0 wd=0.01 epoch=1,stress_seen,swap,0.1,35,35,0.485714,252.571,C,6,resmlp
+D2,0,C-d6,C final inputs p=0 wd=0.01 epoch=1,stress_seen,task,0.1,35,31,0.171429,252.571,C,6,resmlp
+D2,0,C-d6,C final inputs p=0 wd=0.01 epoch=1,stress_unseen,all,0.1,30,30,0.4,199.667,C,6,resmlp
+D2,0,C-d6,C final inputs p=0 wd=0.01 epoch=1,stress_unseen,swap,0.1,15,15,0.6,199.667,C,6,resmlp
+D2,0,C-d6,C final inputs p=0 wd=0.01 epoch=1,stress_unseen,task,0.1,15,15,0.2,199.667,C,6,resmlp
+D2,0,C-d12,C final inputs p=0.3 wd=0.01 epoch=1,stress_seen,all,0.1,70,66,0.2,252.571,C,12,resmlp
+D2,0,C-d12,C final inputs p=0.3 wd=0.01 epoch=1,stress_seen,swap,0.1,35,35,0.342857,252.571,C,12,resmlp
+D2,0,C-d12,C final inputs p=0.3 wd=0.01 epoch=1,stress_seen,task,0.1,35,31,0.0571429,252.571,C,12,resmlp
+D2,0,C-d12,C final inputs p=0.3 wd=0.01 epoch=1,stress_unseen,all,0.1,30,30,0.2,199.667,C,12,resmlp
+D2,0,C-d12,C final inputs p=0.3 wd=0.01 epoch=1,stress_unseen,swap,0.1,15,15,0.333333,199.667,C,12,resmlp
+D2,0,C-d12,C final inputs p=0.3 wd=0.01 epoch=1,stress_unseen,task,0.1,15,15,0.0666667,199.667,C,12,resmlp
+D2,1,A-linear,layer31 c=1e-06,stress_seen,all,0.1,70,66,0.114286,254.143,A,0,linear
+D2,1,A-linear,layer31 c=1e-06,stress_seen,swap,0.1,35,35,0.114286,254.143,A,0,linear
+D2,1,A-linear,layer31 c=1e-06,stress_seen,task,0.1,35,31,0.114286,254.143,A,0,linear
+D2,1,A-linear,layer31 c=1e-06,stress_unseen,all,0.1,30,30,0,214,A,0,linear
+D2,1,A-linear,layer31 c=1e-06,stress_unseen,swap,0.1,15,15,0,214,A,0,linear
+D2,1,A-linear,layer31 c=1e-06,stress_unseen,task,0.1,15,15,0,214,A,0,linear
+D2,1,A-mlp-abc2,layer31 wd=0.01 epoch=1,stress_seen,all,0.1,70,66,0.5,254.143,A,2,plain-mlp-abc2
+D2,1,A-mlp-abc2,layer31 wd=0.01 epoch=1,stress_seen,swap,0.1,35,35,0.628571,254.143,A,2,plain-mlp-abc2
+D2,1,A-mlp-abc2,layer31 wd=0.01 epoch=1,stress_seen,task,0.1,35,31,0.371429,254.143,A,2,plain-mlp-abc2
+D2,1,A-mlp-abc2,layer31 wd=0.01 epoch=1,stress_unseen,all,0.1,30,30,0.233333,214,A,2,plain-mlp-abc2
+D2,1,A-mlp-abc2,layer31 wd=0.01 epoch=1,stress_unseen,swap,0.1,15,15,0.466667,214,A,2,plain-mlp-abc2
+D2,1,A-mlp-abc2,layer31 wd=0.01 epoch=1,stress_unseen,task,0.1,15,15,0,214,A,2,plain-mlp-abc2
+D2,1,A-d2,layer31 p=0.3 wd=0.01 epoch=1,stress_seen,all,0.1,70,66,0.485714,254.143,A,2,resmlp
+D2,1,A-d2,layer31 p=0.3 wd=0.01 epoch=1,stress_seen,swap,0.1,35,35,0.6,254.143,A,2,resmlp
+D2,1,A-d2,layer31 p=0.3 wd=0.01 epoch=1,stress_seen,task,0.1,35,31,0.371429,254.143,A,2,resmlp
+D2,1,A-d2,layer31 p=0.3 wd=0.01 epoch=1,stress_unseen,all,0.1,30,30,0.333333,214,A,2,resmlp
+D2,1,A-d2,layer31 p=0.3 wd=0.01 epoch=1,stress_unseen,swap,0.1,15,15,0.666667,214,A,2,resmlp
+D2,1,A-d2,layer31 p=0.3 wd=0.01 epoch=1,stress_unseen,task,0.1,15,15,0,214,A,2,resmlp
+D2,1,A-d6,layer31 p=0.3 wd=0.01 epoch=1,stress_seen,all,0.1,70,66,0.514286,254.143,A,6,resmlp
+D2,1,A-d6,layer31 p=0.3 wd=0.01 epoch=1,stress_seen,swap,0.1,35,35,0.628571,254.143,A,6,resmlp
+D2,1,A-d6,layer31 p=0.3 wd=0.01 epoch=1,stress_seen,task,0.1,35,31,0.4,254.143,A,6,resmlp
+D2,1,A-d6,layer31 p=0.3 wd=0.01 epoch=1,stress_unseen,all,0.1,30,30,0.366667,214,A,6,resmlp
+D2,1,A-d6,layer31 p=0.3 wd=0.01 epoch=1,stress_unseen,swap,0.1,15,15,0.6,214,A,6,resmlp
+D2,1,A-d6,layer31 p=0.3 wd=0.01 epoch=1,stress_unseen,task,0.1,15,15,0.133333,214,A,6,resmlp
+D2,1,A-d12,layer31 p=0.3 wd=0.1 epoch=1,stress_seen,all,0.1,70,66,0.485714,254.143,A,12,resmlp
+D2,1,A-d12,layer31 p=0.3 wd=0.1 epoch=1,stress_seen,swap,0.1,35,35,0.628571,254.143,A,12,resmlp
+D2,1,A-d12,layer31 p=0.3 wd=0.1 epoch=1,stress_seen,task,0.1,35,31,0.342857,254.143,A,12,resmlp
+D2,1,A-d12,layer31 p=0.3 wd=0.1 epoch=1,stress_unseen,all,0.1,30,30,0.333333,214,A,12,resmlp
+D2,1,A-d12,layer31 p=0.3 wd=0.1 epoch=1,stress_unseen,swap,0.1,15,15,0.6,214,A,12,resmlp
+D2,1,A-d12,layer31 p=0.3 wd=0.1 epoch=1,stress_unseen,task,0.1,15,15,0.0666667,214,A,12,resmlp
+D2,1,C-linear,final c=0.0001,stress_seen,all,0.1,70,66,0.3,254.143,C,0,linear
+D2,1,C-linear,final c=0.0001,stress_seen,swap,0.1,35,35,0.457143,254.143,C,0,linear
+D2,1,C-linear,final c=0.0001,stress_seen,task,0.1,35,31,0.142857,254.143,C,0,linear
+D2,1,C-linear,final c=0.0001,stress_unseen,all,0.1,30,30,0.333333,214,C,0,linear
+D2,1,C-linear,final c=0.0001,stress_unseen,swap,0.1,15,15,0.533333,214,C,0,linear
+D2,1,C-linear,final c=0.0001,stress_unseen,task,0.1,15,15,0.133333,214,C,0,linear
+D2,1,C-mlp-abc2,C final inputs wd=1 epoch=2,stress_seen,all,0.1,70,66,0.357143,254.143,C,2,plain-mlp-abc2
+D2,1,C-mlp-abc2,C final inputs wd=1 epoch=2,stress_seen,swap,0.1,35,35,0.485714,254.143,C,2,plain-mlp-abc2
+D2,1,C-mlp-abc2,C final inputs wd=1 epoch=2,stress_seen,task,0.1,35,31,0.228571,254.143,C,2,plain-mlp-abc2
+D2,1,C-mlp-abc2,C final inputs wd=1 epoch=2,stress_unseen,all,0.1,30,30,0.366667,214,C,2,plain-mlp-abc2
+D2,1,C-mlp-abc2,C final inputs wd=1 epoch=2,stress_unseen,swap,0.1,15,15,0.6,214,C,2,plain-mlp-abc2
+D2,1,C-mlp-abc2,C final inputs wd=1 epoch=2,stress_unseen,task,0.1,15,15,0.133333,214,C,2,plain-mlp-abc2
+D2,1,C-d2,C final inputs p=0 wd=0.01 epoch=2,stress_seen,all,0.1,70,66,0.428571,254.143,C,2,resmlp
+D2,1,C-d2,C final inputs p=0 wd=0.01 epoch=2,stress_seen,swap,0.1,35,35,0.628571,254.143,C,2,resmlp
+D2,1,C-d2,C final inputs p=0 wd=0.01 epoch=2,stress_seen,task,0.1,35,31,0.228571,254.143,C,2,resmlp
+D2,1,C-d2,C final inputs p=0 wd=0.01 epoch=2,stress_unseen,all,0.1,30,30,0.366667,214,C,2,resmlp
+D2,1,C-d2,C final inputs p=0 wd=0.01 epoch=2,stress_unseen,swap,0.1,15,15,0.533333,214,C,2,resmlp
+D2,1,C-d2,C final inputs p=0 wd=0.01 epoch=2,stress_unseen,task,0.1,15,15,0.2,214,C,2,resmlp
+D2,1,C-d6,C final inputs p=0.3 wd=0.01 epoch=1,stress_seen,all,0.1,70,66,0.285714,254.143,C,6,resmlp
+D2,1,C-d6,C final inputs p=0.3 wd=0.01 epoch=1,stress_seen,swap,0.1,35,35,0.428571,254.143,C,6,resmlp
+D2,1,C-d6,C final inputs p=0.3 wd=0.01 epoch=1,stress_seen,task,0.1,35,31,0.142857,254.143,C,6,resmlp
+D2,1,C-d6,C final inputs p=0.3 wd=0.01 epoch=1,stress_unseen,all,0.1,30,30,0.2,214,C,6,resmlp
+D2,1,C-d6,C final inputs p=0.3 wd=0.01 epoch=1,stress_unseen,swap,0.1,15,15,0.4,214,C,6,resmlp
+D2,1,C-d6,C final inputs p=0.3 wd=0.01 epoch=1,stress_unseen,task,0.1,15,15,0,214,C,6,resmlp
+D2,1,C-d12,C final inputs p=0.3 wd=0.1 epoch=3,stress_seen,all,0.1,70,66,0.428571,254.143,C,12,resmlp
+D2,1,C-d12,C final inputs p=0.3 wd=0.1 epoch=3,stress_seen,swap,0.1,35,35,0.6,254.143,C,12,resmlp
+D2,1,C-d12,C final inputs p=0.3 wd=0.1 epoch=3,stress_seen,task,0.1,35,31,0.257143,254.143,C,12,resmlp
+D2,1,C-d12,C final inputs p=0.3 wd=0.1 epoch=3,stress_unseen,all,0.1,30,30,0.566667,214,C,12,resmlp
+D2,1,C-d12,C final inputs p=0.3 wd=0.1 epoch=3,stress_unseen,swap,0.1,15,15,0.666667,214,C,12,resmlp
+D2,1,C-d12,C final inputs p=0.3 wd=0.1 epoch=3,stress_unseen,task,0.1,15,15,0.466667,214,C,12,resmlp
+D2,2,A-linear,layer11 c=1e-06,stress_seen,all,0.1,70,66,0.414286,253.571,A,0,linear
+D2,2,A-linear,layer11 c=1e-06,stress_seen,swap,0.1,35,35,0.514286,253.571,A,0,linear
+D2,2,A-linear,layer11 c=1e-06,stress_seen,task,0.1,35,31,0.314286,253.571,A,0,linear
+D2,2,A-linear,layer11 c=1e-06,stress_unseen,all,0.1,30,30,0.233333,217.667,A,0,linear
+D2,2,A-linear,layer11 c=1e-06,stress_unseen,swap,0.1,15,15,0.466667,217.667,A,0,linear
+D2,2,A-linear,layer11 c=1e-06,stress_unseen,task,0.1,15,15,0,217.667,A,0,linear
+D2,2,A-mlp-abc2,layer11 wd=0.01 epoch=1,stress_seen,all,0.1,70,66,0.1,253.571,A,2,plain-mlp-abc2
+D2,2,A-mlp-abc2,layer11 wd=0.01 epoch=1,stress_seen,swap,0.1,35,35,0.142857,253.571,A,2,plain-mlp-abc2
+D2,2,A-mlp-abc2,layer11 wd=0.01 epoch=1,stress_seen,task,0.1,35,31,0.0571429,253.571,A,2,plain-mlp-abc2
+D2,2,A-mlp-abc2,layer11 wd=0.01 epoch=1,stress_unseen,all,0.1,30,30,0.2,217.667,A,2,plain-mlp-abc2
+D2,2,A-mlp-abc2,layer11 wd=0.01 epoch=1,stress_unseen,swap,0.1,15,15,0.4,217.667,A,2,plain-mlp-abc2
+D2,2,A-mlp-abc2,layer11 wd=0.01 epoch=1,stress_unseen,task,0.1,15,15,0,217.667,A,2,plain-mlp-abc2
+D2,2,A-d2,layer11 p=0 wd=0.01 epoch=1,stress_seen,all,0.1,70,66,0.242857,253.571,A,2,resmlp
+D2,2,A-d2,layer11 p=0 wd=0.01 epoch=1,stress_seen,swap,0.1,35,35,0.4,253.571,A,2,resmlp
+D2,2,A-d2,layer11 p=0 wd=0.01 epoch=1,stress_seen,task,0.1,35,31,0.0857143,253.571,A,2,resmlp
+D2,2,A-d2,layer11 p=0 wd=0.01 epoch=1,stress_unseen,all,0.1,30,30,0.2,217.667,A,2,resmlp
+D2,2,A-d2,layer11 p=0 wd=0.01 epoch=1,stress_unseen,swap,0.1,15,15,0.4,217.667,A,2,resmlp
+D2,2,A-d2,layer11 p=0 wd=0.01 epoch=1,stress_unseen,task,0.1,15,15,0,217.667,A,2,resmlp
+D2,2,A-d6,layer11 p=0 wd=0.01 epoch=1,stress_seen,all,0.1,70,66,0.2,253.571,A,6,resmlp
+D2,2,A-d6,layer11 p=0 wd=0.01 epoch=1,stress_seen,swap,0.1,35,35,0.342857,253.571,A,6,resmlp
+D2,2,A-d6,layer11 p=0 wd=0.01 epoch=1,stress_seen,task,0.1,35,31,0.0571429,253.571,A,6,resmlp
+D2,2,A-d6,layer11 p=0 wd=0.01 epoch=1,stress_unseen,all,0.1,30,30,0.233333,217.667,A,6,resmlp
+D2,2,A-d6,layer11 p=0 wd=0.01 epoch=1,stress_unseen,swap,0.1,15,15,0.466667,217.667,A,6,resmlp
+D2,2,A-d6,layer11 p=0 wd=0.01 epoch=1,stress_unseen,task,0.1,15,15,0,217.667,A,6,resmlp
+D2,2,A-d12,layer11 p=0.3 wd=0.1 epoch=1,stress_seen,all,0.1,70,66,0.328571,253.571,A,12,resmlp
+D2,2,A-d12,layer11 p=0.3 wd=0.1 epoch=1,stress_seen,swap,0.1,35,35,0.485714,253.571,A,12,resmlp
+D2,2,A-d12,layer11 p=0.3 wd=0.1 epoch=1,stress_seen,task,0.1,35,31,0.171429,253.571,A,12,resmlp
+D2,2,A-d12,layer11 p=0.3 wd=0.1 epoch=1,stress_unseen,all,0.1,30,30,0.333333,217.667,A,12,resmlp
+D2,2,A-d12,layer11 p=0.3 wd=0.1 epoch=1,stress_unseen,swap,0.1,15,15,0.6,217.667,A,12,resmlp
+D2,2,A-d12,layer11 p=0.3 wd=0.1 epoch=1,stress_unseen,task,0.1,15,15,0.0666667,217.667,A,12,resmlp
+D2,2,C-linear,final c=0.0001,stress_seen,all,0.1,70,66,0.471429,253.571,C,0,linear
+D2,2,C-linear,final c=0.0001,stress_seen,swap,0.1,35,35,0.6,253.571,C,0,linear
+D2,2,C-linear,final c=0.0001,stress_seen,task,0.1,35,31,0.342857,253.571,C,0,linear
+D2,2,C-linear,final c=0.0001,stress_unseen,all,0.1,30,30,0.466667,217.667,C,0,linear
+D2,2,C-linear,final c=0.0001,stress_unseen,swap,0.1,15,15,0.6,217.667,C,0,linear
+D2,2,C-linear,final c=0.0001,stress_unseen,task,0.1,15,15,0.333333,217.667,C,0,linear
+D2,2,C-mlp-abc2,C final inputs wd=1 epoch=3,stress_seen,all,0.1,70,66,0.385714,253.571,C,2,plain-mlp-abc2
+D2,2,C-mlp-abc2,C final inputs wd=1 epoch=3,stress_seen,swap,0.1,35,35,0.6,253.571,C,2,plain-mlp-abc2
+D2,2,C-mlp-abc2,C final inputs wd=1 epoch=3,stress_seen,task,0.1,35,31,0.171429,253.571,C,2,plain-mlp-abc2
+D2,2,C-mlp-abc2,C final inputs wd=1 epoch=3,stress_unseen,all,0.1,30,30,0.366667,217.667,C,2,plain-mlp-abc2
+D2,2,C-mlp-abc2,C final inputs wd=1 epoch=3,stress_unseen,swap,0.1,15,15,0.533333,217.667,C,2,plain-mlp-abc2
+D2,2,C-mlp-abc2,C final inputs wd=1 epoch=3,stress_unseen,task,0.1,15,15,0.2,217.667,C,2,plain-mlp-abc2
+D2,2,C-d2,C final inputs p=0.3 wd=0.1 epoch=5,stress_seen,all,0.1,70,66,0.428571,253.571,C,2,resmlp
+D2,2,C-d2,C final inputs p=0.3 wd=0.1 epoch=5,stress_seen,swap,0.1,35,35,0.685714,253.571,C,2,resmlp
+D2,2,C-d2,C final inputs p=0.3 wd=0.1 epoch=5,stress_seen,task,0.1,35,31,0.171429,253.571,C,2,resmlp
+D2,2,C-d2,C final inputs p=0.3 wd=0.1 epoch=5,stress_unseen,all,0.1,30,30,0.433333,217.667,C,2,resmlp
+D2,2,C-d2,C final inputs p=0.3 wd=0.1 epoch=5,stress_unseen,swap,0.1,15,15,0.6,217.667,C,2,resmlp
+D2,2,C-d2,C final inputs p=0.3 wd=0.1 epoch=5,stress_unseen,task,0.1,15,15,0.266667,217.667,C,2,resmlp
+D2,2,C-d6,C final inputs p=0 wd=0.01 epoch=2,stress_seen,all,0.1,70,66,0.542857,253.571,C,6,resmlp
+D2,2,C-d6,C final inputs p=0 wd=0.01 epoch=2,stress_seen,swap,0.1,35,35,0.8,253.571,C,6,resmlp
+D2,2,C-d6,C final inputs p=0 wd=0.01 epoch=2,stress_seen,task,0.1,35,31,0.285714,253.571,C,6,resmlp
+D2,2,C-d6,C final inputs p=0 wd=0.01 epoch=2,stress_unseen,all,0.1,30,30,0.466667,217.667,C,6,resmlp
+D2,2,C-d6,C final inputs p=0 wd=0.01 epoch=2,stress_unseen,swap,0.1,15,15,0.533333,217.667,C,6,resmlp
+D2,2,C-d6,C final inputs p=0 wd=0.01 epoch=2,stress_unseen,task,0.1,15,15,0.4,217.667,C,6,resmlp
+D2,2,C-d12,C final inputs p=0.3 wd=0.1 epoch=5,stress_seen,all,0.1,70,66,0.442857,253.571,C,12,resmlp
+D2,2,C-d12,C final inputs p=0.3 wd=0.1 epoch=5,stress_seen,swap,0.1,35,35,0.714286,253.571,C,12,resmlp
+D2,2,C-d12,C final inputs p=0.3 wd=0.1 epoch=5,stress_seen,task,0.1,35,31,0.171429,253.571,C,12,resmlp
+D2,2,C-d12,C final inputs p=0.3 wd=0.1 epoch=5,stress_unseen,all,0.1,30,30,0.466667,217.667,C,12,resmlp
+D2,2,C-d12,C final inputs p=0.3 wd=0.1 epoch=5,stress_unseen,swap,0.1,15,15,0.6,217.667,C,12,resmlp
+D2,2,C-d12,C final inputs p=0.3 wd=0.1 epoch=5,stress_unseen,task,0.1,15,15,0.333333,217.667,C,12,resmlp

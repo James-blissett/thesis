@@ -1,0 +1,118 @@
+test_set,comparison,cond_x,cond_y,detector,detector_x,detector_y,seed,metric,n_test,n_cells_x,n_cells_y,x_point,y_point,diff_point,diff_mean,diff_ci_lo,diff_ci_hi,n_valid,verdict
+T0,B mean vs A mean,D2,D2,B_mean_h10 vs A_mean,B_mean_h10,A_mean,0,m1_per_task,90,3,3,0.696773,0.77085,-0.0740779,-0.0708458,-0.166767,0.0242426,1000,no significant change
+T0,B mean vs A mean,D2,D2,B_mean_h10 vs A_mean,B_mean_h10,A_mean,1,m1_per_task,90,3,3,0.711874,0.783891,-0.0720168,-0.0794288,-0.167965,-0.0142186,1000,significant worsening
+T0,B mean vs A mean,D2,D2,B_mean_h10 vs A_mean,B_mean_h10,A_mean,2,m1_per_task,90,3,3,0.748239,0.707899,0.0403402,0.0395128,-0.052268,0.128435,1000,no significant change
+T0,B mean vs A mean,D2,D2,B_mean_h10 vs A_mean,B_mean_h10,A_mean,0,bal_acc,90,3,3,0.511905,0.511905,0,-0.0010496,0,0,1000,no significant change
+T0,B mean vs A mean,D2,D2,B_mean_h10 vs A_mean,B_mean_h10,A_mean,1,bal_acc,90,3,3,0.532258,0.5,0.0322581,0.0315036,0,0.0703404,1000,no significant change
+T0,B mean vs A mean,D2,D2,B_mean_h10 vs A_mean,B_mean_h10,A_mean,2,bal_acc,90,3,3,0.506884,0.489291,0.0175931,0.0176591,-0.0185273,0.0641129,1000,no significant change
+T0,B mean vs A mean,D2,D2,B_mean_h10 vs A_mean,B_mean_h10,A_mean,0,tpr,90,3,3,0.0238095,0.0238095,0,-0.00209919,0,0,1000,no significant change
+T0,B mean vs A mean,D2,D2,B_mean_h10 vs A_mean,B_mean_h10,A_mean,1,tpr,90,3,3,0.0645161,0,0.0645161,0.0630072,0,0.140681,1000,no significant change
+T0,B mean vs A mean,D2,D2,B_mean_h10 vs A_mean,B_mean_h10,A_mean,2,tpr,90,3,3,0.108108,0.0540541,0.0540541,0.0535035,0,0.135135,1000,no significant change
+T0,B mean vs C mean,D2,D2,B_mean_h10 vs C_mean,B_mean_h10,C_mean,0,m1_per_task,90,3,3,0.696773,0.625394,0.0713784,0.075721,-0.046555,0.2027,1000,no significant change
+T0,B mean vs C mean,D2,D2,B_mean_h10 vs C_mean,B_mean_h10,C_mean,1,m1_per_task,90,3,3,0.711874,0.732939,-0.0210657,-0.03229,-0.117998,0.0396133,1000,no significant change
+T0,B mean vs C mean,D2,D2,B_mean_h10 vs C_mean,B_mean_h10,C_mean,2,m1_per_task,90,3,3,0.748239,0.64295,0.105289,0.106771,0.0172109,0.198263,1000,improvement
+T0,B mean vs C mean,D2,D2,B_mean_h10 vs C_mean,B_mean_h10,C_mean,0,bal_acc,90,3,3,0.511905,0.561012,-0.0491071,-0.0486305,-0.102941,0.00377387,1000,no significant change
+T0,B mean vs C mean,D2,D2,B_mean_h10 vs C_mean,B_mean_h10,C_mean,1,bal_acc,90,3,3,0.532258,0.524194,0.00806452,0.00736226,0,0.0263275,1000,no significant change
+T0,B mean vs C mean,D2,D2,B_mean_h10 vs C_mean,B_mean_h10,C_mean,2,bal_acc,90,3,3,0.506884,0.567823,-0.0609383,-0.0596503,-0.140505,0.00759892,1000,no significant change
+T0,B mean vs C mean,D2,D2,B_mean_h10 vs C_mean,B_mean_h10,C_mean,0,tpr,90,3,3,0.0238095,0.142857,-0.119048,-0.118275,-0.214334,-0.027759,1000,significant worsening
+T0,B mean vs C mean,D2,D2,B_mean_h10 vs C_mean,B_mean_h10,C_mean,1,tpr,90,3,3,0.0645161,0.0483871,0.016129,0.0147245,0,0.0526551,1000,no significant change
+T0,B mean vs C mean,D2,D2,B_mean_h10 vs C_mean,B_mean_h10,C_mean,2,tpr,90,3,3,0.108108,0.324324,-0.216216,-0.213285,-0.351351,-0.103426,1000,significant worsening
+T0,A mean vs C mean,D2,D2,A_mean vs C_mean,A_mean,C_mean,0,m1_per_task,90,3,3,0.77085,0.625394,0.145456,0.146567,0.0142984,0.273619,1000,improvement
+T0,A mean vs C mean,D2,D2,A_mean vs C_mean,A_mean,C_mean,1,m1_per_task,90,3,3,0.783891,0.732939,0.0509512,0.0471388,-0.0304278,0.123545,1000,no significant change
+T0,A mean vs C mean,D2,D2,A_mean vs C_mean,A_mean,C_mean,2,m1_per_task,90,3,3,0.707899,0.64295,0.0649487,0.0672583,-0.0503509,0.188242,1000,no significant change
+T0,A mean vs C mean,D2,D2,A_mean vs C_mean,A_mean,C_mean,0,bal_acc,90,3,3,0.511905,0.561012,-0.0491071,-0.0475809,-0.102941,0.00892857,1000,no significant change
+T0,A mean vs C mean,D2,D2,A_mean vs C_mean,A_mean,C_mean,1,bal_acc,90,3,3,0.5,0.524194,-0.0241935,-0.0241413,-0.0588235,0,1000,no significant change
+T0,A mean vs C mean,D2,D2,A_mean vs C_mean,A_mean,C_mean,2,bal_acc,90,3,3,0.489291,0.567823,-0.0785314,-0.0773095,-0.162948,0.000555921,1000,no significant change
+T0,A mean vs C mean,D2,D2,A_mean vs C_mean,A_mean,C_mean,0,tpr,90,3,3,0.0238095,0.142857,-0.119048,-0.116176,-0.214334,-0.0227146,1000,significant worsening
+T0,A mean vs C mean,D2,D2,A_mean vs C_mean,A_mean,C_mean,1,tpr,90,3,3,0,0.0483871,-0.0483871,-0.0482827,-0.117647,0,1000,no significant change
+T0,A mean vs C mean,D2,D2,A_mean vs C_mean,A_mean,C_mean,2,tpr,90,3,3,0.0540541,0.324324,-0.27027,-0.266789,-0.40625,-0.137931,1000,significant worsening
+T0,A mean vs A trained combiner,D2,D2,A_mean vs A_combiner,A_mean,A_combiner,0,m1_per_task,90,3,3,0.77085,0.761732,0.00911833,0.00919946,-0.0219178,0.0496906,1000,no significant change
+T0,A mean vs A trained combiner,D2,D2,A_mean vs A_combiner,A_mean,A_combiner,1,m1_per_task,90,3,3,0.783891,0.788155,-0.00426431,-0.00546987,-0.0295628,0.0185199,1000,no significant change
+T0,A mean vs A trained combiner,D2,D2,A_mean vs A_combiner,A_mean,A_combiner,2,m1_per_task,90,3,3,0.707899,0.702301,0.00559775,0.00735298,-0.0299516,0.0449614,1000,no significant change
+T0,A mean vs A trained combiner,D2,D2,A_mean vs A_combiner,A_mean,A_combiner,0,bal_acc,90,3,3,0.511905,0.5,0.0119048,0.0118813,0,0.0405405,1000,no significant change
+T0,A mean vs A trained combiner,D2,D2,A_mean vs A_combiner,A_mean,A_combiner,1,bal_acc,90,3,3,0.5,0.639977,-0.139977,-0.13888,-0.214299,-0.0358584,1000,significant worsening
+T0,A mean vs A trained combiner,D2,D2,A_mean vs A_combiner,A_mean,A_combiner,2,bal_acc,90,3,3,0.489291,0.498725,-0.00943396,-0.00999411,-0.0416667,0.018877,1000,no significant change
+T0,A mean vs A trained combiner,D2,D2,A_mean vs A_combiner,A_mean,A_combiner,0,tpr,90,3,3,0.0238095,0,0.0238095,0.0237626,0,0.0810811,1000,no significant change
+T0,A mean vs A trained combiner,D2,D2,A_mean vs A_combiner,A_mean,A_combiner,1,tpr,90,3,3,0,0.387097,-0.387097,-0.384437,-0.5,-0.25,1000,significant worsening
+T0,A mean vs A trained combiner,D2,D2,A_mean vs A_combiner,A_mean,A_combiner,2,tpr,90,3,3,0.0540541,0.0540541,0,0,0,0,1000,no significant change
+T0,A mean vs A single best probe,D2,D2,A_mean vs A_best,A_mean,A_best,0,m1_per_task,90,3,3,0.77085,0.744335,0.0265152,0.0244296,-0.0647632,0.116979,1000,no significant change
+T0,A mean vs A single best probe,D2,D2,A_mean vs A_best,A_mean,A_best,1,m1_per_task,90,3,3,0.783891,0.7897,-0.00580976,-0.00643125,-0.0511114,0.0428847,1000,no significant change
+T0,A mean vs A single best probe,D2,D2,A_mean vs A_best,A_mean,A_best,2,m1_per_task,90,3,3,0.707899,0.675293,0.0326057,0.0350296,-0.0194496,0.092151,1000,no significant change
+T0,A mean vs A single best probe,D2,D2,A_mean vs A_best,A_mean,A_best,0,bal_acc,90,3,3,0.511905,0.511905,0,0.0001999,-0.0357143,0.0348837,1000,no significant change
+T0,A mean vs A single best probe,D2,D2,A_mean vs A_best,A_mean,A_best,1,bal_acc,90,3,3,0.5,0.5,0,0.000608341,0,0.00746551,1000,no significant change
+T0,A mean vs A single best probe,D2,D2,A_mean vs A_best,A_mean,A_best,2,bal_acc,90,3,3,0.489291,0.508159,-0.0188679,-0.0190867,-0.0490196,0,1000,no significant change
+T0,A mean vs A single best probe,D2,D2,A_mean vs A_best,A_mean,A_best,0,tpr,90,3,3,0.0238095,0.0238095,0,0.000399801,-0.0714286,0.0697674,1000,no significant change
+T0,A mean vs A single best probe,D2,D2,A_mean vs A_best,A_mean,A_best,1,tpr,90,3,3,0,0,0,0.00121668,0,0.014931,1000,no significant change
+T0,A mean vs A single best probe,D2,D2,A_mean vs A_best,A_mean,A_best,2,tpr,90,3,3,0.0540541,0.0540541,0,0,0,0,1000,no significant change
+T0,A mean vs A 2-layer MLP,D2,D2,A_mean vs A_mlp,A_mean,A_mlp,0,m1_per_task,90,3,3,0.77085,0.577137,0.193713,0.197767,0.0817604,0.319641,1000,improvement
+T0,A mean vs A 2-layer MLP,D2,D2,A_mean vs A_mlp,A_mean,A_mlp,1,m1_per_task,90,3,3,0.783891,0.744623,0.0392677,0.0409714,-0.0759878,0.163164,1000,no significant change
+T0,A mean vs A 2-layer MLP,D2,D2,A_mean vs A_mlp,A_mean,A_mlp,2,m1_per_task,90,3,3,0.707899,0.60311,0.104789,0.101585,-0.0326548,0.230908,1000,no significant change
+T0,A mean vs A 2-layer MLP,D2,D2,A_mean vs A_mlp,A_mean,A_mlp,0,bal_acc,90,3,3,0.511905,0.572917,-0.0610119,-0.0602061,-0.115741,-0.00532254,1000,significant worsening
+T0,A mean vs A 2-layer MLP,D2,D2,A_mean vs A_mlp,A_mean,A_mlp,1,bal_acc,90,3,3,0.5,0.557604,-0.0576037,-0.0583658,-0.134167,0.0301812,1000,no significant change
+T0,A mean vs A 2-layer MLP,D2,D2,A_mean vs A_mlp,A_mean,A_mlp,2,bal_acc,90,3,3,0.489291,0.508159,-0.0188679,-0.0189351,-0.0875013,0.0501455,1000,no significant change
+T0,A mean vs A 2-layer MLP,D2,D2,A_mean vs A_mlp,A_mean,A_mlp,0,tpr,90,3,3,0.0238095,0.166667,-0.142857,-0.142278,-0.25,-0.0444444,1000,significant worsening
+T0,A mean vs A 2-layer MLP,D2,D2,A_mean vs A_mlp,A_mean,A_mlp,1,tpr,90,3,3,0,0.258065,-0.258065,-0.257452,-0.369231,-0.128824,1000,significant worsening
+T0,A mean vs A 2-layer MLP,D2,D2,A_mean vs A_mlp,A_mean,A_mlp,2,tpr,90,3,3,0.0540541,0.0540541,0,-0.000770454,-0.103466,0.107167,1000,no significant change
+T0,C mean vs C trained combiner,D2,D2,C_mean vs C_combiner,C_mean,C_combiner,0,m1_per_task,90,3,3,0.625394,0.695401,-0.0700072,-0.0730869,-0.186078,0.0331833,1000,no significant change
+T0,C mean vs C trained combiner,D2,D2,C_mean vs C_combiner,C_mean,C_combiner,1,m1_per_task,90,3,3,0.732939,0.746593,-0.0136532,-0.0101386,-0.0823962,0.0688433,1000,no significant change
+T0,C mean vs C trained combiner,D2,D2,C_mean vs C_combiner,C_mean,C_combiner,2,m1_per_task,90,3,3,0.64295,0.612494,0.0304562,0.025003,-0.0798414,0.13329,1000,no significant change
+T0,C mean vs C trained combiner,D2,D2,C_mean vs C_combiner,C_mean,C_combiner,0,bal_acc,90,3,3,0.561012,0.501488,0.0595238,0.0588041,0.00350343,0.116101,1000,improvement
+T0,C mean vs C trained combiner,D2,D2,C_mean vs C_combiner,C_mean,C_combiner,1,bal_acc,90,3,3,0.524194,0.659562,-0.135369,-0.135747,-0.199895,-0.0608405,1000,significant worsening
+T0,C mean vs C trained combiner,D2,D2,C_mean vs C_combiner,C_mean,C_combiner,2,bal_acc,90,3,3,0.567823,0.490821,0.0770015,0.0758585,-0.0076579,0.164968,1000,no significant change
+T0,C mean vs C trained combiner,D2,D2,C_mean vs C_combiner,C_mean,C_combiner,0,tpr,90,3,3,0.142857,0.0238095,0.119048,0.118275,0.027759,0.214334,1000,improvement
+T0,C mean vs C trained combiner,D2,D2,C_mean vs C_combiner,C_mean,C_combiner,1,tpr,90,3,3,0.0483871,0.354839,-0.306452,-0.307237,-0.415385,-0.193371,1000,significant worsening
+T0,C mean vs C trained combiner,D2,D2,C_mean vs C_combiner,C_mean,C_combiner,2,tpr,90,3,3,0.324324,0.189189,0.135135,0.132755,0.0243757,0.268342,1000,improvement
+T0,C mean vs C single best probe,D2,D2,C_mean vs C_best,C_mean,C_best,0,m1_per_task,90,3,3,0.625394,0.694981,-0.0695873,-0.0717803,-0.194169,0.0449287,1000,no significant change
+T0,C mean vs C single best probe,D2,D2,C_mean vs C_best,C_mean,C_best,1,m1_per_task,90,3,3,0.732939,0.770093,-0.0371532,-0.0358685,-0.116247,0.0390445,1000,no significant change
+T0,C mean vs C single best probe,D2,D2,C_mean vs C_best,C_mean,C_best,2,m1_per_task,90,3,3,0.64295,0.635001,0.00794923,0.00695561,-0.0517327,0.0642543,1000,no significant change
+T0,C mean vs C single best probe,D2,D2,C_mean vs C_best,C_mean,C_best,0,bal_acc,90,3,3,0.561012,0.511905,0.0491071,0.0492852,-0.00537237,0.102941,1000,no significant change
+T0,C mean vs C single best probe,D2,D2,C_mean vs C_best,C_mean,C_best,1,bal_acc,90,3,3,0.524194,0.524194,0,-0.000156934,0,0,1000,no significant change
+T0,C mean vs C single best probe,D2,D2,C_mean vs C_best,C_mean,C_best,2,bal_acc,90,3,3,0.567823,0.566548,0.00127486,0.00145009,-0.0518526,0.05,1000,no significant change
+T0,C mean vs C single best probe,D2,D2,C_mean vs C_best,C_mean,C_best,0,tpr,90,3,3,0.142857,0.0238095,0.119048,0.119584,0.0263158,0.220056,1000,improvement
+T0,C mean vs C single best probe,D2,D2,C_mean vs C_best,C_mean,C_best,1,tpr,90,3,3,0.0483871,0.0483871,0,-0.000897005,0,0,1000,no significant change
+T0,C mean vs C single best probe,D2,D2,C_mean vs C_best,C_mean,C_best,2,tpr,90,3,3,0.324324,0.378378,-0.0540541,-0.0533592,-0.129096,0,1000,no significant change
+T0,C mean vs C 2-layer MLP,D2,D2,C_mean vs C_mlp,C_mean,C_mlp,0,m1_per_task,90,3,3,0.625394,0.634478,-0.00908405,-0.010922,-0.122041,0.105259,1000,no significant change
+T0,C mean vs C 2-layer MLP,D2,D2,C_mean vs C_mlp,C_mean,C_mlp,1,m1_per_task,90,3,3,0.732939,0.812939,-0.08,-0.0823234,-0.174954,0.00911545,1000,no significant change
+T0,C mean vs C 2-layer MLP,D2,D2,C_mean vs C_mlp,C_mean,C_mlp,2,m1_per_task,90,3,3,0.64295,0.670845,-0.0278952,-0.0284887,-0.131844,0.0685464,1000,no significant change
+T0,C mean vs C 2-layer MLP,D2,D2,C_mean vs C_mlp,C_mean,C_mlp,0,bal_acc,90,3,3,0.561012,0.52381,0.0372024,0.0372397,-0.0108756,0.0873569,1000,no significant change
+T0,C mean vs C 2-layer MLP,D2,D2,C_mean vs C_mlp,C_mean,C_mlp,1,bal_acc,90,3,3,0.524194,0.532258,-0.00806452,-0.00772554,-0.0276476,0,1000,no significant change
+T0,C mean vs C 2-layer MLP,D2,D2,C_mean vs C_mlp,C_mean,C_mlp,2,bal_acc,90,3,3,0.567823,0.575982,-0.0081591,-0.00767578,-0.0806745,0.0675333,1000,no significant change
+T0,C mean vs C 2-layer MLP,D2,D2,C_mean vs C_mlp,C_mean,C_mlp,0,tpr,90,3,3,0.142857,0.047619,0.0952381,0.0954932,0.0217276,0.190476,1000,improvement
+T0,C mean vs C 2-layer MLP,D2,D2,C_mean vs C_mlp,C_mean,C_mlp,1,tpr,90,3,3,0.0483871,0.0645161,-0.016129,-0.0160342,-0.0566038,0,1000,no significant change
+T0,C mean vs C 2-layer MLP,D2,D2,C_mean vs C_mlp,C_mean,C_mlp,2,tpr,90,3,3,0.324324,0.378378,-0.0540541,-0.0535172,-0.184335,0.0689856,1000,no significant change
+T0,B mean vs B trained combiner,D2,D2,B_mean_h10 vs B_combiner_h10,B_mean_h10,B_combiner_h10,0,m1_per_task,90,3,3,0.696773,0.72094,-0.024167,-0.0167403,-0.125387,0.0906683,1000,no significant change
+T0,B mean vs B trained combiner,D2,D2,B_mean_h10 vs B_combiner_h10,B_mean_h10,B_combiner_h10,1,m1_per_task,90,3,3,0.711874,0.709224,0.00264983,0.00232083,-0.0962433,0.099779,1000,no significant change
+T0,B mean vs B trained combiner,D2,D2,B_mean_h10 vs B_combiner_h10,B_mean_h10,B_combiner_h10,2,m1_per_task,90,3,3,0.748239,0.686476,0.0617631,0.0592886,-0.0233477,0.154932,1000,no significant change
+T0,B mean vs B trained combiner,D2,D2,B_mean_h10 vs B_combiner_h10,B_mean_h10,B_combiner_h10,0,bal_acc,90,3,3,0.511905,0.559524,-0.047619,-0.0478078,-0.102984,0,1000,no significant change
+T0,B mean vs B trained combiner,D2,D2,B_mean_h10 vs B_combiner_h10,B_mean_h10,B_combiner_h10,1,bal_acc,90,3,3,0.532258,0.520737,0.0115207,0.00788411,-0.0423292,0.0687831,1000,no significant change
+T0,B mean vs B trained combiner,D2,D2,B_mean_h10 vs B_combiner_h10,B_mean_h10,B_combiner_h10,2,bal_acc,90,3,3,0.506884,0.494901,0.0119837,0.0138154,-0.0609553,0.0794739,1000,no significant change
+T0,B mean vs B trained combiner,D2,D2,B_mean_h10 vs B_combiner_h10,B_mean_h10,B_combiner_h10,0,tpr,90,3,3,0.0238095,0.119048,-0.0952381,-0.0956156,-0.205968,0,1000,no significant change
+T0,B mean vs B trained combiner,D2,D2,B_mean_h10 vs B_combiner_h10,B_mean_h10,B_combiner_h10,1,tpr,90,3,3,0.0645161,0.112903,-0.0483871,-0.0555997,-0.129032,0,1000,no significant change
+T0,B mean vs B trained combiner,D2,D2,B_mean_h10 vs B_combiner_h10,B_mean_h10,B_combiner_h10,2,tpr,90,3,3,0.108108,0.216216,-0.108108,-0.104872,-0.210566,-0.0243902,1000,significant worsening
+T0,B mean vs B single best probe,D2,D2,B_mean_h10 vs B_best_h10,B_mean_h10,B_best_h10,0,m1_per_task,90,3,3,0.696773,0.694039,0.00273379,0.00742778,-0.0831368,0.0978118,1000,no significant change
+T0,B mean vs B single best probe,D2,D2,B_mean_h10 vs B_best_h10,B_mean_h10,B_best_h10,1,m1_per_task,90,3,3,0.711874,0.737379,-0.0255051,-0.0294641,-0.11436,0.0501385,1000,no significant change
+T0,B mean vs B single best probe,D2,D2,B_mean_h10 vs B_best_h10,B_mean_h10,B_best_h10,2,m1_per_task,90,3,3,0.748239,0.742347,0.00589178,0.00894411,-0.0621113,0.0851926,1000,no significant change
+T0,B mean vs B single best probe,D2,D2,B_mean_h10 vs B_best_h10,B_mean_h10,B_best_h10,0,bal_acc,90,3,3,0.511905,0.511905,0,0,0,0,1000,no significant change
+T0,B mean vs B single best probe,D2,D2,B_mean_h10 vs B_best_h10,B_mean_h10,B_best_h10,1,bal_acc,90,3,3,0.532258,0.5,0.0322581,0.0325913,0,0.0738012,1000,no significant change
+T0,B mean vs B single best probe,D2,D2,B_mean_h10 vs B_best_h10,B_mean_h10,B_best_h10,2,bal_acc,90,3,3,0.506884,0.502805,0.00407955,0.00454488,-0.0258621,0.0415662,1000,no significant change
+T0,B mean vs B single best probe,D2,D2,B_mean_h10 vs B_best_h10,B_mean_h10,B_best_h10,0,tpr,90,3,3,0.0238095,0.0238095,0,0,0,0,1000,no significant change
+T0,B mean vs B single best probe,D2,D2,B_mean_h10 vs B_best_h10,B_mean_h10,B_best_h10,1,tpr,90,3,3,0.0645161,0,0.0645161,0.0651825,0,0.147602,1000,no significant change
+T0,B mean vs B single best probe,D2,D2,B_mean_h10 vs B_best_h10,B_mean_h10,B_best_h10,2,tpr,90,3,3,0.108108,0.0810811,0.027027,0.027275,0,0.0909801,1000,no significant change
+T0,B mean vs B 2-layer MLP,D2,D2,B_mean_h10 vs B_mlp_h10,B_mean_h10,B_mlp_h10,0,m1_per_task,90,3,3,0.696773,0.646442,0.0503308,0.052079,-0.0550304,0.155984,1000,no significant change
+T0,B mean vs B 2-layer MLP,D2,D2,B_mean_h10 vs B_mlp_h10,B_mean_h10,B_mlp_h10,1,m1_per_task,90,3,3,0.711874,0.748626,-0.0367525,-0.0341542,-0.111208,0.0428038,1000,no significant change
+T0,B mean vs B 2-layer MLP,D2,D2,B_mean_h10 vs B_mlp_h10,B_mean_h10,B_mlp_h10,2,m1_per_task,90,3,3,0.748239,0.760652,-0.0124135,-0.0127613,-0.0843253,0.0564315,1000,no significant change
+T0,B mean vs B 2-layer MLP,D2,D2,B_mean_h10 vs B_mlp_h10,B_mean_h10,B_mlp_h10,0,bal_acc,90,3,3,0.511905,0.511905,0,0,0,0,1000,no significant change
+T0,B mean vs B 2-layer MLP,D2,D2,B_mean_h10 vs B_mlp_h10,B_mean_h10,B_mlp_h10,1,bal_acc,90,3,3,0.532258,0.5,0.0322581,0.032094,0,0.0738012,1000,no significant change
+T0,B mean vs B 2-layer MLP,D2,D2,B_mean_h10 vs B_mlp_h10,B_mean_h10,B_mlp_h10,2,bal_acc,90,3,3,0.506884,0.506884,0,0.00103742,-0.0375,0.0394737,1000,no significant change
+T0,B mean vs B 2-layer MLP,D2,D2,B_mean_h10 vs B_mlp_h10,B_mean_h10,B_mlp_h10,0,tpr,90,3,3,0.0238095,0.0238095,0,0,0,0,1000,no significant change
+T0,B mean vs B 2-layer MLP,D2,D2,B_mean_h10 vs B_mlp_h10,B_mean_h10,B_mlp_h10,1,tpr,90,3,3,0.0645161,0,0.0645161,0.064188,0,0.147602,1000,no significant change
+T0,B mean vs B 2-layer MLP,D2,D2,B_mean_h10 vs B_mlp_h10,B_mean_h10,B_mlp_h10,2,tpr,90,3,3,0.108108,0.108108,0,0.00207485,-0.075,0.0789474,1000,no significant change
+T0,B 2-layer MLP vs B single best linear probe,D2,D2,B_mlp_h10 vs B_best_h10,B_mlp_h10,B_best_h10,0,m1_per_task,90,3,3,0.646442,0.694039,-0.047597,-0.0446512,-0.120737,0.0265333,1000,no significant change
+T0,B 2-layer MLP vs B single best linear probe,D2,D2,B_mlp_h10 vs B_best_h10,B_mlp_h10,B_best_h10,1,m1_per_task,90,3,3,0.748626,0.737379,0.0112475,0.00469006,-0.0595477,0.068909,1000,no significant change
+T0,B 2-layer MLP vs B single best linear probe,D2,D2,B_mlp_h10 vs B_best_h10,B_mlp_h10,B_best_h10,2,m1_per_task,90,3,3,0.760652,0.742347,0.0183053,0.0217054,-0.0308071,0.0802285,1000,no significant change
+T0,B 2-layer MLP vs B single best linear probe,D2,D2,B_mlp_h10 vs B_best_h10,B_mlp_h10,B_best_h10,0,bal_acc,90,3,3,0.511905,0.511905,0,0,0,0,1000,no significant change
+T0,B 2-layer MLP vs B single best linear probe,D2,D2,B_mlp_h10 vs B_best_h10,B_mlp_h10,B_best_h10,1,bal_acc,90,3,3,0.5,0.5,0,0.000497243,0,0,1000,no significant change
+T0,B 2-layer MLP vs B single best linear probe,D2,D2,B_mlp_h10 vs B_best_h10,B_mlp_h10,B_best_h10,2,bal_acc,90,3,3,0.506884,0.502805,0.00407955,0.00350745,-0.025,0.038474,1000,no significant change
+T0,B 2-layer MLP vs B single best linear probe,D2,D2,B_mlp_h10 vs B_best_h10,B_mlp_h10,B_best_h10,0,tpr,90,3,3,0.0238095,0.0238095,0,0,0,0,1000,no significant change
+T0,B 2-layer MLP vs B single best linear probe,D2,D2,B_mlp_h10 vs B_best_h10,B_mlp_h10,B_best_h10,1,tpr,90,3,3,0,0,0,0.000994486,0,0,1000,no significant change
+T0,B 2-layer MLP vs B single best linear probe,D2,D2,B_mlp_h10 vs B_best_h10,B_mlp_h10,B_best_h10,2,tpr,90,3,3,0.108108,0.0810811,0.027027,0.0252002,0,0.0833333,1000,no significant change

@@ -1,0 +1,82 @@
+[03:20:37] [train3] precision fp32; inputs ['A']; pools ['D0', 'D2']; seeds [0, 1, 2]; depths [2, 6, 12]; work /data/tmp/abc3_work
+[03:20:53] [train3 A] layer01 loaded (16 s) for [('D0', 0)]
+[03:20:54] [fit A d2 D0 s0 p0_wd0.01] ok: best epoch 1/6, eval_seen M1/task 0.8578, loss 0.5811 -> 0.2417, lr 0.001, 1 s, 47347 rows, d=4096, 1115905 params
+[03:20:55] [fit A d2 D0 s0 p0_wd0.1] ok: best epoch 1/6, eval_seen M1/task 0.8578, loss 0.5811 -> 0.2377, lr 0.001, 1 s, 47347 rows, d=4096, 1115905 params
+[03:20:55] [fit A d2 D0 s0 p0.3_wd0.01] ok: best epoch 1/6, eval_seen M1/task 0.8578, loss 0.5924 -> 0.2526, lr 0.001, 1 s, 47347 rows, d=4096, 1115905 params
+[03:20:56] [fit A d2 D0 s0 p0.3_wd0.1] ok: best epoch 1/6, eval_seen M1/task 0.8578, loss 0.5924 -> 0.2590, lr 0.001, 1 s, 47347 rows, d=4096, 1115905 params
+[03:20:57] [fit A d6 D0 s0 p0_wd0.01] ok: best epoch 1/6, eval_seen M1/task 0.8525, loss 0.5706 -> 0.1682, lr 0.001, 1 s, 47347 rows, d=4096, 1381121 params
+[03:20:58] [fit A d6 D0 s0 p0_wd0.1] ok: best epoch 1/6, eval_seen M1/task 0.8525, loss 0.5706 -> 0.1656, lr 0.001, 1 s, 47347 rows, d=4096, 1381121 params
+[03:20:58] [fit A d6 D0 s0 p0.3_wd0.01] ok: best epoch 1/6, eval_seen M1/task 0.8646, loss 0.6092 -> 0.2635, lr 0.001, 1 s, 47347 rows, d=4096, 1381121 params
+[03:20:59] [fit A d6 D0 s0 p0.3_wd0.1] ok: best epoch 1/6, eval_seen M1/task 0.8646, loss 0.6092 -> 0.2550, lr 0.001, 1 s, 47347 rows, d=4096, 1381121 params
+[03:21:00] [fit A d12 D0 s0 p0_wd0.01] ok: best epoch 2/7, eval_seen M1/task 0.8477, loss 0.5584 -> 0.1332, lr 0.001, 1 s, 47347 rows, d=4096, 1778945 params
+[03:21:01] [fit A d12 D0 s0 p0_wd0.1] ok: best epoch 2/7, eval_seen M1/task 0.8413, loss 0.5584 -> 0.1228, lr 0.001, 1 s, 47347 rows, d=4096, 1778945 params
+[03:21:02] [fit A d12 D0 s0 p0.3_wd0.01] ok: best epoch 1/6, eval_seen M1/task 0.8522, loss 0.6168 -> 0.2751, lr 0.001, 1 s, 47347 rows, d=4096, 1778945 params
+[03:21:03] [fit A d12 D0 s0 p0.3_wd0.1] ok: best epoch 1/6, eval_seen M1/task 0.8522, loss 0.6168 -> 0.2826, lr 0.001, 1 s, 47347 rows, d=4096, 1778945 params
+[03:21:04] [train3 A] layer10 loaded (1 s) for [('D0', 1), ('D2', 0)]
+[03:21:05] [fit A d2 D0 s1 p0_wd0.01] ok: best epoch 1/6, eval_seen M1/task 0.8169, loss 0.5033 -> 0.0562, lr 0.001, 1 s, 43643 rows, d=4096, 1115905 params
+[03:21:05] [fit A d2 D0 s1 p0_wd0.1] ok: best epoch 1/6, eval_seen M1/task 0.8169, loss 0.5033 -> 0.0556, lr 0.001, 1 s, 43643 rows, d=4096, 1115905 params
+[03:21:06] [fit A d2 D0 s1 p0.3_wd0.01] ok: best epoch 1/6, eval_seen M1/task 0.8248, loss 0.5183 -> 0.0664, lr 0.001, 1 s, 43643 rows, d=4096, 1115905 params
+[03:21:07] [fit A d2 D0 s1 p0.3_wd0.1] ok: best epoch 1/6, eval_seen M1/task 0.8248, loss 0.5183 -> 0.0665, lr 0.001, 0 s, 43643 rows, d=4096, 1115905 params
+[03:21:07] [fit A d6 D0 s1 p0_wd0.01] ok: best epoch 1/6, eval_seen M1/task 0.8126, loss 0.5095 -> 0.0369, lr 0.001, 1 s, 43643 rows, d=4096, 1381121 params
+[03:21:08] [fit A d6 D0 s1 p0_wd0.1] ok: best epoch 1/6, eval_seen M1/task 0.8054, loss 0.5095 -> 0.0396, lr 0.001, 1 s, 43643 rows, d=4096, 1381121 params
+[03:21:08] [fit A d6 D0 s1 p0.3_wd0.01] ok: best epoch 1/6, eval_seen M1/task 0.8247, loss 0.5579 -> 0.0724, lr 0.001, 1 s, 43643 rows, d=4096, 1381121 params
+[03:21:09] [fit A d6 D0 s1 p0.3_wd0.1] ok: best epoch 1/6, eval_seen M1/task 0.8247, loss 0.5579 -> 0.0785, lr 0.001, 1 s, 43643 rows, d=4096, 1381121 params
+[03:21:10] [fit A d12 D0 s1 p0_wd0.01] ok: best epoch 1/6, eval_seen M1/task 0.7908, loss 0.4937 -> 0.0393, lr 0.001, 1 s, 43643 rows, d=4096, 1778945 params
+[03:21:11] [fit A d12 D0 s1 p0_wd0.1] ok: best epoch 1/6, eval_seen M1/task 0.7908, loss 0.4937 -> 0.0383, lr 0.001, 1 s, 43643 rows, d=4096, 1778945 params
+[03:21:12] [fit A d12 D0 s1 p0.3_wd0.01] ok: best epoch 1/6, eval_seen M1/task 0.8175, loss 0.5639 -> 0.0819, lr 0.001, 1 s, 43643 rows, d=4096, 1778945 params
+[03:21:13] [fit A d12 D0 s1 p0.3_wd0.1] ok: best epoch 1/6, eval_seen M1/task 0.8210, loss 0.5639 -> 0.0819, lr 0.001, 1 s, 43643 rows, d=4096, 1778945 params
+[03:21:14] [fit A d2 D2 s0 p0_wd0.01] ok: best epoch 1/6, eval_seen M1/task 0.6997, loss 0.4384 -> 0.0884, lr 0.001, 2 s, 148819 rows, d=4096, 1115905 params
+[03:21:16] [fit A d2 D2 s0 p0_wd0.1] ok: best epoch 1/6, eval_seen M1/task 0.7046, loss 0.4384 -> 0.0890, lr 0.001, 2 s, 148819 rows, d=4096, 1115905 params
+[03:21:17] [fit A d2 D2 s0 p0.3_wd0.01] ok: best epoch 1/6, eval_seen M1/task 0.7183, loss 0.4539 -> 0.0958, lr 0.001, 2 s, 148819 rows, d=4096, 1115905 params
+[03:21:19] [fit A d2 D2 s0 p0.3_wd0.1] ok: best epoch 1/6, eval_seen M1/task 0.7183, loss 0.4539 -> 0.0964, lr 0.001, 2 s, 148819 rows, d=4096, 1115905 params
+[03:21:21] [fit A d6 D2 s0 p0_wd0.01] ok: best epoch 1/6, eval_seen M1/task 0.6741, loss 0.4164 -> 0.0692, lr 0.001, 2 s, 148819 rows, d=4096, 1381121 params
+[03:21:24] [fit A d6 D2 s0 p0_wd0.1] ok: best epoch 3/8, eval_seen M1/task 0.6649, loss 0.4163 -> 0.0500, lr 0.001, 3 s, 148819 rows, d=4096, 1381121 params
+[03:21:26] [fit A d6 D2 s0 p0.3_wd0.01] ok: best epoch 1/6, eval_seen M1/task 0.6820, loss 0.4671 -> 0.1121, lr 0.001, 2 s, 148819 rows, d=4096, 1381121 params
+[03:21:27] [fit A d6 D2 s0 p0.3_wd0.1] ok: best epoch 1/6, eval_seen M1/task 0.6867, loss 0.4671 -> 0.1098, lr 0.001, 1 s, 148819 rows, d=4096, 1381121 params
+[03:21:29] [fit A d12 D2 s0 p0_wd0.01] ok: best epoch 1/6, eval_seen M1/task 0.6626, loss 0.4100 -> 0.0789, lr 0.001, 2 s, 148819 rows, d=4096, 1778945 params
+[03:21:32] [fit A d12 D2 s0 p0_wd0.1] ok: best epoch 1/6, eval_seen M1/task 0.6597, loss 0.4102 -> 0.0775, lr 0.001, 2 s, 148819 rows, d=4096, 1778945 params
+[03:21:34] [fit A d12 D2 s0 p0.3_wd0.01] ok: best epoch 1/6, eval_seen M1/task 0.7032, loss 0.4817 -> 0.1204, lr 0.001, 2 s, 148819 rows, d=4096, 1778945 params
+[03:21:36] [fit A d12 D2 s0 p0.3_wd0.1] ok: best epoch 1/6, eval_seen M1/task 0.7021, loss 0.4818 -> 0.1176, lr 0.001, 2 s, 148819 rows, d=4096, 1778945 params
+[03:21:52] [train3 A] layer02 loaded (15 s) for [('D0', 2)]
+[03:21:53] [fit A d2 D0 s2 p0_wd0.01] ok: best epoch 6/11, eval_seen M1/task 0.8153, loss 0.5710 -> 0.0665, lr 0.001, 1 s, 43311 rows, d=4096, 1115905 params
+[03:21:54] [fit A d2 D0 s2 p0_wd0.1] ok: best epoch 4/9, eval_seen M1/task 0.8153, loss 0.5710 -> 0.1051, lr 0.001, 1 s, 43311 rows, d=4096, 1115905 params
+[03:21:56] [fit A d2 D0 s2 p0.3_wd0.01] ok: best epoch 8/13, eval_seen M1/task 0.8132, loss 0.5833 -> 0.0546, lr 0.001, 1 s, 43311 rows, d=4096, 1115905 params
+[03:21:57] [fit A d2 D0 s2 p0.3_wd0.1] ok: best epoch 8/13, eval_seen M1/task 0.8128, loss 0.5833 -> 0.0587, lr 0.001, 1 s, 43311 rows, d=4096, 1115905 params
+[03:21:59] [fit A d6 D0 s2 p0_wd0.01] ok: best epoch 6/11, eval_seen M1/task 0.8154, loss 0.5638 -> 0.0601, lr 0.001, 1 s, 43311 rows, d=4096, 1381121 params
+[03:22:00] [fit A d6 D0 s2 p0_wd0.1] ok: best epoch 5/10, eval_seen M1/task 0.8124, loss 0.5638 -> 0.0665, lr 0.001, 1 s, 43311 rows, d=4096, 1381121 params
+[03:22:01] [fit A d6 D0 s2 p0.3_wd0.01] ok: best epoch 5/10, eval_seen M1/task 0.8087, loss 0.5998 -> 0.1190, lr 0.001, 1 s, 43311 rows, d=4096, 1381121 params
+[03:22:02] [fit A d6 D0 s2 p0.3_wd0.1] ok: best epoch 13/18, eval_seen M1/task 0.8290, loss 0.5998 -> 0.0345, lr 0.001, 1 s, 43311 rows, d=4096, 1381121 params
+[03:22:03] [fit A d12 D0 s2 p0_wd0.01] ok: best epoch 5/10, eval_seen M1/task 0.8431, loss 0.5627 -> 0.0592, lr 0.001, 1 s, 43311 rows, d=4096, 1778945 params
+[03:22:04] [fit A d12 D0 s2 p0_wd0.1] ok: best epoch 5/10, eval_seen M1/task 0.8414, loss 0.5627 -> 0.0577, lr 0.001, 1 s, 43311 rows, d=4096, 1778945 params
+[03:22:05] [fit A d12 D0 s2 p0.3_wd0.01] ok: best epoch 5/10, eval_seen M1/task 0.8087, loss 0.6086 -> 0.1307, lr 0.001, 1 s, 43311 rows, d=4096, 1778945 params
+[03:22:07] [fit A d12 D0 s2 p0.3_wd0.1] ok: best epoch 11/16, eval_seen M1/task 0.8169, loss 0.6086 -> 0.0519, lr 0.001, 2 s, 43311 rows, d=4096, 1778945 params
+[03:22:23] [train3 A] layer31 loaded (16 s) for [('D2', 1)]
+[03:22:24] [fit A d2 D2 s1 p0_wd0.01] ok: best epoch 1/6, eval_seen M1/task 0.8195, loss 0.4353 -> 0.0159, lr 0.001, 1 s, 150864 rows, d=4096, 1115905 params
+[03:22:25] [fit A d2 D2 s1 p0_wd0.1] ok: best epoch 1/6, eval_seen M1/task 0.8188, loss 0.4353 -> 0.0156, lr 0.001, 1 s, 150864 rows, d=4096, 1115905 params
+[03:22:26] [fit A d2 D2 s1 p0.3_wd0.01] ok: best epoch 1/6, eval_seen M1/task 0.8343, loss 0.4523 -> 0.0206, lr 0.001, 1 s, 150864 rows, d=4096, 1115905 params
+[03:22:27] [fit A d2 D2 s1 p0.3_wd0.1] ok: best epoch 1/6, eval_seen M1/task 0.8343, loss 0.4523 -> 0.0224, lr 0.001, 1 s, 150864 rows, d=4096, 1115905 params
+[03:22:29] [fit A d6 D2 s1 p0_wd0.01] ok: best epoch 1/6, eval_seen M1/task 0.7598, loss 0.4250 -> 0.0205, lr 0.001, 1 s, 150864 rows, d=4096, 1381121 params
+[03:22:31] [fit A d6 D2 s1 p0_wd0.1] ok: best epoch 4/9, eval_seen M1/task 0.7578, loss 0.4250 -> 0.0103, lr 0.001, 2 s, 150864 rows, d=4096, 1381121 params
+[03:22:32] [fit A d6 D2 s1 p0.3_wd0.01] ok: best epoch 1/6, eval_seen M1/task 0.8043, loss 0.4736 -> 0.0332, lr 0.001, 1 s, 150864 rows, d=4096, 1381121 params
+[03:22:33] [fit A d6 D2 s1 p0.3_wd0.1] ok: best epoch 1/6, eval_seen M1/task 0.8043, loss 0.4736 -> 0.0341, lr 0.001, 1 s, 150864 rows, d=4096, 1381121 params
+[03:22:35] [fit A d12 D2 s1 p0_wd0.01] ok: best epoch 1/6, eval_seen M1/task 0.7683, loss 0.4239 -> 0.0215, lr 0.001, 2 s, 150864 rows, d=4096, 1778945 params
+[03:22:37] [fit A d12 D2 s1 p0_wd0.1] ok: best epoch 1/6, eval_seen M1/task 0.7619, loss 0.4239 -> 0.0268, lr 0.001, 2 s, 150864 rows, d=4096, 1778945 params
+[03:22:39] [fit A d12 D2 s1 p0.3_wd0.01] ok: best epoch 1/6, eval_seen M1/task 0.8046, loss 0.4861 -> 0.0395, lr 0.001, 2 s, 150864 rows, d=4096, 1778945 params
+[03:22:40] [fit A d12 D2 s1 p0.3_wd0.1] ok: best epoch 1/6, eval_seen M1/task 0.8131, loss 0.4861 -> 0.0448, lr 0.001, 2 s, 150864 rows, d=4096, 1778945 params
+[03:22:56] [train3 A] layer11 loaded (16 s) for [('D2', 2)]
+[03:22:57] [fit A d2 D2 s2 p0_wd0.01] ok: best epoch 1/6, eval_seen M1/task 0.8081, loss 0.4191 -> 0.0670, lr 0.001, 1 s, 146283 rows, d=4096, 1115905 params
+[03:22:58] [fit A d2 D2 s2 p0_wd0.1] ok: best epoch 1/6, eval_seen M1/task 0.8081, loss 0.4191 -> 0.0673, lr 0.001, 1 s, 146283 rows, d=4096, 1115905 params
+[03:22:59] [fit A d2 D2 s2 p0.3_wd0.01] ok: best epoch 1/6, eval_seen M1/task 0.8027, loss 0.4358 -> 0.0778, lr 0.001, 1 s, 146283 rows, d=4096, 1115905 params
+[03:23:01] [fit A d2 D2 s2 p0.3_wd0.1] ok: best epoch 1/6, eval_seen M1/task 0.8001, loss 0.4358 -> 0.0771, lr 0.001, 1 s, 146283 rows, d=4096, 1115905 params
+[03:23:02] [fit A d6 D2 s2 p0_wd0.01] ok: best epoch 1/6, eval_seen M1/task 0.7837, loss 0.4026 -> 0.0635, lr 0.001, 1 s, 146283 rows, d=4096, 1381121 params
+[03:23:03] [fit A d6 D2 s2 p0_wd0.1] ok: best epoch 2/7, eval_seen M1/task 0.7789, loss 0.4026 -> 0.0520, lr 0.001, 2 s, 146283 rows, d=4096, 1381121 params
+[03:23:05] [fit A d6 D2 s2 p0.3_wd0.01] ok: best epoch 1/6, eval_seen M1/task 0.7822, loss 0.4562 -> 0.0957, lr 0.001, 1 s, 146283 rows, d=4096, 1381121 params
+[03:23:06] [fit A d6 D2 s2 p0.3_wd0.1] ok: best epoch 1/6, eval_seen M1/task 0.7791, loss 0.4563 -> 0.0983, lr 0.001, 1 s, 146283 rows, d=4096, 1381121 params
+[03:23:08] [fit A d12 D2 s2 p0_wd0.01] ok: best epoch 2/7, eval_seen M1/task 0.7690, loss 0.3954 -> 0.0507, lr 0.001, 2 s, 146283 rows, d=4096, 1778945 params
+[03:23:10] [fit A d12 D2 s2 p0_wd0.1] ok: best epoch 2/7, eval_seen M1/task 0.7876, loss 0.3953 -> 0.0600, lr 0.001, 2 s, 146283 rows, d=4096, 1778945 params
+[03:23:12] [fit A d12 D2 s2 p0.3_wd0.01] ok: best epoch 1/6, eval_seen M1/task 0.7878, loss 0.4662 -> 0.1012, lr 0.001, 2 s, 146283 rows, d=4096, 1778945 params
+[03:23:14] [fit A d12 D2 s2 p0.3_wd0.1] ok: best epoch 1/6, eval_seen M1/task 0.7921, loss 0.4662 -> 0.0996, lr 0.001, 2 s, 146283 rows, d=4096, 1778945 params
+[03:23:14] [train3] finished this invocation (157 s); grid 144/144 done, 0 failed
+exit 0 2026-10-13T03:23:14Z
+[03:35:51] [train3] precision fp32; inputs ['A']; pools ['D0', 'D2']; seeds [0, 1, 2]; depths [2, 6, 12]; work /data/tmp/abc3_work
+[03:35:51] [train3] finished this invocation (0 s); grid 144/144 done, 0 failed

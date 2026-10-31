@@ -1,0 +1,14 @@
+{
+ "check": "plain 256-256 MLP, C input, D0, seed 0, abc2 settings, via train3.train_fit(plain=True)",
+ "wd": 0.0001,
+ "best_epoch": 5,
+ "epochs_run": 10,
+ "eval_seen_m1_per_task": 0.789021164021164,
+ "T0_m1_per_task": 0.7016145619086797,
+ "abc2_T0_m1_per_task": 0.701615,
+ "abc2_best_epoch": 5,
+ "diff": -4.380913203316794e-07,
+ "tolerance": 0.01,
+ "passed": true,
+ "seconds": 1.3147838115692139
+}

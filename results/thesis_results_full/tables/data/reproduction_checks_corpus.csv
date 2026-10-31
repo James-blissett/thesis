@@ -1,0 +1,8 @@
+check,source_file,source_value,this_run,passed
+"composition LIBERO-10, original",results/abc2/report_tables/corpus_block.csv,137/300,137/300,True
+"composition LIBERO-10, new unperturbed",results/abc2/report_tables/corpus_block.csv,91/200,91/200,True
+composition LIBERO-PRO object perturbation,results/abc2/report_tables/corpus_block.csv,47/200,47/200,True
+composition LIBERO-PRO instruction perturbation,results/abc2/report_tables/corpus_block.csv,85/200,85/200,True
+composition LIBERO-PRO position swap,results/abc2/report_tables/corpus_block.csv,0/50,0/50,True
+composition LIBERO-PRO task perturbation,results/abc2/report_tables/corpus_block.csv,4/50,4/50,True
+"action-repeat rate, original rollouts",results/completion_confound.json,0.1677 (38618 rows) / 0.4762 (32485 rows),0.1677 (38618 rows) / 0.4762 (32485 rows),True

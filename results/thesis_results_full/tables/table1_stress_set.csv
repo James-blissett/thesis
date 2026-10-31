@@ -1,0 +1,91 @@
+detector,variant,look-ahead H,stress subset,rollouts,share alarmed before the cut at alpha 0.1 mean,share alarmed before the cut at alpha 0.1 std,share alarmed before the cut at alpha 0.1 seed 0,share alarmed before the cut at alpha 0.1 seed 1,share alarmed before the cut at alpha 0.1 seed 2,row key
+A,single best probe (of 34),,all position-swap and task-perturbed rollouts,100,0.1933,0.1474,0.14,0.08,0.36,A_best
+A,single best probe (of 34),,base task seen in training,70,0.219,0.1692,0.1286,0.1143,0.4143,A_best
+A,single best probe (of 34),,base task unseen,30,0.1333,0.1202,0.1667,0,0.2333,A_best
+A,unweighted mean of 34 probe outputs (primary),,all position-swap and task-perturbed rollouts,100,0.2733,0.1756,0.29,0.09,0.44,A_mean
+A,unweighted mean of 34 probe outputs (primary),,base task seen in training,70,0.3048,0.1864,0.2857,0.1286,0.5,A_mean
+A,unweighted mean of 34 probe outputs (primary),,base task unseen,30,0.2,0.1732,0.3,0,0.3,A_mean
+A,trained combiner over 34 probe outputs (out-of-fold),,all position-swap and task-perturbed rollouts,100,0.3867,0.1305,0.25,0.51,0.4,A_combiner
+A,trained combiner over 34 probe outputs (out-of-fold),,base task seen in training,70,0.419,0.1466,0.2571,0.5429,0.4571,A_combiner
+A,trained combiner over 34 probe outputs (out-of-fold),,base task unseen,30,0.3111,0.1072,0.2333,0.4333,0.2667,A_combiner
+A,2-layer MLP on the best probe's hidden state,,all position-swap and task-perturbed rollouts,100,0.2233,0.1704,0.12,0.42,0.13,A_mlp
+A,2-layer MLP on the best probe's hidden state,,base task seen in training,70,0.2476,0.2196,0.1429,0.5,0.1,A_mlp
+A,2-layer MLP on the best probe's hidden state,,base task unseen,30,0.1667,0.0882,0.0667,0.2333,0.2,A_mlp
+C,single best probe (of 33),,all position-swap and task-perturbed rollouts,100,0.2633,0.1531,0.17,0.18,0.44,C_best
+C,single best probe (of 33),,base task seen in training,70,0.2667,0.1606,0.1286,0.2286,0.4429,C_best
+C,single best probe (of 33),,base task unseen,30,0.2556,0.1836,0.2667,0.0667,0.4333,C_best
+C,unweighted mean of 33 probe outputs (primary),,all position-swap and task-perturbed rollouts,100,0.3,0.13,0.3,0.17,0.43,C_mean
+C,unweighted mean of 33 probe outputs (primary),,base task seen in training,70,0.3095,0.1091,0.2857,0.2143,0.4286,C_mean
+C,unweighted mean of 33 probe outputs (primary),,base task unseen,30,0.2778,0.1895,0.3333,0.0667,0.4333,C_mean
+C,trained combiner over 33 probe outputs (out-of-fold),,all position-swap and task-perturbed rollouts,100,0.3267,0.145,0.18,0.33,0.47,C_combiner
+C,trained combiner over 33 probe outputs (out-of-fold),,base task seen in training,70,0.3333,0.1438,0.2,0.3143,0.4857,C_combiner
+C,trained combiner over 33 probe outputs (out-of-fold),,base task unseen,30,0.3111,0.1575,0.1333,0.3667,0.4333,C_combiner
+C,2-layer MLP on the best probe's inputs,,all position-swap and task-perturbed rollouts,100,0.2533,0.1185,0.18,0.19,0.39,C_mlp
+C,2-layer MLP on the best probe's inputs,,base task seen in training,70,0.2619,0.1215,0.1429,0.2571,0.3857,C_mlp
+C,2-layer MLP on the best probe's inputs,,base task unseen,30,0.2333,0.1856,0.2667,0.0333,0.4,C_mlp
+C (exploratory),logistic regression on all 132 constraints,,all position-swap and task-perturbed rollouts,100,0.3133,0.155,0.16,0.31,0.47,C_lr132
+C (exploratory),logistic regression on all 132 constraints,,base task seen in training,70,0.319,0.1438,0.1857,0.3,0.4714,C_lr132
+C (exploratory),logistic regression on all 132 constraints,,base task unseen,30,0.3,0.1856,0.1,0.3333,0.4667,C_lr132
+C (exploratory),2-layer MLP on all 132 constraints,,all position-swap and task-perturbed rollouts,100,0.3433,0.0473,0.29,0.36,0.38,C_mlp132
+C (exploratory),2-layer MLP on all 132 constraints,,base task seen in training,70,0.3333,0.0675,0.2571,0.3571,0.3857,C_mlp132
+C (exploratory),2-layer MLP on all 132 constraints,,base task unseen,30,0.3667,0,0.3667,0.3667,0.3667,C_mlp132
+B,"single best probe (of 116), chosen on eval-seen per-task AUROC against outcome",0,all position-swap and task-perturbed rollouts,100,0.25,0.0693,0.21,0.21,0.33,B_best_h0
+B,"single best probe (of 116), chosen on eval-seen per-task AUROC against outcome",0,base task seen in training,70,0.281,0.1003,0.1857,0.2714,0.3857,B_best_h0
+B,"single best probe (of 116), chosen on eval-seen per-task AUROC against outcome",0,base task unseen,30,0.1778,0.1018,0.2667,0.0667,0.2,B_best_h0
+B,unweighted mean of 116 probe outputs (primary),0,all position-swap and task-perturbed rollouts,100,0.29,0.0721,0.23,0.27,0.37,B_mean_h0
+B,unweighted mean of 116 probe outputs (primary),0,base task seen in training,70,0.3095,0.0873,0.2143,0.3286,0.3857,B_mean_h0
+B,unweighted mean of 116 probe outputs (primary),0,base task unseen,30,0.2444,0.1018,0.2667,0.1333,0.3333,B_mean_h0
+B,unweighted mean of the 29 embedding-temporal probe outputs,0,all position-swap and task-perturbed rollouts,100,0.22,0.1179,0.19,0.12,0.35,B_meanemb_h0
+B,unweighted mean of the 29 embedding-temporal probe outputs,0,base task seen in training,70,0.2381,0.128,0.1571,0.1714,0.3857,B_meanemb_h0
+B,unweighted mean of the 29 embedding-temporal probe outputs,0,base task unseen,30,0.1778,0.154,0.2667,0,0.2667,B_meanemb_h0
+B,trained combiner over 116 probe outputs (out-of-fold),0,all position-swap and task-perturbed rollouts,100,0.3367,0.0808,0.25,0.35,0.41,B_combiner_h0
+B,trained combiner over 116 probe outputs (out-of-fold),0,base task seen in training,70,0.3571,0.0869,0.2571,0.4143,0.4,B_combiner_h0
+B,trained combiner over 116 probe outputs (out-of-fold),0,base task unseen,30,0.2889,0.1262,0.2333,0.2,0.4333,B_combiner_h0
+B,"single best probe (of 116), chosen on eval-seen per-task AUROC against outcome",10,all position-swap and task-perturbed rollouts,100,0.1567,0.1097,0.12,0.07,0.28,B_best_h10
+B,"single best probe (of 116), chosen on eval-seen per-task AUROC against outcome",10,base task seen in training,70,0.1619,0.1327,0.0714,0.1,0.3143,B_best_h10
+B,"single best probe (of 116), chosen on eval-seen per-task AUROC against outcome",10,base task unseen,30,0.1444,0.1262,0.2333,0,0.2,B_best_h10
+B,unweighted mean of 116 probe outputs (primary),10,all position-swap and task-perturbed rollouts,100,0.27,0.1136,0.22,0.19,0.4,B_mean_h10
+B,unweighted mean of 116 probe outputs (primary),10,base task seen in training,70,0.2905,0.111,0.2,0.2571,0.4143,B_mean_h10
+B,unweighted mean of 116 probe outputs (primary),10,base task unseen,30,0.2222,0.1711,0.2667,0.0333,0.3667,B_mean_h10
+B,unweighted mean of the 29 embedding-temporal probe outputs,10,all position-swap and task-perturbed rollouts,100,0.2367,0.1721,0.18,0.1,0.43,B_meanemb_h10
+B,unweighted mean of the 29 embedding-temporal probe outputs,10,base task seen in training,70,0.2476,0.1815,0.1429,0.1429,0.4571,B_meanemb_h10
+B,unweighted mean of the 29 embedding-temporal probe outputs,10,base task unseen,30,0.2111,0.1895,0.2667,0,0.3667,B_meanemb_h10
+B,trained combiner over 116 probe outputs (out-of-fold),10,all position-swap and task-perturbed rollouts,100,0.3133,0.1222,0.18,0.34,0.42,B_combiner_h10
+B,trained combiner over 116 probe outputs (out-of-fold),10,base task seen in training,70,0.3238,0.1327,0.1714,0.4143,0.3857,B_combiner_h10
+B,trained combiner over 116 probe outputs (out-of-fold),10,base task unseen,30,0.2889,0.1836,0.2,0.1667,0.5,B_combiner_h10
+B,"single best probe (of 116), chosen on eval-seen per-task AUROC against outcome",25,all position-swap and task-perturbed rollouts,100,0.2133,0.1159,0.23,0.09,0.32,B_best_h25
+B,"single best probe (of 116), chosen on eval-seen per-task AUROC against outcome",25,base task seen in training,70,0.2381,0.1232,0.2143,0.1286,0.3714,B_best_h25
+B,"single best probe (of 116), chosen on eval-seen per-task AUROC against outcome",25,base task unseen,30,0.1556,0.1388,0.2667,0,0.2,B_best_h25
+B,unweighted mean of 116 probe outputs (primary),25,all position-swap and task-perturbed rollouts,100,0.28,0.1153,0.24,0.19,0.41,B_mean_h25
+B,unweighted mean of 116 probe outputs (primary),25,base task seen in training,70,0.3095,0.1164,0.2286,0.2571,0.4429,B_mean_h25
+B,unweighted mean of 116 probe outputs (primary),25,base task unseen,30,0.2111,0.1575,0.2667,0.0333,0.3333,B_mean_h25
+B,unweighted mean of the 29 embedding-temporal probe outputs,25,all position-swap and task-perturbed rollouts,100,0.24,0.1453,0.25,0.09,0.38,B_meanemb_h25
+B,unweighted mean of the 29 embedding-temporal probe outputs,25,base task seen in training,70,0.2571,0.145,0.2286,0.1286,0.4143,B_meanemb_h25
+B,unweighted mean of the 29 embedding-temporal probe outputs,25,base task unseen,30,0.2,0.1732,0.3,0,0.3,B_meanemb_h25
+B,trained combiner over 116 probe outputs (out-of-fold),25,all position-swap and task-perturbed rollouts,100,0.2367,0.1358,0.22,0.11,0.38,B_combiner_h25
+B,trained combiner over 116 probe outputs (out-of-fold),25,base task seen in training,70,0.2619,0.1248,0.2286,0.1571,0.4,B_combiner_h25
+B,trained combiner over 116 probe outputs (out-of-fold),25,base task unseen,30,0.1778,0.1678,0.2,0,0.3333,B_combiner_h25
+B,"2-layer MLP on the best probe's layer, trained on that probe's constraint target",10,all position-swap and task-perturbed rollouts,100,0.1967,0.1514,0.13,0.09,0.37,B_mlp_h10
+B,"2-layer MLP on the best probe's layer, trained on that probe's constraint target",10,base task seen in training,70,0.2143,0.1868,0.0857,0.1286,0.4286,B_mlp_h10
+B,"2-layer MLP on the best probe's layer, trained on that probe's constraint target",10,base task unseen,30,0.1556,0.1347,0.2333,0,0.2333,B_mlp_h10
+Baseline,timestep only,,all position-swap and task-perturbed rollouts,100,0,0,0,0,0,timestep
+Baseline,timestep only,,base task seen in training,70,0,0,0,0,0,timestep
+Baseline,timestep only,,base task unseen,30,0,0,0,0,0,timestep
+Baseline,"best single untrained constraint (layer chosen on eval-seen per-task AUROC), running maximum",,all position-swap and task-perturbed rollouts,100,0.2167,0.135,0.22,0.08,0.35,emb_best
+Baseline,"best single untrained constraint (layer chosen on eval-seen per-task AUROC), running maximum",,base task seen in training,70,0.2238,0.1327,0.1857,0.1143,0.3714,emb_best
+Baseline,"best single untrained constraint (layer chosen on eval-seen per-task AUROC), running maximum",,base task unseen,30,0.2,0.1732,0.3,0,0.3,emb_best
+Baseline,"untrained constraint at the earlier layer choice (eval-seen pooled AUROC), running maximum",,all position-swap and task-perturbed rollouts,100,0.2167,0.125,0.22,0.09,0.34,emb_pooled
+Baseline,"untrained constraint at the earlier layer choice (eval-seen pooled AUROC), running maximum",,base task seen in training,70,0.2238,0.119,0.1857,0.1286,0.3571,emb_pooled
+Baseline,"untrained constraint at the earlier layer choice (eval-seen pooled AUROC), running maximum",,base task unseen,30,0.2,0.1732,0.3,0,0.3,emb_pooled
+Baseline,"token mean entropy, running maximum",,all position-swap and task-perturbed rollouts,100,0.1133,0.0473,0.06,0.15,0.13,token_entropy
+Baseline,"token mean entropy, running maximum",,base task seen in training,70,0.1143,0.0571,0.0571,0.1714,0.1143,token_entropy
+Baseline,"token mean entropy, running maximum",,base task unseen,30,0.1111,0.0509,0.0667,0.1,0.1667,token_entropy
+Baseline,"token max-probability, running maximum",,all position-swap and task-perturbed rollouts,100,0.1567,0.0681,0.08,0.18,0.21,token_maxprob
+Baseline,"token max-probability, running maximum",,base task seen in training,70,0.1524,0.0705,0.0714,0.2,0.1857,token_maxprob
+Baseline,"token max-probability, running maximum",,base task unseen,30,0.1667,0.0882,0.1,0.1333,0.2667,token_maxprob
+Baseline,"FailureSpot signal s, running maximum",,all position-swap and task-perturbed rollouts,100,0.1167,0.0924,0.17,0.17,0.01,failurespot
+Baseline,"FailureSpot signal s, running maximum",,base task seen in training,70,0.1429,0.1116,0.2,0.2143,0.0143,failurespot
+Baseline,"FailureSpot signal s, running maximum",,base task unseen,30,0.0556,0.0509,0.1,0.0667,0,failurespot
+Baseline,"FailureSpot signal, opposite orientation (-s), running maximum",,all position-swap and task-perturbed rollouts,100,0.0333,0.0252,0.06,0.01,0.03,failurespot_neg
+Baseline,"FailureSpot signal, opposite orientation (-s), running maximum",,base task seen in training,70,0.0286,0.0143,0.0429,0.0143,0.0286,failurespot_neg
+Baseline,"FailureSpot signal, opposite orientation (-s), running maximum",,base task unseen,30,0.0444,0.0509,0.1,0,0.0333,failurespot_neg

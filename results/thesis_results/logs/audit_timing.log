@@ -1,0 +1,12 @@
+[13:29:52] loaded primary series for 1000 rollouts (4 s)
+{
+ "load_layer_s": 21.787453651428223,
+ "A_probe_fit_all_6_c_s": 4.069593667984009,
+ "A_probe_fit_to_c_1e-5_s": 0.2527148723602295,
+ "B_grid_fit_one_layer_12_outputs_one_c_s": 0.5279104709625244,
+ "B_grid_fit_one_layer_12_outputs_all_6_c_s": 7.751178026199341,
+ "MLP_fit_one_wd_s": 0.46558332443237305,
+ "MLP_epochs_run": 6,
+ "n_train_rows": 47347,
+ "seconds": 41.26239037513733
+}

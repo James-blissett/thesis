@@ -1,0 +1,10 @@
+H,test set,source,"mean minus combiner, mean",std,seed 0,seed 1,seed 2
+0,eval-seen,this run (evaluate.py),-0.0669,0.0263,-0.0489,-0.0971,-0.0549
+0,"unseen tasks, original rollouts",this run (evaluate.py),0.0248,0.0522,-0.0286,0.0275,0.0756
+0,unseen tasks incl. LIBERO-PRO,this run (evaluate.py),0.0263,0.0163,0.0429,0.0257,0.0102
+10,eval-seen,this run (evaluate.py),-0.0598,0.0169,-0.0407,-0.0655,-0.073
+10,"unseen tasks, original rollouts",this run (evaluate.py),0.0134,0.044,-0.0242,0.0027,0.0618
+10,unseen tasks incl. LIBERO-PRO,this run (evaluate.py),0.0201,0.0313,0.0378,-0.016,0.0386
+25,eval-seen,this run (evaluate.py),-0.0236,0.0034,-0.0236,-0.0201,-0.027
+25,"unseen tasks, original rollouts",this run (evaluate.py),0.0095,0.0194,0.0319,-0.0032,-0.0001
+25,unseen tasks incl. LIBERO-PRO,this run (evaluate.py),0.0147,0.0369,0.033,-0.0277,0.0389

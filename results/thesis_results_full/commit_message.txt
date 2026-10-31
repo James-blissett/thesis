@@ -1,0 +1,16 @@
+Thesis results, background run: full training set and training-data ablation
+
+Repeat the results collection with the full training set (1,000 rollouts incl.
+LIBERO-PRO object and instruction perturbations), every selection re-made on
+its eval-seen set; B's grid at H = 0/10/25 (116 probes per H). Add the
+original-vs-full comparison with paired bootstraps (training-data ablation)
+and the selections report.
+
+New:
+- results/thesis_results_full/: REPORT.md, report_notes.md, RUNLOG.md,
+  selections_report.md, tables/ (incl. training_set_comparison.csv,
+  selections_comparison.csv), figures/, scores/
+- results/thesis_results/tables/table6_training_data*.csv: B and the means
+  join the training-data table
+
+Co-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>

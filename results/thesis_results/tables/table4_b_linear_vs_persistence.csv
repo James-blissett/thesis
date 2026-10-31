@@ -1,0 +1,37 @@
+target kind,H,test set,probe-seed pairs,"linear probes, mean row-level AUROC","persistence, mean row-level AUROC","timestep only, mean row-level AUROC",share of probes above persistence
+act_mag,0,eval-seen,96,0.8454,1,0.4624,0
+act_mag,0,unseen tasks incl. LIBERO-PRO,96,0.7805,1,0.5204,0
+act_mag,0,"unseen tasks, original rollouts",96,0.7659,1,0.5035,0
+act_mag,10,eval-seen,96,0.8546,0.9929,0.4679,0
+act_mag,10,unseen tasks incl. LIBERO-PRO,96,0.7958,0.9923,0.5267,0
+act_mag,10,"unseen tasks, original rollouts",96,0.7794,0.9917,0.5096,0
+act_mag,25,eval-seen,96,0.8527,0.9739,0.47,0
+act_mag,25,unseen tasks incl. LIBERO-PRO,96,0.7962,0.9715,0.5356,0
+act_mag,25,"unseen tasks, original rollouts",96,0.78,0.9699,0.5148,0
+act_rep,0,eval-seen,96,0.8763,1,0.7018,0
+act_rep,0,unseen tasks incl. LIBERO-PRO,96,0.8662,1,0.7314,0
+act_rep,0,"unseen tasks, original rollouts",96,0.8539,1,0.7253,0
+act_rep,10,eval-seen,96,0.8866,0.9961,0.7019,0
+act_rep,10,unseen tasks incl. LIBERO-PRO,96,0.8778,0.9963,0.7337,0
+act_rep,10,"unseen tasks, original rollouts",96,0.8639,0.9959,0.7304,0
+act_rep,25,eval-seen,96,0.8916,0.9796,0.6986,0
+act_rep,25,unseen tasks incl. LIBERO-PRO,96,0.884,0.9793,0.7298,0
+act_rep,25,"unseen tasks, original rollouts",96,0.872,0.9792,0.7265,0
+emb_temp,0,eval-seen,90,0.7872,1,0.6169,0
+emb_temp,0,unseen tasks incl. LIBERO-PRO,90,0.798,1,0.6541,0
+emb_temp,0,"unseen tasks, original rollouts",90,0.7768,1,0.6484,0
+emb_temp,10,eval-seen,90,0.827,0.7722,0.6102,0.967
+emb_temp,10,unseen tasks incl. LIBERO-PRO,90,0.8039,0.7868,0.6717,0.756
+emb_temp,10,"unseen tasks, original rollouts",90,0.7856,0.7745,0.659,0.689
+emb_temp,25,eval-seen,90,0.8235,0.7458,0.5757,0.922
+emb_temp,25,unseen tasks incl. LIBERO-PRO,90,0.7527,0.7576,0.6407,0.456
+emb_temp,25,"unseen tasks, original rollouts",90,0.7363,0.7448,0.6211,0.456
+xl_final,0,eval-seen,90,0.878,1,0.5653,0
+xl_final,0,unseen tasks incl. LIBERO-PRO,90,0.7851,1,0.556,0
+xl_final,0,"unseen tasks, original rollouts",90,0.7901,1,0.558,0
+xl_final,10,eval-seen,90,0.8835,0.9778,0.5408,0
+xl_final,10,unseen tasks incl. LIBERO-PRO,90,0.7965,0.9791,0.5265,0
+xl_final,10,"unseen tasks, original rollouts",90,0.7994,0.9767,0.5262,0
+xl_final,25,eval-seen,90,0.871,0.9317,0.5136,0
+xl_final,25,unseen tasks incl. LIBERO-PRO,90,0.7784,0.9359,0.4924,0
+xl_final,25,"unseen tasks, original rollouts",90,0.7755,0.9284,0.4873,0

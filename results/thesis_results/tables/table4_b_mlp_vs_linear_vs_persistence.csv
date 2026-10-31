@@ -1,0 +1,14 @@
+comparison,model,test set,AUROC mean,AUROC std,AUROC seed 0,AUROC seed 1,AUROC seed 2,target per seed,balanced accuracy at alpha 0.1 mean,balanced accuracy at alpha 0.1 std,balanced accuracy at alpha 0.1 seed 0,balanced accuracy at alpha 0.1 seed 1,balanced accuracy at alpha 0.1 seed 2
+row-level AUROC against the probe's own target (H = 10),2-layer MLP,eval-seen,0.8385,0.0867,0.8594,0.9129,0.7433,emb_temp[20] | xl_final[12] | emb_temp[0],,,,,
+row-level AUROC against the probe's own target (H = 10),linear probe,eval-seen,0.8339,0.0859,0.8579,0.9053,0.7386,emb_temp[20] | xl_final[12] | emb_temp[0],,,,,
+row-level AUROC against the probe's own target (H = 10),persistence (current value),eval-seen,0.8416,0.1208,0.7725,0.981,0.7712,emb_temp[20] | xl_final[12] | emb_temp[0],,,,,
+row-level AUROC against the probe's own target (H = 10),2-layer MLP,"unseen tasks, original rollouts",0.769,0.0085,0.7673,0.7783,0.7615,emb_temp[20] | xl_final[12] | emb_temp[0],,,,,
+row-level AUROC against the probe's own target (H = 10),linear probe,"unseen tasks, original rollouts",0.7556,0.0169,0.7366,0.7691,0.7611,emb_temp[20] | xl_final[12] | emb_temp[0],,,,,
+row-level AUROC against the probe's own target (H = 10),persistence (current value),"unseen tasks, original rollouts",0.8364,0.1309,0.7368,0.9846,0.7877,emb_temp[20] | xl_final[12] | emb_temp[0],,,,,
+row-level AUROC against the probe's own target (H = 10),2-layer MLP,unseen tasks incl. LIBERO-PRO,0.7775,0.0207,0.7998,0.759,0.7736,emb_temp[20] | xl_final[12] | emb_temp[0],,,,,
+row-level AUROC against the probe's own target (H = 10),linear probe,unseen tasks incl. LIBERO-PRO,0.7652,0.0118,0.772,0.7515,0.772,emb_temp[20] | xl_final[12] | emb_temp[0],,,,,
+row-level AUROC against the probe's own target (H = 10),persistence (current value),unseen tasks incl. LIBERO-PRO,0.8473,0.1191,0.7605,0.983,0.7983,emb_temp[20] | xl_final[12] | emb_temp[0],,,,,
+"per-task AUROC against outcome (running sum), and alarm",2-layer MLP,"unseen tasks, original rollouts",0.6747,0.0703,0.686,0.5995,0.7387,,0.5138,0.0123,0.5238,0.5,0.5176
+"per-task AUROC against outcome (running sum), and alarm",linear probe,"unseen tasks, original rollouts",0.6584,0.0696,0.6261,0.6108,0.7383,,0.4996,0.0007,0.5,0.5,0.4987
+"per-task AUROC against outcome (running sum), and alarm",2-layer MLP,unseen tasks incl. LIBERO-PRO,0.7186,0.0809,0.7696,0.6254,0.761,,0.5408,0.0522,0.601,0.508,0.5134
+"per-task AUROC against outcome (running sum), and alarm",linear probe,unseen tasks incl. LIBERO-PRO,0.6998,0.1,0.7733,0.586,0.7402,,0.5327,0.0474,0.5871,0.5,0.5109

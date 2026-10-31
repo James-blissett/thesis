@@ -1,0 +1,150 @@
+== 14:07:29 python analysis/thesis_results/probes_c.py
+[14:07:30] C probes done
+== 14:07:31 python analysis/thesis_results/detectors.py --only reused a c b b_targets baselines
+[14:07:32] [det] step reused ok (0 s)
+[14:07:32] [det] step a ok (0 s)
+[14:07:32] [det] step c ok (0 s)
+[14:07:45] [det] B_best_h0: saved (new selection: best of B's probes on eval-seen per-task AUROC against outcome)
+[14:07:45] [det] B_mean_h0: saved (new: mean of the refitted grid probes (probes_b.py))
+[14:07:45] [det] B_meanemb_h0: saved (new: mean of the refitted embedding-temporal grid probes)
+[14:07:46] [det] B_bylayer_h0: saved (new: per-layer mean of B's probes (profiles only))
+[14:07:54] [det] B_combiner_h0: saved (new: B's trained combiner refitted on the refitted grid outputs)
+[14:08:08] [det] B_best_h10: saved (new selection: best of B's probes on eval-seen per-task AUROC against outcome)
+[14:08:08] [det] B_mean_h10: saved (new: mean of the refitted grid probes (probes_b.py))
+[14:08:08] [det] B_meanemb_h10: saved (new: mean of the refitted embedding-temporal grid probes)
+[14:08:08] [det] B_bylayer_h10: saved (new: per-layer mean of B's probes (profiles only))
+[14:08:15] [det] B_combiner_h10_refit: saved (new: B's trained combiner refitted on the refitted grid outputs)
+[14:08:28] [det] B_best_h25: saved (new selection: best of B's probes on eval-seen per-task AUROC against outcome)
+[14:08:28] [det] B_mean_h25: saved (new: mean of the refitted grid probes (probes_b.py))
+[14:08:28] [det] B_meanemb_h25: saved (new: mean of the refitted embedding-temporal grid probes)
+[14:08:28] [det] B_bylayer_h25: saved (new: per-layer mean of B's probes (profiles only))
+[14:08:35] [det] B_combiner_h25: saved (new: B's trained combiner refitted on the refitted grid outputs)
+[14:08:35] [det] step b ok (63 s)
+[14:08:49] [det] B_bytarget_h0: saved (new: B per target kind (unweighted mean; trained combiner at the full combiner's c))
+[14:09:02] [det] B_bytarget_h10: saved (new: B per target kind (unweighted mean; trained combiner at the full combiner's c))
+[14:09:14] [det] B_bytarget_h25: saved (new: B per target kind (unweighted mean; trained combiner at the full combiner's c))
+[14:09:14] [det] step b_targets ok (102 s)
+[14:09:17] loaded baseline series for 1000 rollouts (3 s)
+[14:09:17] [det] step baselines ok (105 s)
+== 14:09:18 python analysis/thesis_results/mlp_new.py c
+== 14:09:20 python analysis/thesis_results/mlp_new.py b
+[14:09:26] loaded primary series for 1000 rollouts (5 s)
+[14:09:31] [B mlp seed 0] L20:emb_temp:H10 wd 0.0001: epoch 1/6, eval-seen target AUROC 0.8590 (linear 0.8579) (2 s)
+[14:09:31] [B mlp seed 0] L20:emb_temp:H10 wd 0.01: epoch 1/6, eval-seen target AUROC 0.8590 (linear 0.8579) (0 s)
+[14:09:31] [B mlp seed 0] L20:emb_temp:H10 wd 0.1: epoch 1/6, eval-seen target AUROC 0.8591 (linear 0.8579) (0 s)
+[14:09:32] [B mlp seed 0] L20:emb_temp:H10 wd 1: epoch 1/6, eval-seen target AUROC 0.8594 (linear 0.8579) (0 s)
+[14:09:33] [B mlp seed 1] L12:xl_final:H10 wd 0.0001: epoch 2/7, eval-seen target AUROC 0.9126 (linear 0.9053) (0 s)
+[14:09:34] [B mlp seed 1] L12:xl_final:H10 wd 0.01: epoch 2/7, eval-seen target AUROC 0.9127 (linear 0.9053) (0 s)
+[14:09:34] [B mlp seed 1] L12:xl_final:H10 wd 0.1: epoch 2/7, eval-seen target AUROC 0.9126 (linear 0.9053) (0 s)
+[14:09:35] [B mlp seed 1] L12:xl_final:H10 wd 1: epoch 2/7, eval-seen target AUROC 0.9129 (linear 0.9053) (0 s)
+[14:09:36] [B mlp seed 2] L00:emb_temp:H10 wd 0.0001: epoch 1/6, eval-seen target AUROC 0.7434 (linear 0.7386) (0 s)
+[14:09:36] [B mlp seed 2] L00:emb_temp:H10 wd 0.01: epoch 1/6, eval-seen target AUROC 0.7435 (linear 0.7386) (0 s)
+[14:09:37] [B mlp seed 2] L00:emb_temp:H10 wd 0.1: epoch 1/6, eval-seen target AUROC 0.7433 (linear 0.7386) (0 s)
+[14:09:37] [B mlp seed 2] L00:emb_temp:H10 wd 1: epoch 1/6, eval-seen target AUROC 0.7433 (linear 0.7386) (0 s)
+[14:09:37] [B mlp] wd 1; saved /data/tmp/thesis_results_work/original/mlp/B_mlp_h10.pkl
+== 14:09:38 python analysis/thesis_results/detectors.py --only mlps
+[14:09:39] [det] C_mlp: saved (new: 2-layer MLP (stage10_mlp recipe) on the best C probe's inputs)
+[14:09:39] [det] B_mlp_h10: saved (new: 2-layer MLP on the best B probe's layer, trained on its constraint target)
+[14:09:39] [det] step mlps ok (0 s)
+== 14:09:39 python analysis/thesis_results/evaluate.py
+[14:09:40] [eval] A_best (0 s)
+[14:09:40] [eval] A_mean (0 s)
+[14:09:40] [eval] A_combiner (0 s)
+[14:09:40] [eval] A_mlp (0 s)
+[14:09:40] [eval] C_best (0 s)
+[14:09:40] [eval] C_mean (0 s)
+[14:09:40] [eval] C_combiner (0 s)
+[14:09:41] [eval] C_mlp (0 s)
+[14:09:41] [eval] C_lr132 (0 s)
+[14:09:41] [eval] C_mlp132 (0 s)
+[14:09:41] [eval] B_best_h0 (0 s)
+[14:09:41] [eval] B_mean_h0 (0 s)
+[14:09:41] [eval] B_meanemb_h0 (0 s)
+[14:09:41] [eval] B_combiner_h0 (0 s)
+[14:09:41] [eval] B_best_h10 (1 s)
+[14:09:41] [eval] B_mean_h10 (1 s)
+[14:09:41] [eval] B_meanemb_h10 (1 s)
+[14:09:41] [eval] B_combiner_h10 (1 s)
+[14:09:41] [eval] B_best_h25 (1 s)
+[14:09:41] [eval] B_mean_h25 (1 s)
+[14:09:42] [eval] B_meanemb_h25 (1 s)
+[14:09:42] [eval] B_combiner_h25 (1 s)
+[14:09:42] [eval] B_mlp_h10 (1 s)
+[14:09:42] [eval] timestep (1 s)
+[14:09:42] [eval] emb_best (1 s)
+[14:09:42] [eval] emb_pooled (1 s)
+[14:09:42] [eval] token_entropy (1 s)
+[14:09:42] [eval] token_maxprob (1 s)
+[14:09:42] [eval] failurespot (1 s)
+[14:09:42] [eval] failurespot_neg (1 s)
+[14:09:42] [eval] B_combiner_h10_refit (1 s)
+[14:09:42] [eval] C_mean_lofo:no_action (1 s)
+[14:09:42] [eval] C_mean_lofo:no_emb_temp (1 s)
+[14:09:42] [eval] C_mean_lofo:no_cross_layer (1 s)
+[14:09:42] [eval] B_bytarget_h0:mean_act_rep (1 s)
+[14:09:42] [eval] B_bytarget_h0:mean_act_mag (2 s)
+[14:09:42] [eval] B_bytarget_h0:mean_emb_temp (2 s)
+[14:09:42] [eval] B_bytarget_h0:mean_xl_final (2 s)
+[14:09:42] [eval] B_bytarget_h0:combiner_act_rep (2 s)
+[14:09:43] [eval] B_bytarget_h0:combiner_act_mag (2 s)
+[14:09:43] [eval] B_bytarget_h0:combiner_emb_temp (2 s)
+[14:09:43] [eval] B_bytarget_h0:combiner_xl_final (2 s)
+[14:09:43] [eval] B_bytarget_h10:mean_act_rep (3 s)
+[14:09:43] [eval] B_bytarget_h10:mean_act_mag (3 s)
+[14:09:43] [eval] B_bytarget_h10:mean_emb_temp (3 s)
+[14:09:43] [eval] B_bytarget_h10:mean_xl_final (3 s)
+[14:09:44] [eval] B_bytarget_h10:combiner_act_rep (3 s)
+[14:09:44] [eval] B_bytarget_h10:combiner_act_mag (3 s)
+[14:09:44] [eval] B_bytarget_h10:combiner_emb_temp (3 s)
+[14:09:44] [eval] B_bytarget_h10:combiner_xl_final (3 s)
+[14:09:44] [eval] B_bytarget_h25:mean_act_rep (4 s)
+[14:09:44] [eval] B_bytarget_h25:mean_act_mag (4 s)
+[14:09:44] [eval] B_bytarget_h25:mean_emb_temp (4 s)
+[14:09:44] [eval] B_bytarget_h25:mean_xl_final (4 s)
+[14:09:45] [eval] B_bytarget_h25:combiner_act_rep (4 s)
+[14:09:45] [eval] B_bytarget_h25:combiner_act_mag (4 s)
+[14:09:45] [eval] B_bytarget_h25:combiner_emb_temp (4 s)
+[14:09:45] [eval] B_bytarget_h25:combiner_xl_final (5 s)
+[14:09:59] [eval] done: 58 detectors (18 s)
+== 14:09:59 python analysis/thesis_results/checks.py
+244 checks, 0 failed
+== 14:10:01 python analysis/thesis_results/profiles.py
+[14:10:05] [profiles] A: 612 rows (3 s)
+[14:10:08] [profiles] C: 909 rows (6 s)
+[14:11:01] [profiles] B: 5121 rows (59 s)
+[14:11:03] loaded primary series for 1000 rollouts (2 s)
+[14:11:12] [profiles] constraints: 7470 rows (70 s)
+[14:11:12] [profiles] means: 7515 rows (70 s)
+[14:11:12] [profiles] 7515 rows -> /ephemeral/code/thesis-introspection/results/thesis_results/figures/data/per_probe_outcome_auroc.csv; probe checks 603, failed 2; max diff 0.0053
+== 14:11:13 python analysis/thesis_results/b_constraint.py
+[14:11:16] loaded primary series for 1000 rollouts (2 s)
+[14:11:59] [b_constraint] grid rows 3348, baseline rows 3294; grid checks 2232, failed 0, max diff 0.0013
+== 14:11:59 python analysis/thesis_results/paired.py
+39 rows; identity check max |diff| 4.92e-07 (passed)
+== 14:12:01 python analysis/thesis_results/corpus.py
+/ephemeral/code/thesis-introspection/analysis/thesis_results/corpus.py:149: RuntimeWarning: Mean of empty slice
+  per.append(np.where(n >= 5, np.nanmean(x, 0), np.nan))
+[14:12:03] [corpus] done; checks 7/7 passed
+== 14:12:03 python analysis/thesis_results/example.py
+[14:12:04] [example] no unseen task in seed 0 has both an alarmed failure and an unalarmed success
+== 14:12:05 python analysis/thesis_results/tables.py
+T1: 30 rows on the headline test set
+t1 ok
+t3 ok
+t4 ok
+t5 ok
+t6 ok
+== 14:12:07 python analysis/thesis_results/figures.py
+/ephemeral/code/venv/lib/python3.10/site-packages/numpy/lib/nanfunctions.py:1879: RuntimeWarning: Degrees of freedom <= 0 for slice.
+  var = nanvar(a, axis=axis, dtype=dtype, out=out, ddof=ddof,
+F1 ok
+F2 ok
+F3 ok
+F4 ok
+F5 ok
+F6 ok
+F7 ok
+F8 ok
+F9 ok
+F10 ok
+F11 ok

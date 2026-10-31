@@ -1,0 +1,32 @@
+{
+ "status": "done",
+ "reason": "",
+ "updated_utc": "2026-10-13T03:36:08Z",
+ "groups_failed": [],
+ "n_groups": 36,
+ "n_fits": 144,
+ "n_fits_ok": 144,
+ "n_fits_failed": 0,
+ "n_fits_diverged_flagged": 0,
+ "n_fits_retried": 0,
+ "eval_check_passed": true,
+ "eval_check_max_abs_diff": 4.996611664420669e-07,
+ "bootstrap_identity_passed": true,
+ "bootstrap_identity_max_abs_diff": 6.342401245307272e-07,
+ "precision": "fp32",
+ "work_dir": "/data/tmp/abc3_work",
+ "out_dir": "/ephemeral/code/thesis-introspection/results/abc3",
+ "detectors": [
+  "A-linear",
+  "A-mlp-abc2",
+  "A-d2",
+  "A-d6",
+  "A-d12",
+  "C-linear",
+  "C-mlp-abc2",
+  "C-d2",
+  "C-d6",
+  "C-d12"
+ ],
+ "seconds": 15.4
+}

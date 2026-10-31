@@ -1,0 +1,13 @@
+H,test set,source,"mean minus combiner, mean",std,seed 0,seed 1,seed 2
+0,"unseen tasks, original rollouts",results/b_label_free/lf_vs_trained.csv,-0.0313,0.0547,-0.0922,0.0133,-0.0149
+10,"unseen tasks, original rollouts",results/b_label_free/lf_vs_trained.csv,-0.0311,0.0229,-0.0561,-0.026,-0.0111
+25,"unseen tasks, original rollouts",results/b_label_free/lf_vs_trained.csv,-0.0326,0.0301,-0.0673,-0.0145,-0.0161
+0,eval-seen,this run (evaluate.py),-0.0216,0.0657,0.054,-0.064,-0.0549
+0,"unseen tasks, original rollouts",this run (evaluate.py),-0.0313,0.0546,-0.0922,0.0133,-0.0149
+0,unseen tasks incl. LIBERO-PRO,this run (evaluate.py),0.007,0.0251,0.0089,-0.0191,0.0311
+10,eval-seen,this run (evaluate.py),-0.0247,0.0598,0.0413,-0.0754,-0.0401
+10,"unseen tasks, original rollouts",this run (evaluate.py),-0.0311,0.0229,-0.0562,-0.026,-0.0111
+10,unseen tasks incl. LIBERO-PRO,this run (evaluate.py),0.0073,0.0256,0.0042,-0.0166,0.0344
+25,eval-seen,this run (evaluate.py),-0.0337,0.0231,-0.0082,-0.0398,-0.0531
+25,"unseen tasks, original rollouts",this run (evaluate.py),-0.0326,0.0301,-0.0674,-0.0145,-0.016
+25,unseen tasks incl. LIBERO-PRO,this run (evaluate.py),-0.0061,0.006,-0.0095,0.0009,-0.0096

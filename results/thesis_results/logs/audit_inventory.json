@@ -1,0 +1,466 @@
+{
+ "A_34_probes_original_set": {
+  "file": "/data/tmp/abc_scores/a_probes_seed0.npz",
+  "exists": true,
+  "keys": [
+   "c",
+   "p",
+   "probes",
+   "rollout_ids"
+  ],
+  "n_rollouts": 300,
+  "p_shape": [
+   34,
+   300,
+   520
+  ]
+ },
+ "C_33_probes_original_set": {
+  "file": "/data/tmp/abc_scores/c_probes_seed0.npz",
+  "exists": true,
+  "keys": [
+   "c",
+   "p",
+   "probes",
+   "rollout_ids"
+  ],
+  "n_rollouts": 300,
+  "p_shape": [
+   33,
+   300,
+   520
+  ]
+ },
+ "B_grid_probes_original_set": {
+  "0": {
+   "file": "/data/tmp/abc_scores/b_probes_h0_seed0.npz",
+   "exists": true,
+   "keys": [
+    "c",
+    "names",
+    "p",
+    "rollout_ids"
+   ],
+   "n_rollouts": 300,
+   "p_shape": [
+    124,
+    300,
+    520
+   ],
+   "n_names": 124
+  },
+  "10": {
+   "file": "/data/tmp/abc_scores/b_probes_h10_seed0.npz",
+   "exists": true,
+   "keys": [
+    "c",
+    "names",
+    "p",
+    "rollout_ids"
+   ],
+   "n_rollouts": 300,
+   "p_shape": [
+    124,
+    300,
+    520
+   ],
+   "n_names": 124
+  },
+  "25": {
+   "file": "/data/tmp/abc_scores/b_probes_h25_seed0.npz",
+   "exists": true,
+   "keys": [
+    "c",
+    "names",
+    "p",
+    "rollout_ids"
+   ],
+   "n_rollouts": 300,
+   "p_shape": [
+    124,
+    300,
+    520
+   ],
+   "n_names": 124
+  }
+ },
+ "abc2_D0_scores": {
+  "file": "results/abc2/scores/D0_seed0.npz",
+  "exists": true,
+  "keys": [
+   "A_R",
+   "A_band01",
+   "A_cp",
+   "A_h",
+   "A_m1",
+   "A_mu",
+   "A_n_d1",
+   "A_n_d2",
+   "A_p",
+   "A_t_end",
+   "A_xi",
+   "C_R",
+   "C_band01",
+   "C_cp",
+   "C_h",
+   "C_m1",
+   "C_mu",
+   "C_n_d1",
+   "C_n_d2",
+   "C_p",
+   "C_t_end",
+   "C_xi",
+   "alphas",
+   "base_task",
+   "block",
+   "cal_rids",
+   "cell",
+   "cond",
+   "emb_R",
+   "emb_band01",
+   "emb_cp",
+   "emb_h",
+   "emb_m1",
+   "emb_mu",
+   "emb_n_d1",
+   "emb_n_d2",
+   "emb_sign",
+   "emb_t_end",
+   "emb_xi",
+   "eval_seen_rids",
+   "kept_len",
+   "rollout_ids",
+   "seed",
+   "selections",
+   "stress_seen_cut",
+   "stress_unseen_cut",
+   "train_rids",
+   "y"
+  ],
+  "n_rollouts": 1000
+ },
+ "abc2_D0_mlp_scores": {
+  "file": "results/abc2/scores/D0_seed0_mlp.npz",
+  "exists": true,
+  "keys": [
+   "A-MLP_R",
+   "A-MLP_band01",
+   "A-MLP_cp",
+   "A-MLP_h",
+   "A-MLP_m1",
+   "A-MLP_mu",
+   "A-MLP_n_d1",
+   "A-MLP_n_d2",
+   "A-MLP_p",
+   "A-MLP_t_end",
+   "A-MLP_xi",
+   "C-MLP_R",
+   "C-MLP_band01",
+   "C-MLP_cp",
+   "C-MLP_h",
+   "C-MLP_m1",
+   "C-MLP_mu",
+   "C-MLP_n_d1",
+   "C-MLP_n_d2",
+   "C-MLP_p",
+   "C-MLP_t_end",
+   "C-MLP_xi",
+   "alphas",
+   "base_task",
+   "block",
+   "cal_rids",
+   "cell",
+   "cond",
+   "eval_seen_rids",
+   "kept_len",
+   "rollout_ids",
+   "seed",
+   "selections",
+   "stress_seen_cut",
+   "stress_unseen_cut",
+   "train_rids",
+   "y"
+  ],
+  "n_rollouts": 1000
+ },
+ "abc2_D0_B10_scores": {
+  "file": "results/abc2/scores/D0_seed0_b10.npz",
+  "exists": true,
+  "keys": [
+   "B_R",
+   "B_band01",
+   "B_cp",
+   "B_h",
+   "B_m1",
+   "B_mu",
+   "B_n_d1",
+   "B_n_d2",
+   "B_p",
+   "B_t_end",
+   "B_xi",
+   "alphas",
+   "base_task",
+   "block",
+   "cal_rids",
+   "cell",
+   "cond",
+   "eval_seen_rids",
+   "kept_len",
+   "rollout_ids",
+   "seed",
+   "selections",
+   "stress_seen_cut",
+   "stress_unseen_cut",
+   "train_rids",
+   "y"
+  ],
+  "n_rollouts": 1000
+ },
+ "abc3_D0_deep_scores": {
+  "file": "results/abc3/scores/D0_seed0_deep.npz",
+  "exists": true,
+  "keys": [
+   "A-d12_R",
+   "A-d12_band01",
+   "A-d12_cp",
+   "A-d12_h",
+   "A-d12_m1",
+   "A-d12_mu",
+   "A-d12_n_d1",
+   "A-d12_n_d2",
+   "A-d12_p",
+   "A-d12_t_end",
+   "A-d12_xi",
+   "A-d2_R",
+   "A-d2_band01",
+   "A-d2_cp",
+   "A-d2_h",
+   "A-d2_m1",
+   "A-d2_mu",
+   "A-d2_n_d1",
+   "A-d2_n_d2",
+   "A-d2_p",
+   "A-d2_t_end",
+   "A-d2_xi",
+   "A-d6_R",
+   "A-d6_band01",
+   "A-d6_cp",
+   "A-d6_h",
+   "A-d6_m1",
+   "A-d6_mu",
+   "A-d6_n_d1",
+   "A-d6_n_d2",
+   "A-d6_p",
+   "A-d6_t_end",
+   "A-d6_xi",
+   "C-d12_R",
+   "C-d12_band01",
+   "C-d12_cp",
+   "C-d12_h",
+   "C-d12_m1",
+   "C-d12_mu",
+   "C-d12_n_d1",
+   "C-d12_n_d2",
+   "C-d12_p",
+   "C-d12_t_end",
+   "C-d12_xi",
+   "C-d2_R",
+   "C-d2_band01",
+   "C-d2_cp",
+   "C-d2_h",
+   "C-d2_m1",
+   "C-d2_mu",
+   "C-d2_n_d1",
+   "C-d2_n_d2",
+   "C-d2_p",
+   "C-d2_t_end",
+   "C-d2_xi",
+   "C-d6_R",
+   "C-d6_band01",
+   "C-d6_cp",
+   "C-d6_h",
+   "C-d6_m1"
+  ],
+  "n_rollouts": 1000
+ },
+ "abc_B_final_scores": {
+  "0": {
+   "file": "results/abc/scores/b_h0_seed0.npz",
+   "exists": true,
+   "keys": [
+    "H",
+    "c",
+    "p",
+    "p_only_act_mag",
+    "p_only_act_rep",
+    "p_only_emb_temp",
+    "p_only_xl_final",
+    "rollout_ids",
+    "s"
+   ],
+   "n_rollouts": 300,
+   "p_shape": [
+    300,
+    520
+   ]
+  },
+  "10": {
+   "file": "results/abc/scores/b_h10_seed0.npz",
+   "exists": true,
+   "keys": [
+    "H",
+    "c",
+    "p",
+    "p_only_act_mag",
+    "p_only_act_rep",
+    "p_only_emb_temp",
+    "p_only_xl_final",
+    "rollout_ids",
+    "s"
+   ],
+   "n_rollouts": 300,
+   "p_shape": [
+    300,
+    520
+   ]
+  },
+  "25": {
+   "file": "results/abc/scores/b_h25_seed0.npz",
+   "exists": true,
+   "keys": [
+    "H",
+    "c",
+    "p",
+    "p_only_act_mag",
+    "p_only_act_rep",
+    "p_only_emb_temp",
+    "p_only_xl_final",
+    "rollout_ids",
+    "s"
+   ],
+   "n_rollouts": 300,
+   "p_shape": [
+    300,
+    520
+   ]
+  }
+ },
+ "abc_C_final_scores": {
+  "file": "results/abc/scores/c_seed0.npz",
+  "exists": true,
+  "keys": [
+   "c",
+   "p_full",
+   "p_no_action",
+   "p_no_cross_layer",
+   "p_no_emb_temp",
+   "rollout_ids",
+   "s_full",
+   "s_no_action",
+   "s_no_cross_layer",
+   "s_no_emb_temp"
+  ],
+  "n_rollouts": 300
+ },
+ "abc_A_final_scores": {
+  "file": "results/abc/scores/a_seed0.npz",
+  "exists": true,
+  "keys": [
+   "c",
+   "p",
+   "probe",
+   "rollout_ids",
+   "s"
+  ],
+  "n_rollouts": 300,
+  "p_shape": [
+   300,
+   520
+  ]
+ },
+ "label_free_scores": {
+  "0": {
+   "file": "results/b_label_free/scores/lf_all_h0_seed0.npz",
+   "exists": true,
+   "keys": [
+    "H",
+    "names",
+    "p",
+    "rollout_ids",
+    "s"
+   ],
+   "n_rollouts": 300,
+   "p_shape": [
+    300,
+    520
+   ],
+   "n_names": 124
+  },
+  "10": {
+   "file": "results/b_label_free/scores/lf_all_h10_seed0.npz",
+   "exists": true,
+   "keys": [
+    "H",
+    "names",
+    "p",
+    "rollout_ids",
+    "s"
+   ],
+   "n_rollouts": 300,
+   "p_shape": [
+    300,
+    520
+   ],
+   "n_names": 124
+  },
+  "25": {
+   "file": "results/b_label_free/scores/lf_all_h25_seed0.npz",
+   "exists": true,
+   "keys": [
+    "H",
+    "names",
+    "p",
+    "rollout_ids",
+    "s"
+   ],
+   "n_rollouts": 300,
+   "p_shape": [
+    300,
+    520
+   ],
+   "n_names": 124
+  }
+ },
+ "abc2_work_A_grid_files": [
+  "action_tokens.pkl",
+  "layer00.pkl",
+  "layer01.pkl"
+ ],
+ "abc2_work_A_grid_content": [
+  "cond",
+  "metrics",
+  "probe",
+  "seed"
+ ],
+ "abc2_work_C_grid_content": [
+  "betas",
+  "coef",
+  "cond",
+  "inputs",
+  "metrics",
+  "p_final",
+  "seed",
+  "signs",
+  "unconverged"
+ ],
+ "abc2_B_work_dir_files": 0,
+ "index_blocks": {
+  "lan": 200,
+  "obj": 200,
+  "ori": 300,
+  "ori2": 200,
+  "swap": 50,
+  "task": 50
+ },
+ "seconds": 0.9740798473358154
+}

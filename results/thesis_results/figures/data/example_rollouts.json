@@ -1,0 +1,87 @@
+{
+ "seed": 1,
+ "seed note": "FALLBACK: seed 0 has no unseen failure that B's mean alarms on before the cut at alpha 0.1; seed 1 used",
+ "task": 3,
+ "rule": "(fixed before looking at frames): among unseen tasks with at\nleast one such failure and one such success, prefer the task whose alarmed failures\nshow the clearest stall, measured as the longest run of repeated actions (act_rep)\nbefore the alarm; take that failure, and the success of the same task with the\nlatest first-success step (so its trace runs as long as possible before the cut).",
+ "candidates (longest repeat run before alarm, task, failure, success)": [
+  [
+   54,
+   3,
+   "task03_trial01",
+   "task03_trial29"
+  ],
+  [
+   21,
+   4,
+   "task04_trial03",
+   "task04_trial14"
+  ],
+  [
+   18,
+   7,
+   "task07_trial16",
+   "task07_trial14"
+  ]
+ ],
+ "rollouts": {
+  "failure": {
+   "rollout": "task03_trial01",
+   "task": 3,
+   "outcome": "failure",
+   "kept length": 520,
+   "cut": 241,
+   "B mean alarm step": 234,
+   "A mean alarm step": null,
+   "C mean alarm step": null,
+   "longest action-repeat run before the alarm": 54,
+   "frames": {
+    "start": {
+     "t": 1,
+     "file": "figures/example_frames/failure_task03_trial01_start_t001.jpg"
+    },
+    "mid": {
+     "t": 120,
+     "file": "figures/example_frames/failure_task03_trial01_mid_t120.jpg"
+    },
+    "alarm": {
+     "t": 234,
+     "file": "figures/example_frames/failure_task03_trial01_alarm_t234.jpg"
+    },
+    "cut": {
+     "t": 240,
+     "file": "figures/example_frames/failure_task03_trial01_cut_t240.jpg"
+    }
+   }
+  },
+  "success": {
+   "rollout": "task03_trial29",
+   "task": 3,
+   "outcome": "success",
+   "kept length": 401,
+   "cut": 241,
+   "B mean alarm step": null,
+   "A mean alarm step": null,
+   "C mean alarm step": null,
+   "longest action-repeat run before the alarm": null,
+   "frames": {
+    "start": {
+     "t": 1,
+     "file": "figures/example_frames/success_task03_trial29_start_t001.jpg"
+    },
+    "mid": {
+     "t": 120,
+     "file": "figures/example_frames/success_task03_trial29_mid_t120.jpg"
+    },
+    "mid-way to cut": {
+     "t": 180,
+     "file": "figures/example_frames/success_task03_trial29_mid-way_to_cut_t180.jpg"
+    },
+    "cut": {
+     "t": 240,
+     "file": "figures/example_frames/success_task03_trial29_cut_t240.jpg"
+    }
+   }
+  }
+ },
+ "why": "task 3: the alarmed failure with the longest run of repeated actions before B's alarm (54 steps), i.e. the clearest stall; the success of the same task with the latest first-success step that B does not alarm on"
+}

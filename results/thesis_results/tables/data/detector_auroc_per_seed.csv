@@ -1,0 +1,523 @@
+detector,variant,H,key,seed,detail,test_set,m1_pooled,m1_per_task,floor,n_cells,n,n_fail
+A,single best probe (of 34),,A_best,0,layer01 c=1e-05,eval-seen,0.839067,0.868089,0.54898,7,84,49
+A,single best probe (of 34),,A_best,0,layer01 c=1e-05,"unseen tasks, original rollouts",0.712302,0.752014,0.633929,3,90,42
+A,single best probe (of 34),,A_best,0,layer01 c=1e-05,unseen tasks incl. LIBERO-PRO,0.791136,0.783061,0.730295,8,270,155
+A,single best probe (of 34),,A_best,1,layer10 c=1e-05,eval-seen,0.806012,0.864867,0.642938,7,84,41
+A,single best probe (of 34),,A_best,1,layer10 c=1e-05,"unseen tasks, original rollouts",0.739631,0.690116,0.551843,3,90,62
+A,single best probe (of 34),,A_best,1,layer10 c=1e-05,unseen tasks incl. LIBERO-PRO,0.773806,0.729751,0.547029,7,270,188
+A,single best probe (of 34),,A_best,2,layer02 c=1e-05,eval-seen,0.789067,0.830626,0.639037,7,84,51
+A,single best probe (of 34),,A_best,2,layer02 c=1e-05,"unseen tasks, original rollouts",0.72922,0.706791,0.454105,3,90,37
+A,single best probe (of 34),,A_best,2,layer02 c=1e-05,unseen tasks incl. LIBERO-PRO,0.741733,0.714271,0.573302,9,270,126
+A,unweighted mean of 34 probe outputs (primary),,A_mean,0,34 probes,eval-seen,0.834402,0.791468,0.54898,7,84,49
+A,unweighted mean of 34 probe outputs (primary),,A_mean,0,34 probes,"unseen tasks, original rollouts",0.730655,0.788042,0.633929,3,90,42
+A,unweighted mean of 34 probe outputs (primary),,A_mean,0,34 probes,unseen tasks incl. LIBERO-PRO,0.803366,0.778767,0.730295,8,270,155
+A,unweighted mean of 34 probe outputs (primary),,A_mean,1,34 probes,eval-seen,0.809416,0.869936,0.642938,7,84,41
+A,unweighted mean of 34 probe outputs (primary),,A_mean,1,34 probes,"unseen tasks, original rollouts",0.763249,0.721152,0.551843,3,90,62
+A,unweighted mean of 34 probe outputs (primary),,A_mean,1,34 probes,unseen tasks incl. LIBERO-PRO,0.786196,0.757713,0.547029,7,270,188
+A,unweighted mean of 34 probe outputs (primary),,A_mean,2,34 probes,eval-seen,0.78669,0.792068,0.639037,7,84,51
+A,unweighted mean of 34 probe outputs (primary),,A_mean,2,34 probes,"unseen tasks, original rollouts",0.710862,0.726801,0.454105,3,90,37
+A,unweighted mean of 34 probe outputs (primary),,A_mean,2,34 probes,unseen tasks incl. LIBERO-PRO,0.751213,0.725879,0.573302,9,270,126
+A,trained combiner over 34 probe outputs (out-of-fold),,A_combiner,0,c=0.001,eval-seen,0.844315,0.863426,0.54898,7,84,49
+A,trained combiner over 34 probe outputs (out-of-fold),,A_combiner,0,c=0.001,"unseen tasks, original rollouts",0.739087,0.780046,0.633929,3,90,42
+A,trained combiner over 34 probe outputs (out-of-fold),,A_combiner,0,c=0.001,unseen tasks incl. LIBERO-PRO,0.809874,0.7664,0.730295,8,270,155
+A,trained combiner over 34 probe outputs (out-of-fold),,A_combiner,1,c=0.001,eval-seen,0.79013,0.866402,0.642938,7,84,41
+A,trained combiner over 34 probe outputs (out-of-fold),,A_combiner,1,c=0.001,"unseen tasks, original rollouts",0.764401,0.776779,0.551843,3,90,62
+A,trained combiner over 34 probe outputs (out-of-fold),,A_combiner,1,c=0.001,unseen tasks incl. LIBERO-PRO,0.769395,0.761802,0.547029,7,270,188
+A,trained combiner over 34 probe outputs (out-of-fold),,A_combiner,2,c=0.001,eval-seen,0.800951,0.804582,0.639037,7,84,51
+A,trained combiner over 34 probe outputs (out-of-fold),,A_combiner,2,c=0.001,"unseen tasks, original rollouts",0.754717,0.750195,0.454105,3,90,37
+A,trained combiner over 34 probe outputs (out-of-fold),,A_combiner,2,c=0.001,unseen tasks incl. LIBERO-PRO,0.729828,0.716583,0.573302,9,270,126
+A,2-layer MLP on the best probe's hidden state,,A_mlp,0,layer01 wd=1,eval-seen,0.86414,0.866204,0.54898,7,84,49
+A,2-layer MLP on the best probe's hidden state,,A_mlp,0,layer01 wd=1,"unseen tasks, original rollouts",0.678075,0.648121,0.633929,3,90,42
+A,2-layer MLP on the best probe's hidden state,,A_mlp,0,layer01 wd=1,unseen tasks incl. LIBERO-PRO,0.759215,0.716462,0.730295,8,270,155
+A,2-layer MLP on the best probe's hidden state,,A_mlp,1,layer10 wd=1,eval-seen,0.805445,0.797397,0.642938,7,84,41
+A,2-layer MLP on the best probe's hidden state,,A_mlp,1,layer10 wd=1,"unseen tasks, original rollouts",0.736175,0.691325,0.551843,3,90,62
+A,2-layer MLP on the best probe's hidden state,,A_mlp,1,layer10 wd=1,unseen tasks incl. LIBERO-PRO,0.733394,0.682052,0.547029,7,270,188
+A,2-layer MLP on the best probe's hidden state,,A_mlp,2,layer02 wd=1,eval-seen,0.788473,0.795933,0.639037,7,84,51
+A,2-layer MLP on the best probe's hidden state,,A_mlp,2,layer02 wd=1,"unseen tasks, original rollouts",0.73126,0.717158,0.454105,3,90,37
+A,2-layer MLP on the best probe's hidden state,,A_mlp,2,layer02 wd=1,unseen tasks incl. LIBERO-PRO,0.68039,0.607384,0.573302,9,270,126
+C,single best probe (of 33),,C_best,0,layer00 c=1,eval-seen,0.665306,0.77672,0.54898,7,84,49
+C,single best probe (of 33),,C_best,0,layer00 c=1,"unseen tasks, original rollouts",0.710317,0.709079,0.633929,3,90,42
+C,single best probe (of 33),,C_best,0,layer00 c=1,unseen tasks incl. LIBERO-PRO,0.809144,0.768061,0.730295,8,270,155
+C,single best probe (of 33),,C_best,1,action c=1,eval-seen,0.750993,0.78271,0.642938,7,84,41
+C,single best probe (of 33),,C_best,1,action c=1,"unseen tasks, original rollouts",0.700461,0.735461,0.551843,3,90,62
+C,single best probe (of 33),,C_best,1,action c=1,unseen tasks incl. LIBERO-PRO,0.693695,0.760604,0.547029,7,270,188
+C,single best probe (of 33),,C_best,2,layer03 c=1,eval-seen,0.740345,0.766638,0.639037,7,84,51
+C,single best probe (of 33),,C_best,2,layer03 c=1,"unseen tasks, original rollouts",0.507394,0.617805,0.454105,3,90,37
+C,single best probe (of 33),,C_best,2,layer03 c=1,unseen tasks incl. LIBERO-PRO,0.639991,0.678589,0.573302,9,270,126
+C,unweighted mean of 33 probe outputs (primary),,C_mean,0,33 probes,eval-seen,0.706122,0.747784,0.54898,7,84,49
+C,unweighted mean of 33 probe outputs (primary),,C_mean,0,33 probes,"unseen tasks, original rollouts",0.678571,0.645773,0.633929,3,90,42
+C,unweighted mean of 33 probe outputs (primary),,C_mean,0,33 probes,unseen tasks incl. LIBERO-PRO,0.799663,0.790344,0.730295,8,270,155
+C,unweighted mean of 33 probe outputs (primary),,C_mean,1,33 probes,eval-seen,0.730573,0.713672,0.642938,7,84,41
+C,unweighted mean of 33 probe outputs (primary),,C_mean,1,33 probes,"unseen tasks, original rollouts",0.770737,0.760391,0.551843,3,90,62
+C,unweighted mean of 33 probe outputs (primary),,C_mean,1,33 probes,unseen tasks incl. LIBERO-PRO,0.717761,0.746167,0.547029,7,270,188
+C,unweighted mean of 33 probe outputs (primary),,C_mean,2,33 probes,eval-seen,0.695187,0.696339,0.639037,7,84,51
+C,unweighted mean of 33 probe outputs (primary),,C_mean,2,33 probes,"unseen tasks, original rollouts",0.591025,0.646773,0.454105,3,90,37
+C,unweighted mean of 33 probe outputs (primary),,C_mean,2,33 probes,unseen tasks incl. LIBERO-PRO,0.702271,0.744094,0.573302,9,270,126
+C,trained combiner over 33 probe outputs (out-of-fold),,C_combiner,0,c=0.0001,eval-seen,0.763265,0.732672,0.54898,7,84,49
+C,trained combiner over 33 probe outputs (out-of-fold),,C_combiner,0,c=0.0001,"unseen tasks, original rollouts",0.721726,0.707819,0.633929,3,90,42
+C,trained combiner over 33 probe outputs (out-of-fold),,C_combiner,0,c=0.0001,unseen tasks incl. LIBERO-PRO,0.821711,0.812156,0.730295,8,270,155
+C,trained combiner over 33 probe outputs (out-of-fold),,C_combiner,1,c=0.0001,eval-seen,0.761202,0.803071,0.642938,7,84,41
+C,trained combiner over 33 probe outputs (out-of-fold),,C_combiner,1,c=0.0001,"unseen tasks, original rollouts",0.777074,0.736582,0.551843,3,90,62
+C,trained combiner over 33 probe outputs (out-of-fold),,C_combiner,1,c=0.0001,unseen tasks incl. LIBERO-PRO,0.756033,0.764321,0.547029,7,270,188
+C,trained combiner over 33 probe outputs (out-of-fold),,C_combiner,2,c=0.0001,eval-seen,0.751634,0.762552,0.639037,7,84,51
+C,trained combiner over 33 probe outputs (out-of-fold),,C_combiner,2,c=0.0001,"unseen tasks, original rollouts",0.659357,0.659828,0.454105,3,90,37
+C,trained combiner over 33 probe outputs (out-of-fold),,C_combiner,2,c=0.0001,unseen tasks incl. LIBERO-PRO,0.746748,0.751299,0.573302,9,270,126
+C,2-layer MLP on the best probe's inputs,,C_mlp,0,layer00 inputs wd=0.01 epoch=1,eval-seen,0.67172,0.766402,0.54898,7,84,49
+C,2-layer MLP on the best probe's inputs,,C_mlp,0,layer00 inputs wd=0.01 epoch=1,"unseen tasks, original rollouts",0.707837,0.7008,0.633929,3,90,42
+C,2-layer MLP on the best probe's inputs,,C_mlp,0,layer00 inputs wd=0.01 epoch=1,unseen tasks incl. LIBERO-PRO,0.804769,0.755747,0.730295,8,270,155
+C,2-layer MLP on the best probe's inputs,,C_mlp,1,action inputs wd=0.01 epoch=10,eval-seen,0.791832,0.839338,0.642938,7,84,41
+C,2-layer MLP on the best probe's inputs,,C_mlp,1,action inputs wd=0.01 epoch=10,"unseen tasks, original rollouts",0.757488,0.783037,0.551843,3,90,62
+C,2-layer MLP on the best probe's inputs,,C_mlp,1,action inputs wd=0.01 epoch=10,unseen tasks incl. LIBERO-PRO,0.72775,0.760656,0.547029,7,270,188
+C,2-layer MLP on the best probe's inputs,,C_mlp,2,layer03 inputs wd=0.01 epoch=1,eval-seen,0.753417,0.739371,0.639037,7,84,51
+C,2-layer MLP on the best probe's inputs,,C_mlp,2,layer03 inputs wd=0.01 epoch=1,"unseen tasks, original rollouts",0.561448,0.638058,0.454105,3,90,37
+C,2-layer MLP on the best probe's inputs,,C_mlp,2,layer03 inputs wd=0.01 epoch=1,unseen tasks incl. LIBERO-PRO,0.682815,0.717641,0.573302,9,270,126
+C (exploratory),logistic regression on all 132 constraints,,C_lr132,0,c=1e-05,eval-seen,0.741691,0.766071,0.54898,7,84,49
+C (exploratory),logistic regression on all 132 constraints,,C_lr132,0,c=1e-05,"unseen tasks, original rollouts",0.700397,0.690105,0.633929,3,90,42
+C (exploratory),logistic regression on all 132 constraints,,C_lr132,0,c=1e-05,unseen tasks incl. LIBERO-PRO,0.812286,0.825062,0.730295,8,270,155
+C (exploratory),logistic regression on all 132 constraints,,C_lr132,1,c=1e-05,eval-seen,0.75553,0.787954,0.642938,7,84,41
+C (exploratory),logistic regression on all 132 constraints,,C_lr132,1,c=1e-05,"unseen tasks, original rollouts",0.775346,0.773311,0.551843,3,90,62
+C (exploratory),logistic regression on all 132 constraints,,C_lr132,1,c=1e-05,unseen tasks incl. LIBERO-PRO,0.736313,0.767452,0.547029,7,270,188
+C (exploratory),logistic regression on all 132 constraints,,C_lr132,2,c=1e-05,eval-seen,0.730244,0.809245,0.639037,7,84,51
+C (exploratory),logistic regression on all 132 constraints,,C_lr132,2,c=1e-05,"unseen tasks, original rollouts",0.63641,0.687356,0.454105,3,90,37
+C (exploratory),logistic regression on all 132 constraints,,C_lr132,2,c=1e-05,unseen tasks incl. LIBERO-PRO,0.739804,0.779698,0.573302,9,270,126
+C (exploratory),2-layer MLP on all 132 constraints,,C_mlp132,0,wd=0.0001,eval-seen,0.81691,0.789021,0.54898,7,84,49
+C (exploratory),2-layer MLP on all 132 constraints,,C_mlp132,0,wd=0.0001,"unseen tasks, original rollouts",0.756944,0.701615,0.633929,3,90,42
+C (exploratory),2-layer MLP on all 132 constraints,,C_mlp132,0,wd=0.0001,unseen tasks incl. LIBERO-PRO,0.821823,0.752418,0.730295,8,270,155
+C (exploratory),2-layer MLP on all 132 constraints,,C_mlp132,1,wd=0.0001,eval-seen,0.775383,0.791095,0.642938,7,84,41
+C (exploratory),2-layer MLP on all 132 constraints,,C_mlp132,1,wd=0.0001,"unseen tasks, original rollouts",0.785714,0.757195,0.551843,3,90,62
+C (exploratory),2-layer MLP on all 132 constraints,,C_mlp132,1,wd=0.0001,unseen tasks incl. LIBERO-PRO,0.776271,0.766977,0.547029,7,270,188
+C (exploratory),2-layer MLP on all 132 constraints,,C_mlp132,2,wd=0.0001,eval-seen,0.771242,0.796495,0.639037,7,84,51
+C (exploratory),2-layer MLP on all 132 constraints,,C_mlp132,2,wd=0.0001,"unseen tasks, original rollouts",0.700153,0.693668,0.454105,3,90,37
+C (exploratory),2-layer MLP on all 132 constraints,,C_mlp132,2,wd=0.0001,unseen tasks incl. LIBERO-PRO,0.768298,0.763363,0.573302,9,270,126
+B,"single best probe (of 124), chosen on eval-seen per-task AUROC against outcome",0,B_best_h0,0,L20:emb_temp:H0,eval-seen,0.748105,0.800562,0.54898,7,84,49
+B,"single best probe (of 124), chosen on eval-seen per-task AUROC against outcome",0,B_best_h0,0,L20:emb_temp:H0,"unseen tasks, original rollouts",0.691964,0.648541,0.633929,3,90,42
+B,"single best probe (of 124), chosen on eval-seen per-task AUROC against outcome",0,B_best_h0,0,L20:emb_temp:H0,unseen tasks incl. LIBERO-PRO,0.790126,0.742483,0.730295,8,270,155
+B,"single best probe (of 124), chosen on eval-seen per-task AUROC against outcome",0,B_best_h0,1,L12:xl_final:H0,eval-seen,0.742484,0.805064,0.642938,7,84,41
+B,"single best probe (of 124), chosen on eval-seen per-task AUROC against outcome",0,B_best_h0,1,L12:xl_final:H0,"unseen tasks, original rollouts",0.700461,0.625071,0.551843,3,90,62
+B,"single best probe (of 124), chosen on eval-seen per-task AUROC against outcome",0,B_best_h0,1,L12:xl_final:H0,unseen tasks incl. LIBERO-PRO,0.652634,0.590196,0.547029,7,270,188
+B,"single best probe (of 124), chosen on eval-seen per-task AUROC against outcome",0,B_best_h0,2,L00:emb_temp:H0,eval-seen,0.794415,0.809278,0.639037,7,84,51
+B,"single best probe (of 124), chosen on eval-seen per-task AUROC against outcome",0,B_best_h0,2,L00:emb_temp:H0,"unseen tasks, original rollouts",0.616012,0.727732,0.454105,3,90,37
+B,"single best probe (of 124), chosen on eval-seen per-task AUROC against outcome",0,B_best_h0,2,L00:emb_temp:H0,unseen tasks incl. LIBERO-PRO,0.711806,0.745334,0.573302,9,270,126
+B,unweighted mean of 124 probe outputs (primary),0,B_mean_h0,0,124 probes,eval-seen,0.739942,0.79881,0.54898,7,84,49
+B,unweighted mean of 124 probe outputs (primary),0,B_mean_h0,0,124 probes,"unseen tasks, original rollouts",0.68006,0.620269,0.633929,3,90,42
+B,unweighted mean of 124 probe outputs (primary),0,B_mean_h0,0,124 probes,unseen tasks incl. LIBERO-PRO,0.802637,0.763762,0.730295,8,270,155
+B,unweighted mean of 124 probe outputs (primary),0,B_mean_h0,1,124 probes,eval-seen,0.741917,0.675671,0.642938,7,84,41
+B,unweighted mean of 124 probe outputs (primary),0,B_mean_h0,1,124 probes,"unseen tasks, original rollouts",0.758641,0.721744,0.551843,3,90,62
+B,unweighted mean of 124 probe outputs (primary),0,B_mean_h0,1,124 probes,unseen tasks incl. LIBERO-PRO,0.775623,0.738922,0.547029,7,270,188
+B,unweighted mean of 124 probe outputs (primary),0,B_mean_h0,2,124 probes,eval-seen,0.727867,0.754965,0.639037,7,84,51
+B,unweighted mean of 124 probe outputs (primary),0,B_mean_h0,2,124 probes,"unseen tasks, original rollouts",0.651708,0.643889,0.454105,3,90,37
+B,unweighted mean of 124 probe outputs (primary),0,B_mean_h0,2,124 probes,unseen tasks incl. LIBERO-PRO,0.709381,0.718413,0.573302,9,270,126
+B,unweighted mean of the 30 embedding-temporal probe outputs,0,B_meanemb_h0,0,30 embedding-temporal probes,eval-seen,0.75277,0.794907,0.54898,7,84,49
+B,unweighted mean of the 30 embedding-temporal probe outputs,0,B_meanemb_h0,0,30 embedding-temporal probes,"unseen tasks, original rollouts",0.707341,0.690105,0.633929,3,90,42
+B,unweighted mean of the 30 embedding-temporal probe outputs,0,B_meanemb_h0,0,30 embedding-temporal probes,unseen tasks incl. LIBERO-PRO,0.807237,0.761159,0.730295,8,270,155
+B,unweighted mean of the 30 embedding-temporal probe outputs,0,B_meanemb_h0,1,30 embedding-temporal probes,eval-seen,0.767442,0.780093,0.642938,7,84,41
+B,unweighted mean of the 30 embedding-temporal probe outputs,0,B_meanemb_h0,1,30 embedding-temporal probes,"unseen tasks, original rollouts",0.754032,0.725904,0.551843,3,90,62
+B,unweighted mean of the 30 embedding-temporal probe outputs,0,B_meanemb_h0,1,30 embedding-temporal probes,unseen tasks incl. LIBERO-PRO,0.743902,0.744283,0.547029,7,270,188
+B,unweighted mean of the 30 embedding-temporal probe outputs,0,B_meanemb_h0,2,30 embedding-temporal probes,eval-seen,0.758764,0.729327,0.639037,7,84,51
+B,unweighted mean of the 30 embedding-temporal probe outputs,0,B_meanemb_h0,2,30 embedding-temporal probes,"unseen tasks, original rollouts",0.646609,0.640494,0.454105,3,90,37
+B,unweighted mean of the 30 embedding-temporal probe outputs,0,B_meanemb_h0,2,30 embedding-temporal probes,unseen tasks incl. LIBERO-PRO,0.72112,0.749461,0.573302,9,270,126
+B,trained combiner over 124 probe outputs (out-of-fold),0,B_combiner_h0,0,grid c=1e-4 final c=0.01,eval-seen,0.821574,0.744775,0.54898,7,84,49
+B,trained combiner over 124 probe outputs (out-of-fold),0,B_combiner_h0,0,grid c=1e-4 final c=0.01,"unseen tasks, original rollouts",0.759425,0.712481,0.633929,3,90,42
+B,trained combiner over 124 probe outputs (out-of-fold),0,B_combiner_h0,0,grid c=1e-4 final c=0.01,unseen tasks incl. LIBERO-PRO,0.814586,0.754856,0.730295,8,270,155
+B,trained combiner over 124 probe outputs (out-of-fold),0,B_combiner_h0,1,grid c=1e-4 final c=0.01,eval-seen,0.793534,0.739668,0.642938,7,84,41
+B,trained combiner over 124 probe outputs (out-of-fold),0,B_combiner_h0,1,grid c=1e-4 final c=0.01,"unseen tasks, original rollouts",0.766705,0.708434,0.551843,3,90,62
+B,trained combiner over 124 probe outputs (out-of-fold),0,B_combiner_h0,1,grid c=1e-4 final c=0.01,unseen tasks incl. LIBERO-PRO,0.792618,0.757985,0.547029,7,270,188
+B,trained combiner over 124 probe outputs (out-of-fold),0,B_combiner_h0,2,grid c=1e-4 final c=0.01,eval-seen,0.787285,0.809911,0.639037,7,84,51
+B,trained combiner over 124 probe outputs (out-of-fold),0,B_combiner_h0,2,grid c=1e-4 final c=0.01,"unseen tasks, original rollouts",0.656808,0.658795,0.454105,3,90,37
+B,trained combiner over 124 probe outputs (out-of-fold),0,B_combiner_h0,2,grid c=1e-4 final c=0.01,unseen tasks incl. LIBERO-PRO,0.710317,0.687306,0.573302,9,270,126
+B,"single best probe (of 124), chosen on eval-seen per-task AUROC against outcome",10,B_best_h10,0,L20:emb_temp:H10,eval-seen,0.766764,0.862798,0.54898,7,84,49
+B,"single best probe (of 124), chosen on eval-seen per-task AUROC against outcome",10,B_best_h10,0,L20:emb_temp:H10,"unseen tasks, original rollouts",0.683532,0.626131,0.633929,3,90,42
+B,"single best probe (of 124), chosen on eval-seen per-task AUROC against outcome",10,B_best_h10,0,L20:emb_temp:H10,unseen tasks incl. LIBERO-PRO,0.808079,0.773299,0.730295,8,270,155
+B,"single best probe (of 124), chosen on eval-seen per-task AUROC against outcome",10,B_best_h10,1,L12:xl_final:H10,eval-seen,0.744186,0.814635,0.642938,7,84,41
+B,"single best probe (of 124), chosen on eval-seen per-task AUROC against outcome",10,B_best_h10,1,L12:xl_final:H10,"unseen tasks, original rollouts",0.701037,0.610848,0.551843,3,90,62
+B,"single best probe (of 124), chosen on eval-seen per-task AUROC against outcome",10,B_best_h10,1,L12:xl_final:H10,unseen tasks incl. LIBERO-PRO,0.682278,0.585997,0.547029,7,270,188
+B,"single best probe (of 124), chosen on eval-seen per-task AUROC against outcome",10,B_best_h10,2,L00:emb_temp:H10,eval-seen,0.770648,0.815712,0.639037,7,84,51
+B,"single best probe (of 124), chosen on eval-seen per-task AUROC against outcome",10,B_best_h10,2,L00:emb_temp:H10,"unseen tasks, original rollouts",0.630291,0.738335,0.454105,3,90,37
+B,"single best probe (of 124), chosen on eval-seen per-task AUROC against outcome",10,B_best_h10,2,L00:emb_temp:H10,unseen tasks incl. LIBERO-PRO,0.724372,0.740181,0.573302,9,270,126
+B,unweighted mean of 124 probe outputs (primary),10,B_mean_h10,0,124 probes,eval-seen,0.745773,0.805919,0.54898,7,84,49
+B,unweighted mean of 124 probe outputs (primary),10,B_mean_h10,0,124 probes,"unseen tasks, original rollouts",0.677579,0.621358,0.633929,3,90,42
+B,unweighted mean of 124 probe outputs (primary),10,B_mean_h10,0,124 probes,unseen tasks incl. LIBERO-PRO,0.800842,0.767995,0.730295,8,270,155
+B,unweighted mean of 124 probe outputs (primary),10,B_mean_h10,1,124 probes,eval-seen,0.746455,0.702282,0.642938,7,84,41
+B,unweighted mean of 124 probe outputs (primary),10,B_mean_h10,1,124 probes,"unseen tasks, original rollouts",0.771313,0.736431,0.551843,3,90,62
+B,unweighted mean of 124 probe outputs (primary),10,B_mean_h10,1,124 probes,unseen tasks incl. LIBERO-PRO,0.774455,0.741607,0.547029,7,270,188
+B,unweighted mean of 124 probe outputs (primary),10,B_mean_h10,2,124 probes,eval-seen,0.727273,0.762571,0.639037,7,84,51
+B,unweighted mean of 124 probe outputs (primary),10,B_mean_h10,2,124 probes,"unseen tasks, original rollouts",0.665987,0.674881,0.454105,3,90,37
+B,unweighted mean of 124 probe outputs (primary),10,B_mean_h10,2,124 probes,unseen tasks incl. LIBERO-PRO,0.725143,0.764166,0.573302,9,270,126
+B,unweighted mean of the 30 embedding-temporal probe outputs,10,B_meanemb_h10,0,30 embedding-temporal probes,eval-seen,0.752187,0.851885,0.54898,7,84,49
+B,unweighted mean of the 30 embedding-temporal probe outputs,10,B_meanemb_h10,0,30 embedding-temporal probes,"unseen tasks, original rollouts",0.706349,0.709156,0.633929,3,90,42
+B,unweighted mean of the 30 embedding-temporal probe outputs,10,B_meanemb_h10,0,30 embedding-temporal probes,unseen tasks incl. LIBERO-PRO,0.798654,0.766049,0.730295,8,270,155
+B,unweighted mean of the 30 embedding-temporal probe outputs,10,B_meanemb_h10,1,30 embedding-temporal probes,eval-seen,0.75156,0.756737,0.642938,7,84,41
+B,unweighted mean of the 30 embedding-temporal probe outputs,10,B_meanemb_h10,1,30 embedding-temporal probes,"unseen tasks, original rollouts",0.776498,0.746813,0.551843,3,90,62
+B,unweighted mean of the 30 embedding-temporal probe outputs,10,B_meanemb_h10,1,30 embedding-temporal probes,unseen tasks incl. LIBERO-PRO,0.74507,0.757377,0.547029,7,270,188
+B,unweighted mean of the 30 embedding-temporal probe outputs,10,B_meanemb_h10,2,30 embedding-temporal probes,eval-seen,0.757576,0.795819,0.639037,7,84,51
+B,unweighted mean of the 30 embedding-temporal probe outputs,10,B_meanemb_h10,2,30 embedding-temporal probes,"unseen tasks, original rollouts",0.685365,0.737815,0.454105,3,90,37
+B,unweighted mean of the 30 embedding-temporal probe outputs,10,B_meanemb_h10,2,30 embedding-temporal probes,unseen tasks incl. LIBERO-PRO,0.750606,0.770669,0.573302,9,270,126
+B,trained combiner over 124 probe outputs (out-of-fold),10,B_combiner_h10,0,grid c=0.0001 final c=0.001,eval-seen,0.812245,0.764616,0.54898,7,84,49
+B,trained combiner over 124 probe outputs (out-of-fold),10,B_combiner_h10,0,grid c=0.0001 final c=0.001,"unseen tasks, original rollouts",0.733631,0.677516,0.633929,3,90,42
+B,trained combiner over 124 probe outputs (out-of-fold),10,B_combiner_h10,0,grid c=0.0001 final c=0.001,unseen tasks incl. LIBERO-PRO,0.810771,0.763784,0.730295,8,270,155
+B,trained combiner over 124 probe outputs (out-of-fold),10,B_combiner_h10,1,grid c=0.0001 final c=0.001,eval-seen,0.776517,0.777674,0.642938,7,84,41
+B,trained combiner over 124 probe outputs (out-of-fold),10,B_combiner_h10,1,grid c=0.0001 final c=0.001,"unseen tasks, original rollouts",0.770161,0.762389,0.551843,3,90,62
+B,trained combiner over 124 probe outputs (out-of-fold),10,B_combiner_h10,1,grid c=0.0001 final c=0.001,unseen tasks incl. LIBERO-PRO,0.754411,0.758221,0.547029,7,270,188
+B,trained combiner over 124 probe outputs (out-of-fold),10,B_combiner_h10,2,grid c=0.0001 final c=0.001,eval-seen,0.769459,0.802646,0.639037,7,84,51
+B,trained combiner over 124 probe outputs (out-of-fold),10,B_combiner_h10,2,grid c=0.0001 final c=0.001,"unseen tasks, original rollouts",0.679755,0.686022,0.454105,3,90,37
+B,trained combiner over 124 probe outputs (out-of-fold),10,B_combiner_h10,2,grid c=0.0001 final c=0.001,unseen tasks incl. LIBERO-PRO,0.738701,0.729796,0.573302,9,270,126
+B,"single best probe (of 124), chosen on eval-seen per-task AUROC against outcome",25,B_best_h25,0,L07:emb_temp:H25,eval-seen,0.751603,0.836938,0.54898,7,84,49
+B,"single best probe (of 124), chosen on eval-seen per-task AUROC against outcome",25,B_best_h25,0,L07:emb_temp:H25,"unseen tasks, original rollouts",0.708829,0.698812,0.633929,3,90,42
+B,"single best probe (of 124), chosen on eval-seen per-task AUROC against outcome",25,B_best_h25,0,L07:emb_temp:H25,unseen tasks incl. LIBERO-PRO,0.782721,0.678609,0.730295,8,270,155
+B,"single best probe (of 124), chosen on eval-seen per-task AUROC against outcome",25,B_best_h25,1,L09:emb_temp:H25,eval-seen,0.753829,0.837765,0.642938,7,84,41
+B,"single best probe (of 124), chosen on eval-seen per-task AUROC against outcome",25,B_best_h25,1,L09:emb_temp:H25,"unseen tasks, original rollouts",0.713134,0.739906,0.551843,3,90,62
+B,"single best probe (of 124), chosen on eval-seen per-task AUROC against outcome",25,B_best_h25,1,L09:emb_temp:H25,unseen tasks incl. LIBERO-PRO,0.70589,0.711443,0.547029,7,270,188
+B,"single best probe (of 124), chosen on eval-seen per-task AUROC against outcome",25,B_best_h25,2,L27:emb_temp:H25,eval-seen,0.744504,0.819246,0.639037,7,84,51
+B,"single best probe (of 124), chosen on eval-seen per-task AUROC against outcome",25,B_best_h25,2,L27:emb_temp:H25,"unseen tasks, original rollouts",0.691484,0.722324,0.454105,3,90,37
+B,"single best probe (of 124), chosen on eval-seen per-task AUROC against outcome",25,B_best_h25,2,L27:emb_temp:H25,unseen tasks incl. LIBERO-PRO,0.724482,0.732884,0.573302,9,270,126
+B,unweighted mean of 124 probe outputs (primary),25,B_mean_h25,0,124 probes,eval-seen,0.750437,0.802745,0.54898,7,84,49
+B,unweighted mean of 124 probe outputs (primary),25,B_mean_h25,0,124 probes,"unseen tasks, original rollouts",0.681548,0.639457,0.633929,3,90,42
+B,unweighted mean of 124 probe outputs (primary),25,B_mean_h25,0,124 probes,unseen tasks incl. LIBERO-PRO,0.800337,0.777762,0.730295,8,270,155
+B,unweighted mean of 124 probe outputs (primary),25,B_mean_h25,1,124 probes,eval-seen,0.745888,0.716752,0.642938,7,84,41
+B,unweighted mean of 124 probe outputs (primary),25,B_mean_h25,1,124 probes,"unseen tasks, original rollouts",0.782834,0.750101,0.551843,3,90,62
+B,unweighted mean of 124 probe outputs (primary),25,B_mean_h25,1,124 probes,unseen tasks incl. LIBERO-PRO,0.78425,0.756209,0.547029,7,270,188
+B,unweighted mean of 124 probe outputs (primary),25,B_mean_h25,2,124 probes,eval-seen,0.724302,0.745408,0.639037,7,84,51
+B,unweighted mean of 124 probe outputs (primary),25,B_mean_h25,2,124 probes,"unseen tasks, original rollouts",0.678225,0.704019,0.454105,3,90,37
+B,unweighted mean of 124 probe outputs (primary),25,B_mean_h25,2,124 probes,unseen tasks incl. LIBERO-PRO,0.71175,0.760598,0.573302,9,270,126
+B,unweighted mean of the 30 embedding-temporal probe outputs,25,B_meanemb_h25,0,30 embedding-temporal probes,eval-seen,0.742274,0.839484,0.54898,7,84,49
+B,unweighted mean of the 30 embedding-temporal probe outputs,25,B_meanemb_h25,0,30 embedding-temporal probes,"unseen tasks, original rollouts",0.699901,0.700706,0.633929,3,90,42
+B,unweighted mean of the 30 embedding-temporal probe outputs,25,B_meanemb_h25,0,30 embedding-temporal probes,unseen tasks incl. LIBERO-PRO,0.786928,0.737847,0.730295,8,270,155
+B,unweighted mean of the 30 embedding-temporal probe outputs,25,B_meanemb_h25,1,30 embedding-temporal probes,eval-seen,0.735678,0.771594,0.642938,7,84,41
+B,unweighted mean of the 30 embedding-temporal probe outputs,25,B_meanemb_h25,1,30 embedding-temporal probes,"unseen tasks, original rollouts",0.783986,0.767438,0.551843,3,90,62
+B,unweighted mean of the 30 embedding-temporal probe outputs,25,B_meanemb_h25,1,30 embedding-temporal probes,unseen tasks incl. LIBERO-PRO,0.765828,0.782319,0.547029,7,270,188
+B,unweighted mean of the 30 embedding-temporal probe outputs,25,B_meanemb_h25,2,30 embedding-temporal probes,eval-seen,0.728461,0.789205,0.639037,7,84,51
+B,unweighted mean of the 30 embedding-temporal probe outputs,25,B_meanemb_h25,2,30 embedding-temporal probes,"unseen tasks, original rollouts",0.678225,0.757547,0.454105,3,90,37
+B,unweighted mean of the 30 embedding-temporal probe outputs,25,B_meanemb_h25,2,30 embedding-temporal probes,unseen tasks incl. LIBERO-PRO,0.719852,0.750715,0.573302,9,270,126
+B,trained combiner over 124 probe outputs (out-of-fold),25,B_combiner_h25,0,grid c=1e-4 final c=1e-05,eval-seen,0.758601,0.810946,0.54898,7,84,49
+B,trained combiner over 124 probe outputs (out-of-fold),25,B_combiner_h25,0,grid c=1e-4 final c=1e-05,"unseen tasks, original rollouts",0.702381,0.706842,0.633929,3,90,42
+B,trained combiner over 124 probe outputs (out-of-fold),25,B_combiner_h25,0,grid c=1e-4 final c=1e-05,unseen tasks incl. LIBERO-PRO,0.797532,0.787296,0.730295,8,270,155
+B,trained combiner over 124 probe outputs (out-of-fold),25,B_combiner_h25,1,grid c=1e-4 final c=1e-05,eval-seen,0.744753,0.756595,0.642938,7,84,41
+B,trained combiner over 124 probe outputs (out-of-fold),25,B_combiner_h25,1,grid c=1e-4 final c=1e-05,"unseen tasks, original rollouts",0.778802,0.764579,0.551843,3,90,62
+B,trained combiner over 124 probe outputs (out-of-fold),25,B_combiner_h25,1,grid c=1e-4 final c=1e-05,unseen tasks incl. LIBERO-PRO,0.771017,0.755332,0.547029,7,270,188
+B,trained combiner over 124 probe outputs (out-of-fold),25,B_combiner_h25,2,grid c=1e-4 final c=1e-05,eval-seen,0.745098,0.798536,0.639037,7,84,51
+B,trained combiner over 124 probe outputs (out-of-fold),25,B_combiner_h25,2,grid c=1e-4 final c=1e-05,"unseen tasks, original rollouts",0.664967,0.720066,0.454105,3,90,37
+B,trained combiner over 124 probe outputs (out-of-fold),25,B_combiner_h25,2,grid c=1e-4 final c=1e-05,unseen tasks incl. LIBERO-PRO,0.716986,0.770155,0.573302,9,270,126
+B,"2-layer MLP on the best probe's layer, trained on that probe's constraint target",10,B_mlp_h10,0,L20:emb_temp:H10 target emb_temp[20] wd=1 epoch=1,eval-seen,0.752187,0.829861,0.54898,7,84,49
+B,"2-layer MLP on the best probe's layer, trained on that probe's constraint target",10,B_mlp_h10,0,L20:emb_temp:H10 target emb_temp[20] wd=1 epoch=1,"unseen tasks, original rollouts",0.699405,0.686043,0.633929,3,90,42
+B,"2-layer MLP on the best probe's layer, trained on that probe's constraint target",10,B_mlp_h10,0,L20:emb_temp:H10 target emb_temp[20] wd=1 epoch=1,unseen tasks incl. LIBERO-PRO,0.796746,0.769562,0.730295,8,270,155
+B,"2-layer MLP on the best probe's layer, trained on that probe's constraint target",10,B_mlp_h10,1,L12:xl_final:H10 target xl_final[12] wd=1 epoch=2,eval-seen,0.712422,0.779908,0.642938,7,84,41
+B,"2-layer MLP on the best probe's layer, trained on that probe's constraint target",10,B_mlp_h10,1,L12:xl_final:H10 target xl_final[12] wd=1 epoch=2,"unseen tasks, original rollouts",0.680876,0.599473,0.551843,3,90,62
+B,"2-layer MLP on the best probe's layer, trained on that probe's constraint target",10,B_mlp_h10,1,L12:xl_final:H10 target xl_final[12] wd=1 epoch=2,unseen tasks incl. LIBERO-PRO,0.650882,0.625384,0.547029,7,270,188
+B,"2-layer MLP on the best probe's layer, trained on that probe's constraint target",10,B_mlp_h10,2,L00:emb_temp:H10 target emb_temp[0] wd=1 epoch=1,eval-seen,0.781343,0.801989,0.639037,7,84,51
+B,"2-layer MLP on the best probe's layer, trained on that probe's constraint target",10,B_mlp_h10,2,L00:emb_temp:H10 target emb_temp[0] wd=1 epoch=1,"unseen tasks, original rollouts",0.665477,0.738669,0.454105,3,90,37
+B,"2-layer MLP on the best probe's layer, trained on that probe's constraint target",10,B_mlp_h10,2,L00:emb_temp:H10 target emb_temp[0] wd=1 epoch=1,unseen tasks incl. LIBERO-PRO,0.742229,0.760993,0.573302,9,270,126
+Baseline,timestep only,,timestep,0,t,eval-seen,0.54898,0.5,0.54898,7,84,49
+Baseline,timestep only,,timestep,0,t,"unseen tasks, original rollouts",0.633929,0.5,0.633929,3,90,42
+Baseline,timestep only,,timestep,0,t,unseen tasks incl. LIBERO-PRO,0.730295,0.5,0.730295,8,270,155
+Baseline,timestep only,,timestep,1,t,eval-seen,0.642938,0.5,0.642938,7,84,41
+Baseline,timestep only,,timestep,1,t,"unseen tasks, original rollouts",0.551843,0.5,0.551843,3,90,62
+Baseline,timestep only,,timestep,1,t,unseen tasks incl. LIBERO-PRO,0.547029,0.5,0.547029,7,270,188
+Baseline,timestep only,,timestep,2,t,eval-seen,0.639037,0.5,0.639037,7,84,51
+Baseline,timestep only,,timestep,2,t,"unseen tasks, original rollouts",0.454105,0.5,0.454105,3,90,37
+Baseline,timestep only,,timestep,2,t,unseen tasks incl. LIBERO-PRO,0.573302,0.5,0.573302,9,270,126
+Baseline,"best single untrained constraint (layer chosen on eval-seen per-task AUROC), running maximum",,emb_best,0,emb_temp[26] beta=none sign=-,eval-seen,0.725948,0.764187,0.54898,7,84,49
+Baseline,"best single untrained constraint (layer chosen on eval-seen per-task AUROC), running maximum",,emb_best,0,emb_temp[26] beta=none sign=-,"unseen tasks, original rollouts",0.679067,0.655663,0.633929,3,90,42
+Baseline,"best single untrained constraint (layer chosen on eval-seen per-task AUROC), running maximum",,emb_best,0,emb_temp[26] beta=none sign=-,unseen tasks incl. LIBERO-PRO,0.793043,0.759466,0.730295,8,270,155
+Baseline,"best single untrained constraint (layer chosen on eval-seen per-task AUROC), running maximum",,emb_best,1,emb_temp[26] beta=none sign=-,eval-seen,0.804878,0.828501,0.642938,7,84,41
+Baseline,"best single untrained constraint (layer chosen on eval-seen per-task AUROC), running maximum",,emb_best,1,emb_temp[26] beta=none sign=-,"unseen tasks, original rollouts",0.756912,0.767774,0.551843,3,90,62
+Baseline,"best single untrained constraint (layer chosen on eval-seen per-task AUROC), running maximum",,emb_best,1,emb_temp[26] beta=none sign=-,unseen tasks incl. LIBERO-PRO,0.696938,0.722059,0.547029,7,270,188
+Baseline,"best single untrained constraint (layer chosen on eval-seen per-task AUROC), running maximum",,emb_best,2,emb_temp[26] beta=none sign=-,eval-seen,0.721331,0.677362,0.639037,7,84,51
+Baseline,"best single untrained constraint (layer chosen on eval-seen per-task AUROC), running maximum",,emb_best,2,emb_temp[26] beta=none sign=-,"unseen tasks, original rollouts",0.707802,0.751654,0.454105,3,90,37
+Baseline,"best single untrained constraint (layer chosen on eval-seen per-task AUROC), running maximum",,emb_best,2,emb_temp[26] beta=none sign=-,unseen tasks incl. LIBERO-PRO,0.728588,0.738395,0.573302,9,270,126
+Baseline,"untrained constraint at the earlier layer choice (eval-seen pooled AUROC), running maximum",,emb_pooled,0,emb_temp[28] beta=none,eval-seen,0.727697,0.759392,0.54898,7,84,49
+Baseline,"untrained constraint at the earlier layer choice (eval-seen pooled AUROC), running maximum",,emb_pooled,0,emb_temp[28] beta=none,"unseen tasks, original rollouts",0.689484,0.662467,0.633929,3,90,42
+Baseline,"untrained constraint at the earlier layer choice (eval-seen pooled AUROC), running maximum",,emb_pooled,0,emb_temp[28] beta=none,unseen tasks incl. LIBERO-PRO,0.79655,0.764134,0.730295,8,270,155
+Baseline,"untrained constraint at the earlier layer choice (eval-seen pooled AUROC), running maximum",,emb_pooled,1,emb_temp[28] beta=none,eval-seen,0.812252,0.813832,0.642938,7,84,41
+Baseline,"untrained constraint at the earlier layer choice (eval-seen pooled AUROC), running maximum",,emb_pooled,1,emb_temp[28] beta=none,"unseen tasks, original rollouts",0.758641,0.765584,0.551843,3,90,62
+Baseline,"untrained constraint at the earlier layer choice (eval-seen pooled AUROC), running maximum",,emb_pooled,1,emb_temp[28] beta=none,unseen tasks incl. LIBERO-PRO,0.700636,0.712211,0.547029,7,270,188
+Baseline,"untrained constraint at the earlier layer choice (eval-seen pooled AUROC), running maximum",,emb_pooled,2,emb_temp[28] beta=none,eval-seen,0.723113,0.651535,0.639037,7,84,51
+Baseline,"untrained constraint at the earlier layer choice (eval-seen pooled AUROC), running maximum",,emb_pooled,2,emb_temp[28] beta=none,"unseen tasks, original rollouts",0.709332,0.747085,0.454105,3,90,37
+Baseline,"untrained constraint at the earlier layer choice (eval-seen pooled AUROC), running maximum",,emb_pooled,2,emb_temp[28] beta=none,unseen tasks incl. LIBERO-PRO,0.731041,0.740133,0.573302,9,270,126
+Baseline,"token mean entropy, running maximum",,token_entropy,0,token_entropy_mean beta=0.96 sign=+,eval-seen,0.476968,0.45496,0.54898,7,84,49
+Baseline,"token mean entropy, running maximum",,token_entropy,0,token_entropy_mean beta=0.96 sign=+,"unseen tasks, original rollouts",0.624008,0.580462,0.633929,3,90,42
+Baseline,"token mean entropy, running maximum",,token_entropy,0,token_entropy_mean beta=0.96 sign=+,unseen tasks incl. LIBERO-PRO,0.579916,0.449393,0.730295,8,270,155
+Baseline,"token mean entropy, running maximum",,token_entropy,1,token_entropy_mean beta=0.96 sign=+,eval-seen,0.614294,0.629398,0.642938,7,84,41
+Baseline,"token mean entropy, running maximum",,token_entropy,1,token_entropy_mean beta=0.96 sign=+,"unseen tasks, original rollouts",0.509217,0.480525,0.551843,3,90,62
+Baseline,"token mean entropy, running maximum",,token_entropy,1,token_entropy_mean beta=0.96 sign=+,unseen tasks incl. LIBERO-PRO,0.536975,0.474192,0.547029,7,270,188
+Baseline,"token mean entropy, running maximum",,token_entropy,2,token_entropy_mean beta=0.96 sign=-,eval-seen,0.538324,0.567257,0.639037,7,84,51
+Baseline,"token mean entropy, running maximum",,token_entropy,2,token_entropy_mean beta=0.96 sign=-,"unseen tasks, original rollouts",0.596634,0.556093,0.454105,3,90,37
+Baseline,"token mean entropy, running maximum",,token_entropy,2,token_entropy_mean beta=0.96 sign=-,unseen tasks incl. LIBERO-PRO,0.554949,0.559877,0.573302,9,270,126
+Baseline,"token max-probability, running maximum",,token_maxprob,0,token_prob_mean beta=0.83 sign=+,eval-seen,0.555102,0.568816,0.54898,7,84,49
+Baseline,"token max-probability, running maximum",,token_maxprob,0,token_prob_mean beta=0.83 sign=+,"unseen tasks, original rollouts",0.495536,0.487865,0.633929,3,90,42
+Baseline,"token max-probability, running maximum",,token_maxprob,0,token_prob_mean beta=0.83 sign=+,unseen tasks incl. LIBERO-PRO,0.595119,0.606616,0.730295,8,270,155
+Baseline,"token max-probability, running maximum",,token_maxprob,1,token_prob_mean beta=0.83 sign=-,eval-seen,0.539421,0.530253,0.642938,7,84,41
+Baseline,"token max-probability, running maximum",,token_maxprob,1,token_prob_mean beta=0.83 sign=-,"unseen tasks, original rollouts",0.489055,0.416921,0.551843,3,90,62
+Baseline,"token max-probability, running maximum",,token_maxprob,1,token_prob_mean beta=0.83 sign=-,unseen tasks incl. LIBERO-PRO,0.539375,0.455748,0.547029,7,270,188
+Baseline,"token max-probability, running maximum",,token_maxprob,2,token_prob_mean beta=0.83 sign=+,eval-seen,0.493761,0.517375,0.639037,7,84,51
+Baseline,"token max-probability, running maximum",,token_maxprob,2,token_prob_mean beta=0.83 sign=+,"unseen tasks, original rollouts",0.54768,0.521733,0.454105,3,90,37
+Baseline,"token max-probability, running maximum",,token_maxprob,2,token_prob_mean beta=0.83 sign=+,unseen tasks incl. LIBERO-PRO,0.584987,0.607687,0.573302,9,270,126
+Baseline,"FailureSpot signal s, running maximum",,failurespot,0,+s beta=0.8,eval-seen,0.408746,0.492659,0.54898,7,84,49
+Baseline,"FailureSpot signal s, running maximum",,failurespot,0,+s beta=0.8,"unseen tasks, original rollouts",0.634921,0.486177,0.633929,3,90,42
+Baseline,"FailureSpot signal s, running maximum",,failurespot,0,+s beta=0.8,unseen tasks incl. LIBERO-PRO,0.594222,0.438687,0.730295,8,270,155
+Baseline,"FailureSpot signal s, running maximum",,failurespot,1,+s beta=0.8,eval-seen,0.569484,0.528822,0.642938,7,84,41
+Baseline,"FailureSpot signal s, running maximum",,failurespot,1,+s beta=0.8,"unseen tasks, original rollouts",0.409562,0.411431,0.551843,3,90,62
+Baseline,"FailureSpot signal s, running maximum",,failurespot,1,+s beta=0.8,unseen tasks incl. LIBERO-PRO,0.422353,0.404404,0.547029,7,270,188
+Baseline,"FailureSpot signal s, running maximum",,failurespot,2,+s beta=0.8,eval-seen,0.550802,0.455589,0.639037,7,84,51
+Baseline,"FailureSpot signal s, running maximum",,failurespot,2,+s beta=0.8,"unseen tasks, original rollouts",0.429883,0.532287,0.454105,3,90,37
+Baseline,"FailureSpot signal s, running maximum",,failurespot,2,+s beta=0.8,unseen tasks incl. LIBERO-PRO,0.435736,0.468613,0.573302,9,270,126
+Baseline,"FailureSpot signal, opposite orientation (-s), running maximum",,failurespot_neg,0,-s beta=0.8,eval-seen,0.607872,0.620966,0.54898,7,84,49
+Baseline,"FailureSpot signal, opposite orientation (-s), running maximum",,failurespot_neg,0,-s beta=0.8,"unseen tasks, original rollouts",0.513393,0.485928,0.633929,3,90,42
+Baseline,"FailureSpot signal, opposite orientation (-s), running maximum",,failurespot_neg,0,-s beta=0.8,unseen tasks incl. LIBERO-PRO,0.607826,0.548441,0.730295,8,270,155
+Baseline,"FailureSpot signal, opposite orientation (-s), running maximum",,failurespot_neg,1,-s beta=0.8,eval-seen,0.547362,0.512661,0.642938,7,84,41
+Baseline,"FailureSpot signal, opposite orientation (-s), running maximum",,failurespot_neg,1,-s beta=0.8,"unseen tasks, original rollouts",0.612903,0.588266,0.551843,3,90,62
+Baseline,"FailureSpot signal, opposite orientation (-s), running maximum",,failurespot_neg,1,-s beta=0.8,unseen tasks incl. LIBERO-PRO,0.577776,0.538419,0.547029,7,270,188
+Baseline,"FailureSpot signal, opposite orientation (-s), running maximum",,failurespot_neg,2,-s beta=0.8,eval-seen,0.583482,0.570663,0.639037,7,84,51
+Baseline,"FailureSpot signal, opposite orientation (-s), running maximum",,failurespot_neg,2,-s beta=0.8,"unseen tasks, original rollouts",0.595614,0.550574,0.454105,3,90,37
+Baseline,"FailureSpot signal, opposite orientation (-s), running maximum",,failurespot_neg,2,-s beta=0.8,unseen tasks incl. LIBERO-PRO,0.55889,0.520916,0.573302,9,270,126
+B,"trained combiner over 124 probe outputs, refitted here (check)",10,B_combiner_h10_refit,0,grid c=1e-4 final c=0.001,eval-seen,0.812245,0.764616,0.54898,7,84,49
+B,"trained combiner over 124 probe outputs, refitted here (check)",10,B_combiner_h10_refit,0,grid c=1e-4 final c=0.001,"unseen tasks, original rollouts",0.733631,0.677516,0.633929,3,90,42
+B,"trained combiner over 124 probe outputs, refitted here (check)",10,B_combiner_h10_refit,0,grid c=1e-4 final c=0.001,unseen tasks incl. LIBERO-PRO,0.810771,0.763784,0.730295,8,270,155
+B,"trained combiner over 124 probe outputs, refitted here (check)",10,B_combiner_h10_refit,1,grid c=1e-4 final c=0.001,eval-seen,0.776517,0.777674,0.642938,7,84,41
+B,"trained combiner over 124 probe outputs, refitted here (check)",10,B_combiner_h10_refit,1,grid c=1e-4 final c=0.001,"unseen tasks, original rollouts",0.770161,0.762389,0.551843,3,90,62
+B,"trained combiner over 124 probe outputs, refitted here (check)",10,B_combiner_h10_refit,1,grid c=1e-4 final c=0.001,unseen tasks incl. LIBERO-PRO,0.754411,0.758221,0.547029,7,270,188
+B,"trained combiner over 124 probe outputs, refitted here (check)",10,B_combiner_h10_refit,2,grid c=1e-4 final c=0.001,eval-seen,0.769459,0.802646,0.639037,7,84,51
+B,"trained combiner over 124 probe outputs, refitted here (check)",10,B_combiner_h10_refit,2,grid c=1e-4 final c=0.001,"unseen tasks, original rollouts",0.679755,0.686022,0.454105,3,90,37
+B,"trained combiner over 124 probe outputs, refitted here (check)",10,B_combiner_h10_refit,2,grid c=1e-4 final c=0.001,unseen tasks incl. LIBERO-PRO,0.738701,0.729796,0.573302,9,270,126
+C,unweighted mean of C's probes without the action family,,C_mean_lofo:no_action,0,no_action,eval-seen,0.704373,0.746495,0.54898,7,84,49
+C,unweighted mean of C's probes without the action family,,C_mean_lofo:no_action,0,no_action,"unseen tasks, original rollouts",0.675099,0.635952,0.633929,3,90,42
+C,unweighted mean of C's probes without the action family,,C_mean_lofo:no_action,0,no_action,unseen tasks incl. LIBERO-PRO,0.796858,0.78456,0.730295,8,270,155
+C,unweighted mean of C's probes without the action family,,C_mean_lofo:no_action,1,no_action,eval-seen,0.725468,0.684231,0.642938,7,84,41
+C,unweighted mean of C's probes without the action family,,C_mean_lofo:no_action,1,no_action,"unseen tasks, original rollouts",0.771313,0.756178,0.551843,3,90,62
+C,unweighted mean of C's probes without the action family,,C_mean_lofo:no_action,1,no_action,unseen tasks incl. LIBERO-PRO,0.717307,0.737813,0.547029,7,270,188
+C,unweighted mean of C's probes without the action family,,C_mean_lofo:no_action,2,no_action,eval-seen,0.693999,0.68708,0.639037,7,84,51
+C,unweighted mean of C's probes without the action family,,C_mean_lofo:no_action,2,no_action,"unseen tasks, original rollouts",0.584396,0.636195,0.454105,3,90,37
+C,unweighted mean of C's probes without the action family,,C_mean_lofo:no_action,2,no_action,unseen tasks incl. LIBERO-PRO,0.701168,0.732097,0.573302,9,270,126
+C,unweighted mean of C's probes without the emb_temp family,,C_mean_lofo:no_emb_temp,0,no_emb_temp,eval-seen,0.657726,0.611806,0.54898,7,84,49
+C,unweighted mean of C's probes without the emb_temp family,,C_mean_lofo:no_emb_temp,0,no_emb_temp,"unseen tasks, original rollouts",0.678075,0.648087,0.633929,3,90,42
+C,unweighted mean of C's probes without the emb_temp family,,C_mean_lofo:no_emb_temp,0,no_emb_temp,unseen tasks incl. LIBERO-PRO,0.783843,0.754907,0.730295,8,270,155
+C,unweighted mean of C's probes without the emb_temp family,,C_mean_lofo:no_emb_temp,1,no_emb_temp,eval-seen,0.712422,0.69564,0.642938,7,84,41
+C,unweighted mean of C's probes without the emb_temp family,,C_mean_lofo:no_emb_temp,1,no_emb_temp,"unseen tasks, original rollouts",0.734447,0.688246,0.551843,3,90,62
+C,unweighted mean of C's probes without the emb_temp family,,C_mean_lofo:no_emb_temp,1,no_emb_temp,unseen tasks incl. LIBERO-PRO,0.679878,0.70829,0.547029,7,270,188
+C,unweighted mean of C's probes without the emb_temp family,,C_mean_lofo:no_emb_temp,2,no_emb_temp,eval-seen,0.702317,0.751394,0.639037,7,84,51
+C,unweighted mean of C's probes without the emb_temp family,,C_mean_lofo:no_emb_temp,2,no_emb_temp,"unseen tasks, original rollouts",0.509434,0.682621,0.454105,3,90,37
+C,unweighted mean of C's probes without the emb_temp family,,C_mean_lofo:no_emb_temp,2,no_emb_temp,unseen tasks incl. LIBERO-PRO,0.662864,0.745926,0.573302,9,270,126
+C,unweighted mean of C's probes without the cross-layer family,,C_mean_lofo:no_cross_layer,0,no_cross_layer,eval-seen,0.653061,0.741369,0.54898,7,84,49
+C,unweighted mean of C's probes without the cross-layer family,,C_mean_lofo:no_cross_layer,0,no_cross_layer,"unseen tasks, original rollouts",0.66369,0.590669,0.633929,3,90,42
+C,unweighted mean of C's probes without the cross-layer family,,C_mean_lofo:no_cross_layer,0,no_cross_layer,unseen tasks incl. LIBERO-PRO,0.787546,0.739401,0.730295,8,270,155
+C,unweighted mean of C's probes without the cross-layer family,,C_mean_lofo:no_cross_layer,1,no_cross_layer,eval-seen,0.681792,0.677083,0.642938,7,84,41
+C,unweighted mean of C's probes without the cross-layer family,,C_mean_lofo:no_cross_layer,1,no_cross_layer,"unseen tasks, original rollouts",0.685484,0.734769,0.551843,3,90,62
+C,unweighted mean of C's probes without the cross-layer family,,C_mean_lofo:no_cross_layer,1,no_cross_layer,unseen tasks incl. LIBERO-PRO,0.643552,0.713027,0.547029,7,270,188
+C,unweighted mean of C's probes without the cross-layer family,,C_mean_lofo:no_cross_layer,2,no_cross_layer,eval-seen,0.68568,0.634632,0.639037,7,84,51
+C,unweighted mean of C's probes without the cross-layer family,,C_mean_lofo:no_cross_layer,2,no_cross_layer,"unseen tasks, original rollouts",0.522183,0.623612,0.454105,3,90,37
+C,unweighted mean of C's probes without the cross-layer family,,C_mean_lofo:no_cross_layer,2,no_cross_layer,unseen tasks incl. LIBERO-PRO,0.674548,0.719213,0.573302,9,270,126
+B,unweighted mean of the act_rep probes only,0,B_bytarget_h0:mean_act_rep,0,32 act_rep probes,eval-seen,0.72828,0.708036,0.54898,7,84,49
+B,unweighted mean of the act_rep probes only,0,B_bytarget_h0:mean_act_rep,0,32 act_rep probes,"unseen tasks, original rollouts",0.72371,0.670497,0.633929,3,90,42
+B,unweighted mean of the act_rep probes only,0,B_bytarget_h0:mean_act_rep,0,32 act_rep probes,unseen tasks incl. LIBERO-PRO,0.78979,0.720026,0.730295,8,270,155
+B,unweighted mean of the act_rep probes only,0,B_bytarget_h0:mean_act_rep,1,32 act_rep probes,eval-seen,0.744186,0.717786,0.642938,7,84,41
+B,unweighted mean of the act_rep probes only,0,B_bytarget_h0:mean_act_rep,1,32 act_rep probes,"unseen tasks, original rollouts",0.687788,0.65696,0.551843,3,90,62
+B,unweighted mean of the act_rep probes only,0,B_bytarget_h0:mean_act_rep,1,32 act_rep probes,unseen tasks incl. LIBERO-PRO,0.73521,0.688251,0.547029,7,270,188
+B,unweighted mean of the act_rep probes only,0,B_bytarget_h0:mean_act_rep,2,32 act_rep probes,eval-seen,0.756387,0.661754,0.639037,7,84,51
+B,unweighted mean of the act_rep probes only,0,B_bytarget_h0:mean_act_rep,2,32 act_rep probes,"unseen tasks, original rollouts",0.592555,0.692654,0.454105,3,90,37
+B,unweighted mean of the act_rep probes only,0,B_bytarget_h0:mean_act_rep,2,32 act_rep probes,unseen tasks incl. LIBERO-PRO,0.660714,0.678484,0.573302,9,270,126
+B,unweighted mean of the act_mag probes only,0,B_bytarget_h0:mean_act_mag,0,32 act_mag probes,eval-seen,0.71137,0.763459,0.54898,7,84,49
+B,unweighted mean of the act_mag probes only,0,B_bytarget_h0:mean_act_mag,0,32 act_mag probes,"unseen tasks, original rollouts",0.676091,0.571618,0.633929,3,90,42
+B,unweighted mean of the act_mag probes only,0,B_bytarget_h0:mean_act_mag,0,32 act_mag probes,unseen tasks incl. LIBERO-PRO,0.77885,0.721254,0.730295,8,270,155
+B,unweighted mean of the act_mag probes only,0,B_bytarget_h0:mean_act_mag,1,32 act_mag probes,eval-seen,0.697107,0.615594,0.642938,7,84,41
+B,unweighted mean of the act_mag probes only,0,B_bytarget_h0:mean_act_mag,1,32 act_mag probes,"unseen tasks, original rollouts",0.775346,0.746604,0.551843,3,90,62
+B,unweighted mean of the act_mag probes only,0,B_bytarget_h0:mean_act_mag,1,32 act_mag probes,unseen tasks incl. LIBERO-PRO,0.788726,0.708806,0.547029,7,270,188
+B,unweighted mean of the act_mag probes only,0,B_bytarget_h0:mean_act_mag,2,32 act_mag probes,eval-seen,0.694593,0.711281,0.639037,7,84,51
+B,unweighted mean of the act_mag probes only,0,B_bytarget_h0:mean_act_mag,2,32 act_mag probes,"unseen tasks, original rollouts",0.617542,0.590498,0.454105,3,90,37
+B,unweighted mean of the act_mag probes only,0,B_bytarget_h0:mean_act_mag,2,32 act_mag probes,unseen tasks incl. LIBERO-PRO,0.66347,0.683967,0.573302,9,270,126
+B,unweighted mean of the emb_temp probes only,0,B_bytarget_h0:mean_emb_temp,0,30 emb_temp probes,eval-seen,0.75277,0.794907,0.54898,7,84,49
+B,unweighted mean of the emb_temp probes only,0,B_bytarget_h0:mean_emb_temp,0,30 emb_temp probes,"unseen tasks, original rollouts",0.707341,0.690105,0.633929,3,90,42
+B,unweighted mean of the emb_temp probes only,0,B_bytarget_h0:mean_emb_temp,0,30 emb_temp probes,unseen tasks incl. LIBERO-PRO,0.807237,0.761159,0.730295,8,270,155
+B,unweighted mean of the emb_temp probes only,0,B_bytarget_h0:mean_emb_temp,1,30 emb_temp probes,eval-seen,0.767442,0.780093,0.642938,7,84,41
+B,unweighted mean of the emb_temp probes only,0,B_bytarget_h0:mean_emb_temp,1,30 emb_temp probes,"unseen tasks, original rollouts",0.754032,0.725904,0.551843,3,90,62
+B,unweighted mean of the emb_temp probes only,0,B_bytarget_h0:mean_emb_temp,1,30 emb_temp probes,unseen tasks incl. LIBERO-PRO,0.743902,0.744283,0.547029,7,270,188
+B,unweighted mean of the emb_temp probes only,0,B_bytarget_h0:mean_emb_temp,2,30 emb_temp probes,eval-seen,0.758764,0.729327,0.639037,7,84,51
+B,unweighted mean of the emb_temp probes only,0,B_bytarget_h0:mean_emb_temp,2,30 emb_temp probes,"unseen tasks, original rollouts",0.646609,0.640494,0.454105,3,90,37
+B,unweighted mean of the emb_temp probes only,0,B_bytarget_h0:mean_emb_temp,2,30 emb_temp probes,unseen tasks incl. LIBERO-PRO,0.72112,0.749461,0.573302,9,270,126
+B,unweighted mean of the xl_final probes only,0,B_bytarget_h0:mean_xl_final,0,30 xl_final probes,eval-seen,0.680466,0.525661,0.54898,7,84,49
+B,unweighted mean of the xl_final probes only,0,B_bytarget_h0:mean_xl_final,0,30 xl_final probes,"unseen tasks, original rollouts",0.636905,0.490676,0.633929,3,90,42
+B,unweighted mean of the xl_final probes only,0,B_bytarget_h0:mean_xl_final,0,30 xl_final probes,unseen tasks incl. LIBERO-PRO,0.721851,0.513494,0.730295,8,270,155
+B,unweighted mean of the xl_final probes only,0,B_bytarget_h0:mean_xl_final,1,30 xl_final probes,eval-seen,0.677822,0.631552,0.642938,7,84,41
+B,unweighted mean of the xl_final probes only,0,B_bytarget_h0:mean_xl_final,1,30 xl_final probes,"unseen tasks, original rollouts",0.652074,0.462515,0.551843,3,90,62
+B,unweighted mean of the xl_final probes only,0,B_bytarget_h0:mean_xl_final,1,30 xl_final probes,unseen tasks incl. LIBERO-PRO,0.669369,0.480201,0.547029,7,270,188
+B,unweighted mean of the xl_final probes only,0,B_bytarget_h0:mean_xl_final,2,30 xl_final probes,eval-seen,0.617944,0.556288,0.639037,7,84,51
+B,unweighted mean of the xl_final probes only,0,B_bytarget_h0:mean_xl_final,2,30 xl_final probes,"unseen tasks, original rollouts",0.598674,0.539764,0.454105,3,90,37
+B,unweighted mean of the xl_final probes only,0,B_bytarget_h0:mean_xl_final,2,30 xl_final probes,unseen tasks incl. LIBERO-PRO,0.636795,0.541203,0.573302,9,270,126
+B,trained combiner of the act_rep probes only,0,B_bytarget_h0:combiner_act_rep,0,"32 act_rep probes, c=0.01",eval-seen,0.701458,0.686607,0.54898,7,84,49
+B,trained combiner of the act_rep probes only,0,B_bytarget_h0:combiner_act_rep,0,"32 act_rep probes, c=0.01","unseen tasks, original rollouts",0.706349,0.690559,0.633929,3,90,42
+B,trained combiner of the act_rep probes only,0,B_bytarget_h0:combiner_act_rep,0,"32 act_rep probes, c=0.01",unseen tasks incl. LIBERO-PRO,0.796129,0.701433,0.730295,8,270,155
+B,trained combiner of the act_rep probes only,0,B_bytarget_h0:combiner_act_rep,1,"32 act_rep probes, c=0.01",eval-seen,0.689166,0.718221,0.642938,7,84,41
+B,trained combiner of the act_rep probes only,0,B_bytarget_h0:combiner_act_rep,1,"32 act_rep probes, c=0.01","unseen tasks, original rollouts",0.687788,0.69714,0.551843,3,90,62
+B,trained combiner of the act_rep probes only,0,B_bytarget_h0:combiner_act_rep,1,"32 act_rep probes, c=0.01",unseen tasks incl. LIBERO-PRO,0.662688,0.707058,0.547029,7,270,188
+B,trained combiner of the act_rep probes only,0,B_bytarget_h0:combiner_act_rep,2,"32 act_rep probes, c=0.01",eval-seen,0.751634,0.753888,0.639037,7,84,51
+B,trained combiner of the act_rep probes only,0,B_bytarget_h0:combiner_act_rep,2,"32 act_rep probes, c=0.01","unseen tasks, original rollouts",0.508924,0.671764,0.454105,3,90,37
+B,trained combiner of the act_rep probes only,0,B_bytarget_h0:combiner_act_rep,2,"32 act_rep probes, c=0.01",unseen tasks incl. LIBERO-PRO,0.659336,0.695329,0.573302,9,270,126
+B,trained combiner of the act_mag probes only,0,B_bytarget_h0:combiner_act_mag,0,"32 act_mag probes, c=0.01",eval-seen,0.704956,0.748479,0.54898,7,84,49
+B,trained combiner of the act_mag probes only,0,B_bytarget_h0:combiner_act_mag,0,"32 act_mag probes, c=0.01","unseen tasks, original rollouts",0.709325,0.676702,0.633929,3,90,42
+B,trained combiner of the act_mag probes only,0,B_bytarget_h0:combiner_act_mag,0,"32 act_mag probes, c=0.01",unseen tasks incl. LIBERO-PRO,0.798261,0.689349,0.730295,8,270,155
+B,trained combiner of the act_mag probes only,0,B_bytarget_h0:combiner_act_mag,1,"32 act_mag probes, c=0.01",eval-seen,0.744753,0.78716,0.642938,7,84,41
+B,trained combiner of the act_mag probes only,0,B_bytarget_h0:combiner_act_mag,1,"32 act_mag probes, c=0.01","unseen tasks, original rollouts",0.735023,0.685242,0.551843,3,90,62
+B,trained combiner of the act_mag probes only,0,B_bytarget_h0:combiner_act_mag,1,"32 act_mag probes, c=0.01",unseen tasks incl. LIBERO-PRO,0.741956,0.707764,0.547029,7,270,188
+B,trained combiner of the act_mag probes only,0,B_bytarget_h0:combiner_act_mag,2,"32 act_mag probes, c=0.01",eval-seen,0.732026,0.797983,0.639037,7,84,51
+B,trained combiner of the act_mag probes only,0,B_bytarget_h0:combiner_act_mag,2,"32 act_mag probes, c=0.01","unseen tasks, original rollouts",0.628251,0.731769,0.454105,3,90,37
+B,trained combiner of the act_mag probes only,0,B_bytarget_h0:combiner_act_mag,2,"32 act_mag probes, c=0.01",unseen tasks incl. LIBERO-PRO,0.694334,0.696454,0.573302,9,270,126
+B,trained combiner of the emb_temp probes only,0,B_bytarget_h0:combiner_emb_temp,0,"30 emb_temp probes, c=0.01",eval-seen,0.758017,0.806217,0.54898,7,84,49
+B,trained combiner of the emb_temp probes only,0,B_bytarget_h0:combiner_emb_temp,0,"30 emb_temp probes, c=0.01","unseen tasks, original rollouts",0.724702,0.715258,0.633929,3,90,42
+B,trained combiner of the emb_temp probes only,0,B_bytarget_h0:combiner_emb_temp,0,"30 emb_temp probes, c=0.01",unseen tasks incl. LIBERO-PRO,0.823001,0.777203,0.730295,8,270,155
+B,trained combiner of the emb_temp probes only,0,B_bytarget_h0:combiner_emb_temp,1,"30 emb_temp probes, c=0.01",eval-seen,0.754963,0.789073,0.642938,7,84,41
+B,trained combiner of the emb_temp probes only,0,B_bytarget_h0:combiner_emb_temp,1,"30 emb_temp probes, c=0.01","unseen tasks, original rollouts",0.759217,0.729024,0.551843,3,90,62
+B,trained combiner of the emb_temp probes only,0,B_bytarget_h0:combiner_emb_temp,1,"30 emb_temp probes, c=0.01",unseen tasks incl. LIBERO-PRO,0.745135,0.761059,0.547029,7,270,188
+B,trained combiner of the emb_temp probes only,0,B_bytarget_h0:combiner_emb_temp,2,"30 emb_temp probes, c=0.01",eval-seen,0.747475,0.76669,0.639037,7,84,51
+B,trained combiner of the emb_temp probes only,0,B_bytarget_h0:combiner_emb_temp,2,"30 emb_temp probes, c=0.01","unseen tasks, original rollouts",0.610913,0.683948,0.454105,3,90,37
+B,trained combiner of the emb_temp probes only,0,B_bytarget_h0:combiner_emb_temp,2,"30 emb_temp probes, c=0.01",unseen tasks incl. LIBERO-PRO,0.700728,0.701338,0.573302,9,270,126
+B,trained combiner of the xl_final probes only,0,B_bytarget_h0:combiner_xl_final,0,"30 xl_final probes, c=0.01",eval-seen,0.812245,0.739319,0.54898,7,84,49
+B,trained combiner of the xl_final probes only,0,B_bytarget_h0:combiner_xl_final,0,"30 xl_final probes, c=0.01","unseen tasks, original rollouts",0.761409,0.69733,0.633929,3,90,42
+B,trained combiner of the xl_final probes only,0,B_bytarget_h0:combiner_xl_final,0,"30 xl_final probes, c=0.01",unseen tasks incl. LIBERO-PRO,0.814755,0.771921,0.730295,8,270,155
+B,trained combiner of the xl_final probes only,0,B_bytarget_h0:combiner_xl_final,1,"30 xl_final probes, c=0.01",eval-seen,0.77198,0.732422,0.642938,7,84,41
+B,trained combiner of the xl_final probes only,0,B_bytarget_h0:combiner_xl_final,1,"30 xl_final probes, c=0.01","unseen tasks, original rollouts",0.744816,0.739609,0.551843,3,90,62
+B,trained combiner of the xl_final probes only,0,B_bytarget_h0:combiner_xl_final,1,"30 xl_final probes, c=0.01",unseen tasks incl. LIBERO-PRO,0.728399,0.748527,0.547029,7,270,188
+B,trained combiner of the xl_final probes only,0,B_bytarget_h0:combiner_xl_final,2,"30 xl_final probes, c=0.01",eval-seen,0.756387,0.759788,0.639037,7,84,51
+B,trained combiner of the xl_final probes only,0,B_bytarget_h0:combiner_xl_final,2,"30 xl_final probes, c=0.01","unseen tasks, original rollouts",0.640999,0.643172,0.454105,3,90,37
+B,trained combiner of the xl_final probes only,0,B_bytarget_h0:combiner_xl_final,2,"30 xl_final probes, c=0.01",unseen tasks incl. LIBERO-PRO,0.693893,0.700606,0.573302,9,270,126
+B,unweighted mean of the act_rep probes only,10,B_bytarget_h10:mean_act_rep,0,32 act_rep probes,eval-seen,0.734694,0.723115,0.54898,7,84,49
+B,unweighted mean of the act_rep probes only,10,B_bytarget_h10:mean_act_rep,0,32 act_rep probes,"unseen tasks, original rollouts",0.725198,0.676145,0.633929,3,90,42
+B,unweighted mean of the act_rep probes only,10,B_bytarget_h10:mean_act_rep,0,32 act_rep probes,unseen tasks incl. LIBERO-PRO,0.789285,0.72569,0.730295,8,270,155
+B,unweighted mean of the act_rep probes only,10,B_bytarget_h10:mean_act_rep,1,32 act_rep probes,eval-seen,0.75553,0.723271,0.642938,7,84,41
+B,unweighted mean of the act_rep probes only,10,B_bytarget_h10:mean_act_rep,1,32 act_rep probes,"unseen tasks, original rollouts",0.687788,0.668387,0.551843,3,90,62
+B,unweighted mean of the act_rep probes only,10,B_bytarget_h10:mean_act_rep,1,32 act_rep probes,unseen tasks incl. LIBERO-PRO,0.735016,0.690655,0.547029,7,270,188
+B,unweighted mean of the act_rep probes only,10,B_bytarget_h10:mean_act_rep,2,32 act_rep probes,eval-seen,0.758764,0.66969,0.639037,7,84,51
+B,unweighted mean of the act_rep probes only,10,B_bytarget_h10:mean_act_rep,2,32 act_rep probes,"unseen tasks, original rollouts",0.593065,0.695671,0.454105,3,90,37
+B,unweighted mean of the act_rep probes only,10,B_bytarget_h10:mean_act_rep,2,32 act_rep probes,unseen tasks incl. LIBERO-PRO,0.665675,0.686485,0.573302,9,270,126
+B,unweighted mean of the act_mag probes only,10,B_bytarget_h10:mean_act_mag,0,32 act_mag probes,eval-seen,0.716035,0.775033,0.54898,7,84,49
+B,unweighted mean of the act_mag probes only,10,B_bytarget_h10:mean_act_mag,0,32 act_mag probes,"unseen tasks, original rollouts",0.677579,0.582982,0.633929,3,90,42
+B,unweighted mean of the act_mag probes only,10,B_bytarget_h10:mean_act_mag,0,32 act_mag probes,unseen tasks incl. LIBERO-PRO,0.787489,0.722303,0.730295,8,270,155
+B,unweighted mean of the act_mag probes only,10,B_bytarget_h10:mean_act_mag,1,32 act_mag probes,eval-seen,0.699376,0.617111,0.642938,7,84,41
+B,unweighted mean of the act_mag probes only,10,B_bytarget_h10:mean_act_mag,1,32 act_mag probes,"unseen tasks, original rollouts",0.785138,0.768635,0.551843,3,90,62
+B,unweighted mean of the act_mag probes only,10,B_bytarget_h10:mean_act_mag,1,32 act_mag probes,unseen tasks incl. LIBERO-PRO,0.789958,0.713936,0.547029,7,270,188
+B,unweighted mean of the act_mag probes only,10,B_bytarget_h10:mean_act_mag,2,32 act_mag probes,eval-seen,0.705882,0.748517,0.639037,7,84,51
+B,unweighted mean of the act_mag probes only,10,B_bytarget_h10:mean_act_mag,2,32 act_mag probes,"unseen tasks, original rollouts",0.623151,0.607815,0.454105,3,90,37
+B,unweighted mean of the act_mag probes only,10,B_bytarget_h10:mean_act_mag,2,32 act_mag probes,unseen tasks incl. LIBERO-PRO,0.669863,0.698197,0.573302,9,270,126
+B,unweighted mean of the emb_temp probes only,10,B_bytarget_h10:mean_emb_temp,0,30 emb_temp probes,eval-seen,0.752187,0.851885,0.54898,7,84,49
+B,unweighted mean of the emb_temp probes only,10,B_bytarget_h10:mean_emb_temp,0,30 emb_temp probes,"unseen tasks, original rollouts",0.706349,0.709156,0.633929,3,90,42
+B,unweighted mean of the emb_temp probes only,10,B_bytarget_h10:mean_emb_temp,0,30 emb_temp probes,unseen tasks incl. LIBERO-PRO,0.798654,0.766049,0.730295,8,270,155
+B,unweighted mean of the emb_temp probes only,10,B_bytarget_h10:mean_emb_temp,1,30 emb_temp probes,eval-seen,0.75156,0.756737,0.642938,7,84,41
+B,unweighted mean of the emb_temp probes only,10,B_bytarget_h10:mean_emb_temp,1,30 emb_temp probes,"unseen tasks, original rollouts",0.776498,0.746813,0.551843,3,90,62
+B,unweighted mean of the emb_temp probes only,10,B_bytarget_h10:mean_emb_temp,1,30 emb_temp probes,unseen tasks incl. LIBERO-PRO,0.74507,0.757377,0.547029,7,270,188
+B,unweighted mean of the emb_temp probes only,10,B_bytarget_h10:mean_emb_temp,2,30 emb_temp probes,eval-seen,0.757576,0.795819,0.639037,7,84,51
+B,unweighted mean of the emb_temp probes only,10,B_bytarget_h10:mean_emb_temp,2,30 emb_temp probes,"unseen tasks, original rollouts",0.685365,0.737815,0.454105,3,90,37
+B,unweighted mean of the emb_temp probes only,10,B_bytarget_h10:mean_emb_temp,2,30 emb_temp probes,unseen tasks incl. LIBERO-PRO,0.750606,0.770669,0.573302,9,270,126
+B,unweighted mean of the xl_final probes only,10,B_bytarget_h10:mean_xl_final,0,30 xl_final probes,eval-seen,0.670554,0.488889,0.54898,7,84,49
+B,unweighted mean of the xl_final probes only,10,B_bytarget_h10:mean_xl_final,0,30 xl_final probes,"unseen tasks, original rollouts",0.636905,0.489485,0.633929,3,90,42
+B,unweighted mean of the xl_final probes only,10,B_bytarget_h10:mean_xl_final,0,30 xl_final probes,unseen tasks incl. LIBERO-PRO,0.716634,0.510867,0.730295,8,270,155
+B,unweighted mean of the xl_final probes only,10,B_bytarget_h10:mean_xl_final,1,30 xl_final probes,eval-seen,0.664776,0.587325,0.642938,7,84,41
+B,unweighted mean of the xl_final probes only,10,B_bytarget_h10:mean_xl_final,1,30 xl_final probes,"unseen tasks, original rollouts",0.637673,0.453394,0.551843,3,90,62
+B,unweighted mean of the xl_final probes only,10,B_bytarget_h10:mean_xl_final,1,30 xl_final probes,unseen tasks incl. LIBERO-PRO,0.658407,0.464105,0.547029,7,270,188
+B,unweighted mean of the xl_final probes only,10,B_bytarget_h10:mean_xl_final,2,30 xl_final probes,eval-seen,0.604278,0.50847,0.639037,7,84,51
+B,unweighted mean of the xl_final probes only,10,B_bytarget_h10:mean_xl_final,2,30 xl_final probes,"unseen tasks, original rollouts",0.564508,0.499981,0.454105,3,90,37
+B,unweighted mean of the xl_final probes only,10,B_bytarget_h10:mean_xl_final,2,30 xl_final probes,unseen tasks incl. LIBERO-PRO,0.60841,0.517651,0.573302,9,270,126
+B,trained combiner of the act_rep probes only,10,B_bytarget_h10:combiner_act_rep,0,"32 act_rep probes, c=0.001",eval-seen,0.69621,0.729365,0.54898,7,84,49
+B,trained combiner of the act_rep probes only,10,B_bytarget_h10:combiner_act_rep,0,"32 act_rep probes, c=0.001","unseen tasks, original rollouts",0.713294,0.72525,0.633929,3,90,42
+B,trained combiner of the act_rep probes only,10,B_bytarget_h10:combiner_act_rep,0,"32 act_rep probes, c=0.001",unseen tasks incl. LIBERO-PRO,0.800505,0.733473,0.730295,8,270,155
+B,trained combiner of the act_rep probes only,10,B_bytarget_h10:combiner_act_rep,1,"32 act_rep probes, c=0.001",eval-seen,0.690301,0.725,0.642938,7,84,41
+B,trained combiner of the act_rep probes only,10,B_bytarget_h10:combiner_act_rep,1,"32 act_rep probes, c=0.001","unseen tasks, original rollouts",0.706797,0.698854,0.551843,3,90,62
+B,trained combiner of the act_rep probes only,10,B_bytarget_h10:combiner_act_rep,1,"32 act_rep probes, c=0.001",unseen tasks incl. LIBERO-PRO,0.669629,0.700888,0.547029,7,270,188
+B,trained combiner of the act_rep probes only,10,B_bytarget_h10:combiner_act_rep,2,"32 act_rep probes, c=0.001",eval-seen,0.737968,0.729157,0.639037,7,84,51
+B,trained combiner of the act_rep probes only,10,B_bytarget_h10:combiner_act_rep,2,"32 act_rep probes, c=0.001","unseen tasks, original rollouts",0.522693,0.712552,0.454105,3,90,37
+B,trained combiner of the act_rep probes only,10,B_bytarget_h10:combiner_act_rep,2,"32 act_rep probes, c=0.001",unseen tasks incl. LIBERO-PRO,0.666171,0.698235,0.573302,9,270,126
+B,trained combiner of the act_mag probes only,10,B_bytarget_h10:combiner_act_mag,0,"32 act_mag probes, c=0.001",eval-seen,0.698542,0.789385,0.54898,7,84,49
+B,trained combiner of the act_mag probes only,10,B_bytarget_h10:combiner_act_mag,0,"32 act_mag probes, c=0.001","unseen tasks, original rollouts",0.712798,0.710236,0.633929,3,90,42
+B,trained combiner of the act_mag probes only,10,B_bytarget_h10:combiner_act_mag,0,"32 act_mag probes, c=0.001",unseen tasks incl. LIBERO-PRO,0.804432,0.74824,0.730295,8,270,155
+B,trained combiner of the act_mag probes only,10,B_bytarget_h10:combiner_act_mag,1,"32 act_mag probes, c=0.001",eval-seen,0.743052,0.755711,0.642938,7,84,41
+B,trained combiner of the act_mag probes only,10,B_bytarget_h10:combiner_act_mag,1,"32 act_mag probes, c=0.001","unseen tasks, original rollouts",0.766129,0.752791,0.551843,3,90,62
+B,trained combiner of the act_mag probes only,10,B_bytarget_h10:combiner_act_mag,1,"32 act_mag probes, c=0.001",unseen tasks incl. LIBERO-PRO,0.736443,0.755277,0.547029,7,270,188
+B,trained combiner of the act_mag probes only,10,B_bytarget_h10:combiner_act_mag,2,"32 act_mag probes, c=0.001",eval-seen,0.735591,0.804535,0.639037,7,84,51
+B,trained combiner of the act_mag probes only,10,B_bytarget_h10:combiner_act_mag,2,"32 act_mag probes, c=0.001","unseen tasks, original rollouts",0.608873,0.735059,0.454105,3,90,37
+B,trained combiner of the act_mag probes only,10,B_bytarget_h10:combiner_act_mag,2,"32 act_mag probes, c=0.001",unseen tasks incl. LIBERO-PRO,0.698964,0.722634,0.573302,9,270,126
+B,trained combiner of the emb_temp probes only,10,B_bytarget_h10:combiner_emb_temp,0,"30 emb_temp probes, c=0.001",eval-seen,0.731195,0.836607,0.54898,7,84,49
+B,trained combiner of the emb_temp probes only,10,B_bytarget_h10:combiner_emb_temp,0,"30 emb_temp probes, c=0.001","unseen tasks, original rollouts",0.692956,0.665913,0.633929,3,90,42
+B,trained combiner of the emb_temp probes only,10,B_bytarget_h10:combiner_emb_temp,0,"30 emb_temp probes, c=0.001",unseen tasks incl. LIBERO-PRO,0.807686,0.795848,0.730295,8,270,155
+B,trained combiner of the emb_temp probes only,10,B_bytarget_h10:combiner_emb_temp,1,"30 emb_temp probes, c=0.001",eval-seen,0.741917,0.773446,0.642938,7,84,41
+B,trained combiner of the emb_temp probes only,10,B_bytarget_h10:combiner_emb_temp,1,"30 emb_temp probes, c=0.001","unseen tasks, original rollouts",0.739055,0.777256,0.551843,3,90,62
+B,trained combiner of the emb_temp probes only,10,B_bytarget_h10:combiner_emb_temp,1,"30 emb_temp probes, c=0.001",unseen tasks incl. LIBERO-PRO,0.706279,0.780754,0.547029,7,270,188
+B,trained combiner of the emb_temp probes only,10,B_bytarget_h10:combiner_emb_temp,2,"30 emb_temp probes, c=0.001",eval-seen,0.746881,0.798569,0.639037,7,84,51
+B,trained combiner of the emb_temp probes only,10,B_bytarget_h10:combiner_emb_temp,2,"30 emb_temp probes, c=0.001","unseen tasks, original rollouts",0.697603,0.772763,0.454105,3,90,37
+B,trained combiner of the emb_temp probes only,10,B_bytarget_h10:combiner_emb_temp,2,"30 emb_temp probes, c=0.001",unseen tasks incl. LIBERO-PRO,0.758157,0.793743,0.573302,9,270,126
+B,trained combiner of the xl_final probes only,10,B_bytarget_h10:combiner_xl_final,0,"30 xl_final probes, c=0.001",eval-seen,0.786589,0.713194,0.54898,7,84,49
+B,trained combiner of the xl_final probes only,10,B_bytarget_h10:combiner_xl_final,0,"30 xl_final probes, c=0.001","unseen tasks, original rollouts",0.727183,0.675305,0.633929,3,90,42
+B,trained combiner of the xl_final probes only,10,B_bytarget_h10:combiner_xl_final,0,"30 xl_final probes, c=0.001",unseen tasks incl. LIBERO-PRO,0.801066,0.746097,0.730295,8,270,155
+B,trained combiner of the xl_final probes only,10,B_bytarget_h10:combiner_xl_final,1,"30 xl_final probes, c=0.001",eval-seen,0.759501,0.728803,0.642938,7,84,41
+B,trained combiner of the xl_final probes only,10,B_bytarget_h10:combiner_xl_final,1,"30 xl_final probes, c=0.001","unseen tasks, original rollouts",0.767857,0.752838,0.551843,3,90,62
+B,trained combiner of the xl_final probes only,10,B_bytarget_h10:combiner_xl_final,1,"30 xl_final probes, c=0.001",unseen tasks incl. LIBERO-PRO,0.740529,0.735587,0.547029,7,270,188
+B,trained combiner of the xl_final probes only,10,B_bytarget_h10:combiner_xl_final,2,"30 xl_final probes, c=0.001",eval-seen,0.73678,0.774235,0.639037,7,84,51
+B,trained combiner of the xl_final probes only,10,B_bytarget_h10:combiner_xl_final,2,"30 xl_final probes, c=0.001","unseen tasks, original rollouts",0.64049,0.651331,0.454105,3,90,37
+B,trained combiner of the xl_final probes only,10,B_bytarget_h10:combiner_xl_final,2,"30 xl_final probes, c=0.001",unseen tasks incl. LIBERO-PRO,0.691578,0.680353,0.573302,9,270,126
+B,unweighted mean of the act_rep probes only,25,B_bytarget_h25:mean_act_rep,0,32 act_rep probes,eval-seen,0.738776,0.723115,0.54898,7,84,49
+B,unweighted mean of the act_rep probes only,25,B_bytarget_h25:mean_act_rep,0,32 act_rep probes,"unseen tasks, original rollouts",0.716766,0.678776,0.633929,3,90,42
+B,unweighted mean of the act_rep probes only,25,B_bytarget_h25:mean_act_rep,0,32 act_rep probes,unseen tasks incl. LIBERO-PRO,0.786367,0.721242,0.730295,8,270,155
+B,unweighted mean of the act_rep probes only,25,B_bytarget_h25:mean_act_rep,1,32 act_rep probes,eval-seen,0.750993,0.718424,0.642938,7,84,41
+B,unweighted mean of the act_rep probes only,25,B_bytarget_h25:mean_act_rep,1,32 act_rep probes,"unseen tasks, original rollouts",0.703341,0.689785,0.551843,3,90,62
+B,unweighted mean of the act_rep probes only,25,B_bytarget_h25:mean_act_rep,1,32 act_rep probes,unseen tasks incl. LIBERO-PRO,0.73774,0.693822,0.547029,7,270,188
+B,unweighted mean of the act_rep probes only,25,B_bytarget_h25:mean_act_rep,2,32 act_rep probes,eval-seen,0.764112,0.663043,0.639037,7,84,51
+B,unweighted mean of the act_rep probes only,25,B_bytarget_h25:mean_act_rep,2,32 act_rep probes,"unseen tasks, original rollouts",0.603774,0.717468,0.454105,3,90,37
+B,unweighted mean of the act_rep probes only,25,B_bytarget_h25:mean_act_rep,2,32 act_rep probes,unseen tasks incl. LIBERO-PRO,0.670635,0.70029,0.573302,9,270,126
+B,unweighted mean of the act_mag probes only,25,B_bytarget_h25:mean_act_mag,0,32 act_mag probes,eval-seen,0.724781,0.78664,0.54898,7,84,49
+B,unweighted mean of the act_mag probes only,25,B_bytarget_h25:mean_act_mag,0,32 act_mag probes,"unseen tasks, original rollouts",0.671131,0.576143,0.633929,3,90,42
+B,unweighted mean of the act_mag probes only,25,B_bytarget_h25:mean_act_mag,0,32 act_mag probes,unseen tasks incl. LIBERO-PRO,0.794222,0.720303,0.730295,8,270,155
+B,unweighted mean of the act_mag probes only,25,B_bytarget_h25:mean_act_mag,1,32 act_mag probes,eval-seen,0.705048,0.644218,0.642938,7,84,41
+B,unweighted mean of the act_mag probes only,25,B_bytarget_h25:mean_act_mag,1,32 act_mag probes,"unseen tasks, original rollouts",0.793779,0.765067,0.551843,3,90,62
+B,unweighted mean of the act_mag probes only,25,B_bytarget_h25:mean_act_mag,1,32 act_mag probes,unseen tasks incl. LIBERO-PRO,0.79904,0.720869,0.547029,7,270,188
+B,unweighted mean of the act_mag probes only,25,B_bytarget_h25:mean_act_mag,2,32 act_mag probes,eval-seen,0.704694,0.741936,0.639037,7,84,51
+B,unweighted mean of the act_mag probes only,25,B_bytarget_h25:mean_act_mag,2,32 act_mag probes,"unseen tasks, original rollouts",0.630291,0.610686,0.454105,3,90,37
+B,unweighted mean of the act_mag probes only,25,B_bytarget_h25:mean_act_mag,2,32 act_mag probes,unseen tasks incl. LIBERO-PRO,0.666336,0.701178,0.573302,9,270,126
+B,unweighted mean of the emb_temp probes only,25,B_bytarget_h25:mean_emb_temp,0,30 emb_temp probes,eval-seen,0.742274,0.839484,0.54898,7,84,49
+B,unweighted mean of the emb_temp probes only,25,B_bytarget_h25:mean_emb_temp,0,30 emb_temp probes,"unseen tasks, original rollouts",0.699901,0.700706,0.633929,3,90,42
+B,unweighted mean of the emb_temp probes only,25,B_bytarget_h25:mean_emb_temp,0,30 emb_temp probes,unseen tasks incl. LIBERO-PRO,0.786928,0.737847,0.730295,8,270,155
+B,unweighted mean of the emb_temp probes only,25,B_bytarget_h25:mean_emb_temp,1,30 emb_temp probes,eval-seen,0.735678,0.771594,0.642938,7,84,41
+B,unweighted mean of the emb_temp probes only,25,B_bytarget_h25:mean_emb_temp,1,30 emb_temp probes,"unseen tasks, original rollouts",0.783986,0.767438,0.551843,3,90,62
+B,unweighted mean of the emb_temp probes only,25,B_bytarget_h25:mean_emb_temp,1,30 emb_temp probes,unseen tasks incl. LIBERO-PRO,0.765828,0.782319,0.547029,7,270,188
+B,unweighted mean of the emb_temp probes only,25,B_bytarget_h25:mean_emb_temp,2,30 emb_temp probes,eval-seen,0.728461,0.789205,0.639037,7,84,51
+B,unweighted mean of the emb_temp probes only,25,B_bytarget_h25:mean_emb_temp,2,30 emb_temp probes,"unseen tasks, original rollouts",0.678225,0.757547,0.454105,3,90,37
+B,unweighted mean of the emb_temp probes only,25,B_bytarget_h25:mean_emb_temp,2,30 emb_temp probes,unseen tasks incl. LIBERO-PRO,0.719852,0.750715,0.573302,9,270,126
+B,unweighted mean of the xl_final probes only,25,B_bytarget_h25:mean_xl_final,0,30 xl_final probes,eval-seen,0.661224,0.467791,0.54898,7,84,49
+B,unweighted mean of the xl_final probes only,25,B_bytarget_h25:mean_xl_final,0,30 xl_final probes,"unseen tasks, original rollouts",0.625,0.449044,0.633929,3,90,42
+B,unweighted mean of the xl_final probes only,25,B_bytarget_h25:mean_xl_final,0,30 xl_final probes,unseen tasks incl. LIBERO-PRO,0.704909,0.497671,0.730295,8,270,155
+B,unweighted mean of the xl_final probes only,25,B_bytarget_h25:mean_xl_final,1,30 xl_final probes,eval-seen,0.655133,0.533385,0.642938,7,84,41
+B,unweighted mean of the xl_final probes only,25,B_bytarget_h25:mean_xl_final,1,30 xl_final probes,"unseen tasks, original rollouts",0.644009,0.444017,0.551843,3,90,62
+B,unweighted mean of the xl_final probes only,25,B_bytarget_h25:mean_xl_final,1,30 xl_final probes,unseen tasks incl. LIBERO-PRO,0.653023,0.439012,0.547029,7,270,188
+B,unweighted mean of the xl_final probes only,25,B_bytarget_h25:mean_xl_final,2,30 xl_final probes,eval-seen,0.588829,0.491671,0.639037,7,84,51
+B,unweighted mean of the xl_final probes only,25,B_bytarget_h25:mean_xl_final,2,30 xl_final probes,"unseen tasks, original rollouts",0.536971,0.471481,0.454105,3,90,37
+B,unweighted mean of the xl_final probes only,25,B_bytarget_h25:mean_xl_final,2,30 xl_final probes,unseen tasks incl. LIBERO-PRO,0.583554,0.471989,0.573302,9,270,126
+B,trained combiner of the act_rep probes only,25,B_bytarget_h25:combiner_act_rep,0,"32 act_rep probes, c=1e-05",eval-seen,0.672303,0.757738,0.54898,7,84,49
+B,trained combiner of the act_rep probes only,25,B_bytarget_h25:combiner_act_rep,0,"32 act_rep probes, c=1e-05","unseen tasks, original rollouts",0.692956,0.691999,0.633929,3,90,42
+B,trained combiner of the act_rep probes only,25,B_bytarget_h25:combiner_act_rep,0,"32 act_rep probes, c=1e-05",unseen tasks incl. LIBERO-PRO,0.786255,0.733157,0.730295,8,270,155
+B,trained combiner of the act_rep probes only,25,B_bytarget_h25:combiner_act_rep,1,"32 act_rep probes, c=1e-05",eval-seen,0.692002,0.70822,0.642938,7,84,41
+B,trained combiner of the act_rep probes only,25,B_bytarget_h25:combiner_act_rep,1,"32 act_rep probes, c=1e-05","unseen tasks, original rollouts",0.698733,0.700271,0.551843,3,90,62
+B,trained combiner of the act_rep probes only,25,B_bytarget_h25:combiner_act_rep,1,"32 act_rep probes, c=1e-05",unseen tasks incl. LIBERO-PRO,0.665802,0.697039,0.547029,7,270,188
+B,trained combiner of the act_rep probes only,25,B_bytarget_h25:combiner_act_rep,2,"32 act_rep probes, c=1e-05",eval-seen,0.708853,0.667012,0.639037,7,84,51
+B,trained combiner of the act_rep probes only,25,B_bytarget_h25:combiner_act_rep,2,"32 act_rep probes, c=1e-05","unseen tasks, original rollouts",0.521673,0.728071,0.454105,3,90,37
+B,trained combiner of the act_rep probes only,25,B_bytarget_h25:combiner_act_rep,2,"32 act_rep probes, c=1e-05",unseen tasks incl. LIBERO-PRO,0.656911,0.707837,0.573302,9,270,126
+B,trained combiner of the act_mag probes only,25,B_bytarget_h25:combiner_act_mag,0,"32 act_mag probes, c=1e-05",eval-seen,0.67172,0.784788,0.54898,7,84,49
+B,trained combiner of the act_mag probes only,25,B_bytarget_h25:combiner_act_mag,0,"32 act_mag probes, c=1e-05","unseen tasks, original rollouts",0.664187,0.613602,0.633929,3,90,42
+B,trained combiner of the act_mag probes only,25,B_bytarget_h25:combiner_act_mag,0,"32 act_mag probes, c=1e-05",unseen tasks incl. LIBERO-PRO,0.786031,0.743088,0.730295,8,270,155
+B,trained combiner of the act_mag probes only,25,B_bytarget_h25:combiner_act_mag,1,"32 act_mag probes, c=1e-05",eval-seen,0.70675,0.655678,0.642938,7,84,41
+B,trained combiner of the act_mag probes only,25,B_bytarget_h25:combiner_act_mag,1,"32 act_mag probes, c=1e-05","unseen tasks, original rollouts",0.759793,0.76803,0.551843,3,90,62
+B,trained combiner of the act_mag probes only,25,B_bytarget_h25:combiner_act_mag,1,"32 act_mag probes, c=1e-05",unseen tasks incl. LIBERO-PRO,0.730734,0.737654,0.547029,7,270,188
+B,trained combiner of the act_mag probes only,25,B_bytarget_h25:combiner_act_mag,2,"32 act_mag probes, c=1e-05",eval-seen,0.712418,0.740084,0.639037,7,84,51
+B,trained combiner of the act_mag probes only,25,B_bytarget_h25:combiner_act_mag,2,"32 act_mag probes, c=1e-05","unseen tasks, original rollouts",0.561448,0.622732,0.454105,3,90,37
+B,trained combiner of the act_mag probes only,25,B_bytarget_h25:combiner_act_mag,2,"32 act_mag probes, c=1e-05",unseen tasks incl. LIBERO-PRO,0.65647,0.7121,0.573302,9,270,126
+B,trained combiner of the emb_temp probes only,25,B_bytarget_h25:combiner_emb_temp,0,"30 emb_temp probes, c=1e-05",eval-seen,0.716035,0.840807,0.54898,7,84,49
+B,trained combiner of the emb_temp probes only,25,B_bytarget_h25:combiner_emb_temp,0,"30 emb_temp probes, c=1e-05","unseen tasks, original rollouts",0.699901,0.705617,0.633929,3,90,42
+B,trained combiner of the emb_temp probes only,25,B_bytarget_h25:combiner_emb_temp,0,"30 emb_temp probes, c=1e-05",unseen tasks incl. LIBERO-PRO,0.787602,0.759115,0.730295,8,270,155
+B,trained combiner of the emb_temp probes only,25,B_bytarget_h25:combiner_emb_temp,1,"30 emb_temp probes, c=1e-05",eval-seen,0.731707,0.763431,0.642938,7,84,41
+B,trained combiner of the emb_temp probes only,25,B_bytarget_h25:combiner_emb_temp,1,"30 emb_temp probes, c=1e-05","unseen tasks, original rollouts",0.764977,0.771226,0.551843,3,90,62
+B,trained combiner of the emb_temp probes only,25,B_bytarget_h25:combiner_emb_temp,1,"30 emb_temp probes, c=1e-05",unseen tasks incl. LIBERO-PRO,0.729113,0.779491,0.547029,7,270,188
+B,trained combiner of the emb_temp probes only,25,B_bytarget_h25:combiner_emb_temp,2,"30 emb_temp probes, c=1e-05",eval-seen,0.710636,0.774655,0.639037,7,84,51
+B,trained combiner of the emb_temp probes only,25,B_bytarget_h25:combiner_emb_temp,2,"30 emb_temp probes, c=1e-05","unseen tasks, original rollouts",0.598164,0.751555,0.454105,3,90,37
+B,trained combiner of the emb_temp probes only,25,B_bytarget_h25:combiner_emb_temp,2,"30 emb_temp probes, c=1e-05",unseen tasks incl. LIBERO-PRO,0.692736,0.75052,0.573302,9,270,126
+B,trained combiner of the xl_final probes only,25,B_bytarget_h25:combiner_xl_final,0,"30 xl_final probes, c=1e-05",eval-seen,0.651895,0.560913,0.54898,7,84,49
+B,trained combiner of the xl_final probes only,25,B_bytarget_h25:combiner_xl_final,0,"30 xl_final probes, c=1e-05","unseen tasks, original rollouts",0.65873,0.564231,0.633929,3,90,42
+B,trained combiner of the xl_final probes only,25,B_bytarget_h25:combiner_xl_final,0,"30 xl_final probes, c=1e-05",unseen tasks incl. LIBERO-PRO,0.750856,0.599494,0.730295,8,270,155
+B,trained combiner of the xl_final probes only,25,B_bytarget_h25:combiner_xl_final,1,"30 xl_final probes, c=1e-05",eval-seen,0.701078,0.591912,0.642938,7,84,41
+B,trained combiner of the xl_final probes only,25,B_bytarget_h25:combiner_xl_final,1,"30 xl_final probes, c=1e-05","unseen tasks, original rollouts",0.689516,0.602483,0.551843,3,90,62
+B,trained combiner of the xl_final probes only,25,B_bytarget_h25:combiner_xl_final,1,"30 xl_final probes, c=1e-05",unseen tasks incl. LIBERO-PRO,0.653607,0.617193,0.547029,7,270,188
+B,trained combiner of the xl_final probes only,25,B_bytarget_h25:combiner_xl_final,2,"30 xl_final probes, c=1e-05",eval-seen,0.69697,0.791015,0.639037,7,84,51
+B,trained combiner of the xl_final probes only,25,B_bytarget_h25:combiner_xl_final,2,"30 xl_final probes, c=1e-05","unseen tasks, original rollouts",0.490566,0.627823,0.454105,3,90,37
+B,trained combiner of the xl_final probes only,25,B_bytarget_h25:combiner_xl_final,2,"30 xl_final probes, c=1e-05",unseen tasks incl. LIBERO-PRO,0.592317,0.604101,0.573302,9,270,126
