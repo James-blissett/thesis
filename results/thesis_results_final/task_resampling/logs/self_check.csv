@@ -1,0 +1,27 @@
+comparison,metric,existing difference,existing range low,existing range high,bootstrap2's draws: difference,bootstrap2's draws: range low,bootstrap2's draws: range high,bootstrap2's draws: max |change|,bootstrap2's draws: rounds used,"this run's draws, 2,000 rounds: difference","this run's draws, 2,000 rounds: range low","this run's draws, 2,000 rounds: range high","this run's draws, 2,000 rounds: max |change|","this run's draws, 2,000 rounds: rounds used"
+B mean vs A mean,per-task-and-perturbation AUROC,-0.0315,-0.0648,0.0034,-0.0315,-0.0648,0.0034,0,1000,-0.0315,-0.0677,0.0023,0.0029,2000
+B mean vs A mean,balanced accuracy at alpha 0.1,-0.0178,-0.0398,-0.0042,-0.0178,-0.0398,-0.0042,0,1000,-0.0178,-0.0401,-0.0035,0.0007,2000
+B mean vs C mean,per-task-and-perturbation AUROC,-0.0007,-0.0375,0.0334,-0.0007,-0.0375,0.0334,0,1000,-0.0007,-0.0382,0.034,0.0007,2000
+B mean vs C mean,balanced accuracy at alpha 0.1,-0.0526,-0.0738,-0.0318,-0.0526,-0.0738,-0.0318,0,1000,-0.0526,-0.0748,-0.0314,0.001,2000
+A mean vs C mean,per-task-and-perturbation AUROC,0.0308,-0.0114,0.0734,0.0308,-0.0114,0.0734,0,1000,0.0308,-0.0122,0.0741,0.0008,2000
+A mean vs C mean,balanced accuracy at alpha 0.1,-0.0349,-0.0533,-0.0107,-0.0349,-0.0533,-0.0107,0,1000,-0.0349,-0.0549,-0.0098,0.0016,2000
+A mean vs A trained combiner,per-task-and-perturbation AUROC,0.0091,-0.0068,0.0184,0.0091,-0.0068,0.0184,0,1000,0.0091,-0.0062,0.0181,0.0006,2000
+A mean vs A trained combiner,balanced accuracy at alpha 0.1,-0.0291,-0.0494,-0.0104,-0.0291,-0.0494,-0.0104,0,1000,-0.0291,-0.0481,-0.0097,0.0013,2000
+A mean vs A single best probe,per-task-and-perturbation AUROC,0.0107,-0.0079,0.0331,0.0107,-0.0079,0.0331,0,1000,0.0107,-0.0081,0.0303,0.0028,2000
+A mean vs A single best probe,balanced accuracy at alpha 0.1,0.0016,-0.0135,0.0118,0.0016,-0.0135,0.0118,0,1000,0.0016,-0.0139,0.0124,0.0006,2000
+A mean vs A 2-layer MLP,per-task-and-perturbation AUROC,0.0705,0.0235,0.1257,0.0705,0.0235,0.1257,0,1000,0.0705,0.0266,0.1272,0.0031,2000
+A mean vs A 2-layer MLP,balanced accuracy at alpha 0.1,-0.0115,-0.0296,0.0234,-0.0115,-0.0296,0.0234,0,1000,-0.0115,-0.0326,0.026,0.003,2000
+C mean vs C trained combiner,per-task-and-perturbation AUROC,-0.0014,-0.0404,0.0251,-0.0014,-0.0404,0.0251,0,1000,-0.0014,-0.0387,0.0281,0.003,2000
+C mean vs C trained combiner,balanced accuracy at alpha 0.1,-0.0028,-0.0273,0.0238,-0.0028,-0.0273,0.0238,0,1000,-0.0028,-0.0298,0.024,0.0025,2000
+C mean vs C single best probe,per-task-and-perturbation AUROC,-0.0177,-0.0493,0.0082,-0.0177,-0.0493,0.0082,0,1000,-0.0177,-0.0474,0.0078,0.0019,2000
+C mean vs C single best probe,balanced accuracy at alpha 0.1,0.0221,0.0059,0.0424,0.0221,0.0059,0.0424,0,1000,0.0221,0.0055,0.0426,0.0004,2000
+C mean vs C 2-layer MLP,per-task-and-perturbation AUROC,-0.0156,-0.0515,0.0189,-0.0156,-0.0515,0.0189,0,1000,-0.0156,-0.0501,0.0187,0.0014,2000
+C mean vs C 2-layer MLP,balanced accuracy at alpha 0.1,0.0243,0.0037,0.0494,0.0243,0.0037,0.0494,0,1000,0.0243,0.0046,0.0494,0.0009,2000
+B mean vs B trained combiner,per-task-and-perturbation AUROC,0.0201,-0.018,0.0518,0.0201,-0.018,0.0518,0,1000,0.0201,-0.0222,0.0524,0.0042,2000
+B mean vs B trained combiner,balanced accuracy at alpha 0.1,-0.0175,-0.0348,0.0068,-0.0175,-0.0348,0.0068,0,1000,-0.0175,-0.0373,0.0065,0.0025,2000
+B mean vs B single best probe,per-task-and-perturbation AUROC,-0.0016,-0.0287,0.0271,-0.0016,-0.0287,0.0271,0,1000,-0.0016,-0.0283,0.0277,0.0006,2000
+B mean vs B single best probe,balanced accuracy at alpha 0.1,0.0021,-0.0149,0.021,0.0021,-0.0149,0.021,0,1000,0.0021,-0.0148,0.0209,0.0001,2000
+B mean vs B 2-layer MLP,per-task-and-perturbation AUROC,0.0095,-0.0154,0.0446,0.0095,-0.0154,0.0446,0,1000,0.0095,-0.0148,0.0472,0.0026,2000
+B mean vs B 2-layer MLP,balanced accuracy at alpha 0.1,-0.0074,-0.0259,0.0104,-0.0074,-0.0259,0.0104,0,1000,-0.0074,-0.0257,0.0102,0.0002,2000
+B 2-layer MLP vs B single best linear probe,per-task-and-perturbation AUROC,-0.0111,-0.0409,0.0103,-0.0111,-0.0409,0.0103,0,1000,-0.0111,-0.0413,0.0097,0.0006,2000
+B 2-layer MLP vs B single best linear probe,balanced accuracy at alpha 0.1,0.0095,-0.0013,0.0211,0.0095,-0.0013,0.0211,0,1000,0.0095,-0.0014,0.022,0.0009,2000

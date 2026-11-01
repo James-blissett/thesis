@@ -1,0 +1,371 @@
+{
+ "seed": 20261103,
+ "per type": {
+  "froze": 10,
+  "never grasped": 0,
+  "other": 10
+ },
+ "freeze threshold": 20,
+ "rollouts": [
+  {
+   "rollout": "task05_trial27",
+   "task": 5,
+   "task name": "pick up the book and place it in the back compartment of the caddy",
+   "type": "froze",
+   "cut": 158,
+   "longest repeated-action run": 80,
+   "longest run start": 12,
+   "gripper ever closed": true,
+   "first close step": 2,
+   "frame steps": [
+    0,
+    52,
+    105,
+    157
+   ],
+   "strip": "task_resampling/failure_frames/task05_trial27.jpg"
+  },
+  {
+   "rollout": "task01_trial20",
+   "task": 1,
+   "task name": "put both the cream cheese box and the butter in the basket",
+   "type": "froze",
+   "cut": 228,
+   "longest repeated-action run": 39,
+   "longest run start": 189,
+   "gripper ever closed": true,
+   "first close step": 56,
+   "frame steps": [
+    0,
+    76,
+    152,
+    227
+   ],
+   "strip": "task_resampling/failure_frames/task01_trial20.jpg"
+  },
+  {
+   "rollout": "task02_trial02",
+   "task": 2,
+   "task name": "turn on the stove and put the moka pot on it",
+   "type": "froze",
+   "cut": 228,
+   "longest repeated-action run": 100,
+   "longest run start": 128,
+   "gripper ever closed": false,
+   "first close step": "",
+   "frame steps": [
+    0,
+    76,
+    152,
+    227
+   ],
+   "strip": "task_resampling/failure_frames/task02_trial02.jpg"
+  },
+  {
+   "rollout": "task09_trial25",
+   "task": 9,
+   "task name": "put the yellow and white mug in the microwave and close it",
+   "type": "froze",
+   "cut": 244,
+   "longest repeated-action run": 37,
+   "longest run start": 207,
+   "gripper ever closed": true,
+   "first close step": 86,
+   "frame steps": [
+    0,
+    81,
+    162,
+    243
+   ],
+   "strip": "task_resampling/failure_frames/task09_trial25.jpg"
+  },
+  {
+   "rollout": "task07_trial15",
+   "task": 7,
+   "task name": "put both the alphabet soup and the cream cheese box in the basket",
+   "type": "froze",
+   "cut": 216,
+   "longest repeated-action run": 23,
+   "longest run start": 193,
+   "gripper ever closed": true,
+   "first close step": 59,
+   "frame steps": [
+    0,
+    72,
+    144,
+    215
+   ],
+   "strip": "task_resampling/failure_frames/task07_trial15.jpg"
+  },
+  {
+   "rollout": "task03_trial08",
+   "task": 3,
+   "task name": "put the black bowl in the bottom drawer of the cabinet and close it",
+   "type": "froze",
+   "cut": 225,
+   "longest repeated-action run": 56,
+   "longest run start": 169,
+   "gripper ever closed": true,
+   "first close step": 75,
+   "frame steps": [
+    0,
+    75,
+    150,
+    224
+   ],
+   "strip": "task_resampling/failure_frames/task03_trial08.jpg"
+  },
+  {
+   "rollout": "task04_trial23",
+   "task": 4,
+   "task name": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+   "type": "froze",
+   "cut": 201,
+   "longest repeated-action run": 23,
+   "longest run start": 178,
+   "gripper ever closed": true,
+   "first close step": 28,
+   "frame steps": [
+    0,
+    67,
+    134,
+    200
+   ],
+   "strip": "task_resampling/failure_frames/task04_trial23.jpg"
+  },
+  {
+   "rollout": "task05_trial03",
+   "task": 5,
+   "task name": "pick up the book and place it in the back compartment of the caddy",
+   "type": "froze",
+   "cut": 158,
+   "longest repeated-action run": 22,
+   "longest run start": 131,
+   "gripper ever closed": true,
+   "first close step": 58,
+   "frame steps": [
+    0,
+    52,
+    105,
+    157
+   ],
+   "strip": "task_resampling/failure_frames/task05_trial03.jpg"
+  },
+  {
+   "rollout": "task01_trial03",
+   "task": 1,
+   "task name": "put both the cream cheese box and the butter in the basket",
+   "type": "froze",
+   "cut": 228,
+   "longest repeated-action run": 38,
+   "longest run start": 190,
+   "gripper ever closed": true,
+   "first close step": 69,
+   "frame steps": [
+    0,
+    76,
+    152,
+    227
+   ],
+   "strip": "task_resampling/failure_frames/task01_trial03.jpg"
+  },
+  {
+   "rollout": "task02_trial19",
+   "task": 2,
+   "task name": "turn on the stove and put the moka pot on it",
+   "type": "froze",
+   "cut": 228,
+   "longest repeated-action run": 59,
+   "longest run start": 101,
+   "gripper ever closed": true,
+   "first close step": 41,
+   "frame steps": [
+    0,
+    76,
+    152,
+    227
+   ],
+   "strip": "task_resampling/failure_frames/task02_trial19.jpg"
+  },
+  {
+   "rollout": "task04_trial08",
+   "task": 4,
+   "task name": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+   "type": "other",
+   "cut": 201,
+   "longest repeated-action run": 4,
+   "longest run start": 112,
+   "gripper ever closed": true,
+   "first close step": 56,
+   "frame steps": [
+    0,
+    67,
+    134,
+    200
+   ],
+   "strip": "task_resampling/failure_frames/task04_trial08.jpg"
+  },
+  {
+   "rollout": "task05_trial26",
+   "task": 5,
+   "task name": "pick up the book and place it in the back compartment of the caddy",
+   "type": "other",
+   "cut": 158,
+   "longest repeated-action run": 2,
+   "longest run start": 22,
+   "gripper ever closed": true,
+   "first close step": 63,
+   "frame steps": [
+    0,
+    52,
+    105,
+    157
+   ],
+   "strip": "task_resampling/failure_frames/task05_trial26.jpg"
+  },
+  {
+   "rollout": "task07_trial10",
+   "task": 7,
+   "task name": "put both the alphabet soup and the cream cheese box in the basket",
+   "type": "other",
+   "cut": 216,
+   "longest repeated-action run": 6,
+   "longest run start": 66,
+   "gripper ever closed": true,
+   "first close step": 56,
+   "frame steps": [
+    0,
+    72,
+    144,
+    215
+   ],
+   "strip": "task_resampling/failure_frames/task07_trial10.jpg"
+  },
+  {
+   "rollout": "task02_trial17",
+   "task": 2,
+   "task name": "turn on the stove and put the moka pot on it",
+   "type": "other",
+   "cut": 228,
+   "longest repeated-action run": 2,
+   "longest run start": 49,
+   "gripper ever closed": true,
+   "first close step": 43,
+   "frame steps": [
+    0,
+    76,
+    152,
+    227
+   ],
+   "strip": "task_resampling/failure_frames/task02_trial17.jpg"
+  },
+  {
+   "rollout": "task01_trial06",
+   "task": 1,
+   "task name": "put both the cream cheese box and the butter in the basket",
+   "type": "other",
+   "cut": 228,
+   "longest repeated-action run": 2,
+   "longest run start": 67,
+   "gripper ever closed": true,
+   "first close step": 62,
+   "frame steps": [
+    0,
+    76,
+    152,
+    227
+   ],
+   "strip": "task_resampling/failure_frames/task01_trial06.jpg"
+  },
+  {
+   "rollout": "task03_trial07",
+   "task": 3,
+   "task name": "put the black bowl in the bottom drawer of the cabinet and close it",
+   "type": "other",
+   "cut": 225,
+   "longest repeated-action run": 3,
+   "longest run start": 160,
+   "gripper ever closed": true,
+   "first close step": 60,
+   "frame steps": [
+    0,
+    75,
+    150,
+    224
+   ],
+   "strip": "task_resampling/failure_frames/task03_trial07.jpg"
+  },
+  {
+   "rollout": "task06_trial05",
+   "task": 6,
+   "task name": "put the white mug on the plate and put the chocolate pudding to the right of the plate",
+   "type": "other",
+   "cut": 197,
+   "longest repeated-action run": 2,
+   "longest run start": 138,
+   "gripper ever closed": true,
+   "first close step": 40,
+   "frame steps": [
+    0,
+    65,
+    131,
+    196
+   ],
+   "strip": "task_resampling/failure_frames/task06_trial05.jpg"
+  },
+  {
+   "rollout": "task09_trial15",
+   "task": 9,
+   "task name": "put the yellow and white mug in the microwave and close it",
+   "type": "other",
+   "cut": 244,
+   "longest repeated-action run": 3,
+   "longest run start": 90,
+   "gripper ever closed": true,
+   "first close step": 93,
+   "frame steps": [
+    0,
+    81,
+    162,
+    243
+   ],
+   "strip": "task_resampling/failure_frames/task09_trial15.jpg"
+  },
+  {
+   "rollout": "task04_trial02",
+   "task": 4,
+   "task name": "put the white mug on the left plate and put the yellow and white mug on the right plate",
+   "type": "other",
+   "cut": 201,
+   "longest repeated-action run": 2,
+   "longest run start": 30,
+   "gripper ever closed": true,
+   "first close step": 78,
+   "frame steps": [
+    0,
+    67,
+    134,
+    200
+   ],
+   "strip": "task_resampling/failure_frames/task04_trial02.jpg"
+  },
+  {
+   "rollout": "task05_trial24",
+   "task": 5,
+   "task name": "pick up the book and place it in the back compartment of the caddy",
+   "type": "other",
+   "cut": 158,
+   "longest repeated-action run": 5,
+   "longest run start": 1,
+   "gripper ever closed": true,
+   "first close step": 68,
+   "frame steps": [
+    0,
+    52,
+    105,
+    157
+   ],
+   "strip": "task_resampling/failure_frames/task05_trial24.jpg"
+  }
+ ]
+}

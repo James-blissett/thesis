@@ -1,0 +1,16 @@
+{
+ "rows": 26,
+ "a_bootstrap2_draws": {
+  "max_abs_diff": 4.895075931298301e-05,
+  "tolerance": 5.0001000000000005e-05,
+  "passed": true,
+  "note": "same draws as tables/paired_comparisons.csv; CSV values are rounded to 4 d.p."
+ },
+ "b_fresh_draws": {
+  "max_abs_diff": 0.004179117021599746,
+  "tolerance": 0.005,
+  "passed": true,
+  "rounds": 2000,
+  "rng_seed": 20261101
+ }
+}

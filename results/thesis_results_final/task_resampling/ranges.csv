@@ -1,0 +1,64 @@
+section,comparison,metric,difference,95% range low,95% range high,range excludes zero,rounds used,rounds skipped,rounds with a group dropped,test set
+1. headline,B mean - A mean,per-task AUROC,-0.0315,-0.0849,0.0196,False,2000,0,1981,unseen tasks incl. LIBERO-PRO
+1. headline,B mean - A mean,balanced accuracy at alpha 0.1,-0.0178,-0.0466,0.0057,False,2000,0,1981,unseen tasks incl. LIBERO-PRO
+1. headline,B mean - C mean,per-task AUROC,-0.0007,-0.0413,0.0409,False,2000,0,1981,unseen tasks incl. LIBERO-PRO
+1. headline,B mean - C mean,balanced accuracy at alpha 0.1,-0.0526,-0.08,-0.027,True,2000,0,1981,unseen tasks incl. LIBERO-PRO
+1. headline,A mean - C mean,per-task AUROC,0.0308,-0.0183,0.0844,False,2000,0,1981,unseen tasks incl. LIBERO-PRO
+1. headline,A mean - C mean,balanced accuracy at alpha 0.1,-0.0349,-0.06,-0.0068,True,2000,0,1981,unseen tasks incl. LIBERO-PRO
+2. within each detector,A mean - A single best probe,per-task AUROC,0.0107,-0.0105,0.0372,False,2000,0,1981,unseen tasks incl. LIBERO-PRO
+2. within each detector,A mean - A trained combiner,per-task AUROC,0.0091,-0.0082,0.0207,False,2000,0,1981,unseen tasks incl. LIBERO-PRO
+2. within each detector,A mean - A 2-layer MLP,per-task AUROC,0.0705,0.0027,0.1739,True,2000,0,1981,unseen tasks incl. LIBERO-PRO
+2. within each detector,B mean - B single best probe,per-task AUROC,-0.0016,-0.0317,0.0351,False,2000,0,1981,unseen tasks incl. LIBERO-PRO
+2. within each detector,B mean - B trained combiner,per-task AUROC,0.0201,-0.0339,0.0656,False,2000,0,1981,unseen tasks incl. LIBERO-PRO
+2. within each detector,B mean - B 2-layer MLP,per-task AUROC,0.0095,-0.0247,0.0686,False,2000,0,1981,unseen tasks incl. LIBERO-PRO
+2. within each detector,C mean - C single best probe,per-task AUROC,-0.0177,-0.0523,0.0093,False,2000,0,1981,unseen tasks incl. LIBERO-PRO
+2. within each detector,C mean - C trained combiner,per-task AUROC,-0.0014,-0.0501,0.0402,False,2000,0,1981,unseen tasks incl. LIBERO-PRO
+2. within each detector,C mean - C 2-layer MLP,per-task AUROC,-0.0156,-0.0512,0.0199,False,2000,0,1981,unseen tasks incl. LIBERO-PRO
+3. B embedding-temporal mean,B embedding-temporal mean (H = 0) - A mean,per-task AUROC,-0.0238,-0.0633,0.0146,False,2000,0,1981,unseen tasks incl. LIBERO-PRO
+3. B embedding-temporal mean,B embedding-temporal mean (H = 0) - A mean,balanced accuracy at alpha 0.1,-0.0265,-0.0667,0.0027,False,2000,0,1981,unseen tasks incl. LIBERO-PRO
+3. B embedding-temporal mean,B embedding-temporal mean (H = 0) - C mean,per-task AUROC,0.007,-0.032,0.046,False,2000,0,1981,unseen tasks incl. LIBERO-PRO
+3. B embedding-temporal mean,B embedding-temporal mean (H = 0) - C mean,balanced accuracy at alpha 0.1,-0.0614,-0.0979,-0.0312,True,2000,0,1981,unseen tasks incl. LIBERO-PRO
+3. B embedding-temporal mean,B embedding-temporal mean (H = 0) - untrained emb_temp[26],per-task AUROC,0.0159,-0.0327,0.0594,False,2000,0,1981,unseen tasks incl. LIBERO-PRO
+3. B embedding-temporal mean,B embedding-temporal mean (H = 0) - untrained emb_temp[26],balanced accuracy at alpha 0.1,0.0162,-0.0227,0.0677,False,2000,0,1981,unseen tasks incl. LIBERO-PRO
+3. B embedding-temporal mean,B embedding-temporal mean (H = 10) - A mean,per-task AUROC,-0.0262,-0.0731,0.0273,False,2000,0,1981,unseen tasks incl. LIBERO-PRO
+3. B embedding-temporal mean,B embedding-temporal mean (H = 10) - A mean,balanced accuracy at alpha 0.1,-0.0187,-0.0442,0.0038,False,2000,0,1981,unseen tasks incl. LIBERO-PRO
+3. B embedding-temporal mean,B embedding-temporal mean (H = 10) - C mean,per-task AUROC,0.0046,-0.0281,0.0443,False,2000,0,1981,unseen tasks incl. LIBERO-PRO
+3. B embedding-temporal mean,B embedding-temporal mean (H = 10) - C mean,balanced accuracy at alpha 0.1,-0.0536,-0.0773,-0.0303,True,2000,0,1981,unseen tasks incl. LIBERO-PRO
+3. B embedding-temporal mean,B embedding-temporal mean (H = 10) - untrained emb_temp[26],per-task AUROC,0.0134,-0.0369,0.0677,False,2000,0,1981,unseen tasks incl. LIBERO-PRO
+3. B embedding-temporal mean,B embedding-temporal mean (H = 10) - untrained emb_temp[26],balanced accuracy at alpha 0.1,0.0241,-0.0045,0.0766,False,2000,0,1981,unseen tasks incl. LIBERO-PRO
+3. B embedding-temporal mean,B embedding-temporal mean (H = 25) - A mean,per-task AUROC,-0.0271,-0.0686,0.0258,False,2000,0,1981,unseen tasks incl. LIBERO-PRO
+3. B embedding-temporal mean,B embedding-temporal mean (H = 25) - A mean,balanced accuracy at alpha 0.1,-0.0152,-0.0367,0.0027,False,2000,0,1981,unseen tasks incl. LIBERO-PRO
+3. B embedding-temporal mean,B embedding-temporal mean (H = 25) - C mean,per-task AUROC,0.0037,-0.0332,0.0528,False,2000,0,1981,unseen tasks incl. LIBERO-PRO
+3. B embedding-temporal mean,B embedding-temporal mean (H = 25) - C mean,balanced accuracy at alpha 0.1,-0.05,-0.0731,-0.0254,True,2000,0,1981,unseen tasks incl. LIBERO-PRO
+3. B embedding-temporal mean,B embedding-temporal mean (H = 25) - untrained emb_temp[26],per-task AUROC,0.0126,-0.0369,0.0693,False,2000,0,1981,unseen tasks incl. LIBERO-PRO
+3. B embedding-temporal mean,B embedding-temporal mean (H = 25) - untrained emb_temp[26],balanced accuracy at alpha 0.1,0.0276,-0.0007,0.0709,False,2000,0,1981,unseen tasks incl. LIBERO-PRO
+4. per perturbation type,"B mean - A mean, unperturbed groups",per-task AUROC,-0.0308,-0.0755,0.0118,False,2000,0,5,"unseen tasks incl. LIBERO-PRO, unperturbed groups"
+4. per perturbation type,"B mean - A mean, unperturbed groups",balanced accuracy at alpha 0.1,0.0097,-0.0126,0.0328,False,2000,0,5,"unseen tasks incl. LIBERO-PRO, unperturbed groups"
+4. per perturbation type,"B mean - A mean, object perturbation groups",per-task AUROC,-0.081,-0.1996,0.0126,False,1708,292,1641,"unseen tasks incl. LIBERO-PRO, object perturbation groups"
+4. per perturbation type,"B mean - A mean, object perturbation groups",balanced accuracy at alpha 0.1,-0.0582,-0.118,0.0521,False,1821,179,1754,"unseen tasks incl. LIBERO-PRO, object perturbation groups"
+4. per perturbation type,"B mean - A mean, instruction paraphrase groups",per-task AUROC,0.0098,-0.0968,0.0972,False,1969,31,1179,"unseen tasks incl. LIBERO-PRO, instruction paraphrase groups"
+4. per perturbation type,"B mean - A mean, instruction paraphrase groups",balanced accuracy at alpha 0.1,-0.0313,-0.0961,0.0375,False,1997,3,1207,"unseen tasks incl. LIBERO-PRO, instruction paraphrase groups"
+5. training data (full - original),A mean: full - original training set,per-task AUROC,0.0255,-0.0078,0.0725,False,2000,0,1981,unseen tasks incl. LIBERO-PRO
+5. training data (full - original),A mean: full - original training set,balanced accuracy at alpha 0.1,0.0053,-0.0303,0.045,False,2000,0,1981,unseen tasks incl. LIBERO-PRO
+5. training data (full - original),C mean: full - original training set,per-task AUROC,-0.0114,-0.0282,0.0166,False,2000,0,1981,unseen tasks incl. LIBERO-PRO
+5. training data (full - original),C mean: full - original training set,balanced accuracy at alpha 0.1,0.0361,0.0116,0.0535,True,2000,0,1981,unseen tasks incl. LIBERO-PRO
+5. training data (full - original),B mean on the 113 shared probes: full - original training set,per-task AUROC,-0.0136,-0.0387,0.0106,False,2000,0,1981,unseen tasks incl. LIBERO-PRO
+5. training data (full - original),B mean on the 113 shared probes: full - original training set,balanced accuracy at alpha 0.1,-0.0108,-0.0524,0.0277,False,2000,0,1981,unseen tasks incl. LIBERO-PRO
+6. smoothing (setting - selected),C mean: no smoothing - selected,per-task AUROC,-0.0042,-0.0262,0.0111,False,2000,0,1981,unseen tasks incl. LIBERO-PRO
+6. smoothing (setting - selected),C mean: no smoothing - selected,balanced accuracy at alpha 0.1,-0.0154,-0.0337,0.0085,False,2000,0,1981,unseen tasks incl. LIBERO-PRO
+6. smoothing (setting - selected),B mean: no smoothing - selected,per-task AUROC,-0.0064,-0.0584,0.0286,False,2000,0,1981,unseen tasks incl. LIBERO-PRO
+6. smoothing (setting - selected),B mean: no smoothing - selected,balanced accuracy at alpha 0.1,0.0081,-0.0083,0.0295,False,2000,0,1981,unseen tasks incl. LIBERO-PRO
+6. smoothing (setting - selected),C mean: beta = 0.83 everywhere - selected,per-task AUROC,-0.0289,-0.0537,-0.0046,True,2000,0,1981,unseen tasks incl. LIBERO-PRO
+6. smoothing (setting - selected),C mean: beta = 0.83 everywhere - selected,balanced accuracy at alpha 0.1,-0.0127,-0.0497,0.0284,False,2000,0,1981,unseen tasks incl. LIBERO-PRO
+6. smoothing (setting - selected),B mean: beta = 0.83 everywhere - selected,per-task AUROC,-0.0076,-0.0193,0.0059,False,2000,0,1981,unseen tasks incl. LIBERO-PRO
+6. smoothing (setting - selected),B mean: beta = 0.83 everywhere - selected,balanced accuracy at alpha 0.1,0.0024,-0.0087,0.0139,False,2000,0,1981,unseen tasks incl. LIBERO-PRO
+6. smoothing (setting - selected),C mean: beta = 0.96 everywhere - selected,per-task AUROC,-0.0585,-0.0935,-0.0259,True,2000,0,1981,unseen tasks incl. LIBERO-PRO
+6. smoothing (setting - selected),C mean: beta = 0.96 everywhere - selected,balanced accuracy at alpha 0.1,-0.031,-0.0579,-0.001,True,2000,0,1981,unseen tasks incl. LIBERO-PRO
+6. smoothing (setting - selected),B mean: beta = 0.96 everywhere - selected,per-task AUROC,-0.022,-0.0585,0.0125,False,2000,0,1981,unseen tasks incl. LIBERO-PRO
+6. smoothing (setting - selected),B mean: beta = 0.96 everywhere - selected,balanced accuracy at alpha 0.1,-0.0048,-0.0225,0.0115,False,2000,0,1981,unseen tasks incl. LIBERO-PRO
+7. setting closest to SAFE's,"B mean - A mean, original training set, unseen tasks' original rollouts",per-task AUROC,-0.0678,-0.1822,0.0345,False,2000,0,77,"unseen tasks, original rollouts"
+7. setting closest to SAFE's,"B mean - A mean, original training set, unseen tasks' original rollouts",pooled AUROC,-0.03,-0.1443,0.0413,False,2000,0,77,"unseen tasks, original rollouts"
+8. B against the untrained constraint,B mean - untrained emb_temp[26],per-task AUROC,0.0081,-0.0481,0.0586,False,2000,0,1981,unseen tasks incl. LIBERO-PRO
+8. B against the untrained constraint,B mean - untrained emb_temp[26],balanced accuracy at alpha 0.1,0.025,-0.0027,0.0688,False,2000,0,1981,unseen tasks incl. LIBERO-PRO
+8. B against the untrained constraint,"B mean, unseen tasks' original rollouts: original - full training set",per-task AUROC,-0.0414,-0.1049,0.0165,False,2000,0,77,"unseen tasks, original rollouts"
+8. B against the untrained constraint,"B mean, unseen tasks' original rollouts: original - full training set",balanced accuracy at alpha 0.1,-0.0071,-0.0446,0.0369,False,2000,0,77,"unseen tasks, original rollouts"

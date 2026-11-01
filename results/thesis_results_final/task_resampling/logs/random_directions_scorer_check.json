@@ -1,0 +1,5 @@
+{
+ "max_abs_diff": 4.459348123142526e-05,
+ "passed": 1.0,
+ "what": "scorer (sum to the cut, per-task AUROC) on B's saved layer-0 outputs vs per_probe_outcome_auroc.csv"
+}
